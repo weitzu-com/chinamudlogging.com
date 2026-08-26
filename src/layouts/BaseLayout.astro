@@ -1,0 +1,148 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  canonicalPath?: string;
+  type?: "website" | "article" | "product";
+  schema?: Record<string, unknown> | Array<Record<string, unknown>>;
+}
+
+const {
+  title,
+  description,
+  image = "/images/source/2021/08/slide-1.png",
+  canonicalPath = Astro.url.pathname,
+  type = "website",
+  schema,
+} = Astro.props;
+const siteName = "ChinaMudLogging.com";
+const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
+const canonical = new URL(canonicalPath, Astro.site ?? Astro.url.origin).toString();
+const socialImage = new URL(image, Astro.site ?? Astro.url.origin).toString();
+const currentPath = Astro.url.pathname;
+const navItems = [
+  { href: "/", label: "Home" },
+  { href: "/about-us/", label: "About" },
+  { href: "/product/", label: "Products" },
+  { href: "/services/", label: "Services" },
+  { href: "/blog/", label: "Insights" },
+];
+const isCurrent = (href: string) => href === "/" ? currentPath === "/" : currentPath.startsWith(href);
+const defaultSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: siteName,
+    url: "https://www.chinamudlogging.com/",
+    logo: "https://www.chinamudlogging.com/images/source/2021/08/logo.png",
+    email: "sales@chinamudlogging.com",
+    telephone: "+86-183-5463-9099",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Dongying",
+      addressRegion: "Shandong",
+      addressCountry: "CN",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteName,
+    url: "https://www.chinamudlogging.com/",
+  },
+];
+const schemas = schema ? [...defaultSchema, ...(Array.isArray(schema) ? schema : [schema])] : defaultSchema;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/png" href="/images/source/2021/08/cropped-logo.png" />
+    <meta name="theme-color" content="#071b2e" />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(schemas)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="ChinaMudLogging.com home">
+          <img src="/images/source/2022/09/logo-removebg-preview.png" alt="ChinaMudLogging.com" width="287" height="61" />
+        </a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          {navItems.map((item) => (
+            <a class="nav-link" href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a>
+          ))}
+          <a class="nav-link cta" href="/contact-us/">Request a quote</a>
+        </nav>
+        <details class="mobile-nav">
+          <summary>Menu</summary>
+          <nav class="mobile-nav-panel" aria-label="Mobile navigation">
+            {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+            <a href="/contact-us/">Request a quote</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main id="main-content">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="/" aria-label="ChinaMudLogging.com home">
+            <img src="/images/source/2022/09/logo-removebg-preview.png" alt="ChinaMudLogging.com" width="287" height="61" loading="lazy" />
+          </a>
+          <p>One-stop mud logging equipment, sensor and surface logging solutions for oilfield teams worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Explore</h2>
+          <ul class="footer-links">
+            <li><a href="/about-us/">About</a></li>
+            <li><a href="/product/">Products</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/blog/">Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Products</h2>
+          <ul class="footer-links">
+            <li><a href="/product-category/mud-logging-units/">Logging units</a></li>
+            <li><a href="/product-category/mud-logging-sensors/">Sensors</a></li>
+            <li><a href="/product-category/wireless-sensors/">Wireless sensors</a></li>
+            <li><a href="/product-category/formation-evaluation/">Formation evaluation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Contact</h2>
+          <ul class="footer-links">
+            <li><a href="mailto:sales@chinamudlogging.com">sales@chinamudlogging.com</a></li>
+            <li><a href="tel:+8618354639099">+86 183 5463 9099</a></li>
+            <li>Dongying, Shandong, China</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© {new Date().getFullYear()} ChinaMudLogging.com. All rights reserved.</span>
+        <span>Technical configurations are confirmed at quotation.</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProductCard from "../components/ProductCard.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import CtaBand from "../components/CtaBand.astro";
+import products from "../data/products.json";
+import categories from "../data/categories.json";
+import articles from "../data/articles.json";
+
+const categoryImages: Record<string, string> = {
+  "mud-logging-units": "/images/source/2022/06/EXPLORER-PLS-Mud-Logging-Unit-__21071.jpg",
+  "mud-logging-sensors": "/images/source/2021/09/Mudtemperaturesensor_480x.jpg",
+  "wireless-sensors": "/images/source/2022/06/4__94250.jpg",
+  "formation-evaluation": "/images/source/2021/09/formation.jpg",
+  "drilling-monitoring": "/images/source/2021/09/dril.jpg",
+};
+const featuredSlugs = [
+  "mud-logging-unit",
+  "sls-mud-logging-unit",
+  "cnps-mhp-pressure-sensor-15000psi",
+  "wireless-standpipe-pressure-sensor-for-mud-logging-unit",
+  "mud-logging-ex-proof-degasser",
+  "shale-density-meter-for-mud-logging-unit",
+];
+const featured = featuredSlugs.map((slug) => products.find((product) => product.slug === slug)).filter(Boolean);
+---
+
+<BaseLayout
+  title="ChinaMudLogging.com"
+  description="Mud logging units, wired and wireless sensors, formation evaluation tools, and technical support for oilfield teams worldwide."
+>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <div class="eyebrow">Surface logging systems · Sensors · Formation evaluation</div>
+        <h1>See the well.<br />Act with confidence.</h1>
+        <p>One-stop mud logging equipment and sensor sourcing, built around the data your drilling team needs at the wellsite.</p>
+        <div class="button-row">
+          <a class="button" href="/product/">Explore products →</a>
+          <a class="button secondary" href="/contact-us/">Request a quote</a>
+        </div>
+      </div>
+      <div class="hero-metrics" aria-label="Catalog overview">
+        <div class="metric"><strong>{products.length}</strong><span>Product records rebuilt from the origin</span></div>
+        <div class="metric"><strong>{categories.length}</strong><span>Focused equipment families</span></div>
+        <div class="metric"><strong>1-to-1</strong><span>Requirement and configuration review</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item"><span class="trust-index">01</span> Technical product data</div>
+      <div class="trust-item"><span class="trust-index">02</span> RFQ-focused sourcing</div>
+      <div class="trust-item"><span class="trust-index">03</span> Export coordination</div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container split-feature">
+      <div class="media-frame">
+        <img src="/images/source/2021/08/services.png" alt="Oilfield technician working on wellsite equipment" width="683" height="574" loading="lazy" />
+        <div class="media-note"><strong>From signal to decision</strong><span>Equipment selected around the measurement, environment, and integration need.</span></div>
+      </div>
+      <div>
+        <div class="eyebrow">About ChinaMudLogging.com</div>
+        <h2>Mud logging equipment, without the procurement fog.</h2>
+        <p>ChinaMudLogging.com focuses on geological evaluation, surface formation evaluation, drilling monitoring, and the field equipment that supports those workflows.</p>
+        <p>We reorganized the legacy catalog into a clearer technical path so engineers and buyers can move from the measurement need to the right product family.</p>
+        <ul class="check-list">
+          <li>Mud logging units and data acquisition equipment</li>
+          <li>Wired and wireless wellsite sensors</li>
+          <li>Formation evaluation and monitoring tools</li>
+        </ul>
+        <div class="button-row"><a class="button dark" href="/about-us/">Learn about our focus →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sand">
+    <div class="container">
+      <div class="section-heading split">
+        <div>
+          <div class="eyebrow">Product families</div>
+          <h2>Start with the job the equipment must do.</h2>
+        </div>
+        <p>Browse the catalog through five practical families, then confirm the operating range, signal, hazardous-area requirement, and interface in your RFQ.</p>
+      </div>
+      <div class="category-grid">
+        {categories.map((category) => (
+          <a class="category-card" href={`/product-category/${category.slug}/`} style={`--category-image: url('${categoryImages[category.slug]}')`}>
+            <span class="count">{category.count} products</span>
+            <h3>{category.name}</h3>
+            <span>Explore family →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading split">
+        <div>
+          <div class="eyebrow">Selected equipment</div>
+          <h2>Core tools for surface logging and wellsite measurement.</h2>
+        </div>
+        <div><a class="text-link" href="/product/">View the full catalog →</a></div>
+      </div>
+      <div class="card-grid">
+        {featured.map((product) => product && <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <div class="section-heading split">
+        <div>
+          <div class="eyebrow">RFQ workflow</div>
+          <h2>A practical path from requirement to supply.</h2>
+        </div>
+        <p>Final configurations, certifications, interfaces, and commercial terms are confirmed for the actual wellsite requirement.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step"><h3>Define the measurement</h3><p>Share the parameter, range, environment, output signal, and existing system interface.</p></div>
+        <div class="process-step"><h3>Review the configuration</h3><p>Match the requirement to a catalog product or a configured equipment package.</p></div>
+        <div class="process-step"><h3>Confirm the quotation</h3><p>Align specifications, quantity, documentation, lead time, delivery term, and support scope.</p></div>
+        <div class="process-step"><h3>Coordinate supply</h3><p>Prepare equipment, documentation, shipping, and the agreed post-delivery support.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section blue-wash">
+    <div class="container">
+      <div class="section-heading split">
+        <div>
+          <div class="eyebrow">Mud logging basics</div>
+          <h2>Make the technical conversation easier.</h2>
+        </div>
+        <div><a class="text-link" href="/blog/">Browse all insights →</a></div>
+      </div>
+      <div class="article-grid">
+        {articles.slice(0, 3).map((article) => <ArticleCard article={article} />)}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title="Need a mud logging unit, sensor package, or individual replacement sensor?" />
+</BaseLayout>

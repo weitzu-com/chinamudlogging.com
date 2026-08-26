@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+---
+
+<BaseLayout title="Services" description="Requirement review, product configuration, export coordination, and technical support for mud logging equipment and sensors.">
+  <PageHero eyebrow="Services" title="Support built around the equipment decision." description="From requirement definition to quotation and delivery coordination, the service path keeps the technical and commercial details connected." />
+  <section class="section">
+    <div class="container">
+      <div class="section-heading split">
+        <div><div class="eyebrow">What we can do</div><h2>Two supply routes, one accountable conversation.</h2></div>
+        <p>Source complete mud logging systems and sensor packages, or identify individual sensors and replacement components for an existing setup.</p>
+      </div>
+      <div class="card-grid">
+        <article class="product-card"><div class="product-card-body"><span class="badge">Systems</span><h3>Mud logging equipment packages</h3><p>Complete units, data acquisition equipment, field monitoring modules, and supporting accessories configured for the project scope.</p><a class="text-link" href="/product-category/mud-logging-units/">Explore logging units →</a></div></article>
+        <article class="product-card"><div class="product-card-body"><span class="badge">Components</span><h3>Sensors and spare parts</h3><p>Wired and wireless pressure, level, density, temperature, flow, torque, hook load, depth, and pump stroke sensors.</p><a class="text-link" href="/product-category/mud-logging-sensors/">Explore sensors →</a></div></article>
+        <article class="product-card"><div class="product-card-body"><span class="badge">Solutions</span><h3>Requirement and integration review</h3><p>Clarify signal type, range, hazardous-area need, mounting, protocol, and compatibility before the offer is finalized.</p><a class="text-link" href="/contact-us/">Discuss a requirement →</a></div></article>
+      </div>
+    </div>
+  </section>
+  <section class="section dark">
+    <div class="container">
+      <div class="section-heading split">
+        <div><div class="eyebrow">Information checklist</div><h2>A better RFQ starts with better inputs.</h2></div>
+        <p>Include what is known. Unknown items can be resolved during the technical review.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step"><h3>Application</h3><p>Measurement point, rig or wellsite context, and the operational problem to solve.</p></div>
+        <div class="process-step"><h3>Technical range</h3><p>Expected minimum and maximum values, accuracy target, and response requirement.</p></div>
+        <div class="process-step"><h3>Interface</h3><p>Power, output signal, protocol, connector, cable, mounting, and receiving system.</p></div>
+        <div class="process-step"><h3>Commercial scope</h3><p>Quantity, destination, documentation, certification, delivery term, and target date.</p></div>
+      </div>
+    </div>
+  </section>
+  <CtaBand title="Send the application, range, signal, quantity, and destination." button="Prepare an RFQ" />
+</BaseLayout>

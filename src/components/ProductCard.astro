@@ -1,0 +1,23 @@
+---
+interface Product {
+  title: string;
+  slug: string;
+  summary: string;
+  image: string;
+  category: { slug: string; name: string };
+}
+
+const { product } = Astro.props as { product: Product };
+---
+
+<article class="product-card" data-product data-category={product.category.slug} data-search={`${product.title} ${product.summary} ${product.category.name}`.toLowerCase()}>
+  <a class="product-card-image" href={`/product/${product.slug}/`} tabindex="-1" aria-hidden="true">
+    <img src={product.image} alt="" width="600" height="600" loading="lazy" />
+  </a>
+  <div class="product-card-body">
+    <span class="badge">{product.category.name}</span>
+    <h3><a href={`/product/${product.slug}/`}>{product.title}</a></h3>
+    <p>{product.summary}</p>
+    <a class="text-link" href={`/product/${product.slug}/`}>View specifications →</a>
+  </div>
+</article>

@@ -1,0 +1,2271 @@
+[
+  {
+    "id": 305,
+    "title": "Battery and charger used for the transmission box of wireless sensors",
+    "slug": "battery-and-charger-used-for-the-transmission-box-of-wireless-sensors",
+    "summary": "Battery and charger used for the transmission box of wireless sensors Battery and charger is used for the transmission box of all the wireless sensors .",
+    "image": "/images/source/2022/06/4__94250.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "1",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "Product Introduction",
+          "Charger Output voltage: 4.2v",
+          "Output current: 400 mA",
+          "Input voltage: 110v-240v",
+          "Product Specification",
+          "Rechargeable Battery Nominal voltage: 3.7v.",
+          "Nominal capacity: 4400mAh",
+          "Working temperature: -40-70 °c",
+          "Product feature and application",
+          "Rechargeable Battery, it’s used for the transmission box of all the wireless sensors.",
+          "Product details",
+          "The battery is charged by the specified charger. The single-cell battery charging current is <2.5a, and the charging voltage is 4.2 (+0.03)v. If the battery voltage is lower than 3.0v, the battery is charged with 0.25a current. When the battery voltage reaches 3.0v. Then, the standard current is used for charging. If the battery voltage is always lower than 3.0v, the charging is stopped. The battery pack is designed with a protective circuit board to ensure the battery is safe from misuse. The voltage is greater than 4.35 ± 0.05v overcharge protection circuit, the charging current is turned off. When the voltage is between 2.20 and 2.40v, the overdischarge protection starts, the discharge current is turned off, and the current consumption is less than 10μA.When the discharge current exceeds 5.0A, the overdischarge current protection function is activated and the discharge current is turned off. 12.2.3 The battery pack charging temperature range is -20-60 °c; the battery pack discharge temperature range is -40-70 °c; the battery pack storage temperature is -55-80 °c; the battery pack working environment humidity is less than 70%.",
+          "Product qualification",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long. 6.Delivery shipping and services CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/battery-and-charger-used-for-the-transmission-box-of-wireless-sensors/"
+  },
+  {
+    "id": 245,
+    "title": "CNPS-8D08 Mud Conductivity Sensor",
+    "slug": "cnps-8d08-mud-conductivity-sensor",
+    "summary": "Main specifications and technical parameters The working voltage and the output signal: working voltage: 15 ~ 28VDC Output signal: 4 ~ 20mA (second line) Ambient temperature: -30～+70℃ Measuring…",
+    "image": "/images/source/2022/06/u3473978429988466575fm26gp0__20462.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "33333",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "THE WORKING PRINCIPLE AND MAIN STRUCTURE OF THE PRODUCT",
+          "By transmitting a constant amplitude and fixed frequency AC signal to the ring probe, for the liquid with different conductivity, the probe secondary will induce the same frequency signal of the corresponding amplitude, and the corresponding voltage signal will be obtained after the subsequent circuit processing. At the same time, the voltage signal corresponding to the real time temperature is taken. The standard conductivity values are compensated to 25 degree by function calculation. The value is displayed by LCD and converted to 4 to 20mA signal output at the same time. The principle block diagram is shown in Figure 3.1. Fig. principle block diagram Fig.3.2 Structure block diagram Figure 3.2 shows，The left side of the diagram is the front view of the CNPS-8D08 digital conductivity sensor. The right side is the back view of the transmitter of the CNPS-8D08 digital conductivity sensor. Installation and use： Precautions for safety of explosion-proof： The product is equipped with earthing terminals, and users should reliably connect with them when they are using products.。 With respect to cable frame site site operation of the staff and not easily smashed touch, damage, erection of safe and reliable principle。 The installation and maintenance of the field must follow the warning words of “power failure and opening”. The outer diameter of the cable sheath is 8. The tightened nut should be tightened when the field is used, so that the inner diameter of the sealing ring is tightly clung to the outer diameter of the cable. The cable sheath of the seal ring should be replaced in time. There should be no harmful gas on the installation site for aluminum alloy. The shell of the transmitter is made of aluminum alloy, but because the water quality of the wellsite is often alkaline, it is still possible to produce a certain corrosion for a long time. It is suggested that the external protection measures should be strengthened to improve its life and reliability. the maintenance must be carried out in a safe place. When the installation site is confirmed that no flammable gas exists, it can be maintained. When the user installs and maintains the product, it must comply with the relevant regulations of the GB50058-92 “power device design specification for explosive and fire dangerous places” and GB3836.15-2000. The probe should prevent the generation of static electricity。 install： The CNPS-8D08 digital conductivity sensor is installed in the mud tank. When installing, the pole will be placed vertically, and the slurry level is at least 5cm from the probe. The distance between the probe and the mud tank should also be guaranteed at least 5cm. when more than two SK-8D08 digital electrical conductivity sensors are installed in the same mud tank at the same time, they should be assured that their probe planes are located on one line and at least 5cm at a distance. The plug is connected to the CAN node. When the installation is in place, as shown in Figure 1. Installation diagram Common fault and elimination method Fault Causes and methods of exclusion Display “OT_CR” on the screen.",
+          "Three reasons may cause the error to show that the temperature of the measured dielectric temperature exceeds the applicable temperature of the CNPS-8D08 conductivity sensor; the conductivity range of the mud conductivity exceeds the SK-8D08 conductivity sensor; the working temperature of the transmitter is overheated or overcooled.",
+          "CNPS-8D08 the temperature of the measured medium of the conductivity sensor is 10~80 degrees.",
+          "CNPS-8D08 the conductivity of the conductivity medium is less than 300ms/cm.",
+          "CNPS-8D08 the transmitter conductivity sensor temperature:－30℃～70℃。 After displaying “R_J_C” or “A_J_C” on screen, press “key 1” can not carry out J calibration.",
+          "The reason for the wrong indication is that the conductivity of the sample medium is too small.",
+          "The premise of J calibration is that the conductivity value of standard sample should be greater than 10ms/cm. Display “RTDC” on the screen, press “Key 1 “cannot be calibrated by RTD",
+          "The reason for causing the wrong indication is that the temperature of the standard sample is too low.",
+          "The prerequisite for J calibration is that the temperature of standard mud should be greater than 3 degrees. Electrical conductivity shows instability.",
+          "Correct the sensor to the point where it is far away from the interference. Electrical conductivity is incorrect.",
+          "Incorrect or inappropriate installation of the sensor.",
+          "The demarcation is incorrect and the calibration is re calibrated. Other Please consult the technical staff of our company.",
+          "Accessories : The standard length of the middle pipe of the SK-8D08 conductivity sensor is 2m, and the user can change the length of the intermediate pipe when ordering, according to the actual demand."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-8d08-mud-conductivity-sensor/"
+  },
+  {
+    "id": 246,
+    "title": "CNPS-BC Proximity Sensors ( Pump Strokes)",
+    "slug": "cnps-bc-proximity-sensors-pump-strokes",
+    "summary": "CNPS-BC Proximity Sensors ( Pump Strokes)",
+    "image": "/images/source/2022/06/u3473978429988466575fm26gp0__22914.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "15",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "WORKING PRINCIPLE",
+          "The CNPS-BC Pump Punch Speed Sensor is an inductive proximity switch sensor used in the oil field to measure pump or turntable speed. It has a wide range of power supply voltage, high repeatability, fast frequency response, long service life, vibration resistance, corrosion resistance and waterproof. In addition to oil fields, this proximity switch sensor is also suitable for various control such as machine limit, detection, counting, speed measurement, liquid level signal, automatic protection, etc. It is widely used in machinery, mining, metallurgy, plastics, textile, chemical industry, light industry. , tobacco, electricity, railways, military and other departments.",
+          "TECHNICAL INDICATORS",
+          "1, working temperature: -25 ~ 70 ℃",
+          "2, rated working voltage: 5~30VDC",
+          "3, the maximum output current: 200mA",
+          "4, effective action distance: ≤ 30mm",
+          "5, the highest working frequency: 100Hz",
+          "6, with polarity and short circuit protection 3 Installation and use",
+          "1, lead line color standard: brown power + blue output",
+          "2, installation and use: The pumping sensor can be fixed to the mud pump head by the bracket, or the appropriate part of the turntable, and the closest distance between the position of the sensing surface of the measured object and the end surface of the sensor is within 30 mm.",
+          "(According to the influence of the use environment, the rated working distance is generally taken. 80%), plus the working voltage, when the end of the inductive sports sensor is close, the indicator light is on; when away from the sensor, the indicator is off. The turntable speed sensor can be fixed to the appropriate part of the drive shaft of the turntable with the bracket. It should be convenient to install and repair. The model of the drill is selected. A piece of iron with a length and width of 30mm is welded on the shaft of the drive shaft or the airbag clutch. The position of the end face should be close to the end face of the sensor. Adjust the fixing nut of the sensor so that the distance between the iron sensor is within the effective range of the working distance.",
+          "General fault judgment and elimination If the pump and the rotary speed sensor use no signal output under normal rotation, first observe whether the indicator light on the sensor flashes accordingly. If the indicator light is off or steady, check whether the extension cable is open or shorted. After determining that the extension cable is normal, test the operating voltage of the sensor, and there should be a corresponding working voltage between the brown and black of the lead line. If the working voltage is normal, the metal body can be close to the end face of the sensor, the indicator light should be on, and should be off when away, otherwise the sensor is damaged. If the sensor is not damaged, adjust the distance between the sensor and the measured object until the indicator light is on and off. If the pump speed indicator is faulty, it must be completely sealed at the factory. It cannot be disassembled and repaired on site, and needs to be repaired by the factory.",
+          "Maintenance Strictly follow the wire color standard wiring marked in this manual. It must be powered by the tributary power supply and ensure that the power supply ripple factor is <3%. Care should be taken not to use metal shavings or oil stains with metal shavings to contaminate the sensing surface to avoid magnetic short circuits and malfunction of the sensor. The installation point should be kept away from direct sunlight to improve its reliability. Do not exceed the rated technical parameters using the laying of the cable, so as not to hinder the on-site operation of the well site staff and the safety and reliability of the erection. If the power line and power line pass near the proximity of the switch point line, in order to prevent the proximity switch from malfunction or damage, shield it with a separate metal tube. Due to the different assembly positions, the number of pulses generated by the sensor does not necessarily match the pump stroke and the rotational speed, and can be solved by setting the correction factor by the receiving instrument. When the proximity switch uses an inductive load, if the system has a large interference pulse, clear the interference pulse suppression device near the proximity switch terminal."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-bc-proximity-sensors-pump-strokes/"
+  },
+  {
+    "id": 247,
+    "title": "CNPS-DNJ Electric Torque Sensor",
+    "slug": "cnps-dnj-electric-torque-sensor",
+    "summary": "CNPS-DNJ Electric Torque Sensor",
+    "image": "/images/source/2022/06/unnamed-file-1__77490.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "155",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "WORKING PRINCIPLE",
+          "CNPS-DNJ AC/DC dual-purpose electric torque sensor transmitter",
+          "AC and DC rated input 1000A ~ 2000A",
+          "Rated output DC DC0~5v or DC0~20mA or 4~20mA.",
+          "As the isolated AC and DC current of the main loop system of 1200v and below,",
+          "The working power supply DC±12V～±15V or",
+          "Single power supply +12 V ~+24V",
+          "Measuring bandwidth DC~20HZ",
+          "Measuring arbitrary waveform",
+          "The maximum power consumption is +40mA, -20mA",
+          "Response time ≤ 300ms",
+          "Measuring aperture ¢ 50mm",
+          "Output can provide standard DC current signal for long distance transmission.",
+          "FEATURE",
+          "The clamp type is easy to install, and it is not necessary to remove the bus bar. In special cases, it can be installed online without power failure. Terminal wiring is easy to install ·Insulation of primary and secondary sides The true rms conversion (TRMS) is used for AC measurement, and it can also be used in the case of waveform distortion. Guaranteed measurement accuracy · Excellent long-term stability without cumulative error Good temperature characteristics (≤0.04%°C)·Overload capacity is 10 times of rated value Highly reliable MTBF: 2 x 104 hours · Fully enclosed for use in harsh environments Thin-thin design, small size, light weight ·Complete magnetic circuit protection Superior performance / price ratio · Advanced SMT surface mounting technology 3 Application field Widely used in oil field and power system microcomputer monitoring, AC frequency converter, new inverter, rectifier, welding equipment, safety power supply, railway signal monitoring, CNC machine tools, railway trams, trolley buses, industrial automation control, industrial and mining enterprises Automation and many other areas, as well as non-contact measurement of current.",
+          "Electrical parameters Type HU-404",
+          "Parameter symbol Rated input current IPN AC+DC 1000A",
+          "Rated output ISN DC0-4V",
+          "Accuracy （%Fs） ±1 Bias Vin=0 ≤0.6%",
+          "Rated output Linearity εL ≤1%",
+          "load capacity ≥10K",
+          "Working power supply VC DC+4.8V",
+          "Response time Tr ≤300ms",
+          "Measurement bandwidth f DC～20 KHZ",
+          "Measuring waveform Any Wave Power consumption 29mv",
+          "Temperature drift ≤0.04%/℃（-10℃~+70)",
+          "Insulation withstand voltage Vd AC3KV/50HZ/1min",
+          "Working temperature TA -10℃~+70℃",
+          "Storage ambient temperature TS -25℃~+85℃"
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-dnj-electric-torque-sensor/"
+  },
+  {
+    "id": 248,
+    "title": "CNPS-DW-A11 Depth Encoder",
+    "slug": "cnps-dw-a11-depth-encoder",
+    "summary": "CNPS-DW-A11 Depth Encoder",
+    "image": "/images/source/2022/06/drawwork-sensor__62861.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "155",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "WORKING PRINCIPLE",
+          "The winch sensor is installed on the winch shaft to monitor the angular displacement caused by the rotation of the winch shaft during the whole drilling process. Through calculation, the change of hook height during drilling can be obtained, and the current drilling depth can be obtained. CNPS-DW-A11 winch sensor is equipped with two photoelectric switches and a piece of shield with teeth. When the shield rotates with the winch shaft, the infrared light in the gap between the two photoelectric switches in the sensor is blocked or turned on, and two sets of corresponding electrical pulse signals are sent to the instrument after recognition and processing. The corresponding direction and variation of angular displacement can be obtained.",
+          "TECHNICAL INDICATORS",
+          "Working voltage: 5V DC",
+          "Output level: high level 5V",
+          "low level 0V",
+          "Working temperature: – 40 C ~ 80 C",
+          "Power consumption: 250MW",
+          "Response time: 150 S 3",
+          "Operation 3.1 Sensor installation",
+          "Installation Position: Both ends of the drum shaft can be installed, but the output phase sequence is opposite. In order to correctly determine the direction of the rotating shaft, the acquisition software should have the corresponding reverse switch. In order to improve the anti-jamming ability of the sensor, the shielding layer of the signal cable must have good grounding at the instrument end. The signal cable must stay away from the power cable.",
+          "Installation procedures: Remove the drum shaft end face shield and tracheal connector, G3/4 of the sensor teeth connected, and in the connection of the tracheal connector, fixed stainless steel frame and the tracheal line Carla firmly, installed shield, through the cable to the receiving instrument. 3.2 Sensor wiring The winch sensor is equipped with RUVP shielded cable output line.",
+          "Red: +5V Black: 0V",
+          "Blue: signal A",
+          "Yellow: signal B 4 common fault judgement and elimination If the winch sensor in the winch shaft rotation process, no signal output, that is, two pulse or one pulse signal fault, should first check the extension of the cable breakage or damage. If the winch sensor is suspected to be faulty, the winch sensor shaft is slowly rotated when the power is on, and the output voltage of the signal A-foot and B-foot of the sensor is measured respectively by the multimeter DC voltage block. If the winch sensor works normally, the output voltage is higher than 4.3V and lower than 0.5V. 5 maintenance External protective measures such as waterproofing and pollution prevention are adopted to improve their life and reliability. The principle of erecting cables is that it does not interfere with the field operation of the workers in the well site and is not easy to be smashed, safe and reliable."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-dw-a11-depth-encoder/"
+  },
+  {
+    "id": 249,
+    "title": "CNPS-FLM Flow Out Sensor(Paddle Type)",
+    "slug": "cnps-flm-flow-out-sensorpaddle-type",
+    "summary": "Working principle Using the fluid fluid continuity principle and the Bob’s effort equation, as well as the analysis of the baffle force, the flow relationship between the flow and the sensor baffle can be…",
+    "image": "/images/source/2022/06/HTB1s6bNgSzqK1RjSZPc762TepXas__19813.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "154",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "This product uses a proximity sensor transmitter to replace the traditional potentiometer sensor, and replaces the contact measurement with non-contact measurement, which overcomes the damage caused by the long-term repeated back and forth sliding wear of the potentiometer sensor, thereby greatly improving the accuracy of the flow sensor. And service life.",
+          "PERFORMANCE",
+          "Working temperature: -20—+80 °C 2,",
+          "The baffle angle: 0-45 ° C",
+          "Current output for current sensor: 4-20Ma 4,",
+          "Current sensor power supply voltage: 10-24VDC 5,",
+          "Measurement range: change the weight of the weight on the baffle to change the range, no absolute calibration Wiring regulations.",
+          "NOTE",
+          "External wiring is: red: power positive (10-24 VDC)",
+          "Black: signal positive",
+          "Shielded wire: outer casing shield",
+          "Installation and use methods and precautions This sensor is compatible with the replacement of the same type of mud flow sensor. The sensor design has been applied to different rigs and different size outlet pipelines. The relative position of the baffle installation can be moved up and down, the screw holes can be installed in a wrong position, and the baffles are opened to facilitate the adjustment as needed. 3, the sensor is equipped with two kinds of weighting blocks, the field is free to choose according to different situations, can be used alone or in two. The sensor can weld the fixing frame attached to the sensor to the outlet line of the appropriate slot, and then fix the sensor to the frame by bolts. It can also be fixed in the mud groove at the mud outlet by the fixing frame. The intrusion depth of the board is not to be retarded by the grit, and after installation, the baffle should be inspected to freely oscillate in the space inside the tube and not in contact with the inside of the line. At the sensor installation, it should be noted that there is enough slope to prevent the accumulation of grit, which causes the sensor output signal to be inaccurate. When the mud adheres to the moving parts on the sensor, it should be cleaned in time to ensure reliable and accurate operation of the sensor. The laying of the erected cable is based on the principle of not hindering the on-site operation of the well site staff and being difficult to bump, damage, and erect safely and reliably. The current type sensor is equipped with a proximity sensor transmitter in the sealed junction box. The zero point and full scale have been adjusted before leaving the factory. Please consult the professional if necessary. Fault phenomenon and on-site processing methods If the flow sensor is in normal use and there is no signal output, check whether the added cable is open or shorted.",
+          "2 If the baffle has a stuck phenomenon and does not change the angle, the upper stainless steel cover should be disassembled, the internal mechanical parts should be inspected, and after the mechanical transmission failure is eliminated, the lubricating oil should be added to the moving mechanical parts. How to replace the proximity sensor Open the shield and remove the proximity sensor for testing: Connect a power supply to the front of the sensor as shown in Figure 1. When the proximity distance between the two is 3-8mm, the sensor output should be 4-20MA, otherwise replace the new proximity sensor."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-flm-flow-out-sensorpaddle-type/"
+  },
+  {
+    "id": 250,
+    "title": "CNPS-MHP Pressure Sensor 15,000psi",
+    "slug": "cnps-mhp-pressure-sensor-15000psi",
+    "summary": "CNPS-MHP Pressure Sensor 15,000psi",
+    "image": "/images/source/2022/06/15362040831-__40915.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "33333",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "WORKING PRINCIPLE",
+          "The CNPS-MHP type is a dry ceramic piezoresistive sensor imported from Germany using ceramic materials and refined by special techniques. Ceramic is a recognized material that is highly elastic, corrosion resistant, abrasion resistant, impact resistant and vibration resistant. The thermal stability of the ceramic and its thick film resistance can be as high as -40 ° C ~ +120 ° C, and it has high precision and high stability. The degree of electrical insulation is >2kv, the output signal is strong, and the long-term stability is good. There is a tendency to completely replace other types of sensors in European and American countries. The output of the sensor adopts the 4-20 mA two-wire industrial standard. The outer casing is made of corrosion-resistant stainless steel and German Hirschmann joints. The protection grade can reach 1P65. In addition to oil fields, it is widely used in industrial control, mining, food processing, automobiles, Many industries such as electronics and medical care.",
+          "TECHNICAL INDICATORS",
+          "Power supply voltage: 15~36VDC",
+          "Signal output: 4-20mA,",
+          "two-wire system Linearity to hysteresis: ≤0.3%FS (25℃)",
+          "Measurement range: 0-2.5bar",
+          "Stability: ±0.5% FSO/year",
+          "Operating temperature range: -40~+85℃",
+          "Temperature effect: ≤±0.015%FS/℃",
+          "Electrical line protection: polarity protection, over current protection 3 Installation and use The sensor can be mounted directly on a suitable threaded interface. The mounting position has no effect on the measurement. In order to meet the CE standard, a shielded cable must be used. The shield of the cable must be connected to the casing and the ground. Do not pull or pull the lead of the sensor when using it. Do not use the lead to pull the sensor. The aviation plug should not be immersed in water. Wrap the waterproof object around the connector. 4 Fault judgment: If there is no signal output or output value during the pressure sensor drilling process, first check if the extension cable is open or accessible. When the pressure reading is not correct, first check if the sensor is missing hydraulic oil or if there is air bubbles in the oil circuit. If there is no oil, use the manual pump to refuel, and if there are bubbles, the bubbles will be drained. If the pressure sensor is suspected to be faulty, the sensor and piston pressure gauge can be disconnected. According to the engineering range of the sensor, when the input voltage is zero and full scale, the signal current should be about 4 and 20 mA respectively, otherwise the sensor is faulty and sent back to the company. service. There are two potentiometers in the sensor to adjust the sensor output zero and full scale values. You can see the Hirschmann connector and the sensor back cover. The 504# is zero point adjustment and the other potentiometer is full scale adjustment. Through current and standard pressure source, adjust the 504# potentiometer when the pressure is zero, the sensor output is 4mA, then adjust the pressure source to the full-scale pressure, adjust the other potentiometer, so that the sensor output 20mA, so repeat the adjustment Three times. For oilfield users, the general demand is: 1.6Mpa, 6Mpa, 20Mpa, 40Mpa. Available for any other range from 0 to 50 MPa."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-mhp-pressure-sensor-15000psi/"
+  },
+  {
+    "id": 251,
+    "title": "CNPS-ML-B11 Mud Density Sensor",
+    "slug": "cnps-ml-b11-mud-density-sensor",
+    "summary": "CNPS-ML-B11 Mud Density Sensor",
+    "image": "/images/source/2022/06/unnamed-file__59716.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "45",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "WORKING PRINCIPLE",
+          "The CNPS-ML-B11 drilling fluid density sensor uses a differential pressure differential mode of operation. Two pressure bellows with corrugated membranes installed at different heights detect the pressure difference produced by the liquid at different depths. The pressure difference is proportional to the liquid density. The two “H” shaped vibration beams on the sensor convert the differential pressure signal into a frequency signal, send it to the pulse counter, and then pass the difference between the two frequencies directly to the CPU (microprocessor) for data processing. After D/A conversion, Output 4 to 20mA standard DC current signal corresponding to drilling fluid density can also be directly transmitted by digital signal. EJA118W transmitter can also transmit data through digital communication mode through I/O port and external device BT200. That is to use HART protocol (1.2kHz) to superimpose data signal on 4~20mA signal line. When data communication, frequency signal No interference effect on the 4-20mA signal.",
+          "2 Technical indicators Power supply:+17V ～ 42V DC（Recommend +24V DC）",
+          "Measuring range:0.96 ～ 2.76g/cm3（Can be set according to user needs）",
+          "Output current:4～20mA DC",
+          "Measurement accuracy: ±0.5％FS",
+          "Environmental conditions:Sensor working temperature -40℃ ～ +85℃",
+          "Relative humidity:5 ～ 95%RH 3",
+          "Operation 3.1 Sensor installation The distance between the two pressure diaphragm of the CNPS-ML-B11 drilling fluid density sensor is 45cm and 60cm, the outlet density sensor is 45cm, and the entrance density sensor is 60cm。 According to the needs of measurement, we choose to install sensors on the drilling fluid inlet and drilling fluid outlet respectively. When drilling fluid level fluctuates, the upper and lower flanges must be immersed in the mud to keep it upright and not tilted, otherwise it will affect the accuracy of measurement. The transmitter changer shall be above the mud level and not immersed in mud.。 3.2 Sensor connection Open the seal box cover sensor terminal,”+” SUPPLY +24V “-” power supply terminal connected to the signal shown in Figure 1. Transmitter terminal Earthing end Earthing end Figure 1 Wiring diagram of density sensor 4 Sensor adjustment The CNPS-ML-B11 type drilling fluid density sensor has been adjusted at the time of leaving the factory, and generally needs no on-site adjustment. If the sensor is in trouble, it must be adjusted on-site. The special calibrating instrument BT200 must be used. The adjustment method is as follows:",
+          "(1）Remove the protective cover of the lower end of the sensor, install the special pressure flange plate on the sensor diaphragm at the bottom of the sensor, and connect the outlet of the pressure detector and the pressure flange inlet to ensure that the seal is not leaking.",
+          "(2）Press the diagram to connect sensors, digital multimeter, DC power supply and calibrating instrument BT200 together, as shown in Figure 2. Figure 2 Density sensor adjustment connection diagram",
+          "(3）The measuring range of CNPS-ML-B11 type density sensor is set to 0.96 to 2.76g/cm3 when the factory is released. When the sensor is placed in the air, the output current is 3.20mA.。 According to the data given in Table 1, the output pressure of the pressure detector is adjusted and the output current value corresponding to the pressure difference is observed. If the output value deviates from the larger, the BT200 calibrator should be used to adjust the zero. Table 1 Liquid density — the corresponding relation between pressure difference and output current of two pressure diaphragm. Two pressure diaphragm’s spacing 45cm（Export density） Density（g/cm3 ） 0.96 1.32 1.68 2.04 2.40 2.76 Pressure difference（kPa） 4.32 5.94 7.56 9.18 10.80 12.42 Output current（mA） 4.00 7.20 10.40 13.60 16.80 20.00 Two pressure diaphragm’s spacing is 60cm（Entrance density） Density（g/cm3 ） 0.96 1.32 1.68 2.04 2.40 2.76 Pressure difference(kPa) 5.76 7.92 10.08 12.24 14.40 16.56 Output current(mA) 4.00 7.20 10.40 13.60 16.80 20.00 5 Sensor testing If you want to use a simple way to test the sensor linearity, you can use the check flange, as shown in Figure 3. Remove the sensor shield and install the check flange on the sensor’s lower end induction diaphragm. In the plastic hose in the water, first check the flanges of the deflation screw loosened, to add a certain amount of water to make the gas screw water overflow, and then screw tightened, gently tapping plastic hose, the tube wall of bubbles out. Then the power supply is attached and the ammeter is put into the output circuit to change the height of the liquid surface in the plastic hose. It can be seen that the output signal is changed. This change should be roughly in accordance with table",
+          "2. Table 2 The relationship between the density of liquid and the height of water column and the output current. Two pressure diaphragm’s spacing 45cm（Export density） Density（g/cm3） 0.96 1.32 1.68 2.04 2.40 2.76 The height of water（mm） 430 600 750 920 1080 1240 Output current（mA） 4.00 7.20 10.40 13.60 16.80 20.00 Two pressure diaphragm’s spacing is 60cm（Entrance density） Density（g/cm3） 0.96 1.32 1.68 2.04 2.40 2.76 The height of water（mm） 580 790 1010 1220 1440 1650 Output current（mA） 4.00 7.20 10.40 13.60 16.80 20.00",
+          "3 Sensor test connection diagram 6 Maintenance",
+          "(1）The transmitter part must be sealed to prevent water damage.",
+          "(2）The sensor is designed to withstand shock and vibration, but it should be installed in places with less impact and less vibration.",
+          "(3）The two flanges of the sensor should be flushed regularly. If the cleaning is not in time, the sludge will be blocked and the flange will affect the measurement results. It is forbidden to clean mud with screwdrivers and other sharp appliances, so as not to damage the flange diaphragm, and affect the measurement results.",
+          "(4）When the sensor is not used, the residual liquid in the flanges of the flanges should be thoroughly cleaned."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-ml-b11-mud-density-sensor/"
+  },
+  {
+    "id": 252,
+    "title": "CNPS-ML11 Fluid Level Sensor",
+    "slug": "cnps-ml11-fluid-level-sensor",
+    "summary": "The CNPS-ML11 type drilling fluid volume sensor is an ultrasonic liquid level sensor which combines the sensing technology and the electrical signal processing. It is used to monitor the change of the volume…",
+    "image": "/images/source/2022/06/3-2-300x300__90827.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "65",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "WORKING PRINCIPLE",
+          "The CNPS-ML11 type drilling fluid volume sensor is composed of an ultrasonic transmitter, a receiving device and a transmitter. The ultrasonic wave emitted by the ultrasonic transmitting device is reflected by the surface of the object, and then is received by the receiving device. The transmitter converts the signal generated during ultrasonic emission and reception to the standard current signal. The probe of the sensor sends out a series of ultrasonic pulses, while the ultrasonic pulse returns after receiving the liquid level, and is received by the sensor. The filtering device in the sensor can distinguish true echoes from the liquid surface from various false echoes from sound waves, wave noise and rotating agitator blade noise. The pulse wave is converted from the time of temperature compensation to the time used by the emission to the liquid surface and then back to the sensor.",
+          "2 Technical indicators",
+          "Power: +15V ~ 30V DC (recommended +24V DC)",
+          "Measurement range: 0.25 m to 5 m",
+          "Output current: 4 ~ 20mA",
+          "Measurement accuracy: + 0.5%FS",
+          "Environmental conditions: working temperature -40 C ~ +60 C",
+          "Relative humidity: 5 ~ 95%RH",
+          "3 Operation 3.1 Sensor installation The ultrasonic level sensor should be installed on the sensor mounting rack. When installing, sound wave propagation route should be no obstacle and perpendicular to the liquid surface. Be careful not to cross the filling, pipeline, weld, ladders, etc., and not to the wall. During installation, the distance between the sensor end and the highest liquid level should be kept at least 25cm. 3.2 Sensor connection Open the seal box cover sensor terminal, “+” +24V “-” power supply terminal connection signal. 4、Sensor adjustment",
+          "(1）After the electricity, enter the automatic operation mode",
+          "(2）At the same time press 20mA20and 4mA 4 Touch key",
+          "(3）When the display of C4 represents the initialization of the 4mA calibration",
+          "(4）Wait 3 seconds ,it will show the value that has been saved，And then press 20mA20or4mA 4 ，The value required for the up and down movement selection（=Mud pool height + The distance between the end of the sensor and the top of the mud pool），The loosen bond",
+          "(5）After waiting for 6 seconds, enter the auto run mode",
+          "(6）At the same time press 20mA20和4mA 4 key two times，Display sequence C4-C20, release the key",
+          "(7）When C20 is displayed, 20mA calibration initialization is indicated",
+          "(8）Wait for the stored value to appear and press 20mA20和4mA 4 key，Move up and down to select the desired value（=The distance from the end of the sensor to the top of the mud pool），then release the key",
+          "(9）Repeat step 5",
+          "(10) Press simultaneously 20mA20 and 4mA 4 key three times，display order：C4→C20→bL，then release the key；",
+          "(11)Initial calibration for blind zone values when bL is displayed",
+          "(12)Repeat step 4, but select the desired value > 25mm",
+          "(13)Repeat step 5",
+          "(14)Press simultaneously 20mA20 and 4mA 4 key four times，display order：C4→C20→bL→SP，then release the key",
+          "(15)When the SP is displayed, the calibration initialization indicating the response speed value",
+          "(16)Repeat step 4, but generally select the desired value of 2",
+          "(17)Repeat step 5",
+          "(18)Press simultaneously 20mA20and 4mA 4 key five times，display order:C4→C20→bL→SP→FLS，then release the key",
+          "(19) When FLS is displayed, it indicates that the fault protection calibration initialization",
+          "(20）Repeat step 4 to select the desired value, usually 1 or 2",
+          "(21）Repeat the fifth step",
+          "(22）Press simultaneously 20mA20and 4mA 4 key five times，display order：C4→C20→bL→SP→FLS→FSE，then release the key",
+          "(23）Repeat step 4 to initialize the calibration fail-safe duration",
+          "(24）Repeat step 5 to set the value you need (any value can be selected from 0 to 15)",
+          "Ultrasonic sensor calibration operation has been completed through the above series of steps.",
+          "NOTE",
+          "(1）C4 means 4mA",
+          "(2）C20 means 20 mA",
+          "(3）BL：eans Dead zone, generally set> 25cm",
+          "(4）SP：The response speed refers to the speed of the reflected wave feedback to the emitted wave. There are 4 options in total. Normally, it is set to 2 (distinguishing the agitator interference)",
+          "(5）FLS：Failure protection value, loss of echo or misoperation, there are 3 choices of output modes",
+          "(6）UN：Unit selection: There are 2 options, 1 is metric, 2 is imperial",
+          "(7）FSE：Fail-safe maintenance time, total (0~15 minutes) selection, optional one。 5 Maintenance and maintenance Pay attention to keep clean, no water vapor and oil can enter the operation panel, signal cable inlet should pay attention to seal, prevent water and oil from entering."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-ml11-fluid-level-sensor/"
+  },
+  {
+    "id": 253,
+    "title": "CNPS-MT-B11 Mud Temperature Sensor",
+    "slug": "cnps-mt-b11-mud-temperature-sensor",
+    "summary": "WORKING PRINCIPLE",
+    "image": "/images/source/2022/06/HTB1cOujcBWD3KVjSZKPq6yp7FXaK.jpg_640x640__13906.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "52",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "WORKING PRINCIPLE",
+          "The CNPS-MT-B11 type drilling fluid temperature sensor is composed of a temperature detector and a transmitter. When the drilling fluid temperature changes, the resistance of the temperature sensor in the temperature sensor detector changes correspondingly, and the change is linear with the temperature change. The transmitter converts the resistance change to 4-20 mA standard DC current signal.",
+          "Technical Indicators Power supply: +15V to 30V DC (recommended +24V DC)",
+          "Measuring range: 0~100 C",
+          "Output current: 4 ~ 20mA DC",
+          "Measurement accuracy: + 1.0%FS",
+          "Environmental conditions: the working temperature of the sensor is between -40 and +85 C.",
+          "Relative humidity: 5 ~ 95%RH 3",
+          "Operation 3.1 sensor installation CNPS-MT-B11 mud temperature sensor is very convenient to install. It is only necessary to immerse the sensor temperature sensor in the drilling fluid to be measured completely, then fix it with a bracket and connect it with a cable. 3.2 sensor wiring Open the cover of the sensor sealing box, connect the’+’terminal to the + 24V power supply, and connect the’- terminal signal as shown in Figure 1. Figure 1. Temperature sensor wiring diagram 4 Sensor calibration CNPS-MT-B11 drilling fluid temperature sensor has been strictly adjusted at the time of leaving the factory, generally does not require on-site adjustment. If there are problems with sensors, they need to be adjusted on-site, using precision resistance boxes. The adjustment method is shown in Figure 2. Figure 2 Open the cover of the sensor sealing box, remove the wiring on the 1, 2, 3 terminals, and connect the transmitter, precision resistance box, multimeter and power supply as shown above.",
+          "(2) Adjust the resistance value of the precision resistance box to 100_and observe the change of the output current value of the sensor. The current value should be 4 mA at this time. If the display value deviates greatly, the zero potentiometer of the transmitter should be adjusted so that the output current value of the sensor is 4 mA.",
+          "(3)Adjust the resistance value of the precision resistance box to 138.5_and observe the change of the output current value of the sensor. The current value should be 20 mA at this time. If the display value deviates greatly, the gain potentiometer of the transmitter should be adjusted so that the output current value of the sensor is 20 mA. 5 maintenance the transmitter part must be sealed to prevent water from damaging the transmitter. the mud should be adhered to the temperature sensor and should be cleaned in time to ensure the reliable and accurate operation of the sensor. When the temperature sensor is in use, it should check whether the cable is broken, short circuit and the connection head is off.",
+          "(4) Temperature sensor fault, can be used multimeter resistance to measure the Pt100 thermistor lead both ends, there should be 100-140_between the resistance, otherwise check whether the sensor is open or the connection of the Pt wire is not good contact."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cnps-mt-b11-mud-temperature-sensor/"
+  },
+  {
+    "id": 141,
+    "title": "drilling monitoring",
+    "slug": "drilling-monitoring",
+    "summary": "Chinamudlogging.com is a specialist oilfield products and services company with a focus on providing customers safe, and more technically advanced geological, surface formation evaluation, drilling monitoring,…",
+    "image": "/images/source/2021/09/dril.jpg",
+    "category": {
+      "slug": "drilling-monitoring",
+      "name": "Drilling Monitoring & Accessories"
+    },
+    "sourceCategories": [
+      "drilling monitoring"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/drilling-monitoring/"
+  },
+  {
+    "id": 157,
+    "title": "ELECTRIC TORQUE SENSOR",
+    "slug": "electric-torque-sensor",
+    "summary": "ELECTRIC TORQUE SENSOR AC/DC dual-purpose electric torque sensor transmitter AC and DC rated input 1000A ~ 2000A, rated output DC DC0~5v or DC0~20mA or 4~20mA. As the isolated AC and DC current of the main…",
+    "image": "/images/source/2021/09/ElectricTorqueSensor_480x.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "mud logging sensors"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/electric-torque-sensor/"
+  },
+  {
+    "id": 272,
+    "title": "Flow out Sensor (Paddle) for mud logging unit",
+    "slug": "flow-out-sensor-paddle-for-mud-logging-unit",
+    "summary": "Flow out Sensor (Paddle) for mud logging unit The flow sensor uses the functional relationship between mud flow and baffle plate to reflect the change of baffle Angle displacement with the change of single…",
+    "image": "/images/source/2022/06/4__10788.jpg",
+    "category": {
+      "slug": "mud-logging-units",
+      "name": "Mud Logging Units"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "5",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The sensor is used to real time inspect the flow out of mud, so it provides a basis for optimized and safe drilling. According to the linear equation of liquid, the Bernoulli principle and the force analysis, the functional relation between flow out and angular displacement of mudguard can be acquired. Consequently, once the angular displacement is acquired, the flow out can be measured immediately.",
+          "PRODUCT SPECIFICATION",
+          "Power supply voltage: 24VDC",
+          "Output signal: 4 ~ 20mA",
+          "Operating temperature: -55℃ ~ +100℃",
+          "Open Angle of damper: 0 ~ 45°",
+          "Measuring range: 0 ~ 100% (relative change, no absolute range)",
+          "Measuring accuracy: ± 2% FS",
+          "Overall size: 380 x 250 x 170 (mm)",
+          "PRODUCT FEATURE AND APPLICATION",
+          "Flow sensor can be divided into two parts, one is the mechanical part, the other is the circuit part. The mechanical part includes bottom plate, bending arm, baffle, large weight block, small weight block, shaft, protective cover, limit block, big gear, pinion, etc. The bottom plate, bending arm, baffle plate and protective cover are made of stainless steel, while the big gear and pinion gear are made of brass. Drilling mud export impact damper, drive the bent arm, bending the arm and shaft through a long screws, axle and wheel through a fixed screw clamp, so bent arm rotation, caused the shaft and the wheel rotation, big gear and small gear meshing together, pinion and potentiometer to turn the handle through a fixed screw clamp, which file is means the change of displacement into the change of the potentiometer resistance, reflects the export of mud flow change.",
+          "PRODUCT DETAILS",
+          "In order to prevent the alkaline corrosion of mud, this product adopts stainless steel structure, equipped with explosion-proof junction box, sealing capsule, sealing ring and other sealing parts, and separate the transmission mechanism from the electrical part, these measures increase the safety and durability of the sensor. This product has the advantages of simple installation, compact structure, durability, easy maintenance, safety and explosion proof, etc. It is an important sensor in oil drilling and geological exploration.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/flow-out-sensor-paddle-for-mud-logging-unit/"
+  },
+  {
+    "id": 142,
+    "title": "formation evaluation",
+    "slug": "formation-evaluation",
+    "summary": "Chinamudlogging.com is a specialist oilfield products and services company with a focus on providing customers safe, and more technically advanced geological, surface formation evaluation, drilling monitoring,…",
+    "image": "/images/source/2021/09/formation.jpg",
+    "category": {
+      "slug": "formation-evaluation",
+      "name": "Formation Evaluation"
+    },
+    "sourceCategories": [
+      "formation evaluation"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/formation-evaluation/"
+  },
+  {
+    "id": 261,
+    "title": "Industrial computer with ALS 2.2 system",
+    "slug": "industrial-computer-with-als-2-2-system",
+    "summary": "Industrial computer with ALS 2.2 system The industrial computer with ALS 2.2 system is used for mud logging unit .",
+    "image": "/images/source/2022/06/4__81927.jpg",
+    "category": {
+      "slug": "drilling-monitoring",
+      "name": "Drilling Monitoring & Accessories"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "15",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT SPECIFICATION",
+          "Product Name: Industrial computer Fan 2 (12 cm / 82 CFM)",
+          "Air Filters: Yes",
+          "LED Indicators: Power, HDD, and power voltage status Form Factor 4U Rackmount Rear panel",
+          "Backplane version: One 9-pin D-Sub opening",
+          "Temperature Operating: 0 ~ 40 °C (32 ~ 104 °F)",
+          "Non-operating: 20 ~ 60 °C (-4 ~ 140 °F)",
+          "Humidity Operating: 10 ~ 85 % @ 40 °C, non-condensing",
+          "Non-operating: 10 ~ 95 % @ 40 °C, non-condensing Vibration (5-500 Hz) 1 Grms 3.5\" 1 Dimensions (W x H x D) 482 x 177 x 479 mm (19\" x 7\" x 18.9\") Weight 15 kg 5.25\" 3 USB2.0 2 PS/2 1"
+        ]
+      },
+      {
+        "heading": "Product features",
+        "paragraphs": [
+          "1.4U rackmount chassis supports up to 15 add-on cards.",
+          "2.Shock-resistant disk drive bay design holds up to three 5.25\" and one 3.5\" disk drives",
+          "3.Front accessible USB & PS/2 interfaces for easy data transfer",
+          "4.Dual front-accessible filtered cooling fans provide optimized and streamlined airflow."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/industrial-computer-with-als-2-2-system/"
+  },
+  {
+    "id": 270,
+    "title": "Mud Conductivity Sensor For mud logging unit",
+    "slug": "mud-conductivity-sensor-for-mud-logging-unit",
+    "summary": "Mud Conductivity Sensor For mud logging unit CL-DD11 conductivity sensor is electromagnetic induction conductivity sensor, which is used to measure the conductivity of drilling fluid.",
+    "image": "/images/source/2022/06/4__32305.jpg",
+    "category": {
+      "slug": "mud-logging-units",
+      "name": "Mud Logging Units"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "25",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The sensor has the advantages of high measurement accuracy, stable performance, good repeatability, strong anti-interference ability, waterproof, anti-corrosion, simple operation, convenient installation, etc. it can adapt to the field drilling site working environment of the oil field and replace the imported similar products",
+          "PRODUCT SPECIFICATION",
+          "Power source: +5~ 30V DC (recommended +24V DC)",
+          "Measurement range: 0 ~ 300mS/cm (can be set according to user requirements)",
+          "Output current: 4 ~ 20mA DC",
+          "Measurement accuracy: ± 2% FS",
+          "Reactivity: ±0.25%",
+          "Environmental conditions: operating temperature -20℃ ~ +60℃",
+          "Relative humidity: 0 ~ 95%RH",
+          "PRODUCT FEATURE AND APPLICATION",
+          "There are two concentric coils in the conductivity sensor probe, namely: transmitter coil and receiver coil. The sensor probe is immersed in the drilling fluid, and the transmitter coil emits 8kHz electromagnetic wave, which generates alternating current in the drilling fluid in a closed state. The current in turn induces a magnetic field to be accepted by the receiving coil. The conductivity transmitter reshapes, amplifies and outputs the 4 ~ 20mA standard dc current signal corresponding to the conductivity. An integrated temperature sensor (thermistor) is installed inside the sensor to monitor the drilling fluid temperature and to correct the conductivity of the drilling fluid at the measured temperature to compensate for the conductivity value up to 25℃.",
+          "PRODUCT DETAILS",
+          "The conductivity sensor is composed of transmitter and probe. The probe is equipped with a protective cover, which can prevent accidental damage of the probe. Pay attention not to let foreign matters enter the cover during measurement. The sensor probe shall be cleaned in time to ensure reliable and accurate operation of the sensor.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-conductivity-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 159,
+    "title": "MUD DENSITY SENSOR",
+    "slug": "mud-density-sensor",
+    "summary": "Product Description The CNPS-ML-B11 drilling fluid density sensor is a single crystal silicon resonant density sensor for measuring the density of drilling fluid. The sensor adopts EJA118W, a diaphragm-sealed…",
+    "image": "/images/source/2021/09/muddensitysensor-01_480x.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "mud logging sensors"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/mud-density-sensor/"
+  },
+  {
+    "id": 242,
+    "title": "mud density sensor for oil and gas mud logging",
+    "slug": "mud-density-sensor-for-oil-and-gas-mud-logging",
+    "summary": "mud-density-sensor-for-oil-and-gas-mud-logging",
+    "image": "/images/source/woocommerce-placeholder.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "mud logging sensors"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "mud-density-sensor-for-oil-and-gas-mud-logging"
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-density-sensor-for-oil-and-gas-mud-logging/"
+  },
+  {
+    "id": 165,
+    "title": "MUD FLOW OUT SENSOR PADDLE TYPE",
+    "slug": "mud-flow-out-sensor-paddle-type",
+    "summary": "DESCRIPTION The sensor is used to real time inspect the flow out of mud, so it provides a basis for optimized and safe drilling. According to the linear equation of liquid, the Bernoulli principle and the…",
+    "image": "/images/source/2021/09/mudFlowOutSensor-01_480x.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "mud logging sensors"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/mud-flow-out-sensor-paddle-type/"
+  },
+  {
+    "id": 262,
+    "title": "Mud logging  Pump Stroke Sensor",
+    "slug": "mud-logging-pump-stroke-sensor",
+    "summary": "Mud logging sensor named Pump Stroke Sensor The pump stroke sensor is designed to measure the work speed of mud pump. In this equipment, electric proximity switch and two-wire system are adopted.",
+    "image": "/images/source/2022/06/4__62495.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "3",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "In addition to be used in mud logging, this proximity switch sensor is also suitable for various control such as machine limit, detection, counting, speed measurement, liquid level signal, automatic protection, etc. It is widely used in machinery, mining, metallurgy, plastics, textile, chemical industry, light industry. , tobacco, electricity, railways, military and other departments.",
+          "PRODUCT SPECIFICATION",
+          "Working temperature: -25 ~ 70 ℃",
+          "Rated working voltage: 5~30VDC",
+          "The maximum output current: 200mA",
+          "Effective action distance: ≤ 30mm",
+          "The highest working frequency: 100Hz",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The Pump Stroke sensor is an inductive proximity switch sensor used in the oil field to measure pump or turntable speed. It has a wide range of power supply voltage, high repeatability, fast frequency response, long service life, vibration resistance, corrosion resistance and waterproof, with polarity and short circuit protection.",
+          "PRODUCT DETAILS",
+          "1.The pumping sensor can be fixed to the mud pump head by the bracket, or the appropriate part of the turntable, and the closest distance between the position of the sensing surface of the measured object and the end surface of the sensor is within 30 mm. (According to the influence of the use environment, the rated working distance is generally taken. 80%), plus the working voltage, when the end of the inductive sports sensor is close, the indicator light is on; when away from the sensor, the indicator is off.",
+          "2.The turntable speed sensor can be fixed to the appropriate part of the drive shaft of the turntable with the bracket. It should be convenient to install and repair. The model of the drill is selected. A piece of iron with a length and width of 30mm is welded on the shaft of the drive shaft or the airbag clutch. The position of the end face should be close to the end face of the sensor. Adjust the fixing nut of the sensor so that the distance between the iron sensor is within the effective range of the working distance.",
+          "PRODUCT QUALIFICATION All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-pump-stroke-sensor/"
+  },
+  {
+    "id": 260,
+    "title": "Mud logging Ex proof Degasser",
+    "slug": "mud-logging-ex-proof-degasser",
+    "summary": "Mud logging Ex proof Degasser Mud logging Ex proof Degasser for oil and gas exploration.",
+    "image": "/images/source/2022/06/4__00183.jpg",
+    "category": {
+      "slug": "formation-evaluation",
+      "name": "Formation Evaluation"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "35",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT SPECIFICATION",
+          "Motor power: 370W",
+          "Explosion proof mark of motor: EX D Ⅱ CT6",
+          "Motor speed: 1390r / min",
+          "Power supply voltage: three phase 380V or 220V, 50 Hz",
+          "Stirring shaft speed: 1390r / min"
+        ]
+      },
+      {
+        "heading": "Product description",
+        "paragraphs": [
+          "CL-DT electric degasser has two types: CL-DT11 (220V motor) and CL-DT12 (380V motor). It is composed of air collecting cylinder, drying pipe, blocking preventer, motor, stirring rod and lifting system. It can be used for degassing and degassing in oilfield. The degasser is compact and reasonable in structure, light in volume and convenient for installation and use.",
+          "PRODUCT FEATURE AND APPLICATION",
+          "(1) CL-DT electric degasser is small in size and light in weight, easy to install and maintain. Each component can be conveniently connected when it is maintained and installed. Apart from the motor, the weight of the single cylinder of the collecting cylinder is not more than 6KG.",
+          "(2) flexible installation. The CL-DT electric degasser is designed for several different installation modes (see Fig. 2 and Fig. 3) and can be used for square, circular and semi-circular grooves.",
+          "(3) adjustment is convenient. The change of mud displacement is often encountered in use, and the height of the collecting cylinder needs to be adjusted. When it is necessary to adjust, no tools are needed to rotate and lift the handwheel. (downward looking clockwise rotation of the collecting cylinder rises, while vice versa).",
+          "(4) anti overflow and anti blocking performance is good. A fender is installed in the collecting cylinder, which can effectively prevent the mud from entering the gas pipeline.",
+          "(5) CL-DT electric degasser is made of stainless steel and plexiglass, besides motor. It has good anti-rust and anti-corrosion performance.",
+          "(6) the dry pipe and the anti blockage device are placed on the same mounting plate, and the total weight is less than 2KG, so that the installation is convenient. As the drying pipe and plug preventer are made of plexiglass, it is intuitive to see whether the desiccant is invalid and whether the plug preventer is blocked can be dealt with in time.",
+          "(7) CL-DT electric degasser adopts explosion-proof motor to ensure the safe operation of the equipment."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-ex-proof-degasser/"
+  },
+  {
+    "id": 258,
+    "title": "Mud Logging Explosion proof monitor",
+    "slug": "mud-logging-explosion-proof-monitor",
+    "summary": "Mud Logging Explosion proof monitor Mud Logging Explosion proof monitor used in oil and gas field.",
+    "image": "/images/source/2022/06/4__27240.jpg",
+    "category": {
+      "slug": "drilling-monitoring",
+      "name": "Drilling Monitoring & Accessories"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "25",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT SPECIFICATION",
+          "Rated voltage: AC100-AC240 DC12",
+          "Rated current: ≤3A",
+          "Ex-mark: ExdIIBT6 Gb DIP A21 TA,T6",
+          "Degree of protection: IP66",
+          "Erosion-proof class: W WF1 WF2",
+          "APPLICATION",
+          "Hazardous: division 1&2 explosive gas atmosphere: classIIA,IIB,and /or zone 21&22,flammable dust atmospheres;",
+          "Tecperature class: T1-T6",
+          "Indoor and outdoor(IP66)",
+          "Used in chemical industry,oil refining,oil exploration,offshore oil platforms,tankers,military and other dangerous places.",
+          "FEATURES",
+          "1.Material:CS or SS ,argon protected precision wdlding",
+          "2.Surface treatment:coating or chemical treatment",
+          "3.Intel and outlet:with explosion-proof cable gland",
+          "4.Inlet,outlet and size can be designed according to the requirement of customer",
+          "5.Screen used for domestic and foreign famous brand 15-inch,17-inch,19-inch,21-inch,26-inch,29-inch,32-inch products."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-explosion-proof-monitor/"
+  },
+  {
+    "id": 254,
+    "title": "Mud Logging Oil Fluoroscope UV Lamp Box",
+    "slug": "mud-logging-oil-fluoroscope-uv-lamp-box",
+    "summary": "Oil and gas mud logging geology logging Oil Fluoroscope UV box",
+    "image": "/images/source/2022/06/download_8__99428.jpg",
+    "category": {
+      "slug": "formation-evaluation",
+      "name": "Formation Evaluation"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "352",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "FLUORESCENT DRY AND WET PHOTOS",
+          "The washed cuttings, core, and wall of the well wall are placed under fluorescent light for dry and wet photos.",
+          "1 Oil-bearing cuttings, core, and wall of the well wall are light yellow, yellow, bright yellow, golden yellow, yellow brown, brown, brown, etc. under ultraviolet light. The oil quality is good, the luminescent color is strong and bright; the oil quality is poor, and the illuminating color is dark.",
+          "2 mineral fluorescence: quartz, opal white – gray; calcite, shell yellow – bright yellow; gypsum is bright sky blue, milky white.",
+          "3 refined oil and organic solvent: diesel is bright purple – milk purple blue; oil is blue – sky blue; butter is bright purple blue; silk oil is leucorrhea blue – dark blue; white oil, kerosene It is milky white with blue; sulfonated asphalt is yellow and light yellow; lead oil is red.",
+          "CHLOROFORM DROPLETS",
+          "1 Take a few samples of rock fragments, disperse on the filter paper, drop a drop of chloroform solution on the cuttings, observe the fluorescence diffusion and stain around the rock sample, and record the color, intensity and luminescence of the fluorescence.",
+          "2 The color of the fluorescent diffusing edge marks: the hydrocarbons are mostly sky blue, slightly purple – sky blue, the gum is yellowish brown, and the asphaltene is black-brown.",
+          "3 The mineral fluorescence has no diffusion phenomenon. The fluorescent color of the refined oil is lighter, and it is milky purple-sky blue. Generally, it only pollutes the surface of the cuttings. It can break the cuttings, core and wall to observe the fresh surface.",
+          "4 Excluding the oil pollution of the product and the fluorescence of the luminescent mineral, describe the color, intensity and the percentage of the rock debris, core, and core fluorescence.",
+          "TECHNICAL SPECIFICATION",
+          "Model: CNPS-OL1501",
+          "Supply Power: AC220V 50HzUV",
+          "Wave: 365±10nm",
+          "Power consumption: 30wSize(L*W*H): 490×260×290mm"
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-oil-fluoroscope-uv-lamp-box/"
+  },
+  {
+    "id": 265,
+    "title": "Mud logging sensor named casing pressure sensor",
+    "slug": "mud-logging-sensor-named-casing-pressure-sensor",
+    "summary": "Mud logging sensor named casing pressure sensor The pressure sensor can be used to measure the pressure of a viscous, easily blocked medium. Since the sensitive component of the sensor adopts a hard membrane…",
+    "image": "/images/source/2022/06/4__08609.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "2",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "MPM489 pressure transmitter is new pressure transmitter developed by our company. A pressure sensor with 316L isolated diaphragm is mounted with the high-performance signal processing circuit in the stainless steel housing. The Sensor is automatically tested by computer and compensated zero and temperature in wide range by laser trimming system. The digital circuit processes the sensor signal into standard output signal.",
+          "Product Specification",
+          "Supply voltage +24VDC ± 4VDC",
+          "Output signal 4~20mADC",
+          "Range can be customed(0-40MPa)",
+          "Nonlinearity ≤±0.5% FS",
+          "Hysteresis ≤±0.5% FS",
+          "Repeatability ≤±0.5% FS",
+          "Wiresystem 2-wire",
+          "Sensor cable 4-20mA",
+          "Temperature effect ≤±0.05%FS/°C",
+          "Safety level IEC EEXiaⅡ CT6",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The Pump Stroke sensor is an inductive proximity switch sensor used in the oil field to measure pump or turntable speed. It has a wide range of power supply voltage, high repeatability, fast frequency response, long service life, vibration resistance, corrosion resistance and waterproof, with polarity and short circuit protection.",
+          "PRODUCT DETAILS",
+          "The pressure port of MPM489 is male port with waterline seal construction, electric connection is plug or cable connection. The compact construction and standard signal output provide you conveniently and stably.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-sensor-named-casing-pressure-sensor/"
+  },
+  {
+    "id": 266,
+    "title": "Mud logging sensor named draw work sensor",
+    "slug": "mud-logging-sensor-named-draw-work-sensor",
+    "summary": "Mud logging sensor named draw work sensor The sensor is installed on the winch shaft, which can monitor the angular displacement caused by the rotation of the winch shaft during the whole drilling process.",
+    "image": "/images/source/2022/06/5__26702.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "3",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The principle of draw work sensor is equipped with two proximity switches and a 12 tooth induction plate. When the induction plate rotates with the axle, the two proximity switches with phase difference of 90 ° are blocked and turned on respectively, and the corresponding electric pulse signal is sent out for instrument detection.",
+          "PRODUCT SPECIFICATION",
+          "Power supply voltage: 5VDC ± 10%",
+          "Working environment temperature: - 40 ℃ - + 80 ℃",
+          "Power consumption: 300mw",
+          "Response time: 150us",
+          "Output signal: 48 pulses",
+          "PRODUCT FEATURE AND APPLICATION",
+          "It has the advantages of small volume, compact structure, good sealing performance, high sensitivity, large output signal, good anti-interference, accurate measurement, convenient and reliable use. It is an economic and practical well depth measurement sensor in petroleum and geological drilling work.",
+          "PRODUCT DETAILS",
+          "Red wire: power supply positive",
+          "Blue wire: signal output II",
+          "Yellow wire: signal output I",
+          "Black wire: power supply negative",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-sensor-named-draw-work-sensor/"
+  },
+  {
+    "id": 269,
+    "title": "Mud logging sensor named drilling fluid temperature sensor",
+    "slug": "mud-logging-sensor-named-drilling-fluid-temperature-sensor",
+    "summary": "Mud logging sensor named drilling fluid temperature sensor The CNPS drilling fluid temperature sensor is used to measure the temperature of drilling fluid.",
+    "image": "/images/source/2022/06/3__03271.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "15",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The CNPS type drilling fluid temperature sensor is composed of a temperature detector and a transmitter. When the drilling fluid temperature changes, the resistance of the temperature sensor in the temperature sensor detector changes correspondingly, and the change is linear with the temperature change. The transmitter converts the resistance change to 4-20 mA standard DC current signal.",
+          "PRODUCT SPECIFICATION",
+          "Technical date sheet measuring temperature 0~100 ℃",
+          "Rated working voltage 5~30VDC",
+          "Output current 4 ~ 20mA",
+          "DC Measurement accuracy +- 1.0%FS 5 ~ 95%RH",
+          "Relative humidity 100Hz",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The sensor is equipped with an anti-collision metal housing, mechanical and oil-resistant seals are used in the connecting part, and thick film platinum resistance is used in the temperature sensing part. It has the advantages of corrosion resistance, good sealing, good linearity and stable performance. It is an important sensor in oil and gas exploration and can be used in various harsh environments such as oilfield field.",
+          "PRODUCT DETAILS",
+          "The mud temperature sensor is very convenient to install. It is only necessary to immerse the sensor temperature sensor in the drilling fluid to be measured completely, then fix it with a bracket and connect it with a cable.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-sensor-named-drilling-fluid-temperature-sensor/"
+  },
+  {
+    "id": 267,
+    "title": "Mud logging sensor named hookload sensor",
+    "slug": "mud-logging-sensor-named-hookload-sensor",
+    "summary": "Mud logging sensor named hookload sensor The pressure sensor can be used to measure the pressure of a viscous, easily blocked medium. Since the sensitive component of the sensor adopts a hard membrane…",
+    "image": "/images/source/2022/06/4__32035.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "2",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "MPM489 pressure transmitter is new pressure transmitter developed by our company. A pressure sensor with 316L isolated diaphragm is mounted with the high-performance signal processing circuit in the stainless steel housing. The Sensor is automatically tested by computer and compensated zero and temperature in wide range by laser trimming system. The digital circuit processes the sensor signal into standard output signal.",
+          "PRODUCT SPECIFICATION",
+          "Technical date sheet 1 supply voltage +24VDC ± 4VDC",
+          "Output signal 4~20mADC",
+          "Range can be customed(0-40MPa)",
+          "Nonlinearity ≤±0.5% FS",
+          "Hysteresis ≤±0.5% FS",
+          "Repeatability ≤±0.5% FS",
+          "Wiresystem 2-wire",
+          "Sensor cable 4-20mA",
+          "Temperature effect ≤±0.05%FS/°C",
+          "Safety level IEC EEXiaⅡ CT6",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The Pump Stroke sensor is an inductive proximity switch sensor used in the oil field to measure pump or turntable speed. It has a wide range of power supply voltage, high repeatability, fast frequency response, long service life, vibration resistance, corrosion resistance and waterproof, with polarity and short circuit protection.",
+          "PRODUCT DETAILS",
+          "The pressure port of MPM489 is male port with waterline seal construction, electric connection is plug or cable connection. The compact construction and standard signal output provide you conveniently and stably.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-sensor-named-hookload-sensor/"
+  },
+  {
+    "id": 268,
+    "title": "Mud logging sensor named mud density sensor(in&out)",
+    "slug": "mud-logging-sensor-named-mud-density-sensorinout",
+    "summary": "Mud logging sensor named mud density sensor(in&out) The TSZ-DST drilling fluid density sensor is a monocrystal silicon resonance density sensor, which is used to measure the drilling fluid density.",
+    "image": "/images/source/2022/06/11__60484.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "25",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The drilling fluid density sensor is a single crystal silicon resonant density sensor for measuring the density of drilling fluid. The sensor adopts EJA118W, a diaphragm-sealed differential pressure transmitter imported from Japan, which has the advantages of high measurement accuracy, stable performance, and good repeatability. The outer mounting bracket is made of stainless steel, and it is corrosion-resistant and has a long service life. The base is detachably attached with a long rod, which can be adjusted according to the depth of the mud. It is an important sensor for oil and gas exploration work, which can be applied to various harsh environments such as oilfields.",
+          "PRODUCT SPECIFICATION",
+          "Power source: +17V ~ 42V DC (+24V DC is recommended)",
+          "Measuring range: 0~3g/cm3",
+          "Output current: 4 ~ 20mA DC",
+          "Accuracy: ± 0.5% FS",
+          "Environmental conditions: Operating temperature -40℃ ~ +85℃",
+          "Relative humidity: 5 ~ 95%RH",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The sensor adopts diaphragm sealed differential pressure transmitter EJA118E, which has the advantages of high measurement accuracy, stable performance and good repeatability. External mounting bracket is made of stainless steel, corrosion resistant, long life, with detachable extension bar at the bottom, which can be adjusted according to the depth of mud. It is an important sensor in oil and gas exploration.",
+          "PRODUCT DETAILS",
+          "According to the needs of measurement, sensors are installed at the inlet of drilling fluid and the outlet of drilling fluid respectively. It is required that when the drilling fluid level fluctuates, the upper and lower flanges must be immersed in the mud, keep vertical and not tilt, otherwise the accuracy of measurement will be affected. The transmitter transfer unit shall be above the slurry level and shall not be immersed by mud.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-sensor-named-mud-density-sensorinout/"
+  },
+  {
+    "id": 255,
+    "title": "Mud Logging Sensor Named Pump Stroke Sensor",
+    "slug": "mud-logging-sensor-named-pump-stroke-sensor",
+    "summary": "In addition to be used in mud logging, this proximity switch sensor is also suitable for various control such as machine limit, detection, counting, speed measurement, liquid level signal, automatic…",
+    "image": "/images/source/2022/06/download_10__43164.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "255",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "MAIN FEATURES",
+          "The CNPS-BC Pump Punch Speed Sensor is an inductive proximity switch sensor used in the oil field to measure pump or turntable speed. It has a wide range of power supply voltage, high repeatability, fast frequency response, long service life, vibration resistance, corrosion resistance and waterproof with polarity and short circuit protection.",
+          "NOTE",
+          "1.The pumping sensor can be fixed to the mud pump head by the bracket, or the appropriate part of the turntable, and the closest distance between the position of the sensing surface of the measured object and the end surface of the sensor is within 30 mm. (According to the influence of the use environment, the rated working distance is generally taken. 80%), plus the working voltage, when the end of the inductive sports sensor is close, the indicator light is on; when away from the sensor, the indicator is off.",
+          "2.The turntable speed sensor can be fixed to the appropriate part of the drive shaft of the turntable with the bracket. It should be convenient to install and repair. The model of the drill is selected. A piece of iron with a length and width of 30mm is welded on the shaft of the drive shaft or the airbag clutch. The position of the end face should be close to the end face of the sensor. Adjust the fixing nut of the sensor so that the distance between the iron sensor is within the effective range of the working distance."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-sensor-named-pump-stroke-sensor/"
+  },
+  {
+    "id": 264,
+    "title": "Mud logging sensor named standpipe pressure sensor",
+    "slug": "mud-logging-sensor-named-standpipe-pressure-sensor",
+    "summary": "Mud logging sensor named standpipe pressure sensor The pressure sensor can be used to measure the pressure of a viscous, easily blocked medium. Since the sensitive component of the sensor adopts a hard…",
+    "image": "/images/source/2022/06/1__69123.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "1",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "MPM489 pressure transmitter is new pressure transmitter developed by our company. A pressure sensor with 316L isolated diaphragm is mounted with the high-performance signal processing circuit in the stainless steel housing. The Sensor is automatically tested by computer and compensated zero and temperature in wide range by laser trimming system. The digital circuit processes the sensor signal into standard output signal.",
+          "PRODUCT SPECIFICATION",
+          "Supply voltage +24VDC ± 4VDC",
+          "Output signal 4~20mADC",
+          "Range can be customed(0-40MPa)",
+          "Nonlinearity ≤±0.5% FS",
+          "Hysteresis ≤±0.5% FS",
+          "Repeatability ≤±0.5% FS",
+          "Wiresystem 2-wire",
+          "Sensor cable 4-20mA",
+          "Temperature effect ≤±0.05%FS/°C",
+          "Safety level IEC EEXiaⅡ CT6",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The Pump Stroke sensor is an inductive proximity switch sensor used in the oil field to measure pump or turntable speed. It has a wide range of power supply voltage, high repeatability, fast frequency response, long service life, vibration resistance, corrosion resistance and waterproof, with polarity and short circuit protection.",
+          "PRODUCT DETAILS",
+          "The pressure port of MPM489 is male port with waterline seal construction, electric connection is plug or cable connection. The compact construction and standard signal output provide you conveniently and stably.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-sensor-named-standpipe-pressure-sensor/"
+  },
+  {
+    "id": 263,
+    "title": "Mud logging sensor of electric torque sensor",
+    "slug": "mud-logging-sensor-of-electric-torque-sensor",
+    "summary": "Mud logging sensor of electric torque sensor Electric torque sensor is a sensor to obtain torque parameters of the rotary plate by testing the power supply current of the driving motor.",
+    "image": "/images/source/2022/06/4__91858.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "2",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The sensor is designed to measure the torque of rotary table. As a result, the operating state of drilling rig and bit can be also reflected. Based on the principle of Hall Effect, while the torque is changed, the supply electric current is also changed, which is used to drive rotary table.",
+          "PRODUCT SPECIFICATION",
+          "Power source: +15V ~ 30V DC (recommended +24V DC)",
+          "Measuring range: 0 ~ 1000A",
+          "Output current: 4 ~ 20mA DC",
+          "Measurement accuracy: ± 1% FS",
+          "Frequency response: 0 ~ 1000Hz",
+          "Environmental conditions: operating temperature -40℃ ~ +85℃",
+          "WORKING PRINCIPLE",
+          "SMC-ETQ-B11 AC/DC torque sensor adopts a closed loop structure. According to the hall effect principle, the measured current value is proportional to the output current of hall sensor, that is, when the measured current changes at 0-1000a, the output current of the sensor changes within the range of 4 ~ 20mA, and is in direct proportion.",
+          "THE OPERATING 4.1 SENSOR INSTALLATION",
+          "Open the sensor clamp, wrap the measured wire with foam plastic and adjust the thickness of winding, so that the measured wire can be fixed in the round hole after the clamp is closed, without shaking. Pay special attention to the direction of current during installation. The side with regulating port is the direction of current input, and the side without regulating port is the direction of current output. Do not install in the wrong direction.",
+          "4.2 Sensor wiring V+ (yellow) : +24V DC",
+          "VO (blue) : 4-20ma output",
+          "OV (brown) : ground",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-sensor-of-electric-torque-sensor/"
+  },
+  {
+    "id": 143,
+    "title": "mud logging sensors",
+    "slug": "mud-logging-sensors",
+    "summary": "Chinamudlogging.com is a specialist oilfield products and services company with a focus on providing customers safe, and more technically advanced geological, surface formation evaluation, drilling monitoring,…",
+    "image": "/images/source/2021/08/pro-4.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "mud logging sensors"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/mud-logging-sensors/"
+  },
+  {
+    "id": 259,
+    "title": "Mud Logging Unit",
+    "slug": "mud-logging-unit",
+    "summary": "Mud Logging Unit Mud logging unit used in oil and gas field.",
+    "image": "/images/source/2022/06/4__28633.jpg",
+    "category": {
+      "slug": "mud-logging-units",
+      "name": "Mud Logging Units"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "10000",
+    "sections": [
+      {
+        "heading": "Product description",
+        "paragraphs": [
+          "SLS Mud Logging Unit is new generation logging equipment which is designed and manufactured by us, cooperated with famous International mud logging comany. SLS has advantages of a large amount of data, rich information, fast processing speed and accurate interpretation. The hardware and software configuration as well as the entire performance of the equipment have reached international leading level."
+        ]
+      },
+      {
+        "heading": "Specifications",
+        "paragraphs": [
+          "Module Type Technical Specifications Container DNV Certified Positive Pressure Explosion-Proof Container Suitable for zone I on rig site. DNV A0 grade,IEC79-13 standard. Data Acquisition System RS-485 Data Acquisition System Explosion proof product,40 analog signal channel,14 pulse signal channel. Chromatograph Fast Gas Chromatograph",
+          "Minimum detectable concentration: 10ppm",
+          "Cycle time: ≥30 s.",
+          "CO2 Analyzer SL-IR-II CO2",
+          "Analyzer Minimum detectable concentration: 0.2%.",
+          "Mud Logging Software Mud Logging Software System Alarm: rotating red light, buzzer113-138dB",
+          "Power: ≥50W",
+          "Alarm System: rotating red light",
+          "Buzzer: 113-138dB",
+          "Power: ≥50W",
+          "Other Module Directional Well Geologic Steering System (selectable) Modeling geological profile and stacking the well track. The remote collaborative analysis and decision making. Real Time Data Remote Transmission System(selectable) Wireless Network: 3G network, GPRS network, CDMA network.Data Transmission: synchronization with the on-site data."
+        ]
+      },
+      {
+        "heading": "Product features",
+        "paragraphs": [
+          "Positive Pressure Explosion-Proof System Positive Pressure & explosion-proof with DNV certificate. A-60 level fire-proof Certificate,in compliance with IEC 60079-13 StandardApplicable to zone Ⅰ at wellsite Convenient installationAnti-jamming Ability Software Windows 2000 / XP platformData Sharing Through CDAEnglish & Chinese VersionRealtime Monitoring (numerical & curve)Engineering Program KitData Processing & Interpret ProgramOil & Gas Evaluation 7890",
+          "Chromatograph Detector: FID",
+          "Min detecting concentration: 10ppm (C1)",
+          "Baseline drift: ≤50pA/60 min",
+          "Baseline noise: ≤30pA",
+          "Repetition error: <3%",
+          "Components Analysis",
+          "Detector: FID",
+          "Min detecting concentration: 10ppm (C1)",
+          "Detecting scope: C1-nC5",
+          "Analysis circle: ≤30s",
+          "Separating degree: C1︰ C2 (concentration ratio: 100:1) Separating degree>1",
+          "Baseline drift: ≤50pA/60 min",
+          "Baseline noise: ≤30pA",
+          "Repetition error: ≤3%",
+          "CO2 Analyzer Based on infrared absorption principleDetection range:0.2%~100%",
+          "Response time :≤10s",
+          "Detection deviation:±2%FS",
+          "Drifting zero: ±2.5%FS",
+          "Repeatable deviation :<2%",
+          "Wireless data acquisition system",
+          "Explosion-proof design with IP67 protectionOver-current, over-voltage & short circuit protectionLow-power consumption, can work continuously for at least 20 days with a single charge Communication distance: more than 300m WITS protocol, compatible with various kinds of mud logging units"
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/mud-logging-unit/"
+  },
+  {
+    "id": 167,
+    "title": "MUD TEMPERATURE SENSOR",
+    "slug": "mud-temperature-sensor",
+    "summary": "MUD TEMPERATURE SENSOR The mud temperature sensor is used to measure the temperature of drilling fluid. The sensor is equipped with an anti-collision metal housing, mechanical and oil-resistant seals are used…",
+    "image": "/images/source/2021/09/Mudtemperaturesensor_480x.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "mud logging sensors"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/mud-temperature-sensor/"
+  },
+  {
+    "id": 257,
+    "title": "Oil Fluoroscope UV box",
+    "slug": "oil-fluoroscope-uv-box",
+    "summary": "Oil Fluoroscope UV box oil and gas mud logging geology logging Oil Fluoroscope UV box.",
+    "image": "/images/source/2022/06/4__51423.jpg",
+    "category": {
+      "slug": "formation-evaluation",
+      "name": "Formation Evaluation"
+    },
+    "sourceCategories": [
+      "Mud logging"
+    ],
+    "sku": "",
+    "weight": "5",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT SPECIFICATION",
+          "Model: YG1501",
+          "Supply Power: AC220V 50HzUV",
+          "Wave: 365±10nm",
+          "Power consumption: 30w",
+          "Size(L*W*H): 490×260×290mm",
+          "PRODUCT FEATURE AND APPLICATION",
+          "Fluorescent dry and wet photos. The washed cuttings, core, and wall of the well wall are placed under fluorescent light for dry and wet photos.",
+          "1. Oil-bearing cuttings, core, and wall of the well wall are light yellow, yellow, bright yellow, golden yellow, yellow brown, brown, brown, etc. under ultraviolet light. The oil quality is good, the luminescent color is strong and bright; the oil quality is poor, and the illuminating color is dark.",
+          "2. mineral fluorescence: quartz, opal white - gray; calcite, shell yellow - bright yellow; gypsum is bright sky blue, milky white.",
+          "3. refined oil and organic solvent: diesel is bright purple - milk purple blue; oil is blue - sky blue; butter is bright purple blue; silk oil is leucorrhea blue - dark blue; white oil, kerosene It is milky white with blue; sulfonated asphalt is yellow and light yellow; lead oil is red. Chloroform droplets.",
+          "1. Take a few samples of rock fragments, disperse on the filter paper, drop a drop of chloroform solution on the cuttings, observe the fluorescence diffusion and stain around the rock sample, and record the color, intensity and luminescence of the fluorescence.",
+          "2. The color of the fluorescent diffusing edge marks: the hydrocarbons are mostly sky blue, slightly purple - sky blue, the gum is yellowish brown, and the asphaltene is black-brown.",
+          "3. The mineral fluorescence has no diffusion phenomenon. The fluorescent color of the refined oil is lighter, and it is milky purple-sky blue. Generally, it only pollutes the surface of the cuttings. It can break the cuttings, core and wall to observe the fresh surface.",
+          "4. Excluding the oil pollution of the product and the fluorescence of the luminescent mineral, describe the color, intensity and the percentage of the rock debris, core, and core fluorescence."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/oil-fluoroscope-uv-box/"
+  },
+  {
+    "id": 170,
+    "title": "OIL FLUOROSCOPE UV LAMP BOX",
+    "slug": "oil-fluoroscope-uv-lamp-box",
+    "summary": "Oil Fluoroscope UV lamp box PRODUCT DESCRIPTION (1) Fluorescent dry and wet photos. The washed cuttings, core, and wall of the good wall are placed under fluorescent light for dry and wet photos. 1 Oil-bearing…",
+    "image": "/images/source/2021/09/OilFluoroscopeUVlampbox_480x.jpg",
+    "category": {
+      "slug": "formation-evaluation",
+      "name": "Formation Evaluation"
+    },
+    "sourceCategories": [
+      "mud logging sensors"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/oil-fluoroscope-uv-lamp-box/"
+  },
+  {
+    "id": 271,
+    "title": "Pit level sensor used for mud logging",
+    "slug": "pit-level-sensor-used-for-mud-logging",
+    "summary": "Pit level sensor used for mud logging The CNPS-ML11 type drilling fluid volume sensor is an ultrasonic liquid level sensor which combines the sensing technology and the electrical signal processing. It is used…",
+    "image": "/images/source/2022/06/4__79511.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "1",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The drilling fluid volume sensor is composed of an ultrasonic transmitter, a receiving device and a transmitter. The ultrasonic wave emitted by the ultrasonic transmitting device is reflected by the surface of the object, and then is received by the receiving device. The transmitter converts the signal generated during ultrasonic emission and reception to the standard current signal.",
+          "PRODUCT SPECIFICATION",
+          "Technical date sheet Power +15V ~ 30V DC (recommended +24V DC)",
+          "Measurement range 0.25 m to 5 m",
+          "Output current 4 ~ 20mA",
+          "Measurement accuracy + 0.5%FS",
+          "Environmental conditions working temperature -40 C ~ +60 C",
+          "Relative humidity 5 ~ 95%RH",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The probe of the sensor sends out a series of ultrasonic pulses, while the ultrasonic pulse returns after receiving the liquid level, and is received by the sensor. The filtering device in the sensor can distinguish true echoes from the liquid surface from various false echoes from sound waves, wave noise and rotating agitator blade noise. The pulse wave is converted from the time of temperature compensation to the time used by the emission to the liquid surface and then back to the sensor.",
+          "PRODUCT DETAILS",
+          "The ultrasonic level sensor should be installed on the sensor mounting rack. When installing, sound wave propagation route should be no obstacle and perpendicular to the liquid surface. Be careful not to cross the filling, pipeline, weld, ladders, etc., and not to the wall. During installation, the distance between the sensor end and the highest liquid level should be kept at least 25cm.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/pit-level-sensor-used-for-mud-logging/"
+  },
+  {
+    "id": 173,
+    "title": "PUMP STROKE SENSOR FOR MUD LOGGING",
+    "slug": "pump-stroke-sensor-for-mud-logging",
+    "summary": "Application In addition to be used in mud logging, this proximity switch sensor is also suitable for various control such as machine limit, detection, counting, speed measurement, liquid level signal,…",
+    "image": "/images/source/2021/09/PumpStrokeSensor-03_480x.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "mud logging sensors"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/pump-stroke-sensor-for-mud-logging/"
+  },
+  {
+    "id": 273,
+    "title": "Shale density meter for mud logging unit",
+    "slug": "shale-density-meter-for-mud-logging-unit",
+    "summary": "Shale density meter for mud logging unit The shale density meter is an instrument to measure the density of shale.",
+    "image": "/images/source/2022/06/4__46037.jpg",
+    "category": {
+      "slug": "mud-logging-units",
+      "name": "Mud Logging Units"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "5",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "Measuring mudstone density is to monitor abnormal pressure formation. According to the regulation of mudstone compaction, the porosity of mudstone decrease in exponential function way when the depth are increasing in normal condition, mudstone density increases with the increase of depth. When meeting pressure transition zone and high pressure layer that would cause under compaction, the porosity would higher and density would lower than normal condition. Because the density of mudstone has that change regulation, it can be measured by mudstone debris which digs from underground by designed well height. Setting normal pressure formation's mudstone density curve as base line, other lines which are excursion form this base line will be seemed as pressure abnormal. The higher excursions that curve have, the higher abnormal pressure the layer gets. The start point of excursion is the peak point of transition zone.",
+          "PRODUCT SPECIFICATION",
+          "Measurement Range:1-3g/cm3",
+          "Minimum sample weight: 0.05g",
+          "Resolution: 0.03g/cm3",
+          "Compositionand technical indicators of instrument Composition of instrument.",
+          "PRODUCT FEATURE AND APPLICATION",
+          "By measuring the density of mudstone, you can know the pressure change of drilled strataand predict the possible formations with abnormal pressure. The abnormal pore pressure of formations is extremely dangerous to oil wells and it may cause accidents such as well kick, well blowout, well lost, shrinkage of borehole diameter, bit freezing and so on. Characteristics of mudstone to produce ultra high pressure are that the density of mudstone decreases, deviating from normal density trend line of mudstone. In general, the resistivity and acoustic velocity of formations with abnormal pressure are also different and as a result, the resistivity log and acoustic log can be used to detect them. But these log curves can be obtained only after the drilling is complete. Therefore, a method to immediately predict ultra high pressure formations is required, namely, the method to measure the density of mudstone is used to predict abnormal pore pressure of formations.",
+          "PRODUCT DETAILS",
+          "2N01G type density analyzer of mudstoneconsists of: organic glass cylinder, scale subdivision in the mirror plane, fixing mirror bracket, stainless steel pole, floater, damping hammer, zero setting knob and so on.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/shale-density-meter-for-mud-logging-unit/"
+  },
+  {
+    "id": 256,
+    "title": "SLS Mud Logging Unit",
+    "slug": "sls-mud-logging-unit",
+    "summary": "SLS-3 Mud Logging Unit is new generation logging equipment which is designed and manufactured by us, cooperated with famous International mud logging comany. SLS has advantages of a large amount of data, rich…",
+    "image": "/images/source/2022/06/EXPLORER-PLS-Mud-Logging-Unit-__21071.jpg",
+    "category": {
+      "slug": "mud-logging-units",
+      "name": "Mud Logging Units"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging unit"
+    ],
+    "sku": "",
+    "weight": "2365",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "The hardware and software configuration as well as the entire performance of the equipment have reached international leading level. Main Configuration for SLS-3 Container Positive Explosion-Proof D N V Certification (DNV2.7-1 is selectable)",
+          "Size: 8 m×2.5 m×2.8 m Data",
+          "Acquisition System RS-485",
+          "Data Acquisition System No. of 4~20 Ma",
+          "Channel:40",
+          "No. of pulse channel:14",
+          "Safety Barrier Chromatograph GC-3K gas",
+          "Chromatograph Total Gas :0~100%Min detectable",
+          "Concentration:10ppm",
+          "Chromatograph: 0~100%",
+          "Min detectable Concentration:10 ppm",
+          "Cycle:30 s CO2 Analyzer CO2 Analyzer",
+          "Min detectable Concentration:0.2%",
+          "Range:0~100%",
+          "Safety Alarm System SAS Safety Alarm System Audio &Visible Software SLS-3 System Independent knowledge property right."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/sls-mud-logging-unit/"
+  },
+  {
+    "id": 140,
+    "title": "surface logging systems",
+    "slug": "surface-logging-systems",
+    "summary": "Chinamudlogging.com is a specialist oilfield products and services company with a focus on providing customers safe, and more technically advanced geological, surface formation evaluation, drilling monitoring,…",
+    "image": "/images/source/2021/09/HAL124548.jpg",
+    "category": {
+      "slug": "mud-logging-units",
+      "name": "Mud Logging Units"
+    },
+    "sourceCategories": [
+      "surface logging systems"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [],
+    "legacyUrl": "/product/surface-logging-systems/"
+  },
+  {
+    "id": 298,
+    "title": "The wireless transmission box for mud logging unit",
+    "slug": "the-wireless-transmission-box-for-mud-logging-unit",
+    "summary": "The wireless transmission box for mud logging unit The wireless transmission box is used for the acquisition and transmission of current signal .",
+    "image": "/images/source/2022/06/4__45595.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "1",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "Product Introduction",
+          "The wireless transmission box is used for the acquisition and transmission of the 4-20 mA current signal. The input signal is a standard 4-20 mA current signal, the transmission box does not provide the power supply of the current type sensor, and the current type 4-20 mA sensor needs to be powered by itself.",
+          "Product Specification",
+          "Working voltage: 3.3VDC",
+          "Output: 0.5~2.5vdc voltage signal",
+          "Measuring range: 4-20mA",
+          "Accuracy: ≤1%F.S",
+          "Working temperature: -40~70°C",
+          "Protection level: IP67",
+          "Product feature and application",
+          "The analog transmission box circuit board is the same as the ultrasonic, density and pressure sensor circuit board, and its signal input part is connected with high-precision voltage dividing resistor for collecting 4-20 mA sensor signal, and the signal is conditioned and amplified for single chip acquisition.",
+          "Product details",
+          "After the 4-20 mA sensor input signal line is connected, the sensor explosion-proof box is assembled with the mounting bracket as shown in the figure. The G-type clamping frame is used to fix the sensor explosion-proof box to the appropriate position on the site, and the 4-20 mA output is directly output as needed. Connect to the signal terminal of the sensor board.The sensor installation area should avoid electromagnetic interference as much as possible, and the cavity should be sealed when the sensor is working.",
+          "Product qualification",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/the-wireless-transmission-box-for-mud-logging-unit/"
+  },
+  {
+    "id": 280,
+    "title": "Wireless casing pressure sensor for mud logging unit",
+    "slug": "wireless-casing-pressure-sensor-for-mud-logging-unit",
+    "summary": "Wireless casing pressure sensor for mud logging unit Pressure sensor is a kind of device that converts non electric quantity into electric signal.",
+    "image": "/images/source/2022/06/4__60636.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "2",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "There are many kinds of pressure sensors, such as resistance strain gauge pressure sensor, semiconductor strain gauge pressure sensor, piezoresistive pressure sensor, inductive pressure sensor, capacitive pressure sensor, resonant pressure sensor and capacitive acceleration sensor. The sensor is a piezoresistive pressure sensor.",
+          "PRODUCT SPECIFICATION",
+          "Working voltage: 3.3VDC",
+          "Output: 0.5~2.5VDC voltage signal",
+          "Measuring range: 0-110 MPa",
+          "Accuracy: ≤1%F·S",
+          "Working temperature: -20~70°C",
+          "Protection level: IP67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "This system is mainly used in oil drilling exploration and development, and it is used together with integrated logging instrument. It can completely replace wired sensors for logging construction, and make up for the shortage of installation, maintenance and construction of wired sensor acquisition system.",
+          "PRODUCT DETAILS",
+          "The casing pressure sensor is mounted on the throttle manifold. The standpipe pressure sensor and casing pressure sensor is directly in contact with the mud through the head-to-head conversion unit provided with the instrument. Due to the high pressure during normal operation, when installing the size head and pressure sensor on the riser/sleeve, be sure to pay attention to the tightening and sealing of the installation. To avoid foreign matter from the lead end, the cable lead-out of the sensor should face down.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-casing-pressure-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 292,
+    "title": "Wireless conductivity sensor for mud logging unit",
+    "slug": "wireless-conductivity-sensor-for-mud-logging-unit",
+    "summary": "Wireless conductivity sensor for mud logging unit Wireless conductivity sensor is mainly to monitor the conductivity change of drilling fluid.",
+    "image": "/images/source/2022/06/4__65252.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "20",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "Measuring the conductivity of drilling fluid is mainly to monitor the conductivity change of drilling fluid, judge whether there is formation fluid entering according to the change trend, and judge the property of formation fluid immersed in drilling fluid.",
+          "PRODUCT SPECIFICATION",
+          "Measuring range: (0~1000) mS/cm",
+          "Accuracy: 2%",
+          "FS Supply voltage: 3.5-5VDC",
+          "Output signal: 0.5-2.5V",
+          "Working temperature: -20~70°C",
+          "Protection level: IP67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "Conductivity sensor is mainly used to measure the conductivity value of liquid and mud. The conductivity sensor is characterized by reading the conductivity value directly from the display screen and having 4 ~ 20mA analog signal output. Two - wire power supply, easy to operate. This product can be used in explosion - proof situation.",
+          "PRODUCT DETAILS",
+          "The sensor consists of a conductivity probe and a conductivity converter. The conductivity probe consists of two parallel magnetic coils, which are composed of primary and secondary coils. The outer casing is made of high temperature resistant, acid and alkali resistant and wear resistant insulation. The primary coil is fed with a sinusoidal excitation signal of constant amplitude and frequency. As the conductivity of the drilling fluid changes, the induced signal of the secondary coil also changes accordingly. The conductivity converter performs amplification and filtering on the induced signal to obtain a standard output, thereby completing the measurement of the conductivity of the drilling fluid.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-conductivity-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 296,
+    "title": "Wireless draw work sensor for mud logging unit",
+    "slug": "wireless-draw-work-sensor-for-mud-logging-unit",
+    "summary": "Wireless draw work sensor for mud logging unit Wireless draw work sensor used to measure the depth of the well, the time of drilling, the position of the drill bit, the height of the hook, the speed and the…",
+    "image": "/images/source/2022/06/4__26961.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "3",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The draw work sensor is the most important sensor in the comprehensive logging instrument. It is mainly used to measure the depth of the well, the time of drilling, the position of the drill bit, the height of the hook, the speed and the direction of motion. The performance of the winch directly affects the quality of the logging data and the oil and gas exploration work.",
+          "PRODUCT SPECIFICATION",
+          "Supply voltage: 3.5-5VDC",
+          "High level output: >3.2VDC",
+          "Low level output: ≤0.3VDC",
+          "Maximum operating current: <2.5~3mA",
+          "Maximum speed: ≤3000r/min",
+          "Accuracy: ±1",
+          "Working temperature: -40~70°C",
+          "Number of encoder disc teeth: 48",
+          "Protection level: IP 67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The draw work sensor is composed of stator and rotor. The super miniature double pulse probe lies flat in the stator slot. When the rotor rotates, the magnetic sensor on the turntable continuously sweeps over the surface of the probe, so two groups of pulse signals with phase difference are obtained at the output end, which are transformed into two groups of counting pulses through the interface circuit and sent to the instrument for processing. Through the real-time data detection of winch signal, the winch pulse signal count value related to the hook height can be obtained. Through the output of two winch sensors, the running direction can be judged. These data can be transmitted to the upper computer, and the real-time well depth can be obtained through the corresponding calculation.",
+          "PRODUCT DETAILS",
+          "The sensor is designed to measure well depth and hook position. Within the sessor, it is equipped with two photoelectric switches and a shade chip with dental flake. While the shade chipe is turinning with drawwork shaft, the infrared light in the gap of two photoelectric switches is guided or obstructed. Consequently, two series of voltage impulse signal is generated by photoelectric switches. The sensor is 4-wire system, defined as: +5V, 0V, signal A and signal B.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-draw-work-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 295,
+    "title": "Wireless electric torque sensor  for mud logging unit",
+    "slug": "wireless-electric-torque-sensor-for-mud-logging-unit",
+    "summary": "Wireless electric torque sensor for mud logging unit The sensor is designed to measure the torque of rotary table. As a result, the operating state of drilling rig and bit can be also reflected. Based on the…",
+    "image": "/images/source/2022/06/4__99251.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "2",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "During the use of the drill bit, as the drilling time increases, the damage of the formation to the drill bit becomes larger and larger, and the risk of accidents during the drilling process increases accordingly. The change of the torque parameter can be strengthened. The judgment of the drill bit minimizes the occurrence of drilling accidents.",
+          "PRODUCT SPECIFICATION",
+          "Supply voltage: 3.5-5VDC",
+          "Output: 0.5~2.5 V",
+          "Measuring range: 0-1000A",
+          "Frequency response: 0-50KHz",
+          "Measurement accuracy: ≤1% F.S",
+          "Working temperature: -40-70 ° C",
+          "Aperture: φ50mm",
+          "Protection level: IP 67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The electric torque sensor is composed of Hall elements and is used to measure the current change on the power cable of the electric drill. It is suitable for applications where the oil field and air pressure require non-contact measurement current.",
+          "PRODUCT DETAILS",
+          "The sensor explosion-proof box is assembled with the mounting bracket , and the g-type holder is used to fix the sensor in a suitable position on the site.The sensor installation area should avoid electromagnetic interference as much as possible, and the cavity should be sealed when the sensor is working.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-electric-torque-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 282,
+    "title": "Wireless flow out sensor for mud logging unit",
+    "slug": "wireless-flow-out-sensor-for-mud-logging-unit",
+    "summary": "Wireless flow out sensor for mud logging unit The flow out sensor is paddle type , It is used to measure the relative change of the flow at the outlet of the drilling mud.",
+    "image": "/images/source/2022/06/4__90407.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "5",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "By using the principle of the continuity of the mud fluid, Bernoulli equation and the analysis of the force on the baffle, the relationship between the flow rate and the sensor baffle can be obtained. The angular displacement of the baffle can be reflected by the linear change of resistance value of the resistor, and the relative change of the drilling fluid flow can be measured. The change of mud outlet flow, compared with the inlet flow, can monitor whether there is mud leakage and formation fluid entering, and timely forecast well kick, well leakage and blowout.",
+          "PRODUCT SPECIFICATION",
+          "Working temperature: -40~70°C",
+          "Baffle opening angle: 0-45°",
+          "Measuring range: changing the mass change range of the weight on the baffle, no absolute calibration",
+          "Supply voltage: 3.5-5VDC",
+          "Output: 0.5~2.5VDC voltage signal",
+          "Accuracy: ≤1%F·S",
+          "Protection level: IP67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "When the mud flows, a fixed measuring piece is pushed to move. The greater the flow rate is, the greater the thrust on the measuring piece is, and the greater the opening angle of the measuring piece is",
+          "PRODUCT DETAILS",
+          "Based on the continuity principle of mud fluid, poluli equation and the analysis of baffle force, the relationship between flow rate and sensor baffle can be obtained. The angle displacement of baffle can be reflected by the linear change of resistance value of resistor, and the relative change of drilling fluid flow can be measured. A potentiometer is connected to the measuring shaft. The sliding arm of the potentiometer rotates synchronously with the measuring piece, which converts the change of the opening angle of the measuring piece (i.e. the change of the flow rate) into the change of the resistance value",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-flow-out-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 281,
+    "title": "Wireless hook load sensor for mud logging unit",
+    "slug": "wireless-hook-load-sensor-for-mud-logging-unit",
+    "summary": "Wireless hook load sensor for mud logging unit Pressure sensor is a kind of device that converts non electric quantity into electric signal.",
+    "image": "/images/source/2022/06/4__74762.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "2",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "There are many kinds of pressure sensors, such as resistance strain gauge pressure sensor, semiconductor strain gauge pressure sensor, piezoresistive pressure sensor, inductive pressure sensor, capacitive pressure sensor, resonant pressure sensor and capacitive acceleration sensor. The sensor is a piezoresistive pressure sensor.",
+          "PRODUCT SPECIFICATION",
+          "Working voltage: 3.3VDC",
+          "Output: 0.5~2.5VDC voltage signal",
+          "Measuring range: 0-5MPa",
+          "Accuracy: ≤1 F·S",
+          "Working temperature: -40~",
+          "PRODUCT FEATURE AND APPLICATION",
+          "This system is mainly used in oil drilling exploration and development, and it is used together with integrated logging instrument. It can completely replace wired sensors for logging construction, and make up for the shortage of installation, maintenance and construction of wired sensor acquisition system.",
+          "PRODUCT DETAILS",
+          "The hook load sensor is mounted on the hydraulic converter of the dead rope holder, that is, the hook load sensor measures the pressure of the hook by measuring the pressure of the oil path of the finger gauge, and is connected with the finger weight through the tee. The connection between the sensor and the oil circuit is achieved by a quick coupling, which must be sealed with a Teflon tape when installing the quick coupling.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-hook-load-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 294,
+    "title": "Wireless hydrogen sulfide (H2S) sensor for mud logging unit",
+    "slug": "wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit",
+    "summary": "Wireless hydrogen sulfide (H2S) sensor for mud logging unit Wireless hydrogen sulfide sensor is used to measure H2S gas concentration in the environment .",
+    "image": "/images/source/2022/06/4__71820.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "5",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "H2S sensor can be used to measure H2S gas concentration in the environment continuously and send out 4 ~ 20mA standard signals which are proportional to the concentrations of the gases measured.",
+          "PRODUCT SPECIFICATION",
+          "Supply voltage: 3.5-5VDC",
+          "Baseline deviation: < ±0.5 ppm",
+          "Zero offset (-40°C - +50°C): < ±0.4 ppm",
+          "Temperature range: -20°c -- +40°c",
+          "Life expectancy: 2 years in the air",
+          "Repeated relinearity: < ±5%",
+          "Detection range: 0-100ppm T90",
+          "Reaction time: 20 seconds (at 20 degrees)",
+          "Protection level: IP67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The hydrogen sulfide sensor is a device for identifying hydrogen sulfide gas, which can effectively detect hydrogen sulfide gas that enters the confined space and is encountered during operation. The electrochemical hydrogen sulfide gas sensor works according to the electrochemical principle, and determines the concentration of the gas to be measured by measuring the magnitude of the Faraday current generated by the gas to be measured in the oxidation and reduction process of the electrolytic cell.",
+          "PRODUCT DETAILS",
+          "The sensor explosion-proof box is assembled with the mounting bracket , and the g-type holder is used to fix the sensor in a suitable position on the site. The sensor installation area should avoid electromagnetic interference as much as possible, and the cavity should be sealed when the sensor is working.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 306,
+    "title": "Wireless master station",
+    "slug": "wireless-master-station",
+    "summary": "wireless master station",
+    "image": "/images/source/2022/06/4__48247.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "5",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "Technical indicators",
+          "Working voltage: 3.3-5vdc",
+          "Operating frequency: 433±30MHz",
+          "System capacity: 2 × 25 nodes",
+          "Working temperature: -40~70°C",
+          "Protection level: IP67 2.",
+          "Main station circuit board",
+          "The front faces are 1-6 from left to right: 1---(vcc) power supply positive, 3.7-5v 2---(v0) power supply 0v, channel 1 signal zero, channel 2 signal zero 3---(rx1) channel 1 data reception 4---(tx1) channel 1 data transmission 5--(tx2) channel 2 data transmission 6---(rx2) channel 2 data reception Rs232 serial port 1---DCD 2---RX 3---TX 4---DTR 5---GND 6---DSR 7---RTS 8---CTS 9---RI",
+          "Antenna interface",
+          "The SAM interface is used for docking. The master station has 2 channels, the center frequency is 433MHz, and the 2 antennas are connected to the circuit board through the SAM interface.",
+          "Mode selection Toggle switch",
+          "On--Debug mode Off--working mode",
+          "External antenna",
+          "If the signal is not good, you need to strengthen it. You can use an external antenna. The external antenna connection method is shown in the figure.",
+          "Antenna erection",
+          "The main station is installed on the roof of the logging instrument and connected to the indoor interface box of the logging instrument through a multi-core explosion-proof plug. The primary station can receive 2k channels of wireless data, and the wireless communication module is packaged in the explosion-proof box of the main station. In order to prevent interference between the antennas, the distance between the two antennas should be above 20CM."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-master-station/"
+  },
+  {
+    "id": 284,
+    "title": "Wireless mud density sensor for mud logging unit",
+    "slug": "wireless-mud-density-sensor-for-mud-logging-unit",
+    "summary": "Wireless mud density sensor for mud logging unit The density sensor uses the differential pressure principle to measure the density of the drilling fluid.",
+    "image": "/images/source/2022/06/4__79387.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "25",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "The density sensor uses the differential pressure principle to measure the density of the drilling fluid.When the sensor is placed vertically in the drilling fluid, the pressure on the surface of the two pressure sensors is different because the depth of the two pressure sensors is different in the drilling fluid, and the distance between the two pressure sensors is a constant, so their difference The pressure is linear with the density of the liquid.",
+          "PRODUCT SPECIFICATION",
+          "Measuring range: 0~3g/cm3",
+          "Accuracy: ±1%",
+          "FS Supply voltage: 3.5-5VDC",
+          "Output signal: 0.5-2.5V",
+          "Full level: IEC EEX iaII CT6",
+          "Working temperature: -20~70°C",
+          "Protection level: IP67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The differential pressure type density sensor can be widely used in industrial fields such as on-site pipelines, open or closed storage tanks, and can continuously and in real-time measure the liquid density of pipelines or tanks.",
+          "PRODUCT DETAILS",
+          "The sensor antenna and the circuit board are connected by a SAM interface, and the antenna center frequency is 433 MHz, and the antenna and the circuit board are connected by a SAM interface extension cable.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-mud-density-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 293,
+    "title": "Wireless pit level sensor for mud logging unit",
+    "slug": "wireless-pit-level-sensor-for-mud-logging-unit",
+    "summary": "Wireless pit level sensor for mud logging unit Wireless pit level sensor is to monitor changes of pit level.",
+    "image": "/images/source/2022/06/4__97855.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "5",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "Based on the principle of ultrasonic ranging, the sensor is placed in the active mud pits and Trip Tank to monitor changes of pit level. Consequently, well kick and mud loss can be discovered in time.",
+          "PRODUCT SPECIFICATION",
+          "Measuring range: 0.5-3 meters",
+          "Accuracy: ±1FS",
+          "Supply voltage: 3.5-5VDC",
+          "Output signal: voltage signal 0.5-2.5V",
+          "Security level: IEC EEX iaII CT6",
+          "Working temperature: -20~70°C",
+          "Protection level: IP67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The ultrasonic level sensor emits a series of ultrasonic pulses from the transducer. Each pulse is reflected by the liquid surface to generate an echo and is received by the transducer. Filtering technology is used to distinguish the true echo from the liquid surface and the acoustic and electrical noise. A false echo generated by a moving agitator blade, the time during which the pulse propagates to the object under test and returns is temperature compensated and converted into a distance.",
+          "PRODUCT DETAILS",
+          "If the measurement distance is L, the propagation speed of the ultrasonic wave in the medium is V, and the propagation time is T, it can be obtained that: L = V × T / 2, the mud depth Ls can be calculated. The mud pool volume: Vs = mud pool cross-sectional area S × Ls.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-pit-level-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 297,
+    "title": "Wireless pump stroke sensor/ Wireless Rotary Speed (RPM) for mud logging unit",
+    "slug": "wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit",
+    "summary": "wireless pump stroke sensor/ Wireless Rotary Speed (RPM) for mud logging unit The pump stroke sensor is used to measure the number of piston movements per minute of the mud pump, calculate the inlet flow…",
+    "image": "/images/source/2022/06/4__53001.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "5",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "Product Introduction",
+          "In addition to be used in mud logging, this proximity switch sensor is also suitable for various control such as machine limit, detection, counting, speed measurement, liquid level signal, automatic protection, etc. It is widely used in machinery, mining, metallurgy, plastics, textile, chemical industry, light industry. , tobacco, electricity, railways, military and other departments.",
+          "Product Specification",
+          "Supply voltage: 3.5-5VDC",
+          "Working temperature: -40~70°C",
+          "Accuracy: ±1",
+          "Minimum action distance: >8mm",
+          "Maximum operating frequency: 100Hz",
+          "Protection level: IP 67",
+          "Product feature and application",
+          "The Sensor is an inductive proximity switch sensor used in the oil field to measure pump or turntable speed. It has a wide range of power supply voltage, high repeatability, fast frequency response, long service life, vibration resistance, corrosion resistance and waterproof with polarity and short circuit protection.",
+          "Product details",
+          "1.The pumping sensor can be fixed to the mud pump head by the bracket, or the appropriate part of the turntable, and the closest distance between the position of the sensing surface of the measured object and the end surface of the sensor is within 30 mm. (According to the influence of the use environment, the rated working distance is generally taken. 80%), plus the working voltage, when the end of the inductive sports sensor is close, the indicator light is on; when away from the sensor, the indicator is off.",
+          "2.The turntable speed sensor can be fixed to the appropriate part of the drive shaft of the turntable with the bracket. It should be convenient to install and repair. The model of the drill is selected. A piece of iron with a length and width of 30mm is welded on the shaft of the drive shaft or the airbag clutch. The position of the end face should be close to the end face of the sensor. Adjust the fixing nut of the sensor so that the distance between the iron sensor is within the effective range of the working distance.",
+          "Product qualification",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/"
+  },
+  {
+    "id": 307,
+    "title": "Wireless sensors for mud logging unit",
+    "slug": "wireless-sensors-for-mud-logging-unit",
+    "summary": "At present, in some industrial construction sites, all kinds of sensor data are mostly transmitted and collected by wire. Some sensors even need to change their positions frequently, especially in oil…",
+    "image": "/images/source/2022/06/4__19357.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "50",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "FEATURES",
+          "Compared with traditional wired data acquisition systems, Bee wireless data acquisition systems have the following characteristics:",
+          "HIGH SECURITY",
+          "The wireless sensor is powered by battery and adopts overcurrent, overvoltage, short circuit and overheat protection technology to fully guarantee the safety of the sensor. The sensor has no external power supply and has strong lightning protection capability. It will not cause damage to the equipment due to lightning inductance.",
+          "LOW POWER CONSUMPTION",
+          "A number of advanced technologies are used to reduce the overall power consumption of the sensor and ensure battery life. A group of batteries (rechargeable) can work continuously for more than 50 days.",
+          "LONG TRANSMISSION DISTANCE",
+          "After field application, the wireless signal transmission is stable and reliable. The measured line-of-sight transmission is more than 300 meters. Under certain barrier conditions, the effective communication distance can reach more than 120 meters. It can be fully satisfied by extending the signal line and changing the installation position. Complex site requirements.",
+          "STRONG ANTI-INTERFERENCE ABILITY",
+          "The use of a number of proprietary technologies effectively avoids module communication conflicts and ensures data integrity and accuracy.",
+          "SIMPLE INSTALLATION",
+          "There is no need to set up the bus during installation, and there is no need for on-site wiring. The installation of all sensors can be completed within 2 hours by one person, saving manpower and saving time.",
+          "GOOD COMPATIBILITY",
+          "Through the WITS transmission protocol, compatible with various application systems, the traditional wired sensor acquisition system can be upgraded to the Bee wireless sensor acquisition system.",
+          "APPLICATION",
+          "This system is mainly used in oil drilling exploration and development, and it is used together with integrated logging instrument. It can completely replace wired sensors for logging construction, and make up for the shortage of installation, maintenance and construction of wired sensor acquisition system.",
+          "SYSTEM STRUCTURE",
+          "The Bee wireless sensor data acquisition system consists of a primary station and multiple sensor nodes; the primary station is responsible for the management and data collection of wireless sensor nodes, and the sensor nodes are responsible for data measurement and wireless transmission. The sensor node includes a power management module, a signal conditioning module, a data acquisition module, and a wireless communication module. The sensor node is powered by a battery, and the data is wirelessly transmitted to the primary station. The main station is mainly composed of the upper computer and the wireless communication module. The upper computer and the wireless communication module are wired, and the upper computer is equipped with data acquisition software, which is mainly responsible for data collection and management of the sensor nodes. The main station antenna is installed on the roof of the logging instrument and is responsible for the transmission and reception of wireless signals. The wireless sensor nodes are distributed to the drilling construction site to measure various data required by the logging system, and the collected values are sent to the central node in digital form."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-sensors-for-mud-logging-unit/"
+  },
+  {
+    "id": 308,
+    "title": "Wireless standpipe pressure sensor for mud logging unit",
+    "slug": "wireless-standpipe-pressure-sensor-for-mud-logging-unit",
+    "summary": "Wireless standpipe pressure sensor for mud logging unit Pressure sensor is a kind of device that converts non electric quantity into electric signal.",
+    "image": "/images/source/2022/06/4__55544.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "2",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "There are many kinds of pressure sensors, such as resistance strain gauge pressure sensor, semiconductor strain gauge pressure sensor, piezoresistive pressure sensor, inductive pressure sensor, capacitive pressure sensor, resonant pressure sensor and capacitive acceleration sensor. The sensor is a piezoresistive pressure sensor.",
+          "PRODUCT SPECIFICATION",
+          "Supply voltage: 3.5-5VDC",
+          "Output: 0.5~2.5VDC voltage signal",
+          "Measuring range: 0-40MPa",
+          "Accuracy: ≤1%F·S",
+          "Working temperature: -20~70°C",
+          "Protection level: IP67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "This system is mainly used in oil drilling exploration and development, and it is used together with integrated logging instrument. It can completely replace wired sensors for logging construction, and make up for the shortage of installation, maintenance and construction of wired sensor acquisition system.",
+          "PRODUCT DETAILS",
+          "The standpipe pressure sensor is mounted on a riser on the drill floor. The standpipe pressure sensor is directly in contact with the mud through the head-to-head conversion unit provided with the instrument. Due to the high pressure during normal operation, when installing the size head and pressure sensor on the riser/sleeve, be sure to pay attention to the tightening and sealing of the installation. To avoid foreign matter from the lead end, the cable lead-out of the sensor should face down.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-standpipe-pressure-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 283,
+    "title": "Wireless temperature sensor  for mud logging unit",
+    "slug": "wireless-temperature-sensor-for-mud-logging-unit",
+    "summary": "Wireless temperature sensor for mud logging unit The wireless temperature sensor is used to measure the temperature of the mud liquid.",
+    "image": "/images/source/2022/06/4__42828.jpg",
+    "category": {
+      "slug": "wireless-sensors",
+      "name": "Wireless Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging",
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "20",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "PRODUCT INTRODUCTION",
+          "Temperature sensor is a kind of device that converts non electric quantity into electric signal, which is mainly divided into thermal resistance and thermocouple. Bee adopts thermal resistance temperature sensor. The thermal resistance of temperature sensor is one of the most commonly used temperature detectors in the low temperature area. Its main characteristics are high measurement accuracy and stable performance. It is not only widely used in industrial temperature measurement, but also made into a standard reference instrument.",
+          "PRODUCT SPECIFICATION",
+          "Temperature range: 0-100, 120 ° C",
+          "Resolution: 0.1 ° C",
+          "Measurement accuracy: ±1%",
+          "F·S Supply voltage: 3.5-5VDC",
+          "Output: 0.5~2.5VDC voltage",
+          "Working temperature: -20~70°C",
+          "Insertion depth >160mm",
+          "Protection level: IP67",
+          "PRODUCT FEATURE AND APPLICATION",
+          "The wireless temperature sensor is used to measure the temperature of the mud liquid. It is equipped with an anti-collision metal cover, which is safe and reliable.",
+          "PRODUCT DETAILS",
+          "The whole structure is made of stainless steel, the protective cover can be disassembled for easy cleaning and maintenance, and the temperature of the liquid and vapor gas in various production processes can be directly measured.",
+          "PRODUCT QUALIFICATION",
+          "All sensors either are EX type or are intrinsically safe. Zone barriers are installed in the Unit. Using well-known brand products at home and abroad, the sensors of mud logging unit have the advantage of technical and performance indicators. At the same time, the service life is long."
+        ]
+      },
+      {
+        "heading": "Delivery and services",
+        "paragraphs": [
+          "CNPS can ship the goods to you by Express, Air, or sea ."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/wireless-temperature-sensor-for-mud-logging-unit/"
+  }
+]

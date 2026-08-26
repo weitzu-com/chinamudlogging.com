@@ -1,0 +1,22 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  parentHref?: string;
+  parentLabel?: string;
+}
+
+const { eyebrow, title, description, parentHref, parentLabel } = Astro.props;
+---
+
+<section class="page-hero">
+  <div class="container page-hero-content">
+    {parentHref && parentLabel && (
+      <div class="breadcrumbs"><a href={parentHref}>{parentLabel}</a> <span aria-hidden="true">/</span> {title}</div>
+    )}
+    <div class="eyebrow">{eyebrow}</div>
+    <h1>{title}</h1>
+    <p>{description}</p>
+  </div>
+</section>

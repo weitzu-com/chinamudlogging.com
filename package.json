@@ -1,0 +1,24 @@
+{
+  "name": "chinamudlogging-com",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "check": "astro check",
+    "check:dist": "node scripts/check-build.mjs",
+    "preview": "astro preview",
+    "content:generate": "node scripts/generate-content.mjs"
+  },
+  "dependencies": {
+    "astro": "7.2.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.6",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

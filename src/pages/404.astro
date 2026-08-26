@@ -1,0 +1,9 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<BaseLayout title="Page not found" description="The requested ChinaMudLogging.com page could not be found.">
+  <PageHero eyebrow="404" title="This page is not in the current catalog." description="Use the product catalog to find equipment, or send the legacy product name to the sales team." />
+  <section class="section compact"><div class="container button-row"><a class="button dark" href="/product/">Browse products</a><a class="button ghost-dark" href="/contact-us/">Contact sales</a></div></section>
+</BaseLayout>

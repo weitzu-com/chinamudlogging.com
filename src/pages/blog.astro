@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import CtaBand from "../components/CtaBand.astro";
+import articles from "../data/articles.json";
+---
+
+<BaseLayout title="Mud Logging Insights" description="Practical introductory articles on mud logging, mud logging units, the role of a mud logger, and wellsite monitoring tasks.">
+  <PageHero eyebrow="Insights" title="Mud logging, explained from the wellsite outward." description="Foundational articles recovered from the original site and presented in a cleaner, easier-to-read technical library." />
+  <section class="section sand">
+    <div class="container article-grid">{articles.map((article) => <ArticleCard article={article} heading="h2" />)}</div>
+  </section>
+  <CtaBand title="Have an equipment question behind the terminology?" />
+</BaseLayout>

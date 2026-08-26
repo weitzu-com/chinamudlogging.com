@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+import articles from "../data/articles.json";
+
+export function getStaticPaths() {
+  return articles.map((article) => ({ params: { slug: article.slug }, props: { article } }));
+}
+
+const { article } = Astro.props;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: article.title,
+  description: article.summary,
+  datePublished: article.publishedAt.replace(" ", "T") + "+08:00",
+  image: new URL(article.image, Astro.site).toString(),
+  author: { "@type": "Organization", name: "ChinaMudLogging.com" },
+  publisher: { "@type": "Organization", name: "ChinaMudLogging.com" },
+};
+---
+
+<BaseLayout title={article.title} description={article.summary} image={article.image} canonicalPath={`/${article.slug}/`} type="article" schema={schema}>
+  <PageHero eyebrow="Mud logging insight" title={article.title} description={article.summary} parentHref="/blog/" parentLabel="Insights" />
+  <article class="section">
+    <div class="container article-shell">
+      <img class="article-lead-image" src={article.image} alt="" width="1200" height="720" />
+      <div class="article-body">
+        {article.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+      <div class="source-notice">This article was recovered from the legacy site. For a current equipment recommendation, share the application and required measurement with the sales team.</div>
+    </div>
+  </article>
+  <CtaBand title="Turn the technical question into an equipment requirement." />
+</BaseLayout>

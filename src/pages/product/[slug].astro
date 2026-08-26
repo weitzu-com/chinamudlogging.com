@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import products from "../../data/products.json";
+
+export function getStaticPaths() {
+  return products.map((product) => ({ params: { slug: product.slug }, props: { product } }));
+}
+
+const { product } = Astro.props;
+const related = products.filter((item) => item.slug !== product.slug && item.category.slug === product.category.slug).slice(0, 3);
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: product.title,
+  description: product.summary,
+  image: new URL(product.image, Astro.site).toString(),
+  category: product.category.name,
+  sku: product.sku || undefined,
+  brand: { "@type": "Brand", name: "ChinaMudLogging.com" },
+};
+---
+
+<BaseLayout title={product.title} description={product.summary} image={product.image} canonicalPath={`/product/${product.slug}/`} type="product" schema={schema}>
+  <section class="section compact">
+    <div class="container">
+      <div class="breadcrumbs" style="color: var(--ink-soft)"><a href="/" style="color: var(--ink)">Home</a> / <a href="/product/" style="color: var(--ink)">Products</a> / {product.title}</div>
+      <div class="product-detail-grid">
+        <div class="product-image-large"><img src={product.image} alt={product.title} width="800" height="800" /></div>
+        <div class="product-summary">
+          <a class="badge" href={`/product-category/${product.category.slug}/`}>{product.category.name}</a>
+          <h1>{product.title}</h1>
+          <p>{product.summary}</p>
+          <div class="fact-list">
+            <div class="fact"><span>Purchase model</span><strong>Request for quotation</strong></div>
+            <div class="fact"><span>Configuration</span><strong>Confirmed per application</strong></div>
+            {product.sku && <div class="fact"><span>Legacy SKU</span><strong>{product.sku}</strong></div>}
+            {product.weight && <div class="fact"><span>Listed weight</span><strong>{product.weight} kg</strong></div>}
+          </div>
+          <div class="button-row">
+            <a class="button dark" href={`/contact-us/?product=${encodeURIComponent(product.title)}`}>Request this product →</a>
+            <a class="button ghost-dark" href="mailto:sales@chinamudlogging.com">Email sales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sand">
+    <div class="container spec-layout">
+      <aside class="spec-nav">
+        <strong>Technical record</strong>
+        <p>Recovered from the original SiteGround WordPress catalog and cleaned for readability.</p>
+        <a class="text-link" href={`/contact-us/?product=${encodeURIComponent(product.title)}`}>Confirm current spec →</a>
+      </aside>
+      <div>
+        {product.sections.length ? product.sections.map((section) => (
+          <section class="spec-section">
+            <h2>{section.heading}</h2>
+            {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          </section>
+        )) : (
+          <section class="spec-section"><h2>Product overview</h2><p>{product.summary}</p></section>
+        )}
+        <div class="source-notice"><strong>Quotation check:</strong> legacy specifications may be incomplete or outdated. Confirm operating range, output signal, materials, hazardous-area requirement, documentation, and certification for the current order.</div>
+      </div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section-heading"><div class="eyebrow">Related equipment</div><h2>More from {product.category.name}</h2></div>
+        <div class="card-grid">{related.map((item) => <ProductCard product={item} />)}</div>
+      </div>
+    </section>
+  )}
+  <CtaBand title={`Need a current quotation for ${product.title}?`} button="Send the requirement" />
+</BaseLayout>

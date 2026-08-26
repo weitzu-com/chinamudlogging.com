@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import products from "../../data/products.json";
+import categories from "../../data/categories.json";
+---
+
+<BaseLayout title="Mud Logging Products" description="Browse mud logging units, wired and wireless sensors, drilling monitoring accessories, and formation evaluation equipment.">
+  <PageHero eyebrow="Product catalog" title="Mud logging equipment, organized by the job." description={`Browse ${products.length} products recovered from the original server and reorganized into ${categories.length} practical equipment families.`} />
+  <section class="section compact sand">
+    <div class="container">
+      <div class="catalog-tools" data-catalog-controls>
+        <div class="catalog-search">
+          <label for="product-search">Search products</label>
+          <input id="product-search" type="search" placeholder="Search sensors, units, pressure…" autocomplete="off" />
+        </div>
+        <div class="filter-row" aria-label="Filter by product family">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All ({products.length})</button>
+          {categories.map((category) => <button class="filter-button" type="button" data-filter={category.slug} aria-pressed="false">{category.name} ({category.count})</button>)}
+        </div>
+      </div>
+      <p id="catalog-status" class="visually-hidden" aria-live="polite"></p>
+      <div class="card-grid" id="product-grid">
+        {products.map((product) => <ProductCard product={product} />)}
+      </div>
+      <div class="catalog-empty" id="catalog-empty">No products match this search. Try a broader term or <a href="/contact-us/">send the requirement directly</a>.</div>
+    </div>
+  </section>
+  <CtaBand title="Cannot find the exact configuration? Start with the measurement requirement." />
+  <script>
+    const search = document.querySelector<HTMLInputElement>("#product-search");
+    const buttons = [...document.querySelectorAll<HTMLButtonElement>("[data-filter]")];
+    const cards = [...document.querySelectorAll<HTMLElement>("[data-product]")];
+    const empty = document.querySelector<HTMLElement>("#catalog-empty");
+    const status = document.querySelector<HTMLElement>("#catalog-status");
+    let activeFilter = "all";
+
+    const update = () => {
+      const query = search?.value.trim().toLowerCase() ?? "";
+      let visible = 0;
+      cards.forEach((card) => {
+        const matchesFilter = activeFilter === "all" || card.dataset.category === activeFilter;
+        const matchesSearch = !query || (card.dataset.search ?? "").includes(query);
+        card.hidden = !(matchesFilter && matchesSearch);
+        if (!card.hidden) visible += 1;
+      });
+      if (empty) empty.style.display = visible ? "none" : "block";
+      if (status) status.textContent = `${visible} products shown`;
+    };
+
+    buttons.forEach((button) => button.addEventListener("click", () => {
+      activeFilter = button.dataset.filter ?? "all";
+      buttons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+      update();
+    }));
+    search?.addEventListener("input", update);
+  </script>
+</BaseLayout>

@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "drilling-monitoring",
+    "name": "Drilling Monitoring & Accessories",
+    "count": 3
+  },
+  {
+    "slug": "formation-evaluation",
+    "name": "Formation Evaluation",
+    "count": 5
+  },
+  {
+    "slug": "mud-logging-sensors",
+    "name": "Mud Logging Sensors",
+    "count": 26
+  },
+  {
+    "slug": "mud-logging-units",
+    "name": "Mud Logging Units",
+    "count": 6
+  },
+  {
+    "slug": "wireless-sensors",
+    "name": "Wireless Sensors",
+    "count": 16
+  }
+]

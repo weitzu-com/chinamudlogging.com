@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import products from "../../data/products.json";
+import categories from "../../data/categories.json";
+
+export function getStaticPaths() {
+  return categories.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+}
+
+const { category } = Astro.props;
+const categoryProducts = products.filter((product) => product.category.slug === category.slug);
+const descriptions: Record<string, string> = {
+  "mud-logging-units": "Complete and modular surface logging systems for wellsite data acquisition, gas detection, monitoring, and interpretation workflows.",
+  "mud-logging-sensors": "Wired sensors for pressure, load, density, temperature, flow, level, torque, depth, conductivity, and pump stroke measurement.",
+  "wireless-sensors": "Wireless wellsite sensors, transmission boxes, master stations, power accessories, and related measurement components.",
+  "formation-evaluation": "Tools supporting gas detection, fluorescence observation, shale density measurement, degassing, and formation evaluation workflows.",
+  "drilling-monitoring": "Industrial computers, monitoring accessories, and components that support drilling data acquisition and interpretation.",
+};
+const description = descriptions[category.slug] ?? `Browse ${category.name.toLowerCase()} for mud logging applications.`;
+---
+
+<BaseLayout title={category.name} description={description} canonicalPath={`/product-category/${category.slug}/`}>
+  <PageHero eyebrow="Product family" title={category.name} description={`${description} ${categoryProducts.length} product records are available in this family.`} parentHref="/product/" parentLabel="Products" />
+  <section class="section sand">
+    <div class="container">
+      <div class="card-grid">{categoryProducts.map((product) => <ProductCard product={product} />)}</div>
+    </div>
+  </section>
+  <CtaBand title={`Need help selecting from ${category.name.toLowerCase()}?`} />
+</BaseLayout>

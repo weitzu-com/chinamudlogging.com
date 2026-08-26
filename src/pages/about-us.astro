@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+---
+
+<BaseLayout title="About" description="Learn how ChinaMudLogging.com supports oilfield teams with mud logging equipment, sensors, formation evaluation, and drilling monitoring products.">
+  <PageHero eyebrow="Company focus" title="One clear route to mud logging equipment." description="A specialist product and service platform focused on geological evaluation, surface logging, drilling monitoring, and the wellsite sensors behind reliable data." />
+  <section class="section">
+    <div class="container split-feature">
+      <div>
+        <div class="eyebrow">What we do</div>
+        <h2>We connect field requirements to practical equipment choices.</h2>
+        <p>The original ChinaMudLogging.com described a specialist oilfield products and services business. The new site keeps that focus and makes the decision path clearer for engineers, operations teams, and international buyers.</p>
+        <p>Our catalog covers complete mud logging units, wired and wireless sensors, data acquisition accessories, drilling monitoring equipment, and formation evaluation tools.</p>
+        <ul class="check-list">
+          <li>Requirement-led product selection</li>
+          <li>Technical configuration review before quotation</li>
+          <li>Export and delivery coordination</li>
+        </ul>
+      </div>
+      <div class="media-frame">
+        <img src="/images/source/2021/11/workers-standing-checking-beside-working-oil-pumps-min.jpg" alt="Oilfield workers inspecting production equipment" width="1200" height="800" loading="lazy" />
+        <div class="media-note"><strong>Wellsite context matters</strong><span>Range, signal, installation, environment, and integration are reviewed together.</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section sand">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Operating principles</div>
+        <h2>Clear specifications. Practical coordination. Accountable support.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="product-card"><div class="product-card-body"><span class="badge">01</span><h3>Reliability</h3><p>Align the offered configuration with the documented requirement and confirm critical parameters before supply.</p></div></article>
+        <article class="product-card"><div class="product-card-body"><span class="badge">02</span><h3>Technical advisory</h3><p>Help buyers compare measurement principles, ranges, outputs, installation constraints, and system compatibility.</p></div></article>
+        <article class="product-card"><div class="product-card-body"><span class="badge">03</span><h3>Product quality</h3><p>Treat quality evidence and current certification requirements as quotation-stage deliverables, not assumptions.</p></div></article>
+      </div>
+    </div>
+  </section>
+  <CtaBand title="Tell us what you need to measure, monitor, or replace." />
+</BaseLayout>

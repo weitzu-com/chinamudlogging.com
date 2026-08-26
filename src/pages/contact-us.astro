@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<BaseLayout title="Contact" description="Contact ChinaMudLogging.com for mud logging equipment, sensor, spare part, and system configuration inquiries.">
+  <PageHero eyebrow="Contact" title="Send the requirement. We will build the equipment conversation around it." description="Include the application, measurement range, interface, quantity, destination, and target delivery date where available." />
+  <section class="section">
+    <div class="container contact-grid">
+      <aside class="contact-card">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Direct contact</h2>
+        <div class="contact-item"><span>Email</span><a href="mailto:sales@chinamudlogging.com">sales@chinamudlogging.com</a></div>
+        <div class="contact-item"><span>Phone</span><a href="tel:+8618354639099">+86 183 5463 9099</a></div>
+        <div class="contact-item"><span>Location</span><strong>Dongcheng, Dongying<br />Shandong, China</strong></div>
+        <p>The contact details above are preserved from the original server content.</p>
+      </aside>
+      <div>
+        <div class="eyebrow">Prepare an email inquiry</div>
+        <h2>What do you need?</h2>
+        <form class="inquiry-form" id="inquiry-form">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required /></div>
+          <div class="field"><label for="company">Company</label><input id="company" name="company" autocomplete="organization" /></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+          <div class="field"><label for="country">Country / destination</label><input id="country" name="country" autocomplete="country-name" /></div>
+          <div class="field full"><label for="product">Product or application</label><input id="product" name="product" /></div>
+          <div class="field full"><label for="message">Requirement details</label><textarea id="message" name="message" placeholder="Application, range, signal or protocol, quantity, certification, target date…" required></textarea></div>
+          <div class="form-note">This form does not store or send data to a third-party form service. It prepares an email in your mail application.</div>
+          <div class="field full"><button class="button dark" type="submit">Prepare email →</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const productInput = document.querySelector<HTMLInputElement>("#product");
+    if (productInput && params.get("product")) productInput.value = params.get("product") ?? "";
+
+    document.querySelector<HTMLFormElement>("#inquiry-form")?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formElement = event.currentTarget as HTMLFormElement;
+      const form = new FormData(formElement);
+      const subject = `Mud logging inquiry: ${form.get("product") || "equipment requirement"}`;
+      const body = [
+        `Name: ${form.get("name") || ""}`,
+        `Company: ${form.get("company") || ""}`,
+        `Email: ${form.get("email") || ""}`,
+        `Country / destination: ${form.get("country") || ""}`,
+        `Product / application: ${form.get("product") || ""}`,
+        "",
+        String(form.get("message") || ""),
+      ].join("\n");
+      window.location.href = `mailto:sales@chinamudlogging.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</BaseLayout>
