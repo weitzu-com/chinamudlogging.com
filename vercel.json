@@ -1,5 +1,11 @@
 {
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "chinamudlogging.com" }],
+      "destination": "https://www.chinamudlogging.com/:path*",
+      "permanent": true
+    },
     { "source": "/home/", "destination": "/", "permanent": true },
     { "source": "/shop/", "destination": "/product/", "permanent": true },
     { "source": "/news/", "destination": "/blog/", "permanent": true },
