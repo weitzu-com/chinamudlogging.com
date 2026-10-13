@@ -90,6 +90,13 @@ function truncate(value, length = 210) {
   return `${clean.slice(0, length).replace(/\s+\S*$/, "")}…`;
 }
 
+function cleanLegacyWeight(value) {
+  const weight = String(value || "").trim();
+  // 33333 is a known placeholder in the legacy WooCommerce export, not a
+  // defensible shipping weight. Omit it until the sales team confirms it.
+  return weight === "33333" ? "" : weight;
+}
+
 function curatedCategory(title, sourceCategories) {
   const haystack = `${title} ${sourceCategories.join(" ")}`.toLowerCase();
   if (/wireless/.test(haystack)) return { slug: "wireless-sensors", name: "Wireless Sensors" };
@@ -151,7 +158,7 @@ const products = posts
       category: curatedCategory(post.post_title, sourceCategories),
       sourceCategories,
       sku: meta._sku || "",
-      weight: meta._weight || "",
+      weight: cleanLegacyWeight(meta._weight),
       sections,
       legacyUrl: `/product/${post.post_name}/`,
     };

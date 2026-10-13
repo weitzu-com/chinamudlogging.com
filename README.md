@@ -11,9 +11,14 @@ Static English B2B website rebuilt from the public content and media stored on t
 ## Local development
 
 ```bash
-npm install
-npm run build
+npm ci
 npm run dev
+```
+
+Requires Node.js 22.19.0 or newer. Before pushing, run the same build, generated-page, link, metadata, and production-dependency checks used by CI:
+
+```bash
+npm run verify
 ```
 
 ## Routes preserved
