@@ -2267,5 +2267,308 @@
       }
     ],
     "legacyUrl": "/product/wireless-temperature-sensor-for-mud-logging-unit/"
+  },
+  {
+    "id": 309,
+    "title": "CL-DD11 Mud Conductivity Sensor",
+    "slug": "cl-dd11-mud-conductivity-sensor",
+    "summary": "An electromagnetic induction sensor for continuous drilling-fluid conductivity measurement, with temperature compensation and a 4-20 mA output for mud logging systems.",
+    "image": "/images/products/cl-dd11-mud-conductivity-sensor.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging sensor"
+    ],
+    "sku": "CL-DD11",
+    "weight": "",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "The CL-DD11 is an electromagnetic induction conductivity sensor designed to measure the conductivity of drilling fluid in a mud logging system. Its non-contact inductive measuring principle supports stable operation in conductive, corrosive drilling-fluid applications.",
+          "The sensor combines a transmitter and an immersion probe. A protective cover around the probe helps reduce accidental mechanical damage during wellsite use."
+        ]
+      },
+      {
+        "heading": "Specifications",
+        "paragraphs": [
+          "Power supply: 5-30 V DC; 24 V DC recommended.",
+          "Measurement range: 0-300 mS/cm; configurable for the application.",
+          "Output signal: 4-20 mA DC.",
+          "Measurement accuracy: ±2% FS.",
+          "Repeatability: ±0.25%.",
+          "Operating temperature: -20 to 60 °C.",
+          "Relative humidity: 0-95% RH."
+        ]
+      },
+      {
+        "heading": "Measurement principle",
+        "paragraphs": [
+          "The probe contains concentric transmitter and receiver coils. The transmitter coil generates an 8 kHz electromagnetic field while the probe is immersed in drilling fluid. Conductivity-dependent current in the fluid induces a corresponding signal in the receiver coil.",
+          "The transmitter conditions and amplifies the received signal, then produces a standard 4-20 mA DC output. An integrated thermistor monitors drilling-fluid temperature and compensates the conductivity reading to a reference temperature of 25 °C."
+        ]
+      },
+      {
+        "heading": "Installation and maintenance",
+        "paragraphs": [
+          "Install the probe so that its active measuring area remains immersed in the drilling fluid and protected from impact. Keep foreign material out of the probe guard.",
+          "Clean the probe promptly when drilling-fluid deposits accumulate. Regular cleaning helps preserve measurement stability and accuracy."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cl-dd11-mud-conductivity-sensor/"
+  },
+  {
+    "id": 310,
+    "title": "Drilling Fluid Temperature Sensor",
+    "slug": "drilling-fluid-temperature-sensor",
+    "summary": "An immersion temperature sensor for monitoring drilling-fluid temperature at the wellsite and supplying the measurement to a mud logging acquisition system.",
+    "image": "/images/products/drilling-fluid-temperature-sensor.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging sensor"
+    ],
+    "sku": "",
+    "weight": "",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "This immersion sensor is used to monitor drilling-fluid temperature as part of a mud logging data acquisition system. The long stainless-steel probe allows the sensing element to be positioned in the active fluid while the connection head remains above the measurement point.",
+          "The protective lower cage helps shield the sensing area from incidental contact while allowing drilling fluid to circulate around it."
+        ]
+      },
+      {
+        "heading": "Application",
+        "paragraphs": [
+          "Typical use is continuous temperature monitoring in an active mud pit, flow line or other drilling-fluid measurement point. Temperature trends can be recorded together with other wellsite parameters by the mud logging system."
+        ]
+      },
+      {
+        "heading": "Configuration",
+        "paragraphs": [
+          "Measurement range, output signal, insertion length, process connection and hazardous-area requirements are confirmed for the intended installation before quotation."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/drilling-fluid-temperature-sensor/"
+  },
+  {
+    "id": 311,
+    "title": "CL-MD23 Mud Density Sensor",
+    "slug": "cl-md23-mud-density-sensor",
+    "summary": "An intrinsically safe differential-pressure sensor for continuous drilling-fluid density monitoring, with a 0-3 g/cm³ range and linear 4-20 mA output.",
+    "image": "/images/products/cl-md23-mud-density-sensor.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging sensor"
+    ],
+    "sku": "CL-MD23",
+    "weight": "",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "The CL-MD23 is designed for continuous monitoring of drilling-fluid density. Two vertically separated pressure diaphragms sense the hydrostatic pressure difference in the fluid. Because the diaphragm spacing is fixed, the measured differential pressure is proportional to fluid density.",
+          "An integrated mechanical arrangement and lightweight structure support installation and routine handling at the wellsite."
+        ]
+      },
+      {
+        "heading": "Specifications",
+        "paragraphs": [
+          "Measurement range: 0-3 g/cm³, continuously adjustable.",
+          "Output signal: 4-20 mA, linear with the measured density.",
+          "Accuracy class: 0.5.",
+          "Sensitivity: 0.01 g/cm³.",
+          "Operating temperature: -50 to 60 °C.",
+          "Rated supply: 24 V DC.",
+          "Intrinsic safety parameters: Ui = 30 V DC, Ii = 200 mA, Pi = 0.9 W, Ci = 27.6 nF and Li = 0 mH."
+        ]
+      },
+      {
+        "heading": "Hazardous-area certification",
+        "paragraphs": [
+          "Explosion-protection marking: Ex ia IIC T4 Ga. Certificate number: CE23.3817X. The supplied certificate states an expiry date of October 18, 2028.",
+          "The sensor must be used with a compatible Ex ia Ga IIC safety barrier. Installation and grounding must follow the certificate conditions, the approved system design and the applicable site regulations."
+        ]
+      },
+      {
+        "heading": "Installation and maintenance",
+        "paragraphs": [
+          "Install the sensor vertically with both pressure diaphragms immersed during expected drilling-fluid level changes. Keep the transmitter above the fluid level.",
+          "Do not touch the pressure diaphragms with sharp tools. Remove deposited drilling fluid regularly; weekly cleaning is recommended where operating conditions require it."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cl-md23-mud-density-sensor/"
+  },
+  {
+    "id": 312,
+    "title": "SITRANS Probe LU240 Ultrasonic Pit Level Transmitter",
+    "slug": "sitrans-probe-lu240-ultrasonic-pit-level-transmitter",
+    "summary": "A compact non-contact ultrasonic transmitter for pit level and volume monitoring, with 4-20 mA output and selectable measuring ranges up to 12 m.",
+    "image": "/images/products/sitrans-probe-lu240-ultrasonic-level-transmitter.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging sensor"
+    ],
+    "sku": "SITRANS Probe LU240",
+    "weight": "0.93",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "SITRANS Probe LU240 is a compact non-contact ultrasonic level transmitter. In a mud logging installation, it can monitor pit level and support volume calculations without contacting the drilling fluid.",
+          "The transmitter is available in 3 m, 6 m and 12 m versions. Process intelligence echo processing, automatic false-echo suppression and integrated temperature compensation help maintain reliable measurement when fixed obstructions or temperature changes are present."
+        ]
+      },
+      {
+        "heading": "Specifications",
+        "paragraphs": [
+          "Measurement principle: non-contact ultrasonic.",
+          "Ranges: 0.2-3 m, 0.2-6 m or 0.2-12 m, depending on the selected version.",
+          "Operating frequency: 54 kHz.",
+          "Output: 4-20 mA; HART 7 is available on supported configurations.",
+          "Resolution: ≤3 mm. Non-repeatability: ≤3 mm.",
+          "Accuracy, 3 m version: 10 mm. Accuracy, 6 m and 12 m versions: ±0.15% of range or 6 mm, whichever is greater; ±2 mm at distances of 4 m or less under the stated product conditions.",
+          "Blanking distance: 0.2 m. Update time: ≤4 seconds. Beam angle: 10°.",
+          "Supply: 10.5-30 V DC for the 4-20 mA/HART configuration.",
+          "Ambient operating temperature: -40 to 80 °C. Process connection temperature: -40 to 85 °C.",
+          "Enclosure: IP66/IP68, Type 4X and Type 6. Typical weight: 0.93 kg."
+        ]
+      },
+      {
+        "heading": "Materials and connections",
+        "paragraphs": [
+          "The enclosure is corrosion-resistant PBT engineering plastic. Wetted transducer materials are available in ETFE or PVDF with a Buna-N seal.",
+          "Process connections include 2-inch NPT, R 2-inch BSPT or G 2-inch BSPP threads. A 3-inch universal flange adapter and FMS 200 mounting bracket are available as accessories."
+        ]
+      },
+      {
+        "heading": "Installation",
+        "paragraphs": [
+          "Mount the transmitter above the measured surface with a clear acoustic path. Avoid aiming the beam at fill streams, pipes, welds, ladders or vessel walls. Keep the installation perpendicular to the target surface and account for the 0.2 m blanking distance.",
+          "General-purpose and hazardous-area approvals depend on the exact ordered configuration. Confirm the required output, wetted material, process connection, cable entry, display and certification before ordering."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/sitrans-probe-lu240-ultrasonic-pit-level-transmitter/"
+  },
+  {
+    "id": 313,
+    "title": "CL-LL11 Paddle Flow Out Sensor",
+    "slug": "cl-ll11-paddle-flow-out-sensor",
+    "summary": "A stainless-steel paddle sensor that converts drilling-fluid outlet flow changes into a 4-20 mA signal for relative flow monitoring and mud logging analysis.",
+    "image": "/images/products/cl-ll11-paddle-flow-out-sensor.jpg",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging sensor"
+    ],
+    "sku": "CL-LL11",
+    "weight": "",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "The CL-LL11 measures relative changes in drilling-fluid outlet flow. Flowing mud deflects a paddle, and the resulting angular movement is converted into an electrical signal for the mud logging acquisition system.",
+          "The sensor separates its mechanical transmission components from the electrical section. Stainless-steel structural parts and sealed electrical components are intended to improve corrosion resistance, durability and wellsite serviceability."
+        ]
+      },
+      {
+        "heading": "Specifications",
+        "paragraphs": [
+          "Power supply: 24 V DC.",
+          "Output signal: 4-20 mA.",
+          "Operating temperature: -55 to 100 °C.",
+          "Paddle opening angle: 0-45°.",
+          "Measurement range: 0-100% relative change; no absolute flow calibration.",
+          "Measurement accuracy: ±2% FS.",
+          "Overall dimensions: 380 × 250 × 170 mm."
+        ]
+      },
+      {
+        "heading": "Measurement principle",
+        "paragraphs": [
+          "Outlet flow pushes the paddle and rotates the bent arm and shaft. A geared mechanism transfers this movement to a conductive-plastic potentiometer. The change in resistance represents the relative change in mud flow and is converted to a 4-20 mA signal.",
+          "The paddle can be installed in four configurations by reversing its orientation and selecting the appropriate arm position, allowing adaptation to different outlet geometries and flow conditions."
+        ]
+      },
+      {
+        "heading": "Installation and maintenance",
+        "paragraphs": [
+          "Mount the fixing frame securely at the mud-pit outlet. Confirm that the paddle moves freely and cannot strike the channel or accumulated solids. Remove adhered drilling fluid promptly to maintain reliable movement.",
+          "Route and protect the cable so that it does not obstruct wellsite work or suffer impact damage. Reliably connect the external grounding terminal. A compatible safety barrier is required when the sensor is installed in a hazardous location.",
+          "The zero and full-scale controls are located inside the explosion-protected junction box. Adjustment should be performed only by qualified personnel under safe conditions."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/cl-ll11-paddle-flow-out-sensor/"
+  },
+  {
+    "id": 314,
+    "title": "YC-03D Electric Mud Degasser",
+    "slug": "yc-03d-electric-mud-degasser",
+    "summary": "A compact electric degasser for continuous extraction, drying and cleaning of gas from drilling mud before gas-analysis equipment in a mud logging system.",
+    "image": "/images/products/yc-03d-electric-degasser.jpg",
+    "category": {
+      "slug": "formation-evaluation",
+      "name": "Formation Evaluation"
+    },
+    "sourceCategories": [
+      "Mud logging equipment"
+    ],
+    "sku": "YC-03D",
+    "weight": "",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "The YC-03D electric degasser is designed for continuous extraction of gas from drilling mud in oilfield mud logging applications. It combines a gas-collection chamber, explosion-protected motor, agitator and height-adjustment mechanism in a compact assembly.",
+          "The unit supports the gas treatment sequence of degassing, drying and cleaning before the sample gas is delivered to downstream analysis equipment."
+        ]
+      },
+      {
+        "heading": "Specifications",
+        "paragraphs": [
+          "Power supply: three-phase 380 V, 50 Hz.",
+          "Motor and agitator speed: 1,400 r/min.",
+          "Gas-collection chamber height adjustment: at least 300 mm.",
+          "Motor power: 0.37 kW.",
+          "Explosion-protection marking: Ex d IIB T4 Gb.",
+          "Total equipment weight: less than 30 kg.",
+          "Gas treatment process: degassing, drying and cleaning."
+        ]
+      },
+      {
+        "heading": "Product features",
+        "paragraphs": [
+          "The height of the gas-collection chamber can be adjusted with the handwheel without tools when mud flow conditions change. The mounting arrangement supports square or round mud tanks.",
+          "A mud shield in the collection chamber helps prevent drilling fluid from entering the gas line. The main structure and components are made from stainless steel for corrosion resistance and easier maintenance."
+        ]
+      },
+      {
+        "heading": "Installation and operation",
+        "paragraphs": [
+          "The unit may be shipped in separate components for transport. After assembly, verify that the agitator rotates in the correct direction. If rotation is reversed, qualified electrical personnel can correct the phase sequence by interchanging two phase conductors.",
+          "Tighten the explosion-protected junction-box cover and cable entry after wiring, and connect protective earth correctly. Check the gas line for leakage before operation.",
+          "Do not operate the unit with phase imbalance, phase loss or incorrect supply frequency. Set the immersion depth so that drilling fluid cannot splash over the internal mud shield, and regularly remove accumulated sand from the collection chamber."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/yc-03d-electric-mud-degasser/"
   }
 ]
