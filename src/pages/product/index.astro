@@ -5,6 +5,8 @@ import ProductCard from "../../components/ProductCard.astro";
 import CtaBand from "../../components/CtaBand.astro";
 import products from "../../data/products.json";
 import categories from "../../data/categories.json";
+
+const catalogProducts = [...products].sort((a, b) => b.id - a.id);
 ---
 
 <BaseLayout title="Mud Logging Products" description="Browse mud logging units, wired and wireless sensors, drilling monitoring accessories, and formation evaluation equipment.">
@@ -23,7 +25,7 @@ import categories from "../../data/categories.json";
       </div>
       <p id="catalog-status" class="visually-hidden" aria-live="polite"></p>
       <div class="card-grid" id="product-grid">
-        {products.map((product) => <ProductCard product={product} />)}
+        {catalogProducts.map((product) => <ProductCard product={product} />)}
       </div>
       <div class="catalog-empty" id="catalog-empty">No products match this search. Try a broader term or <a href="/contact-us/">send the requirement directly</a>.</div>
     </div>

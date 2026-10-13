@@ -11,7 +11,9 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.props;
-const categoryProducts = products.filter((product) => product.category.slug === category.slug);
+const categoryProducts = products
+  .filter((product) => product.category.slug === category.slug)
+  .sort((a, b) => b.id - a.id);
 const descriptions: Record<string, string> = {
   "mud-logging-units": "Complete and modular surface logging systems for wellsite data acquisition, gas detection, monitoring, and interpretation workflows.",
   "mud-logging-sensors": "Wired sensors for pressure, load, density, temperature, flow, level, torque, depth, conductivity, and pump stroke measurement.",
