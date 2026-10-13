@@ -2570,5 +2570,62 @@
       }
     ],
     "legacyUrl": "/product/yc-03d-electric-mud-degasser/"
+  },
+  {
+    "id": 315,
+    "title": "RADA-32 DDLJA5 80 GHz Radar Level Transmitter",
+    "slug": "rada-32-ddlja5-80ghz-radar-level-transmitter",
+    "summary": "A high-accuracy 80 GHz radar transmitter for non-contact liquid and bulk-solids level measurement, with a range up to 60 m and two-wire 4-20 mA/HART output.",
+    "image": "/images/products/rada-32-ddlja5-radar-level-transmitter.png",
+    "category": {
+      "slug": "mud-logging-sensors",
+      "name": "Mud Logging Sensors"
+    },
+    "sourceCategories": [
+      "Mud logging sensor"
+    ],
+    "sku": "RADA-32 DDLJA5",
+    "weight": "",
+    "sections": [
+      {
+        "heading": "Overview",
+        "paragraphs": [
+          "The RADA-32 DDLJA5 is an 80 GHz non-contact radar level transmitter for continuous liquid and bulk-solids level measurement. In mud logging applications, it can be installed above a pit or tank to measure level without immersing a probe in the drilling fluid.",
+          "Intelligent echo processing supports false-echo learning, separation of multiple echoes and dynamic target tracking. These functions are designed to maintain stable measurement in the presence of agitators, vapor, dust and electromagnetic interference."
+        ]
+      },
+      {
+        "heading": "Configured specifications",
+        "paragraphs": [
+          "Radar frequency: 80 GHz.",
+          "Maximum measurement range: 60 m.",
+          "Measurement accuracy: ±1 mm.",
+          "Process temperature: -40 to 150 °C.",
+          "Process connection: G 1 1/2-inch A thread.",
+          "Output: two-wire 4-20 mA with HART.",
+          "Power supply: 12-30 V DC.",
+          "Enclosure: aluminum alloy, IP66/IP68 at 0.2 bar.",
+          "Cable entry: M20 × 1.5.",
+          "Gas explosion-protection marking for the described configuration: Ex db IIC T6 Gb."
+        ]
+      },
+      {
+        "heading": "Available platform options",
+        "paragraphs": [
+          "The product family supports PFA, 316L with PTFE, or 316L with PFA antenna materials, and aluminum-alloy or stainless-steel enclosures. Threaded, flanged, bracket and suspended mounting arrangements are available for different applications.",
+          "Available signal configurations include two-wire 4-20 mA/HART, four-wire RS485/Modbus, and combined 4-20 mA plus RS485/Modbus. Bluetooth 5.4 support is available on compatible configurations.",
+          "The broader platform supports process pressures from -0.1 to 3.0 MPa and process-temperature versions up to 220 °C. These ratings are configuration-dependent and must be confirmed for the selected model before ordering."
+        ]
+      },
+      {
+        "heading": "Applications and installation",
+        "paragraphs": [
+          "The transmitter is suitable for liquid level and higher-dielectric-constant powder or granular solid level measurement. Typical industries include oil and gas, chemical processing and mining, including applications where hazardous-area approval is required.",
+          "Mount the transmitter above the measured surface with an unobstructed path for the radar beam. Select the antenna material, process connection, enclosure, output and approval to match the process medium, temperature, pressure and hazardous-area classification.",
+          "The product family lists gas and dust protection options including Ex db IIC T6 Gb, Ex ia IIC T6 Ga, Ex tb IIIC T80 °C Db and Ex ia IIIC T200 80 °C Da. Approval availability depends on the ordered configuration and must be verified against the supplied certificate and nameplate."
+        ]
+      }
+    ],
+    "legacyUrl": "/product/rada-32-ddlja5-80ghz-radar-level-transmitter/"
   }
 ]
