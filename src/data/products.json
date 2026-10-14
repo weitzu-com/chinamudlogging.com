@@ -1487,6 +1487,16 @@
     ],
     "sku": "",
     "weight": "5",
+    "downloads": [
+      {
+        "label": "Technical datasheet (PDF)",
+        "href": "/downloads/sk-2n01g-shale-density-meter-technical-datasheet.pdf"
+      },
+      {
+        "label": "Operating SOP (PDF)",
+        "href": "/downloads/sk-2n01g-shale-density-meter-operating-sop.pdf"
+      }
+    ],
     "sections": [
       {
         "heading": "Overview",

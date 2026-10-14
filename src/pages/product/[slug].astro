@@ -9,6 +9,7 @@ export function getStaticPaths() {
 }
 
 const { product } = Astro.props;
+const downloads = product.downloads ?? [];
 const related = products.filter((item) => item.slug !== product.slug && item.category.slug === product.category.slug).slice(0, 3);
 const schema = {
   "@context": "https://schema.org",
@@ -42,6 +43,16 @@ const schema = {
             <a class="button dark" href={`/contact-us/?product=${encodeURIComponent(product.title)}`}>Request this product →</a>
             <a class="button ghost-dark" href="mailto:sales@chinamudlogging.com">Email sales</a>
           </div>
+          {downloads.length > 0 && (
+            <div class="product-downloads">
+              <strong>Product documents</strong>
+              <div class="button-row">
+                {downloads.map((document) => (
+                  <a class="button ghost-dark" href={document.href} download>{document.label} ↓</a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
