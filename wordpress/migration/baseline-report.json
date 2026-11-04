@@ -1,0 +1,29 @@
+{
+  "localProducts": 63,
+  "localArticles": 8,
+  "families": 5,
+  "media": 89,
+  "records": 181,
+  "selectedProductIds": [
+    261,
+    258,
+    260,
+    257,
+    251,
+    245,
+    259,
+    273,
+    307,
+    297
+  ],
+  "translationProducts": 60,
+  "liveAudit": "not-run",
+  "releaseReady": false,
+  "gates": [
+    "SiteGround staging acceptance",
+    "translation review",
+    "SMTP and mailbox receipt",
+    "backup restore rehearsal",
+    "DNS cutover"
+  ]
+}

@@ -1,0 +1,500 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/",
+    "sha256": "195f8d83c15ec15a2e69cf4311659d31e1dc724a422a01cc3e1ef8b92e73a05d"
+  },
+  {
+    "path": "/about-chinamudlogging/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/about-chinamudlogging/",
+    "sha256": "7aa11d21902938d4c8cf4f717cab1d4e8c2acb7a7ac212903b81e83e4cff3992"
+  },
+  {
+    "path": "/about-us/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/about-us/",
+    "sha256": "fa227670dd7b7e202b04347d07cafde5f7488d088a36a4ff316c016962cdf4e9"
+  },
+  {
+    "path": "/blog/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/blog/",
+    "sha256": "4d2a0a8365a93262570d67338f2ee2a2c3b3fdc1768b7a60776c44904588a8eb"
+  },
+  {
+    "path": "/contact-us/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/contact-us/",
+    "sha256": "636ec4bcf24d827f1dee7cff00f2e1c6adec41a131631b81faed1f42910a2190"
+  },
+  {
+    "path": "/how-many-mud-logging-companies-in-the-world/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/how-many-mud-logging-companies-in-the-world/",
+    "sha256": "346a4a5da53cfa43f6a9cf8545d2a9555f703ea82719be9a9b33e2eb1d09d3f0"
+  },
+  {
+    "path": "/privacy/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/privacy/",
+    "sha256": "7487775ec63cecb7d858ecf418ad65cd0b6e863baf0f3c44562161dd1474a7af"
+  },
+  {
+    "path": "/product-category/drilling-monitoring/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product-category/drilling-monitoring/",
+    "sha256": "92610e563a3ee8634aaf10ed5f66141a29f1eecd21100ec844e8fbc0df95b012"
+  },
+  {
+    "path": "/product-category/formation-evaluation/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product-category/formation-evaluation/",
+    "sha256": "991ce038017c94264d8d40e569c9c6ad7f4a1bf975d2b694ee52dce8137c4372"
+  },
+  {
+    "path": "/product-category/mud-logging-sensors/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product-category/mud-logging-sensors/",
+    "sha256": "288a1979712dd1a7ce6995962d5b6fc6650f92c2b85335c4681b0f25a9f8adbc"
+  },
+  {
+    "path": "/product-category/mud-logging-units/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product-category/mud-logging-units/",
+    "sha256": "906662f1939528bc52e8a89a10cb089295d14a0bc50f9f2b0d19120b389269ad"
+  },
+  {
+    "path": "/product-category/wireless-sensors/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product-category/wireless-sensors/",
+    "sha256": "baa11f45c1ef3c7313fe31f7b73cff71e69ec915b13985a80d505b23186a9bf0"
+  },
+  {
+    "path": "/product/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/",
+    "sha256": "3d15cc51ad659b6f7c831265fc62c321f4935fba358244c6b80fd9845429bcf5"
+  },
+  {
+    "path": "/product/battery-and-charger-used-for-the-transmission-box-of-wireless-sensors/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/battery-and-charger-used-for-the-transmission-box-of-wireless-sensors/",
+    "sha256": "47b555cd6a5f690c51bccf27663965aec38ed54b2ef18306af943ea3846d7110"
+  },
+  {
+    "path": "/product/cl-dd11-mud-conductivity-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cl-dd11-mud-conductivity-sensor/",
+    "sha256": "5214d1d24e4d1b8e9966eee9e2252a8bc3e8c498d2848ee0c1c763f02f89fb2f"
+  },
+  {
+    "path": "/product/cl-ll11-paddle-flow-out-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cl-ll11-paddle-flow-out-sensor/",
+    "sha256": "8d507d2919086e02b09eef64b51a9f5fc440fd4e5d11587c132e69640f7f818d"
+  },
+  {
+    "path": "/product/cl-md23-mud-density-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cl-md23-mud-density-sensor/",
+    "sha256": "796df14dcedf0972addbbea940a72421e400d805ea8efe90c30cb25a9830d567"
+  },
+  {
+    "path": "/product/cnps-8d08-mud-conductivity-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-8d08-mud-conductivity-sensor/",
+    "sha256": "02d3d664510c15b6476eca0e343d94298081ac10353d33617eb6cf8b574ed83b"
+  },
+  {
+    "path": "/product/cnps-bc-proximity-sensors-pump-strokes/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-bc-proximity-sensors-pump-strokes/",
+    "sha256": "f5a9c2de2732eb1fd75aa5656d73b050f0f68cd94cf583e74a3dad878363f344"
+  },
+  {
+    "path": "/product/cnps-dnj-electric-torque-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-dnj-electric-torque-sensor/",
+    "sha256": "6b163ff9ec918e6d5e26808f2a025c34988f772be206cb81178d269e797557a0"
+  },
+  {
+    "path": "/product/cnps-dw-a11-depth-encoder/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-dw-a11-depth-encoder/",
+    "sha256": "a715a0c4739c026c9a2330f72e1ed3c31c30047cc1098ad636201969f0b9b439"
+  },
+  {
+    "path": "/product/cnps-flm-flow-out-sensorpaddle-type/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-flm-flow-out-sensorpaddle-type/",
+    "sha256": "711287e1d38e39b4c4ebf08151bd1ce509a967335e18c5610ba269d89c96e7e0"
+  },
+  {
+    "path": "/product/cnps-mhp-pressure-sensor-15000psi/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-mhp-pressure-sensor-15000psi/",
+    "sha256": "fdcf5eca72089c2f88b15d59233fa2bafa1121477cf1f31b8807db56668ac83e"
+  },
+  {
+    "path": "/product/cnps-ml-b11-mud-density-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-ml-b11-mud-density-sensor/",
+    "sha256": "95a2424e1d02c741b497aafabcf4b562d82ead173d8e45b9f89a14a844ab1c08"
+  },
+  {
+    "path": "/product/cnps-ml11-fluid-level-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-ml11-fluid-level-sensor/",
+    "sha256": "b259fee6a6594708deb60988e9c74a498c7493136fa565a97010acfcea8a49d4"
+  },
+  {
+    "path": "/product/cnps-mt-b11-mud-temperature-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/cnps-mt-b11-mud-temperature-sensor/",
+    "sha256": "06c185c1001af4ffcceb5920bbf65a5865e1ca75120b0ca424821244968280bb"
+  },
+  {
+    "path": "/product/drilling-fluid-temperature-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/drilling-fluid-temperature-sensor/",
+    "sha256": "8634a85a7851e49389727e773f82c3290c4ddc5c16aea5e74c29b0a3366d8d20"
+  },
+  {
+    "path": "/product/drilling-monitoring/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/drilling-monitoring/",
+    "sha256": "ea1d8b42f297650210866a94675e7c02fab46df473470f3894e1637c782c5c4d"
+  },
+  {
+    "path": "/product/electric-torque-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/electric-torque-sensor/",
+    "sha256": "7ea36866a46b2a718840a98063eddb2e841cb1b70b54fb729b763e468eab1315"
+  },
+  {
+    "path": "/product/flow-out-sensor-paddle-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/flow-out-sensor-paddle-for-mud-logging-unit/",
+    "sha256": "4f8bc40e6d02878d7c2d567faced42132b2ed947f4c1a860b8192998acd122d5"
+  },
+  {
+    "path": "/product/formation-evaluation/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/formation-evaluation/",
+    "sha256": "88ab251904168d5ab2baf6f835629b3be389bc43aec9912b9b20a5e52d8e6835"
+  },
+  {
+    "path": "/product/industrial-computer-with-als-2-2-system/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/industrial-computer-with-als-2-2-system/",
+    "sha256": "f22280992c3730ee8b9ab209063f0e7d1d89a7310f83e984cb6556f2ffd10fb3"
+  },
+  {
+    "path": "/product/mud-conductivity-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-conductivity-sensor-for-mud-logging-unit/",
+    "sha256": "9c097e52148e2be19d2bd59d6f32dfc8385d8a19f40f6cc7d5f3801b4a4fb580"
+  },
+  {
+    "path": "/product/mud-density-sensor-for-oil-and-gas-mud-logging/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-density-sensor-for-oil-and-gas-mud-logging/",
+    "sha256": "679b19b1ceb1ae285ff097e90541756b8a384bbb5393100cd116d688692d6c15"
+  },
+  {
+    "path": "/product/mud-density-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-density-sensor/",
+    "sha256": "90cc0ebb4d3f05088e76ba7bd25137373165e6a2c80325b086a94cabe61e9cda"
+  },
+  {
+    "path": "/product/mud-flow-out-sensor-paddle-type/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-flow-out-sensor-paddle-type/",
+    "sha256": "bbc545fc779b1b34ca34d759dfce935e27b372cd6aeb4d5c5ee397e28ce2886f"
+  },
+  {
+    "path": "/product/mud-logging-ex-proof-degasser/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-ex-proof-degasser/",
+    "sha256": "081f8d50c4850966434a96d7c42da35f115f7fbb67c3ea8512f3f3e54435759d"
+  },
+  {
+    "path": "/product/mud-logging-explosion-proof-monitor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-explosion-proof-monitor/",
+    "sha256": "8a400899c3d79bc0984ae85983e9bdbf1cc60d027784858a630a5e941e556e86"
+  },
+  {
+    "path": "/product/mud-logging-oil-fluoroscope-uv-lamp-box/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-oil-fluoroscope-uv-lamp-box/",
+    "sha256": "e72b6500a71247449ab2ce6d3fc439faab485c914f3973241f1431994b40f9eb"
+  },
+  {
+    "path": "/product/mud-logging-pump-stroke-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-pump-stroke-sensor/",
+    "sha256": "e0a57b62d003af9b72e9df069c90d2a15351d6524720b5f9796769998ba3b9c3"
+  },
+  {
+    "path": "/product/mud-logging-sensor-named-casing-pressure-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensor-named-casing-pressure-sensor/",
+    "sha256": "18c998acb122731c937460ddc7dd1c5026c77ec93796888fbee6216a489786a2"
+  },
+  {
+    "path": "/product/mud-logging-sensor-named-draw-work-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensor-named-draw-work-sensor/",
+    "sha256": "fdb1a6bd1fcc3d684d259d05a7c18b96a126bf348d1b9d9ffb96c8c71528a9dd"
+  },
+  {
+    "path": "/product/mud-logging-sensor-named-drilling-fluid-temperature-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensor-named-drilling-fluid-temperature-sensor/",
+    "sha256": "083e00b43c5313e918c0f229c204f1a1d1796fd3e94f8eb6935c593736bd6121"
+  },
+  {
+    "path": "/product/mud-logging-sensor-named-hookload-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensor-named-hookload-sensor/",
+    "sha256": "171fca632c266c5569fff0def472a6e5ae0537d15a509c7fe14063bee1053432"
+  },
+  {
+    "path": "/product/mud-logging-sensor-named-mud-density-sensorinout/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensor-named-mud-density-sensorinout/",
+    "sha256": "75edbba7047ce2c01a8c7f51af419044af4c59baf7925b17822fba0ca6335b2d"
+  },
+  {
+    "path": "/product/mud-logging-sensor-named-pump-stroke-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensor-named-pump-stroke-sensor/",
+    "sha256": "93fda1dca4d403c19ffa08801379395360db01ba37e99e130ad180bf586aa6d0"
+  },
+  {
+    "path": "/product/mud-logging-sensor-named-standpipe-pressure-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensor-named-standpipe-pressure-sensor/",
+    "sha256": "1d6281bc966bed36c3fd351b077ebecd581d188992b61ba9a40704e402d7b0a0"
+  },
+  {
+    "path": "/product/mud-logging-sensor-of-electric-torque-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensor-of-electric-torque-sensor/",
+    "sha256": "069f4f4e084996277a41cc18272067c1df9cb13690d4eaaac8e06facb54dab6a"
+  },
+  {
+    "path": "/product/mud-logging-sensors/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-sensors/",
+    "sha256": "13c0e1757d35e12b56f7648624161930adff5d484f7fd89dd34c05e30d19bf4e"
+  },
+  {
+    "path": "/product/mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-logging-unit/",
+    "sha256": "b03033638800b84f40c4346d94c96684e2d95098ac578842337124c0fa7a027b"
+  },
+  {
+    "path": "/product/mud-temperature-sensor/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/mud-temperature-sensor/",
+    "sha256": "de132a3c7f4cb41aa7dfa7f15d1a06371f1a766dd55accf7446abaa8570f2803"
+  },
+  {
+    "path": "/product/oil-fluoroscope-uv-box/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/oil-fluoroscope-uv-box/",
+    "sha256": "50faaea457e746b72a96951217bd04aa45d0420160ed3febbed6be34f95e97ef"
+  },
+  {
+    "path": "/product/oil-fluoroscope-uv-lamp-box/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/oil-fluoroscope-uv-lamp-box/",
+    "sha256": "bc7ed234b04a0349cc6c86014acc687ff20fc0d4d8ee0be2713c7c99a2a7159d"
+  },
+  {
+    "path": "/product/pit-level-sensor-used-for-mud-logging/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/pit-level-sensor-used-for-mud-logging/",
+    "sha256": "479f8ca18dc70e3845f3f5bdf65a4a15dc59f5b434e9ee14d814972066472d64"
+  },
+  {
+    "path": "/product/pump-stroke-sensor-for-mud-logging/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/pump-stroke-sensor-for-mud-logging/",
+    "sha256": "1c45bce54d6f0805b90a23b37932a66d5a02b220a70e4fef8dc248095a68ccbf"
+  },
+  {
+    "path": "/product/rada-32-ddlja5-80ghz-radar-level-transmitter/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/rada-32-ddlja5-80ghz-radar-level-transmitter/",
+    "sha256": "630a16eaf7a0573b82a39e11950a7122f0fdb5e0ee30f111c02be349ef922b61"
+  },
+  {
+    "path": "/product/shale-density-meter-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/shale-density-meter-for-mud-logging-unit/",
+    "sha256": "8033f31e509e22e735efdb4f6765bc10a48cb1ad087b4b2586d3c501496c1c50"
+  },
+  {
+    "path": "/product/sitrans-probe-lu240-ultrasonic-pit-level-transmitter/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/sitrans-probe-lu240-ultrasonic-pit-level-transmitter/",
+    "sha256": "fbc47880c822ab30571d31e8860007650fb69181c0fbf02cb138b5bbf846d3f7"
+  },
+  {
+    "path": "/product/sls-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/sls-mud-logging-unit/",
+    "sha256": "f493fc2309bfff46aa5069e98d4dfbec8213e44c75b75cd78e242e8b73a99dfc"
+  },
+  {
+    "path": "/product/surface-logging-systems/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/surface-logging-systems/",
+    "sha256": "f9ea19f625d41f85cb17e12ca53923876f0f49a62075adcfe40f9db172071083"
+  },
+  {
+    "path": "/product/the-wireless-transmission-box-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/the-wireless-transmission-box-for-mud-logging-unit/",
+    "sha256": "bfc2cf19cad4c98ef856329cb9cd76ef39d38cf8ffd9507a81b1f9c1141f7bce"
+  },
+  {
+    "path": "/product/wireless-casing-pressure-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-casing-pressure-sensor-for-mud-logging-unit/",
+    "sha256": "6b88380b088cbd6f6b4022dcb31e903e684bf14da8e049788d0de27d0c818169"
+  },
+  {
+    "path": "/product/wireless-conductivity-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-conductivity-sensor-for-mud-logging-unit/",
+    "sha256": "17bce0e97a564cbef7d47831bdf104cb8d070b3cd764851a774dde84a756ea49"
+  },
+  {
+    "path": "/product/wireless-draw-work-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-draw-work-sensor-for-mud-logging-unit/",
+    "sha256": "d56150b91d5f697f0eaceb90b0f0dc4039ea064869a5b0ca67937cb967d6da88"
+  },
+  {
+    "path": "/product/wireless-electric-torque-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-electric-torque-sensor-for-mud-logging-unit/",
+    "sha256": "5cc652dffc59f780c16c44c589ebf1ca172db87b0236433de4e68d769c094565"
+  },
+  {
+    "path": "/product/wireless-flow-out-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-flow-out-sensor-for-mud-logging-unit/",
+    "sha256": "d1deebe7867fc277de75a32d467badb2147a954c4da48f88c703fd7faf68b8f6"
+  },
+  {
+    "path": "/product/wireless-hook-load-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-hook-load-sensor-for-mud-logging-unit/",
+    "sha256": "95c9fd2dd06f497529ad156cff7a829fd7e2ee37b5c1bdce9e921afef6ab6306"
+  },
+  {
+    "path": "/product/wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit/",
+    "sha256": "301b60a486c8eaa7a540b2ac13021f30478cb8dca5d26392095f90a97b346949"
+  },
+  {
+    "path": "/product/wireless-master-station/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-master-station/",
+    "sha256": "b3b845b9892f285d94803d0060b9d01130cec2cd646227fd093f797a5d4e1c0d"
+  },
+  {
+    "path": "/product/wireless-mud-density-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-mud-density-sensor-for-mud-logging-unit/",
+    "sha256": "f0e297d82c8e2f5141bffc423b77dd8ca3a79026a60607754fff6d50d2ade256"
+  },
+  {
+    "path": "/product/wireless-pit-level-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-pit-level-sensor-for-mud-logging-unit/",
+    "sha256": "80a0034eaa40218f42e9a88b9d36ffb186a48f068a77d775669ee4053d1e9d3c"
+  },
+  {
+    "path": "/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/",
+    "sha256": "3b3628739101a3b7b847752d0694635c1b75d8929237a560a1e1724a5c57bfb4"
+  },
+  {
+    "path": "/product/wireless-sensors-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-sensors-for-mud-logging-unit/",
+    "sha256": "01caacb27c2779fc9912b51e894f0fc9af3ad49fbcac986d5b050e2f7ceaa347"
+  },
+  {
+    "path": "/product/wireless-standpipe-pressure-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-standpipe-pressure-sensor-for-mud-logging-unit/",
+    "sha256": "eb5ecc597ba3d61f50c4e279a21094d9c5ea62fed7e19c36185eb51e0677f171"
+  },
+  {
+    "path": "/product/wireless-temperature-sensor-for-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/wireless-temperature-sensor-for-mud-logging-unit/",
+    "sha256": "8231dff473eb0d125c4d7723e66e75bb60694fee918330b9d1e9c60cbf2c9a11"
+  },
+  {
+    "path": "/product/yc-03d-electric-mud-degasser/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/product/yc-03d-electric-mud-degasser/",
+    "sha256": "15bcc818e3374963095c426848a7d953f6af7e4ae83ca8c371be6e921c3039a3"
+  },
+  {
+    "path": "/services/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/services/",
+    "sha256": "a75f63ac570c9a4fae77f8826f499818ae0899e536ea5e9db6687f946f677aca"
+  },
+  {
+    "path": "/what-is-meaning-of-mud-logging/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/what-is-meaning-of-mud-logging/",
+    "sha256": "e14fec8e410cf9f0532df1ec56dca1110c47d3f8caa8998bd140df745f134b94"
+  },
+  {
+    "path": "/what-is-mud-logging-jobs/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/what-is-mud-logging-jobs/",
+    "sha256": "d87b9956c5bb3bbfd25e36adc33006ceaac4c20bda99b6a14f820d69d0beb81b"
+  },
+  {
+    "path": "/what-is-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/what-is-mud-logging-unit/",
+    "sha256": "57bdf4b3c25acfe3f22ed4efd70da4d3b80940c8b1606adaee815ae147537de8"
+  },
+  {
+    "path": "/what-is-mud-logging/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/what-is-mud-logging/",
+    "sha256": "5f8df0f35e17f7792863bf377baf9514ffff727537e86de0ef6d9cf0193e9993"
+  },
+  {
+    "path": "/what-is-the-main-task-of-a-mud-logging-unit/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/what-is-the-main-task-of-a-mud-logging-unit/",
+    "sha256": "4562cdec37a25942d43f8183023c876889f099ec59da2ac648cfcc028ba82423"
+  },
+  {
+    "path": "/who-is-mud-logger/",
+    "status": 200,
+    "finalUrl": "https://www.chinamudlogging.com/who-is-mud-logger/",
+    "sha256": "147098c5f2c68547b75c5b39520fb7aa5f67b9bfca503a793b922c20ddfc6fbf"
+  }
+]

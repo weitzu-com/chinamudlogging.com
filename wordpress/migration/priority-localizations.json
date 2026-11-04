@@ -1,0 +1,826 @@
+{
+  "mode": "curated-selection-with-complete-english-reference",
+  "review": "approved",
+  "reviewBasis": "Authored localized titles and summaries; numeric values checked against the full original catalogue. No independent certification or engineering capability claim.",
+  "labels": {
+    "en": {
+      "model": "Model",
+      "supply": "Supply notation in source",
+      "current": "Rated current",
+      "protection": "Enclosure protection",
+      "legacy_marking": "Marking stated in source; certificate to confirm",
+      "power": "Power",
+      "speed": "Rotational speed",
+      "frequency": "Frequency",
+      "wavelength": "UV wavelength",
+      "dimensions": "Dimensions",
+      "weight": "Weight",
+      "range": "Measurement range",
+      "output": "Output signal",
+      "accuracy": "Source accuracy",
+      "temperature": "Operating temperature",
+      "channels_analog": "Analogue channels",
+      "channels_pulse": "Pulse channels",
+      "components": "Gas components",
+      "response": "Response time",
+      "sample_mass": "Minimum sample mass",
+      "resolution": "Resolution",
+      "protocol": "Protocol",
+      "battery_days": "Supplier-reported battery operation (over, days)",
+      "distance_los": "Supplier-reported line-of-sight distance (over, m)",
+      "distance_obstructed": "Supplier-reported obstructed distance (over, m)",
+      "switch_distance": "Source switching distance; confirm installation",
+      "rack": "Rack form factor",
+      "conductivity_reference": "Source conductivity ceiling; unit case to confirm"
+    },
+    "zh": {
+      "model": "型号",
+      "supply": "源资料供电写法",
+      "current": "额定电流",
+      "protection": "外壳防护",
+      "legacy_marking": "源资料标记；证书另行确认",
+      "power": "功率",
+      "speed": "转速",
+      "frequency": "频率",
+      "wavelength": "紫外波长",
+      "dimensions": "尺寸",
+      "weight": "重量",
+      "range": "测量范围",
+      "output": "输出信号",
+      "accuracy": "源资料精度",
+      "temperature": "工作温度",
+      "channels_analog": "模拟通道数",
+      "channels_pulse": "脉冲通道数",
+      "components": "气体组分",
+      "response": "响应时间",
+      "sample_mass": "最小样品质量",
+      "resolution": "分辨率",
+      "protocol": "协议",
+      "battery_days": "供应资料电池运行时间（超过，天）",
+      "distance_los": "供应资料视距通信距离（超过，米）",
+      "distance_obstructed": "供应资料遮挡通信距离（超过，米）",
+      "switch_distance": "源资料动作距离；安装需确认",
+      "rack": "机架形式",
+      "conductivity_reference": "源资料电导率上限；单位大小写需确认"
+    },
+    "es": {
+      "model": "Modelo",
+      "supply": "Alimentación según la fuente",
+      "current": "Corriente nominal",
+      "protection": "Protección de la envolvente",
+      "legacy_marking": "Marcado de la fuente; certificado por confirmar",
+      "power": "Potencia",
+      "speed": "Velocidad de rotación",
+      "frequency": "Frecuencia",
+      "wavelength": "Longitud de onda UV",
+      "dimensions": "Dimensiones",
+      "weight": "Peso",
+      "range": "Rango de medición",
+      "output": "Señal de salida",
+      "accuracy": "Exactitud indicada en la fuente",
+      "temperature": "Temperatura de operación",
+      "channels_analog": "Canales analógicos",
+      "channels_pulse": "Canales de pulsos",
+      "components": "Componentes del gas",
+      "response": "Tiempo de respuesta",
+      "sample_mass": "Masa mínima de muestra",
+      "resolution": "Resolución",
+      "protocol": "Protocolo",
+      "battery_days": "Autonomía indicada por el proveedor (más de, días)",
+      "distance_los": "Distancia en línea de vista indicada (más de, m)",
+      "distance_obstructed": "Distancia con obstáculos indicada (más de, m)",
+      "switch_distance": "Distancia de actuación de la fuente; confirmar instalación",
+      "rack": "Formato de bastidor",
+      "conductivity_reference": "Límite de conductividad de la fuente; confirmar escritura de unidad"
+    },
+    "ru": {
+      "model": "Модель",
+      "supply": "Питание по исходной записи",
+      "current": "Номинальный ток",
+      "protection": "Защита корпуса",
+      "legacy_marking": "Маркировка источника; сертификат требует подтверждения",
+      "power": "Мощность",
+      "speed": "Частота вращения",
+      "frequency": "Частота",
+      "wavelength": "Длина волны УФ",
+      "dimensions": "Габариты",
+      "weight": "Масса",
+      "range": "Диапазон измерения",
+      "output": "Выходной сигнал",
+      "accuracy": "Точность по источнику",
+      "temperature": "Рабочая температура",
+      "channels_analog": "Аналоговые каналы",
+      "channels_pulse": "Импульсные каналы",
+      "components": "Компоненты газа",
+      "response": "Время отклика",
+      "sample_mass": "Минимальная масса пробы",
+      "resolution": "Разрешение",
+      "protocol": "Протокол",
+      "battery_days": "Заявленная поставщиком работа от батареи (более, суток)",
+      "distance_los": "Заявленная дальность прямой видимости (более, м)",
+      "distance_obstructed": "Заявленная дальность при препятствиях (более, м)",
+      "switch_distance": "Расстояние срабатывания по источнику; монтаж уточнить",
+      "rack": "Стоечное исполнение",
+      "conductivity_reference": "Предел электропроводности по источнику; написание единицы уточнить"
+    },
+    "ar": {
+      "model": "الطراز",
+      "supply": "التغذية كما وردت في المصدر",
+      "current": "التيار المقنن",
+      "protection": "حماية الغلاف",
+      "legacy_marking": "علامة المصدر؛ يلزم تأكيد الشهادة",
+      "power": "القدرة",
+      "speed": "سرعة الدوران",
+      "frequency": "التردد",
+      "wavelength": "الطول الموجي للأشعة فوق البنفسجية",
+      "dimensions": "الأبعاد",
+      "weight": "الوزن",
+      "range": "نطاق القياس",
+      "output": "إشارة الخرج",
+      "accuracy": "الدقة المذكورة في المصدر",
+      "temperature": "درجة حرارة التشغيل",
+      "channels_analog": "القنوات التماثلية",
+      "channels_pulse": "قنوات النبضات",
+      "components": "مكونات الغاز",
+      "response": "زمن الاستجابة",
+      "sample_mass": "أدنى كتلة للعينة",
+      "resolution": "التمييز",
+      "protocol": "البروتوكول",
+      "battery_days": "مدة تشغيل البطارية وفق المورد (أكثر من، يوم)",
+      "distance_los": "مدى الاتصال بخط رؤية وفق المورد (أكثر من، م)",
+      "distance_obstructed": "مدى الاتصال مع عوائق وفق المورد (أكثر من، م)",
+      "switch_distance": "مسافة العمل في المصدر؛ يلزم تأكيد التركيب",
+      "rack": "شكل الحامل",
+      "conductivity_reference": "حد التوصيلية في المصدر؛ يلزم تأكيد صيغة الوحدة"
+    },
+    "fr": {
+      "model": "Modèle",
+      "supply": "Alimentation selon la source",
+      "current": "Courant nominal",
+      "protection": "Protection du boîtier",
+      "legacy_marking": "Marquage de la source ; certificat à confirmer",
+      "power": "Puissance",
+      "speed": "Vitesse de rotation",
+      "frequency": "Fréquence",
+      "wavelength": "Longueur d’onde UV",
+      "dimensions": "Dimensions",
+      "weight": "Poids",
+      "range": "Plage de mesure",
+      "output": "Signal de sortie",
+      "accuracy": "Précision indiquée par la source",
+      "temperature": "Température de fonctionnement",
+      "channels_analog": "Voies analogiques",
+      "channels_pulse": "Voies impulsionnelles",
+      "components": "Composants gazeux",
+      "response": "Temps de réponse",
+      "sample_mass": "Masse minimale de l’échantillon",
+      "resolution": "Résolution",
+      "protocol": "Protocole",
+      "battery_days": "Autonomie annoncée par le fournisseur (plus de, jours)",
+      "distance_los": "Portée en visibilité directe annoncée (plus de, m)",
+      "distance_obstructed": "Portée avec obstacles annoncée (plus de, m)",
+      "switch_distance": "Distance de commutation de la source ; montage à confirmer",
+      "rack": "Format rack",
+      "conductivity_reference": "Limite de conductivité de la source ; notation de l’unité à confirmer"
+    },
+    "de": {
+      "model": "Modell",
+      "supply": "Versorgungsangabe der Quelle",
+      "current": "Nennstrom",
+      "protection": "Gehäuseschutz",
+      "legacy_marking": "Quellenmarkierung; Zertifikat zu bestätigen",
+      "power": "Leistung",
+      "speed": "Drehzahl",
+      "frequency": "Frequenz",
+      "wavelength": "UV-Wellenlänge",
+      "dimensions": "Abmessungen",
+      "weight": "Gewicht",
+      "range": "Messbereich",
+      "output": "Ausgangssignal",
+      "accuracy": "Genauigkeit laut Quelle",
+      "temperature": "Betriebstemperatur",
+      "channels_analog": "Analogkanäle",
+      "channels_pulse": "Impulskanäle",
+      "components": "Gaskomponenten",
+      "response": "Ansprechzeit",
+      "sample_mass": "Mindestprobenmasse",
+      "resolution": "Auflösung",
+      "protocol": "Protokoll",
+      "battery_days": "Vom Lieferanten genannte Batterielaufzeit (über, Tage)",
+      "distance_los": "Genannte Sichtverbindungs-Reichweite (über, m)",
+      "distance_obstructed": "Genannte Reichweite mit Hindernissen (über, m)",
+      "switch_distance": "Schaltabstand laut Quelle; Einbau bestätigen",
+      "rack": "Rack-Bauform",
+      "conductivity_reference": "Leitfähigkeitsgrenze der Quelle; Einheitenschreibweise bestätigen"
+    }
+  },
+  "copy": {
+    "en": {
+      "selection": "For a quotation, provide model, quantity, measurement range, output or interface, installation conditions and required documentation. For hazardous-area duty, provide the area classification; certification and the final configuration are confirmed separately.",
+      "reference": "Full legacy technical record (English)",
+      "reference_note": "This selection summary links to the complete English source record. Historic standards, calibration procedures and configuration claims require verification for the intended application.",
+      "heading": "Catalogue selection data",
+      "selection_heading": "Configuration review"
+    },
+    "zh": {
+      "selection": "询价时请提供型号、数量、量程、输出或接口、安装条件及所需技术文件。涉及危险区域时，请提供区域分类；认证与最终配置另行确认。",
+      "reference": "完整历史技术记录（英文）",
+      "reference_note": "本页为选型摘要，完整英文源记录见链接。历史标准、校准步骤与配置声明需针对实际应用核实。",
+      "heading": "目录选型参数",
+      "selection_heading": "配置核对"
+    },
+    "es": {
+      "selection": "Para cotizar, indique modelo, cantidad, rango, salida o interfaz, instalación y documentación requerida. En áreas peligrosas, facilite la clasificación de zona; certificación y configuración final se confirman por separado.",
+      "reference": "Registro técnico histórico completo (inglés)",
+      "reference_note": "Este resumen enlaza al registro original completo en inglés. Las normas históricas, los procedimientos de calibración y las configuraciones deben verificarse para la aplicación.",
+      "heading": "Datos del catálogo para selección",
+      "selection_heading": "Revisión de configuración"
+    },
+    "ru": {
+      "selection": "Для предложения укажите модель, количество, диапазон, выход или интерфейс, условия монтажа и документацию. Для взрывоопасных зон укажите классификацию; сертификаты и окончательная конфигурация подтверждаются отдельно.",
+      "reference": "Полная исходная техническая запись (английский)",
+      "reference_note": "Это краткое описание для подбора со ссылкой на полный английский источник. Старые стандарты, порядок калибровки и конфигурации необходимо проверить для конкретного применения.",
+      "heading": "Каталожные данные для подбора",
+      "selection_heading": "Согласование конфигурации"
+    },
+    "ar": {
+      "selection": "لطلب عرض سعر، حدد الطراز والكمية ونطاق القياس والخرج أو الواجهة وظروف التركيب والوثائق المطلوبة. للمناطق الخطرة، قدم تصنيف المنطقة؛ تُؤكد الشهادة والتكوين النهائي بشكل منفصل.",
+      "reference": "السجل الفني الأصلي الكامل بالإنجليزية",
+      "reference_note": "يرتبط ملخص الاختيار هذا بالسجل الإنجليزي الأصلي الكامل. تتطلب المعايير القديمة وإجراءات المعايرة وبيانات التكوين التحقق وفق التطبيق المقصود.",
+      "heading": "بيانات الكتالوج للاختيار",
+      "selection_heading": "مراجعة التكوين"
+    },
+    "fr": {
+      "selection": "Pour un devis, précisez modèle, quantité, plage, sortie ou interface, installation et documentation. En zone dangereuse, indiquez la classification ; certification et configuration finale sont confirmées séparément.",
+      "reference": "Fiche technique historique complète (anglais)",
+      "reference_note": "Ce résumé de sélection renvoie à la source anglaise complète. Normes anciennes, procédures d’étalonnage et configurations doivent être vérifiées pour l’application prévue.",
+      "heading": "Données du catalogue pour la sélection",
+      "selection_heading": "Vérification de configuration"
+    },
+    "de": {
+      "selection": "Für ein Angebot nennen Sie Modell, Menge, Messbereich, Ausgang oder Schnittstelle, Einbaubedingungen und benötigte Unterlagen. Für Ex-Bereiche geben Sie die Zoneneinteilung an; Zertifizierung und endgültige Konfiguration werden gesondert bestätigt.",
+      "reference": "Vollständiger ursprünglicher Technikdatensatz (Englisch)",
+      "reference_note": "Diese Auswahlübersicht verweist auf die vollständige englische Quelle. Ältere Normen, Kalibrierverfahren und Konfigurationsangaben sind für die Anwendung zu prüfen.",
+      "heading": "Katalogdaten zur Auswahl",
+      "selection_heading": "Konfigurationsprüfung"
+    }
+  },
+  "products": {
+    "261": {
+      "specs": [
+        {
+          "label": "model",
+          "value": "ALS 2.2"
+        },
+        {
+          "label": "rack",
+          "value": "4U"
+        },
+        {
+          "label": "temperature",
+          "value": "0 ~ 40 °C (32 ~ 104 °F)"
+        },
+        {
+          "label": "dimensions",
+          "value": "482 x 177 x 479 mm"
+        },
+        {
+          "label": "weight",
+          "value": "15 kg"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "Industrial computer with ALS 2.2 system",
+          "summary": "Rack-mounted industrial computer for a mud logging unit using ALS 2.2 software."
+        },
+        "zh": {
+          "title": "配备 ALS 2.2 系统的工业计算机",
+          "summary": "用于录井系统的机架式工业计算机，配套 ALS 2.2 软件。"
+        },
+        "es": {
+          "title": "Computadora industrial con sistema ALS 2.2",
+          "summary": "Computadora industrial de montaje en bastidor para una unidad de registro de lodos con software ALS 2.2."
+        },
+        "ru": {
+          "title": "Промышленный компьютер с системой ALS 2.2",
+          "summary": "Стоечный промышленный компьютер для станции газового каротажа с программой ALS 2.2."
+        },
+        "ar": {
+          "title": "حاسوب صناعي بنظام ALS 2.2",
+          "summary": "حاسوب صناعي للتركيب في حامل ضمن وحدة تسجيل الطين باستخدام برنامج ALS 2.2."
+        },
+        "fr": {
+          "title": "Ordinateur industriel avec système ALS 2.2",
+          "summary": "Ordinateur industriel en rack pour une unité de mud logging utilisant le logiciel ALS 2.2."
+        },
+        "de": {
+          "title": "Industriecomputer mit ALS 2.2",
+          "summary": "Industriecomputer im Rack für eine Mud-Logging-Einheit mit ALS 2.2-Software."
+        }
+      }
+    },
+    "258": {
+      "specs": [
+        {
+          "label": "supply",
+          "value": "AC100-AC240 DC12"
+        },
+        {
+          "label": "current",
+          "value": "≤3A"
+        },
+        {
+          "label": "protection",
+          "value": "IP66"
+        },
+        {
+          "label": "legacy_marking",
+          "value": "ExdIIBT6 Gb DIP A21 TA,T6"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "Mud logging hazardous-area monitor",
+          "summary": "Display equipment described in the legacy catalogue for oilfield hazardous-area configurations."
+        },
+        "zh": {
+          "title": "录井危险区域显示器",
+          "summary": "源目录描述的油田危险区域显示设备，具体防护配置需确认。"
+        },
+        "es": {
+          "title": "Monitor de registro de lodos para áreas peligrosas",
+          "summary": "Equipo de visualización descrito en el catálogo histórico para configuraciones de áreas peligrosas del campo petrolero."
+        },
+        "ru": {
+          "title": "Монитор газового каротажа для взрывоопасных зон",
+          "summary": "Устройство отображения из исходного каталога для конфигураций взрывоопасных зон нефтепромысла."
+        },
+        "ar": {
+          "title": "شاشة تسجيل الطين للمناطق الخطرة",
+          "summary": "معدات عرض موصوفة في الكتالوج الأصلي لتكوينات المناطق الخطرة في حقول النفط."
+        },
+        "fr": {
+          "title": "Écran de mud logging pour zones dangereuses",
+          "summary": "Équipement d’affichage décrit dans le catalogue historique pour les configurations de zones dangereuses pétrolières."
+        },
+        "de": {
+          "title": "Mud-Logging-Monitor für explosionsgefährdete Bereiche",
+          "summary": "Anzeigeausrüstung aus dem ursprünglichen Katalog für Ex-Bereich-Konfigurationen im Ölfeld."
+        }
+      }
+    },
+    "260": {
+      "specs": [
+        {
+          "label": "model",
+          "value": "CL-DT11"
+        },
+        {
+          "label": "model",
+          "value": "CL-DT12"
+        },
+        {
+          "label": "power",
+          "value": "370W"
+        },
+        {
+          "label": "speed",
+          "value": "1390r / min"
+        },
+        {
+          "label": "supply",
+          "value": "380V"
+        },
+        {
+          "label": "supply",
+          "value": "220V"
+        },
+        {
+          "label": "frequency",
+          "value": "50 Hz"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "CL-DT electric mud degasser",
+          "summary": "Electric mud degasser with collecting cylinder, drying pipe and adjustable mounting for mud logging."
+        },
+        "zh": {
+          "title": "CL-DT 电动泥浆脱气器",
+          "summary": "由集气筒、干燥管及可调安装机构组成的电动录井泥浆脱气设备。"
+        },
+        "es": {
+          "title": "Desgasificador eléctrico de lodo CL-DT",
+          "summary": "Desgasificador eléctrico con cilindro colector, tubo de secado y montaje ajustable para registro de lodos."
+        },
+        "ru": {
+          "title": "Электрический дегазатор бурового раствора CL-DT",
+          "summary": "Электрический дегазатор с газосборным цилиндром, сушильной трубкой и регулируемым креплением."
+        },
+        "ar": {
+          "title": "جهاز استخلاص الغاز من الطين بمحرك كهربائي CL-DT",
+          "summary": "جهاز كهربائي لاستخلاص الغاز، يضم أسطوانة تجميع وأنبوب تجفيف وتركيبًا قابلًا للضبط لتسجيل الطين."
+        },
+        "fr": {
+          "title": "Dégazeur électrique de boue CL-DT",
+          "summary": "Dégazeur électrique avec cylindre collecteur, tube de séchage et montage réglable pour le mud logging."
+        },
+        "de": {
+          "title": "Elektrischer Bohrspülungsentgaser CL-DT",
+          "summary": "Elektrischer Entgaser mit Sammelzylinder, Trockenrohr und verstellbarer Montage für Mud Logging."
+        }
+      }
+    },
+    "257": {
+      "specs": [
+        {
+          "label": "model",
+          "value": "YG1501"
+        },
+        {
+          "label": "supply",
+          "value": "AC220V"
+        },
+        {
+          "label": "frequency",
+          "value": "50Hz"
+        },
+        {
+          "label": "wavelength",
+          "value": "365±10nm"
+        },
+        {
+          "label": "power",
+          "value": "30w"
+        },
+        {
+          "label": "dimensions",
+          "value": "490×260×290mm"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "YG1501 oil fluorescence UV box",
+          "summary": "UV observation box for fluorescence examination of cuttings and geological samples."
+        },
+        "zh": {
+          "title": "YG1501 岩屑荧光紫外观察箱",
+          "summary": "用于岩屑和地质样品荧光观察的紫外观察箱。"
+        },
+        "es": {
+          "title": "Caja UV de fluorescencia de hidrocarburos YG1501",
+          "summary": "Caja de observación UV para examinar la fluorescencia de recortes y muestras geológicas."
+        },
+        "ru": {
+          "title": "УФ-камера для люминесцентного анализа YG1501",
+          "summary": "УФ-камера для наблюдения люминесценции шлама и геологических проб."
+        },
+        "ar": {
+          "title": "صندوق فحص فلوري بالأشعة فوق البنفسجية YG1501",
+          "summary": "صندوق ملاحظة بالأشعة فوق البنفسجية لفحص فلورة الفتات الصخري والعينات الجيولوجية."
+        },
+        "fr": {
+          "title": "Boîte UV de fluorescence des hydrocarbures YG1501",
+          "summary": "Boîte d’observation UV pour examiner la fluorescence des déblais et des échantillons géologiques."
+        },
+        "de": {
+          "title": "UV-Fluoreszenzkasten YG1501",
+          "summary": "UV-Beobachtungskasten zur Fluoreszenzprüfung von Bohrklein und geologischen Proben."
+        }
+      }
+    },
+    "251": {
+      "specs": [
+        {
+          "label": "model",
+          "value": "CNPS-ML-B11"
+        },
+        {
+          "label": "supply",
+          "value": "+17V ～ 42V DC"
+        },
+        {
+          "label": "range",
+          "value": "0.96 ～ 2.76g/cm3"
+        },
+        {
+          "label": "output",
+          "value": "4～20mA DC"
+        },
+        {
+          "label": "accuracy",
+          "value": "±0.5％FS"
+        },
+        {
+          "label": "temperature",
+          "value": "-40℃ ～ +85℃"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "CNPS-ML-B11 mud density sensor",
+          "summary": "Differential-pressure sensor for monitoring drilling-fluid density at the inlet or outlet."
+        },
+        "zh": {
+          "title": "CNPS-ML-B11 泥浆密度传感器",
+          "summary": "采用差压原理，监测钻井液入口或出口的密度。"
+        },
+        "es": {
+          "title": "Sensor de densidad de lodo CNPS-ML-B11",
+          "summary": "Sensor por presión diferencial para vigilar la densidad del fluido de perforación a la entrada o salida."
+        },
+        "ru": {
+          "title": "Датчик плотности бурового раствора CNPS-ML-B11",
+          "summary": "Датчик на основе перепада давления для контроля плотности бурового раствора на входе или выходе."
+        },
+        "ar": {
+          "title": "مستشعر كثافة الطين CNPS-ML-B11",
+          "summary": "مستشعر يعتمد على فرق الضغط لمراقبة كثافة سائل الحفر عند المدخل أو المخرج."
+        },
+        "fr": {
+          "title": "Capteur de densité de boue CNPS-ML-B11",
+          "summary": "Capteur à pression différentielle pour surveiller la densité du fluide de forage à l’entrée ou à la sortie."
+        },
+        "de": {
+          "title": "Bohrspülungs-Dichtesensor CNPS-ML-B11",
+          "summary": "Differenzdrucksensor zur Überwachung der Bohrspülungsdichte am Ein- oder Auslauf."
+        }
+      }
+    },
+    "245": {
+      "specs": [
+        {
+          "label": "model",
+          "value": "CNPS-8D08"
+        },
+        {
+          "label": "supply",
+          "value": "15 ~ 28VDC"
+        },
+        {
+          "label": "output",
+          "value": "4 ~ 20mA"
+        },
+        {
+          "label": "temperature",
+          "value": "-30～+70℃"
+        },
+        {
+          "label": "conductivity_reference",
+          "value": "300ms/cm"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "CNPS-8D08 mud conductivity sensor",
+          "summary": "Inductive conductivity measurement with temperature compensation and analogue signal output."
+        },
+        "zh": {
+          "title": "CNPS-8D08 泥浆电导率传感器",
+          "summary": "采用感应式电导率测量，提供温度补偿和模拟信号输出。"
+        },
+        "es": {
+          "title": "Sensor de conductividad de lodo CNPS-8D08",
+          "summary": "Medición inductiva de conductividad con compensación de temperatura y salida analógica."
+        },
+        "ru": {
+          "title": "Датчик электропроводности бурового раствора CNPS-8D08",
+          "summary": "Индуктивное измерение электропроводности с температурной компенсацией и аналоговым выходом."
+        },
+        "ar": {
+          "title": "مستشعر التوصيلية الكهربائية للطين CNPS-8D08",
+          "summary": "قياس حثي للتوصيلية مع تعويض حراري وإشارة خرج تماثلية."
+        },
+        "fr": {
+          "title": "Capteur de conductivité de boue CNPS-8D08",
+          "summary": "Mesure inductive de conductivité avec compensation de température et sortie analogique."
+        },
+        "de": {
+          "title": "Bohrspülungs-Leitfähigkeitssensor CNPS-8D08",
+          "summary": "Induktive Leitfähigkeitsmessung mit Temperaturkompensation und analogem Ausgang."
+        }
+      }
+    },
+    "259": {
+      "specs": [
+        {
+          "label": "model",
+          "value": "SLS"
+        },
+        {
+          "label": "protocol",
+          "value": "RS-485"
+        },
+        {
+          "label": "channels_analog",
+          "value": "40"
+        },
+        {
+          "label": "channels_pulse",
+          "value": "14"
+        },
+        {
+          "label": "components",
+          "value": "C1-nC5"
+        },
+        {
+          "label": "range",
+          "value": "0.2%~100%"
+        },
+        {
+          "label": "response",
+          "value": "≤10s"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "SLS mud logging unit",
+          "summary": "Configured surface logging equipment combining data acquisition, gas analysis and monitoring."
+        },
+        "zh": {
+          "title": "SLS 综合录井系统",
+          "summary": "组合数据采集、气体分析与监测功能的地面录井配置。"
+        },
+        "es": {
+          "title": "Unidad de registro de lodos SLS",
+          "summary": "Configuración de registro superficial que combina adquisición de datos, análisis de gases y monitoreo."
+        },
+        "ru": {
+          "title": "Станция газового каротажа SLS",
+          "summary": "Комплекс наземного каротажа со сбором данных, анализом газа и мониторингом."
+        },
+        "ar": {
+          "title": "وحدة تسجيل الطين SLS",
+          "summary": "تكوين لتسجيل القياسات السطحية يجمع جمع البيانات وتحليل الغاز والمراقبة."
+        },
+        "fr": {
+          "title": "Unité de mud logging SLS",
+          "summary": "Configuration de diagraphie de surface associant acquisition, analyse des gaz et surveillance."
+        },
+        "de": {
+          "title": "Mud-Logging-Einheit SLS",
+          "summary": "Konfigurierte Oberflächenmessanlage mit Datenerfassung, Gasanalyse und Überwachung."
+        }
+      }
+    },
+    "273": {
+      "specs": [
+        {
+          "label": "model",
+          "value": "2N01G"
+        },
+        {
+          "label": "range",
+          "value": "1-3g/cm3"
+        },
+        {
+          "label": "sample_mass",
+          "value": "0.05g"
+        },
+        {
+          "label": "resolution",
+          "value": "0.03g/cm3"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "2N01G shale density meter",
+          "summary": "Sample-density instrument used to compare shale density trends during drilling."
+        },
+        "zh": {
+          "title": "2N01G 岩屑密度测定仪",
+          "summary": "通过地质样品密度测定，辅助比较钻井过程中的岩屑密度趋势。"
+        },
+        "es": {
+          "title": "Medidor de densidad de lutita 2N01G",
+          "summary": "Instrumento de densidad de muestras para comparar tendencias de densidad de lutita durante la perforación."
+        },
+        "ru": {
+          "title": "Измеритель плотности аргиллита 2N01G",
+          "summary": "Прибор для измерения плотности проб и сопоставления тенденций плотности аргиллита при бурении."
+        },
+        "ar": {
+          "title": "جهاز قياس كثافة الطفل الصفحي 2N01G",
+          "summary": "جهاز لقياس كثافة العينات ومقارنة اتجاهات كثافة الطفل الصفحي أثناء الحفر."
+        },
+        "fr": {
+          "title": "Densimètre de schiste 2N01G",
+          "summary": "Instrument de densité des échantillons pour comparer les tendances de densité du schiste pendant le forage."
+        },
+        "de": {
+          "title": "Schiefer-Dichtemessgerät 2N01G",
+          "summary": "Probendichtemessgerät zum Vergleich von Schieferdichtetrends während des Bohrens."
+        }
+      }
+    },
+    "307": {
+      "specs": [
+        {
+          "label": "model",
+          "value": "Bee"
+        },
+        {
+          "label": "protocol",
+          "value": "WITS"
+        },
+        {
+          "label": "battery_days",
+          "value": "50"
+        },
+        {
+          "label": "distance_los",
+          "value": "300"
+        },
+        {
+          "label": "distance_obstructed",
+          "value": "120"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "Bee wireless sensor acquisition system",
+          "summary": "A master station and distributed sensor nodes for wireless wellsite data acquisition."
+        },
+        "zh": {
+          "title": "Bee 无线传感器采集系统",
+          "summary": "由主站和分布式传感节点组成的井场无线数据采集系统。"
+        },
+        "es": {
+          "title": "Sistema de adquisición de sensores inalámbricos Bee",
+          "summary": "Estación maestra y nodos distribuidos para adquirir datos inalámbricos en el pozo."
+        },
+        "ru": {
+          "title": "Беспроводная система сбора данных Bee",
+          "summary": "Главная станция и распределённые сенсорные узлы для беспроводного сбора данных на буровой."
+        },
+        "ar": {
+          "title": "نظام جمع بيانات المستشعرات اللاسلكية Bee",
+          "summary": "محطة رئيسية وعقد استشعار موزعة لجمع البيانات لاسلكيًا في موقع البئر."
+        },
+        "fr": {
+          "title": "Système d’acquisition de capteurs sans fil Bee",
+          "summary": "Station principale et nœuds répartis pour l’acquisition sans fil sur le site de forage."
+        },
+        "de": {
+          "title": "Drahtloses Sensor-Datenerfassungssystem Bee",
+          "summary": "Hauptstation und verteilte Sensorknoten zur drahtlosen Datenerfassung am Bohrplatz."
+        }
+      }
+    },
+    "297": {
+      "specs": [
+        {
+          "label": "supply",
+          "value": "3.5-5VDC"
+        },
+        {
+          "label": "temperature",
+          "value": "-40~70°C"
+        },
+        {
+          "label": "frequency",
+          "value": "100Hz"
+        },
+        {
+          "label": "protection",
+          "value": "IP 67"
+        },
+        {
+          "label": "switch_distance",
+          "value": ">8mm"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "Wireless pump stroke / rotary speed sensor",
+          "summary": "Inductive proximity sensing for pump stroke counting or rotary speed monitoring."
+        },
+        "zh": {
+          "title": "无线泵冲 / 转速传感器",
+          "summary": "采用电感式接近检测，用于泵冲计数或旋转速度监测。"
+        },
+        "es": {
+          "title": "Sensor inalámbrico de golpes de bomba / velocidad de rotación",
+          "summary": "Detección inductiva de proximidad para contar golpes de bomba o vigilar la velocidad de rotación."
+        },
+        "ru": {
+          "title": "Беспроводной датчик ходов насоса / частоты вращения",
+          "summary": "Индуктивный датчик приближения для подсчёта ходов насоса или контроля частоты вращения."
+        },
+        "ar": {
+          "title": "مستشعر لاسلكي لأشواط المضخة / سرعة الدوران",
+          "summary": "استشعار تقارب حثي لعد أشواط المضخة أو مراقبة سرعة الدوران."
+        },
+        "fr": {
+          "title": "Capteur sans fil de coups de pompe / vitesse de rotation",
+          "summary": "Détection inductive de proximité pour compter les coups de pompe ou surveiller la vitesse de rotation."
+        },
+        "de": {
+          "title": "Drahtloser Pumpenhub- / Drehzahlsensor",
+          "summary": "Induktive Näherungserfassung zum Zählen von Pumpenhüben oder Überwachen der Drehzahl."
+        }
+      }
+    }
+  }
+}

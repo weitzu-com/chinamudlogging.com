@@ -1,0 +1,217 @@
+source_id,language,type,source_url,target_slug,review,publication_rule,media_paths,source_published_at,localization_mode
+product:305,en,cml_product,/product/battery-and-charger-used-for-the-transmission-box-of-wireless-sensors/,battery-and-charger-used-for-the-transmission-box-of-wireless-sensors,source-preserved,English baseline,/images/source/2022/06/4__94250.jpg,,full-source-record
+product:245,en,cml_product,/product/cnps-8d08-mud-conductivity-sensor/,cnps-8d08-mud-conductivity-sensor,source-preserved,English baseline,/images/source/2022/06/u3473978429988466575fm26gp0__20462.jpg,,full-source-record
+product:245,zh,cml_product,/product/cnps-8d08-mud-conductivity-sensor/,cnps-8d08-mud-conductivity-sensor-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/u3473978429988466575fm26gp0__20462.jpg,,curated-selection-with-complete-english-reference
+product:245,es,cml_product,/product/cnps-8d08-mud-conductivity-sensor/,cnps-8d08-mud-conductivity-sensor-es,approved,explicit --publish-reviewed required,/images/source/2022/06/u3473978429988466575fm26gp0__20462.jpg,,curated-selection-with-complete-english-reference
+product:245,ru,cml_product,/product/cnps-8d08-mud-conductivity-sensor/,cnps-8d08-mud-conductivity-sensor-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/u3473978429988466575fm26gp0__20462.jpg,,curated-selection-with-complete-english-reference
+product:245,ar,cml_product,/product/cnps-8d08-mud-conductivity-sensor/,cnps-8d08-mud-conductivity-sensor-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/u3473978429988466575fm26gp0__20462.jpg,,curated-selection-with-complete-english-reference
+product:245,fr,cml_product,/product/cnps-8d08-mud-conductivity-sensor/,cnps-8d08-mud-conductivity-sensor-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/u3473978429988466575fm26gp0__20462.jpg,,curated-selection-with-complete-english-reference
+product:245,de,cml_product,/product/cnps-8d08-mud-conductivity-sensor/,cnps-8d08-mud-conductivity-sensor-de,approved,explicit --publish-reviewed required,/images/source/2022/06/u3473978429988466575fm26gp0__20462.jpg,,curated-selection-with-complete-english-reference
+product:246,en,cml_product,/product/cnps-bc-proximity-sensors-pump-strokes/,cnps-bc-proximity-sensors-pump-strokes,source-preserved,English baseline,/images/source/2022/06/u3473978429988466575fm26gp0__22914.jpg,,full-source-record
+product:247,en,cml_product,/product/cnps-dnj-electric-torque-sensor/,cnps-dnj-electric-torque-sensor,source-preserved,English baseline,/images/source/2022/06/unnamed-file-1__77490.png,,full-source-record
+product:248,en,cml_product,/product/cnps-dw-a11-depth-encoder/,cnps-dw-a11-depth-encoder,source-preserved,English baseline,/images/source/2022/06/drawwork-sensor__62861.jpg,,full-source-record
+product:249,en,cml_product,/product/cnps-flm-flow-out-sensorpaddle-type/,cnps-flm-flow-out-sensorpaddle-type,source-preserved,English baseline,/images/source/2022/06/HTB1s6bNgSzqK1RjSZPc762TepXas__19813.png,,full-source-record
+product:250,en,cml_product,/product/cnps-mhp-pressure-sensor-15000psi/,cnps-mhp-pressure-sensor-15000psi,source-preserved,English baseline,/images/source/2022/06/15362040831-__40915.jpg,,full-source-record
+product:251,en,cml_product,/product/cnps-ml-b11-mud-density-sensor/,cnps-ml-b11-mud-density-sensor,source-preserved,English baseline,/images/source/2022/06/unnamed-file__59716.png,,full-source-record
+product:251,zh,cml_product,/product/cnps-ml-b11-mud-density-sensor/,cnps-ml-b11-mud-density-sensor-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/unnamed-file__59716.png,,curated-selection-with-complete-english-reference
+product:251,es,cml_product,/product/cnps-ml-b11-mud-density-sensor/,cnps-ml-b11-mud-density-sensor-es,approved,explicit --publish-reviewed required,/images/source/2022/06/unnamed-file__59716.png,,curated-selection-with-complete-english-reference
+product:251,ru,cml_product,/product/cnps-ml-b11-mud-density-sensor/,cnps-ml-b11-mud-density-sensor-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/unnamed-file__59716.png,,curated-selection-with-complete-english-reference
+product:251,ar,cml_product,/product/cnps-ml-b11-mud-density-sensor/,cnps-ml-b11-mud-density-sensor-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/unnamed-file__59716.png,,curated-selection-with-complete-english-reference
+product:251,fr,cml_product,/product/cnps-ml-b11-mud-density-sensor/,cnps-ml-b11-mud-density-sensor-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/unnamed-file__59716.png,,curated-selection-with-complete-english-reference
+product:251,de,cml_product,/product/cnps-ml-b11-mud-density-sensor/,cnps-ml-b11-mud-density-sensor-de,approved,explicit --publish-reviewed required,/images/source/2022/06/unnamed-file__59716.png,,curated-selection-with-complete-english-reference
+product:252,en,cml_product,/product/cnps-ml11-fluid-level-sensor/,cnps-ml11-fluid-level-sensor,source-preserved,English baseline,/images/source/2022/06/3-2-300x300__90827.png,,full-source-record
+product:253,en,cml_product,/product/cnps-mt-b11-mud-temperature-sensor/,cnps-mt-b11-mud-temperature-sensor,source-preserved,English baseline,/images/source/2022/06/HTB1cOujcBWD3KVjSZKPq6yp7FXaK.jpg_640x640__13906.jpg,,full-source-record
+product:141,en,cml_product,/product/drilling-monitoring/,drilling-monitoring,source-preserved,English baseline,/images/source/2021/09/dril.jpg,,full-source-record
+product:157,en,cml_product,/product/electric-torque-sensor/,electric-torque-sensor,source-preserved,English baseline,/images/source/2021/09/ElectricTorqueSensor_480x.png,,full-source-record
+product:272,en,cml_product,/product/flow-out-sensor-paddle-for-mud-logging-unit/,flow-out-sensor-paddle-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__10788.jpg,,full-source-record
+product:142,en,cml_product,/product/formation-evaluation/,formation-evaluation,source-preserved,English baseline,/images/source/2021/09/formation.jpg,,full-source-record
+product:261,en,cml_product,/product/industrial-computer-with-als-2-2-system/,industrial-computer-with-als-2-2-system,source-preserved,English baseline,/images/source/2022/06/4__81927.jpg,,full-source-record
+product:261,zh,cml_product,/product/industrial-computer-with-als-2-2-system/,industrial-computer-with-als-2-2-system-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/4__81927.jpg,,curated-selection-with-complete-english-reference
+product:261,es,cml_product,/product/industrial-computer-with-als-2-2-system/,industrial-computer-with-als-2-2-system-es,approved,explicit --publish-reviewed required,/images/source/2022/06/4__81927.jpg,,curated-selection-with-complete-english-reference
+product:261,ru,cml_product,/product/industrial-computer-with-als-2-2-system/,industrial-computer-with-als-2-2-system-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/4__81927.jpg,,curated-selection-with-complete-english-reference
+product:261,ar,cml_product,/product/industrial-computer-with-als-2-2-system/,industrial-computer-with-als-2-2-system-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/4__81927.jpg,,curated-selection-with-complete-english-reference
+product:261,fr,cml_product,/product/industrial-computer-with-als-2-2-system/,industrial-computer-with-als-2-2-system-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/4__81927.jpg,,curated-selection-with-complete-english-reference
+product:261,de,cml_product,/product/industrial-computer-with-als-2-2-system/,industrial-computer-with-als-2-2-system-de,approved,explicit --publish-reviewed required,/images/source/2022/06/4__81927.jpg,,curated-selection-with-complete-english-reference
+product:270,en,cml_product,/product/mud-conductivity-sensor-for-mud-logging-unit/,mud-conductivity-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__32305.jpg,,full-source-record
+product:159,en,cml_product,/product/mud-density-sensor/,mud-density-sensor,source-preserved,English baseline,/images/source/2021/09/muddensitysensor-01_480x.jpg,,full-source-record
+product:242,en,cml_product,/product/mud-density-sensor-for-oil-and-gas-mud-logging/,mud-density-sensor-for-oil-and-gas-mud-logging,source-preserved,English baseline,/images/source/woocommerce-placeholder.png,,full-source-record
+product:165,en,cml_product,/product/mud-flow-out-sensor-paddle-type/,mud-flow-out-sensor-paddle-type,source-preserved,English baseline,/images/source/2021/09/mudFlowOutSensor-01_480x.jpg,,full-source-record
+product:262,en,cml_product,/product/mud-logging-pump-stroke-sensor/,mud-logging-pump-stroke-sensor,source-preserved,English baseline,/images/source/2022/06/4__62495.jpg,,full-source-record
+product:260,en,cml_product,/product/mud-logging-ex-proof-degasser/,mud-logging-ex-proof-degasser,source-preserved,English baseline,/images/source/2022/06/4__00183.jpg,,full-source-record
+product:260,zh,cml_product,/product/mud-logging-ex-proof-degasser/,mud-logging-ex-proof-degasser-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/4__00183.jpg,,curated-selection-with-complete-english-reference
+product:260,es,cml_product,/product/mud-logging-ex-proof-degasser/,mud-logging-ex-proof-degasser-es,approved,explicit --publish-reviewed required,/images/source/2022/06/4__00183.jpg,,curated-selection-with-complete-english-reference
+product:260,ru,cml_product,/product/mud-logging-ex-proof-degasser/,mud-logging-ex-proof-degasser-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/4__00183.jpg,,curated-selection-with-complete-english-reference
+product:260,ar,cml_product,/product/mud-logging-ex-proof-degasser/,mud-logging-ex-proof-degasser-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/4__00183.jpg,,curated-selection-with-complete-english-reference
+product:260,fr,cml_product,/product/mud-logging-ex-proof-degasser/,mud-logging-ex-proof-degasser-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/4__00183.jpg,,curated-selection-with-complete-english-reference
+product:260,de,cml_product,/product/mud-logging-ex-proof-degasser/,mud-logging-ex-proof-degasser-de,approved,explicit --publish-reviewed required,/images/source/2022/06/4__00183.jpg,,curated-selection-with-complete-english-reference
+product:258,en,cml_product,/product/mud-logging-explosion-proof-monitor/,mud-logging-explosion-proof-monitor,source-preserved,English baseline,/images/source/2022/06/4__27240.jpg,,full-source-record
+product:258,zh,cml_product,/product/mud-logging-explosion-proof-monitor/,mud-logging-explosion-proof-monitor-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/4__27240.jpg,,curated-selection-with-complete-english-reference
+product:258,es,cml_product,/product/mud-logging-explosion-proof-monitor/,mud-logging-explosion-proof-monitor-es,approved,explicit --publish-reviewed required,/images/source/2022/06/4__27240.jpg,,curated-selection-with-complete-english-reference
+product:258,ru,cml_product,/product/mud-logging-explosion-proof-monitor/,mud-logging-explosion-proof-monitor-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/4__27240.jpg,,curated-selection-with-complete-english-reference
+product:258,ar,cml_product,/product/mud-logging-explosion-proof-monitor/,mud-logging-explosion-proof-monitor-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/4__27240.jpg,,curated-selection-with-complete-english-reference
+product:258,fr,cml_product,/product/mud-logging-explosion-proof-monitor/,mud-logging-explosion-proof-monitor-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/4__27240.jpg,,curated-selection-with-complete-english-reference
+product:258,de,cml_product,/product/mud-logging-explosion-proof-monitor/,mud-logging-explosion-proof-monitor-de,approved,explicit --publish-reviewed required,/images/source/2022/06/4__27240.jpg,,curated-selection-with-complete-english-reference
+product:254,en,cml_product,/product/mud-logging-oil-fluoroscope-uv-lamp-box/,mud-logging-oil-fluoroscope-uv-lamp-box,source-preserved,English baseline,/images/source/2022/06/download_8__99428.jpg,,full-source-record
+product:265,en,cml_product,/product/mud-logging-sensor-named-casing-pressure-sensor/,mud-logging-sensor-named-casing-pressure-sensor,source-preserved,English baseline,/images/source/2022/06/4__08609.jpg,,full-source-record
+product:266,en,cml_product,/product/mud-logging-sensor-named-draw-work-sensor/,mud-logging-sensor-named-draw-work-sensor,source-preserved,English baseline,/images/source/2022/06/5__26702.jpg,,full-source-record
+product:269,en,cml_product,/product/mud-logging-sensor-named-drilling-fluid-temperature-sensor/,mud-logging-sensor-named-drilling-fluid-temperature-sensor,source-preserved,English baseline,/images/source/2022/06/3__03271.jpg,,full-source-record
+product:267,en,cml_product,/product/mud-logging-sensor-named-hookload-sensor/,mud-logging-sensor-named-hookload-sensor,source-preserved,English baseline,/images/source/2022/06/4__32035.jpg,,full-source-record
+product:268,en,cml_product,/product/mud-logging-sensor-named-mud-density-sensorinout/,mud-logging-sensor-named-mud-density-sensorinout,source-preserved,English baseline,/images/source/2022/06/11__60484.jpg,,full-source-record
+product:255,en,cml_product,/product/mud-logging-sensor-named-pump-stroke-sensor/,mud-logging-sensor-named-pump-stroke-sensor,source-preserved,English baseline,/images/source/2022/06/download_10__43164.jpg,,full-source-record
+product:264,en,cml_product,/product/mud-logging-sensor-named-standpipe-pressure-sensor/,mud-logging-sensor-named-standpipe-pressure-sensor,source-preserved,English baseline,/images/source/2022/06/1__69123.jpg,,full-source-record
+product:263,en,cml_product,/product/mud-logging-sensor-of-electric-torque-sensor/,mud-logging-sensor-of-electric-torque-sensor,source-preserved,English baseline,/images/source/2022/06/4__91858.jpg,,full-source-record
+product:143,en,cml_product,/product/mud-logging-sensors/,mud-logging-sensors,source-preserved,English baseline,/images/source/2021/08/pro-4.png,,full-source-record
+product:259,en,cml_product,/product/mud-logging-unit/,mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__28633.jpg,,full-source-record
+product:259,zh,cml_product,/product/mud-logging-unit/,mud-logging-unit-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/4__28633.jpg,,curated-selection-with-complete-english-reference
+product:259,es,cml_product,/product/mud-logging-unit/,mud-logging-unit-es,approved,explicit --publish-reviewed required,/images/source/2022/06/4__28633.jpg,,curated-selection-with-complete-english-reference
+product:259,ru,cml_product,/product/mud-logging-unit/,mud-logging-unit-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/4__28633.jpg,,curated-selection-with-complete-english-reference
+product:259,ar,cml_product,/product/mud-logging-unit/,mud-logging-unit-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/4__28633.jpg,,curated-selection-with-complete-english-reference
+product:259,fr,cml_product,/product/mud-logging-unit/,mud-logging-unit-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/4__28633.jpg,,curated-selection-with-complete-english-reference
+product:259,de,cml_product,/product/mud-logging-unit/,mud-logging-unit-de,approved,explicit --publish-reviewed required,/images/source/2022/06/4__28633.jpg,,curated-selection-with-complete-english-reference
+product:167,en,cml_product,/product/mud-temperature-sensor/,mud-temperature-sensor,source-preserved,English baseline,/images/source/2021/09/Mudtemperaturesensor_480x.jpg,,full-source-record
+product:257,en,cml_product,/product/oil-fluoroscope-uv-box/,oil-fluoroscope-uv-box,source-preserved,English baseline,/images/source/2022/06/4__51423.jpg,,full-source-record
+product:257,zh,cml_product,/product/oil-fluoroscope-uv-box/,oil-fluoroscope-uv-box-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/4__51423.jpg,,curated-selection-with-complete-english-reference
+product:257,es,cml_product,/product/oil-fluoroscope-uv-box/,oil-fluoroscope-uv-box-es,approved,explicit --publish-reviewed required,/images/source/2022/06/4__51423.jpg,,curated-selection-with-complete-english-reference
+product:257,ru,cml_product,/product/oil-fluoroscope-uv-box/,oil-fluoroscope-uv-box-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/4__51423.jpg,,curated-selection-with-complete-english-reference
+product:257,ar,cml_product,/product/oil-fluoroscope-uv-box/,oil-fluoroscope-uv-box-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/4__51423.jpg,,curated-selection-with-complete-english-reference
+product:257,fr,cml_product,/product/oil-fluoroscope-uv-box/,oil-fluoroscope-uv-box-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/4__51423.jpg,,curated-selection-with-complete-english-reference
+product:257,de,cml_product,/product/oil-fluoroscope-uv-box/,oil-fluoroscope-uv-box-de,approved,explicit --publish-reviewed required,/images/source/2022/06/4__51423.jpg,,curated-selection-with-complete-english-reference
+product:170,en,cml_product,/product/oil-fluoroscope-uv-lamp-box/,oil-fluoroscope-uv-lamp-box,source-preserved,English baseline,/images/source/2021/09/OilFluoroscopeUVlampbox_480x.jpg,,full-source-record
+product:271,en,cml_product,/product/pit-level-sensor-used-for-mud-logging/,pit-level-sensor-used-for-mud-logging,source-preserved,English baseline,/images/source/2022/06/4__79511.jpg,,full-source-record
+product:173,en,cml_product,/product/pump-stroke-sensor-for-mud-logging/,pump-stroke-sensor-for-mud-logging,source-preserved,English baseline,/images/source/2021/09/PumpStrokeSensor-03_480x.png,,full-source-record
+product:273,en,cml_product,/product/shale-density-meter-for-mud-logging-unit/,shale-density-meter-for-mud-logging-unit,source-preserved,English baseline,/downloads/sk-2n01g-shale-density-meter-operating-sop-zh.pdf;/downloads/sk-2n01g-shale-density-meter-operating-sop.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet-zh.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet.pdf;/images/source/2022/06/4__46037.jpg,,full-source-record
+product:273,zh,cml_product,/product/shale-density-meter-for-mud-logging-unit/,shale-density-meter-for-mud-logging-unit-zh,approved,explicit --publish-reviewed required,/downloads/sk-2n01g-shale-density-meter-operating-sop-zh.pdf;/downloads/sk-2n01g-shale-density-meter-operating-sop.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet-zh.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet.pdf;/images/source/2022/06/4__46037.jpg,,curated-selection-with-complete-english-reference
+product:273,es,cml_product,/product/shale-density-meter-for-mud-logging-unit/,shale-density-meter-for-mud-logging-unit-es,approved,explicit --publish-reviewed required,/downloads/sk-2n01g-shale-density-meter-operating-sop-zh.pdf;/downloads/sk-2n01g-shale-density-meter-operating-sop.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet-zh.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet.pdf;/images/source/2022/06/4__46037.jpg,,curated-selection-with-complete-english-reference
+product:273,ru,cml_product,/product/shale-density-meter-for-mud-logging-unit/,shale-density-meter-for-mud-logging-unit-ru,approved,explicit --publish-reviewed required,/downloads/sk-2n01g-shale-density-meter-operating-sop-zh.pdf;/downloads/sk-2n01g-shale-density-meter-operating-sop.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet-zh.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet.pdf;/images/source/2022/06/4__46037.jpg,,curated-selection-with-complete-english-reference
+product:273,ar,cml_product,/product/shale-density-meter-for-mud-logging-unit/,shale-density-meter-for-mud-logging-unit-ar,approved,explicit --publish-reviewed required,/downloads/sk-2n01g-shale-density-meter-operating-sop-zh.pdf;/downloads/sk-2n01g-shale-density-meter-operating-sop.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet-zh.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet.pdf;/images/source/2022/06/4__46037.jpg,,curated-selection-with-complete-english-reference
+product:273,fr,cml_product,/product/shale-density-meter-for-mud-logging-unit/,shale-density-meter-for-mud-logging-unit-fr,approved,explicit --publish-reviewed required,/downloads/sk-2n01g-shale-density-meter-operating-sop-zh.pdf;/downloads/sk-2n01g-shale-density-meter-operating-sop.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet-zh.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet.pdf;/images/source/2022/06/4__46037.jpg,,curated-selection-with-complete-english-reference
+product:273,de,cml_product,/product/shale-density-meter-for-mud-logging-unit/,shale-density-meter-for-mud-logging-unit-de,approved,explicit --publish-reviewed required,/downloads/sk-2n01g-shale-density-meter-operating-sop-zh.pdf;/downloads/sk-2n01g-shale-density-meter-operating-sop.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet-zh.pdf;/downloads/sk-2n01g-shale-density-meter-technical-datasheet.pdf;/images/source/2022/06/4__46037.jpg,,curated-selection-with-complete-english-reference
+product:256,en,cml_product,/product/sls-mud-logging-unit/,sls-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/EXPLORER-PLS-Mud-Logging-Unit-__21071.jpg,,full-source-record
+product:140,en,cml_product,/product/surface-logging-systems/,surface-logging-systems,source-preserved,English baseline,/images/source/2021/09/HAL124548.jpg,,full-source-record
+product:298,en,cml_product,/product/the-wireless-transmission-box-for-mud-logging-unit/,the-wireless-transmission-box-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__45595.jpg,,full-source-record
+product:280,en,cml_product,/product/wireless-casing-pressure-sensor-for-mud-logging-unit/,wireless-casing-pressure-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__60636.jpg,,full-source-record
+product:292,en,cml_product,/product/wireless-conductivity-sensor-for-mud-logging-unit/,wireless-conductivity-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__65252.jpg,,full-source-record
+product:296,en,cml_product,/product/wireless-draw-work-sensor-for-mud-logging-unit/,wireless-draw-work-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__26961.jpg,,full-source-record
+product:295,en,cml_product,/product/wireless-electric-torque-sensor-for-mud-logging-unit/,wireless-electric-torque-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__99251.jpg,,full-source-record
+product:282,en,cml_product,/product/wireless-flow-out-sensor-for-mud-logging-unit/,wireless-flow-out-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__90407.jpg,,full-source-record
+product:281,en,cml_product,/product/wireless-hook-load-sensor-for-mud-logging-unit/,wireless-hook-load-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__74762.jpg,,full-source-record
+product:294,en,cml_product,/product/wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit/,wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__71820.jpg,,full-source-record
+product:306,en,cml_product,/product/wireless-master-station/,wireless-master-station,source-preserved,English baseline,/images/source/2022/06/4__48247.jpg,,full-source-record
+product:284,en,cml_product,/product/wireless-mud-density-sensor-for-mud-logging-unit/,wireless-mud-density-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__79387.jpg,,full-source-record
+product:293,en,cml_product,/product/wireless-pit-level-sensor-for-mud-logging-unit/,wireless-pit-level-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__97855.jpg,,full-source-record
+product:297,en,cml_product,/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/,wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__53001.jpg,,full-source-record
+product:297,zh,cml_product,/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/,wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/4__53001.jpg,,curated-selection-with-complete-english-reference
+product:297,es,cml_product,/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/,wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit-es,approved,explicit --publish-reviewed required,/images/source/2022/06/4__53001.jpg,,curated-selection-with-complete-english-reference
+product:297,ru,cml_product,/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/,wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/4__53001.jpg,,curated-selection-with-complete-english-reference
+product:297,ar,cml_product,/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/,wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/4__53001.jpg,,curated-selection-with-complete-english-reference
+product:297,fr,cml_product,/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/,wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/4__53001.jpg,,curated-selection-with-complete-english-reference
+product:297,de,cml_product,/product/wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit/,wireless-pump-stroke-sensor-wireless-rotary-speed-rpm-for-mud-logging-unit-de,approved,explicit --publish-reviewed required,/images/source/2022/06/4__53001.jpg,,curated-selection-with-complete-english-reference
+product:307,en,cml_product,/product/wireless-sensors-for-mud-logging-unit/,wireless-sensors-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__19357.jpg,,full-source-record
+product:307,zh,cml_product,/product/wireless-sensors-for-mud-logging-unit/,wireless-sensors-for-mud-logging-unit-zh,approved,explicit --publish-reviewed required,/images/source/2022/06/4__19357.jpg,,curated-selection-with-complete-english-reference
+product:307,es,cml_product,/product/wireless-sensors-for-mud-logging-unit/,wireless-sensors-for-mud-logging-unit-es,approved,explicit --publish-reviewed required,/images/source/2022/06/4__19357.jpg,,curated-selection-with-complete-english-reference
+product:307,ru,cml_product,/product/wireless-sensors-for-mud-logging-unit/,wireless-sensors-for-mud-logging-unit-ru,approved,explicit --publish-reviewed required,/images/source/2022/06/4__19357.jpg,,curated-selection-with-complete-english-reference
+product:307,ar,cml_product,/product/wireless-sensors-for-mud-logging-unit/,wireless-sensors-for-mud-logging-unit-ar,approved,explicit --publish-reviewed required,/images/source/2022/06/4__19357.jpg,,curated-selection-with-complete-english-reference
+product:307,fr,cml_product,/product/wireless-sensors-for-mud-logging-unit/,wireless-sensors-for-mud-logging-unit-fr,approved,explicit --publish-reviewed required,/images/source/2022/06/4__19357.jpg,,curated-selection-with-complete-english-reference
+product:307,de,cml_product,/product/wireless-sensors-for-mud-logging-unit/,wireless-sensors-for-mud-logging-unit-de,approved,explicit --publish-reviewed required,/images/source/2022/06/4__19357.jpg,,curated-selection-with-complete-english-reference
+product:308,en,cml_product,/product/wireless-standpipe-pressure-sensor-for-mud-logging-unit/,wireless-standpipe-pressure-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__55544.jpg,,full-source-record
+product:283,en,cml_product,/product/wireless-temperature-sensor-for-mud-logging-unit/,wireless-temperature-sensor-for-mud-logging-unit,source-preserved,English baseline,/images/source/2022/06/4__42828.jpg,,full-source-record
+product:309,en,cml_product,/product/cl-dd11-mud-conductivity-sensor/,cl-dd11-mud-conductivity-sensor,source-preserved,English baseline,/images/products/cl-dd11-mud-conductivity-sensor.jpg,,full-source-record
+product:310,en,cml_product,/product/drilling-fluid-temperature-sensor/,drilling-fluid-temperature-sensor,source-preserved,English baseline,/images/products/drilling-fluid-temperature-sensor.jpg,,full-source-record
+product:311,en,cml_product,/product/cl-md23-mud-density-sensor/,cl-md23-mud-density-sensor,source-preserved,English baseline,/images/products/cl-md23-mud-density-sensor.jpg,,full-source-record
+product:312,en,cml_product,/product/sitrans-probe-lu240-ultrasonic-pit-level-transmitter/,sitrans-probe-lu240-ultrasonic-pit-level-transmitter,source-preserved,English baseline,/images/products/sitrans-probe-lu240-ultrasonic-level-transmitter.jpg,,full-source-record
+product:313,en,cml_product,/product/cl-ll11-paddle-flow-out-sensor/,cl-ll11-paddle-flow-out-sensor,source-preserved,English baseline,/images/products/cl-ll11-paddle-flow-out-sensor.jpg,,full-source-record
+product:314,en,cml_product,/product/yc-03d-electric-mud-degasser/,yc-03d-electric-mud-degasser,source-preserved,English baseline,/images/products/yc-03d-electric-degasser.jpg,,full-source-record
+product:315,en,cml_product,/product/rada-32-ddlja5-80ghz-radar-level-transmitter/,rada-32-ddlja5-80ghz-radar-level-transmitter,source-preserved,English baseline,/images/products/rada-32-ddlja5-radar-level-transmitter.png,,full-source-record
+article:444,en,post,/what-is-meaning-of-mud-logging/,what-is-meaning-of-mud-logging,corrected-see-ledger,English baseline,/images/source/woocommerce-placeholder.png,2022-10-04,full-source-record
+article:211,en,post,/who-is-mud-logger/,who-is-mud-logger,source-preserved,English baseline,/images/source/2021/11/workers-standing-checking-beside-working-oil-pumps-min.jpg,2021-11-25,full-source-record
+article:208,en,post,/how-many-mud-logging-companies-in-the-world/,how-many-mud-logging-companies-in-the-world,source-preserved,English baseline,/images/source/2021/11/2687446_9267-min-scaled.jpg,2021-11-25,full-source-record
+article:206,en,post,/what-is-mud-logging-jobs/,what-is-mud-logging-jobs,source-preserved,English baseline,/images/source/2021/11/businessman-with-leather-briefcase-min.jpg,2021-11-25,full-source-record
+article:204,en,post,/what-is-the-main-task-of-a-mud-logging-unit/,what-is-the-main-task-of-a-mud-logging-unit,source-preserved,English baseline,/images/source/2021/11/5060486_2661180-min.jpg,2021-11-25,full-source-record
+article:202,en,post,/what-is-mud-logging-unit/,what-is-mud-logging-unit,source-preserved,English baseline,/images/source/2021/08/pro-3.png,2021-11-25,full-source-record
+article:197,en,post,/what-is-mud-logging/,what-is-mud-logging,source-preserved,English baseline,/images/source/2021/09/formation.jpg,2021-11-25,full-source-record
+article:185,en,post,/about-chinamudlogging/,about-chinamudlogging,source-preserved,English baseline,/images/source/2021/08/services.png,2021-09-17,full-source-record
+page:home,en,page,/,home,source-preserved,English baseline,,,full-source-record
+page:home,zh,page,/,home-zh,approved,explicit --publish-reviewed required,,,full-source-record
+page:home,es,page,/,home-es,approved,explicit --publish-reviewed required,,,full-source-record
+page:home,ru,page,/,home-ru,approved,explicit --publish-reviewed required,,,full-source-record
+page:home,ar,page,/,home-ar,approved,explicit --publish-reviewed required,,,full-source-record
+page:home,fr,page,/,home-fr,approved,explicit --publish-reviewed required,,,full-source-record
+page:home,de,page,/,home-de,approved,explicit --publish-reviewed required,,,full-source-record
+page:products,en,page,/product/,product,source-preserved,English baseline,,,full-source-record
+page:products,zh,page,/product/,product-zh,approved,explicit --publish-reviewed required,,,full-source-record
+page:products,es,page,/product/,product-es,approved,explicit --publish-reviewed required,,,full-source-record
+page:products,ru,page,/product/,product-ru,approved,explicit --publish-reviewed required,,,full-source-record
+page:products,ar,page,/product/,product-ar,approved,explicit --publish-reviewed required,,,full-source-record
+page:products,fr,page,/product/,product-fr,approved,explicit --publish-reviewed required,,,full-source-record
+page:products,de,page,/product/,product-de,approved,explicit --publish-reviewed required,,,full-source-record
+page:applications,en,page,/applications/,applications,source-preserved,English baseline,,,full-source-record
+page:applications,zh,page,/applications/,applications-zh,approved,explicit --publish-reviewed required,,,full-source-record
+page:applications,es,page,/applications/,applications-es,approved,explicit --publish-reviewed required,,,full-source-record
+page:applications,ru,page,/applications/,applications-ru,approved,explicit --publish-reviewed required,,,full-source-record
+page:applications,ar,page,/applications/,applications-ar,approved,explicit --publish-reviewed required,,,full-source-record
+page:applications,fr,page,/applications/,applications-fr,approved,explicit --publish-reviewed required,,,full-source-record
+page:applications,de,page,/applications/,applications-de,approved,explicit --publish-reviewed required,,,full-source-record
+page:services,en,page,/services/,services,rewritten-source-archived,English baseline,,,full-source-record
+page:services,zh,page,/services/,services-zh,approved,explicit --publish-reviewed required,,,full-source-record
+page:services,es,page,/services/,services-es,approved,explicit --publish-reviewed required,,,full-source-record
+page:services,ru,page,/services/,services-ru,approved,explicit --publish-reviewed required,,,full-source-record
+page:services,ar,page,/services/,services-ar,approved,explicit --publish-reviewed required,,,full-source-record
+page:services,fr,page,/services/,services-fr,approved,explicit --publish-reviewed required,,,full-source-record
+page:services,de,page,/services/,services-de,approved,explicit --publish-reviewed required,,,full-source-record
+page:about,en,page,/about-us/,about-us,rewritten-source-archived,English baseline,,,full-source-record
+page:about,zh,page,/about-us/,about-us-zh,approved,explicit --publish-reviewed required,,,full-source-record
+page:about,es,page,/about-us/,about-us-es,approved,explicit --publish-reviewed required,,,full-source-record
+page:about,ru,page,/about-us/,about-us-ru,approved,explicit --publish-reviewed required,,,full-source-record
+page:about,ar,page,/about-us/,about-us-ar,approved,explicit --publish-reviewed required,,,full-source-record
+page:about,fr,page,/about-us/,about-us-fr,approved,explicit --publish-reviewed required,,,full-source-record
+page:about,de,page,/about-us/,about-us-de,approved,explicit --publish-reviewed required,,,full-source-record
+page:insights,en,page,/blog/,blog,source-preserved,English baseline,,,full-source-record
+page:contact,en,page,/contact-us/,contact-us,source-preserved,English baseline,,,full-source-record
+page:contact,zh,page,/contact-us/,contact-us-zh,approved,explicit --publish-reviewed required,,,full-source-record
+page:contact,es,page,/contact-us/,contact-us-es,approved,explicit --publish-reviewed required,,,full-source-record
+page:contact,ru,page,/contact-us/,contact-us-ru,approved,explicit --publish-reviewed required,,,full-source-record
+page:contact,ar,page,/contact-us/,contact-us-ar,approved,explicit --publish-reviewed required,,,full-source-record
+page:contact,fr,page,/contact-us/,contact-us-fr,approved,explicit --publish-reviewed required,,,full-source-record
+page:contact,de,page,/contact-us/,contact-us-de,approved,explicit --publish-reviewed required,,,full-source-record
+page:privacy,en,page,/privacy/,privacy,rewritten-source-archived,English baseline,,,full-source-record
+page:privacy,zh,page,/privacy/,privacy-zh,approved,explicit --publish-reviewed required,,,full-source-record
+page:privacy,es,page,/privacy/,privacy-es,approved,explicit --publish-reviewed required,,,full-source-record
+page:privacy,ru,page,/privacy/,privacy-ru,approved,explicit --publish-reviewed required,,,full-source-record
+page:privacy,ar,page,/privacy/,privacy-ar,approved,explicit --publish-reviewed required,,,full-source-record
+page:privacy,fr,page,/privacy/,privacy-fr,approved,explicit --publish-reviewed required,,,full-source-record
+page:privacy,de,page,/privacy/,privacy-de,approved,explicit --publish-reviewed required,,,full-source-record
+family:drilling-monitoring,en,cml_family,/product-category/drilling-monitoring/,drilling-monitoring,source-preserved,linked to published products,,,localized-family
+family:drilling-monitoring,zh,cml_family,/product-category/drilling-monitoring/,drilling-monitoring-zh,approved,linked to published products,,,localized-family
+family:drilling-monitoring,es,cml_family,/product-category/drilling-monitoring/,drilling-monitoring-es,approved,linked to published products,,,localized-family
+family:drilling-monitoring,ru,cml_family,/product-category/drilling-monitoring/,drilling-monitoring-ru,approved,linked to published products,,,localized-family
+family:drilling-monitoring,ar,cml_family,/product-category/drilling-monitoring/,drilling-monitoring-ar,approved,linked to published products,,,localized-family
+family:drilling-monitoring,fr,cml_family,/product-category/drilling-monitoring/,drilling-monitoring-fr,approved,linked to published products,,,localized-family
+family:drilling-monitoring,de,cml_family,/product-category/drilling-monitoring/,drilling-monitoring-de,approved,linked to published products,,,localized-family
+family:formation-evaluation,en,cml_family,/product-category/formation-evaluation/,formation-evaluation,source-preserved,linked to published products,,,localized-family
+family:formation-evaluation,zh,cml_family,/product-category/formation-evaluation/,formation-evaluation-zh,approved,linked to published products,,,localized-family
+family:formation-evaluation,es,cml_family,/product-category/formation-evaluation/,formation-evaluation-es,approved,linked to published products,,,localized-family
+family:formation-evaluation,ru,cml_family,/product-category/formation-evaluation/,formation-evaluation-ru,approved,linked to published products,,,localized-family
+family:formation-evaluation,ar,cml_family,/product-category/formation-evaluation/,formation-evaluation-ar,approved,linked to published products,,,localized-family
+family:formation-evaluation,fr,cml_family,/product-category/formation-evaluation/,formation-evaluation-fr,approved,linked to published products,,,localized-family
+family:formation-evaluation,de,cml_family,/product-category/formation-evaluation/,formation-evaluation-de,approved,linked to published products,,,localized-family
+family:mud-logging-sensors,en,cml_family,/product-category/mud-logging-sensors/,mud-logging-sensors,source-preserved,linked to published products,,,localized-family
+family:mud-logging-sensors,zh,cml_family,/product-category/mud-logging-sensors/,mud-logging-sensors-zh,approved,linked to published products,,,localized-family
+family:mud-logging-sensors,es,cml_family,/product-category/mud-logging-sensors/,mud-logging-sensors-es,approved,linked to published products,,,localized-family
+family:mud-logging-sensors,ru,cml_family,/product-category/mud-logging-sensors/,mud-logging-sensors-ru,approved,linked to published products,,,localized-family
+family:mud-logging-sensors,ar,cml_family,/product-category/mud-logging-sensors/,mud-logging-sensors-ar,approved,linked to published products,,,localized-family
+family:mud-logging-sensors,fr,cml_family,/product-category/mud-logging-sensors/,mud-logging-sensors-fr,approved,linked to published products,,,localized-family
+family:mud-logging-sensors,de,cml_family,/product-category/mud-logging-sensors/,mud-logging-sensors-de,approved,linked to published products,,,localized-family
+family:mud-logging-units,en,cml_family,/product-category/mud-logging-units/,mud-logging-units,source-preserved,linked to published products,,,localized-family
+family:mud-logging-units,zh,cml_family,/product-category/mud-logging-units/,mud-logging-units-zh,approved,linked to published products,,,localized-family
+family:mud-logging-units,es,cml_family,/product-category/mud-logging-units/,mud-logging-units-es,approved,linked to published products,,,localized-family
+family:mud-logging-units,ru,cml_family,/product-category/mud-logging-units/,mud-logging-units-ru,approved,linked to published products,,,localized-family
+family:mud-logging-units,ar,cml_family,/product-category/mud-logging-units/,mud-logging-units-ar,approved,linked to published products,,,localized-family
+family:mud-logging-units,fr,cml_family,/product-category/mud-logging-units/,mud-logging-units-fr,approved,linked to published products,,,localized-family
+family:mud-logging-units,de,cml_family,/product-category/mud-logging-units/,mud-logging-units-de,approved,linked to published products,,,localized-family
+family:wireless-sensors,en,cml_family,/product-category/wireless-sensors/,wireless-sensors,source-preserved,linked to published products,,,localized-family
+family:wireless-sensors,zh,cml_family,/product-category/wireless-sensors/,wireless-sensors-zh,approved,linked to published products,,,localized-family
+family:wireless-sensors,es,cml_family,/product-category/wireless-sensors/,wireless-sensors-es,approved,linked to published products,,,localized-family
+family:wireless-sensors,ru,cml_family,/product-category/wireless-sensors/,wireless-sensors-ru,approved,linked to published products,,,localized-family
+family:wireless-sensors,ar,cml_family,/product-category/wireless-sensors/,wireless-sensors-ar,approved,linked to published products,,,localized-family
+family:wireless-sensors,fr,cml_family,/product-category/wireless-sensors/,wireless-sensors-fr,approved,linked to published products,,,localized-family
+family:wireless-sensors,de,cml_family,/product-category/wireless-sensors/,wireless-sensors-de,approved,linked to published products,,,localized-family

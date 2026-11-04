@@ -1,0 +1,158 @@
+{
+  "en": {
+    "site_title": "ChinaMudLogging — equipment and sensor sourcing",
+    "intro": "Mud logging equipment, sensor selection and configured supply for international oilfield buyers.",
+    "about": [
+      "ChinaMudLogging.com supports international oilfield procurement with equipment selection, sensor sourcing, replacement parts and system configuration review. Our focus is geological evaluation, surface formation evaluation and drilling monitoring.",
+      "Start with the measurement and the existing system: range, power supply, signal, connection, operating environment and documentation. We help turn these requirements into a practical request for quotation.",
+      "Catalogue entries describe source records and configurations. Manufacturing origin, certification, hazardous-area approval, compatibility, availability and delivery must be confirmed for the specific order."
+    ],
+    "services": [
+      "Equipment and sensor sourcing: review the required measurement, installation and operating conditions before proposing a configuration.",
+      "Replacement and integration review: compare power, output signals, protocols, process connections and the existing acquisition system.",
+      "Quotation and supply coordination: confirm quantity, technical documentation, delivery terms and agreed support. Site work, commissioning and training are included only when explicitly agreed."
+    ],
+    "privacy": [
+      "This website uses the information you submit—name, email, company, country, product and requirements—to review and answer your inquiry. Submission records are saved on the website server and a notification may be sent to our business mailbox through the configured mail provider.",
+      "We record the page path and selected language to understand the request. Query strings are not saved. Inquiry text and personal contact data are not sent to analytics services. This implementation does not enable advertising or analytics tracking.",
+      "WordPress and language selection may use necessary cookies. Hosting security logs may record network information; the form uses a keyed network-address hash for short-lived rate limiting and does not store a raw address in the inquiry record.",
+      "Access to inquiry records is restricted to website administrators. We retain records while needed to answer and manage the inquiry. For access, correction or deletion requests, contact sales@chinamudlogging.com. Do not submit passwords, payment information or sensitive personal information."
+    ]
+  },
+  "zh": {
+    "site_title": "ChinaMudLogging — 录井设备与传感器选型",
+    "intro": "面向国际油田采购的录井设备、传感器选型与配套供货。",
+    "about": [
+      "ChinaMudLogging.com 为国际油田采购提供设备选型、传感器采购、备件及系统配置核对，重点覆盖地质评价、地面地层评价和钻井监测。",
+      "先明确测量需求和现有系统，包括量程、供电、信号、连接方式、工作环境和技术文件，再形成可执行的询价要求。",
+      "目录介绍源资料和具体配置；制造来源、认证、防爆许可、兼容性、供货与交期须针对实际订单确认。"
+    ],
+    "services": [
+      "设备与传感器采购：核对测量需求、安装条件和使用环境，再提出配置。",
+      "替换与集成核对：比对供电、输出信号、协议、过程连接和现有数据采集系统。",
+      "报价与供货协调：确认数量、技术文件、交付条款和约定支持。现场服务、调试及培训仅在明确约定时包含。"
+    ],
+    "privacy": [
+      "网站使用您提交的姓名、邮箱、公司、国家、产品及需求信息，审核并回复询价。提交记录保存在网站服务器上，通知可通过配置的邮件服务发送至业务邮箱。",
+      "记录来源页面路径和所选语言，不保存查询字符串。询价正文与个人联系方式不发送至分析服务；当前实现未启用广告或分析追踪。",
+      "WordPress 与语言选择可能使用必要 Cookie。托管安全日志可能记录网络信息；表单限流短暂使用网络地址的带密钥哈希，询价记录不保存原始地址。",
+      "询价记录仅网站管理员可访问，按处理及管理询价所需保留。如需访问、更正或删除，请联系 sales@chinamudlogging.com。请勿提交密码、付款资料或敏感个人信息。"
+    ]
+  },
+  "es": {
+    "site_title": "ChinaMudLogging — equipos y sensores",
+    "intro": "Selección y suministro de equipos de registro de lodos y sensores para compradores internacionales.",
+    "about": [
+      "ChinaMudLogging.com apoya la compra internacional de equipos de campo petrolero mediante selección de equipos, sensores, repuestos y revisión de configuraciones. Nos centramos en evaluación geológica, evaluación superficial de formaciones y monitoreo de perforación.",
+      "Partimos de la medición y del sistema existente: rango, alimentación, señal, conexión, entorno y documentación. Convertimos estos requisitos en una solicitud de cotización práctica.",
+      "El catálogo describe registros de origen y configuraciones. El origen de fabricación, certificaciones, aprobaciones para áreas peligrosas, compatibilidad, disponibilidad y entrega se confirman para cada pedido."
+    ],
+    "services": [
+      "Suministro de equipos y sensores: revisión de medición, instalación y condiciones de operación antes de proponer una configuración.",
+      "Revisión de sustitución e integración: comparación de alimentación, señales, protocolos, conexiones y sistema de adquisición existente.",
+      "Coordinación de cotización y suministro: confirmación de cantidad, documentación, condiciones de entrega y soporte acordado. Trabajo en sitio, puesta en marcha y formación solo cuando se acuerden expresamente."
+    ],
+    "privacy": [
+      "Usamos nombre, correo, empresa, país, producto y requisitos para revisar y responder su consulta. Los registros se guardan en el servidor y puede enviarse una notificación al buzón comercial mediante el proveedor de correo configurado.",
+      "Registramos la ruta de la página y el idioma, sin parámetros de consulta. El contenido y los datos de contacto no se envían a servicios de análisis. Esta implementación no activa publicidad ni seguimiento analítico.",
+      "WordPress y la selección de idioma pueden usar cookies necesarias. El alojamiento puede mantener registros de seguridad de red. El formulario usa temporalmente un hash con clave de la dirección de red para limitar solicitudes; no guarda la dirección original en la consulta.",
+      "Solo los administradores pueden acceder a las consultas. Conservamos los registros mientras sean necesarios para gestionarlas. Para acceso, corrección o eliminación, contacte sales@chinamudlogging.com. No envíe contraseñas, información de pago ni datos personales sensibles."
+    ]
+  },
+  "ru": {
+    "site_title": "ChinaMudLogging — оборудование и датчики",
+    "intro": "Подбор и поставка оборудования газового каротажа и датчиков для международных заказчиков.",
+    "about": [
+      "ChinaMudLogging.com помогает международным заказчикам подбирать нефтепромысловое оборудование, датчики и запчасти, проверять конфигурации систем. Основные направления — геологическая оценка, оценка пластов по наземным данным и мониторинг бурения.",
+      "Начинаем с измерительной задачи и существующей системы: диапазон, питание, сигнал, соединение, условия эксплуатации и документация. На этой основе формируем требования к предложению.",
+      "Каталог описывает исходные материалы и конфигурации. Изготовитель, сертификаты, взрывозащита, совместимость, наличие и сроки подтверждаются для конкретного заказа."
+    ],
+    "services": [
+      "Подбор оборудования и датчиков: проверка измерительной задачи, монтажа и условий эксплуатации до предложения конфигурации.",
+      "Проверка замены и интеграции: сопоставление питания, сигналов, протоколов, технологических соединений и системы сбора данных.",
+      "Согласование предложения и поставки: количество, техническая документация, условия доставки и поддержки. Выездные работы, пусконаладка и обучение включаются только по отдельному соглашению."
+    ],
+    "privacy": [
+      "Имя, электронная почта, компания, страна, продукт и требования используются для обработки запроса. Записи хранятся на сервере сайта; уведомление может отправляться на рабочий почтовый ящик через настроенного почтового провайдера.",
+      "Сохраняются путь страницы и язык, без параметров запроса. Текст запроса и контактные данные не передаются аналитическим сервисам. Реклама и аналитическое отслеживание в этой реализации не включены.",
+      "WordPress и выбор языка могут использовать необходимые файлы cookie. Хостинг может вести журналы сетевой безопасности. Для кратковременного ограничения частоты форма использует хеш сетевого адреса с ключом; исходный адрес в записи запроса не хранится.",
+      "Доступ к запросам имеют только администраторы. Записи сохраняются по мере необходимости обработки запросов. Для доступа, исправления или удаления пишите на sales@chinamudlogging.com. Не отправляйте пароли, платёжные данные и конфиденциальную личную информацию."
+    ]
+  },
+  "ar": {
+    "site_title": "ChinaMudLogging — توريد المعدات والمستشعرات",
+    "intro": "اختيار وتوريد معدات تسجيل الطين والمستشعرات للمشترين الدوليين في قطاع النفط.",
+    "about": [
+      "تدعم ChinaMudLogging.com مشتريات معدات حقول النفط الدولية عبر اختيار المعدات وتوريد المستشعرات وقطع الغيار ومراجعة تكوين الأنظمة. نركز على التقييم الجيولوجي وتقييم التكوينات من القياسات السطحية ومراقبة الحفر.",
+      "نبدأ بمتطلبات القياس والنظام القائم: النطاق والتغذية والإشارة والتوصيل وبيئة التشغيل والوثائق، لتحويلها إلى طلب عرض سعر عملي.",
+      "يعرض الكتالوج بيانات المصدر والتكوينات. يجب تأكيد جهة التصنيع والشهادات واعتمادات المناطق الخطرة والتوافق والتوافر والتسليم لكل طلب."
+    ],
+    "services": [
+      "توريد المعدات والمستشعرات: مراجعة القياس والتركيب وظروف التشغيل قبل اقتراح التكوين.",
+      "مراجعة الاستبدال والتكامل: مقارنة التغذية وإشارات الخرج والبروتوكولات والتوصيلات ونظام جمع البيانات القائم.",
+      "تنسيق عرض السعر والتوريد: تأكيد الكمية والوثائق الفنية وشروط التسليم والدعم المتفق عليه. لا تشمل الخدمة الأعمال الميدانية أو التشغيل أو التدريب إلا باتفاق صريح."
+    ],
+    "privacy": [
+      "نستخدم الاسم والبريد الإلكتروني والشركة والبلد والمنتج والمتطلبات لمراجعة الاستفسار والرد عليه. تُحفظ السجلات على خادم الموقع، وقد يُرسل إشعار إلى بريد العمل عبر مزود البريد المهيأ.",
+      "نسجل مسار الصفحة واللغة دون معاملات الاستعلام. لا تُرسل تفاصيل الاستفسار وبيانات الاتصال إلى خدمات التحليلات. لا يفعّل هذا التنفيذ إعلانات أو تتبعًا تحليليًا.",
+      "قد يستخدم WordPress واختيار اللغة ملفات تعريف ارتباط ضرورية. قد يحتفظ مزود الاستضافة بسجلات أمن الشبكة. يستخدم النموذج مؤقتًا تجزئة بمفتاح لعنوان الشبكة للحد من معدل الطلبات، ولا يحفظ العنوان الأصلي في سجل الاستفسار.",
+      "يقتصر الوصول إلى السجلات على مسؤولي الموقع. نحتفظ بها بقدر الحاجة لمعالجة الاستفسارات. لطلب الاطلاع أو التصحيح أو الحذف، تواصل مع sales@chinamudlogging.com. لا ترسل كلمات مرور أو بيانات دفع أو معلومات شخصية حساسة."
+    ]
+  },
+  "fr": {
+    "site_title": "ChinaMudLogging — équipements et capteurs",
+    "intro": "Sélection et fourniture d’équipements de mud logging et de capteurs pour les acheteurs internationaux.",
+    "about": [
+      "ChinaMudLogging.com accompagne les achats internationaux d’équipements pétroliers : sélection, capteurs, pièces de rechange et vérification des configurations. Nous nous concentrons sur l’évaluation géologique, l’évaluation des formations à partir des mesures de surface et la surveillance du forage.",
+      "Nous partons de la mesure et du système existant : plage, alimentation, signal, raccordement, environnement et documentation, pour établir une demande de devis exploitable.",
+      "Le catalogue décrit des données sources et des configurations. Origine de fabrication, certifications, agréments en zone dangereuse, compatibilité, disponibilité et livraison sont à confirmer pour chaque commande."
+    ],
+    "services": [
+      "Fourniture d’équipements et capteurs : examen de la mesure, de l’installation et des conditions d’utilisation avant proposition de configuration.",
+      "Remplacement et intégration : comparaison des alimentations, signaux, protocoles, raccordements et du système d’acquisition existant.",
+      "Devis et coordination : confirmation des quantités, documents techniques, conditions de livraison et assistance convenue. Interventions sur site, mise en service et formation uniquement sur accord explicite."
+    ],
+    "privacy": [
+      "Nous utilisons nom, e-mail, entreprise, pays, produit et besoin pour examiner votre demande et y répondre. Les dossiers sont conservés sur le serveur du site et une notification peut être envoyée à notre messagerie professionnelle par le prestataire configuré.",
+      "Nous enregistrons le chemin de page et la langue, sans paramètres de requête. Le texte et les coordonnées ne sont pas transmis aux services d’analyse. Cette implémentation n’active ni publicité ni suivi analytique.",
+      "WordPress et le choix de langue peuvent utiliser des cookies nécessaires. L’hébergeur peut conserver des journaux de sécurité réseau. Le formulaire utilise temporairement une empreinte à clé de l’adresse réseau pour limiter les requêtes, sans conserver l’adresse brute dans le dossier.",
+      "Seuls les administrateurs accèdent aux demandes. Nous conservons les dossiers selon les besoins de leur traitement. Pour consulter, corriger ou supprimer vos données : sales@chinamudlogging.com. N’envoyez aucun mot de passe, donnée de paiement ou donnée personnelle sensible."
+    ]
+  },
+  "de": {
+    "site_title": "ChinaMudLogging — Ausrüstung und Sensoren",
+    "intro": "Auswahl und Lieferung von Mud-Logging-Ausrüstung und Sensoren für internationale Ölfeld-Einkäufer.",
+    "about": [
+      "ChinaMudLogging.com unterstützt die internationale Beschaffung von Ölfeldausrüstung durch Geräteauswahl, Sensoren, Ersatzteile und Prüfung von Systemkonfigurationen. Schwerpunkte sind geologische Bewertung, oberflächenbasierte Formationsbewertung und Bohrüberwachung.",
+      "Ausgangspunkt sind Messaufgabe und vorhandenes System: Bereich, Versorgung, Signal, Anschluss, Umgebung und Dokumentation. Daraus entstehen konkrete Angebotsanforderungen.",
+      "Der Katalog beschreibt Quelldaten und Konfigurationen. Herstellerherkunft, Zertifikate, Ex-Zulassungen, Kompatibilität, Verfügbarkeit und Lieferung werden auftragsbezogen bestätigt."
+    ],
+    "services": [
+      "Geräte- und Sensorbeschaffung: Prüfung von Messaufgabe, Einbau und Betriebsbedingungen vor dem Konfigurationsvorschlag.",
+      "Ersatz und Integration: Vergleich von Versorgung, Ausgangssignalen, Protokollen, Prozessanschlüssen und vorhandenem Erfassungssystem.",
+      "Angebot und Lieferkoordination: Bestätigung von Menge, technischen Unterlagen, Lieferbedingungen und vereinbarter Unterstützung. Vor-Ort-Arbeiten, Inbetriebnahme und Schulung nur nach ausdrücklicher Vereinbarung."
+    ],
+    "privacy": [
+      "Wir nutzen Name, E-Mail, Unternehmen, Land, Produkt und Anforderungen zur Bearbeitung Ihrer Anfrage. Einträge werden auf dem Website-Server gespeichert; eine Benachrichtigung kann über den eingerichteten E-Mail-Anbieter an unser Geschäftspostfach gesendet werden.",
+      "Gespeichert werden Seitenpfad und Sprache ohne Abfrageparameter. Anfrageinhalt und Kontaktdaten werden nicht an Analysedienste übermittelt. Diese Implementierung aktiviert weder Werbung noch Analyse-Tracking.",
+      "WordPress und die Sprachauswahl können notwendige Cookies verwenden. Der Hoster kann Netzwerk-Sicherheitsprotokolle führen. Das Formular nutzt kurzzeitig einen schlüsselbasierten Hash der Netzwerkadresse zur Begrenzung von Anfragen; die ursprüngliche Adresse wird nicht im Anfrageeintrag gespeichert.",
+      "Nur Administratoren haben Zugriff auf Anfragen. Einträge bleiben gespeichert, soweit dies zur Bearbeitung benötigt wird. Für Auskunft, Berichtigung oder Löschung: sales@chinamudlogging.com. Senden Sie keine Passwörter, Zahlungsdaten oder sensiblen persönlichen Informationen."
+    ]
+  },
+  "articleCorrections": {
+    "444": {
+      "description": "Mud logging combines surface examination of drilled cuttings and returning gas with drilling measurements to record formation and wellsite information.",
+      "paragraphs": [
+        "Mud logging builds a surface record of a well during drilling. It combines examination of rock cuttings carried up by the circulating drilling fluid with gas measurements and drilling parameters.",
+        "Cuttings recovered at the shale shaker help describe the formations being drilled. Mud gas measurements and operating data add context for geological interpretation and drilling monitoring.",
+        "Core samples may supply additional geological information, but collecting core is a separate operation and does not define mud logging."
+      ],
+      "references": [
+        {
+          "title": "SLB — The Defining Series: Mud Logging",
+          "url": "https://www.slb.com/resource-library/oilfield-review/defining-series/defining-mud-logging"
+        }
+      ]
+    }
+  }
+}

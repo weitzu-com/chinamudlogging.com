@@ -1,6 +1,16 @@
 # ChinaMudLogging.com
 
-Static English B2B website rebuilt from the public content and media stored on the original SiteGround WordPress installation.
+The current production site is an English Astro B2B website. The seven-language WordPress replacement lives in `wordpress/`; its implementation and acceptance state are tracked separately from the production site.
+
+## WordPress migration
+
+- Native block theme: `wordpress/theme/cml`.
+- Products, private inquiries and repeatable import: `wordpress/plugin/cml-core`.
+- Seven language page sets and 60 priority product drafts: `wordpress/migration`.
+- Deployment, mailbox validation and rollback: `wordpress/docs/部署与回滚手册.md`.
+- Current acceptance evidence and outstanding release gates: `wordpress/docs/验收报告.md`.
+
+Build a portable candidate with `python3 wordpress/scripts/prepare.py`, validate it with `python3 wordpress/scripts/check-bundle.py`, then package it with `python3 wordpress/scripts/package.py`. Output lives under `~/.cache/chinamudlogging-wordpress/` and includes media and source archives. Credentials, generated packages and backups must stay outside Git. Google web translation is used only for review drafts; it is not a production dependency and has no availability guarantee.
 
 ## Source boundary
 
