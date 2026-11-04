@@ -38,3 +38,7 @@ Legacy cart, checkout, account, shop, news, and duplicate content paths redirect
 - After release, confirm the production deployment commit matches `main`, then check the homepage, sitemap, product page, and contact page.
 - The inquiry form prepares a `mailto:` draft only. It does not confirm submission or delivery. A test email is accepted only after its unique ID is found in the recipient mailbox; verify spam placement as well.
 - A mailto click is an intent signal, not a delivered lead or a sale. Keep email receipt and qualified inquiry counts separate from website clicks.
+
+## Inquiry measurement
+
+See [询盘统计链路](docs/询盘统计链路.md) for definitions, verified receipt import, human qualification, private reporting, deployment and test isolation. Browser events record intent only; receipt and qualification use separate authenticated operations.
