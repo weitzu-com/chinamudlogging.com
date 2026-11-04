@@ -14,7 +14,7 @@
     ],
     "privacy": [
       "This website uses the information you submit—name, email, company, country, product and requirements—to review and answer your inquiry. Submission records are saved on the website server and a notification may be sent to our business mailbox through the configured mail provider.",
-      "We record the page path and selected language to understand the request. Query strings are not saved. Inquiry text and personal contact data are not sent to analytics services. This implementation does not enable advertising or analytics tracking.",
+      "We measure page paths, broad traffic sources and inquiry actions with a random identifier in browser session storage for up to 30 minutes. Cloudflare measurement records are retained for up to 90 days. Names, email addresses, company names, requirements, full referrers and query strings are excluded. Browser Do Not Track and Global Privacy Control disable measurement. A reference can link an inquiry action to minimal Zoho delivery evidence; a person must review whether the inquiry is relevant.",
       "WordPress and language selection may use necessary cookies. Hosting security logs may record network information; the form uses a keyed network-address hash for short-lived rate limiting and does not store a raw address in the inquiry record.",
       "Access to inquiry records is restricted to website administrators. We retain records while needed to answer and manage the inquiry. For access, correction or deletion requests, contact sales@chinamudlogging.com. Do not submit passwords, payment information or sensitive personal information."
     ]
@@ -34,7 +34,7 @@
     ],
     "privacy": [
       "网站使用您提交的姓名、邮箱、公司、国家、产品及需求信息，审核并回复询价。提交记录保存在网站服务器上，通知可通过配置的邮件服务发送至业务邮箱。",
-      "记录来源页面路径和所选语言，不保存查询字符串。询价正文与个人联系方式不发送至分析服务；当前实现未启用广告或分析追踪。",
+      "使用浏览器会话存储中的随机标识，最多关联 30 分钟的页面路径、宽泛来源类别与询盘操作。Cloudflare 统计记录最多保留 90 天，不包含姓名、邮箱、公司、需求正文、完整引荐网址或查询字符串。浏览器的 Do Not Track 与 Global Privacy Control 会关闭统计。询盘编号可关联最少必要的 Zoho 投递证据；是否为有效询盘仍需人工审核。",
       "WordPress 与语言选择可能使用必要 Cookie。托管安全日志可能记录网络信息；表单限流短暂使用网络地址的带密钥哈希，询价记录不保存原始地址。",
       "询价记录仅网站管理员可访问，按处理及管理询价所需保留。如需访问、更正或删除，请联系 sales@chinamudlogging.com。请勿提交密码、付款资料或敏感个人信息。"
     ]
@@ -54,7 +54,7 @@
     ],
     "privacy": [
       "Usamos nombre, correo, empresa, país, producto y requisitos para revisar y responder su consulta. Los registros se guardan en el servidor y puede enviarse una notificación al buzón comercial mediante el proveedor de correo configurado.",
-      "Registramos la ruta de la página y el idioma, sin parámetros de consulta. El contenido y los datos de contacto no se envían a servicios de análisis. Esta implementación no activa publicidad ni seguimiento analítico.",
+      "Medimos rutas, categorías generales de origen y acciones de consulta con un identificador aleatorio en el almacenamiento de sesión durante un máximo de 30 minutos. Cloudflare conserva los registros hasta 90 días. Excluimos nombres, correos, empresas, requisitos, referencias completas y parámetros de URL. Do Not Track y Global Privacy Control desactivan la medición. Una referencia puede vincular la consulta con pruebas mínimas de entrega de Zoho; la relevancia comercial requiere revisión humana.",
       "WordPress y la selección de idioma pueden usar cookies necesarias. El alojamiento puede mantener registros de seguridad de red. El formulario usa temporalmente un hash con clave de la dirección de red para limitar solicitudes; no guarda la dirección original en la consulta.",
       "Solo los administradores pueden acceder a las consultas. Conservamos los registros mientras sean necesarios para gestionarlas. Para acceso, corrección o eliminación, contacte sales@chinamudlogging.com. No envíe contraseñas, información de pago ni datos personales sensibles."
     ]
@@ -74,7 +74,7 @@
     ],
     "privacy": [
       "Имя, электронная почта, компания, страна, продукт и требования используются для обработки запроса. Записи хранятся на сервере сайта; уведомление может отправляться на рабочий почтовый ящик через настроенного почтового провайдера.",
-      "Сохраняются путь страницы и язык, без параметров запроса. Текст запроса и контактные данные не передаются аналитическим сервисам. Реклама и аналитическое отслеживание в этой реализации не включены.",
+      "Мы учитываем пути страниц, общие категории источников и действия по запросам со случайным идентификатором в хранилище сеанса браузера до 30 минут. Записи Cloudflare хранятся до 90 дней. Имена, адреса электронной почты, компании, текст требований, полные адреса переходов и параметры URL исключены. Do Not Track и Global Privacy Control отключают статистику. Номер запроса может связываться с минимальными доказательствами доставки Zoho; оценку деловой значимости выполняет человек.",
       "WordPress и выбор языка могут использовать необходимые файлы cookie. Хостинг может вести журналы сетевой безопасности. Для кратковременного ограничения частоты форма использует хеш сетевого адреса с ключом; исходный адрес в записи запроса не хранится.",
       "Доступ к запросам имеют только администраторы. Записи сохраняются по мере необходимости обработки запросов. Для доступа, исправления или удаления пишите на sales@chinamudlogging.com. Не отправляйте пароли, платёжные данные и конфиденциальную личную информацию."
     ]
@@ -94,7 +94,7 @@
     ],
     "privacy": [
       "نستخدم الاسم والبريد الإلكتروني والشركة والبلد والمنتج والمتطلبات لمراجعة الاستفسار والرد عليه. تُحفظ السجلات على خادم الموقع، وقد يُرسل إشعار إلى بريد العمل عبر مزود البريد المهيأ.",
-      "نسجل مسار الصفحة واللغة دون معاملات الاستعلام. لا تُرسل تفاصيل الاستفسار وبيانات الاتصال إلى خدمات التحليلات. لا يفعّل هذا التنفيذ إعلانات أو تتبعًا تحليليًا.",
+      "نقيس مسارات الصفحات وفئات المصادر العامة وإجراءات الاستفسار بمعرّف عشوائي في تخزين جلسة المتصفح لمدة تصل إلى 30 دقيقة. تحتفظ Cloudflare بالسجلات حتى 90 يوماً. نستبعد الأسماء والبريد والشركات ونص المتطلبات وعناوين الإحالة الكاملة ومعلمات الروابط. يعطّل Do Not Track وGlobal Privacy Control القياس. قد يربط رقم الاستفسار الإجراء بأقل أدلة التسليم اللازمة من Zoho؛ وتبقى مراجعة الأهمية التجارية بشرية.",
       "قد يستخدم WordPress واختيار اللغة ملفات تعريف ارتباط ضرورية. قد يحتفظ مزود الاستضافة بسجلات أمن الشبكة. يستخدم النموذج مؤقتًا تجزئة بمفتاح لعنوان الشبكة للحد من معدل الطلبات، ولا يحفظ العنوان الأصلي في سجل الاستفسار.",
       "يقتصر الوصول إلى السجلات على مسؤولي الموقع. نحتفظ بها بقدر الحاجة لمعالجة الاستفسارات. لطلب الاطلاع أو التصحيح أو الحذف، تواصل مع sales@chinamudlogging.com. لا ترسل كلمات مرور أو بيانات دفع أو معلومات شخصية حساسة."
     ]
@@ -114,7 +114,7 @@
     ],
     "privacy": [
       "Nous utilisons nom, e-mail, entreprise, pays, produit et besoin pour examiner votre demande et y répondre. Les dossiers sont conservés sur le serveur du site et une notification peut être envoyée à notre messagerie professionnelle par le prestataire configuré.",
-      "Nous enregistrons le chemin de page et la langue, sans paramètres de requête. Le texte et les coordonnées ne sont pas transmis aux services d’analyse. Cette implémentation n’active ni publicité ni suivi analytique.",
+      "Nous mesurons les chemins de pages, les grandes catégories de provenance et les actions de demande avec un identifiant aléatoire dans le stockage de session du navigateur pendant 30 minutes au maximum. Cloudflare conserve les données jusqu’à 90 jours. Noms, courriels, sociétés, exigences, adresses de provenance complètes et paramètres d’URL sont exclus. Do Not Track et Global Privacy Control désactivent la mesure. Une référence peut relier la demande à une preuve minimale de livraison Zoho ; la pertinence commerciale exige une validation humaine.",
       "WordPress et le choix de langue peuvent utiliser des cookies nécessaires. L’hébergeur peut conserver des journaux de sécurité réseau. Le formulaire utilise temporairement une empreinte à clé de l’adresse réseau pour limiter les requêtes, sans conserver l’adresse brute dans le dossier.",
       "Seuls les administrateurs accèdent aux demandes. Nous conservons les dossiers selon les besoins de leur traitement. Pour consulter, corriger ou supprimer vos données : sales@chinamudlogging.com. N’envoyez aucun mot de passe, donnée de paiement ou donnée personnelle sensible."
     ]
@@ -134,7 +134,7 @@
     ],
     "privacy": [
       "Wir nutzen Name, E-Mail, Unternehmen, Land, Produkt und Anforderungen zur Bearbeitung Ihrer Anfrage. Einträge werden auf dem Website-Server gespeichert; eine Benachrichtigung kann über den eingerichteten E-Mail-Anbieter an unser Geschäftspostfach gesendet werden.",
-      "Gespeichert werden Seitenpfad und Sprache ohne Abfrageparameter. Anfrageinhalt und Kontaktdaten werden nicht an Analysedienste übermittelt. Diese Implementierung aktiviert weder Werbung noch Analyse-Tracking.",
+      "Wir erfassen Seitenpfade, grobe Herkunftskategorien und Anfrageaktionen mit einer zufälligen Kennung im Sitzungsspeicher des Browsers für höchstens 30 Minuten. Cloudflare speichert Messdaten bis zu 90 Tage. Namen, E-Mail-Adressen, Unternehmen, Anfragetexte, vollständige Verweisadressen und URL-Parameter sind ausgeschlossen. Do Not Track und Global Privacy Control deaktivieren die Messung. Eine Referenz kann die Anfrage mit minimalen Zoho-Zustellnachweisen verbinden; die geschäftliche Relevanz wird von einem Menschen geprüft.",
       "WordPress und die Sprachauswahl können notwendige Cookies verwenden. Der Hoster kann Netzwerk-Sicherheitsprotokolle führen. Das Formular nutzt kurzzeitig einen schlüsselbasierten Hash der Netzwerkadresse zur Begrenzung von Anfragen; die ursprüngliche Adresse wird nicht im Anfrageeintrag gespeichert.",
       "Nur Administratoren haben Zugriff auf Anfragen. Einträge bleiben gespeichert, soweit dies zur Bearbeitung benötigt wird. Für Auskunft, Berichtigung oder Löschung: sales@chinamudlogging.com. Senden Sie keine Passwörter, Zahlungsdaten oder sensiblen persönlichen Informationen."
     ]

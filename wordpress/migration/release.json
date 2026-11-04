@@ -1,0 +1,69 @@
+{
+  "site": "https://www.chinamudlogging.com",
+  "platform": "SiteGround WordPress",
+  "cutoverAt": "2026-11-04T07:20:33.125473Z",
+  "timezone": "Asia/Shanghai",
+  "sourceCounts": {
+    "products": 63,
+    "articles": 8,
+    "families": 5,
+    "currentUrls": 83
+  },
+  "publishedCounts": {
+    "products": 123,
+    "pages": 50,
+    "articles": 8,
+    "localizedFamilies": 35,
+    "uniqueMedia": 85
+  },
+  "acceptance": {
+    "sourceUrls": 83,
+    "httpPaths": 392,
+    "sitemapDestinations": 216,
+    "catalogueScenarios": 21,
+    "localIntegrationPassed": 240,
+    "deployedFilesMatched": 25,
+    "sourcePublicationDates": 64,
+    "sourceGalleries": 2,
+    "sevenLanguageMailDelivered": 7,
+    "postCutoverMailReceipt": "416efc56-2124-4e61-8ec3-160a93ec1dd7",
+    "postCutoverMailDelivery": "delivered",
+    "postCutoverMailDeliveredAt": "2026-11-04T08:35:37.360Z",
+    "smtpConfigurationAssertions": 3,
+    "nodeScenarios": 7,
+    "postCutoverFunnelEvidence": "inserted from Zoho SMTP delivery log; test cohort only",
+    "packageSHA256": {
+      "cml-core.zip": "e73e56d390e1b957304d1490f8f23bc4cb273fbb5c54c94ab36dd33312773347",
+      "cml-migration.zip": "09462ba9843809d12bf8b3e0c64fcaa8c299aa960c82f6f3af944328510ae17f",
+      "cml.zip": "814b3a11f5324c03c47fdbe22851cbc2f5b31a991a5d4fea2da6869b903133e8"
+    },
+    "finalBrowserReceipt": "11caf694-ccc5-4a25-b3c0-4753f7e50085",
+    "finalBrowserReceiptDelivery": "pending"
+  },
+  "localizationScope": "Six non-English languages contain approved selection summaries and source-checked key specifications for 10 products each. Full machine translations remain unpublished pending professional review.",
+  "backup": "cml-backups/release-20261104T071829Z",
+  "automationId": "chinamudlogging-72-7",
+  "observations": [
+    {
+      "stage": "72h",
+      "dueAt": "2026-11-07T07:20:33.125473Z",
+      "status": "not_due"
+    },
+    {
+      "stage": "7d",
+      "dueAt": "2026-11-11T07:20:33.125473Z",
+      "status": "not_due"
+    }
+  ],
+  "rollbackOrigin": "Existing Vercel project retained at least 30 days; preserve post-cutover inquiries before DNS rollback.",
+  "observedSupplementalContent": {
+    "publishedProducts": 20,
+    "draftProducts": 20,
+    "manifest": "live-supplemental-content.json",
+    "currentPublishedProducts": 143,
+    "totalSitemapDestinations": 236
+  },
+  "mailRoute": "Mandatory STARTTLS and verified TLS certificate directly to existing recipient domain Zoho MX, no authenticated relay credentials.",
+  "workerVersion": "30da77e5-eb0b-4dc8-92d3-483f6631d50c",
+  "finalBackup": "cml-backups/release-20261104T084144Z"
+}

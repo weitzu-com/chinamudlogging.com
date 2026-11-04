@@ -12,7 +12,12 @@ $count_imported = fn() => (int)$wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->post
 $count_media = fn() => (int)$wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->postmeta} WHERE meta_key = '_cml_asset_key'");
 $before = [$count_imported(), $count_media()];
 add_filter('intermediate_image_sizes_advanced', '__return_empty_array');
+$legacy_id = get_posts(['post_type' => 'cml_product', 'numberposts' => 1, 'lang' => '', 'meta_key' => '_cml_import_key', 'meta_value' => 'product:305:en'])[0]->ID;
+$legacy_snapshot = get_post_meta($legacy_id, '_cml_editor_snapshot', true);
+unset($legacy_snapshot['published'], $legacy_snapshot['image'], $legacy_snapshot['families']);
+update_post_meta($legacy_id, '_cml_editor_snapshot', wp_slash(array_reverse($legacy_snapshot, true)));
 cml_import_bundle('/bundle/bundle.json');
+cml_assert_test(array_key_exists('published', get_post_meta($legacy_id, '_cml_editor_snapshot', true)), 'Unchanged legacy editor snapshots upgrade without requiring an overwrite');
 cml_assert_test($before === [$count_imported(), $count_media()], 'Repeated import preserves record and media counts');
 $bundle = json_decode(file_get_contents('/bundle/bundle.json'), true);
 foreach ($bundle['records'] as $record) {
@@ -20,7 +25,32 @@ foreach ($bundle['records'] as $record) {
     cml_assert_test($matches && $matches[0]->post_name === $record['slug'], 'Stable slug ' . $record['sourceId'] . ':' . $record['language']);
 }
 $products = get_posts(['post_type' => 'cml_product', 'posts_per_page' => -1, 'lang' => 'en', 'post_status' => 'publish']);
+$dates_ok = true; $dated_count = 0;
+foreach ($bundle['records'] as $record) if ($record['language'] === 'en' && !empty($record['publishedAt'])) {
+    $matches = get_posts(['post_type' => ['cml_product','post'], 'numberposts' => 1, 'lang' => '', 'meta_key' => '_cml_import_key', 'meta_value' => $record['sourceId'] . ':en']);
+    if (!$matches) continue;
+    $dated_count++; $dates_ok = $dates_ok && get_post_field('post_date', $matches[0]->ID) === $record['publishedAt'];
+}
+cml_assert_test($dated_count === 64 && $dates_ok, 'All 56 known product and 8 article source publication timestamps retained');
+$gallery_id = get_posts(['post_type' => 'cml_product', 'numberposts' => 1, 'lang' => '', 'meta_key' => '_cml_import_key', 'meta_value' => 'product:159:en'])[0]->ID;
+cml_assert_test(substr_count(get_post_field('post_content', $gallery_id), 'source gallery ') === 2 && str_contains(get_post_field('post_content', $gallery_id), '/wp-content/uploads/cml/'), 'Original source gallery images remain associated with their product and deduplicated media');
+$dated_id = get_posts(['post_type' => 'cml_product', 'numberposts' => 1, 'lang' => '', 'meta_key' => '_cml_import_key', 'meta_value' => 'product:245:en'])[0]->ID;
+$original_date = get_post_field('post_date', $dated_id);
+wp_update_post(['ID' => $dated_id, 'post_date' => '2020-01-01 00:00:00']);
+$date_blocked = false;
+try { cml_import_bundle('/bundle/bundle.json'); } catch (RuntimeException $error) { $date_blocked = str_contains($error->getMessage(), 'Editor changes detected'); }
+cml_assert_test($date_blocked, 'Reimport protects manually changed publication dates');
+cml_import_bundle('/bundle/bundle.json', false, true);
+cml_assert_test(get_post_field('post_date', $dated_id) === $original_date, 'Explicit reconciled import restores the recorded source publication date');
 cml_assert_test(count($products) === 63, '63 English products published');
+$native_id = $products[0]->ID;
+$native_image = get_post_thumbnail_id($native_id); $native_families = cml_snapshot_families($native_id);
+delete_post_thumbnail($native_id); wp_set_object_terms($native_id, [], 'cml_family');
+$native_blocked = false;
+try { cml_import_bundle('/bundle/bundle.json'); } catch (RuntimeException $error) { $native_blocked = str_contains($error->getMessage(), 'Editor changes detected'); }
+cml_assert_test($native_blocked, 'Native featured-image and category edits are protected from silent reimport');
+cml_import_bundle('/bundle/bundle.json', false, true);
+cml_assert_test(get_post_thumbnail_id($native_id) === $native_image && cml_snapshot_families($native_id) === $native_families, 'Explicit reconciled import restores the recorded media and category associations');
 cml_assert_test(cml_clean_specifications([['label' => 'Accuracy', 'raw' => '<0.05 %', 'value' => '<0.05', 'unit' => '%']])[0]['raw'] === '<0.05 %', 'Structured specifications preserve comparison symbols and source precision');
 $specification_rows = get_post_meta($products[0]->ID, '_cml_specifications', true);
 cml_assert_test(is_array($specification_rows), 'Product specifications stored as structured rows independently of theme');
@@ -83,6 +113,16 @@ $_SERVER['REMOTE_ADDR'] = '192.0.2.200';
 for ($i = 0; $i < 6; $i++) $limited = cml_test_submit(array_merge($payload, ['request_id' => wp_generate_uuid4()]));
 cml_assert_test(is_wp_error($limited) && $limited->get_error_code() === 'rate_limited', 'Rate limit stops sixth unique request');
 update_option('cml_mail_enabled', false);
+$_SERVER['REMOTE_ADDR'] = '192.0.2.220';
+$reference = 'CML-' . wp_generate_uuid4();
+$tracked_data = array_merge($payload, ['request_id' => wp_generate_uuid4(), 'tracking_reference' => $reference]);
+$tracked = cml_test_submit($tracked_data);
+cml_assert_test($tracked instanceof WP_REST_Response && 'CML-' . $tracked->get_data()['receipt'] === $reference, 'Anonymous intent reference can be correlated with the saved inquiry without customer data');
+$tracked_again = cml_test_submit($tracked_data);
+cml_assert_test($tracked_again instanceof WP_REST_Response && $tracked_again->get_status() === 200, 'Tracked inquiry retry retains its original receipt');
+$changed_reference = cml_test_submit(array_merge($tracked_data, ['tracking_reference' => 'CML-' . wp_generate_uuid4()]));
+cml_assert_test(is_wp_error($changed_reference) && $changed_reference->get_error_code() === 'idempotency_conflict', 'A retry cannot silently change its anonymous reference');
+cml_assert_test(is_wp_error(cml_test_submit(array_merge($payload, ['request_id' => wp_generate_uuid4(), 'tracking_reference' => 'invalid']))), 'Invalid measurement references are rejected');
 // Publish pending content ONLY in this disposable local environment for visual QA.
 $drafts = get_posts(['post_type' => ['page','cml_product'], 'post_status' => 'draft', 'posts_per_page' => -1, 'lang' => '', 'meta_key' => '_cml_import_key']);
 foreach ($drafts as $post) wp_update_post(['ID' => $post->ID, 'post_status' => 'publish']);

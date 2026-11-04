@@ -13,6 +13,7 @@ require_once __DIR__ . '/includes/inquiries.php';
 require_once __DIR__ . '/includes/render.php';
 require_once __DIR__ . '/includes/import.php';
 require_once __DIR__ . '/includes/mail.php';
+require_once __DIR__ . '/includes/funnel.php';
 
 register_activation_hook(__FILE__, function () {
     cml_register_catalogue();
@@ -21,8 +22,8 @@ register_activation_hook(__FILE__, function () {
 });
 add_action('init', 'cml_register_catalogue');
 add_action('init', function () {
-    wp_register_script('cml-editor', plugins_url('editor.js', __FILE__), ['wp-blocks', 'wp-element', 'wp-server-side-render', 'wp-block-editor', 'wp-components'], '1.0.0', true);
-    foreach (['header', 'footer', 'home', 'catalogue', 'product', 'inquiry', 'applications'] as $view) {
+    wp_register_script('cml-editor', plugins_url('editor.js', __FILE__), ['wp-blocks', 'wp-element', 'wp-server-side-render', 'wp-block-editor', 'wp-components'], filemtime(CML_CORE_DIR . '/editor.js'), true);
+    foreach (['header', 'footer', 'home', 'catalogue', 'product', 'inquiry', 'applications', 'measurement'] as $view) {
         register_block_type('cml/' . $view, [
             'api_version' => 3,
             'editor_script' => 'cml-editor',
@@ -33,7 +34,7 @@ add_action('init', function () {
 });
 add_action('wp_enqueue_scripts', function () {
     if (is_page() && has_block('cml/inquiry', get_post())) {
-        wp_enqueue_script('cml-inquiry', plugins_url('inquiry.js', __FILE__), [], '1.0.0', true);
+        wp_enqueue_script('cml-inquiry', plugins_url('inquiry.js', __FILE__), ['cml-funnel'], filemtime(CML_CORE_DIR . '/inquiry.js'), true);
     }
 });
 add_action('template_redirect', function () {

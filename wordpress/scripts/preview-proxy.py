@@ -5,7 +5,7 @@ The staging password stays in a local 0600 file and is never embedded in browser
 URLs, screenshots, source files, or command arguments. No external origins can
 be requested and redirects cannot carry authorization to another hostname.
 """
-import base64,json,urllib.request,urllib.error
+import base64,json,re,urllib.request,urllib.error
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from pathlib import Path
 UPSTREAM='https://preview.chinamudlogging.com';LOCAL='http://127.0.0.1:9402'
@@ -19,6 +19,10 @@ class Handler(BaseHTTPRequestHandler):
  def do_POST(self):self.forward()
  def log_message(self,*args):pass
  def forward(self):
+  if self.command=='GET' and self.path=='/acceptance-start':
+   ticket=json.loads((Path.home()/'.cache/chinamudlogging-wordpress/results/funnel-test-ticket.json').read_text())
+   if not re.fullmatch(r'[a-f0-9-]{36}',ticket['id']) or not re.fullmatch(r'[a-f0-9]{64}',ticket['token']):self.send_error(400);return
+   self.send_response(302);self.send_header('Location','https://www.chinamudlogging.com/?funnel_test='+ticket['id']+'.'+ticket['token']);self.send_header('Cache-Control','no-store');self.end_headers();return
   if not self.path.startswith('/') or self.path.startswith('//'):
    self.send_error(400);return
   length=int(self.headers.get('Content-Length','0'))

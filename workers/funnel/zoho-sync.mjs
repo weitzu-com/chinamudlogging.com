@@ -29,10 +29,21 @@ async function jsonResponse(response,label){
  if(label==='oauth'&&result.error)throw new Error('oauth_rejected');
  if(label==='logs'&&result.status?.code!==200)throw new Error('logs_api_rejected');return result;
 }
+const oauthCache=new WeakMap();
 export async function accessToken(env,fetcher=fetch){
+ const key=[env.ZOHO_CLIENT_ID,env.ZOHO_CLIENT_SECRET,env.ZOHO_REFRESH_TOKEN].join("\n");
+ const cached=oauthCache.get(fetcher);
+ if(cached?.key===key&&cached.expiresAt>Date.now())return cached.pending;
+ const entry={key,expiresAt:Date.now()+30_000,pending:null};
+ entry.pending=(async()=>{
  const body=new URLSearchParams({grant_type:'refresh_token',client_id:env.ZOHO_CLIENT_ID,client_secret:env.ZOHO_CLIENT_SECRET,refresh_token:env.ZOHO_REFRESH_TOKEN});
  const result=await jsonResponse(await fetcher('https://accounts.zoho.com/oauth/v2/token',{method:'POST',body,signal:AbortSignal.timeout(10000)}),'oauth');
- if(typeof result.access_token!=='string'||!result.access_token)throw new Error('oauth_token_missing');return result.access_token;
+ if(typeof result.access_token!=='string'||!result.access_token)throw new Error('oauth_token_missing');
+ entry.expiresAt=Date.now()+Math.max(1,Math.min(3600,Number(result.expires_in)||3600)-60)*1000;
+ return result.access_token;
+ })();
+ oauthCache.set(fetcher,entry);
+ try{return await entry.pending;}catch(error){if(oauthCache.get(fetcher)===entry)oauthCache.delete(fetcher);throw error;}
 }
 export async function importLog(env,log){
  const evidence=normalizeLog(log);if(!evidence)return {outcome:'ignored'};

@@ -13,3 +13,25 @@ add_action('phpmailer_init', function ($mailer) {
     $mailer->DKIM_copyHeaderFields = false;
     $mailer->Sender = 'sales@chinamudlogging.com';
 }, 100);
+
+// Route only saved CML inquiry notifications directly to the existing recipient
+// domain's verified Zoho MX over mandatory TLS. Other WordPress mail retains
+// WP Mail SMTP's configured transport. No mailbox password or relay is used.
+function cml_configure_inquiry_mx($mailer): void {
+    if (!get_option('cml_direct_mx_enabled', false)) return;
+    $recipients = $mailer->getToAddresses();
+    if (count($recipients) !== 1 || strtolower($recipients[0][0]) !== 'sales@chinamudlogging.com') return;
+    if (!preg_match('/^<cml-[a-f0-9-]{36}@chinamudlogging\.com>$/', $mailer->MessageID)) return;
+    $mailer->isSMTP();
+    $mailer->Host = 'mx.zoho.com;mx2.zoho.com;mx3.zoho.com';
+    $mailer->Port = 25;
+    $mailer->SMTPAuth = false;
+    $mailer->Username = '';
+    $mailer->Password = '';
+    $mailer->SMTPSecure = 'tls';
+    $mailer->SMTPAutoTLS = true;
+    $mailer->Timeout = 12;
+    $mailer->SMTPDebug = 0;
+    $mailer->SMTPOptions = ['ssl' => ['verify_peer' => true, 'verify_peer_name' => true, 'allow_self_signed' => false]];
+}
+add_action('phpmailer_init', 'cml_configure_inquiry_mx', 300);

@@ -15,7 +15,8 @@ function cml_install_inquiries(): void {
         payload longtext NOT NULL,
         mail_status varchar(32) NOT NULL DEFAULT 'queued',
         PRIMARY KEY  (id),
-        UNIQUE KEY request_key (request_key)
+        UNIQUE KEY request_key (request_key),
+        UNIQUE KEY receipt (receipt)
     ) $charset;");
     dbDelta("CREATE TABLE {$wpdb->prefix}cml_limits (
         bucket char(64) NOT NULL,
@@ -50,6 +51,8 @@ function cml_receive_inquiry(WP_REST_Request $request) {
     $origin = $request->get_header('origin');
     if ($origin && (wp_parse_url($origin, PHP_URL_HOST) !== wp_parse_url(home_url(), PHP_URL_HOST))) return $error('invalid_origin', 403);
     if (!is_string($data['request_id'] ?? null) || !preg_match('/^[a-f0-9-]{36}$/i', $data['request_id'])) return $error('invalid_request_id', 400);
+    $reference = $data['tracking_reference'] ?? '';
+    if (!is_string($reference) || ($reference !== '' && !preg_match('/^CML-[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/', $reference))) return $error('invalid_reference', 400);
     $language = $data['language'] ?? 'en';
     if (!is_string($language) || !in_array($language, ['en', 'zh', 'es', 'ru', 'ar', 'fr', 'de'], true)) return $error('invalid_language', 400);
     if (($data['consent'] ?? false) !== true) return $error('consent_required', 400);
@@ -65,7 +68,7 @@ function cml_receive_inquiry(WP_REST_Request $request) {
     $source = wp_parse_url($payload['source'], PHP_URL_PATH) ?: '/';
     $payload['source'] = '/' . ltrim($source, '/');
     $encoded = wp_json_encode($payload, JSON_UNESCAPED_UNICODE);
-    $hash = hash('sha256', $encoded . $language);
+    $hash = hash('sha256', $encoded . $language . $reference);
     $key = hash_hmac('sha256', $data['request_id'], wp_salt('nonce'));
     $table = $wpdb->prefix . 'cml_inquiries';
     $old = $wpdb->get_row($wpdb->prepare("SELECT receipt, payload_hash FROM $table WHERE request_key = %s", $key));
@@ -81,7 +84,7 @@ function cml_receive_inquiry(WP_REST_Request $request) {
     if ($changed === false) return $error('temporarily_unavailable', 503);
     $attempts = (int)$wpdb->get_var($wpdb->prepare("SELECT attempts FROM $limits WHERE bucket = %s", $bucket));
     if ($attempts > 5) return $error('rate_limited', 429);
-    $receipt = wp_generate_uuid4();
+    $receipt = $reference !== '' ? substr($reference, 4) : wp_generate_uuid4();
     $ok = $wpdb->insert($table, [
         'request_key' => $key, 'payload_hash' => $hash, 'receipt' => $receipt,
         'created_at' => current_time('mysql', true), 'language' => $language,
@@ -118,7 +121,7 @@ function cml_dispatch_inquiry(int $id): string {
         };
         add_action('phpmailer_init', $trace, 200);
         try {
-            $accepted = is_email($recipient) && wp_mail($recipient, 'Website inquiry [' . $receipt . ']', $body, ['Reply-To: ' . $payload['email']]);
+            $accepted = is_email($recipient) && wp_mail($recipient, 'Website inquiry [CML-' . $receipt . ']', $body, ['Reply-To: ' . $payload['email']]);
         } catch (Throwable $error) {
             $accepted = false;
         } finally {

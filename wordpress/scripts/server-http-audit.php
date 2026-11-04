@@ -13,6 +13,8 @@ foreach ($bundle['redirects'] as $source => $target) $paths[$source] = 'redirect
 foreach ($bundle['media'] as $asset) $paths[$asset['path']] = 'media';
 foreach (get_option('cml_asset_redirects', []) as $path => $target) $paths[$path] = 'media';
 $paths['/sitemap.xml'] = 'sitemap-redirect';
+$scope = getenv('CML_AUDIT_KIND') ?: 'all';
+if ($scope !== 'all') $paths = array_filter($paths, fn($kind) => $kind === $scope);
 $results = [];
 foreach ($paths as $path => $kind) {
     $handle = curl_init($base . $path);
@@ -30,11 +32,11 @@ foreach ($paths as $path => $kind) {
     $expected = $kind === 'media' ? (get_option('cml_asset_redirects', [])[$path] ?? '') : $base . ($kind === 'redirect' ? $bundle['redirects'][$path] : $path);
     $correct_path = $kind === 'sitemap-redirect' ? $effective === $base . '/sitemap_index.xml' : rtrim($effective, '/') === rtrim($expected, '/');
     $metadata_errors = [];
-    if ($kind === 'content' && is_string($body)) {
+    if (in_array($kind, ['content','family'], true) && is_string($body)) {
         preg_match_all('/<link\b[^>]*rel=["\']canonical["\'][^>]*href=["\']([^"\']+)["\'][^>]*>/i', $body, $canonical);
         if (($canonical[1] ?? []) !== [$base . $path]) $metadata_errors[] = 'canonical';
         if (preg_match_all('/<h1\b/i', $body) !== 1) $metadata_errors[] = 'h1';
-        if (!preg_match('/<meta\b[^>]*name=["\']description["\'][^>]*content=["\'][^"\']+/i', $body)) $metadata_errors[] = 'description';
+        if ($kind === 'content' && !preg_match('/<meta\b[^>]*name=["\']description["\'][^>]*content=["\'][^"\']+/i', $body)) $metadata_errors[] = 'description';
         $language = explode('/', trim($path, '/'))[0];
         if (in_array($language, ['zh','es','ru','ar','fr','de'], true)) {
             if (!preg_match('/<html\b[^>]*lang=["\']' . $language . '(?:-[A-Za-z]+)?["\']/i', $body)) $metadata_errors[] = 'language';
@@ -50,6 +52,6 @@ foreach ($paths as $path => $kind) {
 }
 $failed = array_values(array_filter($results, fn($r) => $r['status'] !== 200 || !$r['correctPath'] || $r['fatalError'] || $r['error'] || $r['metadataErrors'] || $r['redirectCount'] > 1));
 $report = ['environment' => 'SiteGround PHP HTTPS, real certificate verification, protected staging', 'checked' => count($results), 'failed' => $failed, 'results' => $results];
-file_put_contents($home . '/.cml-staging/http-results.json', json_encode($report, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+file_put_contents($home . '/.cml-staging/http-results' . ($scope === 'all' ? '' : '-' . preg_replace('/[^a-z]/', '', $scope)) . '.json', json_encode($report, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 echo json_encode(['checked' => count($results), 'failed' => $failed], JSON_UNESCAPED_UNICODE) . PHP_EOL;
 exit($failed ? 1 : 0);

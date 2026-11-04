@@ -55,8 +55,10 @@ function cml_import_bundle(string $file, bool $publish_translations = false, boo
         if (count($matches) > 1) throw new RuntimeException('Duplicate import key: ' . $key);
         if ($matches && !$overwrite_edits) {
             $snapshot = get_post_meta($matches[0]->ID, '_cml_editor_snapshot', true);
-            if (is_array($snapshot)) $snapshot += ['specifications' => []];
-            if ($snapshot && $snapshot !== cml_editor_snapshot($matches[0]->ID)) throw new RuntimeException('Editor changes detected for ' . $key . '. Export/reconcile changes before using --overwrite-edits.');
+            if (is_array($snapshot)) $snapshot += ['specifications' => [], 'published' => get_post_field('post_date', $matches[0]->ID), 'image' => get_post_thumbnail_id($matches[0]->ID), 'families' => cml_snapshot_families($matches[0]->ID)];
+            $current_snapshot = cml_editor_snapshot($matches[0]->ID);
+            if (is_array($snapshot)) { ksort($snapshot); ksort($current_snapshot); }
+            if ($snapshot && $snapshot !== $current_snapshot) throw new RuntimeException('Editor changes detected for ' . $key . '. Export/reconcile changes before using --overwrite-edits.');
         }
         $content = $record['content'];
         foreach ($media as $old => $asset) $content = str_replace('"' . $old . '"', '"' . esc_url($asset['url']) . '"', $content);
@@ -66,7 +68,7 @@ function cml_import_bundle(string $file, bool $publish_translations = false, boo
             'post_content' => $content, 'post_excerpt' => $record['description'], 'post_status' => $status,
             'comment_status' => 'closed', 'ping_status' => 'closed',
         ];
-        if (!empty($record['publishedAt'])) $post['post_date'] = $record['publishedAt'] . ' 12:00:00';
+        if (!empty($record['publishedAt'])) $post['post_date'] = strlen($record['publishedAt']) > 10 ? substr(str_replace('T', ' ', $record['publishedAt']), 0, 19) : $record['publishedAt'] . ' 12:00:00';
         if ($matches) $post['ID'] = $matches[0]->ID;
         $id = wp_insert_post(wp_slash($post), true);
         if (is_wp_error($id)) throw new RuntimeException($id->get_error_message());
@@ -78,6 +80,7 @@ function cml_import_bundle(string $file, bool $publish_translations = false, boo
         }
         update_post_meta($id, '_cml_source_id', $record['sourceId']);
         update_post_meta($id, '_cml_source_url', $record['sourceUrl']);
+        if (!empty($record['publishedAt'])) update_post_meta($id, '_cml_source_published_at', $record['publishedAt']);
         update_post_meta($id, '_cml_review', $record['review']);
         update_post_meta($id, '_cml_localization_mode', $record['localizationMode'] ?? 'full-source-record');
         update_post_meta($id, '_cml_description', $record['description']);
@@ -111,10 +114,17 @@ function cml_import_bundle(string $file, bool $publish_translations = false, boo
 
 function cml_editor_snapshot(int $id): array {
     $post = get_post($id);
-    $snapshot = ['title' => $post->post_title, 'content' => $post->post_content, 'excerpt' => $post->post_excerpt];
+    $snapshot = ['title' => $post->post_title, 'content' => $post->post_content, 'excerpt' => $post->post_excerpt, 'published' => $post->post_date];
     foreach (['sku', 'weight', 'signal', 'range', 'interface'] as $field) $snapshot[$field] = get_post_meta($id, '_cml_' . $field, true);
     $snapshot['specifications'] = get_post_meta($id, '_cml_specifications', true) ?: [];
+    $snapshot['image'] = get_post_thumbnail_id($id);
+    $snapshot['families'] = cml_snapshot_families($id);
     return $snapshot;
+}
+function cml_snapshot_families(int $id): array {
+    $ids = wp_get_object_terms($id, 'cml_family', ['fields' => 'ids', 'lang' => '']);
+    if (is_wp_error($ids)) return [];
+    $ids = array_map('intval', $ids); sort($ids); return $ids;
 }
 
 if (defined('WP_CLI') && WP_CLI) {

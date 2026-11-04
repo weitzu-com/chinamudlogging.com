@@ -4,6 +4,17 @@ import assert from 'node:assert/strict';
 import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
 import worker from '../workers/funnel/index.mjs';
+test('WordPress language routes and direct browser measurement keep a strict origin boundary',async()=>{
+ const {call,env}=fixture();
+ assert.equal((await call('/session',{path:'/ar/contact-us-ar/',source:'google'})).status,201);
+ assert.equal((await call('/session',{path:'/de/product/unknown-draft-de/',source:'direct'})).status,400);
+ const s=await(await call('/session',{path:'/fr/',source:'direct'})).json();
+ assert.equal((await call('/event',{sessionId:s.id,token:s.token,id:crypto.randomUUID(),kind:'contact_view',path:'/fr/contact-us-fr/'})).status,200);
+ const good=await worker.fetch(new Request('https://worker.example/api/funnel/event',{method:'OPTIONS',headers:{origin:'https://www.chinamudlogging.com'}}),env);
+ assert.equal(good.status,204);assert.equal(good.headers.get('access-control-allow-origin'),'https://www.chinamudlogging.com');
+ const bad=await worker.fetch(new Request('https://worker.example/api/funnel/event',{method:'OPTIONS',headers:{origin:'https://untrusted.example'}}),env);
+ assert.equal(bad.status,403);assert.equal(bad.headers.get('access-control-allow-origin'),null);
+});
 function fixture(){
  const db=new DatabaseSync(':memory:');db.exec(readFileSync(new URL('../workers/funnel/schema.sql',import.meta.url),'utf8'));
  const env={ADMIN_KEY:'test-only-secret-'.repeat(4),DB:{prepare(sql){let params=[];return {bind(...p){params=p;return this;},async first(){return db.prepare(sql).get(...params)||null;},async all(){return {results:db.prepare(sql).all(...params)};},async run(){return db.prepare(sql).run(...params);}};}}};

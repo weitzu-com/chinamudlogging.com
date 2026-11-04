@@ -74,6 +74,7 @@ def fetch(url):
 
 def build(output, live=False):
     output.mkdir(parents=True, exist_ok=True)
+    source_digest = hashlib.sha256(b''.join((ROOT/'src/data'/name).read_bytes() for name in ['products.json','articles.json','categories.json'])).hexdigest()
     products = json.loads((ROOT/'src/data/products.json').read_text())
     articles = json.loads((ROOT/'src/data/articles.json').read_text())
     categories = json.loads((ROOT/'src/data/categories.json').read_text())
@@ -81,6 +82,8 @@ def build(output, live=False):
     page_copy = json.loads((ROOT/'wordpress/migration/page-copy.json').read_text())
     category_names = json.loads((ROOT/'wordpress/migration/category-names.json').read_text())
     priority = json.loads((ROOT/'wordpress/migration/priority-localizations.json').read_text())
+    source_dates = json.loads((ROOT/'wordpress/migration/source-publication-dates.json').read_text())
+    source_galleries = json.loads((ROOT/'wordpress/migration/source-galleries.json').read_text())
     translations_file = ROOT/'wordpress/migration/product-translations.json'
     translations = json.loads(translations_file.read_text()) if translations_file.exists() else {}
     selected = []
@@ -96,6 +99,17 @@ def build(output, live=False):
             for line in original.read_text().splitlines() if line.strip().startswith('{')
             for row in [json.loads(line)] if row.get('post_type') in ['page','post','product']
         ]
+        raw_directory = output/'original-wordpress-extraction'; raw_directory.mkdir(exist_ok=True)
+        for name in ['posts.jsonl','attachments.jsonl','postmeta.jsonl','terms.jsonl','relationships.jsonl','media-files.txt']:
+            raw_file = original.parent/name
+            if raw_file.exists(): shutil.copyfile(raw_file,raw_directory/name)
+        archived_fonts=[]
+        attachments=[json.loads(line) for line in (original.parent/'attachments.jsonl').read_text().splitlines() if line.lstrip().startswith('{')]
+        for attachment in attachments:
+            if not attachment['attached_file'].lower().endswith('.ttf'):continue
+            source=ROOT/'public/images/source'/attachment['attached_file'];target=output/'retired-theme-fonts'/attachment['attached_file'];target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+            archived_fonts.append({'sourceAttachmentId':attachment['ID'],'sourcePath':'/wp-content/uploads/'+attachment['attached_file'],'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'disposition':'private archive; unused legacy theme font'})
+        archive['retiredThemeFonts']=archived_fonts
     assets = set()
     def record(source_id, lang, typ, title, slug, content, description, url, **extra):
         row = dict(sourceId=source_id, language=lang, type=typ, title=title, slug=slug,
@@ -103,13 +117,20 @@ def build(output, live=False):
         records.append(row); return row
     for p in products:
         body = paragraph('Source catalogue record. The configuration and supplier statements below are retained for reference and are confirmed for the actual quotation.') + section_content(p['sections'])
+        gallery=source_galleries.get(str(p['id']),[])
+        if gallery:
+            body += heading('Source product gallery') + '<!-- wp:gallery {"linkTo":"none"} --><figure class="wp-block-gallery has-nested-images columns-default">'
+            for index,image in enumerate(gallery):
+                assets.add(image['path'])
+                body += '<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} --><figure class="wp-block-image size-large"><img src="'+html.escape(image['path'])+'" alt="'+html.escape(p['title']+' — source gallery '+str(index+1))+'"/></figure><!-- /wp:image -->'
+            body += '</figure><!-- /wp:gallery -->'
         if p.get('downloads'):
             body += heading('Downloads')
             for download in p['downloads']:
                 href = download['href']; assets.add(href)
                 body += '<!-- wp:paragraph --><p><a href="' + html.escape(href) + '">' + html.escape(download['label']) + '</a></p><!-- /wp:paragraph -->'
         record('product:' + str(p['id']), 'en', 'cml_product', p['title'], p['slug'], body, p['summary'], p['legacyUrl'],
-               image=p['image'], category=p['category']['slug'], fields={'sku': p.get('sku', ''), 'weight': p.get('weight', ''), 'specifications': source_specifications(p)})
+               image=p['image'], category=p['category']['slug'], publishedAt=source_dates.get('product:'+str(p['id']),''), fields={'sku': p.get('sku', ''), 'weight': p.get('weight', ''), 'specifications': source_specifications(p)})
         assets.add(p['image'])
         if p['id'] in selected:
             for lang in LANGS[1:]:
@@ -139,7 +160,7 @@ def build(output, live=False):
     for article in articles:
         row = record('article:' + str(article['id']), 'en', 'post', article['title'], article['slug'],
                      ''.join(paragraph(x) for x in article['paragraphs']), article['summary'], article['legacyUrl'],
-                     image=article['image'], publishedAt=article['publishedAt'][:10])
+                     image=article['image'], publishedAt=source_dates.get('article:'+str(article['id']),article['publishedAt'][:10]))
         assets.add(article['image'])
         correction = page_copy.get('articleCorrections', {}).get(str(article['id']))
         if correction:
@@ -147,6 +168,7 @@ def build(output, live=False):
             for reference in correction.get('references',[]):
                 row['content'] += '<!-- wp:paragraph --><p><a href="'+html.escape(reference['url'])+'">'+html.escape(reference['title'])+'</a></p><!-- /wp:paragraph -->'
             row['description'] = correction['description']; row['review'] = 'corrected-see-ledger'
+    hero = '/images/source/2021/08/services.png'; assets.add(hero)
     page_paths = {'home':'/', 'products':'/product/', 'applications':'/applications/', 'services':'/services/', 'about':'/about-us/', 'insights':'/blog/', 'contact':'/contact-us/', 'privacy':'/privacy/'}
     source_paths = {key: ROOT/'dist'/path.strip('/')/'index.html' if path != '/' else ROOT/'dist/index.html' for key,path in page_paths.items()}
     for key,path in page_paths.items():
@@ -165,12 +187,12 @@ def build(output, live=False):
             elif key == 'applications': content = '<!-- wp:cml/applications /-->'
             elif key == 'contact': content = '<!-- wp:cml/inquiry /-->'
             elif key == 'insights': content = ''
-            else: content = ''.join(paragraph(x) for x in page_copy[lang][key])
+            else: content = ''.join(paragraph(x) for index,x in enumerate(page_copy[lang][key]) if key!='privacy' or index!=1)
+            if key == 'privacy': content += '<!-- wp:cml/measurement /-->'
             row = record('page:' + key, lang, 'page', title, slug, content,
-                         page_copy[lang]['intro'] if key in ['about', 'services', 'privacy'] else strings[lang]['intro'], path, pageKey=key)
+                         page_copy[lang]['intro'] if key in ['about', 'services', 'privacy'] else strings[lang]['intro'], path, pageKey=key, image=hero if key=='home' else '')
             if lang == 'en' and key in ['about', 'services', 'privacy']: row['review'] = 'rewritten-source-archived'
             if lang != 'en': row['review'] = 'approved'
-    hero = '/images/source/2021/08/services.png'; assets.add(hero)
     # Preserve every public image and document, including currently unlinked original media.
     for path in (ROOT/'public').rglob('*'):
         if path.is_file() and path.suffix.lower() in ['.jpg','.jpeg','.png','.gif','.webp','.pdf']: assets.add('/'+str(path.relative_to(ROOT/'public')))
@@ -188,24 +210,32 @@ def build(output, live=False):
     (output/'bundle.json').write_text(json.dumps(bundle,ensure_ascii=False,indent=2)+'\n')
     (output/'source-archive.json').write_text(json.dumps(archive,ensure_ascii=False,indent=2)+'\n')
     with (ROOT/'wordpress/migration/content-ledger.csv').open('w') as stream:
-        writer=csv.writer(stream);writer.writerow(['source_id','language','type','source_url','target_slug','review','publication_rule','media_paths','source_published_at','localization_mode'])
+        writer=csv.writer(stream,lineterminator="\n");writer.writerow(['source_id','language','type','source_url','target_slug','review','publication_rule','media_paths','source_published_at','localization_mode'])
         for r in records:
             media_paths=sorted({r.get('image','')} | {x for x in assets if '"'+x+'"' in r['content']})
             writer.writerow([r['sourceId'],r['language'],r['type'],r['sourceUrl'],r['slug'],r['review'],'English baseline' if r['language']=='en' else 'explicit --publish-reviewed required',';'.join(x for x in media_paths if x),r.get('publishedAt',''),r.get('localizationMode','full-source-record')])
         for c in categories:
             for lang in LANGS: writer.writerow(['family:'+c['slug'],lang,'cml_family','/product-category/'+c['slug']+'/',c['slug']+('' if lang=='en' else '-'+lang),'source-preserved' if lang=='en' else 'approved','linked to published products','','','localized-family'])
     with (ROOT/'wordpress/migration/url-map.csv').open('w') as stream:
-        writer=csv.writer(stream);writer.writerow(['source_path','target_path','action'])
+        writer=csv.writer(stream,lineterminator="\n");writer.writerow(['source_path','target_path','action'])
         for r in records:
             if r['language']=='en': writer.writerow([r['sourceUrl'],r['sourceUrl'],'preserve'])
         for source,target in redirects.items(): writer.writerow([source,target,'301'])
         for c in categories: writer.writerow(['/product-category/'+c['slug']+'/', '/product-category/'+c['slug']+'/', 'preserve'])
     report={'localProducts':len(products),'localArticles':len(articles),'families':len(categories),'media':len(media),'records':len(records),
             'selectedProductIds':selected,'translationProducts':sum(r['type']=='cml_product' and r['language']!='en' for r in records),
-            'liveAudit':'not-run','releaseReady':False,'gates':['SiteGround staging acceptance','translation review','SMTP and mailbox receipt','backup restore rehearsal','DNS cutover']}
+            'liveAudit':'not-run','baselineOnly':True,'sourceDataSha256':source_digest,'releaseReport':'../docs/验收报告.md'}
+    previous_file = ROOT/'wordpress/migration/baseline-report.json'
+    previous = json.loads(previous_file.read_text()) if previous_file.exists() else {}
+    if not live and previous.get('sourceDataSha256') == source_digest and previous.get('liveAudit') in ['passed','frozen-passed']:
+        for key in ['liveProductCount','missingOnline','missingLocal','existingBrokenPaths','checkedUrls','frozenAt']:
+            if key in previous: report[key] = previous[key]
+        report['liveAudit'] = 'frozen-passed'
     if live:
         _,_,sitemap=fetch(BASE+'/sitemap.xml')
-        paths=sorted({urlparse(x.text).path for x in ET.fromstring(sitemap).iter() if x.tag.endswith('}loc') and x.text})
+        sitemap_root = ET.fromstring(sitemap)
+        if not sitemap_root.tag.endswith('urlset'): raise RuntimeError('Source URL set is no longer served here. Use the frozen source audit and WordPress acceptance scripts after cutover.')
+        paths=sorted({urlparse(x.text).path for x in sitemap_root.iter() if x.tag.endswith('}loc') and x.text})
         def inspect(path):
             try:
                 status,url,body=fetch(BASE+path); parser=Page();parser.feed(body)

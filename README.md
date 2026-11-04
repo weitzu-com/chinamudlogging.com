@@ -1,14 +1,14 @@
 # ChinaMudLogging.com
 
-The current production site is an English Astro B2B website. The seven-language WordPress replacement lives in `wordpress/`; its implementation and acceptance state are tracked separately from the production site.
+The production domain now serves the independent SiteGround WordPress installation. The English Astro source and Vercel hosting remain available for rollback. WordPress code, source reconciliation and acceptance evidence live in `wordpress/`.
 
 ## WordPress migration
 
 - Native block theme: `wordpress/theme/cml`.
 - Products, private inquiries and repeatable import: `wordpress/plugin/cml-core`.
-- Seven language page sets and 60 priority product drafts: `wordpress/migration`.
+- Seven language page sets, 60 published priority product selection pages and separate pending full translation drafts: `wordpress/migration`.
 - Deployment, mailbox validation and rollback: `wordpress/docs/部署与回滚手册.md`.
-- Current acceptance evidence and outstanding release gates: `wordpress/docs/验收报告.md`.
+- Current acceptance evidence and remaining content-review limits: `wordpress/docs/验收报告.md`.
 
 Build a portable candidate with `python3 wordpress/scripts/prepare.py`, validate it with `python3 wordpress/scripts/check-bundle.py`, then package it with `python3 wordpress/scripts/package.py`. Output lives under `~/.cache/chinamudlogging-wordpress/` and includes media and source archives. Credentials, generated packages and backups must stay outside Git. Google web translation is used only for review drafts; it is not a production dependency and has no availability guarantee.
 
@@ -46,7 +46,7 @@ Legacy cart, checkout, account, shop, news, and duplicate content paths redirect
 - Main requires pull requests, resolved conversations, and linear history; force pushes and deletion are blocked, including for administrators.
 - Vercel production builds run `npm run verify`, so generated-page and dependency checks also gate the deployment itself.
 - After release, confirm the production deployment commit matches `main`, then check the homepage, sitemap, product page, and contact page.
-- The inquiry form prepares a `mailto:` draft only. It does not confirm submission or delivery. A test email is accepted only after its unique ID is found in the recipient mailbox; verify spam placement as well.
+- The retained Astro form prepares a `mailto:` draft. The production WordPress form saves the inquiry server-side before notification; transport acceptance is distinct from mailbox delivery. Test delivery requires matching receiving-side evidence.
 - A mailto click is an intent signal, not a delivered lead or a sale. Keep email receipt and qualified inquiry counts separate from website clicks.
 
 ## Inquiry measurement
