@@ -41,8 +41,15 @@ node scripts/funnel-admin.mjs zoho-evidence --inquiry UUID
 
 验收至少包含：准备邮件后 received=0；真实发送后 Zoho 日志 Delivered；Cron 自动生成 receipt 和加密证据；qualified 不增加；重复同步不增加 receipt；错误授权不推进游标；正式报表不混入测试数据。测试 fixtures 仅用于程序边界验证，真实收件证据必须来自实际 Zoho API。
 
-## 2026-11-04 实测状态
+## 2026-11-04 生产验收
 
-只读授权已核验组织域名；生产 SMTP API 返回 200。Worker 版本 `972fe067-0e61-4fb1-9bc1-3718ce051cb5` 已部署每 5 分钟 Cron。初次真实同步读取 3 条目标地址日志、关联 0 条、插入 0 条，原因是 Zoho 当前不保留主题；不得将这些日志直接归属网站意向。
+- 用户确认后，组织级 **Save and display subject in email logs** 已启用，UI checked=true。它从启用后保留整个组织的邮件主题，旧日志不补回；这是 Zoho 侧的组织设置，不是新增 OAuth 写权限。参考[官方配置说明](https://www.zoho.com/mail/help/adminconsole/organization-email-reports.html)。统计服务不保存完整主题。
+- OAuth 组织只读授权、组织域名核验及实际 SMTP API 均成功。Worker 版本 `972fe067-0e61-4fb1-9bc1-3718ce051cb5`；网站主版本 `0f85d22`，Vercel `dpl_ARb9ot5vZFBjCBKEMzCNK5fQZyVd` READY；正式隐私页面 200 且包含加密最小投递证据说明。
+- 使用隔离测试会话及邮件准备意向 `CML-2324cfad-8c93-46a8-be1a-a3334b725236`。意向创建后未创建 receipt；新测试访问/意向通过受支持 API 建立，本轮不重新宣称浏览器界面验收。
+- Gmail 真实发送测试信到目标地址；Zoho 原始日志为 inbound、`delivered`、`MAILBOX DELIVERY`，主题含正确编号，有有效 RFC Message-ID。实际投递北京时间 **14:39:51.988**。
+- **未手动调用 Worker 同步**期间，北京时间 **14:40:52** 的五分钟 Cron 自动执行，14:40:55 成功：扫描 12 条、匹配 1 条、新增 1 条、忽略 11 条。证据 observedAt 为 14:40:55.367。
+- 随后手动重跑：匹配 1、重复 1、新增 0。D1 新编号 receipt=1、加密证据=1、人工审核记录=0、is_test=1。解密证据 SHA-256 正确，Message-ID 与独立实时 API 核对一致；D1 保存的证据为密文。
+- 测试汇总从历史收件 1/有效 1，变为收件 2/有效 1/待审核 1。新增测试收件没有自动成为有效询盘。正式 cohort 仍为收件 0/有效 0。未授权证据读取及同步请求均返回 401。
+- 已验证自动收件关联、定时执行、证据保存和重放去重。真实商业询盘的“有效”判定仍需销售人工审核；主题缺少或有歧义编号的邮件仍不会被猜测归属，需核验补录。
 
-Zoho 报表 Configuration → General 的 **Save and display subject in email logs** 当前关闭。这是组织级设置，启用会保留组织邮件主题，且仅对启用后的邮件生效。需额外确认其范围；它不属于 OAuth 只读权限。参考[官方配置说明](https://www.zoho.com/mail/help/adminconsole/organization-email-reports.html)。关联字段启用并完成新邮件 Cron 验证前，状态为“已部署，端到端收件验收未完成”。
+详细 JSON、解密核验证据及经营报表仅在操作者本机受忽略的 `.source-private/reports/` 保存，不进入 Git。凭据保留在权限受限的配置目录和 Worker secrets。
