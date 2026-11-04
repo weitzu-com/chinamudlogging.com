@@ -27,20 +27,26 @@ import PageHero from "../components/PageHero.astro";
           <div class="field full"><label for="message">Requirement details</label><textarea id="message" name="message" placeholder="Application, range, signal or protocol, quantity, certification, target date…" required></textarea></div>
           <div class="form-note">This form does not store or send data to a third-party form service. It prepares an email in your mail application.</div>
           <div class="field full"><button class="button dark" type="submit">Prepare email →</button></div>
+          <p id="inquiry-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
   </section>
   <script>
+    import { recordIntent } from '../scripts/funnel';
     const params = new URLSearchParams(window.location.search);
     const productInput = document.querySelector<HTMLInputElement>("#product");
     if (productInput && params.get("product")) productInput.value = params.get("product") ?? "";
 
-    document.querySelector<HTMLFormElement>("#inquiry-form")?.addEventListener("submit", (event) => {
+    document.querySelector<HTMLFormElement>("#inquiry-form")?.addEventListener("submit", async (event) => {
       event.preventDefault();
       const formElement = event.currentTarget as HTMLFormElement;
       const form = new FormData(formElement);
-      const subject = `Mud logging inquiry: ${form.get("product") || "equipment requirement"}`;
+      const button = formElement.querySelector<HTMLButtonElement>('button[type="submit"]');
+      if (button?.disabled) return;
+      if (button) button.disabled = true;
+      const reference = await recordIntent('email_prepare');
+      const subject = `${reference ? `[${reference}] ` : ''}Mud logging inquiry: ${form.get("product") || "equipment requirement"}`;
       const body = [
         `Name: ${form.get("name") || ""}`,
         `Company: ${form.get("company") || ""}`,
@@ -49,8 +55,12 @@ import PageHero from "../components/PageHero.astro";
         `Product / application: ${form.get("product") || ""}`,
         "",
         String(form.get("message") || ""),
+        reference ? `\nInquiry reference: ${reference}` : '',
       ].join("\n");
       window.location.href = `mailto:sales@chinamudlogging.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const status = document.querySelector('#inquiry-status');
+      if (status) status.textContent = `Your email has been prepared. Send it from your mail application to complete your inquiry. If no mail app opens, email sales@chinamudlogging.com directly.${reference ? ` Inquiry reference: ${reference}` : ''}`;
+      if (button) button.disabled = false;
     });
   </script>
 </BaseLayout>

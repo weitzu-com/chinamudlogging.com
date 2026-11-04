@@ -1,0 +1,32 @@
+{
+  "name": "chinamudlogging-funnel",
+  "account_id": "bd6ec476612c459974a8a2baf1c75d25",
+  "main": "index.mjs",
+  "compatibility_date": "2026-11-04",
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "chinamudlogging-funnel",
+      "database_id": "b2906caa-410d-46a1-b24b-23378b10f5ec"
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "2026110401",
+      "simple": {
+        "limit": 120,
+        "period": 60
+      }
+    }
+  ],
+  "triggers": {
+    "crons": [
+      "15 2 * * *"
+    ]
+  },
+  "observability": {
+    "enabled": false
+  }
+}

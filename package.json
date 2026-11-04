@@ -8,9 +8,10 @@
     "build": "astro check && astro build",
     "check": "astro check",
     "check:dist": "node scripts/check-build.mjs",
-    "verify": "npm run build && npm run check:dist && npm audit --omit=dev --audit-level=high",
+    "verify": "npm run test:funnel && npm run build && npm run check:dist && npm audit --omit=dev --audit-level=high",
     "preview": "astro preview",
-    "content:generate": "node scripts/generate-content.mjs"
+    "content:generate": "node scripts/generate-content.mjs",
+    "test:funnel": "node --test tests/funnel.test.mjs"
   },
   "dependencies": {
     "astro": "7.3.8"

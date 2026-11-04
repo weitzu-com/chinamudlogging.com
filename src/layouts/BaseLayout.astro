@@ -78,6 +78,9 @@ const schemas = schema ? [...defaultSchema, ...(Array.isArray(schema) ? schema :
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImage} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(schemas)} />
+    <script>
+      import '../scripts/funnel';
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -142,6 +145,7 @@ const schemas = schema ? [...defaultSchema, ...(Array.isArray(schema) ? schema :
       <div class="container footer-bottom">
         <span>© {new Date().getFullYear()} ChinaMudLogging.com. All rights reserved.</span>
         <span>Technical configurations are confirmed at quotation.</span>
+        <a href="/privacy/">Privacy &amp; measurement choices</a>
       </div>
     </footer>
   </body>

@@ -3,7 +3,7 @@ import products from "../data/products.json";
 import categories from "../data/categories.json";
 import articles from "../data/articles.json";
 
-const staticPaths = ["/", "/about-us/", "/services/", "/product/", "/blog/", "/contact-us/"];
+const staticPaths = ["/", "/about-us/", "/services/", "/product/", "/blog/", "/contact-us/", "/privacy/"];
 
 export const GET: APIRoute = ({ site }) => {
   const origin = site ?? new URL("https://www.chinamudlogging.com");
