@@ -32,7 +32,7 @@ async function session(env,b) {
 }
 async function createSession(env,b,isTest) {
  must(validPath(b.path),'Unknown page');const now=new Date();const s={id:crypto.randomUUID(),expiresAt:new Date(now.getTime()+30*60*1000).toISOString()};
- const source=['direct','search','social','other'].includes(b.source)?b.source:'other';
+ const source=['direct','google','search','social','other'].includes(b.source)?b.source:'other';
  await env.DB.prepare('INSERT INTO sessions VALUES (?,?,?,?,?,?)').bind(s.id,now.toISOString(),s.expiresAt,b.path,source,isTest?1:0).run();
  return {...s,token:await sign(`${s.id}:${s.expiresAt}`,env.ADMIN_KEY),isTest};
 }
@@ -54,8 +54,16 @@ async function report(env,url) {
  (SELECT COUNT(*) FROM cohort s WHERE EXISTS(SELECT 1 FROM intents i JOIN receipts r ON r.inquiry_id=i.id WHERE i.session_id=s.id AND (SELECT decision FROM qualifications q WHERE q.inquiry_id=i.id ORDER BY sequence DESC LIMIT 1)='qualified')) AS qualified_sessions,
  (SELECT COUNT(*) FROM receipts r JOIN intents i ON i.id=r.inquiry_id JOIN cohort s ON s.id=i.session_id WHERE NOT EXISTS(SELECT 1 FROM qualifications q WHERE q.inquiry_id=i.id)) AS pending_review`).bind(...args).first();
  const sources=await env.DB.prepare(`WITH cohort AS (${cohort}) SELECT source, COUNT(*) AS visits FROM cohort GROUP BY source`).bind(...args).all();
+ const segments=await env.DB.prepare(`WITH cohort AS (${cohort}), facts AS (
+ SELECT s.source,s.landing_path,s.created_at,
+ EXISTS(SELECT 1 FROM intents i WHERE i.session_id=s.id) AS intent_session,
+ (SELECT COUNT(*) FROM intents i WHERE i.session_id=s.id) AS intents,
+ (SELECT COUNT(*) FROM receipts r JOIN intents i ON i.id=r.inquiry_id WHERE i.session_id=s.id) AS received,
+ (SELECT COUNT(*) FROM receipts r JOIN intents i ON i.id=r.inquiry_id WHERE i.session_id=s.id AND (SELECT decision FROM qualifications q WHERE q.inquiry_id=i.id ORDER BY sequence DESC LIMIT 1)='qualified') AS qualified,
+ (SELECT COUNT(*) FROM receipts r JOIN intents i ON i.id=r.inquiry_id WHERE i.session_id=s.id AND NOT EXISTS(SELECT 1 FROM qualifications q WHERE q.inquiry_id=i.id)) AS pending
+ FROM cohort s) SELECT source,landing_path,MIN(created_at) AS first_visit,COUNT(*) AS visits,SUM(intent_session) AS intent_sessions,SUM(intents) AS intents,SUM(received) AS received_inquiries,SUM(qualified) AS qualified_inquiries,SUM(pending) AS pending_review FROM facts GROUP BY source,landing_path ORDER BY visits DESC,source,landing_path`).bind(...args).all();
  const rate=(n,d)=>d?Number((n/d).toFixed(4)):null;
- return {version:1,generatedAt:new Date().toISOString(),timezone:'UTC',cohort:{from:range.from,until:range.until,isTest:!!test},...counts,rates:{visit_to_intent:rate(counts.intent_sessions,counts.visits),intent_to_received:rate(counts.received_sessions,counts.intent_sessions),received_to_qualified:rate(counts.qualified_inquiries,counts.received_inquiries)},sources:sources.results,limitations:['Visits are anonymous 30-minute browser sessions, not people.','Email preparation and clicks are intent only.','Receipts require delivered Zoho mailbox evidence (SMTP API or verified manual import); qualification requires human review.','Counts are attributed to the visit cohort; later receipts can change earlier cohorts.','Ad blockers, privacy choices and unreferenced emails create gaps.']};
+ return {version:1,generatedAt:new Date().toISOString(),timezone:'UTC',cohort:{from:range.from,until:range.until,isTest:!!test},...counts,rates:{visit_to_intent:rate(counts.intent_sessions,counts.visits),intent_to_received:rate(counts.received_sessions,counts.intent_sessions),received_to_qualified:rate(counts.qualified_inquiries,counts.received_inquiries)},sources:sources.results,segments:segments.results,limitations:['Visits are anonymous 30-minute browser sessions, not people.','GSC clicks and tracked visits are different measures and time zones; do not divide historical clicks by newly tracked receipts.','Google source is classified from browser referrer, not linked to an individual search query. Historical search includes other search engines.','Email preparation and clicks are intent only.','Receipts require delivered Zoho mailbox evidence (SMTP API or verified manual import); qualification requires human review.','Counts are attributed to the visit cohort; later receipts can change earlier cohorts.','Ad blockers, privacy choices and unreferenced emails create gaps.']};
 }
 export default {
  async fetch(req,env) {

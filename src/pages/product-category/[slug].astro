@@ -26,6 +26,13 @@ const description = descriptions[category.slug] ?? `Browse ${category.name.toLow
 
 <BaseLayout title={category.name} description={description} canonicalPath={`/product-category/${category.slug}/`}>
   <PageHero eyebrow="Product family" title={category.name} description={`${description} ${categoryProducts.length} product records are available in this family.`} parentHref="/product/" parentLabel="Products" />
+  {category.slug === 'mud-logging-units' && (
+    <section class="section compact"><div class="container">
+      <h2>Specify a mud logging unit for your wellsite</h2>
+      <p>Start with your rig type, required sensor channels, gas analysis needs, hazardous-area requirements, power supply and destination. We will review the configuration and documentation needed for a quotation.</p>
+      <div class="button-row"><a class="button dark" href="/contact-us/?product=Mud%20logging%20unit">Request a unit configuration →</a><a class="button outline" href="/product-category/mud-logging-sensors/">Compare mud logging sensors →</a></div>
+    </div></section>
+  )}
   <section class="section sand">
     <div class="container">
       <div class="card-grid">{categoryProducts.map((product) => <ProductCard product={product} />)}</div>

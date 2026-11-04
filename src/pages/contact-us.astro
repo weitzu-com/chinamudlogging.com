@@ -13,7 +13,7 @@ import PageHero from "../components/PageHero.astro";
         <div class="contact-item"><span>Email</span><a href="mailto:sales@chinamudlogging.com">sales@chinamudlogging.com</a></div>
         <div class="contact-item"><span>Phone</span><a href="tel:+8618354639099">+86 183 5463 9099</a></div>
         <div class="contact-item"><span>Location</span><strong>Dongcheng, Dongying<br />Shandong, China</strong></div>
-        <p>The contact details above are preserved from the original server content.</p>
+        <p>Not sure of the exact model? Send the application and a photo or reference number when available.</p>
       </aside>
       <div>
         <div class="eyebrow">Prepare an email inquiry</div>
@@ -26,7 +26,8 @@ import PageHero from "../components/PageHero.astro";
           <div class="field full"><label for="product">Product or application</label><input id="product" name="product" /></div>
           <div class="field full"><label for="message">Requirement details</label><textarea id="message" name="message" placeholder="Application, range, signal or protocol, quantity, certification, target date…" required></textarea></div>
           <div class="form-note">This form does not store or send data to a third-party form service. It prepares an email in your mail application.</div>
-          <div class="field full"><button class="button dark" type="submit">Prepare email →</button></div>
+          <div class="field full button-row"><button class="button dark" type="submit">Prepare email →</button><button class="button outline" type="button" id="copy-inquiry">Copy inquiry text</button></div>
+          <div class="field full" id="inquiry-copy-panel" hidden><label for="inquiry-copy">Your prepared inquiry — paste into your email service and send to sales@chinamudlogging.com</label><textarea id="inquiry-copy" readonly rows="10"></textarea></div>
           <p id="inquiry-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -38,29 +39,36 @@ import PageHero from "../components/PageHero.astro";
     const productInput = document.querySelector<HTMLInputElement>("#product");
     if (productInput && params.get("product")) productInput.value = params.get("product") ?? "";
 
-    document.querySelector<HTMLFormElement>("#inquiry-form")?.addEventListener("submit", async (event) => {
-      event.preventDefault();
-      const formElement = event.currentTarget as HTMLFormElement;
-      const form = new FormData(formElement);
-      const button = formElement.querySelector<HTMLButtonElement>('button[type="submit"]');
-      if (button?.disabled) return;
-      if (button) button.disabled = true;
-      const reference = await recordIntent('email_prepare');
-      const subject = `${reference ? `[${reference}] ` : ''}Mud logging inquiry: ${form.get("product") || "equipment requirement"}`;
-      const body = [
-        `Name: ${form.get("name") || ""}`,
-        `Company: ${form.get("company") || ""}`,
-        `Email: ${form.get("email") || ""}`,
-        `Country / destination: ${form.get("country") || ""}`,
-        `Product / application: ${form.get("product") || ""}`,
-        "",
-        String(form.get("message") || ""),
-        reference ? `\nInquiry reference: ${reference}` : '',
-      ].join("\n");
-      window.location.href = `mailto:sales@chinamudlogging.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      const status = document.querySelector('#inquiry-status');
-      if (status) status.textContent = `Your email has been prepared. Send it from your mail application to complete your inquiry. If no mail app opens, email sales@chinamudlogging.com directly.${reference ? ` Inquiry reference: ${reference}` : ''}`;
-      if (button) button.disabled = false;
-    });
+    const requestId = crypto.randomUUID();
+    async function prepareInquiry(openMail: boolean) {
+      const formElement = document.querySelector<HTMLFormElement>('#inquiry-form');
+      if (!formElement?.reportValidity()) return;
+      const buttons = [...formElement.querySelectorAll<HTMLButtonElement>('button')];
+      if (buttons.some(button => button.disabled)) return;
+      buttons.forEach(button => button.disabled = true);
+      try {
+        const form = new FormData(formElement);
+        const reference = await recordIntent('email_prepare', requestId);
+        const subject = `${reference ? `[${reference}] ` : ''}Mud logging inquiry: ${form.get('product') || 'equipment requirement'}`;
+        const body = [
+          `Name: ${form.get('name') || ''}`, `Company: ${form.get('company') || ''}`,
+          `Email: ${form.get('email') || ''}`, `Country / destination: ${form.get('country') || ''}`,
+          `Product / application: ${form.get('product') || ''}`, '', String(form.get('message') || ''),
+          reference ? `\nInquiry reference: ${reference}` : '',
+        ].join('\n');
+        const text = `To: sales@chinamudlogging.com\nSubject: ${subject}\n\n${body}`;
+        const output = document.querySelector<HTMLTextAreaElement>('#inquiry-copy');
+        const panel = document.querySelector<HTMLElement>('#inquiry-copy-panel');
+        if (output) output.value = text;
+        if (panel) panel.hidden = false;
+        let copied = false;
+        if (openMail) window.location.href = `mailto:sales@chinamudlogging.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        else { try { await navigator.clipboard.writeText(text); copied = true; } catch { output?.focus(); output?.select(); } }
+        const status = document.querySelector('#inquiry-status');
+        if (status) status.textContent = `${copied ? 'Inquiry text copied.' : 'Inquiry text prepared below.'} Send it from your email service to sales@chinamudlogging.com. Preparing or copying does not send an email.${reference ? ` Keep reference: ${reference}` : ''}`;
+      } finally { buttons.forEach(button => button.disabled = false); }
+    }
+    document.querySelector<HTMLFormElement>('#inquiry-form')?.addEventListener('submit', event => { event.preventDefault(); void prepareInquiry(true); });
+    document.querySelector('#copy-inquiry')?.addEventListener('click', () => { void prepareInquiry(false); });
   </script>
 </BaseLayout>
