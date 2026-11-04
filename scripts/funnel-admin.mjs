@@ -10,7 +10,10 @@ const config=JSON.parse(await readFile(configPath,'utf8'));
 if(!['https://www.chinamudlogging.com/api/funnel'].includes(config.baseUrl)&&!/^https:\/\/chinamudlogging-funnel\.[a-z0-9-]+\.workers\.dev$/.test(config.baseUrl))throw new Error('Untrusted service URL');
 async function request(path,body){const r=await fetch(config.baseUrl+path,{method:body?'POST':'GET',headers:{Authorization:`Bearer ${config.adminKey}`,'Content-Type':'application/json'},...(body?{body:JSON.stringify(body)}:{})});const data=await r.json();if(!r.ok)throw new Error(`${r.status}: ${data.error}`);return data;}
 let result;
-if(command==='report') {
+if(command==='zoho-status')result=await request('/admin/zoho/status');
+else if(command==='zoho-sync')result=await request('/admin/zoho/sync',{});
+else if(command==='zoho-evidence')result=await request('/admin/zoho/evidence?inquiry='+encodeURIComponent(option('inquiry')||''));
+else if(command==='report') {
  const params=new URLSearchParams();for(const k of ['from','to'])if(option(k))params.set(k,option(k));if(args.includes('--test'))params.set('test','1');
  result=await request('/admin/report?'+params);
  if(option('out')) {
@@ -31,5 +34,5 @@ if(command==='report') {
  result=await request('/admin/test-session',{path:'/',source:'direct'});
  if(option('out'))await writeFile(option('out'),JSON.stringify(result,null,2),{mode:0o600});
  result={...result,url:`https://www.chinamudlogging.com/?funnel_test=${result.id}.${result.token}`};
-} else throw new Error('Commands: report [--test --from YYYY-MM-DD --to YYYY-MM-DD --out FILE.json], receipt --file FILE, qualify --inquiry UUID --decision qualified|rejected --reason CODE, test-session [--out FILE]');
+} else throw new Error('Commands: zoho-status, zoho-sync, zoho-evidence --inquiry UUID, report [--test --from YYYY-MM-DD --to YYYY-MM-DD --out FILE.json], receipt --file FILE, qualify --inquiry UUID --decision qualified|rejected --reason CODE, test-session [--out FILE]');
 console.log(JSON.stringify(result,null,2));

@@ -12,7 +12,7 @@ import PageHero from '../components/PageHero.astro';
     <p id="measurement-status" role="status">You can disable anonymous measurement in this browser. Your email inquiry will continue to work.</p>
     <h2>Email inquiries</h2>
     <p>The form prepares an email in your mail application. You must send that email yourself. Preparing a draft or clicking a contact link is not counted as a received inquiry. An optional inquiry reference links the website action to a message only after we verify actual delivery to our mailbox. A member of our team then reviews whether it is a relevant business inquiry.</p>
-    <p>Emails are handled through our business mailbox provider, Zoho. Their content stays in the mailbox and is not copied into website analytics. The measurement database stores a hashed message identifier and evidence fingerprint to prevent duplicate receipt counts. Qualification records contain a review category, not your message text.</p>
+    <p>Emails are handled through our business mailbox provider, Zoho. Their content stays in the mailbox and is not copied into website analytics. We check Zoho delivery logs for the inquiry reference. The measurement database stores a hashed message identifier and encrypted, minimal delivery evidence to prevent duplicate receipt counts and support verification. Qualification records contain a review category, not your message text.</p>
     <p>For privacy or inquiry questions, contact <a href="mailto:sales@chinamudlogging.com">sales@chinamudlogging.com</a>.</p>
   </div></section>
 </BaseLayout>

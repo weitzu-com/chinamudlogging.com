@@ -2,6 +2,7 @@
 import products from '../../src/data/products.json' with { type: 'json' };
 import categories from '../../src/data/categories.json' with { type: 'json' };
 import articles from '../../src/data/articles.json' with { type: 'json' };
+import {syncZoho,syncStatus,evidenceFor} from './zoho-sync.mjs';
 const paths = new Set(['/', '/about-us/', '/services/', '/product/', '/blog/', '/contact-us/', '/privacy/', ...products.map(p=>`/product/${p.slug}/`), ...categories.map(p=>`/product-category/${p.slug}/`), ...articles.map(p=>`/${p.slug}/`)]);
 const origins = new Set(['https://www.chinamudlogging.com', 'https://chinamudlogging.com']);
 const uuid = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/;
@@ -54,7 +55,7 @@ async function report(env,url) {
  (SELECT COUNT(*) FROM receipts r JOIN intents i ON i.id=r.inquiry_id JOIN cohort s ON s.id=i.session_id WHERE NOT EXISTS(SELECT 1 FROM qualifications q WHERE q.inquiry_id=i.id)) AS pending_review`).bind(...args).first();
  const sources=await env.DB.prepare(`WITH cohort AS (${cohort}) SELECT source, COUNT(*) AS visits FROM cohort GROUP BY source`).bind(...args).all();
  const rate=(n,d)=>d?Number((n/d).toFixed(4)):null;
- return {version:1,generatedAt:new Date().toISOString(),timezone:'UTC',cohort:{from:range.from,until:range.until,isTest:!!test},...counts,rates:{visit_to_intent:rate(counts.intent_sessions,counts.visits),intent_to_received:rate(counts.received_sessions,counts.intent_sessions),received_to_qualified:rate(counts.qualified_inquiries,counts.received_inquiries)},sources:sources.results,limitations:['Visits are anonymous 30-minute browser sessions, not people.','Email preparation and clicks are intent only.','Receipts require operator-verified Zoho delivery evidence; qualification requires human review.','Counts are attributed to the visit cohort; later receipts can change earlier cohorts.','Ad blockers, privacy choices and unreferenced emails create gaps.']};
+ return {version:1,generatedAt:new Date().toISOString(),timezone:'UTC',cohort:{from:range.from,until:range.until,isTest:!!test},...counts,rates:{visit_to_intent:rate(counts.intent_sessions,counts.visits),intent_to_received:rate(counts.received_sessions,counts.intent_sessions),received_to_qualified:rate(counts.qualified_inquiries,counts.received_inquiries)},sources:sources.results,limitations:['Visits are anonymous 30-minute browser sessions, not people.','Email preparation and clicks are intent only.','Receipts require delivered Zoho mailbox evidence (SMTP API or verified manual import); qualification requires human review.','Counts are attributed to the visit cohort; later receipts can change earlier cohorts.','Ad blockers, privacy choices and unreferenced emails create gaps.']};
 }
 export default {
  async fetch(req,env) {
@@ -64,6 +65,9 @@ export default {
    must(typeof env.ADMIN_KEY==='string'&&env.ADMIN_KEY.length>=32,'Not configured',503);
    if(p.startsWith('/admin/')) {
     const key=req.headers.get('authorization')||'';must(await equal(key,`Bearer ${env.ADMIN_KEY}`),'Unauthorized',401);
+    if(p==='/admin/zoho/status'&&req.method==='GET')return json(await syncStatus(env));
+    if(p==='/admin/zoho/sync'&&req.method==='POST'){await body(req,[]);const result=await syncZoho(env);return json(result,result.ok?200:503);}
+    if(p==='/admin/zoho/evidence'&&req.method==='GET'){const id=url.searchParams.get('inquiry');must(uuid.test(id||''),'Invalid inquiry');return json({records:await evidenceFor(env,id)});}
     if(p==='/admin/report'&&req.method==='GET')return json(await report(env,url));
     if(p==='/admin/test-session'&&req.method==='POST'){const b=await body(req,['path','source']);return json(await createSession(env,b,true),201);}
     if(p==='/admin/receipt'&&req.method==='POST') {
@@ -109,5 +113,8 @@ export default {
    throw new Problem(404,'Not found');
   }catch(e){return json({error:e instanceof Problem?e.message:'Service unavailable'},e instanceof Problem?e.status:503);}
  },
- async scheduled(_event,env) {await env.DB.prepare('DELETE FROM sessions WHERE created_at < ?').bind(new Date(Date.now()-90*864e5).toISOString()).run();}
+ async scheduled(event,env) {
+  if(event.cron==='15 2 * * *')await env.DB.prepare('DELETE FROM sessions WHERE created_at < ?').bind(new Date(Date.now()-90*864e5).toISOString()).run();
+  else await syncZoho(env);
+ }
 };

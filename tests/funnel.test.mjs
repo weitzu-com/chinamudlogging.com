@@ -46,5 +46,5 @@ test('test cohorts, authentication, privacy allowlists, expiry and referential i
  db.prepare('UPDATE sessions SET expires_at=? WHERE id=?').run('2000-01-01T00:00:00.000Z',s.id);
  assert.equal((await call('/intent',{...ticket,requestId:crypto.randomUUID(),kind:'email_prepare',path:'/'})).status,401);
  assert.throws(()=>db.prepare('INSERT INTO receipts VALUES (?,?,?,?,?,?)').run(crypto.randomUUID(),'a','b','c','d','zoho_delivery_log'));
- db.prepare('UPDATE sessions SET created_at=?').run('2000-01-01T00:00:00.000Z');await worker.scheduled(null,env);assert.equal(db.prepare('SELECT count(*) n FROM events').get().n,0);
+ db.prepare('UPDATE sessions SET created_at=?').run('2000-01-01T00:00:00.000Z');await worker.scheduled({cron:'15 2 * * *'},env);assert.equal(db.prepare('SELECT count(*) n FROM events').get().n,0);
 });
