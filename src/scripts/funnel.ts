@@ -17,7 +17,8 @@ function source() {
   try {
     const host = new URL(document.referrer).hostname;
     if (host === location.hostname) return 'direct';
-    if (/(^|\.)(google\.[a-z.]+|bing\.com|baidu\.com|duckduckgo\.com|yahoo\.com)$/.test(host)) return 'search';
+    if (/(^|\.)google\.[a-z]{2,3}(\.[a-z]{2})?$/.test(host)) return 'google';
+    if (/(^|\.)(bing\.com|baidu\.com|duckduckgo\.com|yahoo\.com)$/.test(host)) return 'search';
     if (/(^|\.)(linkedin\.com|facebook\.com|instagram\.com|twitter\.com|x\.com)$/.test(host)) return 'social';
   } catch { /* Never transmit referrer text. */ }
   return 'other';

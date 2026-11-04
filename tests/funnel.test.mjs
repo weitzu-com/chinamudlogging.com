@@ -11,7 +11,7 @@ function fixture(){
  return {db,env,call};
 }
 test('intent never becomes received or qualified without separate verified evidence',async()=>{
- const {call,db}=fixture();const s=await(await call('/session',{path:'/',source:'search'})).json();const ticket={sessionId:s.id,token:s.token};
+ const {call,db}=fixture();const s=await(await call('/session',{path:'/',source:'google'})).json();const ticket={sessionId:s.id,token:s.token};
  const event={...ticket,id:crypto.randomUUID(),kind:'page_view',path:'/'};
  await call('/event',event);await call('/event',event);
  const request={...ticket,requestId:crypto.randomUUID(),kind:'email_prepare',path:'/contact-us/'};
@@ -24,11 +24,11 @@ test('intent never becomes received or qualified without separate verified evide
  assert.equal((await call('/admin/receipt',{...evidence,status:'Prepared'},true)).status,400);
  assert.equal((await call('/admin/receipt',evidence,true)).status,201);
  assert.equal((await call('/admin/receipt',evidence,true)).status,200);
- r=await(await call('/admin/report',undefined,true)).json();assert.equal(r.received_inquiries,1);assert.equal(r.qualified_inquiries,0);assert.equal(r.pending_review,1);
+ r=await(await call('/admin/report',undefined,true)).json();assert.equal(r.received_inquiries,1);assert.equal(r.qualified_inquiries,0);assert.equal(r.pending_review,1);assert.deepEqual(r.segments.map(s=>[s.source,s.landing_path,s.visits,s.intent_sessions,s.received_inquiries,s.qualified_inquiries,s.pending_review]),[['google','/',1,1,1,0,1]]);
  assert.equal((await call('/admin/qualify',review,true)).status,201);await call('/admin/qualify',review,true);
  r=await(await call('/admin/report',undefined,true)).json();assert.equal(r.qualified_inquiries,1);assert.equal(db.prepare('SELECT count(*) n FROM qualifications').get().n,1);
  await call('/admin/qualify',{...review,id:crypto.randomUUID(),decision:'rejected',reason:'not_relevant'},true);
- r=await(await call('/admin/report',undefined,true)).json();assert.equal(r.qualified_inquiries,0);assert.equal(db.prepare('SELECT count(*) n FROM qualifications').get().n,2);
+ r=await(await call('/admin/report',undefined,true)).json();assert.equal(r.qualified_inquiries,0);assert.equal(r.segments[0].qualified_inquiries,0);assert.equal(db.prepare('SELECT count(*) n FROM qualifications').get().n,2);
  const second=await(await call('/intent',{...request,requestId:crypto.randomUUID()})).json();assert.equal((await call('/admin/receipt',{...evidence,inquiryId:second.inquiryId,reference:second.reference},true)).status,409);
 });
 test('test cohorts, authentication, privacy allowlists, expiry and referential integrity',async()=>{
