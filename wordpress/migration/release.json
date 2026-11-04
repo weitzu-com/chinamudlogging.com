@@ -38,7 +38,11 @@
       "cml.zip": "814b3a11f5324c03c47fdbe22851cbc2f5b31a991a5d4fea2da6869b903133e8"
     },
     "finalBrowserReceipt": "11caf694-ccc5-4a25-b3c0-4753f7e50085",
-    "finalBrowserReceiptDelivery": "pending"
+    "finalBrowserReceiptDelivery": "delivered",
+    "finalBackupOffsiteSHA256": "all three artifacts matched",
+    "finalBrowserReceiptDeliveredAt": "2026-11-04T08:40:54.600Z",
+    "finalBrowserReceiptObservedAt": "2026-11-04T08:45:54.271Z",
+    "supplementalHTTP": 20
   },
   "localizationScope": "Six non-English languages contain approved selection summaries and source-checked key specifications for 10 products each. Full machine translations remain unpublished pending professional review.",
   "backup": "cml-backups/release-20261104T071829Z",
@@ -65,5 +69,7 @@
   },
   "mailRoute": "Mandatory STARTTLS and verified TLS certificate directly to existing recipient domain Zoho MX, no authenticated relay credentials.",
   "workerVersion": "30da77e5-eb0b-4dc8-92d3-483f6631d50c",
-  "finalBackup": "cml-backups/release-20261104T084144Z"
+  "finalBackup": "cml-backups/release-20261104T084144Z",
+  "sourceCommit": "79db4b4",
+  "pullRequest": "https://github.com/weitzu-com/chinamudlogging.com/pull/6"
 }
