@@ -22,5 +22,5 @@ subprocess.run([
     '--mount-dir', str(output), '/cml-test-results',
 ], cwd=root, check=True, timeout=180)
 result = json.loads(result_path.read_text())
-assert result['passed'] is True and result['products'] == 16 and result['assertions'] == 162
+assert result['passed'] is True and result['products'] == 26 and result['assertions'] == 265
 print(json.dumps(result))
