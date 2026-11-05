@@ -30,6 +30,6 @@ for key,row in data.items():
     try:render(product,lang,row)
     except Exception as error:errors.append([key,'render',str(error)])
 report={'records':len(data),'languages':LANGS,'sourceParagraphsAndHeadings':segments,'errors':errors,'reviewRequired':not args.require_approved,'evidenceBoundary':'AI editorial and technical consistency review; unresolved legacy source claims remain labelled, not manufacturer confirmation.'}
-cache=Path.home()/'.cache/chinamudlogging-wordpress/full-translation';(cache/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+cache=Path.home()/'.cache/chinamudlogging-wordpress/full-translation';cache.mkdir(parents=True,exist_ok=True);(cache/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(report,ensure_ascii=False,indent=2))
 if errors:raise SystemExit(1)
