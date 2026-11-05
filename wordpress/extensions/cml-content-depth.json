@@ -1,0 +1,660 @@
+{
+  "languages": {
+    "zh": {
+      "heading": "按采购任务选择设备与资料",
+      "intro": "先确定是采购完整设备、升级现有系统，还是替换单个部件，再比较产品。目录中的名称、图片和参数记录只是选型起点，最终配置应与现有安装及使用要求核对。下方产品卡片可用于识别记录；完整英文目录提供更多型号入口。",
+      "familyHeading": "本类设备需要明确的边界",
+      "documentsHeading": "先核对资料，再比较报价",
+      "documents": [
+        "索取与实际报价型号和版本对应的技术资料、尺寸图及接线或接口说明。已有系统改造时，同时提供旧设备铭牌和已知连接信息。",
+        "逐项列明随设备提供的附件、软件、文件、检查记录及服务范围。未确认的项目保持待确认，不把同类产品资料当成本型号的证明。",
+        "如现场有防爆或其他批准要求，应核对具体型号、配置及相应文件的覆盖范围；目录中的标识不能替代所供设备的文件。"
+      ],
+      "rfqHeading": "准备一份可核对的设备询价",
+      "rfq": [
+        "说明测量任务、用途、新装或替换，以及现有系统中哪些功能已经具备。",
+        "提供已知型号或铭牌、信号与电源、安装条件、数量和目的地；缺失信息可明确标注。",
+        "要求报价列出具体配置、供货与接口责任、验收内容及商业条件。调试、培训、交期与备件范围应另行约定。"
+      ],
+      "english": "查看对应的完整英文选型目录",
+      "request": "核对设备用途、接口与供货范围",
+      "button": "提交本类设备需求",
+      "families": {
+        "mud-logging-units": [
+          "区分完整录井系统、采集或分析功能升级，以及单独传感器替换。先列出需要的测量通道、气体分析、软件和工作空间，再要求报价逐项对应。",
+          "明确现场已有的设备、电源、取样条件和数据接口。机柜、传感器或软件的单项记录不代表它们已组成完整系统；安装、集成与验收责任须分别确认。"
+        ],
+        "mud-logging-sensors": [
+          "先确定测量对象：泥浆密度与岩屑样品密度不同，出口流量趋势也不等于已标定的绝对流量。按实际测量任务选择记录，不只比较产品名称。",
+          "提供现有采集输入、电源、输出与接线、安装尺寸和介质条件。相似量程或相同插头外观不能证明可互换，替换型号需要对应的图纸与文件。"
+        ],
+        "wireless-sensors": [
+          "把测量传感器、发射或采集模块、接收主站和主机接口分开核对。目录中的无线部件不代表已经形成可兼容的整套链路。",
+          "说明已有配对设备、数据映射和供电安排，并确认安装环境与数据中断时的处理要求。电池或充电器的电压相似不能单独作为配套依据。"
+        ],
+        "drilling-monitoring": [
+          "先列出需要监测的钻井参数、已有传感器和采集显示功能，再区分购买计算机、显示设备、替换部件或配置项目。",
+          "核对采集通道、输出协议、主机软件和安装连接。机箱接口开孔不代表已安装对应功能，软件许可、系统集成与数据缺失提示需要单独确认。"
+        ],
+        "formation-evaluation": [
+          "从具体流程选择设备：泥浆气体提取、岩屑或样品观察，以及结果记录是不同环节。脱气设备不是气体分析仪，荧光观察也不等于定量含油分析。",
+          "说明取样安排、样品形式、所需仪器和后续接口。目录中某件仪器的存在不能证明完整分析方法或解释能力，方法与验收要求须明确。"
+        ]
+      }
+    },
+    "es": {
+      "heading": "Seleccione equipos según la compra que necesita",
+      "intro": "Defina primero si necesita un equipo completo, una actualización o la sustitución de un componente. Los nombres, fotografías y datos del catálogo ayudan a identificar registros; no determinan por sí solos la configuración del pedido. Utilice las fichas de esta categoría y el catálogo inglés para preparar una comparación de ofertas.",
+      "familyHeading": "Defina el alcance de esta categoría",
+      "documentsHeading": "Revise los documentos antes de comparar ofertas",
+      "documents": [
+        "Solicite ficha técnica, plano y esquema de conexión correspondientes al modelo y versión propuestos. Para una sustitución, aporte también la placa y las conexiones del equipo existente.",
+        "Separe accesorios, software, documentos, registros de inspección y servicios incluidos. Mantenga como pendiente lo que no se haya confirmado; una ficha de la misma familia no prueba las prestaciones de otro modelo.",
+        "Si el lugar requiere aprobaciones específicas, compruebe su alcance para el modelo y conjunto ofrecidos. Una marca del catálogo no sustituye los documentos de la unidad suministrada."
+      ],
+      "rfqHeading": "Prepare una solicitud que permita revisar la configuración",
+      "rfq": [
+        "Describa la medición, la aplicación y si es una instalación nueva o un reemplazo. Indique qué funciones ya existen.",
+        "Facilite modelo o placa, señal, alimentación, montaje, cantidad y destino. Señale expresamente los datos que faltan.",
+        "Pida una oferta con configuración, responsabilidades de suministro e integración, criterios de aceptación y condiciones comerciales. Acuerde por separado puesta en marcha, formación y repuestos."
+      ],
+      "english": "Consultar la guía y el catálogo completos en inglés",
+      "request": "revisión de aplicación, interfaces y alcance de suministro",
+      "button": "Enviar los requisitos de esta categoría",
+      "families": {
+        "mud-logging-units": [
+          "Distinga una unidad completa, una ampliación de adquisición o análisis y la sustitución de sensores. Liste canales de medición, análisis de gas, software y espacio de trabajo necesarios antes de comparar el alcance de las ofertas.",
+          "Indique equipos existentes, servicios eléctricos, muestreo e interfaces de datos. Una ficha de contenedor, sensor o programa no demuestra un sistema integrado; acuerde instalación, integración y aceptación por separado."
+        ],
+        "mud-logging-sensors": [
+          "Defina qué se mide: densidad del lodo y densidad de una muestra de roca son tareas distintas; una tendencia de caudal de salida no equivale a una medida absoluta calibrada. Elija por aplicación, no sólo por nombre.",
+          "Aporte entrada de adquisición, alimentación, salida, cableado, dimensiones y condiciones del medio. Rangos similares o conectores parecidos no prueban intercambiabilidad; solicite planos y documentos del modelo propuesto."
+        ],
+        "wireless-sensors": [
+          "Revise por separado el sensor, el transmisor o módulo de adquisición, la estación receptora y la interfaz del sistema. Una pieza inalámbrica del catálogo no demuestra una cadena completa compatible.",
+          "Identifique los equipos emparejados, el mapa de datos y la alimentación; acuerde condiciones de instalación y tratamiento de interrupciones. Una tensión parecida no basta para elegir batería o cargador."
+        ],
+        "drilling-monitoring": [
+          "Liste parámetros de perforación, sensores existentes y funciones de adquisición y visualización. Distinga entre comprar un ordenador, una pantalla, una pieza o un proyecto configurado.",
+          "Revise canales, protocolos, software y conexiones de montaje. Una abertura del chasis no prueba una interfaz instalada; confirme licencias, integración y avisos por datos ausentes."
+        ],
+        "formation-evaluation": [
+          "Seleccione por etapa: extracción de gas del lodo, observación de recortes o muestras y registro de resultados. Un desgasificador no es un analizador de gas, y la observación de fluorescencia no establece contenido cuantitativo de petróleo.",
+          "Describa muestreo, tipo de muestra, instrumento e interfaces posteriores. Una ficha de instrumento no demuestra un método analítico completo ni una capacidad de interpretación; acuerde método y aceptación."
+        ]
+      }
+    },
+    "ru": {
+      "heading": "Выберите оборудование по задаче закупки",
+      "intro": "Сначала определите, требуется ли полный комплект, модернизация или замена отдельного компонента. Названия, фотографии и записи каталога помогают найти нужную позицию, но сами по себе не определяют состав заказа. Используйте карточки этой категории и полный английский каталог для подготовки сопоставимых запросов.",
+      "familyHeading": "Уточните границы оборудования этой категории",
+      "documentsHeading": "Проверьте документы перед сравнением предложений",
+      "documents": [
+        "Запросите паспортные данные, чертёж и схему подключения для предлагаемой модели и версии. При замене приложите шильдик и сведения о подключении существующего оборудования.",
+        "Разделите включённые принадлежности, ПО, документы, записи проверок и услуги. Неизвестные сведения оставьте неподтверждёнными; документ похожей модели не доказывает параметры другой.",
+        "Если объект требует определённых допусков, проверьте область действия документов для предлагаемой модели и сборки. Обозначение в каталоге не заменяет документы поставляемого изделия."
+      ],
+      "rfqHeading": "Подготовьте запрос для проверки конфигурации",
+      "rfq": [
+        "Опишите измерение, применение, новую установку или замену и уже имеющиеся функции системы.",
+        "Укажите модель или шильдик, сигнал, питание, монтаж, количество и место поставки. Отметьте отсутствующие сведения.",
+        "Запросите состав предложения, ответственность за поставку и интеграцию, критерии приёмки и коммерческие условия. Пусконаладку, обучение и запасные части согласуйте отдельно."
+      ],
+      "english": "Открыть полный английский каталог и руководство по выбору",
+      "request": "проверка применения, интерфейсов и состава поставки",
+      "button": "Отправить требования к оборудованию",
+      "families": {
+        "mud-logging-units": [
+          "Разделите полную станцию, расширение сбора данных или анализа и замену датчиков. До сравнения предложений перечислите измерительные каналы, газовый анализ, ПО и необходимое рабочее пространство.",
+          "Укажите имеющееся оборудование, питание, отбор проб и интерфейсы данных. Отдельная карточка контейнера, датчика или программы не доказывает наличие интегрированной системы; согласуйте монтаж, интеграцию и приёмку."
+        ],
+        "mud-logging-sensors": [
+          "Определите измеряемую величину: плотность бурового раствора отличается от плотности образца породы; относительный тренд выходного потока не является калиброванным абсолютным расходом. Выбирайте по задаче, а не только по названию.",
+          "Предоставьте вход системы сбора, питание, выход, проводку, размеры и условия среды. Похожие диапазоны и разъёмы не доказывают взаимозаменяемость; запросите чертежи и документы предлагаемой модели."
+        ],
+        "wireless-sensors": [
+          "Отдельно проверьте датчик, передатчик или модуль сбора, приёмную станцию и интерфейс хоста. Наличие беспроводного компонента в каталоге не доказывает совместимость полной цепи.",
+          "Опишите сопряжённые устройства, карту данных и питание; согласуйте монтаж и обработку потери данных. Совпадения напряжения недостаточно для подбора аккумулятора или зарядного устройства."
+        ],
+        "drilling-monitoring": [
+          "Перечислите параметры бурения, имеющиеся датчики и функции сбора и отображения. Разделите закупку компьютера, дисплея, запасной части и конфигурируемого проекта.",
+          "Проверьте каналы, протоколы, ПО и монтажные подключения. Отверстие корпуса не доказывает установленный интерфейс; отдельно согласуйте лицензии, интеграцию и сообщения об отсутствии данных."
+        ],
+        "formation-evaluation": [
+          "Выберите оборудование по этапу: извлечение газа из раствора, наблюдение шлама или образцов и регистрация результатов. Дегазатор не является газоанализатором, а наблюдение флуоресценции не устанавливает количественное содержание нефти.",
+          "Опишите отбор, вид образца, требуемый прибор и последующие интерфейсы. Карточка прибора не доказывает полный аналитический метод или возможности интерпретации; согласуйте метод и приёмку."
+        ]
+      }
+    },
+    "ar": {
+      "heading": "اختر المعدات وفق مهمة الشراء",
+      "intro": "حدد أولاً ما إذا كنت تحتاج إلى مجموعة كاملة أو تحديث نظام قائم أو استبدال مكوّن منفرد. تساعد أسماء الكتالوج وصوره وبياناته على تحديد السجل المناسب، لكنها لا تحدد وحدها تهيئة الطلب. استخدم بطاقات هذه الفئة والكتالوج الإنجليزي الكامل لإعداد طلبات عروض قابلة للمقارنة.",
+      "familyHeading": "حدد حدود المعدات في هذه الفئة",
+      "documentsHeading": "راجع الوثائق قبل مقارنة العروض",
+      "documents": [
+        "اطلب ورقة البيانات والرسم ومخطط التوصيل المطابقة للطراز والإصدار المقترحين. عند الاستبدال أرفق أيضاً لوحة تعريف الجهاز الحالي وتفاصيل توصيلاته.",
+        "افصل الملحقات والبرامج والوثائق وسجلات الفحص والخدمات المشمولة. اترك المعلومات غير المؤكدة قيد المراجعة؛ وثيقة طراز مشابه لا تثبت مواصفات طراز آخر.",
+        "إذا كانت للموقع متطلبات اعتماد محددة، فراجع نطاق الوثائق للطراز والتجميع المعروضين. علامة الكتالوج لا تحل محل وثائق الجهاز المورّد."
+      ],
+      "rfqHeading": "جهز طلباً يسمح بمراجعة التهيئة",
+      "rfq": [
+        "صف القياس والتطبيق، وهل المطلوب تركيب جديد أم استبدال، وما الوظائف الموجودة بالفعل.",
+        "قدم الطراز أو لوحة التعريف والإشارة والطاقة والتركيب والكمية والوجهة، وحدد المعلومات الناقصة بوضوح.",
+        "اطلب بيان التهيئة ومسؤوليات التوريد والتكامل ومعايير القبول والشروط التجارية. يجب الاتفاق منفصلاً على التشغيل والتدريب وقطع الغيار."
+      ],
+      "english": "راجع دليل الاختيار والكتالوج الكامل باللغة الإنجليزية",
+      "request": "مراجعة التطبيق والواجهات ونطاق التوريد",
+      "button": "أرسل متطلبات معدات هذه الفئة",
+      "families": {
+        "mud-logging-units": [
+          "ميز بين وحدة كاملة وتوسعة لجمع البيانات أو التحليل واستبدال المستشعرات. حدد قنوات القياس وتحليل الغاز والبرامج ومساحة العمل قبل مقارنة نطاق العروض.",
+          "اذكر المعدات القائمة والطاقة وترتيب أخذ العينات وواجهات البيانات. سجل الحاوية أو المستشعر أو البرنامج لا يثبت وجود نظام متكامل؛ حدد مسؤوليات التركيب والتكامل والقبول منفصلة."
+        ],
+        "mud-logging-sensors": [
+          "حدد الكمية المقاسة: كثافة الطين تختلف عن كثافة عينة الصخور، واتجاه تدفق الخروج النسبي ليس قياس تدفق مطلقاً معايراً. اختر وفق المهمة، لا وفق اسم المنتج وحده.",
+          "قدم مدخل جمع البيانات والطاقة والخرج والتوصيلات وأبعاد التركيب وظروف الوسط. تشابه المدى أو شكل الموصل لا يثبت قابلية التبادل؛ اطلب رسومات ووثائق الطراز المقترح."
+        ],
+        "wireless-sensors": [
+          "راجع المستشعر والمرسل أو وحدة الجمع ومحطة الاستقبال وواجهة المضيف كلّاً على حدة. وجود مكوّن لاسلكي في الكتالوج لا يثبت توافق سلسلة كاملة.",
+          "حدد الأجهزة المقترنة وخريطة البيانات والطاقة، واتفق على التركيب ومعالجة انقطاع البيانات. تشابه الجهد وحده لا يكفي لاختيار البطارية أو الشاحن."
+        ],
+        "drilling-monitoring": [
+          "حدد معلمات الحفر والمستشعرات القائمة ووظائف الجمع والعرض. ميز بين شراء حاسوب أو شاشة أو قطعة بديلة وبين مشروع مراقبة مهيأ.",
+          "راجع القنوات والبروتوكولات والبرامج والوصلات. فتحة الهيكل لا تثبت وجود واجهة مركبة؛ راجع التراخيص والتكامل وتنبيهات البيانات المفقودة منفصلة."
+        ],
+        "formation-evaluation": [
+          "اختر حسب مرحلة العمل: استخلاص الغاز من الطين ومراقبة الفتات أو العينات وتسجيل النتائج. جهاز نزع الغاز ليس محلل غاز، ومراقبة الفلورة لا تثبت محتوى نفط كمياً.",
+          "صف أخذ العينات ونوعها والجهاز المطلوب والواجهات التالية. سجل جهاز منفرد لا يثبت طريقة تحليل كاملة أو قدرة تفسيرية؛ حدد الطريقة ومتطلبات القبول."
+        ]
+      }
+    },
+    "fr": {
+      "heading": "Choisir les équipements selon la décision d’achat",
+      "intro": "Définissez d’abord si vous recherchez un ensemble complet, une mise à niveau ou le remplacement d’un composant. Les noms, photographies et données du catalogue aident à identifier les fiches ; ils ne définissent pas à eux seuls la configuration commandée. Utilisez les fiches de cette catégorie et le catalogue anglais pour préparer des demandes comparables.",
+      "familyHeading": "Définir le périmètre de cette catégorie",
+      "documentsHeading": "Vérifier les documents avant de comparer les offres",
+      "documents": [
+        "Demandez fiche technique, plan et schéma de connexion correspondant au modèle et à la version proposés. Pour un remplacement, fournissez également la plaque et les connexions de l’équipement existant.",
+        "Distinguez accessoires, logiciel, documents, contrôles et services inclus. Laissez les informations inconnues en attente ; la fiche d’une famille ne prouve pas les caractéristiques d’un autre modèle.",
+        "Si le site exige des approbations particulières, vérifiez leur portée pour le modèle et l’assemblage proposés. Une mention au catalogue ne remplace pas les documents de l’unité livrée."
+      ],
+      "rfqHeading": "Préparer une demande permettant de vérifier la configuration",
+      "rfq": [
+        "Décrivez mesure, application, installation neuve ou remplacement et fonctions déjà disponibles.",
+        "Indiquez modèle ou plaque, signal, alimentation, montage, quantité et destination. Identifiez les informations manquantes.",
+        "Demandez la configuration, les responsabilités de fourniture et d’intégration, les critères de réception et les conditions commerciales. Convenez séparément de la mise en service, de la formation et des pièces."
+      ],
+      "english": "Consulter le guide et le catalogue complets en anglais",
+      "request": "revue de l’application, des interfaces et de la fourniture",
+      "button": "Envoyer les besoins de cette catégorie",
+      "families": {
+        "mud-logging-units": [
+          "Distinguez unité complète, extension d’acquisition ou d’analyse et remplacement de capteurs. Énumérez canaux de mesure, analyse de gaz, logiciel et espace de travail avant de comparer le contenu des offres.",
+          "Indiquez équipements existants, alimentation, échantillonnage et interfaces de données. Une fiche de conteneur, de capteur ou de logiciel ne prouve pas un système intégré ; convenez séparément du montage, de l’intégration et de la réception."
+        ],
+        "mud-logging-sensors": [
+          "Définissez la grandeur : densité du fluide et densité d’un échantillon de roche sont différentes ; une tendance relative du débit de sortie n’est pas une mesure absolue étalonnée. Choisissez selon la tâche, pas seulement selon le nom.",
+          "Fournissez entrée d’acquisition, alimentation, sortie, câblage, dimensions et conditions du milieu. Des plages ou connecteurs semblables ne prouvent pas l’interchangeabilité ; demandez les plans et documents du modèle proposé."
+        ],
+        "wireless-sensors": [
+          "Vérifiez séparément capteur, émetteur ou module d’acquisition, station réceptrice et interface hôte. Une pièce sans fil au catalogue ne prouve pas une chaîne complète compatible.",
+          "Précisez appareils appairés, correspondance des données et alimentation ; convenez du montage et de la gestion des interruptions. Une tension similaire ne suffit pas pour choisir batterie ou chargeur."
+        ],
+        "drilling-monitoring": [
+          "Listez paramètres de forage, capteurs existants et fonctions d’acquisition et d’affichage. Distinguez ordinateur, écran, pièce de remplacement et projet configuré.",
+          "Vérifiez canaux, protocoles, logiciel et connexions. Une ouverture du châssis ne prouve pas une interface installée ; confirmez licences, intégration et signalement des données manquantes."
+        ],
+        "formation-evaluation": [
+          "Choisissez par étape : extraction du gaz de boue, observation des déblais ou échantillons et enregistrement des résultats. Un dégazeur n’est pas un analyseur de gaz ; l’observation de fluorescence n’établit pas une teneur quantitative en huile.",
+          "Décrivez prélèvement, type d’échantillon, instrument et interfaces suivantes. Une fiche ne prouve pas une méthode analytique complète ni une capacité d’interprétation ; définissez méthode et réception."
+        ]
+      }
+    },
+    "de": {
+      "heading": "Ausrüstung nach der Beschaffungsaufgabe auswählen",
+      "intro": "Klären Sie zuerst, ob eine vollständige Einheit, eine Nachrüstung oder ein einzelnes Ersatzteil benötigt wird. Namen, Bilder und Katalogangaben helfen bei der Identifikation, legen aber allein keine bestellte Konfiguration fest. Nutzen Sie die Produktkarten und den vollständigen englischen Katalog für vergleichbare Anfragen.",
+      "familyHeading": "Den Umfang dieser Gerätekategorie festlegen",
+      "documentsHeading": "Unterlagen vor dem Angebotsvergleich prüfen",
+      "documents": [
+        "Fordern Sie Datenblatt, Zeichnung und Anschlussplan passend zum angebotenen Modell und zur Version an. Bei Ersatzbedarf sind Typenschild und vorhandene Anschlüsse ebenfalls wichtig.",
+        "Trennen Sie enthaltenes Zubehör, Software, Unterlagen, Prüfprotokolle und Leistungen. Unbekannte Angaben bleiben offen; ein Dokument einer ähnlichen Baureihe belegt kein anderes Modell.",
+        "Wenn der Einsatzort bestimmte Zulassungen verlangt, prüfen Sie deren Geltungsbereich für Modell und Baugruppe. Eine Katalogkennzeichnung ersetzt keine Dokumente des gelieferten Geräts."
+      ],
+      "rfqHeading": "Eine prüfbare Anfrage vorbereiten",
+      "rfq": [
+        "Beschreiben Sie Messaufgabe, Anwendung, Neuinstallation oder Austausch sowie bereits vorhandene Funktionen.",
+        "Nennen Sie Modell oder Typenschild, Signal, Versorgung, Montage, Menge und Zielort. Kennzeichnen Sie fehlende Informationen.",
+        "Verlangen Sie Konfiguration, Liefer- und Integrationsverantwortung, Abnahmekriterien und kaufmännische Bedingungen. Inbetriebnahme, Schulung und Ersatzteile sind gesondert zu vereinbaren."
+      ],
+      "english": "Vollständigen englischen Auswahlleitfaden und Katalog öffnen",
+      "request": "Prüfung von Anwendung, Schnittstellen und Lieferumfang",
+      "button": "Anforderungen für diese Kategorie senden",
+      "families": {
+        "mud-logging-units": [
+          "Trennen Sie vollständige Einheit, Erweiterung von Erfassung oder Analyse und Sensoraustausch. Listen Sie Messkanäle, Gasanalyse, Software und Arbeitsplatz vor dem Angebotsvergleich auf.",
+          "Nennen Sie vorhandene Geräte, Versorgung, Probenahme und Datenschnittstellen. Eine Katalogkarte für Container, Sensor oder Software belegt kein integriertes System; klären Sie Montage, Integration und Abnahme getrennt."
+        ],
+        "mud-logging-sensors": [
+          "Bestimmen Sie die Messgröße: Bohrspülungsdichte und Gesteinsprobendichte sind verschieden; ein relativer Rücklauftrend ist keine kalibrierte absolute Durchflussmessung. Wählen Sie nach Aufgabe statt nur nach Produktname.",
+          "Geben Sie Erfassungseingang, Versorgung, Ausgang, Verdrahtung, Maße und Medium an. Ähnliche Bereiche oder Steckverbinder beweisen keine Austauschbarkeit; verlangen Sie Zeichnungen und Unterlagen des angebotenen Modells."
+        ],
+        "wireless-sensors": [
+          "Prüfen Sie Sensor, Sender oder Erfassungsmodul, Empfangsstation und Host-Schnittstelle getrennt. Ein Funkbauteil im Katalog belegt keine kompatible vollständige Verbindung.",
+          "Beschreiben Sie gepaarte Geräte, Datenzuordnung und Versorgung; vereinbaren Sie Montage und Verhalten bei Datenverlust. Eine ähnliche Spannung genügt nicht zur Auswahl von Akku oder Ladegerät."
+        ],
+        "drilling-monitoring": [
+          "Listen Sie Bohrparameter, vorhandene Sensoren sowie Erfassungs- und Anzeigefunktionen auf. Unterscheiden Sie Computer, Bildschirm, Ersatzteil und konfiguriertes Projekt.",
+          "Prüfen Sie Kanäle, Protokolle, Software und Anschlüsse. Eine Gehäuseöffnung belegt keine installierte Schnittstelle; klären Sie Lizenzen, Integration und Meldungen bei fehlenden Daten."
+        ],
+        "formation-evaluation": [
+          "Wählen Sie nach Arbeitsschritt: Gasextraktion aus Spülung, Beobachtung von Bohrklein oder Proben und Ergebnisaufzeichnung. Ein Entgaser ist kein Gasanalysator; Fluoreszenzbeobachtung belegt keinen quantitativen Ölgehalt.",
+          "Beschreiben Sie Probenahme, Probenart, Gerät und nachfolgende Schnittstellen. Eine Gerätekarte belegt weder eine vollständige Analysemethode noch Interpretationsleistung; legen Sie Methode und Abnahme fest."
+        ]
+      }
+    }
+  },
+  "profiles": {
+    "board": {
+      "names": [
+        "电路板"
+      ],
+      "title": "Identify the circuit board and host assembly",
+      "scope": "The retained name identifies a circuit board. It does not establish a complete sensor, its installed configuration or the performance of the assembled instrument.",
+      "checks": [
+        "Match the exact board designation, hardware revision, connector layout and the equipment assembly that receives it. The same short board code may appear in several different catalogue entries.",
+        "Request a board-specific connection drawing, supply requirements, signal mapping and compatible firmware or host version where applicable. Do not copy the limits of a finished sensor onto a bare board.",
+        "Describe the fault or replacement task and ask whether the offer includes only the board or an assembled, tested instrument. Agree configuration and inspection evidence before comparing prices."
+      ],
+      "missing": [
+        "Board revision and assembly identification",
+        "Board connection drawing and host compatibility",
+        "Supplied assembly and inspection scope"
+      ]
+    },
+    "mount": {
+      "names": [
+        "支架",
+        "固定架",
+        "安装架",
+        "G型夹",
+        "三通底座"
+      ],
+      "title": "Match the mounting part to the installed equipment",
+      "scope": "The source identifies a mounting part. Its catalogue designation does not establish a sensor model, an equipment rating or a complete installation.",
+      "checks": [
+        "Provide photographs, the existing sensor or assembly identity and a dimensioned drawing of the mounting interface. Identify holes, threads and the support arrangement rather than relying on a photograph alone.",
+        "Confirm material and surface finish, installation clearances and the purpose of the mounting part for the offered version. Do not assign a load capacity or hazardous-area approval from a catalogue name.",
+        "Ask which fasteners and mating parts are included. For a replacement, compare the actual dimensions and installed arrangement before ordering; similar sensor names do not establish mechanical fit."
+      ],
+      "missing": [
+        "Dimensioned mounting drawing and mating assembly",
+        "Material, finish and included hardware",
+        "Any application-specific mechanical acceptance evidence"
+      ]
+    },
+    "charger": {
+      "names": [
+        "充电器"
+      ],
+      "title": "Identify the charger and its approved battery pairing",
+      "scope": "The source identifies a charger. Matching a label or nominal voltage alone does not establish that it is suitable for an existing battery pack.",
+      "checks": [
+        "Provide the existing charger and battery nameplates, connector details and the equipment they support. Compare the exact versions rather than selecting solely from a shared family code.",
+        "Request the supported battery chemistry and pack configuration, charge-control requirements, connector pinout and the manufacturer pairing information for the offered charger.",
+        "Confirm input supply, supplied cables and the charging environment with the matching operating documents. If equipment approval is required, review the approved charger/battery arrangement for the actual installation."
+      ],
+      "missing": [
+        "Exact charger and battery pairing",
+        "Input/charging specification and connector drawing",
+        "Matched operating documents and approval scope if required"
+      ]
+    },
+    "battery": {
+      "names": [
+        "电池组",
+        "电池模块"
+      ],
+      "title": "Identify the battery pack and matching equipment",
+      "scope": "The source identifies a battery assembly. The catalogue designation alone does not establish capacity, chemistry, protection, connector polarity or charger compatibility.",
+      "checks": [
+        "Provide the old pack nameplate, the equipment identity and the actual connector arrangement. Identify whether the offer covers a complete pack, a module or additional connection hardware.",
+        "Request chemistry, pack configuration, capacity, protection and charging requirements for the exact offered assembly. Compare dimensions, connections and equipment pairing using its documents.",
+        "Ask for the matching operating instructions and any transport or application documents required for the order. Do not transfer a sensor or charger approval to a battery solely because the family names match."
+      ],
+      "missing": [
+        "Pack configuration, protection and capacity documentation",
+        "Equipment/charger pairing and connection drawing",
+        "Applicable operating and transport documents"
+      ]
+    },
+    "cable": {
+      "names": [
+        "信号线",
+        "连接线"
+      ],
+      "title": "Match the cable to both connected devices",
+      "scope": "The source identifies a signal or connecting cable. A catalogue code does not establish its pinout, wiring, length, shielding or compatibility with the connected instruments.",
+      "checks": [
+        "Identify both connected device models, connector types and the required signal path. Provide the existing cable tag and end-connector photographs when available.",
+        "Request a wiring and pinout drawing, required length, conductor/shield arrangement and environmental specification for the exact cable offered. Do not infer electrical assignments from connector shape.",
+        "Confirm whether mating connectors, glands and installation accessories are included. Agree how continuity, polarity and signal communication will be checked for the actual application."
+      ],
+      "missing": [
+        "End-to-end pinout and connected device identities",
+        "Length, conductor/shield and environmental requirements",
+        "Included connectors and inspection criteria"
+      ]
+    },
+    "plug": {
+      "names": [
+        "接插件"
+      ],
+      "title": "Identify the connector and wiring assignment",
+      "scope": "The source identifies a connector item. Its designation alone is not a pinout, electrical rating or evidence of compatibility with a particular sensor.",
+      "checks": [
+        "Provide the mating connector, device model and wiring drawing. Record contact arrangement, keying and the actual cable or panel installation so physically similar versions can be distinguished.",
+        "Request the exact connector drawing, contact assignment, termination method and applicable electrical/environmental specification. Do not assign power or signal functions from the number of contacts in a label.",
+        "Confirm which body, contacts, backshell or seals are included and compare the complete offered assembly with the installed one before ordering."
+      ],
+      "missing": [
+        "Mating connector and dimensioned drawing",
+        "Pin assignment and termination requirements",
+        "Complete offered connector assembly"
+      ]
+    },
+    "fitting": {
+      "names": [
+        "管线",
+        "连接管",
+        "接头",
+        "三通"
+      ],
+      "title": "Identify the fitting or connecting assembly before replacement",
+      "scope": "The retained name identifies a fitting or connecting part. It does not establish the complete assembly rating, connection standard, material or suitability for the installed duty.",
+      "checks": [
+        "Describe the intended connection and identify the equipment on both sides. Confirm whether the item is a process, hydraulic, mechanical or other connection rather than deciding from a short model code.",
+        "Request a dimensioned drawing, connection/thread standard, materials and the duty limits applicable to the exact offered assembly. A pressure-like value in the catalogue designation is not verified assembly evidence.",
+        "Confirm included seals, mating parts and required inspection documents. Compare the complete installed arrangement and agree acceptance criteria before treating this as a replacement."
+      ],
+      "missing": [
+        "Connection standard and complete assembly drawing",
+        "Material and application/duty evidence",
+        "Included seals, mating parts and inspection scope"
+      ]
+    },
+    "antenna": {
+      "names": [
+        "天线"
+      ],
+      "title": "Match the antenna to the radio equipment and installation",
+      "scope": "The source identifies an antenna accessory. The designation is not independently verified evidence of operating band, gain, environmental rating or radio-system compatibility.",
+      "checks": [
+        "Identify the transmitter or receiver, antenna port and existing installation. Request the antenna specification and connection drawing for the actual offered version.",
+        "Confirm operating band, impedance, connector interface, cable arrangement and mounting constraints from matched documents. Do not select from the catalogue length or connector wording alone.",
+        "Describe the site arrangement and ask which mounting and cable parts are included. Radio pairing and data communication still require system-level confirmation with the intended equipment."
+      ],
+      "missing": [
+        "Radio/antenna specification and connector match",
+        "Mounting and cable arrangement",
+        "System compatibility and included accessories"
+      ]
+    },
+    "electronics": {
+      "names": [
+        "模块",
+        "传输盒",
+        "主节点",
+        "主站",
+        "隔离串口"
+      ],
+      "title": "Define the acquisition or transmission component boundary",
+      "scope": "The source identifies an electronic system component. It is not by itself a complete measurement sensor or a confirmed compatible radio/acquisition system.",
+      "checks": [
+        "Identify the component role, exact version and the upstream and downstream devices. Separate the measured sensor, input conversion, transmission, receiving station and host interface.",
+        "Request supply, input/output circuits, connector mapping and the required protocol or firmware information. Similar family codes and connectors do not establish compatible data mappings.",
+        "For a radio link, confirm pairing and the receiving/host configuration. For a replacement module, agree the supplied hardware, configuration work and the checks used to confirm correct values and missing-data behaviour."
+      ],
+      "missing": [
+        "Component role, version and host equipment",
+        "Input/output wiring and protocol mapping",
+        "Pairing/configuration and acceptance checks"
+      ]
+    },
+    "potentiometer": {
+      "names": [
+        "电位器"
+      ],
+      "title": "Identify the potentiometer and its mechanical interface",
+      "scope": "The source identifies a potentiometer component. A value embedded in its designation does not establish a complete sensor range, wiring assignment or calibrated measurement.",
+      "checks": [
+        "Provide the installed part identity, shaft or travel arrangement, mounting dimensions and connected circuit. Determine which component is being replaced rather than assigning it a finished-sensor role.",
+        "Request the electrical characteristic, tolerance, terminal drawing and mechanical travel information for the exact proposed version. Do not infer those values from a neighbouring catalogue entry.",
+        "Confirm whether the offer includes only the component or a calibrated assembly. Compare the actual circuit and mechanical fit before treating similar designations as interchangeable."
+      ],
+      "missing": [
+        "Exact electrical characteristic and terminal drawing",
+        "Mechanical travel and mounting drawing",
+        "Component versus calibrated assembly scope"
+      ]
+    },
+    "simulator": {
+      "names": [
+        "模拟器"
+      ],
+      "title": "Define the signal-simulation task and receiving input",
+      "scope": "The source identifies a sensor simulator. It does not establish the supported signals, accuracy, traceability or suitability as a calibration reference.",
+      "checks": [
+        "State which instrument input or channel you need to test and the signal type used by the installed equipment. Separate signal demonstration from a traceable calibration requirement.",
+        "Request the simulator version, supported circuits, connection drawing and operating instructions. Confirm how the receiving system will be isolated and connected using the matched procedure.",
+        "If a measured reference or inspection result is required, ask for the applicable calibration and uncertainty evidence. Agree supplied leads, accessories and the acceptance purpose of the device."
+      ],
+      "missing": [
+        "Supported circuits and connection procedure",
+        "Reference accuracy/traceability if required",
+        "Included leads and acceptance purpose"
+      ]
+    },
+    "gas_test": {
+      "names": [
+        "标定装置"
+      ],
+      "title": "Define the gas-check accessory and document requirements",
+      "scope": "The source identifies a gas-check or calibration accessory. Its name does not establish the gas standard, connection method or a verified calibration result for a particular detector.",
+      "checks": [
+        "Identify the exact detector or probe and the test purpose. Request the matching procedure and accessory configuration rather than transferring instructions from a different detector family.",
+        "Ask which adapters, connections and reference materials are included and how their identities and validity will be documented. Do not derive test concentrations or exposure steps from the catalogue designation.",
+        "Agree the required check record, reference evidence and responsibilities with the supplier. A component listing is not proof that a complete installed gas-alarm system is ready for service."
+      ],
+      "missing": [
+        "Matched detector procedure and accessory drawing",
+        "Reference-material and connection documentation",
+        "Check record and responsibility scope"
+      ]
+    },
+    "gas": {
+      "names": [
+        "硫化氢",
+        "一氧化碳",
+        "二氧化碳",
+        "氢气",
+        "可燃气体"
+      ],
+      "title": "Identify the target gas, sensing item and host function",
+      "scope": "The source names a gas-sensing item. Its designation does not independently establish a measurement range, sensing method, calibration interval or approved gas-alarm configuration.",
+      "checks": [
+        "Provide the exact target gas, installed probe/transmitter identity and receiving input. Distinguish a sensing element, complete transmitter and host alarm function before comparing replacements.",
+        "Request the offered model datasheet, wiring, operating and reference/calibration documents. Resolve supply, output, response requirements and any stated cross-sensitivity using those matched documents.",
+        "Confirm the intended detection purpose and integration with the actual host. A source name or approval-like marking does not establish a complete installation, protective function or current approval for the offered assembly."
+      ],
+      "missing": [
+        "Target-gas and exact probe/transmitter identity",
+        "Model-matched wiring and operating/calibration documents",
+        "Host alarm function and applicable approval evidence"
+      ]
+    },
+    "load": {
+      "names": [
+        "悬重",
+        "张力"
+      ],
+      "title": "Define the load measurement and its conversion chain",
+      "scope": "The source identifies a load-related sensing item. It does not establish the load capacity, measurement conversion or suitability of the complete installed arrangement.",
+      "checks": [
+        "State which load or force is required and describe the existing measurement chain. Confirm whether the offered device measures force directly or supplies a signal that the host converts.",
+        "Request the model drawing, installation/load-path requirements, output and scaling/reference documents. If a pressure conversion is involved, obtain the matching conversion basis rather than assuming a universal relationship.",
+        "Compare connected equipment, mounting, cables and any required interface. Agree the supplied components, calibration/inspection scope and acceptance checks for the actual installation."
+      ],
+      "missing": [
+        "Measurement/conversion basis and load-path drawing",
+        "Output/scaling and installation documentation",
+        "Assembly scope and reference/inspection criteria"
+      ]
+    },
+    "pressure": {
+      "names": [
+        "立压",
+        "套压"
+      ],
+      "title": "Match the pressure item to the complete process assembly",
+      "scope": "The source names a standpipe- or casing-pressure sensing item. The catalogue designation does not establish the rating or approval of the complete process connection and installation.",
+      "checks": [
+        "Identify the intended pressure point, measurement basis, medium and existing device. Provide the connection and installation information rather than choosing solely from a model-family name.",
+        "Request the exact offered range, output, supply, process connection and assembly documentation. Separate the sensing item from reducers, hoses, fittings and any interface equipment included in the quotation.",
+        "Confirm the matched installation, reference/calibration and inspection documents. Similar catalogue labels do not prove interchangeability or establish the duty of all connected parts."
+      ],
+      "missing": [
+        "Pressure point, model and assembly identity",
+        "Model-matched process/electrical drawings",
+        "Reference/calibration and assembly inspection scope"
+      ]
+    },
+    "drawworks": {
+      "names": [
+        "绞车"
+      ],
+      "title": "Identify the drawworks pickup and host calculation",
+      "scope": "The source names a drawworks sensing item. It does not establish the pickup signal, resolution or the host calculation used to report depth or motion.",
+      "checks": [
+        "Provide the existing pickup identity, installation position and receiving acquisition input. Request the target/sensing arrangement and mounting drawing for the exact offered item.",
+        "Confirm signal type, supply, connector mapping and any pulse or direction information from matched documents. Do not infer these from the model designation or another encoder record.",
+        "Describe the host conversion and required indication. Shaft movement, counting and reported well depth are separate parts of the measurement chain; agree reference checks and the responsible integration scope."
+      ],
+      "missing": [
+        "Pickup/target and mounting drawing",
+        "Signal, supply and acquisition mapping",
+        "Host conversion and reference-check method"
+      ]
+    },
+    "probe": {
+      "names": [
+        "超声波传感器",
+        "体积探头",
+        "液位传感器"
+      ],
+      "title": "Clarify the probe measurement and host conversion",
+      "scope": "The source identifies a probe or level-related item. Its name alone does not establish a complete instrument, a calibrated tank volume or compatibility with the receiving system.",
+      "checks": [
+        "Describe the physical measurement, tank or installation geometry and the result needed by the host. Confirm which functions are performed by the probe, transmitter and acquisition system.",
+        "Request the exact probe drawing, mounting/reference information, output and connection documents. Do not assign a sensing range or blind zone from a designation alone.",
+        "If volume is required, agree how the actual installation geometry and reference will be used. For a replacement, compare the matched transmitter or receiver and required calibration/reference procedure."
+      ],
+      "missing": [
+        "Measurement role and installation geometry",
+        "Probe/transmitter wiring and model drawing",
+        "Host conversion and reference procedure"
+      ]
+    },
+    "density_temperature": {
+      "names": [
+        "密温"
+      ],
+      "title": "Separate the density and temperature requirements",
+      "scope": "The retained source name combines density and temperature wording. It does not establish how either quantity is measured, the independent outputs or the calibrated performance of a supplied assembly.",
+      "checks": [
+        "List the density and temperature results required by the installed system. Request the model-specific measurement arrangement and distinguish sensing elements, transmitter and host calculations.",
+        "Ask for the independent ranges, units, outputs, supply and installation drawing as applicable to the offered version. Do not expand numeric tokens in the catalogue label into verified limits.",
+        "Confirm the reference/calibration documents for each measurement and the combined acquisition mapping. Agree the included components and the inspection basis before comparing replacements."
+      ],
+      "missing": [
+        "Measurement arrangement and independent outputs",
+        "Model-matched installation/electrical documents",
+        "Reference evidence for each measurement"
+      ]
+    }
+  },
+  "legacy": {
+    "mud-density-sensor-for-oil-and-gas-mud-logging": {
+      "sourceId": "product:242",
+      "title": "Mud Density Sensor: Identify an Unknown Replacement",
+      "intro": "Use this sparse legacy record to identify a drilling-fluid density requirement before choosing a replacement. The retained entry does not establish a model, sensing principle, electrical output or installation specification.",
+      "checks": [
+        "Provide the installed instrument nameplate and the result required by the acquisition system. Distinguish fluid density from shale or cuttings sample density before comparing catalogue records.",
+        "Request the exact proposed model and its sensing arrangement. Do not select a differential-pressure, resonance or other instrument merely because its title contains the same measurement name.",
+        "Compare power, output circuit or protocol, receiving input, mounting and wetted installation with model-matched documents. For a conversion or interface change, identify who supplies and configures the additional components.",
+        "Ask for the current datasheet, dimensional and wiring drawings and the reference/calibration procedure for the proposed version. Keep range, units, materials and any approval requirements unresolved until supporting documents are available.",
+        "State quantity, destination and the equipment already installed. Request a quotation that names the supplied configuration, documents, exclusions and acceptance checks rather than assigning specifications to this unidentified entry."
+      ],
+      "missing": [
+        "Installed and proposed model identity",
+        "Sensing method, range/units and output documentation",
+        "Installation/wiring and reference procedure"
+      ],
+      "links": {
+        "/product/cl-md23-mud-density-sensor/": "CL-MD23 model-labelled record — compare documents",
+        "/product/cnps-ml-b11-mud-density-sensor/": "CNPS-ML-B11 record — not a confirmed equivalent",
+        "/product-category/mud-logging-sensors/": "Measurement and interface selection"
+      }
+    },
+    "mud-logging-sensors": {
+      "sourceId": "product:143",
+      "title": "Mud Logging Sensors: Define a Replacement or Channel Package",
+      "intro": "Use this legacy project entry to define a sensor or channel requirement. It does not identify one supplied sensor model or a complete configured package; the catalogue family below provides separate records to compare.",
+      "checks": [
+        "List the required measurements and the receiving acquisition system. Separate temperature, fluid density, conductivity, pressure, load-related inputs, pump strokes and flow-out indication so each channel has a defined purpose.",
+        "For replacement work, provide each existing nameplate, connection and mounting arrangement. Similar titles or connector shapes do not establish electrical, mechanical or protocol compatibility.",
+        "Distinguish the sensing item from its transmitter, receiving station, power accessories and host software. Ask whether the offer covers one component or an assembled and configured channel.",
+        "Request a per-channel schedule containing the proposed model, required range and units, power, output and interface documentation. Unknown values remain open; the supplier should identify the evidence for the offered configuration.",
+        "Agree the drawings, installation/reference instructions and any requested inspection or approval documents for the named equipment. Confirm site work, integration and acceptance responsibilities separately from catalogue selection."
+      ],
+      "missing": [
+        "Per-channel measurement and existing system schedule",
+        "Named models with matched drawings and interface data",
+        "Quoted integration and acceptance responsibilities"
+      ],
+      "links": {
+        "/product-category/mud-logging-sensors/": "Compare sensor records by measurement",
+        "/product-category/wireless-sensors/": "Wireless components and receiving chain",
+        "/product/surface-logging-systems/": "Wider system boundary"
+      }
+    }
+  },
+  "article": {
+    "slug": "what-is-the-main-task-of-a-mud-logging-unit",
+    "title": "What a Mud Logging Unit Records and How to Specify Its Scope",
+    "description": "Understand the recording, sample and gas workflow of a mud logging unit, and define channels, interfaces and deliverables before requesting equipment.",
+    "intro": "A mud logging unit brings surface measurements and observations into a usable wellsite record. The equipment requirement should follow the information the drilling and geological teams need, rather than treating every catalogue component as a complete unit.",
+    "sections": [
+      {
+        "heading": "Follow the information chain",
+        "items": [
+          "Define the observations and measurements required from returning drilling fluid, cuttings and drilling operations. Sampling, gas handling, measurement, acquisition and interpretation are distinct functions in the workflow.",
+          "Identify the equipment that produces each signal and the acquisition hardware and software that receive it. The supplied package needs an explicit channel and interface list; a sensor or computer listing alone does not establish the whole chain."
+        ]
+      },
+      {
+        "heading": "Separate recording from the decisions made with it",
+        "items": [
+          "Clarify what the equipment displays, records and exports, which reference or calibration checks are required, and who reviews the results. Agree alarm or indication functions as a configuration item for the actual host and installation.",
+          "Recording equipment does not by itself establish an uninterrupted drilling operation, a complete protective system or a validated geological interpretation. State those wider requirements and responsibilities separately."
+        ]
+      },
+      {
+        "heading": "Turn the task into an equipment enquiry",
+        "items": [
+          "For a new unit, provide rig/application, required measurements, gas/sample handling, utilities, destination and operating conditions. For an upgrade, add the existing equipment, software and interface documents.",
+          "Request an itemized configuration with named hardware, software scope, documents, integration responsibilities and acceptance checks. Preserve unknown details as questions for the offer rather than copying a historical specification from another unit."
+        ]
+      }
+    ]
+  }
+}
