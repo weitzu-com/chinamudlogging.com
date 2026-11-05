@@ -4,6 +4,22 @@ import assert from 'node:assert/strict';
 import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
 import worker from '../workers/funnel/index.mjs';
+import published from '../workers/funnel/published-paths.json' with { type: 'json' };
+test('published landings preserve first-touch attribution and reject unknown paths',async()=>{
+ const {call,db}=fixture();
+ assert.equal(new Set(published.paths).size,published.paths.length);
+ for(const path of published.paths){
+  assert.match(path,/^\/(?:[a-z0-9-]+\/)*$/);
+  assert.equal((await call('/admin/test-session',{path,source:'google'},true)).status,201,path);
+ }
+ const landing=published.paths.find(p=>p.startsWith('/product/')&&!p.includes('mud-logging'));
+ const ticket=await(await call('/admin/test-session',{path:landing,source:'google'},true)).json();
+ await call('/event',{sessionId:ticket.id,token:ticket.token,id:crypto.randomUUID(),kind:'contact_view',path:'/contact-us/'});
+ const session=db.prepare('SELECT * FROM sessions WHERE id=?').get(ticket.id);
+ assert.equal(session.landing_path,landing);assert.equal(session.source,'google');assert.equal(session.is_test,1);
+ for(const path of ['/product/unknown-draft/','/?email=private@example.com','/wp-admin/','/zh/draft/'])
+  assert.equal((await call('/admin/test-session',{path,source:'google'},true)).status,400,path);
+});
 test('WordPress language routes and direct browser measurement keep a strict origin boundary',async()=>{
  const {call,env}=fixture();
  assert.equal((await call('/session',{path:'/ar/contact-us-ar/',source:'google'})).status,201);
