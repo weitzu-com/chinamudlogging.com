@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ChinaMudLogging Core
  * Description: Product catalogue, multilingual rendering, migration and private inquiry receipt.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires PHP: 8.2
  * Text Domain: cml-core
  */
@@ -65,13 +65,4 @@ function cml_front_title(string $title): string {
 }
 add_filter('pre_get_document_title', 'cml_front_title', 20);
 add_filter('wpseo_title', 'cml_front_title', 20);
-add_action('wp_head', function () {
-    if (!is_singular('cml_product')) return;
-    $id = get_queried_object_id();
-    $schema = ['@context' => 'https://schema.org', '@type' => 'Product',
-        'name' => get_the_title($id), 'description' => get_the_excerpt($id),
-        'url' => get_permalink($id), 'inLanguage' => get_bloginfo('language')];
-    if (has_post_thumbnail($id)) $schema['image'] = get_the_post_thumbnail_url($id, 'full');
-    if ($sku = get_post_meta($id, '_cml_sku', true)) $schema['sku'] = $sku;
-    echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_HEX_TAG | JSON_HEX_AMP) . '</script>';
-});
+require_once CML_CORE_DIR . '/includes/search-quality.php';
