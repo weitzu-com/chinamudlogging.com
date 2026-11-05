@@ -55,4 +55,11 @@ $verify(apply_filters('wpseo_metadesc','old')===$data['article']['description'],
 $verify(apply_filters('wpseo_schema_webpage',['dateModified'=>'2027-01-01T00:00:00Z'])['dateModified']==='2027-01-01T00:00:00Z','Later actual dates preserved');
 $id=$make('generic-unidentified-sensor');update_post_meta($id,'_cml_sku','TSFS-H2A-1');update_post_meta($id,'_cml_specifications',[['label'=>'Name','raw'=>'传感器 / Sensor.'],['label'=>'Source URL','raw'=>'https://emall.epec.com/productd/141652/15487381']]);$set(['post_type'=>'cml_product','p'=>$id]);
 $verify(cml_depth_context()===[],'No measurement inferred from suggestive SKU');
+$id=$make('quoted-designation');wp_update_post(['ID'=>$id,'post_title'=>'1"×60MPa Tee']);update_post_meta($id,'_cml_sku','1"×60MPa / 1%FS 中文');update_post_meta($id,'_cml_specifications',[['label'=>'Name','raw'=>'三通'],['label'=>'Source URL','raw'=>'https://emall.epec.com/productd/141652/15487381']]);$set(['post_type'=>'cml_product','p'=>$id]);$c=cml_depth_context();$html=cml_depth_component_html($c);
+$verify(!str_contains(cml_depth_plain_title(get_post($id)),'&#'),'Plain-text title decodes typography entities');
+preg_match_all('/href="([^"]+)"/',$html,$matches);$values=[];foreach($matches[1] as $href){parse_str(wp_parse_url(html_entity_decode($href),PHP_URL_QUERY)?:'',$args);if(isset($args['product']))$values[]=$args['product'];}
+$verify(in_array(html_entity_decode(get_the_title($id),ENT_QUOTES|ENT_HTML5,'UTF-8').' — catalogue designation: 1"×60MPa / 1%FS 中文',$values,true),'Quotes, percent and Unicode survive as text with exact raw designation');
+$verify(!str_contains(implode(' ',$values),'&#'),'No HTML entity syntax shown in inquiry context');
+$verify(!str_contains(apply_filters('wpseo_metadesc',''),'&#'),'Metadata remains plain text before escaping');
+$verify(get_post_meta($id,'_cml_sku',true)==='1"×60MPa / 1%FS 中文','Original model field is not normalized');
 file_put_contents('/cml-depth-results/depth-results.json',wp_json_encode(['passed'=>true,'assertions'=>$assertions,'families'=>30,'profiles'=>18,'legacy'=>2,'articles'=>1,'basePriorityAssertions'=>338]));

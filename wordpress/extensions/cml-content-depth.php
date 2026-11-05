@@ -58,6 +58,7 @@ function cml_depth_context(): array {
     $article = cml_depth_copy()['article'];
     return is_singular('post') && $post->post_name === $article['slug'] ? ['kind' => 'article', 'post' => $post, 'record' => $article] : [];
 }
+function cml_depth_plain_title(WP_Post $post): string { return wp_strip_all_tags(html_entity_decode(get_the_title($post), ENT_QUOTES | ENT_HTML5, 'UTF-8')); }
 function cml_depth_list(array $rows): string { return '<ul>' . implode('', array_map(fn($text) => '<li>' . esc_html($text) . '</li>', $rows)) . '</ul>'; }
 function cml_depth_rfq(string $request, string $label, string $lang = 'en'): string {
     return '<a class="cml-button" href="' . esc_url(add_query_arg('product', rawurlencode($request), cml_page_url('contact', $lang))) . '">' . esc_html($label) . ' →</a>';
@@ -76,7 +77,7 @@ function cml_depth_component_html(array $c): string {
     $html = '<section class="cml-depth-guide" id="cml-depth-guide"><h2>' . esc_html($r['title']) . '</h2><p>' . esc_html($r['scope']) . '</p><dl><dt>Retained catalogue designation</dt><dd><bdi>' . esc_html($p['sku']) . '</bdi></dd><dt>Retained source name</dt><dd>' . esc_html($p['name']) . '</dd></dl>';
     $html .= '<p><a href="' . esc_url(home_url('/product/mud-logging-sensors/#cml-depth-role-' . $p['role'])) . '">Read the selection checklist for this component role</a></p><h3>Documents and details to confirm for this item</h3>' . cml_depth_list($r['missing']);
     $html .= '<p>The items above are a request checklist, not confirmed documents or specifications for this catalogue record. Use the exact source reference to distinguish entries that share a short designation.</p><p><a href="' . esc_url($p['source']) . '" target="_blank" rel="noopener noreferrer">Supplier catalogue reference</a> · <a href="' . esc_url(home_url('/product-category/mud-logging-sensors/')) . '">Measurement and interface guide</a></p>';
-    return $html . cml_depth_rfq(get_the_title($c['post']) . ' — catalogue designation: ' . $p['sku'], 'Request the exact item and matched documents') . '</section>';
+    return $html . cml_depth_rfq(cml_depth_plain_title($c['post']) . ' — catalogue designation: ' . $p['sku'], 'Request the exact item and matched documents') . '</section>';
 }
 function cml_depth_record_html(array $c): string {
     $r = $c['record'];
@@ -105,7 +106,7 @@ add_filter('wpseo_metadesc', function ($original) {
     $c = cml_depth_context();
     if (($c['kind'] ?? '') === 'article') return $c['record']['description'];
     if (($c['kind'] ?? '') === 'legacy') return $c['record']['intro'];
-    if (($c['kind'] ?? '') === 'component') return get_the_title($c['post']) . ': confirm the exact item, installation interfaces and model-matched documents before replacement.';
+    if (($c['kind'] ?? '') === 'component') return cml_depth_plain_title($c['post']) . ': confirm the exact item, installation interfaces and model-matched documents before replacement.';
     return $original;
 }, 120);
 foreach (['wpseo_title', 'pre_get_document_title'] as $hook) add_filter($hook, function ($original) { $c = cml_depth_context(); return ($c['kind'] ?? '') === 'legacy' ? $c['record']['title'] . ' | ChinaMudLogging.com' : $original; }, 120);
