@@ -1,0 +1,951 @@
+{
+  "englishRecords": 315,
+  "treatmentCounts": {
+    "existing guide retained": 150,
+    "existing detailed source retained": 17,
+    "unknown-model identification guide": 2,
+    "source identity and role-specific document gaps": 131,
+    "pending source/model confirmation": 6,
+    "separate manual-enrichment record; not transferred": 9
+  },
+  "reclassifiedComponents": 10,
+  "profileCounts": {
+    "gas": 17,
+    "load": 2,
+    "pressure": 2,
+    "probe": 4,
+    "board": 16,
+    "battery": 4,
+    "mount": 14,
+    "charger": 3,
+    "simulator": 1,
+    "drawworks": 12,
+    "fitting": 23,
+    "potentiometer": 2,
+    "cable": 8,
+    "plug": 6,
+    "electronics": 12,
+    "antenna": 3,
+    "gas_test": 1,
+    "density_temperature": 1
+  },
+  "targets": [
+    {
+      "id": 590,
+      "slug": "scw-537-wireless-h2s-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Wireless Hydrogen Sulfide Sensor.",
+      "sku": "SCW-537"
+    },
+    {
+      "id": 593,
+      "slug": "csy-by-wireless-hookload-sensor",
+      "role": "load",
+      "name": "悬重传感器 / Wireless Hookload Sensor.",
+      "sku": "CSY-BY"
+    },
+    {
+      "id": 601,
+      "slug": "csy-aty-wireless-standpipe-pressure-sensor",
+      "role": "pressure",
+      "name": "立压传感器 / Wireless Standpipe Pressure Sensor.",
+      "sku": "CSY-ATY"
+    },
+    {
+      "id": 603,
+      "slug": "scw-536-wireless-ultrasonic-sensor",
+      "role": "probe",
+      "name": "超声波传感器 / Wireless Ultrasonic Sensor.",
+      "sku": "SCW-536"
+    },
+    {
+      "id": 607,
+      "slug": "an-02-volume-sensor-circuit-board",
+      "role": "board",
+      "name": "体积传感器电路板 / Volume Sensor Circuit Board.",
+      "sku": "AN-02"
+    },
+    {
+      "id": 609,
+      "slug": "wdas-battery-wireless-sensor-battery-pack",
+      "role": "battery",
+      "name": "无线传感器电池组 / Wireless Sensor Battery Pack.",
+      "sku": "WDAS-BATTERY"
+    },
+    {
+      "id": 613,
+      "slug": "csy-apy-wireless-casing-pressure-sensor-probe",
+      "role": "pressure",
+      "name": "套压传感器探头 / Wireless Casing Pressure Sensor Probe.",
+      "sku": "CSY-APY"
+    },
+    {
+      "id": 618,
+      "slug": "bk4-488-009-mud-sensor-mounting-frame",
+      "role": "mount",
+      "name": "泥浆传感器安装架 / Mud Sensor Mounting Frame.",
+      "sku": "BK4-488-009"
+    },
+    {
+      "id": 620,
+      "slug": "h2s-02-h2s-sensor-circuit-board",
+      "role": "board",
+      "name": "硫化氢传感器电路板 / H2S Sensor Circuit Board.",
+      "sku": "H2S-02"
+    },
+    {
+      "id": 632,
+      "slug": "scw-wireless-sensor-charger",
+      "role": "charger",
+      "name": "充电器 / Charger.",
+      "sku": "SCW"
+    },
+    {
+      "id": 633,
+      "slug": "mnq11-sensor-simulator",
+      "role": "simulator",
+      "name": "传感器模拟器 / Sensor Simulator.",
+      "sku": "MNQ11"
+    },
+    {
+      "id": 634,
+      "slug": "explorer-jcb-drawworks-sensor-circuit-board",
+      "role": "board",
+      "name": "绞车传感电路板 / Drawworks Sensor Circuit Board.",
+      "sku": "EXPLORER JCB"
+    },
+    {
+      "id": 635,
+      "slug": "torque-sensor-bracket",
+      "role": "mount",
+      "name": "支架 / Bracket.",
+      "sku": "Torque"
+    },
+    {
+      "id": 636,
+      "slug": "hu-41-wireless-drawworks-sensor-probe",
+      "role": "drawworks",
+      "name": "绞车传感探头 / Drawworks Sensor Probe.",
+      "sku": "HU-41"
+    },
+    {
+      "id": 637,
+      "slug": "h62-sensor-connector-fitting",
+      "role": "fitting",
+      "name": "接头 / Connector Fitting.",
+      "sku": "H62"
+    },
+    {
+      "id": 638,
+      "slug": "an-02-density-sensor-circuit-board",
+      "role": "board",
+      "name": "密度传感电路板 / Density Sensor Circuit Board.",
+      "sku": "AN-02"
+    },
+    {
+      "id": 640,
+      "slug": "dw-02-drawworks-sensor-circuit-board",
+      "role": "board",
+      "name": "绞车传感电路板 / Drawworks Sensor Circuit Board.",
+      "sku": "DW-02"
+    },
+    {
+      "id": 641,
+      "slug": "an-02-temperature-sensor-circuit-board",
+      "role": "board",
+      "name": "温度传感电路板 / Temperature Sensor Circuit Board.",
+      "sku": "AN-02"
+    },
+    {
+      "id": 642,
+      "slug": "an-02-hookload-sensor-circuit-board",
+      "role": "board",
+      "name": "悬重传感电路板 / Hookload Sensor Circuit Board.",
+      "sku": "AN-02"
+    },
+    {
+      "id": 643,
+      "slug": "an-02-flow-sensor-circuit-board",
+      "role": "board",
+      "name": "流量传感电路板 / Flow Sensor Circuit Board.",
+      "sku": "AN-02"
+    },
+    {
+      "id": 647,
+      "slug": "wdas-charger-wireless-lithium-battery-charger",
+      "role": "charger",
+      "name": "锂电池充电器 / Lithium Battery Charger.",
+      "sku": "WDAS-CHARGER"
+    },
+    {
+      "id": 654,
+      "slug": "we200z0-1k-potentiometer",
+      "role": "potentiometer",
+      "name": "电位器 / Potentiometer.",
+      "sku": "WE200Z0 1K"
+    },
+    {
+      "id": 666,
+      "slug": "wbd35d1-1k-potentiometer",
+      "role": "potentiometer",
+      "name": "电位器 / Potentiometer.",
+      "sku": "WBD35D1 1K"
+    },
+    {
+      "id": 667,
+      "slug": "gxj-g-type-clamp",
+      "role": "mount",
+      "name": "G型夹 / G-Type Clamp.",
+      "sku": "GXJ"
+    },
+    {
+      "id": 668,
+      "slug": "60mpa-high-pressure-sensor-line",
+      "role": "fitting",
+      "name": "高压管线 / High-Pressure Sensor Line.",
+      "sku": "60MPA"
+    },
+    {
+      "id": 669,
+      "slug": "9z01-sensor-bracket",
+      "role": "mount",
+      "name": "支架 / Bracket.",
+      "sku": "9Z01"
+    },
+    {
+      "id": 797,
+      "slug": "scw-wireless-sensor-battery-pack",
+      "role": "battery",
+      "name": "电池组 / Wireless Sensor Battery Pack.",
+      "sku": "SCW"
+    },
+    {
+      "id": 800,
+      "slug": "gyg11-sensor-connecting-tube",
+      "role": "fitting",
+      "name": "连接管 / Sensor Connecting Tube.",
+      "sku": "GYG11"
+    },
+    {
+      "id": 803,
+      "slug": "explorer-bc-sensor-mounting-bracket",
+      "role": "mount",
+      "name": "安装支架 / Sensor Mounting Bracket.",
+      "sku": "EXPLORER BC"
+    },
+    {
+      "id": 809,
+      "slug": "explorer-dd-sensor-mounting-bracket",
+      "role": "mount",
+      "name": "安装支架 / Sensor Mounting Bracket.",
+      "sku": "EXPLORER DD"
+    },
+    {
+      "id": 812,
+      "slug": "explorer-md-sensor-mounting-bracket",
+      "role": "mount",
+      "name": "安装支架 / Sensor Mounting Bracket.",
+      "sku": "EXPLORER MD"
+    },
+    {
+      "id": 815,
+      "slug": "explorer-wd-sensor-mounting-bracket",
+      "role": "mount",
+      "name": "安装支架 / Sensor Mounting Bracket.",
+      "sku": "EXPLORER WD"
+    },
+    {
+      "id": 818,
+      "slug": "trq-02-electric-torque-sensor-circuit-board",
+      "role": "board",
+      "name": "电扭矩传感电路板 / Electric Torque Sensor Circuit Board.",
+      "sku": "TRQ-02"
+    },
+    {
+      "id": 821,
+      "slug": "an-02-standpipe-pressure-sensor-circuit-board",
+      "role": "board",
+      "name": "立压传感电路板 / Standpipe Pressure Sensor Circuit Board.",
+      "sku": "AN-02"
+    },
+    {
+      "id": 824,
+      "slug": "an-02-casing-pressure-sensor-circuit-board",
+      "role": "board",
+      "name": "套压传感电路板 / Casing Pressure Sensor Circuit Board.",
+      "sku": "AN-02"
+    },
+    {
+      "id": 827,
+      "slug": "de-en-de-lithium-battery-charger",
+      "role": "charger",
+      "name": "锂电池充电器 / Lithium Battery Charger.",
+      "sku": "DE-EN-DE"
+    },
+    {
+      "id": 830,
+      "slug": "sy250-21-quick-connector",
+      "role": "fitting",
+      "name": "快速接头 / Quick Connector.",
+      "sku": "SY250 21"
+    },
+    {
+      "id": 833,
+      "slug": "scw-wireless-sensor-battery-pack-7128",
+      "role": "battery",
+      "name": "电池组 / Wireless Sensor Battery Pack.",
+      "sku": "SCW"
+    },
+    {
+      "id": 836,
+      "slug": "scjt-ks-quick-connector",
+      "role": "fitting",
+      "name": "快速接头 / Quick Connector.",
+      "sku": "SCJT-KS"
+    },
+    {
+      "id": 842,
+      "slug": "con-02-conductivity-sensor-circuit-board",
+      "role": "board",
+      "name": "电导率传感电路板 / Conductivity Sensor Circuit Board.",
+      "sku": "CON-02"
+    },
+    {
+      "id": 845,
+      "slug": "electromagnetic-5v-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "电磁 5V"
+    },
+    {
+      "id": 854,
+      "slug": "scw-531-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "SCW-531"
+    },
+    {
+      "id": 857,
+      "slug": "photoelectric-5v-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "光电 5V"
+    },
+    {
+      "id": 860,
+      "slug": "pump-stroke-sensor-bracket",
+      "role": "mount",
+      "name": "泵冲支架 / Pump-Stroke Sensor Bracket.",
+      "sku": "泵冲转速"
+    },
+    {
+      "id": 866,
+      "slug": "100ppm-1ppm-hydrogen-sulfide-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "100ppm 1ppm"
+    },
+    {
+      "id": 869,
+      "slug": "200ppm-1ppm-hydrogen-sulfide-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "200ppm 1ppm"
+    },
+    {
+      "id": 872,
+      "slug": "photoelectric-5v-drawworks-sensor-7231",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "光电 5V"
+    },
+    {
+      "id": 875,
+      "slug": "proximity-switch-8v-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "临近开关 8V"
+    },
+    {
+      "id": 881,
+      "slug": "csy-by-wireless-tee-manifold-line",
+      "role": "fitting",
+      "name": "三通管线 / Tee Manifold Line.",
+      "sku": "悬重CSY-BY"
+    },
+    {
+      "id": 887,
+      "slug": "800-das-0176-sensor-signal-cable",
+      "role": "cable",
+      "name": "信号线 / Sensor Signal Cable.",
+      "sku": "800.DAS.0176"
+    },
+    {
+      "id": 890,
+      "slug": "800-das-0177-sensor-signal-cable",
+      "role": "cable",
+      "name": "信号线 / Sensor Signal Cable.",
+      "sku": "800.DAS.0177"
+    },
+    {
+      "id": 893,
+      "slug": "tb50-1-4-tee-fitting",
+      "role": "fitting",
+      "name": "三通 / Tee Fitting.",
+      "sku": "TB50-1-4"
+    },
+    {
+      "id": 899,
+      "slug": "csy-by-wireless-mounting-connector",
+      "role": "fitting",
+      "name": "安装接头 / Mounting Connector.",
+      "sku": "悬重CSY-BY"
+    },
+    {
+      "id": 902,
+      "slug": "ia4000-34-connector-plug",
+      "role": "plug",
+      "name": "接插件 / Connector Plug.",
+      "sku": "IA4000-34孔"
+    },
+    {
+      "id": 905,
+      "slug": "800-das-0174-sensor-signal-cable",
+      "role": "cable",
+      "name": "信号线 / Sensor Signal Cable.",
+      "sku": "800.DAS.0174"
+    },
+    {
+      "id": 908,
+      "slug": "100-sen-0132-hydrogen-sulfide-probe",
+      "role": "gas",
+      "name": "硫化氢探头 / Hydrogen Sulfide Probe.",
+      "sku": "100.SEN.0132"
+    },
+    {
+      "id": 915,
+      "slug": "ia4006-34-connector-plug",
+      "role": "plug",
+      "name": "接插件 / Connector Plug.",
+      "sku": "IA4006-34针"
+    },
+    {
+      "id": 918,
+      "slug": "800-sen-0250-volume-probe",
+      "role": "probe",
+      "name": "体积探头 / Volume Probe.",
+      "sku": "800.SEN.0250"
+    },
+    {
+      "id": 921,
+      "slug": "wdas-mainstation-wireless-master-station",
+      "role": "electronics",
+      "name": "无线主站 / Wireless Master Station.",
+      "sku": "WDAS-MAINSTATION"
+    },
+    {
+      "id": 927,
+      "slug": "800-das-0175-sensor-signal-cable",
+      "role": "cable",
+      "name": "信号线 / Sensor Signal Cable.",
+      "sku": "800.DAS.0175"
+    },
+    {
+      "id": 930,
+      "slug": "100ppm-1ppm-hydrogen-sulfide-sensor-2",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "半导体 100ppm 1ppm"
+    },
+    {
+      "id": 933,
+      "slug": "100ppm-24v-carbon-monoxide-sensor",
+      "role": "gas",
+      "name": "一氧化碳传感器 / Carbon Monoxide Sensor.",
+      "sku": "有线 100ppm 24V"
+    },
+    {
+      "id": 939,
+      "slug": "proximity-switch-5v-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "临近开关 5V"
+    },
+    {
+      "id": 942,
+      "slug": "photoelectric-3-7v-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "光电 3.7V"
+    },
+    {
+      "id": 954,
+      "slug": "ct-02-wireless-master-station-circuit-board",
+      "role": "board",
+      "name": "主站电路板 / Master Station Circuit Board.",
+      "sku": "CT-02"
+    },
+    {
+      "id": 957,
+      "slug": "1a3000-34-connector-plug",
+      "role": "plug",
+      "name": "接插件 / Connector Plug.",
+      "sku": "1A3000-34孔"
+    },
+    {
+      "id": 960,
+      "slug": "433m-sma-19cm-wireless-omnidirectional-antenna",
+      "role": "antenna",
+      "name": "全向天线 / Omnidirectional Antenna.",
+      "sku": "433M SMA 19cm"
+    },
+    {
+      "id": 963,
+      "slug": "304-sensor-bracket",
+      "role": "mount",
+      "name": "支架 / Sensor Bracket.",
+      "sku": "304/夹子/安装盘"
+    },
+    {
+      "id": 966,
+      "slug": "m30-30-300mm-sensor-bracket",
+      "role": "mount",
+      "name": "支架 / Sensor Bracket.",
+      "sku": "M30×30×300mm"
+    },
+    {
+      "id": 969,
+      "slug": "sensor-mounting-bracket",
+      "role": "mount",
+      "name": "安装支架 / Sensor Mounting Bracket.",
+      "sku": "温度密度电导浮球体积"
+    },
+    {
+      "id": 972,
+      "slug": "csy-aty-wireless-tee-manifold-line",
+      "role": "fitting",
+      "name": "三通管线 / Tee Manifold Line.",
+      "sku": "立压CSY-ATY"
+    },
+    {
+      "id": 975,
+      "slug": "city-4hs-100-wireless-hydrogen-sulfide-probe",
+      "role": "gas",
+      "name": "硫化氢探头 / Hydrogen Sulfide Probe.",
+      "sku": "CITY 4HS+ 100"
+    },
+    {
+      "id": 978,
+      "slug": "wdas-analogbox-wireless-analog-transmission-box",
+      "role": "electronics",
+      "name": "模拟量传输盒 / Analog Transmission Box.",
+      "sku": "WDAS-ANALOGBOX"
+    },
+    {
+      "id": 981,
+      "slug": "100-sen-0092-wireless-temperature-module",
+      "role": "electronics",
+      "name": "温度模块 / Temperature Module.",
+      "sku": "100.SEN.0092"
+    },
+    {
+      "id": 984,
+      "slug": "csy-by-wireless-quick-lock-connector",
+      "role": "fitting",
+      "name": "快锁接头 / Quick-Lock Connector.",
+      "sku": "悬重CSY-BY"
+    },
+    {
+      "id": 987,
+      "slug": "433m-sma-20cm-wireless-omnidirectional-antenna",
+      "role": "antenna",
+      "name": "全向天线 / Omnidirectional Antenna.",
+      "sku": "433M SMA 20cm"
+    },
+    {
+      "id": 990,
+      "slug": "1-60mpa-standpipe-tee",
+      "role": "fitting",
+      "name": "立压三通 / Standpipe Tee.",
+      "sku": "1\"×60MPa"
+    },
+    {
+      "id": 993,
+      "slug": "4-wireless-isolated-serial-interface",
+      "role": "electronics",
+      "name": "隔离串口 / Isolated Serial Interface.",
+      "sku": "4路 防雷击保护"
+    },
+    {
+      "id": 996,
+      "slug": "csy-aty-wireless-mounting-connector",
+      "role": "fitting",
+      "name": "安装接头 / Mounting Connector.",
+      "sku": "立压CSY-ATY"
+    },
+    {
+      "id": 999,
+      "slug": "1a5006-34-connector-plug",
+      "role": "plug",
+      "name": "接插件 / Connector Plug.",
+      "sku": "1A5006-34针"
+    },
+    {
+      "id": 1002,
+      "slug": "cps-bd-0-hydrogen-sulfide-calibration-device",
+      "role": "gas_test",
+      "name": "硫化氢标定装置 / Hydrogen Sulfide Calibration Device.",
+      "sku": "CPS-BD-0"
+    },
+    {
+      "id": 1005,
+      "slug": "an-02-wireless-transmission-circuit-board",
+      "role": "board",
+      "name": "无线传输电路板 / Wireless Transmission Circuit Board.",
+      "sku": "AN-02"
+    },
+    {
+      "id": 1008,
+      "slug": "mb7369hrxl-maxsonar-wireless-volume-probe",
+      "role": "probe",
+      "name": "体积探头 / Volume Probe.",
+      "sku": "MB7369HRXL-MaxSonar"
+    },
+    {
+      "id": 1011,
+      "slug": "scw-53e-wireless-master-node",
+      "role": "electronics",
+      "name": "无线主节点 / Wireless Master Node.",
+      "sku": "SCW-53E"
+    },
+    {
+      "id": 1014,
+      "slug": "1a5000-34-connector-plug",
+      "role": "plug",
+      "name": "接插件 / Connector Plug.",
+      "sku": "1A5000-34孔"
+    },
+    {
+      "id": 1017,
+      "slug": "scw-53f-wireless-transmission-box",
+      "role": "electronics",
+      "name": "无线传输盒 / Wireless Transmission Box.",
+      "sku": "SCW-53F"
+    },
+    {
+      "id": 1020,
+      "slug": "bk2-930-284-battery-module",
+      "role": "battery",
+      "name": "电池模块 / Battery Module.",
+      "sku": "BK2-930-284"
+    },
+    {
+      "id": 1026,
+      "slug": "kze2-6-quick-connector",
+      "role": "fitting",
+      "name": "快速接头 / Quick Connector.",
+      "sku": "kze2-\"6\""
+    },
+    {
+      "id": 1030,
+      "slug": "433m-sma-5cm-wireless-omnidirectional-antenna",
+      "role": "antenna",
+      "name": "全向天线 / Omnidirectional Antenna.",
+      "sku": "433M SMA 5cm"
+    },
+    {
+      "id": 1033,
+      "slug": "800-das-0178-wireless-sensor-connecting-cable",
+      "role": "cable",
+      "name": "连接线 / Sensor Connecting Cable.",
+      "sku": "800.DAS.0178"
+    },
+    {
+      "id": 1036,
+      "slug": "1a3006-34-connector-plug",
+      "role": "plug",
+      "name": "接插件 / Connector Plug.",
+      "sku": "1A3006-34针"
+    },
+    {
+      "id": 1042,
+      "slug": "100lel-24v-combustible-gas-sensor",
+      "role": "gas",
+      "name": "可燃气体传感器 / Combustible Gas Sensor.",
+      "sku": "有线 100LEL 24V"
+    },
+    {
+      "id": 1045,
+      "slug": "csy-aty-wireless-quick-lock-connector",
+      "role": "fitting",
+      "name": "快锁接头 / Quick-Lock Connector.",
+      "sku": "立压CSY-ATY"
+    },
+    {
+      "id": 1048,
+      "slug": "cps-xz-01-11-tee-mount-base",
+      "role": "mount",
+      "name": "三通底座 / Tee Mount Base.",
+      "sku": "CPS-XZ-01-11"
+    },
+    {
+      "id": 1051,
+      "slug": "100-sen-0013-wireless-pump-stroke-module",
+      "role": "electronics",
+      "name": "泵冲模块 / Pump-Stroke Module.",
+      "sku": "100.SEN.0013"
+    },
+    {
+      "id": 1057,
+      "slug": "100ppm-24v-2ppm-hydrogen-sulfide-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "100ppm 24V 2ppm"
+    },
+    {
+      "id": 1063,
+      "slug": "200ppm-24v-2ppm-iatamb-hydrogen-sulfide-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "200ppm 24V 2ppm iaTamb"
+    },
+    {
+      "id": 1069,
+      "slug": "photoelectric-3-7v-drawworks-sensor-2",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "无线 光电 3.7V"
+    },
+    {
+      "id": 1072,
+      "slug": "100ppm-24v-2ppm-iatamb-hydrogen-sulfide-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "100ppm 24V 2ppm iaTamb"
+    },
+    {
+      "id": 1075,
+      "slug": "proximity-switch-28v-exiaiibt4-j-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "临近开关 28V ExiaIIBT4 J"
+    },
+    {
+      "id": 1078,
+      "slug": "photoelectric-5v-exib-bt6-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "光电 5V ExibⅡBT6"
+    },
+    {
+      "id": 1084,
+      "slug": "scw-53f-wireless-data-acquisition-transmission-module",
+      "role": "electronics",
+      "name": "无线数据采集传输模块 / Wireless Data Acquisition Transmission Module.",
+      "sku": "SCW-53F"
+    },
+    {
+      "id": 1087,
+      "slug": "ps-02-pump-stroke-speed-circuit-board",
+      "role": "board",
+      "name": "泵冲/转速电路板 / Pump-Stroke Speed Circuit Board.",
+      "sku": "PS-02"
+    },
+    {
+      "id": 1090,
+      "slug": "3-4-60mpa-standpipe-tee",
+      "role": "fitting",
+      "name": "立压三通 / Standpipe Tee.",
+      "sku": "3/4\"×60MPa"
+    },
+    {
+      "id": 1093,
+      "slug": "1-60mpa-standpipe-casing-pressure-adapter",
+      "role": "fitting",
+      "name": "立套压转接头 / Standpipe Casing Pressure Adapter.",
+      "sku": "1\"×60MPa"
+    },
+    {
+      "id": 1096,
+      "slug": "1-110mpa-standpipe-casing-pressure-adapter",
+      "role": "fitting",
+      "name": "立套压转接头 / Standpipe Casing Pressure Adapter.",
+      "sku": "1\"×110MPa"
+    },
+    {
+      "id": 1099,
+      "slug": "scw-53e-wireless-sensor-module",
+      "role": "electronics",
+      "name": "无线数据采集处理模块 / Sensor Module.",
+      "sku": "SCW-53E"
+    },
+    {
+      "id": 1102,
+      "slug": "1-2-60mpa-standpipe-tee",
+      "role": "fitting",
+      "name": "立压三通 / Standpipe Tee.",
+      "sku": "1/2\"×60MPa"
+    },
+    {
+      "id": 1105,
+      "slug": "bk6-489-058-sensor-accessory",
+      "role": "mount",
+      "name": "硫化氢传感器固定架 / Sensor Accessory.",
+      "sku": "BK6.489.058"
+    },
+    {
+      "id": 1108,
+      "slug": "hu-48y-t-sensor-module",
+      "role": "electronics",
+      "name": "流量传感器模块 / Sensor Module.",
+      "sku": "HU-48Y-T"
+    },
+    {
+      "id": 1114,
+      "slug": "photoelectric-8-4v-exiaiibt4-drawworks-sensor",
+      "role": "drawworks",
+      "name": "绞车传感器 / Drawworks Sensor.",
+      "sku": "无线 光电 8.4V EXiaIIBT4"
+    },
+    {
+      "id": 1120,
+      "slug": "pms103-8n1-wireless-data-acquisition-transmission-module",
+      "role": "electronics",
+      "name": "无线数据采集传输模块 / Wireless Data Acquisition Transmission Module.",
+      "sku": "PMS103 8N1"
+    },
+    {
+      "id": 1123,
+      "slug": "2-7-5-5v-sensor-circuit-board",
+      "role": "board",
+      "name": "电路板 / Sensor Circuit Board.",
+      "sku": "2.7-5.5V"
+    },
+    {
+      "id": 1132,
+      "slug": "800-das-0172-sensor-cable",
+      "role": "cable",
+      "name": "传感器信号线 / Sensor Cable.",
+      "sku": "800.DAS.0172"
+    },
+    {
+      "id": 1135,
+      "slug": "800-das-0170-sensor-cable",
+      "role": "cable",
+      "name": "传感器信号线 / Sensor Cable.",
+      "sku": "800.DAS.0170"
+    },
+    {
+      "id": 1138,
+      "slug": "800-das-0171-sensor-cable",
+      "role": "cable",
+      "name": "传感器信号线 / Sensor Cable.",
+      "sku": "800.DAS.0171"
+    },
+    {
+      "id": 1141,
+      "slug": "1000ppm-4-20ma-2ppm-sensor",
+      "role": "gas",
+      "name": "氢气传感器 / 氢气 Sensor.",
+      "sku": "有线 1000ppm 4-20mA 2ppm"
+    },
+    {
+      "id": 1180,
+      "slug": "100-24v-1-fs-iatamb-sensor",
+      "role": "gas",
+      "name": "二氧化碳传感器 / 二氧化碳 Sensor.",
+      "sku": "100% 24V 1%FS iaTamb"
+    },
+    {
+      "id": 1183,
+      "slug": "5-24v-1-fs-sensor",
+      "role": "gas",
+      "name": "二氧化碳传感器 / 二氧化碳 Sensor.",
+      "sku": "红外 5% 24V 1%FS"
+    },
+    {
+      "id": 1192,
+      "slug": "3-4-60mpa-standpipe-casing-pressure-adapter",
+      "role": "fitting",
+      "name": "立套压转接头 / Standpipe Casing Pressure Adapter.",
+      "sku": "3/4\"×60MPa"
+    },
+    {
+      "id": 1195,
+      "slug": "3-4-110mpa-standpipe-casing-pressure-adapter",
+      "role": "fitting",
+      "name": "立套压转接头 / Standpipe Casing Pressure Adapter.",
+      "sku": "3/4\"×110MPa"
+    },
+    {
+      "id": 1198,
+      "slug": "1-2-60mpa-standpipe-casing-pressure-adapter",
+      "role": "fitting",
+      "name": "立套压转接头 / Standpipe Casing Pressure Adapter.",
+      "sku": "1/2\"×60MPa"
+    },
+    {
+      "id": 1201,
+      "slug": "kie-z-6g1-4-connector",
+      "role": "fitting",
+      "name": "英制快速接头 / Connector.",
+      "sku": "KIE.Z-6G1/4"
+    },
+    {
+      "id": 1204,
+      "slug": "1-2-110mpa-standpipe-casing-pressure-adapter",
+      "role": "fitting",
+      "name": "立套压转接头 / Standpipe Casing Pressure Adapter.",
+      "sku": "1/2\"×110MPa"
+    },
+    {
+      "id": 1225,
+      "slug": "100p-3-7v-2p-hydrogen-sulfide-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "无线 100p 3.7V 2p"
+    },
+    {
+      "id": 1249,
+      "slug": "100p-8-4v-2ppm-hydrogen-sulfide-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "无线 电化学 100p 8.4V 2ppm"
+    },
+    {
+      "id": 1264,
+      "slug": "100ppm-0-2-6v-1ppm-hydrogen-sulfide-sensor",
+      "role": "gas",
+      "name": "硫化氢传感器 / Hydrogen Sulfide Sensor.",
+      "sku": "无线100ppm 0-2.6V 1ppm"
+    },
+    {
+      "id": 1327,
+      "slug": "10d-28v-4-20ma-1-fs-sensor",
+      "role": "load",
+      "name": "张力传感器 / 张力 Sensor.",
+      "sku": "有线 10D 28V 4-20mA 1%FS"
+    },
+    {
+      "id": 1342,
+      "slug": "ce-iz04-54c18-1-0-sensor-module",
+      "role": "electronics",
+      "name": "霍尔电流模块 / Sensor Module.",
+      "sku": "CE-IZ04-54C18-1.0"
+    },
+    {
+      "id": 1384,
+      "slug": "0-4-10m-8-4v-0-5-fs-sensor",
+      "role": "probe",
+      "name": "液位传感器 / 液位 Sensor.",
+      "sku": "无线0.4-10m 8.4V 0.5%FS"
+    },
+    {
+      "id": 1387,
+      "slug": "2-4g-cm3-24v-1-5-fs-sensor",
+      "role": "density_temperature",
+      "name": "密温传感器 / 密温 Sensor.",
+      "sku": "有线 2.4g/cm3 24V 1.5%FS"
+    }
+  ]
+}
