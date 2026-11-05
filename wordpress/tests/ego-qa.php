@@ -26,6 +26,7 @@ $check($stored&&$stored->mail_status==='failed','Mail failure preserves the save
 $accept_mail=fn()=>true;add_filter('pre_wp_mail',$accept_mail);
 $retried=$stored?cml_dispatch_inquiry((int)$stored->id):null;remove_filter('pre_wp_mail',$accept_mail);
 $check($retried==='transport_accepted','An explicit retry can notify a previously saved inquiry');
+update_option('cml_mail_enabled',false);
 $featured=wp_insert_post(['post_type'=>'cml_product','post_status'=>'publish','post_title'=>'QA curated product','meta_input'=>['_cml_source_id'=>'product:251']]);
 $unreviewed=wp_insert_post(['post_type'=>'cml_product','post_status'=>'publish','post_title'=>'QA newest catalogue addition','meta_input'=>['_cml_source_id'=>'product:999999']]);
 $home=cml_render('home');
