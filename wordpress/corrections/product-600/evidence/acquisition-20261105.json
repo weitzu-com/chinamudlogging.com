@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-11-05T00:38:08.595201+00:00",
+  "method": "Existing authenticated Chrome profile Tzu; read WordPress editor DOM embedded createPreloadingMiddleware JSON, key /wp/v2/cml_product/600?context=edit; read matching backend meta fields and post_lang_choice=en; no Update/Save action",
+  "url": "https://www.chinamudlogging.com/wp-admin/post.php?post=600&action=edit",
+  "baseline": "before-review.json is a selected-field transcription of raw preload values, not a full database dump or original HTTP response. content.raw and registered meta values retained exactly. No nonce or credentials retained.",
+  "coverage": [
+    "content.raw",
+    "excerpt.raw",
+    "registered REST meta including _cml_specifications and _cml_sku",
+    "identity, publish status, timestamps, featured image, taxonomy IDs",
+    "language independently read from post_lang_choice"
+  ],
+  "notRetrieved": [
+    "unregistered/private postmeta",
+    "revision bodies and authors",
+    "publication approval records"
+  ],
+  "ssh": "Existing cml-siteground alias: connection timed out during SSH banner exchange; no remote command executed",
+  "sourceBoundary": "EPEC original fields still rely on frozen PR8 audit; this pass confirms live WordPress values, not a new EPEC source verification",
+  "syntax": "PHP 8.2.35 cached @php-wasm runtime; TOKEN_PARSE; exporter source parsed, not executed",
+  "changes": "Only offline files generated; no content save, update, deployment or production correction request sent"
+}

@@ -1,0 +1,6 @@
+--- post_content/original-row
++++ post_content/proposed-rows
+@@ -1 +1,2 @@
+-<tr><th scope="row">Category note</th><td><bdi> 超声波体积 传感器配件</bdi></td></tr>
++<tr><th scope="row">Source specification label</th><td><bdi> 超声波体积</bdi></td></tr>
++<tr><th scope="row">Category note</th><td><bdi> 传感器配件</bdi></td></tr>
