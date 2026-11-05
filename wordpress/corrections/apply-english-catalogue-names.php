@@ -33,7 +33,19 @@ $verified = 0;
 if ($mode !== 'dry-run') foreach ($pending as $item) {
     $row = $item['row'];
     add_post_meta($row['id'], '_cml_ego_name_before_20261105', wp_slash(wp_json_encode($row['before'], JSON_UNESCAPED_UNICODE)), true);
-    $id = wp_update_post(wp_slash(['ID' => $row['id'], 'post_title' => $item['to']['title'], 'post_excerpt' => $item['to']['excerpt']]), true);
+    // CLI-only reviewed plain text includes literal comparisons such as <42V.
+    // KSES treats those source values as markup. Preserve them only during this
+    // guarded write, then restore the exact filters for this CLI process.
+    $removed = [];
+    foreach (['title_save_pre' => 'wp_filter_kses', 'excerpt_save_pre' => 'wp_filter_post_kses'] as $hook => $callback) {
+        $priority = has_filter($hook, $callback);
+        if ($priority !== false) { remove_filter($hook, $callback, $priority); $removed[] = [$hook, $callback, $priority]; }
+    }
+    try {
+        $id = wp_update_post(wp_slash(['ID' => $row['id'], 'post_title' => $item['to']['title'], 'post_excerpt' => $item['to']['excerpt']]), true);
+    } finally {
+        foreach ($removed as [$hook, $callback, $priority]) add_filter($hook, $callback, $priority);
+    }
     if (is_wp_error($id)) throw new RuntimeException('Update failed: ' . $row['id']);
     if ($invariant($id) !== $item['invariant']) throw new RuntimeException('Protected field changed: ' . $id);
     $post = get_post($id);
