@@ -31,6 +31,7 @@ function cml_priority_sensor($post): array {
         if (($row['label'] ?? '') === 'Name') $name = $row['raw'] ?? '';
     }
     if (!preg_match('~^https://emall\.epec\.com/productd/[0-9]+/[0-9]+$~D', $source)) return [];
+    foreach (['电路板', '支架', '固定架', '安装架', '模块'] as $component) if (str_contains($name, $component)) return [];
     // Classification uses the source name only, never numbers embedded in an SKU.
     foreach (cml_priority_copy()['measurements'] as $needle => $record) {
         if (str_contains($name, $needle)) return ['sku' => $sku, 'source' => $source, 'name' => $name, 'measurement' => $record];
