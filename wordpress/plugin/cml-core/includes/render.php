@@ -43,7 +43,7 @@ function cml_render(string $view, array $attributes = []): string {
             $value = get_post_meta($id, '_cml_' . $key, true);
             if ($value !== '') echo '<div><dt>' . esc_html(cml_t($label)) . '</dt><dd><bdi>' . esc_html($value) . '</bdi></dd></div>';
         }
-        echo '</dl><a class="cml-button" href="' . esc_url(add_query_arg('product', get_the_title(), cml_page_url('contact'))) . '">' . esc_html(cml_t('quote')) . ' →</a><p class="cml-note">' . esc_html(cml_t('confirmation')) . '</p></div></div>';
+        echo '</dl><a class="cml-button" href="' . esc_url(add_query_arg('product', rawurlencode(html_entity_decode(get_the_title(), ENT_QUOTES | ENT_HTML5, 'UTF-8')), cml_page_url('contact'))) . '">' . esc_html(cml_t('quote')) . ' →</a><p class="cml-note">' . esc_html(cml_t('confirmation')) . '</p></div></div>';
     } elseif ($view === 'inquiry') {
         echo '<div class="cml-inquiry-layout"><aside><p class="eyebrow">' . esc_html(cml_t('contact')) . '</p><h2>' . esc_html(cml_t('quote')) . '</h2><p>' . esc_html(cml_t('form_intro')) . '</p><a href="mailto:sales@chinamudlogging.com">sales@chinamudlogging.com</a><p><bdi>+86 183 5463 9099</bdi></p></aside><form data-cml-inquiry data-token="' . esc_url(rest_url('cml/v1/form-token')) . '" data-endpoint="' . esc_url(rest_url('cml/v1/inquiries')) . '" data-sending="' . esc_attr(cml_t('sending')) . '" data-saved="' . esc_attr(cml_t('saved')) . '" data-error="' . esc_attr(cml_t('form_error')) . '">';
         foreach (['name', 'email', 'company', 'country', 'product'] as $field) {

@@ -17,4 +17,4 @@ subprocess.run(['npx', '--yes', '@wp-playground/cli@3.1.62', 'run-blueprint',
     cwd=root, check=True, timeout=180)
 result = json.loads((output/'results.json').read_text())
 print(json.dumps(result))
-assert result['passed'] == result['total'] == 13
+assert result['passed'] == result['total'] == 15
