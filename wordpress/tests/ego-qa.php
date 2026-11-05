@@ -1,5 +1,7 @@
 <?php
 if (!defined('CML_EGO_QA_ISOLATED')) throw new RuntimeException('Isolated fixtures only.');
+define('WP_DEBUG',true);
+define('WP_DISABLE_FATAL_ERROR_HANDLER',true);
 require '/wordpress/wp-load.php';
 update_option('cml_mail_enabled',false);
 $checks=[];
@@ -31,14 +33,18 @@ $check(str_contains($home,'QA curated product')&&!str_contains($home,'QA newest 
 if (!defined('WP_CLI')) define('WP_CLI',true);
 if (!function_exists('pll_get_post_language')) { function pll_get_post_language($id) { return 'en'; } }
 $copy_plan=json_decode(file_get_contents('/cml/corrections/english-catalogue-names-20261105.json'),true);
-foreach ($copy_plan['records'] as $record) wp_insert_post(['import_id'=>$record['id'],'post_type'=>'cml_product','post_status'=>'publish','post_name'=>$record['slug'],'post_title'=>$record['before']['title'],'post_excerpt'=>$record['before']['excerpt'],'post_content'=>'Protected source table 24V 4-20mA']);
-$run_copy=function($operation){$args=['/cml/corrections/english-catalogue-names-20261105.json',$operation];ob_start();try{require '/cml/corrections/apply-english-catalogue-names.php';return json_decode(ob_get_contents(),true);}finally{ob_end_clean();}};
+foreach ($copy_plan['records'] as $record) {
+    wp_insert_post(['import_id'=>$record['id'],'post_type'=>'cml_product','post_status'=>'publish','post_name'=>$record['slug'],'post_title'=>'Source fixture','post_content'=>'<p>Protected source table &lt;42V 4-20mA</p>']);
+    $wpdb->update($wpdb->posts,['post_title'=>$record['before']['title'],'post_excerpt'=>$record['before']['excerpt']],['ID'=>$record['id']]);clean_post_cache($record['id']);
+}
+$run_copy=function($operation){$args=['/cml/corrections/english-catalogue-names-20261105.json',$operation];ob_start();try{require '/cml/corrections/apply-english-catalogue-names.php';return json_decode(ob_get_contents(),true);}catch(Throwable $e){file_put_contents('/cml-qa/copy-error.json',wp_json_encode(['message'=>$e->getMessage(),'trace'=>$e->getTraceAsString()]));throw $e;}finally{ob_end_clean();}};
+$copy_total=count($copy_plan['records']);
 $first=$copy_plan['records'][0];$last=end($copy_plan['records']);
 wp_update_post(['ID'=>$last['id'],'post_title'=>'Concurrent editor change']);
 $conflict=false;try{$run_copy('apply');}catch(RuntimeException $error){$conflict=str_contains($error->getMessage(),'Concurrent edit');}
 $check($conflict&&get_post($first['id'])->post_title===$first['before']['title'],'Catalogue name changes preflight every record before writing');
 wp_update_post(['ID'=>$last['id'],'post_title'=>$last['before']['title']]);
-$applied=$run_copy('apply');$check($applied['protected_field_checks_passed']===77,'All 77 name fixes preserve bodies, units, URLs, dates and technical fields');
-$again=$run_copy('apply');$check($again['already_at_target']===77&&$again['pending']===0,'Catalogue name correction is idempotent');
-$rolled_back=$run_copy('rollback');$check($rolled_back['protected_field_checks_passed']===77&&get_post($first['id'])->post_title===$first['before']['title'],'Catalogue name rollback restores the original fields');
+$applied=$run_copy('apply');$check($applied['protected_field_checks_passed']===$copy_total,'All catalogue copy fixes preserve bodies, units, URLs, dates and technical fields');
+$again=$run_copy('apply');$check($again['already_at_target']===$copy_total&&$again['pending']===0,'Catalogue name correction is idempotent');
+$rolled_back=$run_copy('rollback');$check($rolled_back['protected_field_checks_passed']===$copy_total&&get_post($first['id'])->post_title===$first['before']['title'],'Catalogue name rollback restores the original fields');
 $result=['checks'=>$checks,'passed'=>count(array_filter($checks,fn($r)=>$r['passed'])),'total'=>count($checks)];file_put_contents('/cml-qa/results.json',wp_json_encode($result));echo wp_json_encode($result);

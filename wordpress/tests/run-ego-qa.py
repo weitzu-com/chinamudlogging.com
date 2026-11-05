@@ -4,6 +4,7 @@ from pathlib import Path
 root = Path(__file__).resolve().parents[2]
 output = Path.home()/'.cache/chinamudlogging-wordpress/ego-inquiry-fixtures'
 output.mkdir(parents=True, exist_ok=True)
+(output/'results.json').unlink(missing_ok=True)
 blueprint = output/'blueprint.json'
 blueprint.write_text(json.dumps({'steps': [
     {'step': 'activatePlugin', 'pluginPath': 'cml-core/cml-core.php'},
