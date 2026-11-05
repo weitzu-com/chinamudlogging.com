@@ -56,6 +56,8 @@ for row in rows:
     canvas = Image.new('RGB',(1200,900),'#0b0405'); draw=ImageDraw.Draw(canvas)
     draw.rectangle((8,66,1191,847),fill='#f7f7f7')
     draw.text((36,18),'chinamudlogging.com',font=font(30),fill='white')
+    if row.get('ai_concept'):
+        draw.text((895,22),'AI ILLUSTRATION',font=font(22),fill='#ffffff')
     draw.line((36,64,1164,64),fill='#382e30',width=1)
     position = ((1200-art.width)//2,80+(740-art.height)//2)
     canvas.paste(art,position)
@@ -74,6 +76,6 @@ for row in rows:
     full=args.output/(name+'.webp'); small=args.output/(name+'-800.webp')
     canvas.save(full,'WEBP',quality=90,method=6)
     canvas.resize((800,600),Image.Resampling.LANCZOS).save(small,'WEBP',quality=87,method=6)
-    results.append({'index':row['index'],'attachment':row['id'],'source_sha256':row['sha256'],'file':full.name,'small':small.name,'sha256':hashlib.sha256(full.read_bytes()).hexdigest(),'small_sha256':hashlib.sha256(small.read_bytes()).hexdigest(),'corner_mark_removed':mask is not None,'placeholder':placeholder,'mask_box':mask,'trim_box':crop,'placement':[position[0],position[1],art.width,art.height],'source_dimensions':list(rgb.size),'outside_mark_pixel_changes':0,'bytes':full.stat().st_size,'small_bytes':small.stat().st_size})
+    results.append({'index':row['index'],'attachment':row['id'],'source_sha256':row['sha256'],'file':full.name,'small':small.name,'sha256':hashlib.sha256(full.read_bytes()).hexdigest(),'small_sha256':hashlib.sha256(small.read_bytes()).hexdigest(),'corner_mark_removed':mask is not None,'placeholder':placeholder,'ai_concept':bool(row.get('ai_concept')),'mask_box':mask,'trim_box':crop,'placement':[position[0],position[1],art.width,art.height],'source_dimensions':list(rgb.size),'outside_mark_pixel_changes':0,'bytes':full.stat().st_size,'small_bytes':small.stat().st_size})
 (args.output/'manifest.json').write_text(json.dumps({'canvas':[1200,900],'watermark':'chinamudlogging.com','font_sha256':hashlib.sha256(args.font.read_bytes()).hexdigest(),'images':results},indent=2)+'\n')
 print(json.dumps({'images':len(results),'reviewed_corner_marks':sum(r['corner_mark_removed'] for r in results),'bytes':sum(r['bytes']+r['small_bytes'] for r in results)}))
