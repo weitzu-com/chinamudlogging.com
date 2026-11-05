@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ChinaMudLogging Sensor Selection
  * Description: Source-bounded selection, compatibility and documentation guidance for priority English sensors.
- * Version: 1.4.0
+ * Version: 1.5.0
  * Requires PHP: 8.2
  */
 defined('ABSPATH') || exit;
@@ -46,19 +46,38 @@ function cml_sensor_records(): array {
         'oil-fluoroscope-uv-box' => ['fluoroscope', 'Oil Fluoroscope UV Box: YG1501 Selection & Documentation', 'Oil fluoroscope UV box', 'The source identifies YG1501. Do not assume it is interchangeable with another UV box because some listed values look similar. Confirm the optical, electrical, enclosure and sample-use configuration together.'],
         'oil-fluoroscope-uv-lamp-box' => ['fluoroscope', 'Oil Fluoroscope UV Lamp Box: Selection & Technical Review', 'Oil fluoroscope UV lamp box', 'This sparse record does not establish a complete model-specific specification or validated analysis method. Request the exact model, optical/electrical details and operating documents; do not copy values from another fluoroscope page.'],
         'mud-logging-explosion-proof-monitor' => ['display', 'Mud Logging Explosion-Proof Monitor: Configuration Review', 'Mud logging explosion-proof monitor', 'The source combines power, screen-size and hazardous-area descriptions without a verified order-specific approval package. Confirm the actual display/enclosure configuration, interfaces, nameplate and applicable documents; do not combine all catalogue options into one approved unit.'],
+        'industrial-computer-with-als-2-2-system' => ['computer', 'Industrial Computer with ALS 2.2: Configuration & Interfaces', 'Industrial computer with ALS 2.2 system', 'The source mainly describes a rackmount chassis. It does not establish the installed CPU, memory, storage, acquisition boards, operating system, drivers or ALS licence. A connector opening or chassis slot count is not proof of an installed compatible interface.'],
+        'drilling-monitoring' => ['monitoring_project', 'Drilling Monitoring Systems: Configuration & RFQ Scope', 'Drilling monitoring project', 'This overview does not identify a complete supplied system or channel list. Define the project, existing installation and included hardware/software before comparing offers; individual catalogue components do not establish a configured monitoring system.'],
+        'formation-evaluation' => ['evaluation_project', 'Formation Evaluation Equipment: Workflow & Project Scope', 'Formation evaluation project', 'This overview does not establish a complete analytical workflow or quantitative interpretation capability. Define the required surface mud logging, gas/sample handling and evaluation functions, then confirm the included equipment and method evidence.'],
+    ];
+}
+function cml_system_hub_records(): array {
+    return [
+        'drilling-monitoring' => ['monitoring_catalogue', 'Drilling Monitoring Equipment Catalogue & Integration', 'Drilling monitoring equipment catalogue', 'Browse the existing computers, displays and project overview below. This is a component-selection catalogue, not a declared complete system package. Use the project page to define included channels, software, interfaces and acceptance.'],
+        'formation-evaluation' => ['evaluation_catalogue', 'Formation Evaluation Catalogue: Degassers & UV Boxes', 'Formation evaluation equipment catalogue', 'Browse the existing surface gas-extraction and sample-observation records below. Their presence in this family does not establish a complete analyser, quantitative interpretation method or downhole logging package.'],
     ];
 }
 function cml_sensor_context(): array {
-    if (is_admin() || !is_singular('cml_product') || !function_exists('cml_language') || cml_language() !== 'en') return [];
-    $post = get_queried_object();
-    $record = cml_sensor_records()[$post->post_name ?? ''] ?? [];
-    return $record ? ['slug' => $post->post_name, 'type' => $record[0], 'title' => $record[1], 'label' => $record[2], 'sourceNote' => $record[3]] : [];
+    if (is_admin() || !function_exists('cml_language') || cml_language() !== 'en') return [];
+    $object = get_queried_object();
+    $scope = 'product';
+    if (is_singular('cml_product')) {
+        $slug = $object->post_name ?? '';
+        $record = cml_sensor_records()[$slug] ?? [];
+    } elseif (is_tax('cml_family') && !is_paged()) {
+        foreach (['q', 'family'] as $key) if (isset($_GET[$key]) && (!is_scalar($_GET[$key]) || (string)$_GET[$key] !== '')) return [];
+        if (isset($_GET['catalog_page']) && (!is_scalar($_GET['catalog_page']) || !in_array((string)$_GET['catalog_page'], ['', '1'], true))) return [];
+        $slug = $object->slug ?? '';
+        $record = cml_system_hub_records()[$slug] ?? [];
+        $scope = 'hub';
+    } else return [];
+    return $record ? ['slug' => $slug, 'scope' => $scope, 'type' => $record[0], 'title' => $record[1], 'label' => $record[2], 'sourceNote' => $record[3]] : [];
 }
 function cml_sensor_url(string $slug): string { return home_url('/product/' . $slug . '/'); }
 function cml_sensor_link(string $slug, string $label): string { return '<a href="' . esc_url(cml_sensor_url($slug)) . '">' . esc_html($label) . '</a>'; }
 function cml_sensor_rfq(array $context, bool $documents = false): string {
     $request = $context['label'] . ($documents ? ' - request current datasheet, wiring and model-matched documentation' : ' - selection and interface compatibility review');
-    return '<a class="cml-button" href="' . esc_url(add_query_arg('product', $request, cml_page_url('contact', 'en'))) . '">' . ($documents ? 'Request technical documents' : (in_array($context['type'], ['wireless_master', 'wireless_system', 'power', 'degasser', 'fluoroscope', 'display'], true) ? 'Check this configuration for my system' : 'Check this sensor for my system')) . ' →</a>';
+    return '<a class="cml-button" href="' . esc_url(add_query_arg('product', $request, cml_page_url('contact', 'en'))) . '">' . ($documents ? 'Request technical documents' : (in_array($context['type'], ['wireless_master', 'wireless_system', 'power', 'degasser', 'fluoroscope', 'display', 'computer', 'monitoring_project', 'evaluation_project', 'monitoring_catalogue', 'evaluation_catalogue'], true) ? 'Check this configuration for my system' : 'Check this sensor for my system')) . ' →</a>';
 }
 foreach (['wpseo_title', 'pre_get_document_title'] as $hook) add_filter($hook, function ($title) { $c = cml_sensor_context(); return $c ? $c['title'] . ' | ChinaMudLogging.com' : $title; }, 95);
 add_filter('wpseo_metadesc', function ($description) {
@@ -67,11 +86,11 @@ add_filter('wpseo_metadesc', function ($description) {
 }, 95);
 add_action('wp_enqueue_scripts', function () {
     if (!cml_sensor_context()) return;
-    wp_register_style('cml-sensor-selection', false, [], '1.4.0'); wp_enqueue_style('cml-sensor-selection');
+    wp_register_style('cml-sensor-selection', false, [], '1.5.0'); wp_enqueue_style('cml-sensor-selection');
     wp_add_inline_style('cml-sensor-selection', '.cml-sensor-guide{margin-block:2rem;padding:clamp(1rem,3vw,2rem);background:#f4f8f8;border:1px solid #ccd6dc;border-radius:12px}.cml-sensor-guide h2{font-size:clamp(1.5rem,3vw,2.1rem)}.cml-sensor-guide nav{display:flex;gap:.7rem 1.2rem;flex-wrap:wrap}.cml-sensor-guide nav a{display:inline-flex;align-items:center;min-height:44px}.cml-sensor-table{overflow-x:auto;max-width:100%}.cml-sensor-table table{width:100%;min-width:520px;border-collapse:collapse}.cml-sensor-table td,.cml-sensor-table th{padding:.8rem;text-align:left;vertical-align:top;border:1px solid #ccd6dc}.cml-sensor-guide li{margin-block:.5rem}.cml-sensor-guide a{overflow-wrap:anywhere}.cml-sensor-source{scroll-margin-top:2rem}');
 }, 30);
 function cml_sensor_quick(array $c): string {
-    return '<section class="cml-sensor-guide" aria-labelledby="cml-sensor-heading"><p class="eyebrow">Selection &amp; system integration</p><h2 id="cml-sensor-heading">Before choosing this ' . esc_html(['temperature' => 'temperature sensor', 'flow' => 'flow-out sensor', 'pump' => 'pump stroke sensor', 'density' => 'mud density sensor', 'conductivity' => 'mud conductivity sensor', 'level_ultrasonic' => 'ultrasonic level sensor', 'level_radar' => 'radar level transmitter', 'pressure' => 'pressure sensor', 'torque' => 'electric torque sensor', 'depth' => 'depth encoder', 'hook' => 'hookload sensor', 'gas' => 'H2S sensor', 'wireless_master' => 'wireless master station', 'wireless_system' => 'wireless sensor system', 'power' => 'battery and charger', 'degasser' => 'mud logging degasser', 'fluoroscope' => 'oil fluoroscope', 'display' => 'display and enclosure'][$c['type']]) . '</h2><p>' . esc_html($c['sourceNote']) . '</p><nav aria-label="Sensor selection shortcuts"><a href="#cml-sensor-compatibility">Check compatibility</a><a href="#cml-sensor-documents">Technical documentation</a><a href="#cml-sensor-source">Review the source record</a></nav><div class="cml-actions">' . cml_sensor_rfq($c) . '</div></section>';
+    return '<section class="cml-sensor-guide" aria-labelledby="cml-sensor-heading"><p class="eyebrow">Selection &amp; system integration</p><h2 id="cml-sensor-heading">Before choosing this ' . esc_html(['temperature' => 'temperature sensor', 'flow' => 'flow-out sensor', 'pump' => 'pump stroke sensor', 'density' => 'mud density sensor', 'conductivity' => 'mud conductivity sensor', 'level_ultrasonic' => 'ultrasonic level sensor', 'level_radar' => 'radar level transmitter', 'pressure' => 'pressure sensor', 'torque' => 'electric torque sensor', 'depth' => 'depth encoder', 'hook' => 'hookload sensor', 'gas' => 'H2S sensor', 'wireless_master' => 'wireless master station', 'wireless_system' => 'wireless sensor system', 'power' => 'battery and charger', 'degasser' => 'mud logging degasser', 'fluoroscope' => 'oil fluoroscope', 'display' => 'display and enclosure', 'computer' => 'industrial computer configuration', 'monitoring_project' => 'drilling monitoring project', 'evaluation_project' => 'formation evaluation project', 'monitoring_catalogue' => 'drilling monitoring component', 'evaluation_catalogue' => 'formation evaluation component'][$c['type']]) . '</h2><p>' . esc_html($c['sourceNote']) . '</p><nav aria-label="Sensor selection shortcuts"><a href="#cml-sensor-compatibility">Check compatibility</a><a href="#cml-sensor-documents">Technical documentation</a><a href="#cml-sensor-source">' . (($c['scope'] ?? 'product') === 'hub' ? 'Browse equipment' : 'Review the source record') . '</a></nav><div class="cml-actions">' . cml_sensor_rfq($c) . '</div></section>';
 }
 function cml_sensor_content(array $c): string {
     $rows = [
@@ -183,6 +202,36 @@ function cml_sensor_content(array $c): string {
             ['Enclosure and site configuration', 'Confirm mounting dimensions, materials, viewing arrangement, ambient conditions and cable-entry/gland assembly. Identify the required gas/dust installation conditions for order-specific technical review.'],
             ['Markings and documentation', 'Request the complete order code, nameplate, applicable certificate with schedule/conditions and matching enclosure/display/gland documents. Do not combine catalogue Zone/Division, gas/dust or size options into one independently verified approval.'],
         ],
+        'computer' => [
+            ['Chassis versus installed computer', 'Request the order-specific bill of materials: CPU, memory, storage, power supply, backplane/motherboard and installed cards. Chassis capacity does not establish delivered acquisition channels or computing performance.'],
+            ['ALS software and lifecycle', 'Confirm the ALS version/build, licence and installation deliverables, supported operating system, drivers, recovery/backup arrangements and support responsibilities. The title alone does not prove a licensed ready-to-use installation.'],
+            ['Acquisition and host interfaces', 'Identify each installed interface/card, electrical levels, protocol, connector/pinout and sensor/receiver requirements. A D-Sub opening does not establish a working serial port or compatibility with existing equipment.'],
+            ['Integration and acceptance', 'Agree channel mapping, units/scaling, timestamps, data quality, representative input/replay tests and recovery checks. Request mechanical, power, environmental and configuration-matched documentation before accepting the offer.'],
+        ],
+        'monitoring_project' => [
+            ['Project boundary', 'State new system, upgrade or replacement, rig application, existing equipment and required measurements. Ask the offer to identify included sensors, receivers, acquisition, computer/display, software and exclusions.'],
+            ['Channel and interface schedule', 'List channels, units/ranges, supply, input/output circuit, protocol, connectors and mounting. Confirm the exact receiving hardware and software rather than assuming every component can be connected directly.'],
+            ['Data and software integration', 'Agree software versions/licences, channel mapping, time reference, scaling, recording/export and missing/stale-data behaviour. If WITS integration is required, specify variant, records and host configuration.'],
+            ['Commissioning and acceptance', 'Define reference/functional tests, documentation, configuration backup/recovery and responsibilities. If alarms, training or site services are required, specify their scope and acceptance evidence separately.'],
+        ],
+        'evaluation_project' => [
+            ['Workflow and required result', 'Define surface mud logging, gas extraction/conditioning, sample observation or a separately specified analytical result. A family name does not establish downhole logging or quantitative reservoir-interpretation capability.'],
+            ['Equipment and sample path', 'Identify collection/extraction equipment, gas-line conditioning, any downstream analyser, sample preparation and observation equipment. Confirm what is included and what must be supplied by others.'],
+            ['Interfaces and records', 'Specify gas-line/mechanical connections, utilities, analyser/data interfaces, sample/reference identification and required output records. Extraction or visual fluorescence alone does not establish an analytical result.'],
+            ['Method and acceptance evidence', 'Request matched manuals, reference/inspection procedures, method evidence where needed and operator/site responsibilities. Agree the workflow acceptance criteria before comparing complete-package offers.'],
+        ],
+        'monitoring_catalogue' => [
+            ['Computer and acquisition host', 'Use the industrial-computer record to request installed hardware, ALS software/licence, drivers and acquisition interfaces. Treat chassis features separately from the delivered configuration.'],
+            ['Display and enclosure', 'Use the monitor record to confirm video/data/power versions, mounting and order-specific enclosure documentation. Confirm whether host, application software or touch functions are included.'],
+            ['Sensors and wireless links', 'Compare required measurements with the wired/wireless catalogues. Match supply, signal/protocol, receiver and input circuit; the current listing is not a complete channel schedule.'],
+            ['A complete drilling monitoring project', 'Use the project overview to request an itemized scope, integration responsibilities, channel/data mapping and acceptance plan. The catalogue is the browsing route; the project RFQ defines the package.'],
+        ],
+        'evaluation_catalogue' => [
+            ['Gas extraction and conditioning', 'Compare degasser records for the sampling duty, motor/utilities, mounting and gas path. Gas extraction is separate from any downstream analyser and its performance.'],
+            ['Sample fluorescence observation', 'Compare UV-box records for the exact optical/electrical configuration, sample space, operating documentation and reference method. Do not treat visual colour as quantitative oil content.'],
+            ['Additional analytical requirements', 'If an analyser, sample-preparation accessory or quantitative interpretation is required, list it explicitly and request a suitable configuration and method evidence. Presence in this family does not establish inclusion.'],
+            ['A complete evaluation workflow', 'Use the project overview to define equipment, sample/gas interfaces, records, responsibilities and acceptance criteria. Preserve the difference between an individual instrument and an integrated workflow.'],
+        ],
     ][$c['type']];
     if (str_starts_with($c['slug'], 'wireless-')) $rows[] = ['Wireless system boundary', 'Confirm paired transmitter and receiver, receiver output, power requirements, radio/region compatibility and acquisition wiring. A local sensor voltage is not automatically the receiver output.'];
     $documents = [
@@ -204,6 +253,11 @@ function cml_sensor_content(array $c): string {
         'degasser' => ['Exact model/motor datasheet, assembly and gas-path drawings.', 'Matched supply/control wiring, installation and maintenance instructions.', 'Extraction/gas-line verification and agreed acceptance criteria; applicable assembly approval documents if required.'],
         'fluoroscope' => ['Model-specific optical/electrical datasheet, enclosure and sample-space dimensions.', 'Manufacturer operating, UV protection, material compatibility and lamp-service instructions.', 'Inspection/reference procedure and any separately validated analytical-method evidence required for the order.'],
         'display' => ['Exact order code, display/enclosure datasheets and mounting/cable-entry drawings.', 'Video/data/touch and power-version wiring with host compatibility requirements.', 'Nameplate, applicable certificate schedules/conditions and configuration-matched inspection documents.'],
+        'computer' => ['Order-specific hardware bill of materials and installed-interface/backplane drawings.', 'ALS build/licence, operating-system and driver compatibility, installation/recovery documentation.', 'Channel mapping, integration/functional-test plan, environmental limits and configuration-matched inspection records.'],
+        'monitoring_project' => ['Itemized equipment/software scope and channel/interface schedule with exclusions.', 'Wiring, protocol/data mapping, software/licence and configuration/recovery documents.', 'Functional/reference tests, site-service responsibilities and agreed acceptance evidence.'],
+        'evaluation_project' => ['Equipment and sample/gas workflow diagram identifying any analyser and exclusions.', 'Matched mechanical/utility/data interfaces, operating manuals and required reference/method evidence.', 'Record format, commissioning responsibilities and workflow acceptance criteria.'],
+        'monitoring_catalogue' => ['Selected model datasheets, installed-interface drawings and component compatibility matrix.', 'Itemized system/upgrade scope with software/licence, channel mapping and exclusions.', 'Integration test plan, recovery documents and any applicable order-specific approval evidence.'],
+        'evaluation_catalogue' => ['Selected degasser/UV-box datasheets and matched operating/connection drawings.', 'Equipment/workflow scope separating extraction, observation and any analytical function.', 'Reference/method evidence and agreed workflow or component acceptance criteria.'],
     ][$c['type']];
     $related = [
         'temperature' => ['mud-temperature-sensor' => 'Mud temperature catalogue record', 'drilling-fluid-temperature-sensor' => 'Drilling fluid temperature probe record'],
@@ -224,6 +278,11 @@ function cml_sensor_content(array $c): string {
         'degasser' => ['mud-logging-ex-proof-degasser' => 'Mud logging degasser', 'yc-03d-electric-mud-degasser' => 'YC-03D electric mud degasser'],
         'fluoroscope' => ['mud-logging-oil-fluoroscope-uv-lamp-box' => 'Mud logging oil fluoroscope UV lamp box', 'oil-fluoroscope-uv-box' => 'Oil fluoroscope UV box', 'oil-fluoroscope-uv-lamp-box' => 'Oil fluoroscope UV lamp box'],
         'display' => ['mud-logging-explosion-proof-monitor' => 'Mud logging explosion-proof monitor', 'drilling-monitoring' => 'Drilling monitoring system scope (confirm what is included)'],
+        'computer' => ['industrial-computer-with-als-2-2-system' => 'Industrial computer and ALS configuration', 'mud-logging-explosion-proof-monitor' => 'Display and enclosure configuration', 'drilling-monitoring' => 'Drilling monitoring project scope'],
+        'monitoring_project' => ['industrial-computer-with-als-2-2-system' => 'Industrial computer and ALS configuration', 'mud-logging-explosion-proof-monitor' => 'Display and enclosure configuration', 'drilling-monitoring' => 'Drilling monitoring project scope'],
+        'monitoring_catalogue' => ['industrial-computer-with-als-2-2-system' => 'Industrial computer and ALS configuration', 'mud-logging-explosion-proof-monitor' => 'Display and enclosure configuration', 'drilling-monitoring' => 'Drilling monitoring project scope'],
+        'evaluation_project' => ['yc-03d-electric-mud-degasser' => 'YC-03D gas extraction record', 'mud-logging-ex-proof-degasser' => 'CL-DT degasser record', 'mud-logging-oil-fluoroscope-uv-lamp-box' => 'CNPS-OL1501 fluorescence record', 'oil-fluoroscope-uv-box' => 'YG1501 UV-box record', 'formation-evaluation' => 'Formation evaluation project scope'],
+        'evaluation_catalogue' => ['yc-03d-electric-mud-degasser' => 'YC-03D gas extraction record', 'mud-logging-ex-proof-degasser' => 'CL-DT degasser record', 'mud-logging-oil-fluoroscope-uv-lamp-box' => 'CNPS-OL1501 fluorescence record', 'oil-fluoroscope-uv-box' => 'YG1501 UV-box record', 'formation-evaluation' => 'Formation evaluation project scope'],
     ][$c['type']];
     ob_start(); ?>
     <section class="cml-sensor-guide" id="cml-sensor-compatibility" aria-labelledby="cml-sensor-check-heading">
@@ -262,6 +321,16 @@ function cml_sensor_content(array $c): string {
       <h3>Does fluorescence colour directly establish oil content?</h3><p>The records describe visual observation and also mention mineral fluorescence and contamination. A colour description alone does not establish quantitative oil content or oil quality. If a quantitative result is required, request a separately validated method and appropriate instrument evidence.</p>
       <?php elseif ($c['type'] === 'display'): ?>
       <h3>Is the monitor an entire logging or gas-monitoring system?</h3><p>This record concerns a display/enclosure configuration. Confirm whether a host computer, application software, touch functions and cabling are included. The title and printed catalogue marking are not independent verification of certification for the exact supplied assembly.</p>
+      <?php elseif ($c['type'] === 'computer'): ?>
+      <h3>Does a computer chassis with an ALS title prove a complete logging workstation?</h3><p>No. Confirm the installed hardware, licensed software, operating system, drivers and acquisition configuration as one documented order. A case opening, connector shape or expansion capacity does not establish an installed compatible interface.</p>
+      <?php elseif ($c['type'] === 'monitoring_project'): ?>
+      <h3>What is included in a drilling monitoring system?</h3><p>Ask for an itemized configuration and channel list. Confirm sensors, receivers, acquisition, computer/display, licensed software, data mapping and acceptance responsibilities separately. This overview is a project starting point, not proof that every function is included.</p>
+      <?php elseif ($c['type'] === 'evaluation_project'): ?>
+      <h3>Does this overview establish a complete formation evaluation package?</h3><p>No. Define the required surface sampling, observation and analytical functions, identify the equipment and methods, and agree acceptance evidence. Do not infer downhole or quantitative interpretation capability from the catalogue name.</p>
+      <?php elseif ($c['type'] === 'monitoring_catalogue'): ?>
+      <h3>How should I use this drilling monitoring catalogue?</h3><p>Browse the original component cards, compare the linked configuration checks and use the project page for an integrated-system RFQ. The selected computer or display is a component until the complete hardware, software and channel scope is agreed.</p>
+      <?php elseif ($c['type'] === 'evaluation_catalogue'): ?>
+      <h3>How should I choose formation evaluation components?</h3><p>Start with the required sample or gas workflow, then compare the actual degasser and UV-box records below. Specify any additional analyser or method evidence separately; the category title is not a claim of complete analytical capability.</p>
       <?php else: ?>
       <h3>Which temperature sensor details are still needed?</h3><p>The reviewed temperature records do not establish a complete model-specific electrical and mechanical configuration. Provide the existing nameplate or required measurement point, then confirm the sensing element/transmitter, range, output, probe geometry and acquisition input together.</p>
       <?php endif; ?>
@@ -273,16 +342,20 @@ function cml_sensor_content(array $c): string {
       <?php endif; ?>
       <ul><?php foreach ($documents as $document) echo '<li>' . esc_html($document) . '</li>'; ?><li>Calibration/inspection records and acceptance criteria required for your order.</li><li>If a hazardous-area installation is required, the exact model and configuration, applicable approval documents and any barrier/interface requirements for technical review. Generic catalogue statements are not proof of approval.</li></ul>
       <div class="cml-actions"><?php echo cml_sensor_rfq($c, true); ?></div>
-      <h3><?php echo in_array($c['type'], ['wireless_master', 'wireless_system', 'power', 'degasser', 'fluoroscope', 'display'], true) ? 'Prepare an equipment RFQ' : 'Prepare a sensor RFQ'; ?></h3><p>Include the existing model/nameplate, required measurement and units, supply and receiving interface, connector details, mounting dimensions, quantity, destination and target date. Mark unknown details so they can be reviewed. Our team will confirm the proposed configuration, documentation and commercial terms in the quotation.</p>
+      <h3><?php echo in_array($c['type'], ['wireless_master', 'wireless_system', 'power', 'degasser', 'fluoroscope', 'display', 'computer', 'monitoring_project', 'evaluation_project', 'monitoring_catalogue', 'evaluation_catalogue'], true) ? 'Prepare an equipment RFQ' : 'Prepare a sensor RFQ'; ?></h3><p>Include the existing model/nameplate, required measurement and units, supply and receiving interface, connector details, mounting dimensions, quantity, destination and target date. Mark unknown details so they can be reviewed. Our team will confirm the proposed configuration, documentation and commercial terms in the quotation.</p>
       <div class="cml-actions"><?php echo cml_sensor_rfq($c); ?></div>
-      <h3>Related catalogue records and system scope</h3><ul><?php foreach ($related as $slug => $label) if ($slug !== $c['slug']) echo '<li>' . cml_sensor_link($slug, $label) . (in_array($c['type'], ['hook', 'gas', 'wireless_master', 'wireless_system', 'power', 'degasser', 'fluoroscope', 'display'], true) ? ' — confirm its role and compatibility in the complete configuration.</li>' : ' — compare documentation; not a confirmed equivalent.</li>'); ?></ul>
-      <?php if (in_array($c['type'], ['degasser', 'fluoroscope', 'display'], true)): ?><p>Explore <a href="<?php echo esc_url(home_url('/product-category/formation-evaluation/')); ?>">formation evaluation equipment</a> and <a href="<?php echo esc_url(home_url('/product-category/drilling-monitoring/')); ?>">drilling monitoring equipment</a> to define the surrounding system and procurement scope.</p><?php endif; ?>
+      <h3>Related catalogue records and system scope</h3><ul><?php foreach ($related as $slug => $label) if (($c['scope'] ?? 'product') === 'hub' || $slug !== $c['slug']) echo '<li>' . cml_sensor_link($slug, $label) . (in_array($c['type'], ['hook', 'gas', 'wireless_master', 'wireless_system', 'power', 'degasser', 'fluoroscope', 'display', 'computer', 'monitoring_project', 'evaluation_project', 'monitoring_catalogue', 'evaluation_catalogue'], true) ? ' — confirm its role and compatibility in the complete configuration.</li>' : ' — compare documentation; not a confirmed equivalent.</li>'); ?></ul>
+      <?php if (in_array($c['type'], ['degasser', 'fluoroscope', 'display', 'computer', 'monitoring_project', 'evaluation_project', 'monitoring_catalogue', 'evaluation_catalogue'], true)): ?><p>Explore <a href="<?php echo esc_url(home_url('/product-category/formation-evaluation/')); ?>">formation evaluation equipment</a> and <a href="<?php echo esc_url(home_url('/product-category/drilling-monitoring/')); ?>">drilling monitoring equipment</a> to define the surrounding system and procurement scope.</p><?php endif; ?>
       <p>Review the <?php echo '<a href="' . esc_url(home_url('/product-category/mud-logging-sensors/')) . '">mud logging sensor catalogue</a>'; ?>, <?php echo '<a href="' . esc_url(home_url('/product-category/mud-logging-units/')) . '">complete logging unit and upgrade scope</a>'; ?> or <?php echo '<a href="' . esc_url(cml_page_url('products', 'en')) . '">equipment procurement guide</a>'; ?> to check the wider system boundary.</p>
     </section>
     <?php return (string)ob_get_clean();
 }
-add_filter('render_block_cml/product', function ($html) { $c = cml_sensor_context(); return $c ? $html . cml_sensor_quick($c) : $html; });
+add_filter('render_block_cml/product', function ($html) { $c = cml_sensor_context(); return $c && $c['scope'] === 'product' ? $html . cml_sensor_quick($c) : $html; });
 add_filter('render_block_core/post-content', function ($html) {
     $c = cml_sensor_context();
-    return $c ? '<section id="cml-sensor-source" class="cml-sensor-source" aria-label="Original catalogue record"><p class="cml-note">Original catalogue reference: statements below are not a verified model-matched wiring diagram, calibration record or approval certificate. Confirm the exact supplied configuration.</p>' . $html . '</section>' . cml_sensor_content($c) : $html;
+    return $c && $c['scope'] === 'product' ? '<section id="cml-sensor-source" class="cml-sensor-source" aria-label="Original catalogue record"><p class="cml-note">Original catalogue reference: statements below are not a verified model-matched wiring diagram, calibration record or approval certificate. Confirm the exact supplied configuration.</p>' . $html . '</section>' . cml_sensor_content($c) : $html;
+});
+add_filter('render_block_cml/catalogue', function ($html) {
+    $c = cml_sensor_context();
+    return $c && $c['scope'] === 'hub' ? cml_sensor_quick($c) . '<section id="cml-sensor-source" class="cml-sensor-source" aria-label="Existing equipment listing">' . $html . '</section>' . cml_sensor_content($c) : $html;
 });

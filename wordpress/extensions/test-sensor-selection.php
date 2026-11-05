@@ -3,6 +3,7 @@
 if (!defined('CML_SENSOR_ISOLATED_TEST') || !CML_SENSOR_ISOLATED_TEST) exit;
 require_once '/wordpress/wp-load.php';
 require_once '/cml/extensions/cml-sensor-selection.php';
+require_once '/cml/extensions/cml-buyer-guide.php';
 $passed = 0;
 $assert = function ($ok, $label) use (&$passed) { if (!$ok) throw new RuntimeException($label); $passed++; };
 $contact = wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Contact', 'post_name' => 'contact-us']);
@@ -40,6 +41,9 @@ foreach (cml_sensor_records() as $slug => $record) {
     if ($record[0] === 'degasser') $assert(str_contains($html, 'tubing degasser RFQ') && str_contains($html, 'not a gas analyser'), 'Degasser duty and analysis boundary');
     if ($record[0] === 'fluoroscope') $assert(str_contains($html, 'quantitative oil content') && str_contains($html, 'Legacy solvent'), 'Fluoroscope observation and procedure boundary');
     if ($record[0] === 'display') $assert(str_contains($html, 'exact supplied assembly') && str_contains($html, 'HDMI, VGA') && str_contains($html, 'certificate with schedule'), 'Display interface and approval boundary');
+    if ($record[0] === 'computer') $assert(str_contains($html, 'bill of materials') && str_contains($html, 'licence') && str_contains($html, 'D-Sub opening'), 'Computer chassis and licensed configuration boundary');
+    if ($record[0] === 'monitoring_project') $assert(str_contains($html, 'channel list') && str_contains($html, 'missing/stale-data'), 'Monitoring scope and data boundary');
+    if ($record[0] === 'evaluation_project') $assert(str_contains($html, 'downhole') && str_contains($html, 'analytical result'), 'Evaluation workflow and method boundary');
     if (str_starts_with($slug, 'wireless-')) $assert(str_contains($html, 'Wireless system boundary'), 'Wireless receiver boundary');
 }
 foreach (['unrelated-sensor', 'mud-temperature-sensor-ar'] as $slug) {
@@ -48,6 +52,48 @@ foreach (['unrelated-sensor', 'mud-temperature-sensor-ar'] as $slug) {
     $assert(cml_sensor_context() === [], 'Unrelated/localized record unchanged');
     $assert(apply_filters('render_block_core/post-content', 'untouched') === 'untouched', 'Non-target body unchanged');
 }
-$report = ['isolatedWordPress' => true, 'assertions' => $passed, 'products' => count(cml_sensor_records()), 'passed' => true];
+$set_query = function (array $args) {
+    $GLOBALS['wp_query'] = new WP_Query($args);
+    $GLOBALS['wp_the_query'] = $GLOBALS['wp_query'];
+};
+$listing = '<h1>ORIGINAL FAMILY</h1><form class="existing-filter"><input name="q"></form><article>LISTING-SENTINEL</article>';
+foreach (cml_system_hub_records() as $slug => $record) {
+    $term = wp_insert_term($record[2], 'cml_family', ['slug' => $slug]);
+    $pid = wp_insert_post(['post_type' => 'cml_product', 'post_status' => 'publish', 'post_title' => 'Hub fixture', 'post_name' => 'hub-fixture-' . $slug]);
+    wp_set_object_terms($pid, $term['term_id'], 'cml_family');
+    $_GET = []; $set_query(['cml_family' => $slug]);
+    $c = cml_sensor_context();
+    $assert(($c['scope'] ?? '') === 'hub' && $c['slug'] === $slug, 'Exact hub scope');
+    $assert(str_contains(apply_filters('wpseo_title', 'old'), $record[1]), 'Distinct hub metadata');
+    $html = apply_filters('render_block_cml/catalogue', $listing);
+    $assert(str_contains($html, $listing) && substr_count($html, '<form') === 1, 'Original listing and only existing search form');
+    $assert(substr_count($html, '<h1>') === 1, 'Original archive heading preserved');
+    $assert(substr_count($html, 'id="cml-sensor-heading"') === 1, 'Single hub shortcut block');
+    $assert(substr_count($html, 'id="cml-sensor-compatibility"') === 1, 'Single hub decision block');
+    $assert(str_contains($html, 'product=' . rawurlencode($record[2])), 'Hub-specific RFQ context');
+    $assert(apply_filters('render_block_core/post-content', 'post untouched') === 'post untouched' && apply_filters('render_block_cml/product', 'hero untouched') === 'hero untouched', 'Archive does not inject into individual card/post blocks');
+    $assert(!str_contains($html, '<script') && !preg_match('/href="[^"]*\.pdf/i', $html) && str_contains($html, 'not a set of available downloads'), 'Hub document and analytics boundary');
+    foreach ([['q' => 'pressure'], ['family' => 'drilling-monitoring'], ['q' => ['bad']], ['family' => ['bad']], ['catalog_page' => '2'], ['catalog_page' => ['bad']]] as $query) {
+        $_GET = $query;
+        $assert(cml_sensor_context() === [], 'Filtered/invalid archive context excluded');
+        $assert(apply_filters('render_block_cml/catalogue', $listing) === $listing, 'Filtered archive listing unchanged');
+    }
+    $_GET = []; $set_query(['cml_family' => $slug, 'paged' => 2]);
+    $assert(cml_sensor_context() === [], 'Actual archive pagination excluded');
+    $assert(apply_filters('render_block_cml/catalogue', $listing) === $listing, 'Paged archive listing unchanged');
+}
+$_GET = [];
+foreach (['mud-logging-units', 'mud-logging-sensors', 'formation-evaluation-ar'] as $slug) {
+    wp_insert_term($slug, 'cml_family', ['slug' => $slug]);
+    $set_query(['cml_family' => $slug]);
+    $assert(cml_sensor_context() === [], 'Other/localized family excluded');
+}
+$set_query(['cml_family' => 'mud-logging-units']);
+$html = apply_filters('render_block_cml/catalogue', $listing);
+$assert(cml_buyer_context() === 'units' && str_contains($html, 'cml-buyer-heading') && !str_contains($html, 'cml-sensor-heading'), 'Existing unit guide retained');
+$set_query(['page_id' => $catalogue]);
+$html = apply_filters('render_block_cml/catalogue', $listing);
+$assert(cml_buyer_context() === 'catalogue' && cml_sensor_context() === [] && str_contains($html, 'cml-buyer-heading') && !str_contains($html, 'cml-sensor-heading'), 'Existing catalogue guide retained');
+$report = ['isolatedWordPress' => true, 'assertions' => $passed, 'products' => count(cml_sensor_records()), 'hubs' => count(cml_system_hub_records()), 'passed' => true];
 file_put_contents('/cml-test-results/sensor-integration.json', wp_json_encode($report, JSON_PRETTY_PRINT));
 echo wp_json_encode($report);
