@@ -2,10 +2,62 @@
 /**
  * Plugin Name: ChinaMudLogging Sensor Selection
  * Description: Source-bounded selection, compatibility and documentation guidance for priority English sensors.
- * Version: 1.6.0
+ * Version: 1.7.0
  * Requires PHP: 8.2
  */
 defined('ABSPATH') || exit;
+const CML_SENSOR_IDENTITY_REVISION = '2026-11-05T04:49:53+00:00';
+function cml_sensor_identity_records(): array {
+    return [
+        'cl-md23-mud-density-sensor' => [
+            'heading' => 'CL-MD23: identify the differential-pressure density configuration',
+            'description' => 'CL-MD23 mud density sensor: review the pressure-diaphragm measurement arrangement, installed current loop and order-matched documents before replacement.',
+            'intro' => 'Use this record when the nameplate or proposed order identifies CL-MD23. The source describes two vertically separated pressure diaphragms measuring drilling-fluid density; this is not a shale sample density instrument.',
+            'checks' => ['Identify the complete sensor and transmitter version, diaphragm arrangement and installation drawing before comparing replacements.', 'Match the receiving current loop and any required barrier/interface to the exact offered configuration. A generic density name does not establish electrical or mechanical equivalence.', 'The source certificate number, expiry text and marking remain catalogue statements. Request the matching certificate schedule and supplied-unit documents for technical review.'],
+            'links' => ['mud-density-sensor' => 'Unidentified mud density sensor: define the requirement first', 'wireless-mud-density-sensor-for-mud-logging-unit' => 'Wireless density record: check the transmitter and receiver boundary'],
+        ],
+        'cl-dd11-mud-conductivity-sensor' => [
+            'heading' => 'CL-DD11: identify the inductive probe and transmitter',
+            'description' => 'CL-DD11 mud conductivity sensor: identify the inductive probe, transmitter, temperature-compensation basis and receiving input. Request matched wiring documents.',
+            'intro' => 'Use this model-labelled record when the installation or offer calls for CL-DD11. The source describes an inductive immersion probe with transmitter and temperature compensation. Similar electrical values on an unlabelled catalogue page do not prove the same model.',
+            'checks' => ['Provide the probe and transmitter nameplates, existing connection details and required conductivity units.', 'Confirm the compensation reference, acquisition scaling and receiving interface for the exact proposed version.', 'For an unknown-model replacement, use the general conductivity selection record below. Do not transfer a wiring diagram or approval between records without model-matched evidence.'],
+            'links' => ['mud-conductivity-sensor-for-mud-logging-unit' => 'General conductivity requirement and source specification', 'wireless-conductivity-sensor-for-mud-logging-unit' => 'Wireless conductivity record: resolve the stated output conflict'],
+        ],
+        'oil-fluoroscope-uv-lamp-box' => [
+            'heading' => 'Identify the UV lamp box model before requesting a replacement',
+            'description' => 'No model code is confirmed for this UV lamp box entry. Identify an existing unit and compare the named YG1501 and CNPS-OL1501 records before requesting a quotation.',
+            'intro' => 'Use this page to identify the UV lamp box needed for your sample-observation workflow. No model code or independent specification is confirmed for this catalogue entry. Compare the named model records below only after matching the actual configuration.',
+            'checks' => ['For an existing box, provide the nameplate, lamp/module designation, supply and connection details, sample-space dimensions and the documents you have.', 'For a new requirement, describe the sample-observation workflow, sample holders and required operating documentation. A product photograph does not establish optical, electrical or enclosure compatibility.', 'The named records below describe different catalogue identities. Neither is a confirmed replacement for this unidentified entry; request the exact proposed configuration and matched operating documents.', 'Visual fluorescence observation is separate from a validated quantitative oil-content method. Specify any analytical requirement and its evidence separately.'],
+            'links' => ['oil-fluoroscope-uv-box' => 'YG1501 UV-box source record', 'mud-logging-oil-fluoroscope-uv-lamp-box' => 'CNPS-OL1501 fluorescence source record'],
+        ],
+    ];
+}
+function cml_sensor_identity(array $context): string {
+    $record = cml_sensor_identity_records()[$context['slug']] ?? [];
+    if (($context['scope'] ?? '') !== 'product' || !$record) return '';
+    $html = '<section class="cml-sensor-guide" id="cml-record-identity" aria-labelledby="cml-record-heading"><p class="eyebrow">Model identification &amp; quotation scope</p><h2 id="cml-record-heading">' . esc_html($record['heading']) . '</h2><p>' . esc_html($record['intro']) . '</p><ul>';
+    foreach ($record['checks'] as $check) $html .= '<li>' . esc_html($check) . '</li>';
+    $html .= '</ul><nav aria-label="Compare catalogue roles">';
+    foreach ($record['links'] as $slug => $label) $html .= cml_sensor_link($slug, $label);
+    return $html . '</nav></section>';
+}
+function cml_sensor_identity_modified($original): string {
+    return is_string($original) && strtotime($original) >= strtotime(CML_SENSOR_IDENTITY_REVISION) ? $original : CML_SENSOR_IDENTITY_REVISION;
+}
+add_filter('wpseo_schema_webpage', function ($data) {
+    $c = cml_sensor_context();
+    if (($c['scope'] ?? '') === 'product' && isset(cml_sensor_identity_records()[$c['slug']])) $data['dateModified'] = cml_sensor_identity_modified($data['dateModified'] ?? '');
+    return $data;
+}, 35);
+add_filter('wpseo_sitemap_entry', function ($entry, $type, $post) {
+    if (is_array($entry) && !empty($entry['loc']) && $type === 'post' && $post instanceof WP_Post && $post->post_type === 'cml_product' && $post->post_status === 'publish' && (!function_exists('pll_get_post_language') || pll_get_post_language($post->ID, 'slug') === 'en') && isset(cml_sensor_identity_records()[$post->post_name])) $entry['mod'] = cml_sensor_identity_modified($entry['mod'] ?? '');
+    return $entry;
+}, 40, 3);
+add_filter('wpseo_sitemap_index_links', function ($links) {
+    foreach ($links as &$link) if (wp_parse_url($link['loc'] ?? '', PHP_URL_PATH) === '/cml_product-sitemap.xml') $link['lastmod'] = cml_sensor_identity_modified($link['lastmod'] ?? '');
+    unset($link);
+    return $links;
+}, 40);
 function cml_sensor_records(): array {
     return [
         'mud-temperature-sensor' => ['temperature', 'Mud Temperature Sensor: Selection & Interface Review', 'Mud temperature sensor', 'The reviewed record describes drilling-fluid temperature measurement but does not identify a model-specific range, sensing element or output. These must be confirmed for the proposed version.'],
@@ -16,10 +68,10 @@ function cml_sensor_records(): array {
         'mud-logging-pump-stroke-sensor' => ['pump', 'Mud Logging Pump Stroke Sensor: Electrical & Mounting Review', 'Mud logging pump stroke sensor', 'The source description mentions a two-wire system and lists electrical limits below. These do not, by themselves, identify the receiving input circuit or establish compatibility with your acquisition system.'],
         'mud-density-sensor' => ['density', 'Mud Density Sensor: Selection & Interface Compatibility', 'Mud density sensor', 'This sparse source record does not establish a complete model-specific interface. Confirm the offered model, measurement method, installation and acquisition input before replacement.'],
         'wireless-mud-density-sensor-for-mud-logging-unit' => ['density', 'Wireless Mud Density Sensor: Transmitter & Receiver Selection', 'Wireless mud density sensor', 'The source table lists local electrical values. These do not establish the receiver output or compatibility of the complete wireless system with your acquisition input.'],
-        'cl-md23-mud-density-sensor' => ['density', 'CL-MD23 Mud Density Sensor: Selection & Documentation', 'CL-MD23 mud density sensor', 'The source includes electrical values and approval-related statements. The certificate number and expiry text have not been independently verified for the exact supplied configuration.'],
+        'cl-md23-mud-density-sensor' => ['density', 'CL-MD23 Mud Density Sensor: Differential-Pressure Selection', 'CL-MD23 mud density sensor', 'The source includes electrical values and approval-related statements. The certificate number and expiry text have not been independently verified for the exact supplied configuration.'],
         'mud-conductivity-sensor-for-mud-logging-unit' => ['conductivity', 'Mud Conductivity Sensor: Selection & Acquisition Interface', 'Mud conductivity sensor', 'Use the source values only for this catalogue record. Confirm the exact probe, compensation arrangement, output and receiving input for the offered version.'],
         'wireless-conductivity-sensor-for-mud-logging-unit' => ['conductivity', 'Wireless Mud Conductivity Sensor: Interface Review', 'Wireless mud conductivity sensor', 'The source table describes a voltage output while the prose also describes a current output. This unresolved interface conflict requires confirmation of the exact sensor, transmitter and receiver configuration.'],
-        'cl-dd11-mud-conductivity-sensor' => ['conductivity', 'CL-DD11 Mud Conductivity Sensor: Selection & Wiring Review', 'CL-DD11 mud conductivity sensor', 'The source describes an induction measurement and temperature compensation. Confirm the proposed probe, reference conditions, wiring and acquisition scaling with model-matched documents.'],
+        'cl-dd11-mud-conductivity-sensor' => ['conductivity', 'CL-DD11 Mud Conductivity Sensor: Inductive Probe Selection', 'CL-DD11 mud conductivity sensor', 'The source describes an induction measurement and temperature compensation. Confirm the proposed probe, reference conditions, wiring and acquisition scaling with model-matched documents.'],
         'pit-level-sensor-used-for-mud-logging' => ['level_ultrasonic', 'Ultrasonic Pit Level Sensor: Selection & Interface Review', 'Ultrasonic pit level sensor', 'The source describes an ultrasonic fluid-level application. Confirm installation geometry, usable measuring span and output for the exact version; a level signal alone does not establish tank volume.'],
         'cnps-ml11-fluid-level-sensor' => ['level_ultrasonic', 'CNPS-ML11 Fluid Level Sensor: Installation & Compatibility', 'CNPS-ML11 fluid level sensor', 'The original parameter formatting and calibration menu are retained below. Confirm their meaning and applicability with the supplier; do not transfer this menu or specifications to another level transmitter.'],
         'sitrans-probe-lu240-ultrasonic-pit-level-transmitter' => ['level_ultrasonic', 'SITRANS Probe LU240: Pit Level Selection & Technical Manual', 'SITRANS Probe LU240 pit level transmitter', 'Range and interface options depend on the ordered LU240 configuration. The linked Siemens family manual is a reference to check against the actual order code and firmware, not proof of the supplied configuration or approval.'],
@@ -44,7 +96,7 @@ function cml_sensor_records(): array {
         'yc-03d-electric-mud-degasser' => ['degasser', 'YC-03D Electric Mud Degasser: Selection & Gas-Line Interface', 'YC-03D electric mud degasser', 'This source describes gas extraction, drying and cleaning before downstream analysis. It does not establish gas-analysis accuracy, extraction efficiency or suitability for an unspecified tubing/process degassing duty. Confirm the exact configuration and documentation.'],
         'mud-logging-oil-fluoroscope-uv-lamp-box' => ['fluoroscope', 'Mud Logging Oil Fluoroscope: UV Box & Sample Selection', 'Mud logging oil fluoroscope UV lamp box', 'The source identifies CNPS-OL1501 and includes visual interpretation and legacy sample-treatment text. These are not independently validated quantitative oil-content results or a current sample-handling procedure. Confirm model-matched operating and safety documents.'],
         'oil-fluoroscope-uv-box' => ['fluoroscope', 'Oil Fluoroscope UV Box: YG1501 Selection & Documentation', 'Oil fluoroscope UV box', 'The source identifies YG1501. Do not assume it is interchangeable with another UV box because some listed values look similar. Confirm the optical, electrical, enclosure and sample-use configuration together.'],
-        'oil-fluoroscope-uv-lamp-box' => ['fluoroscope', 'Oil Fluoroscope UV Lamp Box: Selection & Technical Review', 'Oil fluoroscope UV lamp box', 'This sparse record does not establish a complete model-specific specification or validated analysis method. Request the exact model, optical/electrical details and operating documents; do not copy values from another fluoroscope page.'],
+        'oil-fluoroscope-uv-lamp-box' => ['fluoroscope', 'Oil Fluoroscope UV Lamp Box: Identify Model & Compare Records', 'Oil fluoroscope UV lamp box', 'This sparse record does not establish a complete model-specific specification or validated analysis method. Request the exact model, optical/electrical details and operating documents; do not copy values from another fluoroscope page.'],
         'mud-logging-explosion-proof-monitor' => ['display', 'Mud Logging Explosion-Proof Monitor: Configuration Review', 'Mud logging explosion-proof monitor', 'The source combines power, screen-size and hazardous-area descriptions without a verified order-specific approval package. Confirm the actual display/enclosure configuration, interfaces, nameplate and applicable documents; do not combine all catalogue options into one approved unit.'],
         'industrial-computer-with-als-2-2-system' => ['computer', 'Industrial Computer with ALS 2.2: Configuration & Interfaces', 'Industrial computer with ALS 2.2 system', 'The source mainly describes a rackmount chassis. It does not establish the installed CPU, memory, storage, acquisition boards, operating system, drivers or ALS licence. A connector opening or chassis slot count is not proof of an installed compatible interface.'],
         'drilling-monitoring' => ['monitoring_project', 'Drilling Monitoring Systems: Configuration & RFQ Scope', 'Drilling monitoring project', 'This overview does not identify a complete supplied system or channel list. Define the project, existing installation and included hardware/software before comparing offers; individual catalogue components do not establish a configured monitoring system.'],
@@ -83,11 +135,12 @@ function cml_sensor_rfq(array $context, bool $documents = false): string {
 foreach (['wpseo_title', 'pre_get_document_title'] as $hook) add_filter($hook, function ($title) { $c = cml_sensor_context(); return $c ? $c['title'] . ' | ChinaMudLogging.com' : $title; }, 95);
 add_filter('wpseo_metadesc', function ($description) {
     $c = cml_sensor_context();
-    return $c ? $c['label'] . ': review selection, installation and acquisition interfaces. Request a model-matched datasheet, wiring details and quotation.' : $description;
+    $identity = $c ? (cml_sensor_identity_records()[$c['slug']] ?? []) : [];
+    return $identity['description'] ?? ($c ? $c['label'] . ': review selection, installation and acquisition interfaces. Request a model-matched datasheet, wiring details and quotation.' : $description);
 }, 95);
 add_action('wp_enqueue_scripts', function () {
     if (!cml_sensor_context()) return;
-    wp_register_style('cml-sensor-selection', false, [], '1.6.0'); wp_enqueue_style('cml-sensor-selection');
+    wp_register_style('cml-sensor-selection', false, [], '1.7.0'); wp_enqueue_style('cml-sensor-selection');
     wp_add_inline_style('cml-sensor-selection', '.cml-sensor-guide{margin-block:2rem;padding:clamp(1rem,3vw,2rem);background:#f4f8f8;border:1px solid #ccd6dc;border-radius:12px}.cml-sensor-guide h2{font-size:clamp(1.5rem,3vw,2.1rem)}.cml-sensor-guide nav{display:flex;gap:.7rem 1.2rem;flex-wrap:wrap}.cml-sensor-guide nav a{display:inline-flex;align-items:center;min-height:44px}.cml-sensor-table{overflow-x:auto;max-width:100%}.cml-sensor-table table{width:100%;min-width:520px;border-collapse:collapse}.cml-sensor-table td,.cml-sensor-table th{padding:.8rem;text-align:left;vertical-align:top;border:1px solid #ccd6dc}.cml-sensor-guide li{margin-block:.5rem}.cml-sensor-guide a{overflow-wrap:anywhere}.cml-sensor-source{scroll-margin-top:2rem}');
 }, 30);
 function cml_sensor_quick(array $c): string {
@@ -367,7 +420,7 @@ function cml_sensor_content(array $c): string {
     </section>
     <?php return (string)ob_get_clean();
 }
-add_filter('render_block_cml/product', function ($html) { $c = cml_sensor_context(); return $c && $c['scope'] === 'product' ? $html . cml_sensor_quick($c) : $html; });
+add_filter('render_block_cml/product', function ($html) { $c = cml_sensor_context(); return $c && $c['scope'] === 'product' ? $html . cml_sensor_quick($c) . cml_sensor_identity($c) : $html; });
 add_filter('render_block_core/post-content', function ($html) {
     $c = cml_sensor_context();
     return $c && $c['scope'] === 'product' ? '<section id="cml-sensor-source" class="cml-sensor-source" aria-label="Original catalogue record"><p class="cml-note">Original catalogue reference: statements below are not a verified model-matched wiring diagram, calibration record or approval certificate. Confirm the exact supplied configuration.</p>' . $html . '</section>' . cml_sensor_content($c) : $html;

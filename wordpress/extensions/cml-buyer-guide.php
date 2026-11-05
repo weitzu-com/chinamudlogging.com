@@ -2,10 +2,31 @@
 /**
  * Plugin Name: ChinaMudLogging Procurement Guide
  * Description: English procurement guidance for the existing catalogue and logging unit family.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Requires PHP: 8.2
  */
 defined('ABSPATH') || exit;
+const CML_BUYER_MODEL_REVISION = '2026-11-05T04:49:53+00:00';
+function cml_buyer_model_routes(): array {
+    return ['cl-md23-mud-density-sensor' => 'CL-MD23 density model', 'cl-dd11-mud-conductivity-sensor' => 'CL-DD11 conductivity model', 'oil-fluoroscope-uv-lamp-box' => 'Identify an unknown-model UV box', 'drilling-fluid-temperature-sensor' => 'Immersion temperature probe', 'sitrans-probe-lu240-ultrasonic-pit-level-transmitter' => 'LU240 ultrasonic pit level', 'rada-32-ddlja5-80ghz-radar-level-transmitter' => 'RADA radar pit level', 'yc-03d-electric-mud-degasser' => 'YC-03D gas extraction'];
+}
+function cml_buyer_model_modified($original): string {
+    return is_string($original) && strtotime($original) >= strtotime(CML_BUYER_MODEL_REVISION) ? $original : CML_BUYER_MODEL_REVISION;
+}
+add_filter('wpseo_schema_webpage', function ($data) {
+    if (cml_buyer_context() === 'catalogue') $data['dateModified'] = cml_buyer_model_modified($data['dateModified'] ?? '');
+    return $data;
+}, 35);
+add_filter('wpseo_sitemap_entry', function ($entry, $type, $post) {
+    $ids = get_option('cml_pages', []);
+    if (is_array($entry) && !empty($entry['loc']) && $type === 'post' && $post instanceof WP_Post && $post->post_type === 'page' && $post->post_status === 'publish' && $post->ID === (int)($ids['en']['products'] ?? 0)) $entry['mod'] = cml_buyer_model_modified($entry['mod'] ?? '');
+    return $entry;
+}, 40, 3);
+add_filter('wpseo_sitemap_index_links', function ($links) {
+    foreach ($links as &$link) if (wp_parse_url($link['loc'] ?? '', PHP_URL_PATH) === '/page-sitemap.xml') $link['lastmod'] = cml_buyer_model_modified($link['lastmod'] ?? '');
+    unset($link);
+    return $links;
+}, 40);
 
 function cml_buyer_context(): string {
     if (is_admin() || !function_exists('cml_language') || cml_language() !== 'en') return '';
@@ -32,7 +53,7 @@ add_filter('render_block_core/post-title', function ($html) {
 });
 add_action('wp_enqueue_scripts', function () {
     if (!cml_buyer_context()) return;
-    wp_register_style('cml-buyer-guide', false, [], '1.0.0');
+    wp_register_style('cml-buyer-guide', false, [], '1.1.0');
     wp_enqueue_style('cml-buyer-guide');
     wp_add_inline_style('cml-buyer-guide', '.cml-buyer{margin-block:2rem;padding:clamp(1rem,3vw,2rem);border:1px solid #ccd6dc;border-radius:12px;background:#f5f8f8}.cml-buyer h2{font-size:clamp(1.5rem,3vw,2.25rem)}.cml-buyer table{width:100%;border-collapse:collapse;min-width:560px}.cml-buyer th,.cml-buyer td{padding:.8rem;border:1px solid #ccd6dc;text-align:left;vertical-align:top}.cml-buyer-scroll{max-width:100%;overflow-x:auto}.cml-buyer nav,.cml-buyer-links{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem}.cml-buyer summary{cursor:pointer;padding-block:.8rem;font-weight:600}.cml-buyer li{margin-block:.5rem}.cml-buyer a{overflow-wrap:anywhere}.cml-buyer nav a{min-height:44px;display:inline-flex;align-items:center}.cml-buyer:target{scroll-margin-top:2rem}');
 }, 30);
@@ -53,6 +74,9 @@ function cml_buyer_intro(string $kind): string {
       <div class="cml-buyer-links"><?php
         foreach (['mud-logging-units' => 'Mud logging units & systems', 'mud-logging-sensors' => 'Wired mud logging sensors', 'wireless-sensors' => 'Wireless sensors & accessories', 'formation-evaluation' => 'Formation evaluation equipment', 'drilling-monitoring' => 'Drilling monitoring components'] as $slug => $label) echo cml_buyer_link('/product-category/' . $slug . '/', $label);
       ?></div>
+      <h3>Model and application shortcuts</h3>
+      <p>Start with a named catalogue record, or identify an unknown-model replacement. Review its role and documentation; these routes do not establish interchangeability or a supplied configuration.</p>
+      <nav aria-label="Specific equipment and model selection"><?php foreach (cml_buyer_model_routes() as $slug => $label) echo cml_buyer_link('/product/' . $slug . '/', $label); ?></nav>
       <?php else: ?>
       <p>System starting points: <?php echo cml_buyer_link('/product/mud-logging-unit/', 'Mud Logging Unit') . ' · ' . cml_buyer_link('/product/sls-mud-logging-unit/', 'SLS Mud Logging Unit') . ' · ' . cml_buyer_link('/product/surface-logging-systems/', 'Surface logging systems'); ?>. Review each record and request the current configuration; these are not a declaration of stock or interchangeable specifications.</p>
       <?php endif; ?>
