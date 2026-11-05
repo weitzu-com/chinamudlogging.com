@@ -35,9 +35,9 @@ $wpdb->update($wpdb->posts,['post_title'=>$technical],['ID'=>$featured]);clean_p
 $GLOBALS['post']=get_post($featured);setup_postdata($GLOBALS['post']);$product_html=cml_render('product');wp_reset_postdata();
 preg_match('/href="([^"]*product=[^"]*)"/',$product_html,$match);parse_str(wp_parse_url(html_entity_decode($match[1]??'',ENT_QUOTES|ENT_HTML5,'UTF-8'),PHP_URL_QUERY)??'',$quote_query);
 $check(($quote_query['product']??null)===$technical,'Quote links preserve plus, ampersand and less-than signs');
-$edge=$submit(array_merge($base,['request_id'=>wp_generate_uuid4(),'name'=>'TEST ONLY technical symbols','product'=>$technical]));
+$edge=$submit(array_merge($base,['request_id'=>wp_generate_uuid4(),'name'=>'TEST ONLY technical symbols','product'=>$technical,'message'=>'TEST ONLY: '.$technical]));
 $edge_payload=$edge instanceof WP_REST_Response?$wpdb->get_var($wpdb->prepare("SELECT payload FROM {$wpdb->prefix}cml_inquiries WHERE receipt=%s",$edge->get_data()['receipt'])):null;
-$check($edge_payload&&json_decode($edge_payload,true)['product']===$technical,'Saved inquiries preserve exact technical comparison symbols');
+$check($edge_payload&&json_decode($edge_payload,true)['product']===$technical&&json_decode($edge_payload,true)['message']==='TEST ONLY: '.$technical,'Saved product and requirements preserve exact technical comparison symbols');
 if (!defined('WP_CLI')) define('WP_CLI',true);
 if (!function_exists('pll_get_post_language')) { function pll_get_post_language($id) { return 'en'; } }
 $copy_plan=json_decode(file_get_contents('/cml/corrections/english-catalogue-names-20261105.json'),true);

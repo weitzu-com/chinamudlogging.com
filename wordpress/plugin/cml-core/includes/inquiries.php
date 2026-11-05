@@ -62,9 +62,9 @@ function cml_receive_inquiry(WP_REST_Request $request) {
         $value = trim($data[$field] ?? '');
         if (mb_strlen($value, 'UTF-8') > $max) return $error('invalid_' . $field, 400);
         $payload[$field] = $field === 'message' ? sanitize_textarea_field($value) : sanitize_text_field($value);
-        // Product references are plain text; preserve technical comparisons such
+        // Product references and requirements are plain text; preserve comparisons such
         // as <42V after tag removal. Admin output escapes every stored value.
-        if ($field === 'product') $payload[$field] = html_entity_decode($payload[$field], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        if (in_array($field, ['product', 'message'], true)) $payload[$field] = html_entity_decode($payload[$field], ENT_QUOTES | ENT_HTML5, 'UTF-8');
     }
     if (!$payload['name'] || !$payload['message'] || !is_email($payload['email'])) return $error('required_fields', 400);
     // Store only a source path; discard queries, fragments, and any external origin.
