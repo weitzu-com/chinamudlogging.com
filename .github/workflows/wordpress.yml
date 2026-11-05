@@ -40,7 +40,11 @@ jobs:
       - name: Multilingual inquiry boundary regression
         run: python3 wordpress/tests/run-ego-qa.py
       - name: Postlaunch deadline and evidence guards
-        run: python3 wordpress/tests/test-postlaunch-review.py
+        run: |
+          python3 wordpress/tests/test-postlaunch-review.py
+          python3 wordpress/tests/test-index-diagnosis.py
+      - name: Catalogue pagination SEO boundaries
+        run: python3 wordpress/tests/test-pagination-seo.py
       - name: Package candidate
         run: python3 wordpress/scripts/package.py
       - uses: actions/upload-artifact@v4
