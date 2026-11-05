@@ -68,6 +68,10 @@ def main():
                     if p['id']==102 and ('range' in label.lower()): status='conflict'
                     if raw and re.fullmatch(r'[±+-]?\d+(?:\.\d+)?\.?',raw) and re.search(r'temperature|voltage|power|current|range|accuracy',label,re.I): status='unclear'
                     if p['id']==205 and label=='Temperature range': status='unclear'
+                    if p['id']==179 and label=='Measurement range' and raw=='4-20mA':
+                        label='Current signal input'
+                    if p['id']==186 and label=='Detection range' and 'T90' in raw:
+                        status='unclear'
                     key=(label.casefold(),raw.casefold())
                     if key not in seen:
                         display=raw.replace('三相','Three-phase ').replace('不小于','At least')
