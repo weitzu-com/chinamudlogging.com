@@ -1,6 +1,13 @@
 <?php
 /** Presentation derivatives only: original attachment IDs/files remain source evidence. */
 defined('ABSPATH') || exit;
+// These legacy homepage URLs have a one-year CDN/browser cache lifetime.
+// Content versioning makes their replacement visible without global cache purge.
+add_filter('theme_file_uri',function (string $uri,string $file): string {
+    if (!in_array($file,['assets/field/unit.webp','assets/field/sensor.webp','assets/field/wireless.webp','assets/field/formation.webp','assets/field/drilling.webp'],true)) return $uri;
+    $path=get_theme_file_path($file);
+    return is_file($path) ? add_query_arg('v',substr(hash_file('sha256',$path),0,16),$uri) : $uri;
+},20,2);
 add_action('wp_enqueue_scripts',function () {
     wp_enqueue_style('cml-brand-media',get_theme_file_uri('assets/branded-products.css'),['cml-site'],filemtime(get_theme_file_path('assets/branded-products.css')));
 },60);
