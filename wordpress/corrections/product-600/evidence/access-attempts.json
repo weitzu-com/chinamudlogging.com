@@ -1,0 +1,23 @@
+{
+  "observedAt": "2026-11-05T00:29:23.762617+00:00",
+  "attempts": [
+    {
+      "url": "https://www.chinamudlogging.com/product/ultrasonic-sensor-bracket-mud-logging/",
+      "sha256": "c587ae03e995ab26b28203f6ba8d6c2c87d90274ef1d6eeb1ab649de847f4792",
+      "bytes": 217,
+      "result": "not usable as product evidence"
+    },
+    {
+      "url": "https://www.chinamudlogging.com/wp-json/wp/v2/cml_product/600",
+      "sha256": "d0809cd80d01b06c788add10695580512364f3b5ff680bc82f3daefdced54487",
+      "bytes": 204,
+      "result": "not usable as product evidence"
+    },
+    {
+      "url": "https://emall.epec.com/productd/141652/15487160",
+      "sha256": "84bfb3a3ece4a17635e2ab717c7ae7dc652885dfa9b6eef0a4948f705a3eb028",
+      "bytes": 2901,
+      "result": "not usable as product evidence"
+    }
+  ]
+}

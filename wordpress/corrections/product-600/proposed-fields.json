@@ -1,0 +1,31 @@
+{
+  "content": "<!-- wp:paragraph --><p>Source catalogue record from epec supplier listing; configuration confirmed at quotation.</p><!-- /wp:paragraph --><!-- wp:heading --><h2 class=\"wp-block-heading\">Overview</h2><!-- /wp:heading --><!-- wp:paragraph --><p>This ultrasonic sensor bracket is listed as an accessory for ultrasonic volume sensing on geological mud-logging instruments. It provides mechanical support for the ultrasonic transducer used in pit or tank volume measurement.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Only the name, model/SKU and category note published on the supplier catalogue are retained below. Accuracy, range, output and other performance figures are not stated on that listing and are not invented here.</p><!-- /wp:paragraph --><!-- wp:heading --><h2 class=\"wp-block-heading\">Configured specifications</h2><!-- /wp:heading --><!-- wp:table --><figure class=\"wp-block-table\"><table><tbody><tr><th scope=\"row\">Name</th><td><bdi> 超声波传感器支架 / Ultrasonic Sensor Bracket</bdi></td></tr><tr><th scope=\"row\">Source specification label</th><td><bdi> 超声波体积</bdi></td></tr><tr><th scope=\"row\">Category note</th><td><bdi> 传感器配件</bdi></td></tr><tr><th scope=\"row\">Source URL</th><td><bdi> https://emall.epec.com/productd/141652/15487160</bdi></td></tr></tbody></table></figure><!-- /wp:table --><!-- wp:heading --><h2 class=\"wp-block-heading\">Applications</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Typical use is as a replacement or expansion accessory on a mud-logging unit wireless sensor suite. Confirm mechanical fit, power, and interface compatibility with the installed logging system before ordering.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Inquire for the datasheet, wiring or interface notes, and compatibility with your existing mud logging unit.</p><!-- /wp:paragraph -->",
+  "meta": {
+    "_cml_specifications": [
+      {
+        "label": "Name",
+        "raw": "超声波传感器支架 / Ultrasonic Sensor Bracket.",
+        "unit": "",
+        "value": ""
+      },
+      {
+        "label": "Source specification label",
+        "raw": "超声波体积",
+        "unit": "",
+        "value": ""
+      },
+      {
+        "label": "Category note",
+        "raw": "传感器配件",
+        "unit": "",
+        "value": ""
+      },
+      {
+        "label": "Source URL",
+        "raw": "https://emall.epec.com/productd/141652/15487160.",
+        "unit": "",
+        "value": ""
+      }
+    ]
+  }
+}

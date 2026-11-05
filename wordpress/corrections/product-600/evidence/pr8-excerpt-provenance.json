@@ -1,0 +1,18 @@
+{
+  "source": "https://github.com/weitzu-com/chinamudlogging.com/blob/67053764c498b76e6974cc5c6d6d828c2b0b7fd9/wordpress/docs/supplemental-content-audit-20261104.md",
+  "fullFrozenAuditSHA256": "f3b3eda0b7cad531941ee147506e31a8f0683d44c9805288bfb0921fcdde6f61",
+  "included": "pr8-product-600-excerpt.md",
+  "excluded": "Full audit of other products and pending editorial suggestions; full frozen copy retained in original local workspace, not included in this draft PR",
+  "historicalManifests": "SHA256SUMS-before-epec-20261105.txt refers to earlier local package including full audit; it is historical evidence, not the current package manifest",
+  "unchangedEvidence": {
+    "evidence/before-review.json": "44a43bf44f75c369e95e88ea801dbe6a47f1d77520508ba3c586d0ab98b33761",
+    "after-review.json": "98e9a07b683e85ca64e9e4b43c588e00d0d99510750b531b23d42d12de7c2753",
+    "exact.diff": "00705bc1765f8486ea67180fe24ed5b30cdf62b9a13d66ecc35a19a5d786d0dc",
+    "table-row.diff": "930e12478de831f03e5247308c3e1285f17b28605e2406f2c8984f5722b005b1",
+    "proposed-fields.json": "8929cfc48481d755210e28576e2fe06a53a04cd36f86d20b13860b35a43654ce",
+    "export-readonly.php": "e8863c8f4678029ca54256ada85332e437c85c942c4fd35a33a99fe610284226",
+    "evidence/epec-15487160-dom-20261105.json": "2b43fe8dc3e103c2dea621341790a27167ffc1ffd08ba9d46bda1baba0c0539e",
+    "evidence/epec-15487160-verification-20261105.json": "23d7da45099df392fbdab7734888fabae284d01548e76315a079b2b3be50ce0d",
+    "evidence/php-lint.txt": "f9f9cd256260fbb8538f02cf934d5c7164073e91c9ec62c8b092d886507f8dda"
+  }
+}
