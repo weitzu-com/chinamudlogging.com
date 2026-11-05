@@ -7,3 +7,4 @@ require_once __DIR__ . '/inc/field-home.php';
 require_once __DIR__ . '/inc/field-inner.php';
 require_once __DIR__ . '/inc/language-panel.php';
 require_once __DIR__ . '/inc/branded-products.php';
+require_once __DIR__ . '/inc/product-details.php';
