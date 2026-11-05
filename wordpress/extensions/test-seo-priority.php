@@ -48,7 +48,7 @@ foreach ($copy['languages'] as $lang => $records) {
         if ($lang !== 'en') { $row=wp_insert_term($lang.' '.$slug, 'cml_family', ['slug'=>$slug.'-'.$lang]); $term=get_term($row['term_id']); update_term_meta($term->term_id,'_test_en',$en->term_id); }
         update_term_meta($term->term_id, '_test_lang', $lang);
         $set(['cml_family'=>$term->slug]);
-        if ($lang !== 'en') {
+        if ($lang !== 'en' || $slug === 'wireless-sensors') {
             $assert(apply_filters('wpseo_metadesc','old') === $description, 'Localized category '.$lang.' '.$slug);
             $assert(apply_filters('wpseo_title','old') === $term->name.' | ChinaMudLogging.com','Remove archive suffix without title invention');
         }
@@ -72,4 +72,4 @@ foreach (['超声波液位传感器','电导率传感器','密度传感器','温
 $id=$make('mud-logging-unit-zh','cml_product','zh'); $set(['post_type'=>'cml_product','p'=>$id]);
 $assert(cml_priority_context() === [] && apply_filters('render_block_core/post-content','untouched') === 'untouched','Localized technical translations untouched');
 $set(['post_type'=>'cml_product','p'=>$make('unrelated-record')]); $assert(cml_priority_context() === [],'Unrelated product untouched');
-file_put_contents('/cml-priority-results/results.json', wp_json_encode(['passed'=>true,'assertions'=>$n,'equipment'=>3,'pageDescriptions'=>49,'familyDescriptions'=>30,'measurementTypes'=>8]));
+file_put_contents('/cml-priority-results/results.json', wp_json_encode(['passed'=>true,'assertions'=>$n,'equipment'=>3,'pageDescriptions'=>49,'familyDescriptions'=>31,'measurementTypes'=>8]));

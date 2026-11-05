@@ -51,7 +51,7 @@ function cml_priority_context(): array {
     // Search/filter/pagination variants keep their existing metadata and directives.
     foreach (['q', 'family'] as $key) if (isset($_GET[$key]) && (!is_scalar($_GET[$key]) || (string)$_GET[$key] !== '')) return [];
     if (is_paged() || (isset($_GET['catalog_page']) && (!is_scalar($_GET['catalog_page']) || !in_array((string)$_GET['catalog_page'], ['', '1'], true)))) return [];
-    if (is_tax('cml_family') && $object instanceof WP_Term && $lang !== 'en') {
+    if (is_tax('cml_family') && $object instanceof WP_Term && ($lang !== 'en' || $object->slug === 'wireless-sensors')) {
         $english = function_exists('pll_get_term') ? get_term(pll_get_term($object->term_id, 'en'), 'cml_family') : null;
         if (!$english instanceof WP_Term || !isset($copy['languages'][$lang]['families'][$english->slug])) return [];
         return ['kind' => 'family', 'lang' => $lang, 'name' => $object->name, 'description' => $copy['languages'][$lang]['families'][$english->slug]];
