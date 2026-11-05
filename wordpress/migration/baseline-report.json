@@ -1,0 +1,30 @@
+{
+  "localProducts": 63,
+  "localArticles": 8,
+  "families": 5,
+  "media": 89,
+  "records": 181,
+  "selectedProductIds": [
+    261,
+    258,
+    260,
+    257,
+    251,
+    245,
+    259,
+    273,
+    307,
+    297
+  ],
+  "translationProducts": 60,
+  "liveAudit": "frozen-passed",
+  "baselineOnly": true,
+  "sourceDataSha256": "59347b968afcd0e922e5101d23660e3293e9b1550755376c0e25b960fad0b508",
+  "releaseReport": "../docs/验收报告.md",
+  "liveProductCount": 63,
+  "missingOnline": [],
+  "missingLocal": [],
+  "existingBrokenPaths": [],
+  "checkedUrls": 83,
+  "frozenAt": "2026-11-04T07:14:28.633284+00:00"
+}

@@ -1,0 +1,41 @@
+name: WordPress migration candidate
+on:
+  pull_request:
+    paths: ['wordpress/**', 'src/data/**', 'src/scripts/funnel.ts', 'workers/funnel/**', 'tests/**', 'public/**', '.github/workflows/wordpress.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+      - run: npm ci
+      - name: Rebuild shared anonymous measurement client
+        run: |
+          node wordpress/scripts/build-funnel.mjs
+          git diff --exit-code -- wordpress/plugin/cml-core/funnel.js
+          npm run test:funnel
+      - name: PHP and JavaScript syntax
+        run: |
+          find wordpress -name '*.php' -print0 | xargs -0 -n1 php -l
+          node --check wordpress/plugin/cml-core/inquiry.js
+          node --check wordpress/plugin/cml-core/editor.js
+      - name: Validate content and draft translation integrity
+        run: |
+          python3 wordpress/scripts/prepare.py
+          python3 wordpress/scripts/check-bundle.py
+      - name: Package candidate
+        run: python3 wordpress/scripts/package.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chinamudlogging-wordpress-candidate
+          path: ~/.cache/chinamudlogging-wordpress/release/
+          retention-days: 14

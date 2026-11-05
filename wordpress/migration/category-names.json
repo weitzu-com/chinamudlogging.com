@@ -1,0 +1,51 @@
+{
+  "en": {
+    "drilling-monitoring": "Drilling Monitoring & Accessories",
+    "formation-evaluation": "Formation Evaluation",
+    "mud-logging-sensors": "Mud Logging Sensors",
+    "mud-logging-units": "Mud Logging Units",
+    "wireless-sensors": "Wireless Sensors"
+  },
+  "zh": {
+    "drilling-monitoring": "钻井监测与附件",
+    "formation-evaluation": "地层评价",
+    "mud-logging-sensors": "录井传感器",
+    "mud-logging-units": "录井系统",
+    "wireless-sensors": "无线传感器"
+  },
+  "es": {
+    "drilling-monitoring": "Monitoreo de perforación y accesorios",
+    "formation-evaluation": "Evaluación de formaciones",
+    "mud-logging-sensors": "Sensores de registro de lodos",
+    "mud-logging-units": "Unidades de registro de lodos",
+    "wireless-sensors": "Sensores inalámbricos"
+  },
+  "ru": {
+    "drilling-monitoring": "Мониторинг бурения и принадлежности",
+    "formation-evaluation": "Оценка пластов",
+    "mud-logging-sensors": "Датчики газового каротажа",
+    "mud-logging-units": "Станции газового каротажа",
+    "wireless-sensors": "Беспроводные датчики"
+  },
+  "ar": {
+    "drilling-monitoring": "مراقبة الحفر والملحقات",
+    "formation-evaluation": "تقييم التكوينات",
+    "mud-logging-sensors": "مستشعرات تسجيل الطين",
+    "mud-logging-units": "وحدات تسجيل الطين",
+    "wireless-sensors": "المستشعرات اللاسلكية"
+  },
+  "fr": {
+    "drilling-monitoring": "Surveillance du forage et accessoires",
+    "formation-evaluation": "Évaluation des formations",
+    "mud-logging-sensors": "Capteurs de mud logging",
+    "mud-logging-units": "Unités de mud logging",
+    "wireless-sensors": "Capteurs sans fil"
+  },
+  "de": {
+    "drilling-monitoring": "Bohrüberwachung und Zubehör",
+    "formation-evaluation": "Formationsbewertung",
+    "mud-logging-sensors": "Mud-Logging-Sensoren",
+    "mud-logging-units": "Mud-Logging-Einheiten",
+    "wireless-sensors": "Funksensoren"
+  }
+}
