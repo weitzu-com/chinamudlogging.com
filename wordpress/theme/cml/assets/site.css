@@ -6,3 +6,6 @@
 /* Comfortable navigation targets and persistent location cues. */
 .cml-languages a{display:inline-flex;align-items:center;min-height:44px}.cml-nav a[aria-current=page]{text-decoration:underline;text-underline-offset:.4em}.cml-nav-cta:hover{background:var(--ink);color:white}.cml-mobile summary{min-height:44px;display:list-item;padding-block:.5rem}.cml-consent{min-height:44px}
 @media(max-width:700px){.cml-brand{font-size:1rem;min-width:0;white-space:normal;overflow-wrap:anywhere}.cml-header{gap:.5rem}.cml-languages{column-gap:.8rem;row-gap:0}}
+
+/* Keep form input text readable without mobile browser focus zoom. */
+@media(max-width:700px){.cml-filter input,.cml-filter select,.cml-inquiry-layout input,.cml-inquiry-layout textarea{font-size:16px}}

@@ -60,7 +60,7 @@ function cml_receive_inquiry(WP_REST_Request $request) {
     foreach (['name' => 160, 'email' => 254, 'company' => 200, 'country' => 120, 'product' => 300, 'message' => 8000, 'source' => 500] as $field => $max) {
         if (!is_string($data[$field] ?? '')) return $error('invalid_' . $field, 400);
         $value = trim($data[$field] ?? '');
-        if (strlen($value) > $max) return $error('invalid_' . $field, 400);
+        if (mb_strlen($value, 'UTF-8') > $max) return $error('invalid_' . $field, 400);
         $payload[$field] = $field === 'message' ? sanitize_textarea_field($value) : sanitize_text_field($value);
     }
     if (!$payload['name'] || !$payload['message'] || !is_email($payload['email'])) return $error('required_fields', 400);
