@@ -71,6 +71,14 @@ foreach (cml_system_hub_records() as $slug => $record) {
     $assert(substr_count($html, 'id="cml-sensor-heading"') === 1, 'Single hub shortcut block');
     $assert(substr_count($html, 'id="cml-sensor-compatibility"') === 1, 'Single hub decision block');
     $assert(str_contains($html, 'product=' . rawurlencode($record[2])), 'Hub-specific RFQ context');
+    if ($record[0] === 'sensor_catalogue') {
+        $quick = cml_sensor_quick($c);
+        $assert(substr_count($quick, 'aria-label="Choose a sensor measurement"') === 1, 'One pre-pagination measurement route');
+        foreach (['drilling-fluid-temperature-sensor', 'flow-out-sensor-paddle-for-mud-logging-unit', 'pump-stroke-sensor-for-mud-logging', 'cl-md23-mud-density-sensor', 'cl-dd11-mud-conductivity-sensor', 'sitrans-probe-lu240-ultrasonic-pit-level-transmitter', 'rada-32-ddlja5-80ghz-radar-level-transmitter', 'cnps-mhp-pressure-sensor-15000psi'] as $target) {
+            $assert(str_contains($quick, '/product/' . $target . '/'), 'Direct measurement route before the paginated list');
+        }
+        $assert(str_contains($html, 'not a calibrated absolute mud flow meter') && str_contains($html, 'shale sample density'), 'Measurement definitions kept distinct');
+    }
     $assert(apply_filters('render_block_core/post-content', 'post untouched') === 'post untouched' && apply_filters('render_block_cml/product', 'hero untouched') === 'hero untouched', 'Archive does not inject into individual card/post blocks');
     $assert(!str_contains($html, '<script') && !preg_match('/href="[^"]*\.pdf/i', $html) && str_contains($html, 'not a set of available downloads'), 'Hub document and analytics boundary');
     foreach ([['q' => 'pressure'], ['family' => 'drilling-monitoring'], ['q' => ['bad']], ['family' => ['bad']], ['catalog_page' => '2'], ['catalog_page' => ['bad']]] as $query) {
@@ -83,7 +91,7 @@ foreach (cml_system_hub_records() as $slug => $record) {
     $assert(apply_filters('render_block_cml/catalogue', $listing) === $listing, 'Paged archive listing unchanged');
 }
 $_GET = [];
-foreach (['mud-logging-units', 'mud-logging-sensors', 'formation-evaluation-ar'] as $slug) {
+foreach (['mud-logging-units', 'wireless-sensors', 'formation-evaluation-ar'] as $slug) {
     wp_insert_term($slug, 'cml_family', ['slug' => $slug]);
     $set_query(['cml_family' => $slug]);
     $assert(cml_sensor_context() === [], 'Other/localized family excluded');

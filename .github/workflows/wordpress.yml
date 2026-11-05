@@ -33,6 +33,10 @@ jobs:
           python3 wordpress/scripts/check-full-translations.py --require-approved
           python3 wordpress/scripts/prepare.py
           python3 wordpress/scripts/check-bundle.py
+      - name: Verify catalogue schema and sitemap boundaries in isolated WordPress
+        run: |
+          python3 wordpress/extensions/test-search-quality.py
+          python3 wordpress/extensions/test-sensor-selection.py
       - name: Package candidate
         run: python3 wordpress/scripts/package.py
       - uses: actions/upload-artifact@v4
