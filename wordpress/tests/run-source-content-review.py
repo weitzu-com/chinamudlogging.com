@@ -5,7 +5,7 @@ import subprocess
 root=pathlib.Path(__file__).resolve().parents[2]
 out=pathlib.Path.home()/'.cache/chinamudlogging-wordpress/source-content-tests'
 out.mkdir(parents=True,mode=0o700,exist_ok=True)
-for name in ['before.json','before.tar','before.json.tar.gz','fixture.json','before-snapshots.json','wrong-scope.json']:
+for name in ['before.json','before.tar','before.json.tar.gz','fixture.json','before-snapshots.json','wrong-scope.json','failure.json']:
     (out/name).unlink(missing_ok=True)
 phases=['setup','scope','check','apply','verify','idempotent','drift','rollback']
 steps=[{'step':'activatePlugin','pluginPath':'cml-core/cml-core.php'}]

@@ -48,6 +48,19 @@ if($phase==='apply'){
  $assert($report['changed']===36,'36 guarded existing-record updates');
  $archive=new PharData($backup.'.tar.gz');$restored=json_decode($archive[basename($backup)]->getContent(),true,512,JSON_THROW_ON_ERROR);$assert(count($restored['records'])===36,'Real tar.gz backup can be read');
 }
+if($phase==='verify'){
+ require '/cml/corrections/source-content-20261105/cml-reviewed-article.php';
+ add_filter('render_block_core/post-content',fn($html)=>'<details>OLD WRAPPER'.$html.'</details>',120);
+ add_filter('wpseo_metadesc',fn($html)=>'OLD SEO DESCRIPTION',120);
+ foreach($data['records']as$articleRecord){
+  if($articleRecord['type']!=='post')continue;
+  $GLOBALS['wp_query']=new WP_Query(['p'=>$articleRecord['id'],'post_type'=>'post']);
+  $reviewed=$articleRecord['slug']==='what-is-the-main-task-of-a-mud-logging-unit';
+  $assert(apply_filters('render_block_core/post-content','REVIEWED BODY')===($reviewed?'REVIEWED BODY':'<details>OLD WRAPPERREVIEWED BODY</details>'),'Reviewed article visible; unrelated wrappers preserved');
+  $assert(apply_filters('wpseo_metadesc','INPUT')===($reviewed?$articleRecord['after']['meta']['_yoast_wpseo_metadesc']:'OLD SEO DESCRIPTION'),'Reviewed metadata scope');
+ }
+ wp_reset_query();
+}
 if($phase==='idempotent')$assert($report['changed']===0&&$report['unchanged']===36,'Idempotent re-run');
 foreach($data['records']as$r){
  $id=$r['id'];$p=get_post($id);$assert($p->post_date_gmt===$fixtureBefore['records'][$id]['date']&&get_post_thumbnail_id($id)===$fixtureBefore['records'][$id]['image'],'Original date and image preserved: '.wp_json_encode([$phase,$id,$p->post_date_gmt,$fixtureBefore['records'][$id]['date'],get_post_thumbnail_id($id),$fixtureBefore['records'][$id]['image']]));
