@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ChinaMudLogging Sensor Selection
  * Description: Source-bounded selection, compatibility and documentation guidance for priority English sensors.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Requires PHP: 8.2
  */
 defined('ABSPATH') || exit;
@@ -24,6 +24,16 @@ function cml_sensor_records(): array {
         'cnps-ml11-fluid-level-sensor' => ['level_ultrasonic', 'CNPS-ML11 Fluid Level Sensor: Installation & Compatibility', 'CNPS-ML11 fluid level sensor', 'The original parameter formatting and calibration menu are retained below. Confirm their meaning and applicability with the supplier; do not transfer this menu or specifications to another level transmitter.'],
         'sitrans-probe-lu240-ultrasonic-pit-level-transmitter' => ['level_ultrasonic', 'SITRANS Probe LU240: Pit Level Selection & Technical Manual', 'SITRANS Probe LU240 pit level transmitter', 'Range and interface options depend on the ordered LU240 configuration. The linked Siemens family manual is a reference to check against the actual order code and firmware, not proof of the supplied configuration or approval.'],
         'rada-32-ddlja5-80ghz-radar-level-transmitter' => ['level_radar', 'RADA-32-DDLJA5 Radar Level Transmitter: Configuration Review', 'RADA-32-DDLJA5 radar level transmitter', 'The source combines a named radar model with broader family options. Confirm the complete order code, process connection, materials and protocol; do not combine all family limits or options into one offered unit.'],
+        'cnps-dnj-electric-torque-sensor' => ['torque', 'CNPS-DNJ Electric Torque Sensor: Current & Interface Review', 'CNPS-DNJ electric torque sensor', 'This source combines CNPS-DNJ descriptions with a HU-404 parameter section. Supply, output and bandwidth descriptions differ. Confirm the exact offered version; do not combine the sections into one specification.'],
+        'cnps-dw-a11-depth-encoder' => ['depth', 'CNPS-DW-A11 Depth Encoder: Pulse Interface & Depth Scaling', 'CNPS-DW-A11 depth encoder', 'The source describes two pulse channels and drawworks shaft motion. Some power/response entries have unclear unit formatting; they are retained for reference, not interpreted as verified limits. Confirm the model-matched datasheet and drawing.'],
+        'cnps-mhp-pressure-sensor-15000psi' => ['pressure', 'CNPS-MHP Pressure Sensor: Range & Interface Review', 'CNPS-MHP pressure sensor', 'Unresolved range conflict: the product heading says 15,000 psi, while the original table states 0-2.5 bar and the text lists other ranges. This page does not verify a 15,000 psi rating. Confirm the ordered range and complete pressure connection before selection.'],
+        'electric-torque-sensor' => ['torque', 'Electric Torque Sensor: Current Signal & Calibration Review', 'Electric torque sensor', 'This sparse catalogue record describes electrical current sensing but does not establish a model-matched torque conversion, wiring diagram or complete configuration. Do not copy values from another torque catalogue page.'],
+        'mud-logging-sensor-named-casing-pressure-sensor' => ['pressure', 'Casing Pressure Sensor: Range, Connection & Interface Selection', 'Casing pressure sensor', 'The original pressure record includes an unrelated Pump Stroke paragraph. That paragraph does not establish pressure-sensor function or compatibility. Confirm the exact pressure transmitter, connection and ordered range.'],
+        'mud-logging-sensor-named-standpipe-pressure-sensor' => ['pressure', 'Standpipe Pressure Sensor: Selection & Interface Compatibility', 'Standpipe pressure sensor', 'The original pressure record includes an unrelated Pump Stroke paragraph. Retain it as source text, not as proof of pressure-transmitter performance. Confirm the offered model, pressure connection and interface.'],
+        'mud-logging-sensor-of-electric-torque-sensor' => ['torque', 'Mud Logging Electric Torque Sensor: Current-to-Torque Review', 'Mud logging electric torque sensor', 'The source describes Hall-effect current sensing used for rotary-table monitoring. Its current range and output are not a verified mechanical torque range. Confirm the motor/drive conversion and calibration basis separately.'],
+        'wireless-casing-pressure-sensor-for-mud-logging-unit' => ['pressure', 'Wireless Casing Pressure Sensor: Selection & Receiver Interface', 'Wireless casing pressure sensor', 'The listed local supply and voltage output do not establish the wireless receiver interface. Confirm this exact pressure range and complete connection assembly; do not substitute a standpipe record solely because it looks similar.'],
+        'wireless-electric-torque-sensor-for-mud-logging-unit' => ['torque', 'Wireless Electric Torque Sensor: Current & Receiver Selection', 'Wireless electric torque sensor', 'The source specifies current sensing and local voltage output. Confirm the transmitter/receiver pair and the motor-specific current-to-torque relationship; neither the wireless label nor the current range proves a calibrated torque measurement.'],
+        'wireless-standpipe-pressure-sensor-for-mud-logging-unit' => ['pressure', 'Wireless Standpipe Pressure Sensor: Range & System Selection', 'Wireless standpipe pressure sensor', 'The listed local electrical values and pressure range apply to this source record only. Confirm the offered transmitter, pressure connection and receiver output before assessing compatibility with the logging system.'],
     ];
 }
 function cml_sensor_context(): array {
@@ -45,11 +55,11 @@ add_filter('wpseo_metadesc', function ($description) {
 }, 95);
 add_action('wp_enqueue_scripts', function () {
     if (!cml_sensor_context()) return;
-    wp_register_style('cml-sensor-selection', false, [], '1.1.0'); wp_enqueue_style('cml-sensor-selection');
+    wp_register_style('cml-sensor-selection', false, [], '1.2.0'); wp_enqueue_style('cml-sensor-selection');
     wp_add_inline_style('cml-sensor-selection', '.cml-sensor-guide{margin-block:2rem;padding:clamp(1rem,3vw,2rem);background:#f4f8f8;border:1px solid #ccd6dc;border-radius:12px}.cml-sensor-guide h2{font-size:clamp(1.5rem,3vw,2.1rem)}.cml-sensor-guide nav{display:flex;gap:.7rem 1.2rem;flex-wrap:wrap}.cml-sensor-guide nav a{display:inline-flex;align-items:center;min-height:44px}.cml-sensor-table{overflow-x:auto;max-width:100%}.cml-sensor-table table{width:100%;min-width:520px;border-collapse:collapse}.cml-sensor-table td,.cml-sensor-table th{padding:.8rem;text-align:left;vertical-align:top;border:1px solid #ccd6dc}.cml-sensor-guide li{margin-block:.5rem}.cml-sensor-guide a{overflow-wrap:anywhere}.cml-sensor-source{scroll-margin-top:2rem}');
 }, 30);
 function cml_sensor_quick(array $c): string {
-    return '<section class="cml-sensor-guide" aria-labelledby="cml-sensor-heading"><p class="eyebrow">Selection &amp; system integration</p><h2 id="cml-sensor-heading">Before choosing this ' . esc_html(['temperature' => 'temperature sensor', 'flow' => 'flow-out sensor', 'pump' => 'pump stroke sensor', 'density' => 'mud density sensor', 'conductivity' => 'mud conductivity sensor', 'level_ultrasonic' => 'ultrasonic level sensor', 'level_radar' => 'radar level transmitter'][$c['type']]) . '</h2><p>' . esc_html($c['sourceNote']) . '</p><nav aria-label="Sensor selection shortcuts"><a href="#cml-sensor-compatibility">Check compatibility</a><a href="#cml-sensor-documents">Technical documentation</a><a href="#cml-sensor-source">Review the source record</a></nav><div class="cml-actions">' . cml_sensor_rfq($c) . '</div></section>';
+    return '<section class="cml-sensor-guide" aria-labelledby="cml-sensor-heading"><p class="eyebrow">Selection &amp; system integration</p><h2 id="cml-sensor-heading">Before choosing this ' . esc_html(['temperature' => 'temperature sensor', 'flow' => 'flow-out sensor', 'pump' => 'pump stroke sensor', 'density' => 'mud density sensor', 'conductivity' => 'mud conductivity sensor', 'level_ultrasonic' => 'ultrasonic level sensor', 'level_radar' => 'radar level transmitter', 'pressure' => 'pressure sensor', 'torque' => 'electric torque sensor', 'depth' => 'depth encoder'][$c['type']]) . '</h2><p>' . esc_html($c['sourceNote']) . '</p><nav aria-label="Sensor selection shortcuts"><a href="#cml-sensor-compatibility">Check compatibility</a><a href="#cml-sensor-documents">Technical documentation</a><a href="#cml-sensor-source">Review the source record</a></nav><div class="cml-actions">' . cml_sensor_rfq($c) . '</div></section>';
 }
 function cml_sensor_content(array $c): string {
     $rows = [
@@ -95,6 +105,24 @@ function cml_sensor_content(array $c): string {
             ['Ordered interface', 'Confirm the complete order code, supply, output/protocol, loop/load and receiving input. Family protocol and material options do not establish the configuration of the named unit.'],
             ['Commissioning and acceptance', 'Request the matching manual and echo/verification procedure, operating limits and acceptance criteria. Confirm process materials and environmental suitability for the actual order.'],
         ],
+        'pressure' => [
+            ['Measurement and process', 'State standpipe or casing measurement point, pressure units/reference, normal and transient conditions, medium and required span. Resolve inconsistent source ranges before quotation.'],
+            ['Pressure connection and rating', 'Request the exact port/thread, seal, adapter and wetted-material drawing. Confirm measuring range, overload/burst limits and the ratings of the entire connected assembly separately; a measuring range is not an assembly pressure rating.'],
+            ['Electrical and receiving input', 'Confirm supply, wire count, output, connector/pinout, loop/load requirements and acquisition scaling for the offered model. Similar names or connectors do not establish interchangeability.'],
+            ['Documentation and acceptance', 'Agree pressure reference/calibration evidence, installation instructions and order-specific acceptance criteria. Source catalogue adjustment text is not a substitute for the matching service procedure.'],
+        ],
+        'torque' => [
+            ['What is measured', 'The reviewed electric torque records describe motor current sensing. Specify whether you need a current trend, a system-derived torque indication or direct mechanical torque measurement.'],
+            ['Drive and torque relationship', 'Identify motor, AC/DC drive, operating conditions, gearing and the acquisition system’s conversion/calibration basis. A current range alone does not establish a torque range or accuracy in mechanical units.'],
+            ['Sensor and electrical interface', 'Confirm the exact current transducer, conductor/aperture arrangement, supply, output, polarity, connector, isolation requirements and receiving input. Resolve mixed model/variant descriptions before purchase.'],
+            ['Verification and installation', 'Request model-matched wiring, installation and calibration documents. Confirm the offered transducer and complete motor/drive measurement chain against agreed reference conditions; catalogue wording is not a live-work procedure.'],
+        ],
+        'depth' => [
+            ['Pulse and direction interface', 'Confirm channel A/B behaviour, logic levels, output circuit, pinout, supply, cable and receiving counter thresholds/frequency limits. Do not infer a particular line driver or count mode from a two-channel label.'],
+            ['Mechanical compatibility', 'Request shaft/coupling, mounting/thread and dimensional drawings for the actual drawworks. Confirm rotation direction and phase sequence for the selected installation end.'],
+            ['Scaling to displacement', 'Confirm pulses per revolution, decoding/count mode, mechanical transmission, drum geometry/rope arrangement and reference checks. None of these conversion factors is established by the product name alone.'],
+            ['Depth calculation and acceptance', 'Separate shaft rotation, hook movement and calculated drilling depth. Agree reference/reset, rig state and software settings, then verify direction and displacement against known references. A pulse count alone does not establish absolute well depth.'],
+        ],
     ][$c['type']];
     if (str_starts_with($c['slug'], 'wireless-')) $rows[] = ['Wireless system boundary', 'Confirm paired transmitter and receiver, receiver output, power requirements, radio/region compatibility and acquisition wiring. A local sensor voltage is not automatically the receiver output.'];
     $documents = [
@@ -105,6 +133,9 @@ function cml_sensor_content(array $c): string {
         'conductivity' => ['Model-matched probe/transmitter datasheet with units, span and output.', 'Wiring/receiver drawing resolving the exact offered interface.', 'Temperature-compensation details, reference conditions and calibration/maintenance requirements.'],
         'level_ultrasonic' => ['Exact order code and applicable manual/firmware revision.', 'Mounting, blind-zone and measurement-path drawing; model-specific wiring and loop requirements.', 'Reference/span configuration and any tank geometry or volume-conversion documentation.'],
         'level_radar' => ['Complete order code and matching radar manual with offered protocol and materials.', 'Antenna/process connection, installation and wiring drawings.', 'Echo/reference verification and any tank geometry or volume-conversion documentation.'],
+        'pressure' => ['Order-specific datasheet resolving range/reference, output and operating limits.', 'Pressure port, sealing and adapter drawings with component/assembly ratings and wetted materials.', 'Wiring/loop diagram, installation instructions and pressure calibration/inspection evidence.'],
+        'torque' => ['Exact current-transducer model and datasheet resolving supply, output, bandwidth and isolation requirements.', 'Wiring, conductor/aperture and installation drawings for the offered configuration.', 'Motor/drive current-to-torque conversion, system scaling and reference/calibration acceptance basis.'],
+        'depth' => ['Model-specific datasheet clarifying ambiguous unit entries, pulses per revolution and output circuit.', 'Mounting/coupling dimensions and matched A/B wiring/connector diagram.', 'Acquisition decoding, direction, reference/reset and displacement/depth scaling documentation.'],
     ][$c['type']];
     $related = [
         'temperature' => ['mud-temperature-sensor' => 'Mud temperature catalogue record', 'drilling-fluid-temperature-sensor' => 'Drilling fluid temperature probe record'],
@@ -114,6 +145,9 @@ function cml_sensor_content(array $c): string {
         'conductivity' => ['mud-conductivity-sensor-for-mud-logging-unit' => 'Mud conductivity sensor', 'wireless-conductivity-sensor-for-mud-logging-unit' => 'Wireless mud conductivity sensor', 'cl-dd11-mud-conductivity-sensor' => 'CL-DD11 mud conductivity sensor'],
         'level_ultrasonic' => ['pit-level-sensor-used-for-mud-logging' => 'Ultrasonic pit level sensor', 'cnps-ml11-fluid-level-sensor' => 'CNPS-ML11 fluid level sensor', 'sitrans-probe-lu240-ultrasonic-pit-level-transmitter' => 'SITRANS Probe LU240 pit level transmitter', 'rada-32-ddlja5-80ghz-radar-level-transmitter' => 'RADA-32-DDLJA5 radar level transmitter'],
         'level_radar' => ['pit-level-sensor-used-for-mud-logging' => 'Ultrasonic pit level sensor', 'cnps-ml11-fluid-level-sensor' => 'CNPS-ML11 fluid level sensor', 'sitrans-probe-lu240-ultrasonic-pit-level-transmitter' => 'SITRANS Probe LU240 pit level transmitter', 'rada-32-ddlja5-80ghz-radar-level-transmitter' => 'RADA-32-DDLJA5 radar level transmitter'],
+        'pressure' => ['cnps-mhp-pressure-sensor-15000psi' => 'CNPS-MHP pressure sensor', 'mud-logging-sensor-named-casing-pressure-sensor' => 'Casing pressure sensor', 'mud-logging-sensor-named-standpipe-pressure-sensor' => 'Standpipe pressure sensor', 'wireless-casing-pressure-sensor-for-mud-logging-unit' => 'Wireless casing pressure sensor', 'wireless-standpipe-pressure-sensor-for-mud-logging-unit' => 'Wireless standpipe pressure sensor'],
+        'torque' => ['cnps-dnj-electric-torque-sensor' => 'CNPS-DNJ electric torque sensor', 'electric-torque-sensor' => 'Electric torque sensor', 'mud-logging-sensor-of-electric-torque-sensor' => 'Mud logging electric torque sensor', 'wireless-electric-torque-sensor-for-mud-logging-unit' => 'Wireless electric torque sensor'],
+        'depth' => ['cnps-dw-a11-depth-encoder' => 'CNPS-DW-A11 depth encoder', 'pump-stroke-sensor-for-mud-logging' => 'Pump stroke counting application (a different measurement)'],
     ][$c['type']];
     ob_start(); ?>
     <section class="cml-sensor-guide" id="cml-sensor-compatibility" aria-labelledby="cml-sensor-check-heading">
@@ -131,6 +165,12 @@ function cml_sensor_content(array $c): string {
       <h3>Can I replace a conductivity probe without checking the transmitter?</h3><p>Confirm the probe, transmitter, compensation and receiving input together. The wireless source has conflicting output descriptions; require a configuration-matched wiring drawing before purchase.</p>
       <?php elseif (str_starts_with($c['type'], 'level_')): ?>
       <h3>Does a pit level sensor measure tank volume?</h3><p>The measurement path and reference determine distance or level. Volume requires a separate, verified relationship to tank geometry. Ultrasonic and radar records should be compared by installation and ordered interface, not treated as interchangeable.</p>
+      <?php elseif ($c['type'] === 'pressure'): ?>
+      <h3>Can a standpipe pressure sensor replace a casing pressure sensor?</h3><p>Compare the actual measurement point, ordered range, process connection, sealing, medium and acquisition interface. The source records have different ranges and configurations; the application label alone does not prove equivalence. Resolve the MHP range conflict before using that record for pressure selection.</p>
+      <?php elseif ($c['type'] === 'torque'): ?>
+      <h3>Does an electric torque sensor directly measure mechanical torque?</h3><p>These catalogue records describe electrical current sensing used in a torque-monitoring system. Current-to-torque indication requires a motor/drive-specific relationship and verification. Do not present a current measurement specification as independently established shaft-torque accuracy.</p>
+      <?php elseif ($c['type'] === 'depth'): ?>
+      <h3>Does a depth encoder directly establish drilling depth?</h3><p>The source describes shaft rotation and two pulse channels. The logging system must interpret direction and scale movement using the actual rig arrangement and reference state. Request the resolution, counter settings and depth-calculation procedure; do not assume an absolute depth or precision from pulse output alone.</p>
       <?php else: ?>
       <h3>Which temperature sensor details are still needed?</h3><p>The reviewed temperature records do not establish a complete model-specific electrical and mechanical configuration. Provide the existing nameplate or required measurement point, then confirm the sensing element/transmitter, range, output, probe geometry and acquisition input together.</p>
       <?php endif; ?>

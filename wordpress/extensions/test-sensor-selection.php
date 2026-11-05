@@ -29,6 +29,9 @@ foreach (cml_sensor_records() as $slug => $record) {
     if ($record[0] === 'density') $assert(str_contains($html, 'shale sample density'), 'Density measurand boundary');
     if ($record[0] === 'conductivity') $assert(str_contains($html, 'compensation') && str_contains($html, 'resistivity'), 'Conductivity configuration boundary');
     if (str_starts_with($record[0], 'level_')) $assert(str_contains($html, 'tank geometry') && str_contains($html, 'order code'), 'Level and volume boundary');
+    if ($record[0] === 'pressure') $assert(str_contains($html, 'assembly pressure rating') && str_contains($hero, $record[3]), 'Pressure range and source conflict boundary');
+    if ($record[0] === 'torque') $assert(str_contains($html, 'Current-to-torque') && str_contains($html, 'motor/drive'), 'Current versus torque boundary');
+    if ($record[0] === 'depth') $assert(str_contains($html, 'pulses per revolution') && str_contains($html, 'absolute well depth') && str_contains($hero, $record[3]), 'Encoder resolution and depth boundary');
     if (str_starts_with($slug, 'wireless-')) $assert(str_contains($html, 'Wireless system boundary'), 'Wireless receiver boundary');
 }
 foreach (['unrelated-sensor', 'mud-temperature-sensor-ar'] as $slug) {
