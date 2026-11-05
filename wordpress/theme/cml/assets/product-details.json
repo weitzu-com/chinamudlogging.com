@@ -3787,7 +3787,7 @@
           "source": "0.5~2.5vdc voltage signal"
         },
         {
-          "label": "Measurement range",
+          "label": "Current signal input",
           "value": "4-20mA",
           "status": "",
           "source": "4-20mA"
@@ -4163,8 +4163,8 @@
         },
         {
           "label": "Detection range",
-          "value": "0-100ppm T90",
-          "status": "",
+          "value": "",
+          "status": "unclear",
           "source": "0-100ppm T90"
         },
         {
