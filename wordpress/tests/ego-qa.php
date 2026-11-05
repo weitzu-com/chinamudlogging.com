@@ -28,4 +28,17 @@ $featured=wp_insert_post(['post_type'=>'cml_product','post_status'=>'publish','p
 $unreviewed=wp_insert_post(['post_type'=>'cml_product','post_status'=>'publish','post_title'=>'QA newest catalogue addition','meta_input'=>['_cml_source_id'=>'product:999999']]);
 $home=cml_render('home');
 $check(str_contains($home,'QA curated product')&&!str_contains($home,'QA newest catalogue addition'),'Homepage recommendations remain limited to the ten reviewed multilingual products');
+if (!defined('WP_CLI')) define('WP_CLI',true);
+if (!function_exists('pll_get_post_language')) { function pll_get_post_language($id) { return 'en'; } }
+$copy_plan=json_decode(file_get_contents('/cml/corrections/english-catalogue-names-20261105.json'),true);
+foreach ($copy_plan['records'] as $record) wp_insert_post(['import_id'=>$record['id'],'post_type'=>'cml_product','post_status'=>'publish','post_name'=>$record['slug'],'post_title'=>$record['before']['title'],'post_excerpt'=>$record['before']['excerpt'],'post_content'=>'Protected source table 24V 4-20mA']);
+$run_copy=function($operation){$args=['/cml/corrections/english-catalogue-names-20261105.json',$operation];ob_start();try{require '/cml/corrections/apply-english-catalogue-names.php';return json_decode(ob_get_contents(),true);}finally{ob_end_clean();}};
+$first=$copy_plan['records'][0];$last=end($copy_plan['records']);
+wp_update_post(['ID'=>$last['id'],'post_title'=>'Concurrent editor change']);
+$conflict=false;try{$run_copy('apply');}catch(RuntimeException $error){$conflict=str_contains($error->getMessage(),'Concurrent edit');}
+$check($conflict&&get_post($first['id'])->post_title===$first['before']['title'],'Catalogue name changes preflight every record before writing');
+wp_update_post(['ID'=>$last['id'],'post_title'=>$last['before']['title']]);
+$applied=$run_copy('apply');$check($applied['protected_field_checks_passed']===77,'All 77 name fixes preserve bodies, units, URLs, dates and technical fields');
+$again=$run_copy('apply');$check($again['already_at_target']===77&&$again['pending']===0,'Catalogue name correction is idempotent');
+$rolled_back=$run_copy('rollback');$check($rolled_back['protected_field_checks_passed']===77&&get_post($first['id'])->post_title===$first['before']['title'],'Catalogue name rollback restores the original fields');
 $result=['checks'=>$checks,'passed'=>count(array_filter($checks,fn($r)=>$r['passed'])),'total'=>count($checks)];file_put_contents('/cml-qa/results.json',wp_json_encode($result));echo wp_json_encode($result);
