@@ -27,6 +27,8 @@ jobs:
         run: |
           find wordpress -name '*.php' -print0 | xargs -0 -n1 php -l
           find wordpress/plugin -name '*.js' -print0 | xargs -0 -n1 node --check
+          node --check wordpress/theme/cml/assets/language-panel.js
+          python3 wordpress/tests/check-brand-media.py
       - name: Validate content and draft translation integrity
         run: |
           python3 wordpress/scripts/prepare.py
