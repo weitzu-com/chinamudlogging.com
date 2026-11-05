@@ -5,7 +5,7 @@ require_once '/wordpress/wp-load.php';
 require_once '/cml/extensions/cml-sensor-selection.php';
 require_once '/cml/extensions/cml-buyer-guide.php';
 $passed = 0;
-$assert = function ($ok, $label) use (&$passed) { if (!$ok) throw new RuntimeException($label); $passed++; };
+$assert = function ($ok, $label) use (&$passed) { if (!$ok) { echo 'FAILED: ' . $label; throw new RuntimeException($label); } $passed++; };
 $contact = wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Contact', 'post_name' => 'contact-us']);
 $catalogue = wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Products', 'post_name' => 'product']);
 update_option('cml_pages', ['en' => ['contact' => $contact, 'products' => $catalogue]]);
@@ -17,13 +17,14 @@ foreach (cml_sensor_records() as $slug => $record) {
     $assert(str_contains(apply_filters('wpseo_title', 'old'), $record[1]), 'Product metadata ' . $slug);
     $hero = apply_filters('render_block_cml/product', '<h1>ORIGINAL-H1</h1>');
     $assert(substr_count($hero, '<h1>') === 1 && str_contains($hero, 'cml-sensor-heading'), 'Preserve one product H1 ' . $slug);
+    $assert(substr_count($hero, 'aria-label="UV lamp box procurement comparison"') === ($slug === 'oil-fluoroscope-uv-lamp-box' ? 1 : 0), 'Comparison is limited to unknown-model UV guide ' . $slug);
     $identity = cml_sensor_identity_records()[$slug] ?? [];
     $assert(substr_count($hero, 'id="cml-record-identity"') === ($identity ? 1 : 0), 'Identity profile scope ' . $slug);
     if ($identity) {
         $assert(str_contains($hero, esc_html($identity['heading'])) && str_contains($hero, esc_html($identity['intro'])), 'Source-specific identity and role');
         $assert(apply_filters('wpseo_metadesc', 'old') === $identity['description'], 'Distinct model/selection description');
         $schema = apply_filters('wpseo_schema_webpage', ['@type' => 'WebPage', 'dateModified' => '2026-11-01T00:00:00+00:00']);
-        $assert($schema['dateModified'] === CML_SENSOR_IDENTITY_REVISION, 'Only revised product graph gets identity revision');
+        $assert($schema['dateModified'] === cml_sensor_identity_revision($slug), 'Only revised product graph gets identity revision');
         $entry = apply_filters('wpseo_sitemap_entry', ['loc' => get_permalink($id), 'mod' => '2026-11-01T00:00:00+00:00'], 'post', get_post($id));
         $assert($entry['mod'] === $schema['dateModified'] && $entry['loc'] === get_permalink($id), 'Identity sitemap matches graph without URL change');
         $profile = cml_sensor_identity($c);
@@ -41,7 +42,7 @@ foreach (cml_sensor_records() as $slug => $record) {
     $assert($official ? $pdfs[1] === ['https://cache.industry.siemens.com/dl/files/517/109973517/att_1294115/v45/A5E42673511en_LU240_HA_mA_OI_en-US.pdf'] : count($pdfs[1]) === 0, 'Exact official PDF whitelist ' . $slug);
     $assert(!str_contains($html, '<form') && !str_contains($html, '<script'), 'No extra sending or analytics ' . $slug);
     $assert(!str_contains($html, '5~30VDC') && !str_contains($html, '24VDC'), 'No source parameter transplant ' . $slug);
-    $assert(str_contains($html, 'product=' . rawurlencode($record[2])), 'Correct RFQ context ' . $slug);
+    $assert(str_contains($html, 'product=' . rawurlencode($slug === 'oil-fluoroscope-uv-lamp-box' ? 'UV lamp box - model unknown' : $record[2])), 'Correct RFQ context ' . $slug);
     if ($record[0] === 'flow') $assert(str_contains($html, 'absolute') && str_contains($html, 'mud flow meter'), 'Flow query intent and measurement boundary');
     if ($record[0] === 'density') $assert(str_contains($html, 'shale sample density'), 'Density measurand boundary');
     if ($record[0] === 'conductivity') $assert(str_contains($html, 'compensation') && str_contains($html, 'resistivity'), 'Conductivity configuration boundary');
@@ -128,7 +129,7 @@ $assert($entry['mod'] === CML_BUYER_MODEL_REVISION, 'Catalogue sitemap matches m
 $future = '2099-01-01T00:00:00+00:00';
 $assert(cml_buyer_model_modified($future) === $future, 'Buyer revision preserves a later edit');
 $links = apply_filters('wpseo_sitemap_index_links', [['loc' => home_url('/page-sitemap.xml'), 'lastmod' => '2026-11-01'], ['loc' => home_url('/cml_product-sitemap.xml'), 'lastmod' => '2026-11-01'], ['loc' => home_url('/post-sitemap.xml'), 'lastmod' => '2026-11-01']]);
-$assert($links[0]['lastmod'] === CML_BUYER_MODEL_REVISION && $links[1]['lastmod'] === CML_SENSOR_IDENTITY_REVISION && $links[2]['lastmod'] === '2026-11-01', 'Only affected current sitemap indexes revised');
+$assert($links[0]['lastmod'] === CML_BUYER_MODEL_REVISION && $links[1]['lastmod'] === CML_UV_SELECTION_REVISION && $links[2]['lastmod'] === '2026-11-01', 'Only affected current sitemap indexes revised');
 foreach ([['q' => 'pressure'], ['catalog_page' => '2']] as $params) {
     $_GET = $params;
     $assert(apply_filters('render_block_cml/catalogue', $listing) === $listing, 'Filtered catalogue gets no model route');
@@ -136,7 +137,7 @@ foreach ([['q' => 'pressure'], ['catalog_page' => '2']] as $params) {
     $assert(apply_filters('wpseo_schema_webpage', $base_schema) === $base_schema, 'Filtered catalogue graph not falsely revised');
 }
 $_GET = [];
-$assert(cml_sensor_identity_modified($future) === $future, 'Identity revision preserves a later edit');
+$assert(cml_sensor_identity_modified($future, CML_UV_SELECTION_REVISION) === $future, 'Identity revision preserves a later edit');
 $assert(apply_filters('wpseo_sitemap_entry', false, 'post', get_post($catalogue)) === false, 'Excluded sitemap URL not revived by route revisions');
 $draft = new WP_Post((object)['ID' => 0, 'post_type' => 'cml_product', 'post_status' => 'draft', 'post_name' => 'cl-md23-mud-density-sensor']);
 $draft_entry = ['loc' => home_url('/not-published/'), 'mod' => '2026-11-01'];
@@ -147,6 +148,8 @@ $schema = apply_filters('wpseo_schema_webpage', ['dateModified' => '2026-11-01']
 $assert($schema['dateModified'] === CML_CATALOGUE_SCHEMA_REVISION, 'Unchanged sensor graph retains previous core revision');
 $entry = apply_filters('wpseo_sitemap_entry', ['loc' => get_permalink($unchanged), 'mod' => '2026-11-01'], 'post', $unchanged);
 $assert($entry['mod'] === CML_CATALOGUE_SCHEMA_REVISION, 'Unchanged sensor sitemap retains previous core revision');
+$assert(cml_sensor_identity_revision('cl-md23-mud-density-sensor') === CML_SENSOR_IDENTITY_REVISION && cml_sensor_identity_revision('cl-dd11-mud-conductivity-sensor') === CML_SENSOR_IDENTITY_REVISION, 'UV-only revision preserves prior density and conductivity dates');
+$assert(str_contains(html_entity_decode(cml_sensor_rfq(['slug' => 'oil-fluoroscope-uv-lamp-box', 'label' => 'UV', 'type' => 'fluoroscope'])), rawurlencode('not yet selected')) && str_contains(cml_sensor_rfq(['slug' => 'oil-fluoroscope-uv-lamp-box', 'label' => 'UV', 'type' => 'fluoroscope'], true), rawurlencode('model identification')), 'Unknown-model inquiry and document requests do not select a named replacement');
 $report = ['isolatedWordPress' => true, 'assertions' => $passed, 'products' => count(cml_sensor_records()), 'hubs' => count(cml_system_hub_records()), 'passed' => true];
 file_put_contents('/cml-test-results/sensor-integration.json', wp_json_encode($report, JSON_PRETTY_PRINT));
 echo wp_json_encode($report);
