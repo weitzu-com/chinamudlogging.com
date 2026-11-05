@@ -1,0 +1,311 @@
+{
+  "equipment": {
+    "mud-logging-unit": {
+      "title": "Mud Logging Unit: Configuration & Supply Scope",
+      "heading": "Define the mud logging unit to be supplied",
+      "description": "Define a mud logging unit configuration: measurement channels, gas analysis, acquisition, software and documentation. Request an itemized quotation.",
+      "intro": "Start with the rig application and the complete measurement workflow. This legacy unit record is a reference for configuration review, not a fixed current package.",
+      "request": "Mud logging unit — new unit or upgrade; request itemized current configuration",
+      "sections": [
+        {
+          "heading": "Agree the equipment boundary",
+          "items": [
+            "State whether you need a complete unit, an upgrade or selected replacement components. Provide the rig type, destination and intended measurement workflow.",
+            "Ask the offer to separate enclosure, acquisition hardware, sensors, gas extraction/analysis, software, utilities and integration work. Inclusion must be explicit."
+          ]
+        },
+        {
+          "heading": "Resolve the historical configuration before ordering",
+          "items": [
+            "The source mentions Windows 2000 / XP and older communications options. Confirm the offered operating system, supported software version, licence, drivers and remote-data interface with the supplier.",
+            "The source contains different enclosure/fire-rating statements and gas-cycle expressions. Obtain the exact offered model, drawing and acceptance method rather than treating those statements as one verified configuration.",
+            "Source references to DNV, hazardous-area suitability and leading performance do not establish current approval. Request the certificate schedule and exact assembly identification; confirm installation requirements separately."
+          ]
+        },
+        {
+          "heading": "Request comparable quotations",
+          "items": [
+            "Supply the required channel list, signal/protocol, gas-analysis scope, power/utilities and environmental conditions. Mark unknown details.",
+            "Request an itemized bill of materials, interface drawings, current manuals, calibration/inspection documents and an agreed acceptance plan.",
+            "Agree commissioning, training, spares, support responsibility, delivery and exclusions in the offer. No current price, stock or lead time is established by this catalogue."
+          ]
+        }
+      ],
+      "links": {
+        "/product/sls-mud-logging-unit/": "SLS catalogue configuration",
+        "/product/surface-logging-systems/": "Define a system project",
+        "/product-category/mud-logging-units/": "Compare purchase routes"
+      }
+    },
+    "sls-mud-logging-unit": {
+      "title": "SLS Mud Logging Unit: Configuration Review",
+      "heading": "Match the SLS record to the proposed unit",
+      "description": "Review an SLS mud logging unit quotation: acquisition and gas-analysis scope, utilities, software, enclosure documents and acceptance responsibilities.",
+      "intro": "The historical SLS record describes acquisition, gas analysis and software components. Ask for the current named configuration and included equipment before comparing it with another unit.",
+      "request": "SLS mud logging unit — request named configuration, documents and acceptance scope",
+      "sections": [
+        {
+          "heading": "Use the source as a starting configuration",
+          "items": [
+            "The source names an RS-485 acquisition system, gas-analysis components and SLS software. Confirm the exact hardware/software versions and which modules are included in the offer.",
+            "Container, channel and analyser values below belong to the legacy catalogue record. Reconfirm them for the ordered unit; do not transfer specifications from the separate Mud Logging Unit entry."
+          ]
+        },
+        {
+          "heading": "Confirm the package and documentation",
+          "items": [
+            "Provide rig/application, channel list, signal interfaces, gas-handling scope, power/utilities and destination.",
+            "Request the offered bill of materials, enclosure drawings, current software/licensing details, manuals and model-matched inspection/approval documents. The source mention of DNV or optional certification is not proof for the offered unit."
+          ]
+        },
+        {
+          "heading": "Agree integration and acceptance",
+          "items": [
+            "Identify who supplies and connects sensors, sampling equipment, acquisition, host software and remote-data interfaces.",
+            "Agree test channels, calibration/inspection evidence, gas-analysis acceptance criteria, training, spares and exclusions before an order."
+          ]
+        }
+      ],
+      "links": {
+        "/product/mud-logging-unit/": "General unit configuration review",
+        "/product/surface-logging-systems/": "System boundary and integration",
+        "/product-category/mud-logging-units/": "Unit purchase checklist"
+      }
+    },
+    "surface-logging-systems": {
+      "title": "Surface Logging Systems: Equipment & Integration Scope",
+      "heading": "Build a surface logging system requirement",
+      "description": "Plan a surface logging system: define sensors, acquisition, gas handling, software and integration responsibilities before requesting a configured equipment offer.",
+      "intro": "Use this page to scope a surface logging equipment project. The original entry does not identify a complete supplied configuration or a model-specific specification.",
+      "request": "Surface logging system project — define equipment, integration and acceptance scope",
+      "sections": [
+        {
+          "heading": "Describe the measurements and workflow",
+          "items": [
+            "List drilling parameters, fluid measurements, gas/sample handling and any formation-evaluation functions required for the project.",
+            "Separate equipment procurement from site services. State which functions already exist, which must be supplied and who will operate them."
+          ]
+        },
+        {
+          "heading": "Define the system interfaces",
+          "items": [
+            "Provide existing sensor models, acquisition inputs, signals/protocols, wiring/connector information and host software details.",
+            "Identify power/utilities, mounting, work environment and hazardous-area requirements. A list of catalogue components does not prove a compatible or approved complete system."
+          ]
+        },
+        {
+          "heading": "Ask for an itemized equipment proposal",
+          "items": [
+            "Request a named equipment/channel list, integration drawings, data mappings and software/licensing scope.",
+            "Confirm sampling/analysis components, documentation, calibration/inspection evidence and the acceptance criteria for the proposed package.",
+            "State quantity, destination, target date and requested support. Commissioning, training and site work require explicit agreement; current stock, price and delivery are not established here."
+          ]
+        }
+      ],
+      "links": {
+        "/product-category/mud-logging-units/": "Complete units and upgrade routes",
+        "/product-category/mud-logging-sensors/": "Sensor selection",
+        "/product-category/formation-evaluation/": "Gas and sample-handling equipment"
+      }
+    }
+  },
+  "measurements": {
+    "超声波液位": {
+      "heading": "Identify this ultrasonic level accessory",
+      "checks": [
+        "Describe the tank geometry, mounting position, liquid surface and required level or volume result. A level reading alone does not establish a calibrated tank volume.",
+        "Request the offered instrument drawing, reference point, measurement limits and blind-zone information. Confirm the sensor, transmitter and receiving input separately.",
+        "If a wireless link is required, identify the paired transmitter/receiver and acquisition interface; the catalogue designation alone does not establish radio compatibility."
+      ]
+    },
+    "电导率": {
+      "heading": "Match this conductivity accessory to the acquisition system",
+      "checks": [
+        "Specify conductivity units, expected fluid conditions and any temperature-compensation requirement. Do not assume a compensation method from the designation.",
+        "Identify the exact probe, transmitter and receiving input; obtain the supply, output circuit and wiring diagram for the offered version.",
+        "For a wireless installation, confirm the paired radio components and host mapping separately from the conductivity measurement."
+      ]
+    },
+    "密度": {
+      "heading": "Define the density measurement and installation",
+      "checks": [
+        "Confirm whether the application measures drilling-fluid density or another quantity; a catalogue name is not an installation specification.",
+        "Request the sensing arrangement, installation drawing, scaling and reference/calibration procedure for the offered model.",
+        "Match power, output, wetted materials and acquisition input to the existing system before selecting a replacement."
+      ]
+    },
+    "温度": {
+      "heading": "Match the temperature probe and receiving input",
+      "checks": [
+        "Describe the medium, mounting or immersion arrangement and required temperature interval.",
+        "Request the exact sensing element, transmitter/output, wiring and response requirements for the offered version.",
+        "Match materials, installation dimensions and acquisition scaling to the existing system."
+      ]
+    },
+    "压力": {
+      "heading": "Confirm the pressure assembly and measurement basis",
+      "checks": [
+        "Specify gauge, absolute or differential pressure as required, together with medium, process connection and operating conditions.",
+        "Request the assembly rating, wetted materials, output and installation drawing for the exact offered version.",
+        "A sensor range does not establish the pressure rating or hazardous-area approval of the complete installed assembly."
+      ]
+    },
+    "流量": {
+      "heading": "Distinguish flow trend from absolute flow measurement",
+      "checks": [
+        "State whether you need a relative flow-out trend or a calibrated volumetric flow result. Do not infer an absolute flow range from the designation.",
+        "Request the sensing arrangement, installation drawing, transfer relationship and receiving input for the offered item.",
+        "Confirm transmitter/receiver pairing, mechanical fit and acquisition scaling before replacement."
+      ]
+    },
+    "扭矩": {
+      "heading": "Define the torque measurement and signal conversion",
+      "checks": [
+        "Identify the measured input and any current-to-torque conversion used by the installed system.",
+        "Request the sensor/transmitter model, drive information, scaling and wiring evidence before comparing alternatives.",
+        "A catalogue designation does not establish a calibrated torque result or compatible host input."
+      ]
+    },
+    "泵冲": {
+      "heading": "Match the pump-stroke pickup to the pump and input",
+      "checks": [
+        "Provide the pump arrangement, target/sensing geometry and existing pickup nameplate.",
+        "Confirm pulse output, power, wiring and acquisition scaling for the exact proposed version.",
+        "Request installation and calibration/reference instructions; the designation alone does not establish delivered flow."
+      ]
+    }
+  },
+  "languages": {
+    "en": {
+      "pages": {
+        "home": "Explore mud logging equipment, sensors and spare parts for your measurement and existing installation. Start a configuration-specific equipment inquiry.",
+        "products": "Select mud logging equipment and sensors by application. Compare units, replacement components and the documents required for a quotation.",
+        "applications": "Match drilling monitoring, formation evaluation and replacement applications to measurements, interfaces and the existing installation.",
+        "services": "Review equipment sourcing, replacement assessment and supply coordination. Agree site work, commissioning and training explicitly in the quotation.",
+        "about": "Learn the equipment-selection and sourcing focus of ChinaMudLogging.com, including the boundary between catalogue information and an ordered configuration.",
+        "contact": "Request a mud logging equipment quotation. Send the existing model, measurement, interface, quantity and destination for configuration review.",
+        "privacy": "Read how inquiry information and anonymous measurement are handled, and how to ask questions about your submitted information."
+      },
+      "families": {
+        "drilling-monitoring": "Drilling Monitoring & Accessories: Compare acquisition, displays and monitoring components; confirm channels, software and integration responsibilities.",
+        "formation-evaluation": "Formation Evaluation: Select gas-extraction and sample-observation equipment for the required workflow; confirm instrument scope and documents.",
+        "mud-logging-sensors": "Mud Logging Sensors: Match sensor measurement, power, output and mounting to the existing acquisition input before requesting a replacement.",
+        "mud-logging-units": "Mud Logging Units: Compare a new logging unit, upgrade or component replacement; define sensors, gas analysis, software and acceptance scope.",
+        "wireless-sensors": "Wireless Sensors: Check sensor, transmitter, receiver and host interfaces together; request paired configuration and installation documents."
+      }
+    },
+    "zh": {
+      "pages": {
+        "home": "围绕测量需求和现有系统，选择录井设备、传感器与备件，提交明确配置的设备询价。",
+        "products": "按用途选择录井系统、替换传感器和配件，核对技术资料与接口后准备设备询价。",
+        "applications": "按钻井监测、地层评价和设备替换用途，梳理测量需求、接口及安装条件。",
+        "services": "了解设备采购、替换评估与供货协调范围；现场服务、调试及培训以报价约定为准。",
+        "about": "了解 ChinaMudLogging.com 的录井设备选型与采购服务，以及目录资料和实际订购配置的区别。",
+        "contact": "提交录井设备询价，请提供现有型号、测量要求、接口、数量及目的地，便于核对配置。",
+        "privacy": "了解询盘资料和匿名统计的处理方式，以及如何就已提交的信息提出问题。"
+      },
+      "families": {
+        "drilling-monitoring": "钻井监测与附件: 选择采集、显示及钻井监测部件，核对通道、软件、接口和集成责任后询价。",
+        "formation-evaluation": "地层评价: 按工作流程选择气体提取和样品观察设备，核对仪器范围、配件与所需资料。",
+        "mud-logging-sensors": "录井传感器: 按测量对象、电源、输出和安装条件匹配现有采集输入，核对型号后询价。",
+        "mud-logging-units": "录井系统: 比较新录井系统、升级与配件替换，明确传感器、气体分析、软件和验收范围。",
+        "wireless-sensors": "无线传感器: 一并核对传感器、发射端、接收端和主机接口，索取配套配置与安装资料。"
+      }
+    },
+    "es": {
+      "pages": {
+        "home": "Explore equipos de registro de lodos, sensores y repuestos según la medición y la instalación existente. Solicite una revisión de configuración.",
+        "products": "Seleccione unidades, sensores y repuestos por aplicación. Compare interfaces y documentación antes de solicitar una oferta.",
+        "applications": "Defina mediciones, interfaces e instalación para monitoreo de perforación, evaluación de formaciones y sustitución de equipos.",
+        "services": "Revise el suministro de equipos, la evaluación de repuestos y la coordinación de entrega. Acuerde por escrito los servicios en sitio.",
+        "about": "Conozca el enfoque de selección y suministro de ChinaMudLogging.com y la diferencia entre el catálogo y la configuración del pedido.",
+        "contact": "Solicite una oferta de equipos. Indique modelo existente, medición, interfaz, cantidad y destino para revisar la configuración.",
+        "privacy": "Consulte cómo se tratan los datos de consultas y la medición anónima, y cómo preguntar por la información enviada."
+      },
+      "families": {
+        "drilling-monitoring": "Monitoreo de perforación y accesorios: Compare adquisición, pantallas y componentes de monitoreo; confirme canales, software y responsabilidades de integración.",
+        "formation-evaluation": "Evaluación de formaciones: Seleccione extracción de gas y observación de muestras según el proceso; confirme alcance, accesorios y documentos.",
+        "mud-logging-sensors": "Sensores de registro de lodos: Compare medición, alimentación, salida y montaje del sensor con la adquisición existente antes de pedir un reemplazo.",
+        "mud-logging-units": "Unidades de registro de lodos: Compare una unidad nueva, una actualización y repuestos; defina sensores, análisis de gas, software y aceptación.",
+        "wireless-sensors": "Sensores inalámbricos: Revise juntos sensor, transmisor, receptor e interfaz del sistema; solicite la configuración y sus documentos."
+      }
+    },
+    "ru": {
+      "pages": {
+        "home": "Подберите оборудование газового каротажа, датчики и запчасти по задаче измерения и существующей установке. Запросите проверку конфигурации.",
+        "products": "Выберите станции, датчики и комплектующие по применению. Сравните интерфейсы и документы перед запросом предложения.",
+        "applications": "Определите измерения, интерфейсы и монтаж для мониторинга бурения, оценки пластов и замены оборудования.",
+        "services": "Уточните подбор оборудования, оценку замены и поставку. Выездные работы, пусконаладка и обучение согласуются в предложении.",
+        "about": "Узнайте о подборе и поставке оборудования ChinaMudLogging.com и различии между каталогом и конфигурацией заказа.",
+        "contact": "Запросите предложение на оборудование: укажите модель, измерение, интерфейс, количество и место поставки для проверки конфигурации.",
+        "privacy": "Узнайте об обработке данных запросов и анонимной статистики, а также о вопросах по отправленной информации."
+      },
+      "families": {
+        "drilling-monitoring": "Мониторинг бурения и принадлежности: Сравните сбор данных, дисплеи и компоненты мониторинга; согласуйте каналы, ПО и ответственность за интеграцию.",
+        "formation-evaluation": "Оценка пластов: Выберите оборудование извлечения газа и наблюдения образцов по процессу; уточните состав, принадлежности и документы.",
+        "mud-logging-sensors": "Датчики газового каротажа: Сопоставьте измерение, питание, выход и монтаж датчика с существующим входом системы перед заменой.",
+        "mud-logging-units": "Станции газового каротажа: Сравните новую станцию, модернизацию и замену компонентов; определите датчики, газовый анализ, ПО и приёмку.",
+        "wireless-sensors": "Беспроводные датчики: Проверьте датчик, передатчик, приёмник и интерфейс системы совместно; запросите согласованную конфигурацию и документы."
+      }
+    },
+    "ar": {
+      "pages": {
+        "home": "اختر معدات تسجيل الطين والمستشعرات وقطع الغيار وفق القياس والتركيب الحالي، واطلب مراجعة التهيئة المطلوبة.",
+        "products": "اختر الوحدات والمستشعرات والملحقات حسب التطبيق، وقارن الواجهات والوثائق قبل طلب عرض السعر.",
+        "applications": "حدد القياسات والواجهات وظروف التركيب لمراقبة الحفر وتقييم التكوينات واستبدال المعدات.",
+        "services": "راجع نطاق توريد المعدات وتقييم البدائل وتنسيق التسليم. اتفق صراحة على العمل الموقعي والتشغيل والتدريب.",
+        "about": "تعرف على نهج اختيار المعدات وتوريدها لدى ChinaMudLogging.com والفرق بين بيانات الكتالوج وتهيئة الطلب.",
+        "contact": "اطلب عرض معدات تسجيل الطين مع ذكر الطراز الحالي والقياس والواجهة والكمية والوجهة لمراجعة التهيئة.",
+        "privacy": "اقرأ كيفية التعامل مع بيانات الاستفسارات والقياس المجهول، وكيفية طرح أسئلة حول المعلومات المرسلة."
+      },
+      "families": {
+        "drilling-monitoring": "مراقبة الحفر والملحقات: قارن مكونات جمع البيانات والعرض والمراقبة، وحدد القنوات والبرامج ومسؤوليات التكامل.",
+        "formation-evaluation": "تقييم التكوينات: اختر معدات استخلاص الغاز ومراقبة العينات حسب سير العمل، وحدد نطاق الجهاز والملحقات والوثائق.",
+        "mud-logging-sensors": "مستشعرات تسجيل الطين: طابق القياس والطاقة والخرج والتركيب مع مدخل جمع البيانات الحالي قبل طلب البديل.",
+        "mud-logging-units": "وحدات تسجيل الطين: قارن وحدة جديدة أو تحديث النظام أو استبدال المكونات، وحدد المستشعرات وتحليل الغاز والبرامج والقبول.",
+        "wireless-sensors": "المستشعرات اللاسلكية: راجع المستشعر والمرسل والمستقبل وواجهة النظام معاً، واطلب التهيئة المتوافقة ووثائق التركيب."
+      }
+    },
+    "fr": {
+      "pages": {
+        "home": "Choisissez équipements de mud logging, capteurs et pièces selon la mesure et votre installation. Demandez une revue de configuration.",
+        "products": "Sélectionnez unités, capteurs et pièces par application. Comparez interfaces et documents avant de demander une offre.",
+        "applications": "Définissez mesures, interfaces et montage pour la surveillance du forage, l’évaluation des formations et le remplacement.",
+        "services": "Consultez le périmètre de fourniture, d’étude des remplacements et de coordination. Les services sur site doivent être convenus dans l’offre.",
+        "about": "Découvrez l’approche de sélection et de fourniture de ChinaMudLogging.com et la distinction entre catalogue et configuration commandée.",
+        "contact": "Demandez une offre en précisant modèle existant, mesure, interface, quantité et destination pour examiner la configuration.",
+        "privacy": "Consultez le traitement des demandes et de la mesure anonyme, ainsi que les questions relatives aux informations transmises."
+      },
+      "families": {
+        "drilling-monitoring": "Surveillance du forage et accessoires: Comparez acquisition, affichage et composants de surveillance ; confirmez canaux, logiciel et responsabilités d’intégration.",
+        "formation-evaluation": "Évaluation des formations: Choisissez extraction de gaz et observation d’échantillons selon le procédé ; confirmez périmètre, accessoires et documents.",
+        "mud-logging-sensors": "Capteurs de mud logging: Adaptez mesure, alimentation, sortie et montage du capteur à l’entrée d’acquisition existante avant remplacement.",
+        "mud-logging-units": "Unités de mud logging: Comparez unité neuve, mise à niveau et pièces ; définissez capteurs, analyse de gaz, logiciel et réception.",
+        "wireless-sensors": "Capteurs sans fil: Vérifiez ensemble capteur, émetteur, récepteur et interface hôte ; demandez configuration et documents correspondants."
+      },
+      "titles": {
+        "applications": "Applications de mud logging",
+        "contact": "Contact et demande de devis",
+        "services": "Services de fourniture et de sélection"
+      }
+    },
+    "de": {
+      "pages": {
+        "home": "Wählen Sie Mud-Logging-Ausrüstung, Sensoren und Ersatzteile passend zur Messaufgabe und bestehenden Anlage. Fragen Sie eine Konfigurationsprüfung an.",
+        "products": "Wählen Sie Einheiten, Sensoren und Ersatzteile nach Anwendung. Vergleichen Sie Schnittstellen und Unterlagen vor der Angebotsanfrage.",
+        "applications": "Definieren Sie Messungen, Schnittstellen und Einbau für Bohrüberwachung, Formationsbewertung und Geräteaustausch.",
+        "services": "Prüfen Sie Beschaffung, Ersatzteilbewertung und Lieferkoordination. Vor-Ort-Arbeiten, Inbetriebnahme und Schulung sind im Angebot zu vereinbaren.",
+        "about": "Erfahren Sie mehr über Geräteauswahl und Beschaffung bei ChinaMudLogging.com sowie den Unterschied zwischen Katalog und bestellter Konfiguration.",
+        "contact": "Fragen Sie Ausrüstung an: Nennen Sie vorhandenes Modell, Messaufgabe, Schnittstelle, Menge und Zielort zur Konfigurationsprüfung.",
+        "privacy": "Lesen Sie, wie Anfragedaten und anonyme Messungen behandelt werden und wie Sie Fragen zu übermittelten Informationen stellen."
+      },
+      "families": {
+        "drilling-monitoring": "Bohrüberwachung und Zubehör: Vergleichen Sie Erfassung, Anzeigen und Überwachungskomponenten; klären Sie Kanäle, Software und Integrationsverantwortung.",
+        "formation-evaluation": "Formationsbewertung: Wählen Sie Gasextraktion und Probenbeobachtung nach Ablauf; klären Sie Geräteumfang, Zubehör und Unterlagen.",
+        "mud-logging-sensors": "Mud-Logging-Sensoren: Stimmen Sie Messgröße, Versorgung, Ausgang und Montage mit dem vorhandenen Erfassungseingang ab.",
+        "mud-logging-units": "Mud-Logging-Einheiten: Vergleichen Sie neue Einheit, Nachrüstung und Komponententausch; definieren Sie Sensoren, Gasanalyse, Software und Abnahme.",
+        "wireless-sensors": "Funksensoren: Prüfen Sie Sensor, Sender, Empfänger und Host-Schnittstelle zusammen; fordern Sie passende Konfiguration und Unterlagen an."
+      }
+    }
+  }
+}
