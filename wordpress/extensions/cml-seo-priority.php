@@ -91,7 +91,7 @@ function cml_priority_guide(array $c): string {
     $html = '<section class="cml-priority-guide" id="cml-priority-guide"><h2>' . esc_html($r['heading']) . '</h2><p>' . esc_html($r['intro']) . '</p>';
     foreach ($r['sections'] as $section) $html .= '<h3>' . esc_html($section['heading']) . '</h3>' . cml_priority_list($section['items']);
     $request = $r['request'];
-    $html .= '<p><a class="cml-button" href="' . esc_url(add_query_arg('product', $request, cml_page_url('contact', 'en'))) . '">Request a configuration review →</a></p><nav aria-label="Related procurement routes">';
+    $html .= '<p><a class="cml-button" href="' . esc_url(add_query_arg('product', rawurlencode($request), cml_page_url('contact', 'en'))) . '">Request a configuration review →</a></p><nav aria-label="Related procurement routes">';
     foreach ($r['links'] as $path => $label) $html .= '<a href="' . esc_url(home_url($path)) . '">' . esc_html($label) . '</a> ';
     return $html . '</nav></section>';
 }
@@ -100,7 +100,7 @@ function cml_priority_sensor_guide(array $c): string {
     $html = '<section class="cml-priority-guide" id="cml-priority-guide"><h2>' . esc_html($m['heading']) . '</h2><p>Use the supplier catalogue designation to identify the requested item, then match its documents to your installation.</p><dl><dt>Catalogue designation — retained verbatim</dt><dd><bdi>' . esc_html($r['sku']) . '</bdi></dd><dt>Source name — retained verbatim</dt><dd>' . esc_html($r['name']) . '</dd></dl><p>The designation is an identification string, not an independently verified performance specification or an approval. Its numeric tokens are not expanded into engineering limits here.</p>';
     $html .= cml_priority_list($m['checks']);
     $html .= '<p>For this exact item, request the current datasheet, drawing, wiring or pinout, and any applicable approval documents. Provide the existing nameplate, required measurement, acquisition input, quantity and destination.</p><p><a href="' . esc_url($r['source']) . '" target="_blank" rel="noopener noreferrer">Supplier catalogue reference</a> · <a href="' . esc_url(home_url('/product-category/mud-logging-sensors/')) . '">Compare measurement and interfaces</a></p>';
-    $html .= '<a class="cml-button" href="' . esc_url(add_query_arg('product', get_the_title($c['post']) . ' — catalogue designation: ' . $r['sku'], cml_page_url('contact', 'en'))) . '">Request this item and its documents →</a>';
+    $html .= '<a class="cml-button" href="' . esc_url(add_query_arg('product', rawurlencode(get_the_title($c['post']) . ' — catalogue designation: ' . $r['sku']), cml_page_url('contact', 'en'))) . '">Request this item and its documents →</a>';
     return $html . '</section>';
 }
 add_filter('render_block_core/post-content', function ($html) {
