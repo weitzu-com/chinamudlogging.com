@@ -1,0 +1,230 @@
+{
+  "languages": [
+    "zh",
+    "es",
+    "ru",
+    "ar",
+    "fr",
+    "de"
+  ],
+  "headings": {
+    "THE WORKING PRINCIPLE AND MAIN STRUCTURE OF THE PRODUCT": {
+      "zh": "工作原理与主要结构",
+      "es": "Principio de funcionamiento y estructura",
+      "ru": "Принцип работы и основная конструкция",
+      "ar": "مبدأ العمل والتركيب الرئيسي",
+      "fr": "Principe de fonctionnement et structure",
+      "de": "Funktionsprinzip und Aufbau"
+    },
+    "WORKING PRINCIPLE": {
+      "zh": "工作原理",
+      "es": "Principio de funcionamiento",
+      "ru": "Принцип работы",
+      "ar": "مبدأ العمل",
+      "fr": "Principe de fonctionnement",
+      "de": "Funktionsprinzip"
+    },
+    "PRODUCT SPECIFICATION": {
+      "zh": "产品规格",
+      "es": "Especificaciones del producto",
+      "ru": "Технические характеристики",
+      "ar": "مواصفات المنتج",
+      "fr": "Caractéristiques techniques",
+      "de": "Technische Daten"
+    },
+    "APPLICATION": {
+      "zh": "应用",
+      "es": "Aplicación",
+      "ru": "Применение",
+      "ar": "التطبيق",
+      "fr": "Application",
+      "de": "Anwendung"
+    },
+    "FEATURES": {
+      "zh": "特点",
+      "es": "Características",
+      "ru": "Особенности",
+      "ar": "الخصائص",
+      "fr": "Caractéristiques",
+      "de": "Merkmale"
+    },
+    "PRODUCT FEATURE AND APPLICATION": {
+      "zh": "产品特点与应用",
+      "es": "Características y aplicación",
+      "ru": "Особенности и применение",
+      "ar": "خصائص المنتج وتطبيقاته",
+      "fr": "Caractéristiques et application",
+      "de": "Merkmale und Anwendung"
+    },
+    "PRODUCT INTRODUCTION": {
+      "zh": "产品介绍",
+      "es": "Introducción del producto",
+      "ru": "Описание изделия",
+      "ar": "مقدمة المنتج",
+      "fr": "Présentation du produit",
+      "de": "Produktbeschreibung"
+    },
+    "PRODUCT DETAILS": {
+      "zh": "产品详情",
+      "es": "Detalles del producto",
+      "ru": "Конструкция и детали",
+      "ar": "تفاصيل المنتج",
+      "fr": "Détails du produit",
+      "de": "Produktdetails"
+    },
+    "PRODUCT QUALIFICATION": {
+      "zh": "源资料中的资质说明",
+      "es": "Declaraciones de conformidad del catálogo",
+      "ru": "Заявления о соответствии в исходном каталоге",
+      "ar": "بيانات المطابقة الواردة في الكتالوج",
+      "fr": "Déclarations de conformité du catalogue",
+      "de": "Konformitätsangaben im Quellkatalog"
+    },
+    "HIGH SECURITY": {
+      "zh": "保护措施",
+      "es": "Medidas de protección",
+      "ru": "Меры защиты",
+      "ar": "وسائل الحماية",
+      "fr": "Mesures de protection",
+      "de": "Schutzmaßnahmen"
+    },
+    "LOW POWER CONSUMPTION": {
+      "zh": "低功耗",
+      "es": "Bajo consumo",
+      "ru": "Низкое энергопотребление",
+      "ar": "استهلاك منخفض للطاقة",
+      "fr": "Faible consommation",
+      "de": "Geringer Energieverbrauch"
+    },
+    "LONG TRANSMISSION DISTANCE": {
+      "zh": "传输距离",
+      "es": "Distancia de transmisión",
+      "ru": "Дальность передачи",
+      "ar": "مسافة الإرسال",
+      "fr": "Portée de transmission",
+      "de": "Übertragungsreichweite"
+    },
+    "STRONG ANTI-INTERFERENCE ABILITY": {
+      "zh": "抗干扰能力",
+      "es": "Resistencia a interferencias",
+      "ru": "Помехоустойчивость",
+      "ar": "مقاومة التداخل",
+      "fr": "Résistance aux interférences",
+      "de": "Störfestigkeit"
+    },
+    "SIMPLE INSTALLATION": {
+      "zh": "安装",
+      "es": "Instalación",
+      "ru": "Монтаж",
+      "ar": "التركيب",
+      "fr": "Installation",
+      "de": "Installation"
+    },
+    "GOOD COMPATIBILITY": {
+      "zh": "兼容性",
+      "es": "Compatibilidad",
+      "ru": "Совместимость",
+      "ar": "التوافق",
+      "fr": "Compatibilité",
+      "de": "Kompatibilität"
+    },
+    "SYSTEM STRUCTURE": {
+      "zh": "系统结构",
+      "es": "Estructura del sistema",
+      "ru": "Структура системы",
+      "ar": "بنية النظام",
+      "fr": "Architecture du système",
+      "de": "Systemaufbau"
+    }
+  },
+  "common": {
+    "zh": "以下为旧版供应商资料的完整译文。规格以及认证、安全、性能和交付表述均归属于原资料，尚不构成当前独立验证；选型、安装和校准前须核对实际配置及制造商文件。文中图号沿用来源，未补造缺失图纸。",
+    "es": "Traducción completa de la documentación histórica del proveedor. Las especificaciones y las afirmaciones sobre certificación, seguridad, rendimiento y entrega pertenecen a esa fuente; no constituyen una verificación independiente actual. Confirme la configuración y la documentación del fabricante antes de seleccionar, instalar o calibrar. Las referencias a figuras se conservan sin reconstruir dibujos ausentes.",
+    "ru": "Ниже приведён полный перевод прежнего каталога поставщика. Характеристики и заявления о сертификации, безопасности, рабочих показателях и поставке относятся к исходному документу и не являются независимым подтверждением на текущую дату. Перед подбором, монтажом и калибровкой уточните фактическое исполнение и документацию изготовителя. Номера рисунков сохранены; отсутствующие чертежи не восстановлены.",
+    "ar": "فيما يلي ترجمة كاملة لبيانات كتالوج المورد السابق. تعود المواصفات وبيانات الاعتماد والسلامة والأداء والتسليم إلى المصدر، ولا تمثل تحققاً مستقلاً حالياً. يجب تأكيد التهيئة الفعلية ووثائق المصنع قبل الاختيار والتركيب والمعايرة. حُفظت الإشارات إلى الأشكال دون إعادة إنشاء الرسومات المفقودة.",
+    "fr": "Traduction complète de l’ancien catalogue du fournisseur. Les spécifications et les déclarations de certification, de sécurité, de performance et de livraison sont celles de la source ; elles ne constituent pas une vérification indépendante actuelle. Confirmer la configuration et la documentation du fabricant avant sélection, installation ou étalonnage. Les numéros de figures sont conservés sans reconstituer les dessins manquants.",
+    "de": "Vollständige Übersetzung des früheren Lieferantenkatalogs. Angaben zu Spezifikationen, Zertifizierung, Sicherheit, Leistung und Lieferung stammen aus dieser Quelle und sind keine aktuelle unabhängige Bestätigung. Vor Auswahl, Installation und Kalibrierung sind die tatsächliche Ausführung und Herstellerunterlagen zu prüfen. Bildverweise bleiben erhalten; fehlende Zeichnungen wurden nicht rekonstruiert."
+  },
+  "notes": {
+    "245": {
+      "zh": "原资料同时使用 CNPS-8D08 与 SK-8D08。电导率单位原写作 ms/cm，须确认大小写及实际单位；电缆护套外径仅写 8，未给单位。J、RTD 校准名称及旧版标准号均照录，实际型号、安装与校准程序须另行核实。",
+      "es": "La fuente alterna CNPS-8D08 y SK-8D08. Conserva ms/cm para conductividad: confirme las mayúsculas y la unidad pretendida. El diámetro de la cubierta del cable se da como 8 sin unidad. Los nombres de calibración J y RTD y las normas históricas requieren confirmación para el equipo real.",
+      "ru": "В источнике встречаются CNPS-8D08 и SK-8D08. Обозначение электропроводности ms/cm сохранено; регистр букв и единицу следует уточнить. Диаметр оболочки кабеля указан как 8 без единицы. Названия калибровок J и RTD и старые стандарты требуют проверки применительно к фактическому исполнению.",
+      "ar": "يستخدم المصدر الاسمين CNPS-8D08 وSK-8D08. حُفظت وحدة التوصيلية بصيغة ms/cm؛ يجب تأكيد حالة الأحرف والوحدة المقصودة. قطر غلاف الكابل مذكور بالقيمة 8 دون وحدة. يجب التحقق من تسميات المعايرة J وRTD وإصدارات المعايير القديمة وإجراءات التركيب والمعايرة الفعلية.",
+      "fr": "La source emploie CNPS-8D08 et SK-8D08. La notation ms/cm est conservée ; confirmer la casse et l’unité visée. Le diamètre de gaine est donné comme 8 sans unité. Confirmer les procédures J et RTD, le modèle réel et les éditions applicables des anciennes normes.",
+      "de": "Die Quelle verwendet CNPS-8D08 und SK-8D08. Die Schreibweise ms/cm bleibt erhalten; Groß-/Kleinschreibung und gemeinte Einheit sind zu klären. Der Kabelmanteldurchmesser ist mit 8 ohne Einheit angegeben. J-/RTD-Kalibrierung, Gerätausführung und anwendbare Fassungen der alten Normen sind zu bestätigen."
+    },
+    "251": {
+      "zh": "原资料混用了 EJA118W、BT200 与 HART 表述，需核对实际变送器通信选件及适配手操器。压差、水柱和电流数据按原值保留，未重新计算，也不能代替制造商校准程序。",
+      "es": "La fuente combina EJA118W, BT200 y HART. Confirme la opción de comunicación del transmisor y el comunicador compatible. Los valores de presión, columna de agua y corriente se conservan sin recalcular; no sustituyen el procedimiento de calibración del fabricante.",
+      "ru": "Источник сочетает EJA118W, BT200 и HART. Уточните опцию связи преобразователя и совместимый коммуникатор. Давление, высота водяного столба и ток сохранены без пересчёта и не заменяют процедуру калибровки изготовителя.",
+      "ar": "يجمع المصدر بين EJA118W وBT200 وHART. يجب تأكيد خيار الاتصال الفعلي للمرسل وجهاز الاتصال المتوافق معه. حُفظت قيم الضغط وعمود الماء والتيار دون إعادة حساب، ولا تحل محل إجراءات معايرة المصنع.",
+      "fr": "La source associe EJA118W, BT200 et HART. Confirmer l’option de communication du transmetteur et le communicateur compatible. Les valeurs de pression, colonne d’eau et courant sont conservées sans recalcul et ne remplacent pas la procédure d’étalonnage du fabricant.",
+      "de": "Die Quelle kombiniert EJA118W, BT200 und HART. Kommunikationsoption des Messumformers und passendes Bediengerät sind zu prüfen. Druck-, Wassersäulen- und Stromwerte bleiben ohne Neuberechnung erhalten und ersetzen keine Kalibrieranweisung des Herstellers."
+    },
+    "257": {
+      "zh": "本产品用于紫外荧光观察，不是 X 射线透视。原文含义不清的 silk oil、lead oil 保留为来源名称，不推定化学成分。荧光颜色仅为旧资料观察描述；紫外与溶剂操作应遵循设备说明及实验室控制要求。",
+      "es": "El producto sirve para observación de fluorescencia UV, no fluoroscopia con rayos X. Se conservan los nombres ambiguos silk oil y lead oil sin atribuirles composición química. Los colores son observaciones del catálogo; los procedimientos con UV o disolventes requieren las instrucciones del equipo y controles de laboratorio.",
+      "ru": "Прибор предназначен для УФ-люминесцентного анализа, не рентгеноскопии. Неоднозначные названия silk oil и lead oil сохранены без определения химического состава. Цвета — описания из каталога; работа с УФ и растворителями требует инструкции прибора и лабораторных мер контроля.",
+      "ar": "الجهاز لملاحظة الفلورة بالأشعة فوق البنفسجية وليس للتنظير بالأشعة السينية. حُفظ الاسمان الملتبسان silk oil وlead oil دون افتراض تركيب كيميائي. الألوان أوصاف من المصدر، وتتطلب إجراءات الأشعة فوق البنفسجية والمذيبات تعليمات الجهاز وضوابط المختبر.",
+      "fr": "Le produit sert à l’observation de fluorescence UV, pas à la radioscopie. Les termes ambigus silk oil et lead oil sont conservés sans leur attribuer une composition chimique. Les couleurs sont des observations du catalogue ; les opérations UV et solvants exigent la notice et des contrôles de laboratoire.",
+      "de": "Das Gerät dient der UV-Fluoreszenzbeobachtung, nicht der Röntgendurchleuchtung. Die unklaren Namen silk oil und lead oil bleiben ohne chemische Zuordnung erhalten. Farbangaben sind Katalogbeobachtungen; UV- und Lösungsmittelarbeiten erfordern Geräteanweisungen und Laborschutzmaßnahmen."
+    },
+    "258": {
+      "zh": "AC100-AC240 DC12 与 W WF1 WF2 均为原始写法；原资料混用 division 与 zone。须以订货设备文件核对电压、防腐等级和危险区域适用性，不据此推定认证。",
+      "es": "AC100-AC240 DC12 y W WF1 WF2 son las notaciones originales. La fuente mezcla division y zone. Confirme tensión, protección contra corrosión y clasificación de área con la documentación del equipo pedido, sin inferir una aprobación.",
+      "ru": "AC100-AC240 DC12 и W WF1 WF2 сохранены буквально. В источнике смешаны division и zone. Напряжение, антикоррозионное исполнение и взрывоопасную зону следует проверять по документам заказанного оборудования, не выводя из текста наличие допуска.",
+      "ar": "حُفظت الصيغتان AC100-AC240 DC12 وW WF1 WF2 كما وردتا. يمزج المصدر بين division وzone. يجب تأكيد الجهد والحماية من التآكل وتصنيف المنطقة من وثائق الجهاز المطلوب، دون افتراض اعتماد.",
+      "fr": "AC100-AC240 DC12 et W WF1 WF2 sont les notations d’origine. La source mélange division et zone. Confirmer tension, protection anticorrosion et zone d’utilisation dans les documents de l’équipement commandé, sans en déduire une homologation.",
+      "de": "AC100-AC240 DC12 und W WF1 WF2 sind Originalschreibweisen. Die Quelle mischt division und zone. Spannung, Korrosionsschutz und Ex-Eignung anhand der bestellten Geräteunterlagen klären; keine Zulassung daraus ableiten."
+    },
+    "259": {
+      "zh": "源资料分别写有 A0 与 A-60 防火等级，以及周期 ≥30 s 和分析周期 ≤30s；保留各自表述，须确认实际选件。DNV、IEC、7890 及旧版操作系统和通信技术等描述不是平台制造资质或当前证书。",
+      "es": "La fuente indica clases de fuego A0 y A-60 en apartados distintos, así como ciclo ≥30 s y ciclo de análisis ≤30s. Se conservan por separado y deben confirmarse. Las referencias DNV, IEC, 7890 y a sistemas operativos o comunicaciones antiguos no acreditan al fabricante de esta plataforma ni certificaciones actuales.",
+      "ru": "В разных разделах приведены классы огнестойкости A0 и A-60, цикл ≥30 s и цикл анализа ≤30s. Они сохранены отдельно и требуют уточнения. Упоминания DNV, IEC, 7890, старых ОС и средств связи не являются производственными полномочиями платформы или действующими сертификатами.",
+      "ar": "ترد فئتا مقاومة الحريق A0 وA-60 في موضعين مختلفين، وكذلك دورة ≥30 s ودورة تحليل ≤30s. حُفظت كل عبارة ويجب تأكيد التهيئة الفعلية. الإشارات إلى DNV وIEC و7890 والأنظمة القديمة لا تثبت مؤهلات تصنيع المنصة أو شهادات حالية.",
+      "fr": "La source indique séparément les classes feu A0 et A-60, un cycle ≥30 s et un cycle d’analyse ≤30s. Ces indications sont conservées et doivent être confirmées. DNV, IEC, 7890 et les anciens systèmes ou réseaux cités ne prouvent ni une qualité de fabricant de la plateforme ni une certification actuelle.",
+      "de": "Die Quelle nennt in verschiedenen Abschnitten A0 und A-60 sowie eine Zykluszeit ≥30 s und einen Analysezyklus ≤30s. Die Angaben bleiben getrennt und sind zu klären. Hinweise auf DNV, IEC, 7890 sowie ältere Betriebssysteme und Funknetze sind weder Herstellerqualifikationen der Plattform noch aktuelle Zertifikate."
+    },
+    "260": {
+      "zh": "电压选件与电机防爆标记沿用原资料；须核对实际电机铭牌、电源接法及证书。译文中的防爆标记不是新的认证证明。",
+      "es": "Las variantes de tensión y el marcado Ex proceden del catálogo. Verifique la placa del motor, la conexión de alimentación y el certificado; el marcado traducido no es una nueva certificación.",
+      "ru": "Напряжения исполнения и маркировка Ex приведены по каталогу. Проверьте шильдик двигателя, схему питания и сертификат; перевод маркировки не подтверждает новую сертификацию.",
+      "ar": "خيارات الجهد وعلامة الحماية من الانفجار منقولة من الكتالوج. يجب التحقق من لوحة المحرك وتوصيل الطاقة والشهادة؛ ترجمة العلامة ليست إثبات اعتماد جديد.",
+      "fr": "Les variantes de tension et le marquage Ex proviennent du catalogue. Vérifier la plaque moteur, le raccordement et le certificat ; le marquage traduit ne constitue pas une nouvelle certification.",
+      "de": "Spannungsvarianten und Ex-Kennzeichnung stammen aus dem Katalog. Motortypenschild, Anschluss und Zertifikat prüfen; die übersetzte Kennzeichnung ist kein neuer Zertifizierungsnachweis."
+    },
+    "261": {
+      "zh": "原资料的非工作温度 20 ~ 60 °C 与所列 -4 ~ 140 °F 不对应，均保留，须确认下限。源文“1.4U”按项目序号 1 和 4U 机箱分开，其他规格也明确写有 4U；驱动器与接口数量按原值保留。",
+      "es": "El intervalo fuera de funcionamiento 20 ~ 60 °C no corresponde a -4 ~ 140 °F. Se conservan ambos: confirme el límite inferior. «1.4U» se interpreta como punto 1 y chasis 4U, de acuerdo con la entrada de formato. Se conservan los recuentos de unidades e interfaces.",
+      "ru": "Диапазон в нерабочем состоянии 20 ~ 60 °C не соответствует -4 ~ 140 °F. Оба сохранены; уточните нижнюю границу. Запись «1.4U» разделена на пункт 1 и корпус 4U согласно отдельной строке форм-фактора. Числа накопителей и интерфейсов сохранены.",
+      "ar": "نطاق عدم التشغيل 20 ~ 60 °C لا يطابق -4 ~ 140 °F. حُفظ النطاقان ويجب تأكيد الحد الأدنى. فُصلت عبارة «1.4U» إلى البند 1 وهيكل 4U وفق بند مقاس الهيكل. حُفظت أعداد محركات الأقراص والواجهات.",
+      "fr": "La plage hors fonctionnement 20 ~ 60 °C ne correspond pas à -4 ~ 140 °F. Les deux sont conservées ; confirmer la limite basse. «1.4U» est séparé en point 1 et châssis 4U, conformément au format indiqué ailleurs. Les nombres de baies et d’interfaces sont conservés.",
+      "de": "Der Bereich im nicht betriebenen Zustand 20 ~ 60 °C passt nicht zu -4 ~ 140 °F. Beide Angaben bleiben erhalten; die Untergrenze ist zu klären. „1.4U“ wird gemäß der weiteren Bauformangabe als Listenpunkt 1 und 4U-Gehäuse dargestellt. Laufwerks- und Schnittstellenzahlen bleiben erhalten."
+    },
+    "273": {
+      "zh": "岩屑密度偏离仅是解释线索，不是独立的定量孔隙压力预测。关于 EX 传感器及安全栅的通用段落，不能作为本密度计的认证。源文 bit freezing、well lost 按钻井语境分别译为卡钻、井漏。",
+      "es": "La desviación de densidad es un indicio interpretativo, no una predicción cuantitativa independiente de presión de poro. El párrafo genérico sobre sensores EX y barreras no acredita este densímetro. bit freezing y well lost se interpretan en contexto como atasco de la sarta y pérdida de circulación.",
+      "ru": "Отклонение плотности — интерпретационный признак, не самостоятельный количественный прогноз порового давления. Общий текст о датчиках EX и барьерах не подтверждает сертификацию плотномера. bit freezing и well lost переданы по буровому контексту как прихват и поглощение раствора.",
+      "ar": "انحراف الكثافة مؤشر للتفسير وليس تنبؤاً كمياً مستقلاً بضغط المسام. الفقرة العامة عن مستشعرات EX والحواجز لا تثبت اعتماد جهاز الكثافة. فُهمت عبارتا bit freezing وwell lost في سياق الحفر بمعنى انحشار سلسلة الحفر وفقدان سائل الحفر.",
+      "fr": "L’écart de masse volumique est un indice d’interprétation, pas une prévision quantitative autonome de pression de pore. Le paragraphe général sur les capteurs EX et les barrières ne certifie pas ce densimètre. bit freezing et well lost sont interprétés comme coincement de garniture et perte de circulation.",
+      "de": "Die Dichteabweichung ist ein Interpretationshinweis, keine eigenständige quantitative Porendruckprognose. Der allgemeine Absatz über EX-Sensoren und Barrieren zertifiziert dieses Dichtemessgerät nicht. bit freezing und well lost werden im Bohrkontext als Festwerden des Bohrstrangs und Spülungsverlust wiedergegeben."
+    },
+    "297": {
+      "zh": "源资料的精度 ±1 未给单位；最小动作距离 >8mm 与安装距离 30 mm 并列保留。须确认精度含义、开关距离、目标物及安装配置，不默改不等号或替其计算容差。",
+      "es": "La precisión ±1 carece de unidad. Se conservan distancia mínima >8mm y distancia de instalación 30 mm. Confirme tolerancia, distancia de conmutación, objetivo y montaje; no se han cambiado desigualdades ni calculado tolerancias.",
+      "ru": "Для точности ±1 единица не указана. Сохранены минимальная дистанция >8mm и монтажная дистанция 30 mm. Уточните допуск, расстояние срабатывания, мишень и монтаж; знаки неравенства не исправлены и допуски не рассчитаны.",
+      "ar": "الدقة ±1 مذكورة دون وحدة. حُفظت مسافة التشغيل الدنيا >8mm ومسافة التركيب 30 mm. يجب تأكيد معنى الدقة ومسافة الاستشعار والهدف والتركيب؛ لم تتغير المتباينات ولم تُحسب سماحات جديدة.",
+      "fr": "La précision ±1 est sans unité. La distance minimale >8mm et la distance d’installation 30 mm sont conservées. Confirmer tolérance, distance de commutation, cible et montage ; aucune inégalité ni tolérance n’a été corrigée ou calculée.",
+      "de": "Die Genauigkeit ±1 hat keine Einheit. Mindestschaltabstand >8mm und Montageabstand 30 mm bleiben erhalten. Toleranz, Schaltabstand, Ziel und Montage klären; Ungleichungen wurden nicht geändert und keine Toleranzen berechnet."
+    },
+    "307": {
+      "zh": "续航、距离、安装时间、防雷及完全替代有线传感器等均为旧版供应商在未明确条件下的陈述，须核实无线配置、现场环境、功耗及验收条件。",
+      "es": "Autonomía, distancia, tiempo de instalación, protección contra rayos y sustitución total del cableado son afirmaciones históricas bajo condiciones no especificadas. Confirme radio, entorno, consumo y criterios de aceptación.",
+      "ru": "Автономность, дальность, время монтажа, грозозащита и полная замена проводных датчиков — прежние заявления поставщика при неуказанных условиях. Уточните радиоконфигурацию, среду, энергопотребление и приёмочные условия.",
+      "ar": "مدة البطارية والمسافة ووقت التركيب والحماية من الصواعق والاستبدال الكامل للمستشعرات السلكية بيانات قديمة بشروط غير محددة. يجب تأكيد التهيئة اللاسلكية والبيئة واستهلاك الطاقة وشروط القبول.",
+      "fr": "Autonomie, portée, temps d’installation, protection contre la foudre et remplacement total des capteurs filaires sont des déclarations historiques sans conditions précisées. Confirmer configuration radio, environnement, consommation et critères de réception.",
+      "de": "Batterielaufzeit, Reichweite, Installationszeit, Blitzschutz und vollständiger Ersatz verdrahteter Sensoren sind frühere Lieferantenangaben unter unbestimmten Bedingungen. Funkkonfiguration, Umgebung, Energiebedarf und Abnahmekriterien bestätigen."
+    }
+  }
+}

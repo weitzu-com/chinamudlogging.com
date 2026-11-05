@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 import collections,html,json,re
 from pathlib import Path
+from full_content import load_approved, render, digest
 root=Path(__file__).resolve().parents[2]
 bundle=json.loads((Path.home()/'.cache/chinamudlogging-wordpress/bundle/bundle.json').read_text())
 rows=bundle['records']; keys=[r['sourceId']+':'+r['language'] for r in rows]
 assert len(keys)==len(set(keys)), 'Duplicate source/language key'
 en=[r for r in rows if r['language']=='en']
+full=load_approved()
+products={p['id']:p for p in json.loads((root/'src/data/products.json').read_text())}
 assert sum(r['type']=='cml_product' for r in en)==63
 assert sum(r['type']=='post' for r in en)==8
 assert len(bundle['categories'])==5
@@ -21,7 +24,13 @@ for lang in bundle['languages']:
             def numbers(r):
                 text=html.unescape(re.sub(r'<[^>]+>', ' ',r['content']))
                 return collections.Counter(re.findall(r'\d+(?:[.,]\d+)*',text))
-            if translated_row.get('localizationMode')=='curated-selection-with-complete-english-reference':
+            if translated_row.get('localizationMode')=='full-source-translation-reviewed':
+                identifier=translated_row['sourceId'].split(':')[1]
+                reviewed=full[identifier+':'+lang]
+                assert translated_row['content']==render(products[int(identifier)],lang,reviewed)
+                assert translated_row['review']=='approved'
+                assert translated_row['fullTranslationSHA256']==digest(reviewed)
+            elif translated_row.get('localizationMode')=='curated-selection-with-complete-english-reference':
                 source=html.unescape(re.sub(r'<[^>]+>', ' ',original['content']))+original['title']+original['description']
                 normalize=lambda text:''.join(text.split())
                 assert len(translated_row['sourceParameters'])>=4
@@ -35,4 +44,4 @@ for lang in bundle['languages']:
 for source,target in bundle['redirects'].items():
     assert source!=target and target not in bundle['redirects'],'Redirect chain or loop'
 assert '/product/' not in bundle['redirects']
-print('Bundle verified: 63 products, 8 articles, seven page sets, 60 source-checked localized product selection pages.')
+print('Bundle verified: 63 English products, 8 articles, seven page sets, 60 reviewed localized product records.')

@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from html.parser import HTMLParser
+from full_content import load_approved, render as render_full_translation, localized_specs, digest as translation_digest
 
 ROOT = Path(__file__).resolve().parents[2]
 LANGS = ['en', 'zh', 'es', 'ru', 'ar', 'fr', 'de']
@@ -86,6 +87,7 @@ def build(output, live=False):
     source_galleries = json.loads((ROOT/'wordpress/migration/source-galleries.json').read_text())
     translations_file = ROOT/'wordpress/migration/product-translations.json'
     translations = json.loads(translations_file.read_text()) if translations_file.exists() else {}
+    approved_full_translations = load_approved()
     selected = []
     for category in categories:
         candidates = [p for p in products if p['category']['slug'] == category['slug']]
@@ -155,8 +157,15 @@ def build(output, live=False):
                 row['review'] = priority['review']
                 row['localizationMode'] = priority['mode']
                 row['sourceParameters'] = [spec['value'] for spec in selection['specs']]
+                full = approved_full_translations.get(str(p['id']) + ':' + lang)
+                if full:
+                    row['content'] = render_full_translation(p, lang, full)
+                    row['fields']['specifications'] = localized_specs(p, full, source_specifications(p), row['fields']['specifications'])
+                    row['review'] = 'approved'
+                    row['localizationMode'] = 'full-source-translation-reviewed'
+                    row['fullTranslationSHA256'] = translation_digest(full)
                 # Reference downloads are kept with their original language labels.
-                if p.get('downloads'): row['content'] += body[body.find(heading('Downloads')):]
+                if p.get('downloads') and not full: row['content'] += body[body.find(heading('Downloads')):]
     for article in articles:
         row = record('article:' + str(article['id']), 'en', 'post', article['title'], article['slug'],
                      ''.join(paragraph(x) for x in article['paragraphs']), article['summary'], article['legacyUrl'],

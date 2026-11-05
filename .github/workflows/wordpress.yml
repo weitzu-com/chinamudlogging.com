@@ -30,6 +30,7 @@ jobs:
           node --check wordpress/plugin/cml-core/editor.js
       - name: Validate content and draft translation integrity
         run: |
+          python3 wordpress/scripts/check-full-translations.py --require-approved
           python3 wordpress/scripts/prepare.py
           python3 wordpress/scripts/check-bundle.py
       - name: Package candidate
