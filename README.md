@@ -4,6 +4,8 @@ The production domain now serves the independent SiteGround WordPress installati
 
 ## WordPress migration
 
+2026-11-05：既定十个重点产品的六语全文已发布并完成六十页复核，详见 [六语全文翻译验收](wordpress/docs/六语全文翻译验收_20261105.md)。
+
 - Native block theme: `wordpress/theme/cml`.
 - Products, private inquiries and repeatable import: `wordpress/plugin/cml-core`.
 - Seven language page sets, 60 published priority product selection pages and separate pending full translation drafts: `wordpress/migration`.

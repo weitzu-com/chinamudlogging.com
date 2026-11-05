@@ -1,0 +1,354 @@
+{
+  "Motor power": {
+    "zh": "电机功率",
+    "es": "Potencia del motor",
+    "ru": "Мощность двигателя",
+    "ar": "قدرة المحرك",
+    "fr": "Puissance du moteur",
+    "de": "Motorleistung"
+  },
+  "Explosion proof mark of motor": {
+    "zh": "源资料电机防爆标记",
+    "es": "Marcado Ex del motor según la fuente",
+    "ru": "Маркировка Ex двигателя по источнику",
+    "ar": "علامة المحرك في المصدر",
+    "fr": "Marquage Ex du moteur selon la source",
+    "de": "Ex-Kennzeichnung des Motors laut Quelle"
+  },
+  "Motor speed": {
+    "zh": "电机转速",
+    "es": "Velocidad del motor",
+    "ru": "Частота вращения двигателя",
+    "ar": "سرعة المحرك",
+    "fr": "Vitesse du moteur",
+    "de": "Motordrehzahl"
+  },
+  "Stirring shaft speed": {
+    "zh": "搅拌轴转速",
+    "es": "Velocidad del eje agitador",
+    "ru": "Частота вращения вала мешалки",
+    "ar": "سرعة عمود التحريك",
+    "fr": "Vitesse de l’arbre agitateur",
+    "de": "Drehzahl der Rührwelle"
+  },
+  "Rated voltage": {
+    "zh": "额定电压（源写法）",
+    "es": "Tensión nominal (notación de la fuente)",
+    "ru": "Номинальное напряжение (запись источника)",
+    "ar": "الجهد المقنن (كما في المصدر)",
+    "fr": "Tension nominale (notation source)",
+    "de": "Nennspannung (Quellschreibweise)"
+  },
+  "Rated current": {
+    "zh": "额定电流",
+    "es": "Corriente nominal",
+    "ru": "Номинальный ток",
+    "ar": "التيار المقنن",
+    "fr": "Courant nominal",
+    "de": "Nennstrom"
+  },
+  "Ex-mark": {
+    "zh": "源资料防爆标记",
+    "es": "Marcado Ex de la fuente",
+    "ru": "Маркировка Ex в источнике",
+    "ar": "علامة Ex في المصدر",
+    "fr": "Marquage Ex de la source",
+    "de": "Ex-Kennzeichnung laut Quelle"
+  },
+  "Degree of protection": {
+    "zh": "外壳防护等级",
+    "es": "Grado de protección",
+    "ru": "Степень защиты оболочки",
+    "ar": "درجة حماية الغلاف",
+    "fr": "Indice de protection",
+    "de": "Gehäuseschutzart"
+  },
+  "Erosion-proof class": {
+    "zh": "防腐等级（源写法）",
+    "es": "Clase anticorrosión (fuente)",
+    "ru": "Антикоррозионное исполнение (источник)",
+    "ar": "فئة الحماية من التآكل (المصدر)",
+    "fr": "Classe anticorrosion (source)",
+    "de": "Korrosionsschutzklasse (Quelle)"
+  },
+  "Tecperature class": {
+    "zh": "温度组别",
+    "es": "Clase de temperatura",
+    "ru": "Температурный класс",
+    "ar": "فئة درجة الحرارة",
+    "fr": "Classe de température",
+    "de": "Temperaturklasse"
+  },
+  "Model": {
+    "zh": "型号",
+    "es": "Modelo",
+    "ru": "Модель",
+    "ar": "الطراز",
+    "fr": "Modèle",
+    "de": "Modell"
+  },
+  "Supply Power": {
+    "zh": "供电（源写法）",
+    "es": "Alimentación (fuente)",
+    "ru": "Питание (источник)",
+    "ar": "التغذية (المصدر)",
+    "fr": "Alimentation (source)",
+    "de": "Versorgung (Quelle)"
+  },
+  "Wave": {
+    "zh": "紫外波长",
+    "es": "Longitud de onda UV",
+    "ru": "Длина волны УФ",
+    "ar": "الطول الموجي للأشعة فوق البنفسجية",
+    "fr": "Longueur d’onde UV",
+    "de": "UV-Wellenlänge"
+  },
+  "Power consumption": {
+    "zh": "功耗",
+    "es": "Consumo de potencia",
+    "ru": "Потребляемая мощность",
+    "ar": "استهلاك القدرة",
+    "fr": "Puissance consommée",
+    "de": "Leistungsaufnahme"
+  },
+  "Size(L*W*H)": {
+    "zh": "尺寸（长×宽×高）",
+    "es": "Dimensiones (largo × ancho × alto)",
+    "ru": "Размеры (Д × Ш × В)",
+    "ar": "الأبعاد (الطول × العرض × الارتفاع)",
+    "fr": "Dimensions (L × l × H)",
+    "de": "Abmessungen (L × B × H)"
+  },
+  "Measurement Range": {
+    "zh": "测量范围",
+    "es": "Rango de medida",
+    "ru": "Диапазон измерения",
+    "ar": "نطاق القياس",
+    "fr": "Plage de mesure",
+    "de": "Messbereich"
+  },
+  "Minimum sample weight": {
+    "zh": "最小样品质量",
+    "es": "Masa mínima de muestra",
+    "ru": "Минимальная масса образца",
+    "ar": "الكتلة الدنيا للعينة",
+    "fr": "Masse minimale d’échantillon",
+    "de": "Mindestprobenmasse"
+  },
+  "Resolution": {
+    "zh": "分辨率",
+    "es": "Resolución",
+    "ru": "Разрешение",
+    "ar": "الاستبانة",
+    "fr": "Résolution",
+    "de": "Auflösung"
+  },
+  "Supply voltage": {
+    "zh": "供电电压",
+    "es": "Tensión de alimentación",
+    "ru": "Напряжение питания",
+    "ar": "جهد التغذية",
+    "fr": "Tension d’alimentation",
+    "de": "Versorgungsspannung"
+  },
+  "Working temperature": {
+    "zh": "工作温度",
+    "es": "Temperatura de funcionamiento",
+    "ru": "Рабочая температура",
+    "ar": "درجة حرارة التشغيل",
+    "fr": "Température de fonctionnement",
+    "de": "Betriebstemperatur"
+  },
+  "Accuracy": {
+    "zh": "精度（源资料未注明单位）",
+    "es": "Precisión (unidad no indicada)",
+    "ru": "Точность (единица не указана)",
+    "ar": "الدقة (الوحدة غير مذكورة)",
+    "fr": "Précision (unité non précisée)",
+    "de": "Genauigkeit (Einheit nicht angegeben)"
+  },
+  "Minimum action distance": {
+    "zh": "最小动作距离（源写法）",
+    "es": "Distancia mínima de actuación (fuente)",
+    "ru": "Минимальная дистанция срабатывания (источник)",
+    "ar": "مسافة التشغيل الدنيا (المصدر)",
+    "fr": "Distance minimale de commutation (source)",
+    "de": "Mindestschaltabstand (Quelle)"
+  },
+  "Maximum operating frequency": {
+    "zh": "最大工作频率",
+    "es": "Frecuencia máxima de funcionamiento",
+    "ru": "Максимальная частота срабатывания",
+    "ar": "تردد التشغيل الأقصى",
+    "fr": "Fréquence maximale de fonctionnement",
+    "de": "Maximale Schaltfrequenz"
+  },
+  "Protection level": {
+    "zh": "防护等级",
+    "es": "Grado de protección",
+    "ru": "Степень защиты",
+    "ar": "درجة الحماية",
+    "fr": "Indice de protection",
+    "de": "Schutzart"
+  },
+  "Minimum detectable concentration": {
+    "zh": "最低检出浓度",
+    "es": "Concentración mínima detectable",
+    "ru": "Минимальная обнаруживаемая концентрация",
+    "ar": "التركيز الأدنى القابل للكشف",
+    "fr": "Concentration minimale détectable",
+    "de": "Minimale nachweisbare Konzentration"
+  },
+  "Cycle time": {
+    "zh": "周期",
+    "es": "Tiempo de ciclo",
+    "ru": "Длительность цикла",
+    "ar": "زمن الدورة",
+    "fr": "Durée de cycle",
+    "de": "Zykluszeit"
+  },
+  "Analyzer Minimum detectable concentration": {
+    "zh": "分析仪最低检出浓度",
+    "es": "Concentración mínima detectable del analizador",
+    "ru": "Минимальная обнаруживаемая концентрация анализатора",
+    "ar": "التركيز الأدنى القابل للكشف للمحلل",
+    "fr": "Concentration minimale détectable de l’analyseur",
+    "de": "Minimale Nachweisgrenze des Analysators"
+  },
+  "Power": {
+    "zh": "功率",
+    "es": "Potencia",
+    "ru": "Мощность",
+    "ar": "القدرة",
+    "fr": "Puissance",
+    "de": "Leistung"
+  },
+  "Alarm System": {
+    "zh": "报警系统",
+    "es": "Sistema de alarma",
+    "ru": "Система сигнализации",
+    "ar": "نظام الإنذار",
+    "fr": "Système d’alarme",
+    "de": "Alarmsystem"
+  },
+  "Buzzer": {
+    "zh": "蜂鸣器",
+    "es": "Zumbador",
+    "ru": "Зуммер",
+    "ar": "الصفارة",
+    "fr": "Avertisseur sonore",
+    "de": "Summer"
+  },
+  "Chromatograph Detector": {
+    "zh": "色谱仪检测器",
+    "es": "Detector del cromatógrafo",
+    "ru": "Детектор хроматографа",
+    "ar": "كاشف الكروماتوغراف",
+    "fr": "Détecteur du chromatographe",
+    "de": "Chromatographendetektor"
+  },
+  "Min detecting concentration": {
+    "zh": "最低检出浓度",
+    "es": "Concentración mínima detectable",
+    "ru": "Минимальная обнаруживаемая концентрация",
+    "ar": "التركيز الأدنى القابل للكشف",
+    "fr": "Concentration minimale détectable",
+    "de": "Minimale nachweisbare Konzentration"
+  },
+  "Baseline drift": {
+    "zh": "基线漂移",
+    "es": "Deriva de la línea base",
+    "ru": "Дрейф базовой линии",
+    "ar": "انجراف خط الأساس",
+    "fr": "Dérive de la ligne de base",
+    "de": "Basisliniendrift"
+  },
+  "Baseline noise": {
+    "zh": "基线噪声",
+    "es": "Ruido de la línea base",
+    "ru": "Шум базовой линии",
+    "ar": "ضوضاء خط الأساس",
+    "fr": "Bruit de la ligne de base",
+    "de": "Basislinienrauschen"
+  },
+  "Repetition error": {
+    "zh": "重复性误差",
+    "es": "Error de repetibilidad",
+    "ru": "Погрешность повторяемости",
+    "ar": "خطأ التكرارية",
+    "fr": "Erreur de répétabilité",
+    "de": "Wiederholfehler"
+  },
+  "Detector": {
+    "zh": "检测器",
+    "es": "Detector",
+    "ru": "Детектор",
+    "ar": "الكاشف",
+    "fr": "Détecteur",
+    "de": "Detektor"
+  },
+  "Detecting scope": {
+    "zh": "检测组分范围",
+    "es": "Intervalo de componentes detectados",
+    "ru": "Определяемые компоненты",
+    "ar": "نطاق المكونات المكتشفة",
+    "fr": "Plage des composants détectés",
+    "de": "Erfasster Komponentenbereich"
+  },
+  "Analysis circle": {
+    "zh": "分析周期",
+    "es": "Ciclo de análisis",
+    "ru": "Цикл анализа",
+    "ar": "دورة التحليل",
+    "fr": "Cycle d’analyse",
+    "de": "Analysezyklus"
+  },
+  "Response time": {
+    "zh": "响应时间",
+    "es": "Tiempo de respuesta",
+    "ru": "Время отклика",
+    "ar": "زمن الاستجابة",
+    "fr": "Temps de réponse",
+    "de": "Ansprechzeit"
+  },
+  "Detection deviation": {
+    "zh": "检测偏差",
+    "es": "Desviación de detección",
+    "ru": "Погрешность измерения",
+    "ar": "انحراف الكشف",
+    "fr": "Écart de mesure",
+    "de": "Messabweichung"
+  },
+  "Drifting zero": {
+    "zh": "零点漂移",
+    "es": "Deriva del cero",
+    "ru": "Дрейф нуля",
+    "ar": "انجراف الصفر",
+    "fr": "Dérive du zéro",
+    "de": "Nullpunktdrift"
+  },
+  "Repeatable deviation": {
+    "zh": "重复性偏差",
+    "es": "Desviación de repetibilidad",
+    "ru": "Отклонение повторяемости",
+    "ar": "انحراف التكرارية",
+    "fr": "Écart de répétabilité",
+    "de": "Wiederholabweichung"
+  },
+  "Measurement accuracy": {
+    "zh": "测量精度",
+    "es": "Precisión de medición",
+    "ru": "Погрешность измерения",
+    "ar": "دقة القياس",
+    "fr": "Précision de mesure",
+    "de": "Messgenauigkeit"
+  },
+  "Output current": {
+    "zh": "输出电流",
+    "es": "Corriente de salida",
+    "ru": "Выходной ток",
+    "ar": "تيار الخرج",
+    "fr": "Courant de sortie",
+    "de": "Ausgangsstrom"
+  }
+}

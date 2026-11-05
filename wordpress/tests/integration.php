@@ -24,6 +24,16 @@ foreach ($bundle['records'] as $record) {
     $matches = get_posts(['post_type' => ['page','post','cml_product'], 'post_status' => ['publish','draft'], 'numberposts' => 1, 'lang' => '', 'meta_key' => '_cml_import_key', 'meta_value' => $record['sourceId'] . ':' . $record['language']]);
     cml_assert_test($matches && $matches[0]->post_name === $record['slug'], 'Stable slug ' . $record['sourceId'] . ':' . $record['language']);
 }
+foreach ($bundle['records'] as $record) {
+    if (($record['localizationMode'] ?? '') !== 'full-source-translation-reviewed') continue;
+    $matches = get_posts(['post_type'=>'cml_product','post_status'=>['publish','draft'],'numberposts'=>1,'lang'=>'','meta_key'=>'_cml_import_key','meta_value'=>$record['sourceId'].':'.$record['language']]);
+    $expected_content=$record['content'];
+    foreach ($bundle['media'] as $asset) {
+        $attachments=get_posts(['post_type'=>'attachment','post_status'=>'inherit','numberposts'=>1,'lang'=>'','meta_key'=>'_cml_asset_key','meta_value'=>$asset['sha256']]);
+        if ($attachments) $expected_content=str_replace('"'.$asset['path'].'"','"'.esc_url(wp_get_attachment_url($attachments[0]->ID)).'"',$expected_content);
+    }
+    cml_assert_test($matches && $matches[0]->post_content === $expected_content, 'Full translation survives real WordPress sanitization: '.$record['sourceId'].':'.$record['language']);
+}
 $products = get_posts(['post_type' => 'cml_product', 'posts_per_page' => -1, 'lang' => 'en', 'post_status' => 'publish']);
 $dates_ok = true; $dated_count = 0;
 foreach ($bundle['records'] as $record) if ($record['language'] === 'en' && !empty($record['publishedAt'])) {

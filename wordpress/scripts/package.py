@@ -7,6 +7,11 @@ for name,source in [('cml',root/'wordpress/theme/cml'),('cml-core',root/'wordpre
     with zipfile.ZipFile(out/(name+'.zip'),'w',zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(source.rglob('*')):
             if path.is_file():archive.write(path,Path(name)/path.relative_to(source))
+full_release=root/'wordpress/extensions/cml-full-translations.php'
+if full_release.exists():
+    with zipfile.ZipFile(out/'cml-full-translations.zip','w',zipfile.ZIP_DEFLATED) as archive:
+        archive.write(full_release,'cml-full-translations/cml-full-translations.php')
+        archive.write(root/'wordpress/scripts/publish-full-translations.php','cml-full-translations/publish-full-translations.php')
 with zipfile.ZipFile(out/'cml-migration.zip','w',zipfile.ZIP_DEFLATED) as archive:
     for path in sorted((cache/'bundle').rglob('*')):
         if path.is_file():archive.write(path,Path('cml-migration')/path.relative_to(cache/'bundle'))

@@ -1,0 +1,387 @@
+{
+  "languages": [
+    "zh",
+    "es",
+    "ru",
+    "ar",
+    "fr",
+    "de"
+  ],
+  "terms": {
+    "mud logging": {
+      "zh": "录井",
+      "es": "registro de lodos",
+      "ru": "газовый каротаж",
+      "ar": "تسجيل بيانات طين الحفر",
+      "fr": "mud logging",
+      "de": "Mud-Logging"
+    },
+    "mud logging unit": {
+      "zh": "录井系统",
+      "es": "unidad de registro de lodos",
+      "ru": "станция газового каротажа",
+      "ar": "وحدة تسجيل بيانات طين الحفر",
+      "fr": "unité de mud logging",
+      "de": "Mud-Logging-Einheit"
+    },
+    "logging unit": {
+      "zh": "录井系统",
+      "es": "unidad de registro de lodos",
+      "ru": "станция газового каротажа",
+      "ar": "وحدة تسجيل بيانات طين الحفر",
+      "fr": "unité de mud logging",
+      "de": "Mud-Logging-Einheit"
+    },
+    "integrated logging instrument": {
+      "zh": "综合录井仪",
+      "es": "sistema integrado de registro de lodos",
+      "ru": "комплексная станция газового каротажа",
+      "ar": "نظام متكامل لتسجيل بيانات طين الحفر",
+      "fr": "système intégré de mud logging",
+      "de": "integriertes Mud-Logging-System"
+    },
+    "cuttings": {
+      "zh": "岩屑",
+      "es": "recortes de perforación",
+      "ru": "буровой шлам",
+      "ar": "فتات الحفر",
+      "fr": "déblais de forage",
+      "de": "Bohrklein"
+    },
+    "mudstone": {
+      "zh": "泥岩",
+      "es": "lutita",
+      "ru": "глинистая порода",
+      "ar": "الصخر الطيني",
+      "fr": "argilite",
+      "de": "Tonstein"
+    },
+    "shale": {
+      "zh": "页岩",
+      "es": "lutita",
+      "ru": "глинистый сланец",
+      "ar": "الطفل الصفحي",
+      "fr": "schiste argileux",
+      "de": "Schieferton"
+    },
+    "drilling fluid": {
+      "zh": "钻井液",
+      "es": "fluido de perforación",
+      "ru": "буровой раствор",
+      "ar": "سائل الحفر",
+      "fr": "fluide de forage",
+      "de": "Bohrspülung"
+    },
+    "mud pump": {
+      "zh": "泥浆泵",
+      "es": "bomba de lodo",
+      "ru": "буровой насос",
+      "ar": "مضخة الطين",
+      "fr": "pompe à boue",
+      "de": "Spülpumpe"
+    },
+    "pump stroke": {
+      "zh": "泵冲",
+      "es": "golpes de bomba",
+      "ru": "ходы насоса",
+      "ar": "أشواط المضخة",
+      "fr": "coups de pompe",
+      "de": "Pumpenhübe"
+    },
+    "rotary speed": {
+      "zh": "转速",
+      "es": "velocidad de rotación",
+      "ru": "частота вращения",
+      "ar": "سرعة الدوران",
+      "fr": "vitesse de rotation",
+      "de": "Drehzahl"
+    },
+    "rotary table": {
+      "zh": "转盘",
+      "es": "mesa rotatoria",
+      "ru": "ротор буровой установки",
+      "ar": "الطاولة الدوارة",
+      "fr": "table de rotation",
+      "de": "Drehtisch"
+    },
+    "proximity switch": {
+      "zh": "接近开关",
+      "es": "interruptor de proximidad",
+      "ru": "бесконтактный выключатель",
+      "ar": "مفتاح التقارب",
+      "fr": "détecteur de proximité",
+      "de": "Näherungsschalter"
+    },
+    "differential pressure": {
+      "zh": "差压",
+      "es": "presión diferencial",
+      "ru": "перепад давления",
+      "ar": "الضغط التفاضلي",
+      "fr": "pression différentielle",
+      "de": "Differenzdruck"
+    },
+    "diaphragm": {
+      "zh": "膜片",
+      "es": "diafragma",
+      "ru": "мембрана",
+      "ar": "غشاء",
+      "fr": "membrane",
+      "de": "Membran"
+    },
+    "transmitter": {
+      "zh": "变送器",
+      "es": "transmisor",
+      "ru": "измерительный преобразователь",
+      "ar": "مرسل القياس",
+      "fr": "transmetteur",
+      "de": "Messumformer"
+    },
+    "electrical conductivity": {
+      "zh": "电导率",
+      "es": "conductividad eléctrica",
+      "ru": "электропроводность",
+      "ar": "التوصيلية الكهربائية",
+      "fr": "conductivité électrique",
+      "de": "elektrische Leitfähigkeit"
+    },
+    "conductivity": {
+      "zh": "电导率",
+      "es": "conductividad",
+      "ru": "электропроводность",
+      "ar": "التوصيلية الكهربائية",
+      "fr": "conductivité",
+      "de": "Leitfähigkeit"
+    },
+    "degasser": {
+      "zh": "脱气器",
+      "es": "desgasificador",
+      "ru": "дегазатор",
+      "ar": "جهاز استخلاص الغاز",
+      "fr": "dégazeur",
+      "de": "Entgaser"
+    },
+    "gas chromatograph": {
+      "zh": "气相色谱仪",
+      "es": "cromatógrafo de gases",
+      "ru": "газовый хроматограф",
+      "ar": "كروماتوغراف الغاز",
+      "fr": "chromatographe en phase gazeuse",
+      "de": "Gaschromatograph"
+    },
+    "wellsite": {
+      "zh": "井场",
+      "es": "emplazamiento del pozo",
+      "ru": "буровая площадка",
+      "ar": "موقع البئر",
+      "fr": "site de forage",
+      "de": "Bohrplatz"
+    },
+    "well kick": {
+      "zh": "井涌",
+      "es": "influjo al pozo",
+      "ru": "газонефтеводопроявление",
+      "ar": "دخول سوائل التكوين إلى البئر",
+      "fr": "venue de fluide",
+      "de": "Zufluss aus der Formation"
+    },
+    "lost circulation": {
+      "zh": "井漏",
+      "es": "pérdida de circulación",
+      "ru": "поглощение бурового раствора",
+      "ar": "فقدان سائل الحفر",
+      "fr": "perte de circulation",
+      "de": "Spülungsverlust"
+    },
+    "stuck drillstring": {
+      "zh": "卡钻",
+      "es": "atasco de la sarta",
+      "ru": "прихват бурильной колонны",
+      "ar": "انحشار سلسلة الحفر",
+      "fr": "coincement de la garniture",
+      "de": "Festwerden des Bohrstrangs"
+    },
+    "undercompaction": {
+      "zh": "欠压实",
+      "es": "subcompactación",
+      "ru": "недоуплотнение",
+      "ar": "نقص الانضغاط",
+      "fr": "sous-compaction",
+      "de": "Unterkompaktion"
+    },
+    "data acquisition": {
+      "zh": "数据采集",
+      "es": "adquisición de datos",
+      "ru": "сбор данных",
+      "ar": "جمع البيانات",
+      "fr": "acquisition de données",
+      "de": "Datenerfassung"
+    },
+    "signal conditioning": {
+      "zh": "信号调理",
+      "es": "acondicionamiento de señales",
+      "ru": "нормализация сигналов",
+      "ar": "تكييف الإشارة",
+      "fr": "conditionnement des signaux",
+      "de": "Signalaufbereitung"
+    },
+    "baseline drift": {
+      "zh": "基线漂移",
+      "es": "deriva de la línea base",
+      "ru": "дрейф базовой линии",
+      "ar": "انجراف خط الأساس",
+      "fr": "dérive de la ligne de base",
+      "de": "Basisliniendrift"
+    },
+    "baseline noise": {
+      "zh": "基线噪声",
+      "es": "ruido de la línea base",
+      "ru": "шум базовой линии",
+      "ar": "ضوضاء خط الأساس",
+      "fr": "bruit de la ligne de base",
+      "de": "Basislinienrauschen"
+    },
+    "power supply": {
+      "zh": "供电",
+      "es": "alimentación eléctrica",
+      "ru": "электропитание",
+      "ar": "مصدر الطاقة",
+      "fr": "alimentation électrique",
+      "de": "Spannungsversorgung"
+    },
+    "operating temperature": {
+      "zh": "工作温度",
+      "es": "temperatura de funcionamiento",
+      "ru": "рабочая температура",
+      "ar": "درجة حرارة التشغيل",
+      "fr": "température de fonctionnement",
+      "de": "Betriebstemperatur"
+    },
+    "non-operating": {
+      "zh": "非工作状态",
+      "es": "fuera de funcionamiento",
+      "ru": "в нерабочем состоянии",
+      "ar": "خارج التشغيل",
+      "fr": "hors fonctionnement",
+      "de": "im nicht betriebenen Zustand"
+    },
+    "host computer": {
+      "zh": "上位机",
+      "es": "ordenador anfitrión",
+      "ru": "управляющий компьютер",
+      "ar": "الحاسوب المضيف",
+      "fr": "ordinateur hôte",
+      "de": "Leitrechner"
+    },
+    "calibration": {
+      "zh": "校准",
+      "es": "calibración",
+      "ru": "калибровка",
+      "ar": "المعايرة",
+      "fr": "étalonnage",
+      "de": "Kalibrierung"
+    },
+    "core": {
+      "zh": "岩心",
+      "es": "testigo de roca",
+      "ru": "керн",
+      "ar": "اللباب الصخري",
+      "fr": "carotte",
+      "de": "Bohrkern"
+    },
+    "sidewall samples": {
+      "zh": "井壁样品",
+      "es": "muestras de pared del pozo",
+      "ru": "образцы со стенки скважины",
+      "ar": "عينات جدار البئر",
+      "fr": "échantillons de paroi du puits",
+      "de": "Bohrlochwandproben"
+    },
+    "grease": {
+      "zh": "润滑脂",
+      "es": "grasa lubricante",
+      "ru": "консистентная смазка",
+      "ar": "شحم التزييت",
+      "fr": "graisse lubrifiante",
+      "de": "Schmierfett"
+    },
+    "mud": {
+      "zh": "泥浆",
+      "es": "lodo",
+      "ru": "буровой раствор",
+      "ar": "طين الحفر",
+      "fr": "boue de forage",
+      "de": "Bohrspülung"
+    }
+  },
+  "protectedCodes": [
+    "CNPS-8D08",
+    "SK-8D08",
+    "CNPS-ML-B11",
+    "ALS 2.2",
+    "EJA118W",
+    "BT200",
+    "HART",
+    "WITS",
+    "CDA",
+    "RS-485",
+    "FID",
+    "IP66",
+    "IP67",
+    "IP 67",
+    "CO2",
+    "C1-nC5",
+    "C1",
+    "C2",
+    "EX D Ⅱ CT6",
+    "ExdIIBT6 Gb DIP A21 TA,T6",
+    "AC100-AC240 DC12",
+    "W WF1 WF2",
+    "GB50058-92",
+    "GB3836.15-2000",
+    "DNV",
+    "A0",
+    "A-60",
+    "IEC79-13",
+    "IEC 60079-13",
+    "Windows 2000 / XP",
+    "SL-IR-II",
+    "SLS",
+    "YG1501",
+    "2N01G",
+    "Bee",
+    "USB2.0",
+    "PS/2",
+    "4U",
+    "9-pin D-Sub",
+    "Grms",
+    "CFM",
+    "HDD",
+    "LED",
+    "CPU",
+    "D/A",
+    "I/O",
+    "CAN",
+    "LCD",
+    "RTD",
+    "OT_CR",
+    "R_J_C",
+    "A_J_C",
+    "RTDC",
+    "CL-DT11",
+    "CL-DT12",
+    "CL-DT",
+    "AC",
+    "DC",
+    "CS",
+    "SS",
+    "UV",
+    "3G",
+    "GPRS",
+    "CDMA",
+    "silk oil",
+    "lead oil",
+    "EX",
+    "J",
+    "AC220V 50HzUV"
+  ]
+}
