@@ -3,7 +3,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
-import {syncZoho,importLog,normalizeLog,evidenceFor,syncStatus} from '../workers/funnel/zoho-sync.mjs';
+import {syncZoho,importLog,normalizeLog,evidenceFor,syncStatus,accessToken} from '../workers/funnel/zoho-sync.mjs';
 function fixture(){
  const db=new DatabaseSync(':memory:');for(const file of ['schema.sql','zoho-sync.sql'])db.exec(readFileSync(new URL('../workers/funnel/'+file,import.meta.url),'utf8'));
  const env={ADMIN_KEY:'not-a-real-key'.repeat(4),ZOHO_EVIDENCE_KEY:'a'.repeat(64),ZOHO_CLIENT_ID:'client',ZOHO_CLIENT_SECRET:'secret',ZOHO_REFRESH_TOKEN:'refresh',ZOHO_ORG_ID:'1234567',DB:{prepare(sql){let args=[];return{bind(...p){args=p;return this;},async first(){return db.prepare(sql).get(...args)||null;},async all(){return {results:db.prepare(sql).all(...args)};},async run(){return db.prepare(sql).run(...args);}};},async batch(statements){db.exec('BEGIN');try{const result=[];for(const s of statements)result.push(await s.run());db.exec('COMMIT');return result;}catch(e){db.exec('ROLLBACK');throw e;}}}};
@@ -36,4 +36,13 @@ test('polling is recipient-scoped, paginated and overlapping; failures retain cu
  const cursor=db.prepare('SELECT cursor_ms FROM zoho_sync_state').get().cursor_ms;
  r=await syncZoho(env,{now:now+10000,fetcher:async()=>Response.json({error:'invalid_grant',error_description:'SECRET MUST NOT LEAK'})});assert.equal(r.ok,false);assert.equal(db.prepare('SELECT cursor_ms FROM zoho_sync_state').get().cursor_ms,cursor);assert.equal((await syncStatus(env)).last_error,'oauth_rejected');
  db.prepare("UPDATE zoho_sync_state SET lease_until=? WHERE id='smtp'").run(Date.now()+100000);assert.equal((await syncZoho(env)).status,'already_running');
+});
+
+test('readonly OAuth token reuse avoids repeated refreshes and never caches a rejection',async()=>{
+ const {env}=fixture();let calls=0;const value=crypto.randomUUID();
+ const fetcher=async()=>{calls++;return Response.json({access_token:value,expires_in:3600});};
+ assert.deepEqual(await Promise.all([accessToken(env,fetcher),accessToken(env,fetcher),accessToken(env,fetcher)]),Array(3).fill(value));
+ assert.equal(calls,1);await accessToken({...env,ZOHO_REFRESH_TOKEN:crypto.randomUUID()},fetcher);assert.equal(calls,2);
+ let failures=0;const rejected=async()=>{failures++;return Response.json({error:'invalid_grant'});};
+ await assert.rejects(accessToken(env,rejected),/oauth_rejected/);await assert.rejects(accessToken(env,rejected),/oauth_rejected/);assert.equal(failures,2);
 });

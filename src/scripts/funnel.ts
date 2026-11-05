@@ -1,7 +1,8 @@
 type Ticket = { id: string; token: string; expiresAt: string; isTest: boolean };
 const storageKey = 'cml-funnel-session-v1';
 const preferenceKey = 'cml-measurement-disabled';
-const api = '/api/funnel';
+declare const CML_FUNNEL_BASE: string | undefined;
+const api = typeof CML_FUNNEL_BASE === 'undefined' ? '/api/funnel' : CML_FUNNEL_BASE;
 const path = window.location.pathname;
 function enabled() {
   try { return window.location.hostname === 'www.chinamudlogging.com' && navigator.doNotTrack !== '1' && !(navigator as Navigator & {globalPrivacyControl?: boolean}).globalPrivacyControl && localStorage.getItem(preferenceKey) !== '1'; }
@@ -38,7 +39,7 @@ async function init(): Promise<Ticket | null> {
     if (!ticket) return null;
     sessionStorage.setItem(storageKey,JSON.stringify(ticket));
     await post('event',{sessionId:ticket.id,token:ticket.token,id:crypto.randomUUID(),kind:'page_view',path});
-    const kind = path === '/contact-us/' ? 'contact_view' : path.startsWith('/product/') && path !== '/product/' ? 'product_view' : null;
+    const kind = /^\/(?:zh\/|es\/|ru\/|ar\/|fr\/|de\/)?contact-us(?:-(?:zh|es|ru|ar|fr|de))?\/$/.test(path) ? 'contact_view' : /^\/(?:zh\/|es\/|ru\/|ar\/|fr\/|de\/)?product\/[^/]+\/$/.test(path) ? 'product_view' : null;
     if (kind) await post('event',{sessionId:ticket.id,token:ticket.token,id:crypto.randomUUID(),kind,path});
     return ticket;
   } catch { return null; }
@@ -70,6 +71,7 @@ document.querySelector<HTMLButtonElement>('#measurement-toggle')?.addEventListen
     localStorage.setItem(preferenceKey,off?'1':'0');
     sessionStorage.removeItem(storageKey);
     const status=document.querySelector('#measurement-status');
-    if(status) status.textContent=off?'Anonymous measurement is disabled in this browser.':'Anonymous measurement is enabled unless your browser sends Do Not Track or Global Privacy Control. Reload to apply.';
+    const toggle = document.querySelector<HTMLButtonElement>('#measurement-toggle');
+    if(status) status.textContent=off?(toggle?.dataset.disabledText || 'Anonymous measurement is disabled in this browser.'):(toggle?.dataset.enabledText || 'Anonymous measurement is enabled unless your browser sends Do Not Track or Global Privacy Control. Reload to apply.');
   } catch { /* Browser storage may be unavailable. */ }
 });

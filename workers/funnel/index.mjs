@@ -2,8 +2,16 @@
 import products from '../../src/data/products.json' with { type: 'json' };
 import categories from '../../src/data/categories.json' with { type: 'json' };
 import articles from '../../src/data/articles.json' with { type: 'json' };
+import localizations from '../../wordpress/migration/priority-localizations.json' with { type: 'json' };
 import {syncZoho,syncStatus,evidenceFor} from './zoho-sync.mjs';
 const paths = new Set(['/', '/about-us/', '/services/', '/product/', '/blog/', '/contact-us/', '/privacy/', ...products.map(p=>`/product/${p.slug}/`), ...categories.map(p=>`/product-category/${p.slug}/`), ...articles.map(p=>`/${p.slug}/`)]);
+paths.add('/applications/');
+for(const lang of ['zh','es','ru','ar','fr','de']) {
+ paths.add(`/${lang}/`);
+ for(const slug of ['about-us','services','product','applications','contact-us','privacy'])paths.add(`/${lang}/${slug}-${lang}/`);
+ for(const category of categories)paths.add(`/${lang}/product-category/${category.slug}-${lang}/`);
+ for(const product of products.filter(p=>Object.hasOwn(localizations.products,String(p.id))))paths.add(`/${lang}/product/${product.slug}-${lang}/`);
+}
 const origins = new Set(['https://www.chinamudlogging.com', 'https://chinamudlogging.com']);
 const uuid = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/;
 const hex = /^[a-f0-9]{64}$/;
@@ -65,8 +73,7 @@ async function report(env,url) {
  const rate=(n,d)=>d?Number((n/d).toFixed(4)):null;
  return {version:1,generatedAt:new Date().toISOString(),timezone:'UTC',cohort:{from:range.from,until:range.until,isTest:!!test},...counts,rates:{visit_to_intent:rate(counts.intent_sessions,counts.visits),intent_to_received:rate(counts.received_sessions,counts.intent_sessions),received_to_qualified:rate(counts.qualified_inquiries,counts.received_inquiries)},sources:sources.results,segments:segments.results,limitations:['Visits are anonymous 30-minute browser sessions, not people.','GSC clicks and tracked visits are different measures and time zones; do not divide historical clicks by newly tracked receipts.','Google source is classified from browser referrer, not linked to an individual search query. Historical search includes other search engines.','Email preparation and clicks are intent only.','Receipts require delivered Zoho mailbox evidence (SMTP API or verified manual import); qualification requires human review.','Counts are attributed to the visit cohort; later receipts can change earlier cohorts.','Ad blockers, privacy choices and unreferenced emails create gaps.']};
 }
-export default {
- async fetch(req,env) {
+async function handleFetch(req,env) {
   try {
    const url=new URL(req.url),p=url.pathname.replace(/^\/api\/funnel/,'');
    if(p==='/health'&&req.method==='GET')return json({ok:true,version:1});
@@ -107,7 +114,7 @@ export default {
    if(p==='/event') {
     const b=await body(req,['sessionId','token','id','kind','path']);const s=await session(env,b);
     must(uuid.test(b.id||'')&&['page_view','product_view','contact_view'].includes(b.kind)&&validPath(b.path));
-    must(b.kind!=='product_view'||b.path.startsWith('/product/')&&b.path!=='/product/');must(b.kind!=='contact_view'||b.path==='/contact-us/');
+    must(b.kind!=='product_view'||/^\/(?:zh\/|es\/|ru\/|ar\/|fr\/|de\/)?product\/[^/]+\/$/.test(b.path));must(b.kind!=='contact_view'||/^\/(?:zh\/|es\/|ru\/|ar\/|fr\/|de\/)?contact-us(?:-(?:zh|es|ru|ar|fr|de))?\/$/.test(b.path));
     const count=await env.DB.prepare('SELECT COUNT(*) AS n FROM events WHERE session_id=?').bind(s.id).first();must(count.n<120,'Session event limit',429);
     await env.DB.prepare('INSERT OR IGNORE INTO events VALUES (?,?,?,?,?)').bind(b.id,s.id,b.kind,b.path,new Date().toISOString()).run();return json({ok:true});
    }
@@ -120,6 +127,19 @@ export default {
    }
    throw new Problem(404,'Not found');
   }catch(e){return json({error:e instanceof Problem?e.message:'Service unavailable'},e instanceof Problem?e.status:503);}
+}
+export default {
+ async fetch(req,env) {
+  const origin=req.headers.get('origin');
+  let response;
+  if(req.method==='OPTIONS')response=new Response(null,{status:origins.has(origin)?204:403});
+  else response=await handleFetch(req,env);
+  const h=new Headers(response.headers);
+  if(origins.has(origin)) {
+   h.set('Access-Control-Allow-Origin',origin);h.set('Vary','Origin');
+   h.set('Access-Control-Allow-Methods','GET, POST, OPTIONS');h.set('Access-Control-Allow-Headers','Content-Type, Authorization');
+  }
+  return new Response(response.body,{status:response.status,headers:h});
  },
  async scheduled(event,env) {
   if(event.cron==='15 2 * * *')await env.DB.prepare('DELETE FROM sessions WHERE created_at < ?').bind(new Date(Date.now()-90*864e5).toISOString()).run();

@@ -1,0 +1,6 @@
+.cml-inquiry-options,.cml-hubspot,[data-cml-hubspot-mount]{min-width:0;max-width:100%}
+.cml-hubspot{padding:clamp(1rem,3vw,2rem);border:1px solid #d9e0e8;border-radius:12px;background:#fff}
+.cml-hubspot h2{margin-top:0}.cml-hubspot iframe{max-width:100%;width:100%}
+.cml-hubspot-product{overflow-wrap:anywhere}.cml-local-inquiry{margin-top:1.5rem}
+.cml-local-inquiry summary{cursor:pointer;padding:1rem 0;font-weight:600}
+.cml-local-inquiry form{margin-top:1rem}.cml-hubspot .cml-button[hidden]{display:none}
