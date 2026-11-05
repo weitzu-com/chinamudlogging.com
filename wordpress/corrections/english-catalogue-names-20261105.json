@@ -1,0 +1,2964 @@
+{
+  "scope": "English titles and excerpts only; literal source descriptors, not verified ratings. Keep body, technical fields, units, URLs, source archives and publication dates unchanged. Dingsi is transliteration of an unresolved source designation, not an inferred sensor design.",
+  "glossary": {
+    "无线传感器配件": "Wireless Sensor Accessories",
+    "综合录井仪": "Integrated Mud Logging Unit",
+    "录井仪配件": "Mud Logging Instrument Accessories",
+    "传感器配件": "Sensor Accessories",
+    "温度密度电导浮球体积": "Temperature/Density/Conductivity/Float-Volume",
+    "顶丝扭矩": "Dingsi Torque (source designation)",
+    "超声波液位": "Ultrasonic Level",
+    "反应池及压力": "Reaction Chamber and Pressure",
+    "无线无腔": "Wireless Cavityless",
+    "防雷击保护": "Lightning Protection",
+    "泵冲转速": "Pump-Stroke/Rotary-Speed",
+    "二氧化碳": "Carbon Dioxide",
+    "电导率": "Conductivity",
+    "电化学": "Electrochemical",
+    "半导体": "Semiconductor",
+    "密温": "Density/Temperature",
+    "液位": "Level",
+    "无线": "Wireless",
+    "有线": "Wired",
+    "无腔": "Cavityless",
+    "扭矩": "Torque",
+    "张力": "Tension",
+    "红外": "Infrared",
+    "氢气": "Hydrogen",
+    "立压": "Standpipe Pressure",
+    "悬重": "Hookload",
+    "夹子": "Clamp",
+    "安装盘": "Mounting Plate",
+    "针": "Pin",
+    "孔": "Socket",
+    "路": "Channel",
+    "无线无线传感器配件": "Wireless Sensor Accessories",
+    "探索者录井仪配件": "Explorer Mud Logging Instrument Accessories",
+    "录井分析仪配件": "Mud Logging Analyzer Accessories",
+    "油气显示评价仪配件": "Oil and Gas Show Evaluation Instrument Accessories",
+    "分析单元配件": "Analysis Unit Accessories",
+    "超声波体积": "Ultrasonic Volume",
+    "临近开关": "Proximity Switch",
+    "录井仪": "Mud Logging Instrument",
+    "光电": "Photoelectric",
+    "电磁": "Electromagnetic"
+  },
+  "records": [
+    {
+      "id": 1405,
+      "slug": "0-25-4-6m-3-7v-1-fs-sensor",
+      "before": {
+        "title": "无线0.25-4.6m 3.7V 1%FS 超声波液位 Sensor for Mud Logging",
+        "excerpt": "无线0.25-4.6m 3.7V 1%FS 超声波液位 sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 0.25-4.6m 3.7V 1%FS Ultrasonic Level Sensor for Mud Logging",
+        "excerpt": "Wireless 0.25-4.6m 3.7V 1%FS Ultrasonic Level sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1402,
+      "slug": "0-25-10m-70-0-2-fs-ia-j-sensor",
+      "before": {
+        "title": "0.25-10m＞70℃ 0.2%FS ia J 超声波液位 Sensor for Mud Logging",
+        "excerpt": "0.25-10m＞70℃ 0.2%FS ia J 超声波液位 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "0.25-10m＞70℃ 0.2%FS ia J Ultrasonic Level Sensor for Mud Logging",
+        "excerpt": "0.25-10m＞70℃ 0.2%FS ia J Ultrasonic Level sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1399,
+      "slug": "300ms-cm-3-7v-0-2-6v-sensor",
+      "before": {
+        "title": "无线300mS/cm 3.7V 0-2.6V 电导率 Sensor for Mud Logging",
+        "excerpt": "无线300mS/cm 3.7V 0-2.6V 电导率 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 300mS/cm 3.7V 0-2.6V Conductivity Sensor for Mud Logging",
+        "excerpt": "Wireless 300mS/cm 3.7V 0-2.6V Conductivity sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1396,
+      "slug": "0-25-5m-0-2-fs-iat4-j-sensor",
+      "before": {
+        "title": "0.25-5m 0.2%FS iaT4 J 超声波液位 Sensor for Mud Logging",
+        "excerpt": "0.25-5m 0.2%FS iaT4 J 超声波液位 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "0.25-5m 0.2%FS iaT4 J Ultrasonic Level Sensor for Mud Logging",
+        "excerpt": "0.25-5m 0.2%FS iaT4 J Ultrasonic Level sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1393,
+      "slug": "0-300ms-cm-8-4v-1-fs-sensor",
+      "before": {
+        "title": "无线0-300mS/cm 8.4V 1%FS 电导率 Sensor for Mud Logging",
+        "excerpt": "无线0-300mS/cm 8.4V 1%FS 电导率 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 0-300mS/cm 8.4V 1%FS Conductivity Sensor for Mud Logging",
+        "excerpt": "Wireless 0-300mS/cm 8.4V 1%FS Conductivity sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1390,
+      "slug": "0-5m-3-7v-0-5-fs-sensor",
+      "before": {
+        "title": "无线 0-5m 3.7V 0.5%FS 超声波液位 Sensor for Mud Logging",
+        "excerpt": "无线 0-5m 3.7V 0.5%FS 超声波液位 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 0-5m 3.7V 0.5%FS Ultrasonic Level Sensor for Mud Logging",
+        "excerpt": "Wireless 0-5m 3.7V 0.5%FS Ultrasonic Level sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1387,
+      "slug": "2-4g-cm3-24v-1-5-fs-sensor",
+      "before": {
+        "title": "有线 2.4g/cm3 24V 1.5%FS 密温 Sensor for Mud Logging",
+        "excerpt": "有线 2.4g/cm3 24V 1.5%FS 密温 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wired 2.4g/cm3 24V 1.5%FS Density/Temperature Sensor for Mud Logging",
+        "excerpt": "Wired 2.4g/cm3 24V 1.5%FS Density/Temperature sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1384,
+      "slug": "0-4-10m-8-4v-0-5-fs-sensor",
+      "before": {
+        "title": "无线0.4-10m 8.4V 0.5%FS 液位 Sensor for Mud Logging",
+        "excerpt": "无线0.4-10m 8.4V 0.5%FS 液位 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 0.4-10m 8.4V 0.5%FS Level Sensor for Mud Logging",
+        "excerpt": "Wireless 0.4-10m 8.4V 0.5%FS Level sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1381,
+      "slug": "0-25-5m-0-5-fs-j-sensor",
+      "before": {
+        "title": "0.25-5m 0.5%FS J 超声波液位 Sensor for Mud Logging",
+        "excerpt": "0.25-5m 0.5%FS J 超声波液位 sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "0.25-5m 0.5%FS J Ultrasonic Level Sensor for Mud Logging",
+        "excerpt": "0.25-5m 0.5%FS J Ultrasonic Level sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1378,
+      "slug": "300ms-cm-3-7v-1-fs-sensor",
+      "before": {
+        "title": "无线300mS/cm 3.7V 1%FS 电导率 Sensor for Mud Logging",
+        "excerpt": "无线300mS/cm 3.7V 1%FS 电导率 sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 300mS/cm 3.7V 1%FS Conductivity Sensor for Mud Logging",
+        "excerpt": "Wireless 300mS/cm 3.7V 1%FS Conductivity sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1375,
+      "slug": "0-300ms-cm-24v-1-fs-j-sensor",
+      "before": {
+        "title": "0-300mS/cm 24V 1%FS J 电导率 Sensor for Mud Logging",
+        "excerpt": "0-300mS/cm 24V 1%FS J 电导率 sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "0-300mS/cm 24V 1%FS J Conductivity Sensor for Mud Logging",
+        "excerpt": "0-300mS/cm 24V 1%FS J Conductivity sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1369,
+      "slug": "0-300ms-cm-24v-2-fs-sensor",
+      "before": {
+        "title": "0-300mS/cm 24V 2%FS 电导率 Sensor for Mud Logging",
+        "excerpt": "0-300mS/cm 24V 2%FS 电导率 sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "0-300mS/cm 24V 2%FS Conductivity Sensor for Mud Logging",
+        "excerpt": "0-300mS/cm 24V 2%FS Conductivity sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1366,
+      "slug": "0-300ms-cm-24v-2-fs-j-sensor",
+      "before": {
+        "title": "0-300mS/cm 24V 2%FS J 电导率 Sensor for Mud Logging",
+        "excerpt": "0-300mS/cm 24V 2%FS J 电导率 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "0-300mS/cm 24V 2%FS J Conductivity Sensor for Mud Logging",
+        "excerpt": "0-300mS/cm 24V 2%FS J Conductivity sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1363,
+      "slug": "3-7v-0-5-2-5v-flow-sensor",
+      "before": {
+        "title": "无线 3.7V 0.5-2.5V Flow Sensor for Mud Logging",
+        "excerpt": "无线 3.7V 0.5-2.5V flow sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 3.7V 0.5-2.5V Flow Sensor for Mud Logging",
+        "excerpt": "Wireless 3.7V 0.5-2.5V flow sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1360,
+      "slug": "3-7v-0-5-2-5v-sensor",
+      "before": {
+        "title": "无线 3.7V 0.5-2.5V 扭矩 Sensor for Mud Logging",
+        "excerpt": "无线 3.7V 0.5-2.5V 扭矩 sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 3.7V 0.5-2.5V Torque Sensor for Mud Logging",
+        "excerpt": "Wireless 3.7V 0.5-2.5V Torque sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1354,
+      "slug": "3-7v-4-20ma-0-5-fs-temperature-sensor",
+      "before": {
+        "title": "无线 3.7V 4-20mA 0.5%FS Temperature Sensor for Mud Logging",
+        "excerpt": "无线 3.7V 4-20mA 0.5%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 3.7V 4-20mA 0.5%FS Temperature Sensor for Mud Logging",
+        "excerpt": "Wireless 3.7V 4-20mA 0.5%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1351,
+      "slug": "0-25-5m-0-5-fs-sensor",
+      "before": {
+        "title": "0.25-5m 0.5%FS 超声波液位 Sensor for Mud Logging",
+        "excerpt": "0.25-5m 0.5%FS 超声波液位 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "0.25-5m 0.5%FS Ultrasonic Level Sensor for Mud Logging",
+        "excerpt": "0.25-5m 0.5%FS Ultrasonic Level sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1345,
+      "slug": "3-7v-0-01g-cm3-density-sensor-2",
+      "before": {
+        "title": "无线 3.7V 0.01g/cm3 Density Sensor for Mud Logging",
+        "excerpt": "无线 3.7V 0.01g/cm3 density sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 3.7V 0.01g/cm3 Density Sensor for Mud Logging",
+        "excerpt": "Wireless 3.7V 0.01g/cm3 density sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1339,
+      "slug": "0-300ms-cm-24v-iatamb-j-sensor",
+      "before": {
+        "title": "0-300mS/cm 24V iaTamb J 电导率 Sensor for Mud Logging",
+        "excerpt": "0-300mS/cm 24V iaTamb J 电导率 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "0-300mS/cm 24V iaTamb J Conductivity Sensor for Mud Logging",
+        "excerpt": "0-300mS/cm 24V iaTamb J Conductivity sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1336,
+      "slug": "3-7v-0-2-6v-electric-torque-sensor",
+      "before": {
+        "title": "无线 3.7V 0-2.6V Electric Torque Sensor for Mud Logging",
+        "excerpt": "无线 3.7V 0-2.6V electric torque sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 3.7V 0-2.6V Electric Torque Sensor for Mud Logging",
+        "excerpt": "Wireless 3.7V 0-2.6V electric torque sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1333,
+      "slug": "8-4v-exiaiict1t6-pump-stroke-sensor",
+      "before": {
+        "title": "无线无腔8.4V EXiaIIcT1T6 Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "无线无腔8.4V EXiaIIcT1T6 pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless Cavityless 8.4V EXiaIIcT1T6 Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "Wireless Cavityless 8.4V EXiaIIcT1T6 pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1330,
+      "slug": "8-4v-1-2-5v-electric-torque-sensor",
+      "before": {
+        "title": "无线 8.4V 1-2.5V Electric Torque Sensor for Mud Logging",
+        "excerpt": "无线 8.4V 1-2.5V electric torque sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 8.4V 1-2.5V Electric Torque Sensor for Mud Logging",
+        "excerpt": "Wireless 8.4V 1-2.5V electric torque sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1327,
+      "slug": "10d-28v-4-20ma-1-fs-sensor",
+      "before": {
+        "title": "有线 10D 28V 4-20mA 1%FS 张力 Sensor for Mud Logging",
+        "excerpt": "有线 10D 28V 4-20mA 1%FS 张力 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wired 10D 28V 4-20mA 1%FS Tension Sensor for Mud Logging",
+        "excerpt": "Wired 10D 28V 4-20mA 1%FS Tension sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1324,
+      "slug": "8-4v-0-01g-cm3-density-sensor",
+      "before": {
+        "title": "无线 8.4V 0.01g/cm3 Density Sensor for Mud Logging",
+        "excerpt": "无线 8.4V 0.01g/cm3 density sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 8.4V 0.01g/cm3 Density Sensor for Mud Logging",
+        "excerpt": "Wireless 8.4V 0.01g/cm3 density sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1321,
+      "slug": "125-8-4v-0-5-fs-temperature-sensor",
+      "before": {
+        "title": "无线 125℃ 8.4V 0.5%FS Temperature Sensor for Mud Logging",
+        "excerpt": "无线 125℃ 8.4V 0.5%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 125℃ 8.4V 0.5%FS Temperature Sensor for Mud Logging",
+        "excerpt": "Wireless 125℃ 8.4V 0.5%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1315,
+      "slug": "42mpa-8-4v-0-5-fs-pressure-sensor",
+      "before": {
+        "title": "无线 42MPa 8.4V 0.5%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 42MPa 8.4V 0.5%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 42MPa 8.4V 0.5%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 42MPa 8.4V 0.5%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1303,
+      "slug": "6mpa-8-4v-0-5-fs-pressure-sensor",
+      "before": {
+        "title": "无线 6MPa 8.4V 0.5%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 6MPa 8.4V 0.5%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 6MPa 8.4V 0.5%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 6MPa 8.4V 0.5%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1300,
+      "slug": "3-7v-0-01g-cm3-density-sensor",
+      "before": {
+        "title": "无线 3.7V 0.01g/cm3 Density Sensor for Mud Logging",
+        "excerpt": "无线 3.7V 0.01g/cm3 density sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 3.7V 0.01g/cm3 Density Sensor for Mud Logging",
+        "excerpt": "Wireless 3.7V 0.01g/cm3 density sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1297,
+      "slug": "105mpa-8-4v-0-5-fs-pressure-sensor",
+      "before": {
+        "title": "无线 105MPa 8.4V 0.5%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 105MPa 8.4V 0.5%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 105MPa 8.4V 0.5%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 105MPa 8.4V 0.5%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1294,
+      "slug": "68mpa-8-4v-0-5-fs-pressure-sensor",
+      "before": {
+        "title": "无线 68MPa 8.4V 0.5%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 68MPa 8.4V 0.5%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 68MPa 8.4V 0.5%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 68MPa 8.4V 0.5%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1282,
+      "slug": "0-2m-0-5-fs-sensor",
+      "before": {
+        "title": "0-2m 0.5%FS 超声波液位 Sensor for Mud Logging",
+        "excerpt": "0-2m 0.5%FS 超声波液位 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "0-2m 0.5%FS Ultrasonic Level Sensor for Mud Logging",
+        "excerpt": "0-2m 0.5%FS Ultrasonic Level sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1279,
+      "slug": "150kn-m-24v-4-20ma-sensor",
+      "before": {
+        "title": "150KN.M 24V 4-20mA 顶丝扭矩 Sensor for Mud Logging",
+        "excerpt": "150KN.M 24V 4-20mA 顶丝扭矩 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "150KN.M 24V 4-20mA Dingsi Torque (source designation) Sensor for Mud Logging",
+        "excerpt": "150KN.M 24V 4-20mA Dingsi Torque (source designation) sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1270,
+      "slug": "170mpa-3-7v-1-fs-pressure-sensor",
+      "before": {
+        "title": "无线 170MPa 3.7V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 170MPa 3.7V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 170MPa 3.7V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 170MPa 3.7V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1267,
+      "slug": "8-4v-1-2-5v-flow-sensor",
+      "before": {
+        "title": "无线 8.4V 1-2.5V Flow Sensor for Mud Logging",
+        "excerpt": "无线 8.4V 1-2.5V flow sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 8.4V 1-2.5V Flow Sensor for Mud Logging",
+        "excerpt": "Wireless 8.4V 1-2.5V flow sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1264,
+      "slug": "100ppm-0-2-6v-1ppm-hydrogen-sulfide-sensor",
+      "before": {
+        "title": "无线100ppm 0-2.6V 1ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "无线100ppm 0-2.6V 1ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 100ppm 0-2.6V 1ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "Wireless 100ppm 0-2.6V 1ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1261,
+      "slug": "3-7v-0-2-6v-flow-sensor",
+      "before": {
+        "title": "无线 3.7V 0-2.6V Flow Sensor for Mud Logging",
+        "excerpt": "无线 3.7V 0-2.6V flow sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 3.7V 0-2.6V Flow Sensor for Mud Logging",
+        "excerpt": "Wireless 3.7V 0-2.6V flow sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1252,
+      "slug": "40mpa-3-7v-1-fs-pressure-sensor",
+      "before": {
+        "title": "无线 40MPa 3.7V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 40MPa 3.7V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 40MPa 3.7V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 40MPa 3.7V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1249,
+      "slug": "100p-8-4v-2ppm-hydrogen-sulfide-sensor",
+      "before": {
+        "title": "无线 电化学 100p 8.4V 2ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "无线 电化学 100p 8.4V 2ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless Electrochemical 100p 8.4V 2ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "Wireless Electrochemical 100p 8.4V 2ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1246,
+      "slug": "100-3-7v-1-fs-temperature-sensor",
+      "before": {
+        "title": "无线 100℃ 3.7V 1%FS Temperature Sensor for Mud Logging",
+        "excerpt": "无线 100℃ 3.7V 1%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 100℃ 3.7V 1%FS Temperature Sensor for Mud Logging",
+        "excerpt": "Wireless 100℃ 3.7V 1%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1237,
+      "slug": "5mpa-3-7v-1-fs-pressure-sensor",
+      "before": {
+        "title": "无线 5MPa 3.7V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 5MPa 3.7V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 5MPa 3.7V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 5MPa 3.7V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1234,
+      "slug": "3-7v-400r-pump-stroke-sensor",
+      "before": {
+        "title": "无线无腔3.7V 400r Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "无线无腔3.7V 400r pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless Cavityless 3.7V 400r Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "Wireless Cavityless 3.7V 400r pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1231,
+      "slug": "60mpa-3-7v-2-fs-pressure-sensor-2",
+      "before": {
+        "title": "无线 60MPa 3.7V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 60MPa 3.7V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 60MPa 3.7V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 60MPa 3.7V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1225,
+      "slug": "100p-3-7v-2p-hydrogen-sulfide-sensor",
+      "before": {
+        "title": "无线 100p 3.7V 2p Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "无线 100p 3.7V 2p hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 100p 3.7V 2p Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "Wireless 100p 3.7V 2p hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1222,
+      "slug": "6mpa-3-7v-2-fs-pressure-sensor",
+      "before": {
+        "title": "无线 6MPa 3.7V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无线 6MPa 3.7V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wireless 6MPa 3.7V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Wireless 6MPa 3.7V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1216,
+      "slug": "105mpa-24v-1-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 105MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 105MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Cavityless 105MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 105MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1213,
+      "slug": "40mpa-24v-1-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 40MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 40MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Cavityless 40MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 40MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1186,
+      "slug": "3-7v-1000r-pump-stroke-sensor",
+      "before": {
+        "title": "无线 3.7V 1000r Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "无线 3.7V 1000r pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Wireless 3.7V 1000r Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "Wireless 3.7V 1000r pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1183,
+      "slug": "5-24v-1-fs-sensor",
+      "before": {
+        "title": "红外 5% 24V 1%FS 二氧化碳 Sensor for Mud Logging",
+        "excerpt": "红外 5% 24V 1%FS 二氧化碳 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Infrared 5% 24V 1%FS Carbon Dioxide Sensor for Mud Logging",
+        "excerpt": "Infrared 5% 24V 1%FS Carbon Dioxide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1180,
+      "slug": "100-24v-1-fs-iatamb-sensor",
+      "before": {
+        "title": "100% 24V 1%FS iaTamb 二氧化碳 Sensor for Mud Logging",
+        "excerpt": "100% 24V 1%FS iaTamb 二氧化碳 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "100% 24V 1%FS iaTamb Carbon Dioxide Sensor for Mud Logging",
+        "excerpt": "100% 24V 1%FS iaTamb Carbon Dioxide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1174,
+      "slug": "40mpa-24v-2-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 40MPa 24V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 40MPa 24V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Cavityless 40MPa 24V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 40MPa 24V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1171,
+      "slug": "5mpa-24v-2-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 5MPa 24V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 5MPa 24V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Cavityless 5MPa 24V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 5MPa 24V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1168,
+      "slug": "68mpa-24v-1-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 68MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 68MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Cavityless 68MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 68MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1162,
+      "slug": "105mpa-24v-2-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 105MPa 24V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 105MPa 24V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Cavityless 105MPa 24V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 105MPa 24V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1153,
+      "slug": "42mpa-24v-1-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 42MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 42MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Cavityless 42MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 42MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1150,
+      "slug": "5mpa-24v-1-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 5MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 5MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Cavityless 5MPa 24V 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 5MPa 24V 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1141,
+      "slug": "1000ppm-4-20ma-2ppm-sensor",
+      "before": {
+        "title": "有线 1000ppm 4-20mA 2ppm 氢气 Sensor for Mud Logging",
+        "excerpt": "有线 1000ppm 4-20mA 2ppm 氢气 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wired 1000ppm 4-20mA 2ppm Hydrogen Sensor for Mud Logging",
+        "excerpt": "Wired 1000ppm 4-20mA 2ppm Hydrogen sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1126,
+      "slug": "2t04d05-sensor",
+      "before": {
+        "title": "2T04D05 反应池及压力 Sensor for Mud Logging",
+        "excerpt": "2T04D05 反应池及压力 sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "2T04D05 Reaction Chamber and Pressure Sensor for Mud Logging",
+        "excerpt": "2T04D05 Reaction Chamber and Pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1111,
+      "slug": "5mpa-1-fs-pressure-sensor",
+      "before": {
+        "title": "无腔 5MPa 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "无腔 5MPa 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Cavityless 5MPa 1%FS Pressure Sensor for Mud Logging",
+        "excerpt": "Cavityless 5MPa 1%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1045,
+      "slug": "csy-aty-wireless-quick-lock-connector",
+      "before": {
+        "title": "立压CSY-ATY Wireless Quick-Lock Connector for Mud Logging",
+        "excerpt": "立压CSY-ATY wireless quick-lock connector accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "Standpipe Pressure CSY-ATY Wireless Quick-Lock Connector for Mud Logging",
+        "excerpt": "Standpipe Pressure CSY-ATY wireless quick-lock connector accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1042,
+      "slug": "100lel-24v-combustible-gas-sensor",
+      "before": {
+        "title": "有线 100LEL 24V Combustible Gas Sensor for Mud Logging",
+        "excerpt": "有线 100LEL 24V combustible gas sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wired 100LEL 24V Combustible Gas Sensor for Mud Logging",
+        "excerpt": "Wired 100LEL 24V combustible gas sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1036,
+      "slug": "1a3006-34-connector-plug",
+      "before": {
+        "title": "1A3006-34针 Connector Plug for Mud Logging",
+        "excerpt": "1A3006-34针 connector plug accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1A3006-34 Pin Connector Plug for Mud Logging",
+        "excerpt": "1A3006-34 Pin connector plug accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1014,
+      "slug": "1a5000-34-connector-plug",
+      "before": {
+        "title": "1A5000-34孔 Connector Plug for Mud Logging",
+        "excerpt": "1A5000-34孔 connector plug accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1A5000-34 Socket Connector Plug for Mud Logging",
+        "excerpt": "1A5000-34 Socket connector plug accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 999,
+      "slug": "1a5006-34-connector-plug",
+      "before": {
+        "title": "1A5006-34针 Connector Plug for Mud Logging",
+        "excerpt": "1A5006-34针 connector plug accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1A5006-34 Pin Connector Plug for Mud Logging",
+        "excerpt": "1A5006-34 Pin connector plug accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 996,
+      "slug": "csy-aty-wireless-mounting-connector",
+      "before": {
+        "title": "立压CSY-ATY Wireless Mounting Connector for Mud Logging",
+        "excerpt": "立压CSY-ATY wireless mounting connector accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "Standpipe Pressure CSY-ATY Wireless Mounting Connector for Mud Logging",
+        "excerpt": "Standpipe Pressure CSY-ATY wireless mounting connector accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 993,
+      "slug": "4-wireless-isolated-serial-interface",
+      "before": {
+        "title": "4路 防雷击保护 Wireless Isolated Serial Interface for Mud Logging",
+        "excerpt": "4路 防雷击保护 wireless isolated serial interface accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "4 Channel Lightning Protection Wireless Isolated Serial Interface for Mud Logging",
+        "excerpt": "4 Channel Lightning Protection wireless isolated serial interface accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 984,
+      "slug": "csy-by-wireless-quick-lock-connector",
+      "before": {
+        "title": "悬重CSY-BY Wireless Quick-Lock Connector for Mud Logging",
+        "excerpt": "悬重CSY-BY wireless quick-lock connector accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "Hookload CSY-BY Wireless Quick-Lock Connector for Mud Logging",
+        "excerpt": "Hookload CSY-BY wireless quick-lock connector accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 972,
+      "slug": "csy-aty-wireless-tee-manifold-line",
+      "before": {
+        "title": "立压CSY-ATY Wireless Tee Manifold Line for Mud Logging",
+        "excerpt": "立压CSY-ATY wireless tee manifold line accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "Standpipe Pressure CSY-ATY Wireless Tee Manifold Line for Mud Logging",
+        "excerpt": "Standpipe Pressure CSY-ATY wireless tee manifold line accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 969,
+      "slug": "sensor-mounting-bracket",
+      "before": {
+        "title": "温度密度电导浮球体积 Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "温度密度电导浮球体积 sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "Temperature/Density/Conductivity/Float-Volume Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "Temperature/Density/Conductivity/Float-Volume sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 963,
+      "slug": "304-sensor-bracket",
+      "before": {
+        "title": "304/夹子/安装盘 Sensor Bracket for Mud Logging",
+        "excerpt": "304/夹子/安装盘 sensor bracket accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "304/ Clamp / Mounting Plate Sensor Bracket for Mud Logging",
+        "excerpt": "304/ Clamp / Mounting Plate sensor bracket accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 957,
+      "slug": "1a3000-34-connector-plug",
+      "before": {
+        "title": "1A3000-34孔 Connector Plug for Mud Logging",
+        "excerpt": "1A3000-34孔 connector plug accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1A3000-34 Socket Connector Plug for Mud Logging",
+        "excerpt": "1A3000-34 Socket connector plug accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 933,
+      "slug": "100ppm-24v-carbon-monoxide-sensor",
+      "before": {
+        "title": "有线 100ppm 24V Carbon Monoxide Sensor for Mud Logging",
+        "excerpt": "有线 100ppm 24V carbon monoxide sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Wired 100ppm 24V Carbon Monoxide Sensor for Mud Logging",
+        "excerpt": "Wired 100ppm 24V carbon monoxide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 930,
+      "slug": "100ppm-1ppm-hydrogen-sulfide-sensor-2",
+      "before": {
+        "title": "半导体 100ppm 1ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "半导体 100ppm 1ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Semiconductor 100ppm 1ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "Semiconductor 100ppm 1ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 915,
+      "slug": "ia4006-34-connector-plug",
+      "before": {
+        "title": "IA4006-34针 Connector Plug for Mud Logging",
+        "excerpt": "IA4006-34针 connector plug accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "IA4006-34 Pin Connector Plug for Mud Logging",
+        "excerpt": "IA4006-34 Pin connector plug accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 902,
+      "slug": "ia4000-34-connector-plug",
+      "before": {
+        "title": "IA4000-34孔 Connector Plug for Mud Logging",
+        "excerpt": "IA4000-34孔 connector plug accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "IA4000-34 Socket Connector Plug for Mud Logging",
+        "excerpt": "IA4000-34 Socket connector plug accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 899,
+      "slug": "csy-by-wireless-mounting-connector",
+      "before": {
+        "title": "悬重CSY-BY Wireless Mounting Connector for Mud Logging",
+        "excerpt": "悬重CSY-BY wireless mounting connector accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "Hookload CSY-BY Wireless Mounting Connector for Mud Logging",
+        "excerpt": "Hookload CSY-BY wireless mounting connector accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 881,
+      "slug": "csy-by-wireless-tee-manifold-line",
+      "before": {
+        "title": "悬重CSY-BY Wireless Tee Manifold Line for Mud Logging",
+        "excerpt": "悬重CSY-BY wireless tee manifold line accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "Hookload CSY-BY Wireless Tee Manifold Line for Mud Logging",
+        "excerpt": "Hookload CSY-BY wireless tee manifold line accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 860,
+      "slug": "pump-stroke-sensor-bracket",
+      "before": {
+        "title": "泵冲转速 Pump-Stroke Sensor Bracket for Mud Logging",
+        "excerpt": "泵冲转速 pump-stroke sensor bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "Pump-Stroke/Rotary-Speed Sensor Bracket for Mud Logging",
+        "excerpt": "Pump-Stroke/Rotary-Speed pump-stroke sensor bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1372,
+      "slug": "100-24v-4-20ma-0-5-fs-ibt6-temperature-sensor",
+      "before": {
+        "title": "100℃ 24V 4-20mA 0.5%FS ibT6 Temperature Sensor for Mud Logging",
+        "excerpt": "100℃ 24V 4-20mA 0.5%FS ibT6 temperature sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "100℃ 24V 4-20mA 0.5%FS ibT6 Temperature Sensor for Mud Logging",
+        "excerpt": "100℃ 24V 4-20mA 0.5%FS ibT6 temperature sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1357,
+      "slug": "100-42v-4-20ma-1-fs-ia-j-temperature-sensor",
+      "before": {
+        "title": "100℃<42V 4-20mA 1%FS ia J Temperature Sensor for Mud Logging",
+        "excerpt": "100℃<42V 4-20mA 1%FS ia J temperature sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "100℃<42V 4-20mA 1%FS ia J Temperature Sensor for Mud Logging",
+        "excerpt": "100℃<42V 4-20mA 1%FS ia J temperature sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1348,
+      "slug": "100-24v-4-20ma-0-5-fs-temperature-sensor",
+      "before": {
+        "title": "100℃ 24V 4-20mA 0.5%FS Temperature Sensor for Mud Logging",
+        "excerpt": "100℃ 24V 4-20mA 0.5%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "100℃ 24V 4-20mA 0.5%FS Temperature Sensor for Mud Logging",
+        "excerpt": "100℃ 24V 4-20mA 0.5%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1342,
+      "slug": "ce-iz04-54c18-1-0-sensor-module",
+      "before": {
+        "title": "CE-IZ04-54C18-1.0 Sensor Module for Mud Logging",
+        "excerpt": "CE-IZ04-54C18-1.0 sensor module accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "CE-IZ04-54C18-1.0 Sensor Module for Mud Logging",
+        "excerpt": "CE-IZ04-54C18-1.0 sensor module accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1318,
+      "slug": "sl2k-flow7-flow-sensor",
+      "before": {
+        "title": "SL2K-FLOW7 Flow Sensor for Mud Logging",
+        "excerpt": "SL2K-FLOW7 flow sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪SLSP-2K分析单元配件."
+      },
+      "after": {
+        "title": "SL2K-FLOW7 Flow Sensor for Mud Logging",
+        "excerpt": "SL2K-FLOW7 flow sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument SLSP-2K Analysis Unit Accessories ."
+      }
+    },
+    {
+      "id": 1312,
+      "slug": "40mpa-24v-0-5-fs-iat5-j-pressure-sensor",
+      "before": {
+        "title": "40MPa 24V 0.5%FS iaT5 J Pressure Sensor for Mud Logging",
+        "excerpt": "40MPa 24V 0.5%FS iaT5 J pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "40MPa 24V 0.5%FS iaT5 J Pressure Sensor for Mud Logging",
+        "excerpt": "40MPa 24V 0.5%FS iaT5 J pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1309,
+      "slug": "100-24v-4-20ma-1-fs-temperature-sensor",
+      "before": {
+        "title": "100℃ 24V 4-20mA 1%FS Temperature Sensor for Mud Logging",
+        "excerpt": "100℃ 24V 4-20mA 1%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "100℃ 24V 4-20mA 1%FS Temperature Sensor for Mud Logging",
+        "excerpt": "100℃ 24V 4-20mA 1%FS temperature sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1306,
+      "slug": "5mpa-24v-0-5-fs-iat5-j-pressure-sensor",
+      "before": {
+        "title": "5MPa 24V 0.5%FS iaT5 J Pressure Sensor for Mud Logging",
+        "excerpt": "5MPa 24V 0.5%FS iaT5 J pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "5MPa 24V 0.5%FS iaT5 J Pressure Sensor for Mud Logging",
+        "excerpt": "5MPa 24V 0.5%FS iaT5 J pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1291,
+      "slug": "tsfs-h2b-1-sensor",
+      "before": {
+        "title": "TSFS-H2B-1  Sensor for Mud Logging",
+        "excerpt": "TSFS-H2B-1  sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪SGC-3K分析单元配件."
+      },
+      "after": {
+        "title": "TSFS-H2B-1 Sensor for Mud Logging",
+        "excerpt": "TSFS-H2B-1 sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument SGC-3K Analysis Unit Accessories ."
+      }
+    },
+    {
+      "id": 1288,
+      "slug": "tsfs-h2t-1-sensor",
+      "before": {
+        "title": "TSFS-H2T-1  Sensor for Mud Logging",
+        "excerpt": "TSFS-H2T-1  sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪SGC-3K分析单元配件."
+      },
+      "after": {
+        "title": "TSFS-H2T-1 Sensor for Mud Logging",
+        "excerpt": "TSFS-H2T-1 sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument SGC-3K Analysis Unit Accessories ."
+      }
+    },
+    {
+      "id": 1285,
+      "slug": "tsfs-h2a-1-sensor",
+      "before": {
+        "title": "TSFS-H2A-1  Sensor for Mud Logging",
+        "excerpt": "TSFS-H2A-1  sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪SGC-3K分析单元配件."
+      },
+      "after": {
+        "title": "TSFS-H2A-1 Sensor for Mud Logging",
+        "excerpt": "TSFS-H2A-1 sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument SGC-3K Analysis Unit Accessories ."
+      }
+    },
+    {
+      "id": 1276,
+      "slug": "20000psi-43-93-28v-ia-j-pressure-sensor",
+      "before": {
+        "title": "20000psi-43～93℃ 28V ia J Pressure Sensor for Mud Logging",
+        "excerpt": "20000psi-43～93℃ 28V ia J pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "20000psi-43～93℃ 28V ia J Pressure Sensor for Mud Logging",
+        "excerpt": "20000psi-43～93℃ 28V ia J pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1273,
+      "slug": "10000psi-43-93-28v-ia-j-pressure-sensor",
+      "before": {
+        "title": "10000psi-43～93℃ 28V ia J Pressure Sensor for Mud Logging",
+        "excerpt": "10000psi-43～93℃ 28V ia J pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "10000psi-43～93℃ 28V ia J Pressure Sensor for Mud Logging",
+        "excerpt": "10000psi-43～93℃ 28V ia J pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1258,
+      "slug": "sgc-flow500ts-flow-sensor",
+      "before": {
+        "title": "SGC-FLOW500TS Flow Sensor for Mud Logging",
+        "excerpt": "SGC-FLOW500TS flow sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪SGC-3K分析单元配件."
+      },
+      "after": {
+        "title": "SGC-FLOW500TS Flow Sensor for Mud Logging",
+        "excerpt": "SGC-FLOW500TS flow sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument SGC-3K Analysis Unit Accessories ."
+      }
+    },
+    {
+      "id": 1255,
+      "slug": "24v-0-01g-cm3-iatamb-j-density-sensor",
+      "before": {
+        "title": "24V 0.01g/cm3 iaTamb J Density Sensor for Mud Logging",
+        "excerpt": "24V 0.01g/cm3 iaTamb J density sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "24V 0.01g/cm3 iaTamb J Density Sensor for Mud Logging",
+        "excerpt": "24V 0.01g/cm3 iaTamb J density sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1243,
+      "slug": "sgc-flow500cs-flow-sensor",
+      "before": {
+        "title": "SGC-FLOW500CS Flow Sensor for Mud Logging",
+        "excerpt": "SGC-FLOW500CS flow sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪SGC-3K分析单元配件."
+      },
+      "after": {
+        "title": "SGC-FLOW500CS Flow Sensor for Mud Logging",
+        "excerpt": "SGC-FLOW500CS flow sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument SGC-3K Analysis Unit Accessories ."
+      }
+    },
+    {
+      "id": 1240,
+      "slug": "24v-0-01g-cm3-j-density-sensor-7209",
+      "before": {
+        "title": "24V 0.01g/cm3 J Density Sensor (7209) for Mud Logging",
+        "excerpt": "24V 0.01g/cm3 J density sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "24V 0.01g/cm3 J Density Sensor (7209) for Mud Logging",
+        "excerpt": "24V 0.01g/cm3 J density sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1228,
+      "slug": "105mpa-24v-1-fs-iat5-j-pressure-sensor",
+      "before": {
+        "title": "105MPa 24V 1%FS iaT5 J Pressure Sensor for Mud Logging",
+        "excerpt": "105MPa 24V 1%FS iaT5 J pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "105MPa 24V 1%FS iaT5 J Pressure Sensor for Mud Logging",
+        "excerpt": "105MPa 24V 1%FS iaT5 J pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1219,
+      "slug": "24v-0-01g-cm3-j-density-sensor",
+      "before": {
+        "title": "24V 0.01g/cm3 J Density Sensor for Mud Logging",
+        "excerpt": "24V 0.01g/cm3 J density sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "24V 0.01g/cm3 J Density Sensor for Mud Logging",
+        "excerpt": "24V 0.01g/cm3 J density sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1210,
+      "slug": "tsfs-airc-1-sensor",
+      "before": {
+        "title": "TSFS-AIRC-1  Sensor for Mud Logging",
+        "excerpt": "TSFS-AIRC-1  sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪SGC-3K分析单元配件."
+      },
+      "after": {
+        "title": "TSFS-AIRC-1 Sensor for Mud Logging",
+        "excerpt": "TSFS-AIRC-1 sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument SGC-3K Analysis Unit Accessories ."
+      }
+    },
+    {
+      "id": 1207,
+      "slug": "tsfs-airt-1-sensor",
+      "before": {
+        "title": "TSFS-AIRT-1  Sensor for Mud Logging",
+        "excerpt": "TSFS-AIRT-1  sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪SGC-3K分析单元配件."
+      },
+      "after": {
+        "title": "TSFS-AIRT-1 Sensor for Mud Logging",
+        "excerpt": "TSFS-AIRT-1 sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument SGC-3K Analysis Unit Accessories ."
+      }
+    },
+    {
+      "id": 1204,
+      "slug": "1-2-110mpa-standpipe-casing-pressure-adapter",
+      "before": {
+        "title": "1/2\"×110MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "1/2\"×110MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1/2\"×110MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "1/2\"×110MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1201,
+      "slug": "kie-z-6g1-4-connector",
+      "before": {
+        "title": "KIE.Z-6G1/4 Connector for Mud Logging",
+        "excerpt": "KIE.Z-6G1/4 connector accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "KIE.Z-6G1/4 Connector for Mud Logging",
+        "excerpt": "KIE.Z-6G1/4 connector accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1198,
+      "slug": "1-2-60mpa-standpipe-casing-pressure-adapter",
+      "before": {
+        "title": "1/2\"×60MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "1/2\"×60MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1/2\"×60MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "1/2\"×60MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1195,
+      "slug": "3-4-110mpa-standpipe-casing-pressure-adapter",
+      "before": {
+        "title": "3/4\"×110MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "3/4\"×110MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "3/4\"×110MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "3/4\"×110MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1192,
+      "slug": "3-4-60mpa-standpipe-casing-pressure-adapter",
+      "before": {
+        "title": "3/4\"×60MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "3/4\"×60MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "3/4\"×60MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "3/4\"×60MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1189,
+      "slug": "ncn15-30gm40-n0-pump-stroke-probe",
+      "before": {
+        "title": "NCN15-30GM40-N0 Pump-Stroke Probe for Mud Logging",
+        "excerpt": "NCN15-30GM40-N0 pump-stroke probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "NCN15-30GM40-N0 Pump-Stroke Probe for Mud Logging",
+        "excerpt": "NCN15-30GM40-N0 pump-stroke probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1177,
+      "slug": "24v-4-20ma-iat6-j-flow-sensor",
+      "before": {
+        "title": "24V 4-20mA iaT6 J Flow Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA iaT6 J flow sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "24V 4-20mA iaT6 J Flow Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA iaT6 J flow sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1165,
+      "slug": "24v-0-01g-cm3-density-sensor",
+      "before": {
+        "title": "24V 0.01g/cm3 Density Sensor for Mud Logging",
+        "excerpt": "24V 0.01g/cm3 density sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "24V 0.01g/cm3 Density Sensor for Mud Logging",
+        "excerpt": "24V 0.01g/cm3 density sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1159,
+      "slug": "6000psi-90-28v-ia-j-pressure-sensor",
+      "before": {
+        "title": "6000psi ≤90℃ 28V ia J Pressure Sensor for Mud Logging",
+        "excerpt": "6000psi ≤90℃ 28V ia J pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "6000psi ≤90℃ 28V ia J Pressure Sensor for Mud Logging",
+        "excerpt": "6000psi ≤90℃ 28V ia J pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1156,
+      "slug": "5mpa-0-5-fs-j-pressure-sensor",
+      "before": {
+        "title": "5MPa 0.5%FS J Pressure Sensor for Mud Logging",
+        "excerpt": "5MPa 0.5%FS J pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "5MPa 0.5%FS J Pressure Sensor for Mud Logging",
+        "excerpt": "5MPa 0.5%FS J pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1147,
+      "slug": "60mpa-3-7v-2-fs-pressure-sensor",
+      "before": {
+        "title": "60MPa 3.7V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "60MPa 3.7V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "60MPa 3.7V 2%FS Pressure Sensor for Mud Logging",
+        "excerpt": "60MPa 3.7V 2%FS pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1144,
+      "slug": "40mpa-0-5-fs-j-pressure-sensor",
+      "before": {
+        "title": "40MPa 0.5%FS J Pressure Sensor for Mud Logging",
+        "excerpt": "40MPa 0.5%FS J pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "40MPa 0.5%FS J Pressure Sensor for Mud Logging",
+        "excerpt": "40MPa 0.5%FS J pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1138,
+      "slug": "800-das-0171-sensor-cable",
+      "before": {
+        "title": "800.DAS.0171 Sensor Cable for Mud Logging",
+        "excerpt": "800.DAS.0171 sensor cable accessory for geological mud-logging instruments; source catalogue note: SL探索者录井仪配件."
+      },
+      "after": {
+        "title": "800.DAS.0171 Sensor Cable for Mud Logging",
+        "excerpt": "800.DAS.0171 sensor cable accessory for geological mud-logging instruments; source catalogue note: SL Explorer Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1135,
+      "slug": "800-das-0170-sensor-cable",
+      "before": {
+        "title": "800.DAS.0170 Sensor Cable for Mud Logging",
+        "excerpt": "800.DAS.0170 sensor cable accessory for geological mud-logging instruments; source catalogue note: SL探索者录井仪配件."
+      },
+      "after": {
+        "title": "800.DAS.0170 Sensor Cable for Mud Logging",
+        "excerpt": "800.DAS.0170 sensor cable accessory for geological mud-logging instruments; source catalogue note: SL Explorer Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1132,
+      "slug": "800-das-0172-sensor-cable",
+      "before": {
+        "title": "800.DAS.0172 Sensor Cable for Mud Logging",
+        "excerpt": "800.DAS.0172 sensor cable accessory for geological mud-logging instruments; source catalogue note: SL探索者录井仪配件."
+      },
+      "after": {
+        "title": "800.DAS.0172 Sensor Cable for Mud Logging",
+        "excerpt": "800.DAS.0172 sensor cable accessory for geological mud-logging instruments; source catalogue note: SL Explorer Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1129,
+      "slug": "cps-md-j02-0-sensor-accessory",
+      "before": {
+        "title": "CPS-MD-J02-0 Sensor Accessory for Mud Logging",
+        "excerpt": "CPS-MD-J02-0 sensor accessory accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "CPS-MD-J02-0 Sensor Accessory for Mud Logging",
+        "excerpt": "CPS-MD-J02-0 sensor accessory accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1123,
+      "slug": "2-7-5-5v-sensor-circuit-board",
+      "before": {
+        "title": "2.7-5.5V Sensor Circuit Board for Mud Logging",
+        "excerpt": "2.7-5.5V sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "2.7-5.5V Sensor Circuit Board for Mud Logging",
+        "excerpt": "2.7-5.5V sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1120,
+      "slug": "pms103-8n1-wireless-data-acquisition-transmission-module",
+      "before": {
+        "title": "PMS103 8N1 Wireless Data Acquisition Transmission Module for Mud Logging",
+        "excerpt": "PMS103 8N1 wireless data acquisition transmission module accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "PMS103 8N1 Wireless Data Acquisition Transmission Module for Mud Logging",
+        "excerpt": "PMS103 8N1 wireless data acquisition transmission module accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1117,
+      "slug": "24v-4-20ma-electric-torque-sensor-2",
+      "before": {
+        "title": "24V 4-20mA Electric Torque Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA electric torque sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "24V 4-20mA Electric Torque Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA electric torque sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1114,
+      "slug": "photoelectric-8-4v-exiaiibt4-drawworks-sensor",
+      "before": {
+        "title": "Photoelectric 8.4V EXiaIIBT4 Drawworks Sensor for Mud Logging",
+        "excerpt": "无线 光电 8.4V EXiaIIBT4 photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Photoelectric 8.4V EXiaIIBT4 Drawworks Sensor for Mud Logging",
+        "excerpt": "Wireless Photoelectric 8.4V EXiaIIBT4 photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1108,
+      "slug": "hu-48y-t-sensor-module",
+      "before": {
+        "title": "HU-48Y-T Sensor Module for Mud Logging",
+        "excerpt": "HU-48Y-T sensor module accessory for geological mud-logging instruments; source catalogue note: 录井分析仪配件."
+      },
+      "after": {
+        "title": "HU-48Y-T Sensor Module for Mud Logging",
+        "excerpt": "HU-48Y-T sensor module accessory for geological mud-logging instruments; source catalogue note: Mud Logging Analyzer Accessories ."
+      }
+    },
+    {
+      "id": 1105,
+      "slug": "bk6-489-058-sensor-accessory",
+      "before": {
+        "title": "BK6.489.058 Sensor Accessory for Mud Logging",
+        "excerpt": "BK6.489.058 sensor accessory accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "BK6.489.058 Sensor Accessory for Mud Logging",
+        "excerpt": "BK6.489.058 sensor accessory accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1102,
+      "slug": "1-2-60mpa-standpipe-tee",
+      "before": {
+        "title": "1/2\"×60MPa Standpipe Tee for Mud Logging",
+        "excerpt": "1/2\"×60MPa standpipe tee accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1/2\"×60MPa Standpipe Tee for Mud Logging",
+        "excerpt": "1/2\"×60MPa standpipe tee accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1099,
+      "slug": "scw-53e-wireless-sensor-module",
+      "before": {
+        "title": "SCW-53E Wireless Sensor Module for Mud Logging",
+        "excerpt": "SCW-53E wireless sensor module accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53E Wireless Sensor Module for Mud Logging",
+        "excerpt": "SCW-53E wireless sensor module accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1096,
+      "slug": "1-110mpa-standpipe-casing-pressure-adapter",
+      "before": {
+        "title": "1\"×110MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "1\"×110MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1\"×110MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "1\"×110MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1093,
+      "slug": "1-60mpa-standpipe-casing-pressure-adapter",
+      "before": {
+        "title": "1\"×60MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "1\"×60MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1\"×60MPa Standpipe Casing Pressure Adapter for Mud Logging",
+        "excerpt": "1\"×60MPa standpipe casing pressure adapter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1090,
+      "slug": "3-4-60mpa-standpipe-tee",
+      "before": {
+        "title": "3/4\"×60MPa Standpipe Tee for Mud Logging",
+        "excerpt": "3/4\"×60MPa standpipe tee accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "3/4\"×60MPa Standpipe Tee for Mud Logging",
+        "excerpt": "3/4\"×60MPa standpipe tee accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1087,
+      "slug": "ps-02-pump-stroke-speed-circuit-board",
+      "before": {
+        "title": "PS-02 Pump-Stroke Speed Circuit Board for Mud Logging",
+        "excerpt": "PS-02 pump-stroke speed circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "PS-02 Pump-Stroke Speed Circuit Board for Mud Logging",
+        "excerpt": "PS-02 pump-stroke speed circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1084,
+      "slug": "scw-53f-wireless-data-acquisition-transmission-module",
+      "before": {
+        "title": "SCW-53F Wireless Data Acquisition Transmission Module for Mud Logging",
+        "excerpt": "SCW-53F wireless data acquisition transmission module accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53F Wireless Data Acquisition Transmission Module for Mud Logging",
+        "excerpt": "SCW-53F wireless data acquisition transmission module accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1081,
+      "slug": "24v-4-20ma-electric-torque-sensor",
+      "before": {
+        "title": "24V 4-20mA Electric Torque Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA electric torque sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "24V 4-20mA Electric Torque Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA electric torque sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1078,
+      "slug": "photoelectric-5v-exib-bt6-drawworks-sensor",
+      "before": {
+        "title": "Photoelectric 5V ExibⅡBT6 Drawworks Sensor for Mud Logging",
+        "excerpt": "光电 5V ExibⅡBT6 photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Photoelectric 5V ExibⅡBT6 Drawworks Sensor for Mud Logging",
+        "excerpt": "Photoelectric 5V ExibⅡBT6 photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1075,
+      "slug": "proximity-switch-28v-exiaiibt4-j-drawworks-sensor",
+      "before": {
+        "title": "Proximity-Switch 28V ExiaIIBT4 J Drawworks Sensor for Mud Logging",
+        "excerpt": "临近开关 28V ExiaIIBT4 J proximity-switch drawworks sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Proximity-Switch 28V ExiaIIBT4 J Drawworks Sensor for Mud Logging",
+        "excerpt": "Proximity Switch 28V ExiaIIBT4 J proximity-switch drawworks sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1072,
+      "slug": "100ppm-24v-2ppm-iatamb-hydrogen-sulfide-sensor",
+      "before": {
+        "title": "100ppm 24V 2ppm iaTamb Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "100ppm 24V 2ppm iaTamb hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "100ppm 24V 2ppm iaTamb Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "100ppm 24V 2ppm iaTamb hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1069,
+      "slug": "photoelectric-3-7v-drawworks-sensor-2",
+      "before": {
+        "title": "Photoelectric 3.7V Drawworks Sensor for Mud Logging",
+        "excerpt": "无线 光电 3.7V photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Photoelectric 3.7V Drawworks Sensor for Mud Logging",
+        "excerpt": "Wireless Photoelectric 3.7V photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1066,
+      "slug": "24v-4-20ma-flow-sensor-2",
+      "before": {
+        "title": "24V 4-20mA Flow Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA flow sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "24V 4-20mA Flow Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA flow sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1063,
+      "slug": "200ppm-24v-2ppm-iatamb-hydrogen-sulfide-sensor",
+      "before": {
+        "title": "200ppm 24V 2ppm iaTamb Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "200ppm 24V 2ppm iaTamb hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "200ppm 24V 2ppm iaTamb Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "200ppm 24V 2ppm iaTamb hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1060,
+      "slug": "105mpa-1-fs-j-pressure-sensor",
+      "before": {
+        "title": "105MPa 1%FS J Pressure Sensor for Mud Logging",
+        "excerpt": "105MPa 1%FS J pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "105MPa 1%FS J Pressure Sensor for Mud Logging",
+        "excerpt": "105MPa 1%FS J pressure sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1057,
+      "slug": "100ppm-24v-2ppm-hydrogen-sulfide-sensor",
+      "before": {
+        "title": "100ppm 24V 2ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "100ppm 24V 2ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "100ppm 24V 2ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "100ppm 24V 2ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 1054,
+      "slug": "gl3-l-153-pump-stroke-probe",
+      "before": {
+        "title": "GL3-L/153 Pump-Stroke Probe for Mud Logging",
+        "excerpt": "GL3-L/153 pump-stroke probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "GL3-L/153 Pump-Stroke Probe for Mud Logging",
+        "excerpt": "GL3-L/153 pump-stroke probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1051,
+      "slug": "100-sen-0013-wireless-pump-stroke-module",
+      "before": {
+        "title": "100.SEN.0013 Wireless Pump-Stroke Module for Mud Logging",
+        "excerpt": "100.SEN.0013 wireless pump-stroke module accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "100.SEN.0013 Wireless Pump-Stroke Module for Mud Logging",
+        "excerpt": "100.SEN.0013 wireless pump-stroke module accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1048,
+      "slug": "cps-xz-01-11-tee-mount-base",
+      "before": {
+        "title": "CPS-XZ-01-11 Tee Mount Base for Mud Logging",
+        "excerpt": "CPS-XZ-01-11 tee mount base accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "CPS-XZ-01-11 Tee Mount Base for Mud Logging",
+        "excerpt": "CPS-XZ-01-11 tee mount base accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1039,
+      "slug": "24v-4-20ma-flow-sensor",
+      "before": {
+        "title": "24V 4-20mA Flow Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA flow sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "24V 4-20mA Flow Sensor for Mud Logging",
+        "excerpt": "24V 4-20mA flow sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 1033,
+      "slug": "800-das-0178-wireless-sensor-connecting-cable",
+      "before": {
+        "title": "800.DAS.0178 Wireless Sensor Connecting Cable for Mud Logging",
+        "excerpt": "800.DAS.0178 wireless sensor connecting cable accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "800.DAS.0178 Wireless Sensor Connecting Cable for Mud Logging",
+        "excerpt": "800.DAS.0178 wireless sensor connecting cable accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1030,
+      "slug": "433m-sma-5cm-wireless-omnidirectional-antenna",
+      "before": {
+        "title": "433M SMA 5cm Wireless Omnidirectional Antenna for Mud Logging",
+        "excerpt": "433M SMA 5cm wireless omnidirectional antenna accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "433M SMA 5cm Wireless Omnidirectional Antenna for Mud Logging",
+        "excerpt": "433M SMA 5cm wireless omnidirectional antenna accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1026,
+      "slug": "kze2-6-quick-connector",
+      "before": {
+        "title": "kze2-\"6\" Quick Connector for Mud Logging",
+        "excerpt": "kze2-\"6\" quick connector accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "kze2-\"6\" Quick Connector for Mud Logging",
+        "excerpt": "kze2-\"6\" quick connector accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1023,
+      "slug": "sl500-1000-conductivity-probe",
+      "before": {
+        "title": "SL500-1000 Conductivity Probe for Mud Logging",
+        "excerpt": "SL500-1000 conductivity probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "SL500-1000 Conductivity Probe for Mud Logging",
+        "excerpt": "SL500-1000 conductivity probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1020,
+      "slug": "bk2-930-284-battery-module",
+      "before": {
+        "title": "BK2-930-284 Battery Module for Mud Logging",
+        "excerpt": "BK2-930-284 battery module accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "BK2-930-284 Battery Module for Mud Logging",
+        "excerpt": "BK2-930-284 battery module accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1017,
+      "slug": "scw-53f-wireless-transmission-box",
+      "before": {
+        "title": "SCW-53F Wireless Transmission Box for Mud Logging",
+        "excerpt": "SCW-53F wireless transmission box accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53F Wireless Transmission Box for Mud Logging",
+        "excerpt": "SCW-53F wireless transmission box accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1011,
+      "slug": "scw-53e-wireless-master-node",
+      "before": {
+        "title": "SCW-53E Wireless Master Node for Mud Logging",
+        "excerpt": "SCW-53E wireless master node accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53E Wireless Master Node for Mud Logging",
+        "excerpt": "SCW-53E wireless master node accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1008,
+      "slug": "mb7369hrxl-maxsonar-wireless-volume-probe",
+      "before": {
+        "title": "MB7369HRXL-MaxSonar Wireless Volume Probe for Mud Logging",
+        "excerpt": "MB7369HRXL-MaxSonar wireless volume probe accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "MB7369HRXL-MaxSonar Wireless Volume Probe for Mud Logging",
+        "excerpt": "MB7369HRXL-MaxSonar wireless volume probe accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1005,
+      "slug": "an-02-wireless-transmission-circuit-board",
+      "before": {
+        "title": "AN-02 Wireless Transmission Circuit Board for Mud Logging",
+        "excerpt": "AN-02 wireless transmission circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "AN-02 Wireless Transmission Circuit Board for Mud Logging",
+        "excerpt": "AN-02 wireless transmission circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 1002,
+      "slug": "cps-bd-0-hydrogen-sulfide-calibration-device",
+      "before": {
+        "title": "CPS-BD-0 Hydrogen Sulfide Calibration Device for Mud Logging",
+        "excerpt": "CPS-BD-0 hydrogen sulfide calibration device accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "CPS-BD-0 Hydrogen Sulfide Calibration Device for Mud Logging",
+        "excerpt": "CPS-BD-0 hydrogen sulfide calibration device accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 990,
+      "slug": "1-60mpa-standpipe-tee",
+      "before": {
+        "title": "1\"×60MPa Standpipe Tee for Mud Logging",
+        "excerpt": "1\"×60MPa standpipe tee accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "1\"×60MPa Standpipe Tee for Mud Logging",
+        "excerpt": "1\"×60MPa standpipe tee accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 987,
+      "slug": "433m-sma-20cm-wireless-omnidirectional-antenna",
+      "before": {
+        "title": "433M SMA 20cm Wireless Omnidirectional Antenna for Mud Logging",
+        "excerpt": "433M SMA 20cm wireless omnidirectional antenna accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "433M SMA 20cm Wireless Omnidirectional Antenna for Mud Logging",
+        "excerpt": "433M SMA 20cm wireless omnidirectional antenna accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 981,
+      "slug": "100-sen-0092-wireless-temperature-module",
+      "before": {
+        "title": "100.SEN.0092 Wireless Temperature Module for Mud Logging",
+        "excerpt": "100.SEN.0092 wireless temperature module accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "100.SEN.0092 Wireless Temperature Module for Mud Logging",
+        "excerpt": "100.SEN.0092 wireless temperature module accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 978,
+      "slug": "wdas-analogbox-wireless-analog-transmission-box",
+      "before": {
+        "title": "WDAS-ANALOGBOX Wireless Analog Transmission Box for Mud Logging",
+        "excerpt": "WDAS-ANALOGBOX wireless analog transmission box accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "WDAS-ANALOGBOX Wireless Analog Transmission Box for Mud Logging",
+        "excerpt": "WDAS-ANALOGBOX wireless analog transmission box accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 975,
+      "slug": "city-4hs-100-wireless-hydrogen-sulfide-probe",
+      "before": {
+        "title": "CITY 4HS+ 100 Wireless Hydrogen Sulfide Probe for Mud Logging",
+        "excerpt": "CITY 4HS+ 100 wireless hydrogen sulfide probe accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "CITY 4HS+ 100 Wireless Hydrogen Sulfide Probe for Mud Logging",
+        "excerpt": "CITY 4HS+ 100 wireless hydrogen sulfide probe accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 966,
+      "slug": "m30-30-300mm-sensor-bracket",
+      "before": {
+        "title": "M30×30×300mm Sensor Bracket for Mud Logging",
+        "excerpt": "M30×30×300mm sensor bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "M30×30×300mm Sensor Bracket for Mud Logging",
+        "excerpt": "M30×30×300mm sensor bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 960,
+      "slug": "433m-sma-19cm-wireless-omnidirectional-antenna",
+      "before": {
+        "title": "433M SMA 19cm Wireless Omnidirectional Antenna for Mud Logging",
+        "excerpt": "433M SMA 19cm wireless omnidirectional antenna accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "433M SMA 19cm Wireless Omnidirectional Antenna for Mud Logging",
+        "excerpt": "433M SMA 19cm wireless omnidirectional antenna accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 954,
+      "slug": "ct-02-wireless-master-station-circuit-board",
+      "before": {
+        "title": "CT-02 Wireless Master Station Circuit Board for Mud Logging",
+        "excerpt": "CT-02 wireless master station circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "CT-02 Wireless Master Station Circuit Board for Mud Logging",
+        "excerpt": "CT-02 wireless master station circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 951,
+      "slug": "24v-exiaiictamb-j-pump-stroke-sensor",
+      "before": {
+        "title": "24V ExiaIICTamb J Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "24V ExiaIICTamb J pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "24V ExiaIICTamb J Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "24V ExiaIICTamb J pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 948,
+      "slug": "24v-j-pump-stroke-sensor",
+      "before": {
+        "title": "24V J Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "24V J pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "24V J Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "24V J pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 945,
+      "slug": "24v-1920r-pump-stroke-sensor",
+      "before": {
+        "title": "24V 1920r Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "24V 1920r pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "24V 1920r Pump-Stroke Sensor for Mud Logging",
+        "excerpt": "24V 1920r pump-stroke sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 942,
+      "slug": "photoelectric-3-7v-drawworks-sensor",
+      "before": {
+        "title": "Photoelectric 3.7V Drawworks Sensor for Mud Logging",
+        "excerpt": "光电 3.7V photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Photoelectric 3.7V Drawworks Sensor for Mud Logging",
+        "excerpt": "Photoelectric 3.7V photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 939,
+      "slug": "proximity-switch-5v-drawworks-sensor",
+      "before": {
+        "title": "Proximity-Switch 5V Drawworks Sensor for Mud Logging",
+        "excerpt": "临近开关 5V proximity-switch drawworks sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Proximity-Switch 5V Drawworks Sensor for Mud Logging",
+        "excerpt": "Proximity Switch 5V proximity-switch drawworks sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 936,
+      "slug": "hsy-14030-pressure-sensor",
+      "before": {
+        "title": "HSY-14030 Pressure Sensor for Mud Logging",
+        "excerpt": "HSY-14030 pressure sensor accessory for geological mud-logging instruments; source catalogue note: 油气显示评价仪配件."
+      },
+      "after": {
+        "title": "HSY-14030 Pressure Sensor for Mud Logging",
+        "excerpt": "HSY-14030 pressure sensor accessory for geological mud-logging instruments; source catalogue note: Oil and Gas Show Evaluation Instrument Accessories ."
+      }
+    },
+    {
+      "id": 927,
+      "slug": "800-das-0175-sensor-signal-cable",
+      "before": {
+        "title": "800.DAS.0175 Sensor Signal Cable for Mud Logging",
+        "excerpt": "800.DAS.0175 sensor signal cable accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "800.DAS.0175 Sensor Signal Cable for Mud Logging",
+        "excerpt": "800.DAS.0175 sensor signal cable accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 924,
+      "slug": "100-sen-0091-temperature-probe",
+      "before": {
+        "title": "100.SEN.0091 Temperature Probe for Mud Logging",
+        "excerpt": "100.SEN.0091 temperature probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "100.SEN.0091 Temperature Probe for Mud Logging",
+        "excerpt": "100.SEN.0091 temperature probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 921,
+      "slug": "wdas-mainstation-wireless-master-station",
+      "before": {
+        "title": "WDAS-MAINSTATION Wireless Master Station for Mud Logging",
+        "excerpt": "WDAS-MAINSTATION wireless master station accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "WDAS-MAINSTATION Wireless Master Station for Mud Logging",
+        "excerpt": "WDAS-MAINSTATION wireless master station accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 918,
+      "slug": "800-sen-0250-volume-probe",
+      "before": {
+        "title": "800.SEN.0250 Volume Probe for Mud Logging",
+        "excerpt": "800.SEN.0250 volume probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "800.SEN.0250 Volume Probe for Mud Logging",
+        "excerpt": "800.SEN.0250 volume probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 911,
+      "slug": "sl300-wireless-conductivity-probe",
+      "before": {
+        "title": "SL300 Wireless Conductivity Probe for Mud Logging",
+        "excerpt": "SL300 wireless conductivity probe accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SL300 Wireless Conductivity Probe for Mud Logging",
+        "excerpt": "SL300 wireless conductivity probe accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 908,
+      "slug": "100-sen-0132-hydrogen-sulfide-probe",
+      "before": {
+        "title": "100.SEN.0132 Hydrogen Sulfide Probe for Mud Logging",
+        "excerpt": "100.SEN.0132 hydrogen sulfide probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "100.SEN.0132 Hydrogen Sulfide Probe for Mud Logging",
+        "excerpt": "100.SEN.0132 hydrogen sulfide probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 905,
+      "slug": "800-das-0174-sensor-signal-cable",
+      "before": {
+        "title": "800.DAS.0174 Sensor Signal Cable for Mud Logging",
+        "excerpt": "800.DAS.0174 sensor signal cable accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "800.DAS.0174 Sensor Signal Cable for Mud Logging",
+        "excerpt": "800.DAS.0174 sensor signal cable accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 896,
+      "slug": "tq-883t-wireless-density-probe",
+      "before": {
+        "title": "TQ-883T Wireless Density Probe for Mud Logging",
+        "excerpt": "TQ-883T wireless density probe accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "TQ-883T Wireless Density Probe for Mud Logging",
+        "excerpt": "TQ-883T wireless density probe accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 893,
+      "slug": "tb50-1-4-tee-fitting",
+      "before": {
+        "title": "TB50-1-4 Tee Fitting for Mud Logging",
+        "excerpt": "TB50-1-4 tee fitting accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "TB50-1-4 Tee Fitting for Mud Logging",
+        "excerpt": "TB50-1-4 tee fitting accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 890,
+      "slug": "800-das-0177-sensor-signal-cable",
+      "before": {
+        "title": "800.DAS.0177 Sensor Signal Cable for Mud Logging",
+        "excerpt": "800.DAS.0177 sensor signal cable accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "800.DAS.0177 Sensor Signal Cable for Mud Logging",
+        "excerpt": "800.DAS.0177 sensor signal cable accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 887,
+      "slug": "800-das-0176-sensor-signal-cable",
+      "before": {
+        "title": "800.DAS.0176 Sensor Signal Cable for Mud Logging",
+        "excerpt": "800.DAS.0176 sensor signal cable accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "800.DAS.0176 Sensor Signal Cable for Mud Logging",
+        "excerpt": "800.DAS.0176 sensor signal cable accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 884,
+      "slug": "800-sen-0240-density-probe",
+      "before": {
+        "title": "800.SEN.0240 Density Probe for Mud Logging",
+        "excerpt": "800.SEN.0240 density probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "800.SEN.0240 Density Probe for Mud Logging",
+        "excerpt": "800.SEN.0240 density probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 878,
+      "slug": "6mpa-24v-pressure-sensor",
+      "before": {
+        "title": "6MPa 24V Pressure Sensor for Mud Logging",
+        "excerpt": "6MPa 24V pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "6MPa 24V Pressure Sensor for Mud Logging",
+        "excerpt": "6MPa 24V pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 875,
+      "slug": "proximity-switch-8v-drawworks-sensor",
+      "before": {
+        "title": "Proximity-Switch 8V Drawworks Sensor for Mud Logging",
+        "excerpt": "临近开关 8V proximity-switch drawworks sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Proximity-Switch 8V Drawworks Sensor for Mud Logging",
+        "excerpt": "Proximity Switch 8V proximity-switch drawworks sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 872,
+      "slug": "photoelectric-5v-drawworks-sensor-7231",
+      "before": {
+        "title": "Photoelectric 5V Drawworks Sensor (7231) for Mud Logging",
+        "excerpt": "光电 5V photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER综合录井仪."
+      },
+      "after": {
+        "title": "Photoelectric 5V Drawworks Sensor (7231) for Mud Logging",
+        "excerpt": "Photoelectric 5V photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: EXPLORER Integrated Mud Logging Unit ."
+      }
+    },
+    {
+      "id": 869,
+      "slug": "200ppm-1ppm-hydrogen-sulfide-sensor",
+      "before": {
+        "title": "200ppm 1ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "200ppm 1ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "200ppm 1ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "200ppm 1ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 866,
+      "slug": "100ppm-1ppm-hydrogen-sulfide-sensor",
+      "before": {
+        "title": "100ppm 1ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "100ppm 1ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "100ppm 1ppm Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "100ppm 1ppm hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 863,
+      "slug": "110mpa-24v-pressure-sensor",
+      "before": {
+        "title": "110MPa 24V Pressure Sensor for Mud Logging",
+        "excerpt": "110MPa 24V pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "110MPa 24V Pressure Sensor for Mud Logging",
+        "excerpt": "110MPa 24V pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 857,
+      "slug": "photoelectric-5v-drawworks-sensor",
+      "before": {
+        "title": "Photoelectric 5V Drawworks Sensor for Mud Logging",
+        "excerpt": "光电 5V photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Photoelectric 5V Drawworks Sensor for Mud Logging",
+        "excerpt": "Photoelectric 5V photoelectric drawworks sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 854,
+      "slug": "scw-531-drawworks-sensor",
+      "before": {
+        "title": "SCW-531 Drawworks Sensor for Mud Logging",
+        "excerpt": "SCW-531 drawworks sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "SCW-531 Drawworks Sensor for Mud Logging",
+        "excerpt": "SCW-531 drawworks sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 851,
+      "slug": "scw-533-pressure-sensor",
+      "before": {
+        "title": "SCW-533 Pressure Sensor for Mud Logging",
+        "excerpt": "SCW-533 pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "SCW-533 Pressure Sensor for Mud Logging",
+        "excerpt": "SCW-533 pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 848,
+      "slug": "scw-534-pressure-sensor",
+      "before": {
+        "title": "SCW-534 Pressure Sensor for Mud Logging",
+        "excerpt": "SCW-534 pressure sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "SCW-534 Pressure Sensor for Mud Logging",
+        "excerpt": "SCW-534 pressure sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 845,
+      "slug": "electromagnetic-5v-drawworks-sensor",
+      "before": {
+        "title": "Electromagnetic 5V Drawworks Sensor for Mud Logging",
+        "excerpt": "电磁 5V electromagnetic drawworks sensor accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "Electromagnetic 5V Drawworks Sensor for Mud Logging",
+        "excerpt": "Electromagnetic 5V electromagnetic drawworks sensor accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 842,
+      "slug": "con-02-conductivity-sensor-circuit-board",
+      "before": {
+        "title": "CON-02 Conductivity Sensor Circuit Board for Mud Logging",
+        "excerpt": "CON-02 conductivity sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "CON-02 Conductivity Sensor Circuit Board for Mud Logging",
+        "excerpt": "CON-02 conductivity sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 839,
+      "slug": "rousement-conductivity-probe",
+      "before": {
+        "title": "ROUSEMENT Conductivity Probe for Mud Logging",
+        "excerpt": "ROUSEMENT conductivity probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "ROUSEMENT Conductivity Probe for Mud Logging",
+        "excerpt": "ROUSEMENT conductivity probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 836,
+      "slug": "scjt-ks-quick-connector",
+      "before": {
+        "title": "SCJT-KS Quick Connector for Mud Logging",
+        "excerpt": "SCJT-KS quick connector accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "SCJT-KS Quick Connector for Mud Logging",
+        "excerpt": "SCJT-KS quick connector accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 833,
+      "slug": "scw-wireless-sensor-battery-pack-7128",
+      "before": {
+        "title": "SCW Wireless Sensor Battery Pack (7128) for Mud Logging",
+        "excerpt": "SCW wireless sensor battery pack accessory for geological mud-logging instruments; source catalogue note: 无线无线传感器配件."
+      },
+      "after": {
+        "title": "SCW Wireless Sensor Battery Pack (7128) for Mud Logging",
+        "excerpt": "SCW wireless sensor battery pack accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 830,
+      "slug": "sy250-21-quick-connector",
+      "before": {
+        "title": "SY250 21 Quick Connector for Mud Logging",
+        "excerpt": "SY250 21 quick connector accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "SY250 21 Quick Connector for Mud Logging",
+        "excerpt": "SY250 21 quick connector accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 827,
+      "slug": "de-en-de-lithium-battery-charger",
+      "before": {
+        "title": "DE-EN-DE Lithium Battery Charger for Mud Logging",
+        "excerpt": "DE-EN-DE lithium battery charger accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "DE-EN-DE Lithium Battery Charger for Mud Logging",
+        "excerpt": "DE-EN-DE lithium battery charger accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 824,
+      "slug": "an-02-casing-pressure-sensor-circuit-board",
+      "before": {
+        "title": "AN-02 Casing Pressure Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 casing pressure sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "AN-02 Casing Pressure Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 casing pressure sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 821,
+      "slug": "an-02-standpipe-pressure-sensor-circuit-board",
+      "before": {
+        "title": "AN-02 Standpipe Pressure Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 standpipe pressure sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "AN-02 Standpipe Pressure Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 standpipe pressure sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 818,
+      "slug": "trq-02-electric-torque-sensor-circuit-board",
+      "before": {
+        "title": "TRQ-02 Electric Torque Sensor Circuit Board for Mud Logging",
+        "excerpt": "TRQ-02 electric torque sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "TRQ-02 Electric Torque Sensor Circuit Board for Mud Logging",
+        "excerpt": "TRQ-02 electric torque sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 815,
+      "slug": "explorer-wd-sensor-mounting-bracket",
+      "before": {
+        "title": "EXPLORER WD Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "EXPLORER WD sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "EXPLORER WD Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "EXPLORER WD sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 812,
+      "slug": "explorer-md-sensor-mounting-bracket",
+      "before": {
+        "title": "EXPLORER MD Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "EXPLORER MD sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "EXPLORER MD Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "EXPLORER MD sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 809,
+      "slug": "explorer-dd-sensor-mounting-bracket",
+      "before": {
+        "title": "EXPLORER DD Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "EXPLORER DD sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "EXPLORER DD Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "EXPLORER DD sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 806,
+      "slug": "pt100-temperature-probe",
+      "before": {
+        "title": "PT100 Temperature Probe for Mud Logging",
+        "excerpt": "PT100 temperature probe accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "PT100 Temperature Probe for Mud Logging",
+        "excerpt": "PT100 temperature probe accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 803,
+      "slug": "explorer-bc-sensor-mounting-bracket",
+      "before": {
+        "title": "EXPLORER BC Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "EXPLORER BC sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "EXPLORER BC Sensor Mounting Bracket for Mud Logging",
+        "excerpt": "EXPLORER BC sensor mounting bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 800,
+      "slug": "gyg11-sensor-connecting-tube",
+      "before": {
+        "title": "GYG11 Sensor Connecting Tube for Mud Logging",
+        "excerpt": "GYG11 sensor connecting tube accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "GYG11 Sensor Connecting Tube for Mud Logging",
+        "excerpt": "GYG11 sensor connecting tube accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 797,
+      "slug": "scw-wireless-sensor-battery-pack",
+      "before": {
+        "title": "SCW Wireless Sensor Battery Pack for Mud Logging",
+        "excerpt": "SCW wireless sensor battery pack accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW Wireless Sensor Battery Pack for Mud Logging",
+        "excerpt": "SCW wireless sensor battery pack accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 669,
+      "slug": "9z01-sensor-bracket",
+      "before": {
+        "title": "9Z01 Sensor Bracket for Mud Logging",
+        "excerpt": "9Z01 sensor bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "9Z01 Sensor Bracket for Mud Logging",
+        "excerpt": "9Z01 sensor bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 668,
+      "slug": "60mpa-high-pressure-sensor-line",
+      "before": {
+        "title": "60MPA High-Pressure Sensor Line for Mud Logging",
+        "excerpt": "60MPA high-pressure sensor line accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "60MPA High-Pressure Sensor Line for Mud Logging",
+        "excerpt": "60MPA high-pressure sensor line accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 667,
+      "slug": "gxj-g-type-clamp",
+      "before": {
+        "title": "GXJ G-Type Clamp for Mud Logging",
+        "excerpt": "GXJ G-type clamp accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "GXJ G-Type Clamp for Mud Logging",
+        "excerpt": "GXJ G-type clamp accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 666,
+      "slug": "wbd35d1-1k-potentiometer",
+      "before": {
+        "title": "WBD35D1 1K Potentiometer for Mud Logging",
+        "excerpt": "WBD35D1 1K potentiometer accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "WBD35D1 1K Potentiometer for Mud Logging",
+        "excerpt": "WBD35D1 1K potentiometer accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 665,
+      "slug": "0-105mpa-pressure-transmitter",
+      "before": {
+        "title": "0-105MPa Pressure Transmitter for Mud Logging",
+        "excerpt": "0-105MPa pressure transmitter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "0-105MPa Pressure Transmitter for Mud Logging",
+        "excerpt": "0-105MPa pressure transmitter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 664,
+      "slug": "0-5mpa-pressure-transmitter",
+      "before": {
+        "title": "0-5MPa Pressure Transmitter for Mud Logging",
+        "excerpt": "0-5MPa pressure transmitter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "0-5MPa Pressure Transmitter for Mud Logging",
+        "excerpt": "0-5MPa pressure transmitter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 661,
+      "slug": "0-42mpa-pressure-transmitter",
+      "before": {
+        "title": "0-42MPa Pressure Transmitter for Mud Logging",
+        "excerpt": "0-42MPa pressure transmitter accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "0-42MPa Pressure Transmitter for Mud Logging",
+        "excerpt": "0-42MPa pressure transmitter accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 654,
+      "slug": "we200z0-1k-potentiometer",
+      "before": {
+        "title": "WE200Z0 1K Potentiometer for Mud Logging",
+        "excerpt": "WE200Z0 1K potentiometer accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "WE200Z0 1K Potentiometer for Mud Logging",
+        "excerpt": "WE200Z0 1K potentiometer accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 647,
+      "slug": "wdas-charger-wireless-lithium-battery-charger",
+      "before": {
+        "title": "WDAS-CHARGER Wireless Lithium Battery Charger for Mud Logging",
+        "excerpt": "WDAS-CHARGER wireless lithium battery charger accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "WDAS-CHARGER Wireless Lithium Battery Charger for Mud Logging",
+        "excerpt": "WDAS-CHARGER wireless lithium battery charger accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 643,
+      "slug": "an-02-flow-sensor-circuit-board",
+      "before": {
+        "title": "AN-02 Flow Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 flow sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "AN-02 Flow Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 flow sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 642,
+      "slug": "an-02-hookload-sensor-circuit-board",
+      "before": {
+        "title": "AN-02 Hookload Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 hookload sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "AN-02 Hookload Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 hookload sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 641,
+      "slug": "an-02-temperature-sensor-circuit-board",
+      "before": {
+        "title": "AN-02 Temperature Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 temperature sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "AN-02 Temperature Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 temperature sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 640,
+      "slug": "dw-02-drawworks-sensor-circuit-board",
+      "before": {
+        "title": "DW-02 Drawworks Sensor Circuit Board for Mud Logging",
+        "excerpt": "DW-02 drawworks sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "DW-02 Drawworks Sensor Circuit Board for Mud Logging",
+        "excerpt": "DW-02 drawworks sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 638,
+      "slug": "an-02-density-sensor-circuit-board",
+      "before": {
+        "title": "AN-02 Density Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 density sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "AN-02 Density Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 density sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 637,
+      "slug": "h62-sensor-connector-fitting",
+      "before": {
+        "title": "H62 Sensor Connector Fitting for Mud Logging",
+        "excerpt": "H62 sensor connector fitting accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "H62 Sensor Connector Fitting for Mud Logging",
+        "excerpt": "H62 sensor connector fitting accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 636,
+      "slug": "hu-41-wireless-drawworks-sensor-probe",
+      "before": {
+        "title": "HU-41 Wireless Drawworks Sensor Probe for Mud Logging",
+        "excerpt": "HU-41 wireless drawworks sensor probe accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "HU-41 Wireless Drawworks Sensor Probe for Mud Logging",
+        "excerpt": "HU-41 wireless drawworks sensor probe accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 635,
+      "slug": "torque-sensor-bracket",
+      "before": {
+        "title": "Torque Sensor Bracket for Mud Logging",
+        "excerpt": "Torque sensor bracket accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "Torque Sensor Bracket for Mud Logging",
+        "excerpt": "Torque sensor bracket accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 634,
+      "slug": "explorer-jcb-drawworks-sensor-circuit-board",
+      "before": {
+        "title": "EXPLORER JCB Drawworks Sensor Circuit Board for Mud Logging",
+        "excerpt": "EXPLORER JCB drawworks sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "EXPLORER JCB Drawworks Sensor Circuit Board for Mud Logging",
+        "excerpt": "EXPLORER JCB drawworks sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 633,
+      "slug": "mnq11-sensor-simulator",
+      "before": {
+        "title": "MNQ11 Sensor Simulator for Mud Logging",
+        "excerpt": "MNQ11 sensor simulator accessory for geological mud-logging instruments; source catalogue note: 录井仪配件."
+      },
+      "after": {
+        "title": "MNQ11 Sensor Simulator for Mud Logging",
+        "excerpt": "MNQ11 sensor simulator accessory for geological mud-logging instruments; source catalogue note: Mud Logging Instrument Accessories ."
+      }
+    },
+    {
+      "id": 632,
+      "slug": "scw-wireless-sensor-charger",
+      "before": {
+        "title": "SCW Wireless Sensor Charger for Mud Logging",
+        "excerpt": "SCW wireless sensor charger accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW Wireless Sensor Charger for Mud Logging",
+        "excerpt": "SCW wireless sensor charger accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 620,
+      "slug": "h2s-02-h2s-sensor-circuit-board",
+      "before": {
+        "title": "H2S-02 H2S Sensor Circuit Board for Mud Logging",
+        "excerpt": "H2S-02 h2s sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "H2S-02 H2S Sensor Circuit Board for Mud Logging",
+        "excerpt": "H2S-02 h2s sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 618,
+      "slug": "bk4-488-009-mud-sensor-mounting-frame",
+      "before": {
+        "title": "BK4-488-009 Mud Sensor Mounting Frame for Mud Logging",
+        "excerpt": "BK4-488-009 mud sensor mounting frame accessory for geological mud-logging instruments; source catalogue note: 传感器配件."
+      },
+      "after": {
+        "title": "BK4-488-009 Mud Sensor Mounting Frame for Mud Logging",
+        "excerpt": "BK4-488-009 mud sensor mounting frame accessory for geological mud-logging instruments; source catalogue note: Sensor Accessories ."
+      }
+    },
+    {
+      "id": 616,
+      "slug": "scw-53a-wireless-conductivity-sensor",
+      "before": {
+        "title": "SCW-53A Wireless Conductivity Sensor for Mud Logging",
+        "excerpt": "SCW-53A wireless conductivity sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53A Wireless Conductivity Sensor for Mud Logging",
+        "excerpt": "SCW-53A wireless conductivity sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 615,
+      "slug": "scw-53c-wireless-top-screw-torque-sensor",
+      "before": {
+        "title": "SCW-53C Wireless Top-Screw Torque Sensor for Mud Logging",
+        "excerpt": "SCW-53C wireless top-screw torque sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53C Wireless Top-Screw Torque Sensor for Mud Logging",
+        "excerpt": "SCW-53C wireless top-screw torque sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 613,
+      "slug": "csy-apy-wireless-casing-pressure-sensor-probe",
+      "before": {
+        "title": "CSY-APY Wireless Casing Pressure Sensor Probe for Mud Logging",
+        "excerpt": "CSY-APY wireless casing pressure sensor probe accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "CSY-APY Wireless Casing Pressure Sensor Probe for Mud Logging",
+        "excerpt": "CSY-APY wireless casing pressure sensor probe accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 611,
+      "slug": "scw-53d-wireless-electric-torque-sensor",
+      "before": {
+        "title": "SCW-53D Wireless Electric Torque Sensor for Mud Logging",
+        "excerpt": "SCW-53D wireless electric torque sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53D Wireless Electric Torque Sensor for Mud Logging",
+        "excerpt": "SCW-53D wireless electric torque sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 609,
+      "slug": "wdas-battery-wireless-sensor-battery-pack",
+      "before": {
+        "title": "WDAS-BATTERY Wireless Sensor Battery Pack for Mud Logging",
+        "excerpt": "WDAS-BATTERY wireless sensor battery pack accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "WDAS-BATTERY Wireless Sensor Battery Pack for Mud Logging",
+        "excerpt": "WDAS-BATTERY wireless sensor battery pack accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 607,
+      "slug": "an-02-volume-sensor-circuit-board",
+      "before": {
+        "title": "AN-02 Volume Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 volume sensor circuit board accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "AN-02 Volume Sensor Circuit Board for Mud Logging",
+        "excerpt": "AN-02 volume sensor circuit board accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 605,
+      "slug": "hu-48y-wireless-flow-sensor-probe",
+      "before": {
+        "title": "HU-48Y Wireless Flow Sensor Probe for Mud Logging",
+        "excerpt": "HU-48Y wireless flow sensor probe accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "HU-48Y Wireless Flow Sensor Probe for Mud Logging",
+        "excerpt": "HU-48Y wireless flow sensor probe accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 603,
+      "slug": "scw-536-wireless-ultrasonic-sensor",
+      "before": {
+        "title": "SCW-536 Wireless Ultrasonic Sensor for Mud Logging",
+        "excerpt": "SCW-536 wireless ultrasonic sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-536 Wireless Ultrasonic Sensor for Mud Logging",
+        "excerpt": "SCW-536 wireless ultrasonic sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 601,
+      "slug": "csy-aty-wireless-standpipe-pressure-sensor",
+      "before": {
+        "title": "CSY-ATY Wireless Standpipe Pressure Sensor for Mud Logging",
+        "excerpt": "CSY-ATY wireless standpipe pressure sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "CSY-ATY Wireless Standpipe Pressure Sensor for Mud Logging",
+        "excerpt": "CSY-ATY wireless standpipe pressure sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 600,
+      "slug": "ultrasonic-sensor-bracket-mud-logging",
+      "before": {
+        "title": "Ultrasonic Sensor Bracket for Mud Logging",
+        "excerpt": "Ultrasonic Sensor Bracket accessory for geological mud-logging instruments; source catalogue note: 超声波体积 传感器配件."
+      },
+      "after": {
+        "title": "Ultrasonic Sensor Bracket for Mud Logging",
+        "excerpt": "Ultrasonic Sensor Bracket accessory for geological mud-logging instruments; source catalogue note: Ultrasonic Volume Sensor Accessories ."
+      }
+    },
+    {
+      "id": 598,
+      "slug": "scw-532-wireless-pump-stroke-sensor",
+      "before": {
+        "title": "SCW-532 Wireless Pump Stroke Sensor for Mud Logging",
+        "excerpt": "SCW-532 wireless pump stroke sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-532 Wireless Pump Stroke Sensor for Mud Logging",
+        "excerpt": "SCW-532 wireless pump stroke sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 629,
+      "slug": "scw-53b-wireless-density-sensor",
+      "before": {
+        "title": "SCW-53B Wireless Density Sensor for Mud Logging",
+        "excerpt": "SCW-53B wireless density sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53B Wireless Density Sensor for Mud Logging",
+        "excerpt": "SCW-53B wireless density sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 595,
+      "slug": "scw-53b-wireless-flow-sensor",
+      "before": {
+        "title": "SCW-53B Wireless Flow Sensor for Mud Logging",
+        "excerpt": "SCW-53B wireless flow sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-53B Wireless Flow Sensor for Mud Logging",
+        "excerpt": "SCW-53B wireless flow sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 593,
+      "slug": "csy-by-wireless-hookload-sensor",
+      "before": {
+        "title": "CSY-BY Wireless Hookload Sensor for Mud Logging",
+        "excerpt": "CSY-BY wireless hookload sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "CSY-BY Wireless Hookload Sensor for Mud Logging",
+        "excerpt": "CSY-BY wireless hookload sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 627,
+      "slug": "scw-539-wireless-temperature-sensor",
+      "before": {
+        "title": "SCW-539 Wireless Temperature Sensor for Mud Logging",
+        "excerpt": "SCW-539 wireless temperature sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-539 Wireless Temperature Sensor for Mud Logging",
+        "excerpt": "SCW-539 wireless temperature sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 590,
+      "slug": "scw-537-wireless-h2s-sensor",
+      "before": {
+        "title": "SCW-537 Wireless Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "SCW-537 wireless hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-537 Wireless Hydrogen Sulfide Sensor for Mud Logging",
+        "excerpt": "SCW-537 wireless hydrogen sulfide sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 588,
+      "slug": "scw-535-wireless-pressure-sensor",
+      "before": {
+        "title": "SCW-535 Wireless Pressure Sensor for Mud Logging",
+        "excerpt": "SCW-535 wireless pressure sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "SCW-535 Wireless Pressure Sensor for Mud Logging",
+        "excerpt": "SCW-535 wireless pressure sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    },
+    {
+      "id": 622,
+      "slug": "wireless-torque-sensor-3-3v-0-1000a",
+      "before": {
+        "title": "Wireless Torque Sensor 3.3V 0-1000A for Mud Logging",
+        "excerpt": "3.3V 0-1000A wireless torque sensor accessory for geological mud-logging instruments; source catalogue note: 无线传感器配件."
+      },
+      "after": {
+        "title": "Wireless Torque Sensor 3.3V 0-1000A for Mud Logging",
+        "excerpt": "3.3V 0-1000A wireless torque sensor accessory for geological mud-logging instruments; source catalogue note: Wireless Sensor Accessories ."
+      }
+    }
+  ]
+}
