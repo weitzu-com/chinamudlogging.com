@@ -5,3 +5,5 @@ add_action('wp_enqueue_scripts', function () { wp_enqueue_style('cml-site', get_
 
 require_once __DIR__ . '/inc/field-home.php';
 require_once __DIR__ . '/inc/field-inner.php';
+require_once __DIR__ . '/inc/language-panel.php';
+require_once __DIR__ . '/inc/branded-products.php';
