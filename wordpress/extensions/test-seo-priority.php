@@ -65,6 +65,8 @@ foreach (['超声波液位传感器','电导率传感器','密度传感器','温
     $assert(substr_count($out,$source) === 1 && get_post_field('post_content',$id) === $source,'Source bytes preserved');
     $assert(str_contains($out,'not an independently verified performance specification') && !str_contains($out,'<h1'),'No engineering inference or extra H1');
     $assert(apply_filters('wpseo_metadesc','') !== '', 'Imported sensor description filled');
+    preg_match_all('/href="([^"]+)"/', $out, $matches); $requests=[]; foreach ($matches[1] as $href) { parse_str(wp_parse_url(html_entity_decode($href), PHP_URL_QUERY) ?: '', $args); if (isset($args['product'])) { $assert(!preg_match('/%(?![0-9a-fA-F]{2})/', $href), 'No malformed percent escape'); $requests[]=$args['product']; } }
+    $assert(in_array(get_the_title($id).' — catalogue designation: 原样 0.25-4.6m 3.7V 1%FS', $requests, true), 'Percent and Unicode designation round-trips exactly');
     update_post_meta($id,'_cml_sku',''); $assert(cml_priority_sensor(get_post($id)) === [], 'Unknown model left out (product 600 boundary)');
     update_post_meta($id,'_cml_sku','known'); update_post_meta($id,'_cml_specifications',[['label'=>'Name','raw'=>$name],['label'=>'Source URL','raw'=>'https://example.com/product']]);
     $assert(cml_priority_sensor(get_post($id)) === [], 'Unapproved source excluded');
