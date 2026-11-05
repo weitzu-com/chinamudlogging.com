@@ -73,4 +73,25 @@ python3 wordpress/corrections/product-600/build-review.py
 
 ## 独立草稿 PR 范围
 
-本目录以 `codex/wordpress-migration` 的 `e12e33ddf658d64aca3a08a36d5b280dde97171c` 为基线独立提交。仅纳入 `wordpress/corrections/product-600/` 文件。完整 PR #8 审计包含其他产品，故仅收录产品 600 字段摘录；来源链接、完整原文哈希及历史清单说明见 `evidence/pr8-excerpt-provenance.json`。所有原值、精确差异和 EPEC DOM 快照保持原始字节不变。没有生产导入、写入或部署入口，草稿 PR 不代表上线或批准修改。
+本目录以 `codex/wordpress-migration` 的 `e12e33ddf658d64aca3a08a36d5b280dde97171c` 为基线独立提交。仅纳入 `wordpress/corrections/product-600/` 文件及专用 `.github/workflows/product-600-evidence.yml`。完整 PR #8 审计包含其他产品，故仅收录产品 600 字段摘录；来源链接、完整原文哈希及历史清单说明见 `evidence/pr8-excerpt-provenance.json`。所有原值、精确差异和 EPEC DOM 快照保持原始字节不变。没有生产导入、写入或部署入口，草稿 PR 不代表上线或批准修改。
+
+## 可复现生成与专项 CI
+
+生成器现已执行报告中的 HTML 表格核对并计算 PHP 源码哈希，完整重建 `offline-validation.json`；该报告与首次提交的冻结证据逐字节一致，原值、来源快照、候选字段和差异均未改变。既有 PHP 语法检查记录予以保留，不把哈希计算冒称为新一次 PHP 运行。
+
+只读核验包（重建仅发生在临时副本）：
+
+```sh
+python3 -B wordpress/corrections/product-600/check-evidence.py
+python3 -B wordpress/corrections/product-600/test-evidence.py
+```
+
+专用 `Product 600 evidence` 工作流在发往 `codex/wordpress-migration`、涉及本包或该工作流的 PR 上执行，权限仅为 `contents: read`，不使用生产凭据，不访问 WordPress。它检查：
+
+- 当前哈希清单完整覆盖本包，拒绝漏列、重复、不安全路径及符号链接；核对来源快照和交叉引用哈希。
+- 产品身份及 EPEC 三个字段保持一致，after 和候选字段只拆分已确认正文行及对应规格 meta；其他字段、摘要和措辞保持原值。
+- 临时目录重建后，报告及包内所有文件逐字节不变。
+- 使用 PR 实际 base/head 检查 Git 差异仅涉及产品 600 目录和专用工作流；首次提交 `fea48d81c28365116ed15d696128c4de9a8cdb59` 中全部 `evidence/` 文件保持原字节。
+- 五项负向场景：原值篡改、漏列文件、额外 Overview 修改、生成器导致报告漂移、PR 混入其他产品，均必须被拒绝。
+
+需要更新代码或说明时，在确认原始证据及候选差异保持不变后重新计算当前 `SHA256SUMS`。历史证据清单保持原样。本次新增自动检查不补足完整私有 meta、修订、审批或隔离副本验收等既有证据边界。

@@ -4,6 +4,7 @@ import copy
 import difflib
 import hashlib
 import json
+from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parent
 before_bytes = (ROOT / 'evidence/before-review.json').read_bytes()
@@ -30,6 +31,39 @@ restored['meta']['_cml_specifications'] = specs
 assert restored == before
 assert after['content']['raw'].replace(new, old, 1) == before['content']['raw']
 assert len(after['meta']['_cml_specifications']) == len(specs) + 1
+class TableRows(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.rows = []
+        self.row = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'tr':
+            self.row = []
+
+    def handle_data(self, text):
+        if self.row is not None:
+            self.row.append(text)
+
+    def handle_endtag(self, tag):
+        if tag == 'tr':
+            self.rows.append(self.row)
+            self.row = None
+
+original_table, proposed_table = TableRows(), TableRows()
+original_table.feed(before['content']['raw'])
+proposed_table.feed(after['content']['raw'])
+assert original_table.rows == [
+    ['Name', ' 超声波传感器支架 / Ultrasonic Sensor Bracket'],
+    ['Category note', ' 超声波体积 传感器配件'],
+    ['Source URL', ' https://emall.epec.com/productd/141652/15487160'],
+]
+assert proposed_table.rows == [
+    original_table.rows[0],
+    ['Source specification label', ' 超声波体积'],
+    ['Category note', ' 传感器配件'],
+    original_table.rows[2],
+]
 payload = {'content': after['content']['raw'], 'meta': {'_cml_specifications': after['meta']['_cml_specifications']}}
 def write_json(name, value):
     (ROOT / name).write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n')
@@ -46,7 +80,8 @@ write_json('evidence/offline-validation.json', {
     'beforeSHA256': hashlib.sha256(before_bytes).hexdigest(),
     'originalContentSHA256': hashlib.sha256(before['content']['raw'].encode()).hexdigest(),
     'proposedContentSHA256': hashlib.sha256(after['content']['raw'].encode()).hexdigest(),
-    'checks': ['identity', 'unique exact HTML row', 'unique exact meta row including punctuation', 'only two allowed paths changed', 'HTML round-trip restoration', 'unrelated meta and excerpt unchanged', 'immutable baseline'],
-    'productionContentOrSpecificationWrites': 0
+    'checks': ['identity', 'unique exact HTML row', 'unique exact meta row including punctuation', 'only two allowed paths changed', 'HTML round-trip restoration', 'unrelated meta and excerpt unchanged', 'immutable baseline', 'HTML parsed: exactly two replacement rows, other rows identical'],
+    'productionContentOrSpecificationWrites': 0,
+    'phpSourceSHA256': hashlib.sha256((ROOT / 'export-readonly.php').read_bytes()).hexdigest()
 })
 print('PASS: exact local proposal; only content.raw and meta._cml_specifications changed')
