@@ -55,12 +55,12 @@ body.cml-field-inner{--field-bg:#0b0405;--field-panel:#150e0f;--field-line:#382e
 .cml-field-inner .cml-note{color:var(--field-muted);font-size:.8rem;line-height:1.7}
 .cml-field-inner .cml-product-top .cml-note{margin-top:1rem}
 .cml-field-product #main>.wp-block-post-content{max-width:1040px;margin-inline:auto;padding-top:1rem;border-top:1px solid var(--field-line)}
-.cml-field-inner :is(.cml-buyer,.cml-priority-guide){background:var(--field-panel);border:1px solid var(--field-line);border-radius:0;box-shadow:none;padding:clamp(1.25rem,3vw,2rem)}
-.cml-field-inner :is(.cml-buyer,.cml-priority-guide) :is(h2,h3){letter-spacing:-.025em}
-.cml-field-inner :is(.cml-buyer,.cml-priority-guide) a:not(.cml-button){text-decoration:underline}
-.cml-field-inner :is(.cml-buyer,.cml-priority-guide) p{max-width:80ch}
-.cml-field-inner :is(.cml-priority-source,.cml-buyer details){padding-block:.5rem;border-top:1px solid var(--field-line)}
-.cml-field-inner :is(.cml-priority-source,.cml-buyer details) summary{min-height:48px;padding-block:.8rem;cursor:pointer;color:#fff}
+.cml-field-inner :is(.cml-buyer,.cml-priority-guide,.cml-depth-guide){background:var(--field-panel);border:1px solid var(--field-line);border-radius:0;box-shadow:none;padding:clamp(1.25rem,3vw,2rem)}
+.cml-field-inner :is(.cml-buyer,.cml-priority-guide,.cml-depth-guide) :is(h2,h3){letter-spacing:-.025em}
+.cml-field-inner :is(.cml-buyer,.cml-priority-guide,.cml-depth-guide) a:not(.cml-button){text-decoration:underline}
+.cml-field-inner :is(.cml-buyer,.cml-priority-guide,.cml-depth-guide) p{max-width:80ch}
+.cml-field-inner :is(.cml-priority-source,.cml-depth-source,.cml-buyer details){padding-block:.5rem;border-top:1px solid var(--field-line)}
+.cml-field-inner :is(.cml-priority-source,.cml-depth-source,.cml-buyer details) summary{min-height:48px;padding-block:.8rem;cursor:pointer;color:#fff}
 .cml-field-inner :is(.wp-block-table,.cml-buyer-scroll){border:1px solid var(--field-line);max-width:100%;overflow-x:auto}
 .cml-field-inner :is(.wp-block-table,.cml-buyer) table{background:transparent;color:#fff}
 .cml-field-inner :is(.wp-block-table,.cml-buyer) :is(th,td){border-color:var(--field-line);padding:.9rem;line-height:1.6}
