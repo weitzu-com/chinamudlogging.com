@@ -37,6 +37,9 @@ foreach (cml_sensor_records() as $slug => $record) {
     if ($record[0] === 'wireless_master') $assert(str_contains($html, 'capacity conflict') && str_contains($html, 'board-level') && str_contains($html, 'stale-data'), 'Master capacity and signalling boundary');
     if ($record[0] === 'wireless_system') $assert(str_contains($html, 'WITS variant') && str_contains($html, 'data-quality'), 'Wireless mapping boundary');
     if ($record[0] === 'power') $assert(str_contains($html, 'chemistry') && str_contains($html, 'DIY') && str_contains($html, 'matching voltage alone'), 'Power pairing boundary');
+    if ($record[0] === 'degasser') $assert(str_contains($html, 'tubing degasser RFQ') && str_contains($html, 'not a gas analyser'), 'Degasser duty and analysis boundary');
+    if ($record[0] === 'fluoroscope') $assert(str_contains($html, 'quantitative oil content') && str_contains($html, 'Legacy solvent'), 'Fluoroscope observation and procedure boundary');
+    if ($record[0] === 'display') $assert(str_contains($html, 'exact supplied assembly') && str_contains($html, 'HDMI, VGA') && str_contains($html, 'certificate with schedule'), 'Display interface and approval boundary');
     if (str_starts_with($slug, 'wireless-')) $assert(str_contains($html, 'Wireless system boundary'), 'Wireless receiver boundary');
 }
 foreach (['unrelated-sensor', 'mud-temperature-sensor-ar'] as $slug) {
