@@ -2,11 +2,12 @@
 /**
  * Plugin Name: ChinaMudLogging Sensor Selection
  * Description: Source-bounded selection, compatibility and documentation guidance for priority English sensors.
- * Version: 1.7.0
+ * Version: 1.8.0
  * Requires PHP: 8.2
  */
 defined('ABSPATH') || exit;
 const CML_SENSOR_IDENTITY_REVISION = '2026-11-05T04:49:53+00:00';
+const CML_UV_SELECTION_REVISION = '2026-11-05T05:46:00+00:00';
 function cml_sensor_identity_records(): array {
     return [
         'cl-md23-mud-density-sensor' => [
@@ -39,22 +40,28 @@ function cml_sensor_identity(array $context): string {
     foreach ($record['checks'] as $check) $html .= '<li>' . esc_html($check) . '</li>';
     $html .= '</ul><nav aria-label="Compare catalogue roles">';
     foreach ($record['links'] as $slug => $label) $html .= cml_sensor_link($slug, $label);
-    return $html . '</nav></section>';
+    return $html . '</nav>' . ($context['slug'] === 'oil-fluoroscope-uv-lamp-box' ? cml_uv_selection_comparison() : '') . '</section>';
 }
-function cml_sensor_identity_modified($original): string {
-    return is_string($original) && strtotime($original) >= strtotime(CML_SENSOR_IDENTITY_REVISION) ? $original : CML_SENSOR_IDENTITY_REVISION;
+function cml_uv_selection_comparison(): string {
+    return '<h3>Which UV lamp box record fits your purchase?</h3><p>This is a model-identification and buying guide for an unknown UV box, rather than a third confirmed model. Use the nameplate and intended sample-observation task to choose the next record.</p><div class="cml-sensor-table" role="region" aria-label="UV lamp box procurement comparison" tabindex="0"><table><caption>Catalogue identity and evidence to request</caption><thead><tr><th scope="col">Starting point</th><th scope="col">What the catalogue establishes</th><th scope="col">Next procurement step</th></tr></thead><tbody><tr><th scope="row">Model unknown — this guide</th><td>No model-specific specification is available in the original entry.</td><td>Send the nameplate, lamp/module label, supply and connection details, sample-holder dimensions and your observation task. Keep unknown details marked as unknown.</td></tr><tr><th scope="row">' . cml_sensor_link('oil-fluoroscope-uv-box', 'Nameplate or offer says YG1501') . '</th><td>The YG1501 record contains a model-labelled specification table and visual-fluorescence application text.</td><td>Ask for the current YG1501 datasheet, dimensional drawing, operating instructions and quoted configuration; compare them with the installed unit.</td></tr><tr><th scope="row">' . cml_sensor_link('mud-logging-oil-fluoroscope-uv-lamp-box', 'Nameplate or offer says CNPS-OL1501') . '</th><td>The CNPS-OL1501 record contains a model-labelled technical specification and legacy visual-interpretation and sample-treatment text.</td><td>Ask for the current CNPS-OL1501 configuration and operating documents. Confirm the intended sample workflow before an order.</td></tr></tbody></table></div><h3>New installation or replacement?</h3><ul><li><strong>Replacement:</strong> match the complete model, lamp/module, enclosure and sample space against the current unit. Similar catalogue values do not establish interchangeability between YG1501 and CNPS-OL1501.</li><li><strong>New installation:</strong> describe cuttings/core observation, sample holders, work area and required documentation, then ask the quotation to name one exact configuration. The generic entry does not select a lamp or power supply for you.</li><li><strong>Analytical requirement:</strong> if you need a quantitative oil-content result, provide the required method and acceptance criteria separately. These visual-fluorescence records do not establish validated quantitative performance.</li></ul><p>Legacy sample-treatment text is retained as source material, not a current operating procedure. Request model-matched operating and UV-protection instructions before use. No downloadable model-specific datasheet is established by this guide.</p>';
+}
+function cml_sensor_identity_revision(string $slug): string {
+    return $slug === 'oil-fluoroscope-uv-lamp-box' ? CML_UV_SELECTION_REVISION : CML_SENSOR_IDENTITY_REVISION;
+}
+function cml_sensor_identity_modified($original, string $revision = CML_SENSOR_IDENTITY_REVISION): string {
+    return is_string($original) && strtotime($original) >= strtotime($revision) ? $original : $revision;
 }
 add_filter('wpseo_schema_webpage', function ($data) {
     $c = cml_sensor_context();
-    if (($c['scope'] ?? '') === 'product' && isset(cml_sensor_identity_records()[$c['slug']])) $data['dateModified'] = cml_sensor_identity_modified($data['dateModified'] ?? '');
+    if (($c['scope'] ?? '') === 'product' && isset(cml_sensor_identity_records()[$c['slug']])) $data['dateModified'] = cml_sensor_identity_modified($data['dateModified'] ?? '', cml_sensor_identity_revision($c['slug']));
     return $data;
 }, 35);
 add_filter('wpseo_sitemap_entry', function ($entry, $type, $post) {
-    if (is_array($entry) && !empty($entry['loc']) && $type === 'post' && $post instanceof WP_Post && $post->post_type === 'cml_product' && $post->post_status === 'publish' && (!function_exists('pll_get_post_language') || pll_get_post_language($post->ID, 'slug') === 'en') && isset(cml_sensor_identity_records()[$post->post_name])) $entry['mod'] = cml_sensor_identity_modified($entry['mod'] ?? '');
+    if (is_array($entry) && !empty($entry['loc']) && $type === 'post' && $post instanceof WP_Post && $post->post_type === 'cml_product' && $post->post_status === 'publish' && (!function_exists('pll_get_post_language') || pll_get_post_language($post->ID, 'slug') === 'en') && isset(cml_sensor_identity_records()[$post->post_name])) $entry['mod'] = cml_sensor_identity_modified($entry['mod'] ?? '', cml_sensor_identity_revision($post->post_name));
     return $entry;
 }, 40, 3);
 add_filter('wpseo_sitemap_index_links', function ($links) {
-    foreach ($links as &$link) if (wp_parse_url($link['loc'] ?? '', PHP_URL_PATH) === '/cml_product-sitemap.xml') $link['lastmod'] = cml_sensor_identity_modified($link['lastmod'] ?? '');
+    foreach ($links as &$link) if (wp_parse_url($link['loc'] ?? '', PHP_URL_PATH) === '/cml_product-sitemap.xml') $link['lastmod'] = cml_sensor_identity_modified($link['lastmod'] ?? '', CML_UV_SELECTION_REVISION);
     unset($link);
     return $links;
 }, 40);
@@ -130,6 +137,7 @@ function cml_sensor_url(string $slug): string { return home_url('/product/' . $s
 function cml_sensor_link(string $slug, string $label): string { return '<a href="' . esc_url(cml_sensor_url($slug)) . '">' . esc_html($label) . '</a>'; }
 function cml_sensor_rfq(array $context, bool $documents = false): string {
     $request = $context['label'] . ($documents ? ' - request current datasheet, wiring and model-matched documentation' : ' - selection and interface compatibility review');
+    if ($context['slug'] === 'oil-fluoroscope-uv-lamp-box') $request = 'UV lamp box - model unknown; ' . ($documents ? 'request model identification and current operating documents before quotation' : 'identify existing unit or define new sample-observation requirement; YG1501 / CNPS-OL1501 not yet selected');
     return '<a class="cml-button" href="' . esc_url(add_query_arg('product', $request, cml_page_url('contact', 'en'))) . '">' . ($documents ? 'Request technical documents' : (in_array($context['type'], ['wireless_master', 'wireless_system', 'power', 'degasser', 'fluoroscope', 'display', 'computer', 'monitoring_project', 'evaluation_project', 'monitoring_catalogue', 'evaluation_catalogue'], true) ? 'Check this configuration for my system' : 'Check this sensor for my system')) . ' →</a>';
 }
 foreach (['wpseo_title', 'pre_get_document_title'] as $hook) add_filter($hook, function ($title) { $c = cml_sensor_context(); return $c ? $c['title'] . ' | ChinaMudLogging.com' : $title; }, 95);
@@ -140,7 +148,7 @@ add_filter('wpseo_metadesc', function ($description) {
 }, 95);
 add_action('wp_enqueue_scripts', function () {
     if (!cml_sensor_context()) return;
-    wp_register_style('cml-sensor-selection', false, [], '1.7.0'); wp_enqueue_style('cml-sensor-selection');
+    wp_register_style('cml-sensor-selection', false, [], '1.8.0'); wp_enqueue_style('cml-sensor-selection');
     wp_add_inline_style('cml-sensor-selection', '.cml-sensor-guide{margin-block:2rem;padding:clamp(1rem,3vw,2rem);background:#f4f8f8;border:1px solid #ccd6dc;border-radius:12px}.cml-sensor-guide h2{font-size:clamp(1.5rem,3vw,2.1rem)}.cml-sensor-guide nav{display:flex;gap:.7rem 1.2rem;flex-wrap:wrap}.cml-sensor-guide nav a{display:inline-flex;align-items:center;min-height:44px}.cml-sensor-table{overflow-x:auto;max-width:100%}.cml-sensor-table table{width:100%;min-width:520px;border-collapse:collapse}.cml-sensor-table td,.cml-sensor-table th{padding:.8rem;text-align:left;vertical-align:top;border:1px solid #ccd6dc}.cml-sensor-guide li{margin-block:.5rem}.cml-sensor-guide a{overflow-wrap:anywhere}.cml-sensor-source{scroll-margin-top:2rem}');
 }, 30);
 function cml_sensor_quick(array $c): string {
