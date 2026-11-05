@@ -45,6 +45,12 @@ jobs:
           python3 wordpress/tests/test-index-diagnosis.py
       - name: Catalogue pagination SEO boundaries
         run: python3 wordpress/tests/test-pagination-seo.py
+      - name: Source-backed content correction and guarded publication regression
+        run: |
+          python3 wordpress/corrections/source-content-20261105/build-review.py
+          git diff --exit-code -- wordpress/corrections/source-content-20261105/reviewed-manifest.json
+          python3 wordpress/corrections/source-content-20261105/check-review.py
+          python3 wordpress/tests/run-source-content-review.py
       - name: Package candidate
         run: python3 wordpress/scripts/package.py
       - uses: actions/upload-artifact@v4

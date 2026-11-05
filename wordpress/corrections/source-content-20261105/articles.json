@@ -1,0 +1,62 @@
+{
+  "216": {
+    "title": "Mud Logging Jobs: Role, Responsibilities and Skills",
+    "description": "What a mud logger does: sample description, data quality, equipment checks and wellsite reporting. Requirements depend on the employer and location.",
+    "sections": [
+      {"heading": "What does a mud logger do?", "paragraphs": ["Mud logging work combines observation of drilled rock samples with recording and reporting wellsite information. A mud logger helps describe the formations encountered during drilling and communicates relevant findings to the responsible wellsite team."]},
+      {"heading": "Typical responsibilities", "paragraphs": ["Depending on the assignment, duties can include maintaining sample records, describing cuttings, checking sensors and acquisition equipment, reviewing gas and drilling data, and preparing logs or reports. The employer defines the role, reporting line and operating procedures. A sample catcher, mud logger and data analyst may have different responsibilities."]},
+      {"heading": "Skills and applications", "paragraphs": ["An SLB mud-logging analyst role lists relevant geoscience qualifications, drilling-equipment knowledge and computer skills among its requirements. Requirements vary by vacancy, country and experience level. Consult the recruiting employer's official job description for current eligibility and application instructions.", "Equipment enquiries should identify the sensor or logging task and the existing system. Job-market comparisons, salary levels and hiring availability require current employer or labour-market evidence; no such comparison is made here."]}
+    ],
+    "links": [
+      {"text": "SLB: example mud-logging analyst role", "url": "https://careers.slb.com/jobdescription.aspx?id=EF20544-en_US+1"},
+      {"text": "What is a mud logging unit?", "url": "/what-is-mud-logging-unit/"},
+      {"text": "Mud logging equipment catalogue", "url": "/product/"}
+    ],
+    "reviewNotes": ["Removed the unsupported claim that mud-logging jobs are easier to obtain than drilling, well-logging or cementing jobs.", "The career link is an industry role example, not a ChinaMudLogging vacancy or recruitment relationship."]
+  },
+  "217": {
+    "title": "What Does a Mud Logging Unit Monitor?",
+    "description": "A mud logging unit brings together surface measurements and geological observations for formation evaluation, drilling monitoring and wellsite reporting.",
+    "sections": [
+      {"heading": "The unit's main task", "paragraphs": ["A mud logging unit collects, displays and records information used in formation evaluation and drilling monitoring. It brings together geological observations and surface measurements so the wellsite team can review the drilling process in context."]},
+      {"heading": "What information can it combine?", "paragraphs": ["The original catalogue article identifies gas measurements, mud flow in and out, temperature, rate of penetration, depth and pressure. Available channels depend on the installed equipment and service scope. SLB describes surface logging as supporting information about well status, drilling performance and formation fluids.", "The equipment list should distinguish a measured quantity from the sensor, signal and calculation used to obtain it. A sensor's supply voltage, output signal and measurement range are separate specifications."]},
+      {"heading": "How to specify a system", "paragraphs": ["For a quotation, state the required measurements, ranges and units, existing acquisition system, power supply, signal interfaces, connections and installation environment. Identify any drawings, calibration records or hazardous-area documents needed for the ordered configuration.", "The unit provides monitoring information. Alarm settings, communications and operational decisions follow the applicable wellsite procedures and assigned responsibilities; the presence of a logging unit is not a guarantee of uninterrupted drilling."]}
+    ],
+    "links": [
+      {"text": "SLB: surface logging scope", "url": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/measurements/surface-logging"},
+      {"text": "Mud logging unit overview", "url": "/what-is-mud-logging-unit/"},
+      {"text": "Request an equipment quotation", "url": "/contact-us/"}
+    ],
+    "reviewNotes": ["Replaced the absolute claim to ensure uninterrupted drilling with a description of monitoring and reporting support.", "The channel list is retained from the original article; availability is configuration-dependent."]
+  },
+  "219": {
+    "title": "What Is Mud Logging? Cuttings, Gas and Surface Data",
+    "description": "Mud logging combines examination of returned rock cuttings with gas and drilling measurements to build a surface record of a well during drilling.",
+    "sections": [
+      {"heading": "A surface record during drilling", "paragraphs": ["Mud logging combines examination of rock cuttings returned by the drilling fluid with gas measurements and drilling information. The resulting record helps describe the formations being drilled and provides context for geological interpretation."]},
+      {"heading": "Where the information comes from", "paragraphs": ["Cuttings recovered at the shale shaker provide material for lithological description. Gas extracted from returning drilling fluid supplies another set of observations. Depth, drilling rate and other available surface measurements help relate these observations to drilling activity.", "The time required for material to travel from the bit to the surface matters when relating a sample or gas observation to depth. The interpretation therefore depends on sampling, data quality and the operating context."]},
+      {"heading": "Equipment and records", "paragraphs": ["A mud-logging setup can include sampling and examination tools, gas-handling or analysis equipment, sensors and an acquisition system. Select equipment against the actual measurement and interface requirements. A catalogue name alone does not establish compatibility, calibration or hazardous-area suitability."]}
+    ],
+    "links": [
+      {"text": "SLB: The Defining Series — Mud Logging", "url": "https://www.slb.com/resource-library/oilfield-review/defining-series/defining-mud-logging"},
+      {"text": "Further explanation of mud logging", "url": "/what-is-meaning-of-mud-logging/"},
+      {"text": "Explore products by measurement and application", "url": "/product/"}
+    ],
+    "reviewNotes": ["Replaced a repeated unit-task sentence with a definition of mud logging and distinct sample/gas/data context.", "No operating thresholds, quantitative claims or guaranteed detection capability added."]
+  },
+  "220": {
+    "title": "ChinaMudLogging: Equipment Sourcing and Selection",
+    "description": "Use ChinaMudLogging.com to review mud-logging equipment and sensor catalogue records, compare requirements and prepare a configuration-specific enquiry.",
+    "sections": [
+      {"heading": "What the website supports", "paragraphs": ["ChinaMudLogging.com is an equipment sourcing and selection platform for international procurement teams and engineers working with mud-logging equipment. The catalogue covers logging units, drilling monitoring, formation evaluation, mud-logging sensors and wireless sensors."]},
+      {"heading": "Start with the installed system", "paragraphs": ["Identify the measurement needed and the existing equipment before selecting a replacement or additional component. Useful enquiry details include the model or supplier reference, range and units, power supply, signal or communication interface, process or mechanical connection, quantity and destination.", "For an accessory, a photograph, drawing or nameplate reference can help establish what is actually required. Similar catalogue wording does not by itself establish interchangeability."]},
+      {"heading": "From catalogue record to quotation", "paragraphs": ["Catalogue entries distinguish source information from details still requiring confirmation. The quotation should identify the offered configuration, documentation, availability and delivery terms. Manufacturing origin, certificates, calibration, hazardous-area suitability and compatibility must relate to that configuration.", "Use the product enquiry route to request missing information or discuss the required scope. The website's catalogue role does not establish manufacturing status, certification or service capability beyond the information verified for a specific enquiry."]}
+    ],
+    "links": [
+      {"text": "About ChinaMudLogging.com", "url": "/about-us/"},
+      {"text": "Browse the five product families", "url": "/product/"},
+      {"text": "Request a configuration review", "url": "/contact-us/"}
+    ],
+    "reviewNotes": ["Company positioning is based on the owner's confirmed website scope and current About page.", "Removed unsupported comparative safety/technical-superiority claims; the legacy light-well-intervention wording is archived, not presented as a verified current capability."]
+  }
+}
