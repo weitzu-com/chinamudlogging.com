@@ -35,6 +35,8 @@ jobs:
           python3 wordpress/scripts/check-bundle.py
       - name: SEO content and priority regression in isolated WordPress
         run: python3 wordpress/extensions/test-content-depth.py
+      - name: Product copy guards and reviewed inventory
+        run: python3 wordpress/tests/test-product-copy.py
       - name: Package candidate
         run: python3 wordpress/scripts/package.py
       - uses: actions/upload-artifact@v4
