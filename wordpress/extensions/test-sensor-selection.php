@@ -32,6 +32,11 @@ foreach (cml_sensor_records() as $slug => $record) {
     if ($record[0] === 'pressure') $assert(str_contains($html, 'assembly pressure rating') && str_contains($hero, $record[3]), 'Pressure range and source conflict boundary');
     if ($record[0] === 'torque') $assert(str_contains($html, 'Current-to-torque') && str_contains($html, 'motor/drive'), 'Current versus torque boundary');
     if ($record[0] === 'depth') $assert(str_contains($html, 'pulses per revolution') && str_contains($html, 'absolute well depth') && str_contains($hero, $record[3]), 'Encoder resolution and depth boundary');
+    if ($record[0] === 'hook') $assert(str_contains($html, 'pressure-to-hookload') && str_contains($html, 'load capacity'), 'Hookload conversion boundary');
+    if ($record[0] === 'gas') $assert(str_contains($html, 'end-to-end latency') && str_contains($html, 'https://www.osha.gov/hydrogen-sulfide/evaluating-controlling-exposure') && str_contains($html, 'not a product manual'), 'Gas alarm boundary and general reference');
+    if ($record[0] === 'wireless_master') $assert(str_contains($html, 'capacity conflict') && str_contains($html, 'board-level') && str_contains($html, 'stale-data'), 'Master capacity and signalling boundary');
+    if ($record[0] === 'wireless_system') $assert(str_contains($html, 'WITS variant') && str_contains($html, 'data-quality'), 'Wireless mapping boundary');
+    if ($record[0] === 'power') $assert(str_contains($html, 'chemistry') && str_contains($html, 'DIY') && str_contains($html, 'matching voltage alone'), 'Power pairing boundary');
     if (str_starts_with($slug, 'wireless-')) $assert(str_contains($html, 'Wireless system boundary'), 'Wireless receiver boundary');
 }
 foreach (['unrelated-sensor', 'mud-temperature-sensor-ar'] as $slug) {

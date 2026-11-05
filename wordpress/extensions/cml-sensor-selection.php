@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ChinaMudLogging Sensor Selection
  * Description: Source-bounded selection, compatibility and documentation guidance for priority English sensors.
- * Version: 1.2.0
+ * Version: 1.3.0
  * Requires PHP: 8.2
  */
 defined('ABSPATH') || exit;
@@ -34,6 +34,12 @@ function cml_sensor_records(): array {
         'wireless-casing-pressure-sensor-for-mud-logging-unit' => ['pressure', 'Wireless Casing Pressure Sensor: Selection & Receiver Interface', 'Wireless casing pressure sensor', 'The listed local supply and voltage output do not establish the wireless receiver interface. Confirm this exact pressure range and complete connection assembly; do not substitute a standpipe record solely because it looks similar.'],
         'wireless-electric-torque-sensor-for-mud-logging-unit' => ['torque', 'Wireless Electric Torque Sensor: Current & Receiver Selection', 'Wireless electric torque sensor', 'The source specifies current sensing and local voltage output. Confirm the transmitter/receiver pair and the motor-specific current-to-torque relationship; neither the wireless label nor the current range proves a calibrated torque measurement.'],
         'wireless-standpipe-pressure-sensor-for-mud-logging-unit' => ['pressure', 'Wireless Standpipe Pressure Sensor: Range & System Selection', 'Wireless standpipe pressure sensor', 'The listed local electrical values and pressure range apply to this source record only. Confirm the offered transmitter, pressure connection and receiver output before assessing compatibility with the logging system.'],
+        'mud-logging-sensor-named-hookload-sensor' => ['hook', 'Hookload Sensor: Pressure-to-Load & Interface Review', 'Hookload sensor', 'The source describes a pressure transmitter and contains an unrelated Pump Stroke paragraph. Pressure range alone does not establish hookload capacity or accuracy. Confirm the hydraulic conversion, rig arrangement and calibration basis.'],
+        'wireless-hook-load-sensor-for-mud-logging-unit' => ['hook', 'Wireless Hook Load Sensor: Scaling & Receiver Compatibility', 'Wireless hook load sensor', 'The source measures hydraulic pressure used for hookload indication. Its accuracy formatting and temperature entry are incomplete; do not infer missing units or an upper limit. Confirm the offered sensor and receiver configuration.'],
+        'wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit' => ['gas', 'Wireless H2S Sensor: Selection & Monitoring Interface', 'Wireless H2S sensor', 'The source concentration, response and temperature-condition entries require clarification. A sensor response figure is not a verified end-to-end wireless alarm time. The catalogue does not establish a complete personnel-protection or alarm-system approval.'],
+        'wireless-master-station' => ['wireless_master', 'Wireless Master Station: Node, Protocol & Interface Selection', 'Wireless master station', 'The source lists 2 × 25 nodes but later refers to 2k channels, and board supply descriptions differ. Capacity, board signalling and antenna-interface wording need a matched manual; do not combine these descriptions into one verified configuration.'],
+        'wireless-sensors-for-mud-logging-unit' => ['wireless_system', 'Wireless Mud Logging Sensors: System & WITS Compatibility', 'Wireless mud logging sensor system', 'Original endurance, communication-distance and installation-time statements are catalogue claims, not verified guarantees for your site. A WITS reference alone does not establish compatibility with every logging application.'],
+        'battery-and-charger-used-for-the-transmission-box-of-wireless-sensors' => ['power', 'Wireless Sensor Battery & Charger: Compatibility Selection', 'Wireless sensor battery and charger', 'Confirm the exact pack and designated charger. The source table and charging-process text describe different current values and conditions; they are not a universal charging procedure or proof that this pack fits every wireless node.'],
     ];
 }
 function cml_sensor_context(): array {
@@ -46,7 +52,7 @@ function cml_sensor_url(string $slug): string { return home_url('/product/' . $s
 function cml_sensor_link(string $slug, string $label): string { return '<a href="' . esc_url(cml_sensor_url($slug)) . '">' . esc_html($label) . '</a>'; }
 function cml_sensor_rfq(array $context, bool $documents = false): string {
     $request = $context['label'] . ($documents ? ' - request current datasheet, wiring and model-matched documentation' : ' - selection and interface compatibility review');
-    return '<a class="cml-button" href="' . esc_url(add_query_arg('product', $request, cml_page_url('contact', 'en'))) . '">' . ($documents ? 'Request technical documents' : 'Check this sensor for my system') . ' →</a>';
+    return '<a class="cml-button" href="' . esc_url(add_query_arg('product', $request, cml_page_url('contact', 'en'))) . '">' . ($documents ? 'Request technical documents' : (in_array($context['type'], ['wireless_master', 'wireless_system', 'power'], true) ? 'Check this configuration for my system' : 'Check this sensor for my system')) . ' →</a>';
 }
 foreach (['wpseo_title', 'pre_get_document_title'] as $hook) add_filter($hook, function ($title) { $c = cml_sensor_context(); return $c ? $c['title'] . ' | ChinaMudLogging.com' : $title; }, 95);
 add_filter('wpseo_metadesc', function ($description) {
@@ -55,11 +61,11 @@ add_filter('wpseo_metadesc', function ($description) {
 }, 95);
 add_action('wp_enqueue_scripts', function () {
     if (!cml_sensor_context()) return;
-    wp_register_style('cml-sensor-selection', false, [], '1.2.0'); wp_enqueue_style('cml-sensor-selection');
+    wp_register_style('cml-sensor-selection', false, [], '1.3.0'); wp_enqueue_style('cml-sensor-selection');
     wp_add_inline_style('cml-sensor-selection', '.cml-sensor-guide{margin-block:2rem;padding:clamp(1rem,3vw,2rem);background:#f4f8f8;border:1px solid #ccd6dc;border-radius:12px}.cml-sensor-guide h2{font-size:clamp(1.5rem,3vw,2.1rem)}.cml-sensor-guide nav{display:flex;gap:.7rem 1.2rem;flex-wrap:wrap}.cml-sensor-guide nav a{display:inline-flex;align-items:center;min-height:44px}.cml-sensor-table{overflow-x:auto;max-width:100%}.cml-sensor-table table{width:100%;min-width:520px;border-collapse:collapse}.cml-sensor-table td,.cml-sensor-table th{padding:.8rem;text-align:left;vertical-align:top;border:1px solid #ccd6dc}.cml-sensor-guide li{margin-block:.5rem}.cml-sensor-guide a{overflow-wrap:anywhere}.cml-sensor-source{scroll-margin-top:2rem}');
 }, 30);
 function cml_sensor_quick(array $c): string {
-    return '<section class="cml-sensor-guide" aria-labelledby="cml-sensor-heading"><p class="eyebrow">Selection &amp; system integration</p><h2 id="cml-sensor-heading">Before choosing this ' . esc_html(['temperature' => 'temperature sensor', 'flow' => 'flow-out sensor', 'pump' => 'pump stroke sensor', 'density' => 'mud density sensor', 'conductivity' => 'mud conductivity sensor', 'level_ultrasonic' => 'ultrasonic level sensor', 'level_radar' => 'radar level transmitter', 'pressure' => 'pressure sensor', 'torque' => 'electric torque sensor', 'depth' => 'depth encoder'][$c['type']]) . '</h2><p>' . esc_html($c['sourceNote']) . '</p><nav aria-label="Sensor selection shortcuts"><a href="#cml-sensor-compatibility">Check compatibility</a><a href="#cml-sensor-documents">Technical documentation</a><a href="#cml-sensor-source">Review the source record</a></nav><div class="cml-actions">' . cml_sensor_rfq($c) . '</div></section>';
+    return '<section class="cml-sensor-guide" aria-labelledby="cml-sensor-heading"><p class="eyebrow">Selection &amp; system integration</p><h2 id="cml-sensor-heading">Before choosing this ' . esc_html(['temperature' => 'temperature sensor', 'flow' => 'flow-out sensor', 'pump' => 'pump stroke sensor', 'density' => 'mud density sensor', 'conductivity' => 'mud conductivity sensor', 'level_ultrasonic' => 'ultrasonic level sensor', 'level_radar' => 'radar level transmitter', 'pressure' => 'pressure sensor', 'torque' => 'electric torque sensor', 'depth' => 'depth encoder', 'hook' => 'hookload sensor', 'gas' => 'H2S sensor', 'wireless_master' => 'wireless master station', 'wireless_system' => 'wireless sensor system', 'power' => 'battery and charger'][$c['type']]) . '</h2><p>' . esc_html($c['sourceNote']) . '</p><nav aria-label="Sensor selection shortcuts"><a href="#cml-sensor-compatibility">Check compatibility</a><a href="#cml-sensor-documents">Technical documentation</a><a href="#cml-sensor-source">Review the source record</a></nav><div class="cml-actions">' . cml_sensor_rfq($c) . '</div></section>';
 }
 function cml_sensor_content(array $c): string {
     $rows = [
@@ -123,6 +129,36 @@ function cml_sensor_content(array $c): string {
             ['Scaling to displacement', 'Confirm pulses per revolution, decoding/count mode, mechanical transmission, drum geometry/rope arrangement and reference checks. None of these conversion factors is established by the product name alone.'],
             ['Depth calculation and acceptance', 'Separate shaft rotation, hook movement and calculated drilling depth. Agree reference/reset, rig state and software settings, then verify direction and displacement against known references. A pulse count alone does not establish absolute well depth.'],
         ],
+        'hook' => [
+            ['Measured signal and load requirement', 'Specify hydraulic pressure indication or required hookload units/span. Identify the dead-line anchor/converter, rope arrangement, reference and acquisition scaling; pressure range alone does not establish a load capacity.'],
+            ['Hydraulic and mechanical fit', 'Request port, seal, coupling, adapter and wetted-material drawings. Confirm complete assembly ratings and converter compatibility independently of the sensor name.'],
+            ['Electrical and receiving input', 'Confirm sensor supply, output, wire count, pinout, load and acquisition input. A local voltage output does not establish the wireless receiver output.'],
+            ['Conversion and acceptance', 'Request the pressure-to-hookload relationship and rig-specific calibration procedure. Agree zero/reference conditions and comparison evidence; pressure-sensor accuracy is not complete hookload-system accuracy.'],
+        ],
+        'gas' => [
+            ['Detection requirement', 'Specify the intended monitoring function, concentration units/span and conditions. Confirm sensing method, cross-sensitivities, environmental limits and incomplete source entries for the exact model.'],
+            ['Sensor, transmitter and receiver', 'Confirm detector/transmitter model, local power/output, receiver interface, units/scaling, update timing, timestamp/data-age indication and behaviour on sensor or communication failure.'],
+            ['Alarm and system boundary', 'For required alarm/protective functions, obtain the documented complete system design, approved configuration, outputs and verification criteria for competent site review. Do not infer alarm capability, safety integrity or end-to-end latency from a sensor table.'],
+            ['Calibration and lifecycle', 'Request manufacturer calibration and functional-check instructions, compatible reference gas/accessories, cross-sensitivity information, replacement and maintenance records. Catalogue life expectancy is not a guaranteed service or calibration interval.'],
+        ],
+        'wireless_master' => [
+            ['Paired nodes and firmware', 'Identify supported node models, addressing, firmware and radio protocol. Resolve the source node/channel capacity conflict with a configuration-matched manual.'],
+            ['Radio and antenna configuration', 'Confirm offered channel settings, antenna connector/cable arrangement and destination-specific radio documentation. A shared nominal frequency does not establish protocol interoperability or local authorization.'],
+            ['Host electrical and data interface', 'Confirm board-level signalling versus the external serial interface, voltage levels, pinout, isolation, baud/framing and message definitions. Board RX/TX labels do not automatically specify the complete host interface.'],
+            ['Data quality and acceptance', 'Agree node inventory, update rate, latency/data age, packet loss, reconnect, stale-data indication and power-recovery behaviour. Validate representative nodes with the intended logging software.'],
+        ],
+        'wireless_system' => [
+            ['Measurement and node inventory', 'List measurements, node models, locations, units, ranges and update timing. Distinguish sensor specifications from complete end-to-end system performance.'],
+            ['Receiver and host integration', 'Identify master station, firmware and host interface. Specify WITS variant, records/channel mapping, units, scaling, timestamps, data-quality flags and software configuration.'],
+            ['Site communication and power', 'Provide site layout, obstructions, interference, antenna arrangements and duty cycle. Request site-specific coverage, latency and battery validation; catalogue distance or runtime is not a site guarantee.'],
+            ['Commissioning and acceptance', 'Agree configuration documents, loss-of-link and low-power behaviour, reference checks and acceptance evidence. A nominal frequency or WITS label alone does not prove a system match.'],
+        ],
+        'power' => [
+            ['Exact pack and node', 'Identify pack model, chemistry, ratings, dimensions, connector/polarity and supported transmitter versions. Matching nominal voltage alone does not establish interchangeability.'],
+            ['Designated charger', 'Request manufacturer-approved charger/pack pairing, input requirements, charge profile and protection information. Do not derive a universal charging procedure from mixed catalogue values.'],
+            ['Use and environment', 'Confirm charging, discharging and storage limits separately, together with approved installation/service location. Protection circuitry or a generic EX statement is not proof of an approved complete assembly.'],
+            ['Documentation and acceptance', 'Request matched datasheets, connector drawing, handling/service instructions and chemistry-specific transport documents where applicable. This checklist is not a DIY charging or modification instruction.'],
+        ],
     ][$c['type']];
     if (str_starts_with($c['slug'], 'wireless-')) $rows[] = ['Wireless system boundary', 'Confirm paired transmitter and receiver, receiver output, power requirements, radio/region compatibility and acquisition wiring. A local sensor voltage is not automatically the receiver output.'];
     $documents = [
@@ -136,6 +172,11 @@ function cml_sensor_content(array $c): string {
         'pressure' => ['Order-specific datasheet resolving range/reference, output and operating limits.', 'Pressure port, sealing and adapter drawings with component/assembly ratings and wetted materials.', 'Wiring/loop diagram, installation instructions and pressure calibration/inspection evidence.'],
         'torque' => ['Exact current-transducer model and datasheet resolving supply, output, bandwidth and isolation requirements.', 'Wiring, conductor/aperture and installation drawings for the offered configuration.', 'Motor/drive current-to-torque conversion, system scaling and reference/calibration acceptance basis.'],
         'depth' => ['Model-specific datasheet clarifying ambiguous unit entries, pulses per revolution and output circuit.', 'Mounting/coupling dimensions and matched A/B wiring/connector diagram.', 'Acquisition decoding, direction, reference/reset and displacement/depth scaling documentation.'],
+        'hook' => ['Pressure-transmitter and hydraulic-converter datasheets with complete assembly drawings.', 'Wiring, receiver interface and acquisition scaling.', 'Rig-specific pressure-to-hookload conversion, calibration and acceptance evidence.'],
+        'gas' => ['Exact detector/transmitter manual with range, response test conditions and cross-sensitivities.', 'Matched wiring/radio/receiver protocol documents, data-age and fault-state definitions.', 'Calibration/functional-check instructions, accessories, lifecycle records and any required complete alarm-system verification.'],
+        'wireless_master' => ['Matched manual resolving capacity, supply and antenna-interface entries.', 'Supported node/firmware/protocol matrix and destination-specific radio/antenna documents.', 'Host wiring, electrical signalling, message mapping and loss-of-link acceptance procedure.'],
+        'wireless_system' => ['Itemized node/master/host software configuration and supported-version matrix.', 'System drawing, WITS record mapping, wiring and commissioning instructions.', 'Site coverage, data-age, battery duty-cycle and fault/recovery verification requirements.'],
+        'power' => ['Matched battery and designated charger datasheets with chemistry, protection and applicable limits.', 'Pack dimensions, connector/polarity and supported-node list.', 'Manufacturer charging, handling, service and applicable transport documents for the exact pack.'],
     ][$c['type']];
     $related = [
         'temperature' => ['mud-temperature-sensor' => 'Mud temperature catalogue record', 'drilling-fluid-temperature-sensor' => 'Drilling fluid temperature probe record'],
@@ -148,6 +189,11 @@ function cml_sensor_content(array $c): string {
         'pressure' => ['cnps-mhp-pressure-sensor-15000psi' => 'CNPS-MHP pressure sensor', 'mud-logging-sensor-named-casing-pressure-sensor' => 'Casing pressure sensor', 'mud-logging-sensor-named-standpipe-pressure-sensor' => 'Standpipe pressure sensor', 'wireless-casing-pressure-sensor-for-mud-logging-unit' => 'Wireless casing pressure sensor', 'wireless-standpipe-pressure-sensor-for-mud-logging-unit' => 'Wireless standpipe pressure sensor'],
         'torque' => ['cnps-dnj-electric-torque-sensor' => 'CNPS-DNJ electric torque sensor', 'electric-torque-sensor' => 'Electric torque sensor', 'mud-logging-sensor-of-electric-torque-sensor' => 'Mud logging electric torque sensor', 'wireless-electric-torque-sensor-for-mud-logging-unit' => 'Wireless electric torque sensor'],
         'depth' => ['cnps-dw-a11-depth-encoder' => 'CNPS-DW-A11 depth encoder', 'pump-stroke-sensor-for-mud-logging' => 'Pump stroke counting application (a different measurement)'],
+        'hook' => ['mud-logging-sensor-named-hookload-sensor' => 'Hookload sensor', 'wireless-hook-load-sensor-for-mud-logging-unit' => 'Wireless hook load sensor', 'wireless-master-station' => 'Wireless master station', 'wireless-sensors-for-mud-logging-unit' => 'Wireless mud logging sensor system', 'battery-and-charger-used-for-the-transmission-box-of-wireless-sensors' => 'Wireless sensor battery and charger'],
+        'gas' => ['wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit' => 'Wireless H2S sensor', 'wireless-master-station' => 'Wireless master station', 'wireless-sensors-for-mud-logging-unit' => 'Wireless mud logging sensor system', 'battery-and-charger-used-for-the-transmission-box-of-wireless-sensors' => 'Wireless sensor battery and charger'],
+        'wireless_master' => ['wireless-master-station' => 'Wireless master station', 'wireless-sensors-for-mud-logging-unit' => 'Wireless mud logging sensor system', 'battery-and-charger-used-for-the-transmission-box-of-wireless-sensors' => 'Wireless sensor battery and charger', 'mud-logging-sensor-named-hookload-sensor' => 'Hookload sensor', 'wireless-hook-load-sensor-for-mud-logging-unit' => 'Wireless hook load sensor', 'wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit' => 'Wireless H2S sensor'],
+        'wireless_system' => ['wireless-master-station' => 'Wireless master station', 'wireless-sensors-for-mud-logging-unit' => 'Wireless mud logging sensor system', 'battery-and-charger-used-for-the-transmission-box-of-wireless-sensors' => 'Wireless sensor battery and charger', 'mud-logging-sensor-named-hookload-sensor' => 'Hookload sensor', 'wireless-hook-load-sensor-for-mud-logging-unit' => 'Wireless hook load sensor', 'wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit' => 'Wireless H2S sensor'],
+        'power' => ['wireless-master-station' => 'Wireless master station', 'wireless-sensors-for-mud-logging-unit' => 'Wireless mud logging sensor system', 'battery-and-charger-used-for-the-transmission-box-of-wireless-sensors' => 'Wireless sensor battery and charger', 'mud-logging-sensor-named-hookload-sensor' => 'Hookload sensor', 'wireless-hook-load-sensor-for-mud-logging-unit' => 'Wireless hook load sensor', 'wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit' => 'Wireless H2S sensor'],
     ][$c['type']];
     ob_start(); ?>
     <section class="cml-sensor-guide" id="cml-sensor-compatibility" aria-labelledby="cml-sensor-check-heading">
@@ -171,6 +217,15 @@ function cml_sensor_content(array $c): string {
       <h3>Does an electric torque sensor directly measure mechanical torque?</h3><p>These catalogue records describe electrical current sensing used in a torque-monitoring system. Current-to-torque indication requires a motor/drive-specific relationship and verification. Do not present a current measurement specification as independently established shaft-torque accuracy.</p>
       <?php elseif ($c['type'] === 'depth'): ?>
       <h3>Does a depth encoder directly establish drilling depth?</h3><p>The source describes shaft rotation and two pulse channels. The logging system must interpret direction and scale movement using the actual rig arrangement and reference state. Request the resolution, counter settings and depth-calculation procedure; do not assume an absolute depth or precision from pulse output alone.</p>
+      <?php elseif ($c['type'] === 'hook'): ?>
+      <h3>Is pressure range the same as hookload capacity?</h3><p>No. The hydraulic converter, rig arrangement and acquisition conversion determine hookload indication. Request the complete pressure-to-load calibration basis before comparing offers in load units.</p>
+      <?php elseif ($c['type'] === 'gas'): ?>
+      <h3>Is a wireless H2S sensor a complete gas alarm system?</h3><p>A concentration-sensing node does not by itself establish the alarm, communication-failure response or personnel-protection arrangement. Request model-matched documentation and system verification; do not use catalogue response or life figures as complete-system guarantees.</p>
+      <p>General background: <a href="https://www.osha.gov/hydrogen-sulfide/evaluating-controlling-exposure">OSHA — Hydrogen Sulfide: Evaluating and Controlling Exposure</a>. This is not a product manual, model approval or confirmation of compliance for the offered equipment or your site.</p>
+      <?php elseif ($c['type'] === 'wireless_master' || $c['type'] === 'wireless_system'): ?>
+      <h3>Does the same radio frequency or a WITS label prove compatibility?</h3><p>No. Confirm paired devices, firmware, radio protocol, electrical interface and host data mapping. Verify data age, link-loss and recovery with the intended software. Regional documentation must match the offered configuration and destination.</p>
+      <?php elseif ($c['type'] === 'power'): ?>
+      <h3>Can a battery or charger be replaced by matching voltage alone?</h3><p>No. Confirm pack chemistry, protection, connector/polarity, node fit and designated charger pairing. Obtain manufacturer instructions rather than combining catalogue charging statements into a new procedure.</p>
       <?php else: ?>
       <h3>Which temperature sensor details are still needed?</h3><p>The reviewed temperature records do not establish a complete model-specific electrical and mechanical configuration. Provide the existing nameplate or required measurement point, then confirm the sensing element/transmitter, range, output, probe geometry and acquisition input together.</p>
       <?php endif; ?>
@@ -182,9 +237,9 @@ function cml_sensor_content(array $c): string {
       <?php endif; ?>
       <ul><?php foreach ($documents as $document) echo '<li>' . esc_html($document) . '</li>'; ?><li>Calibration/inspection records and acceptance criteria required for your order.</li><li>If a hazardous-area installation is required, the exact model and configuration, applicable approval documents and any barrier/interface requirements for technical review. Generic catalogue statements are not proof of approval.</li></ul>
       <div class="cml-actions"><?php echo cml_sensor_rfq($c, true); ?></div>
-      <h3>Prepare a sensor RFQ</h3><p>Include the existing model/nameplate, required measurement and units, supply and receiving interface, connector details, mounting dimensions, quantity, destination and target date. Mark unknown details so they can be reviewed. Our team will confirm the proposed configuration, documentation and commercial terms in the quotation.</p>
+      <h3><?php echo in_array($c['type'], ['wireless_master', 'wireless_system', 'power'], true) ? 'Prepare an equipment RFQ' : 'Prepare a sensor RFQ'; ?></h3><p>Include the existing model/nameplate, required measurement and units, supply and receiving interface, connector details, mounting dimensions, quantity, destination and target date. Mark unknown details so they can be reviewed. Our team will confirm the proposed configuration, documentation and commercial terms in the quotation.</p>
       <div class="cml-actions"><?php echo cml_sensor_rfq($c); ?></div>
-      <h3>Related catalogue records and system scope</h3><ul><?php foreach ($related as $slug => $label) if ($slug !== $c['slug']) echo '<li>' . cml_sensor_link($slug, $label) . ' — compare documentation; not a confirmed equivalent.</li>'; ?></ul>
+      <h3>Related catalogue records and system scope</h3><ul><?php foreach ($related as $slug => $label) if ($slug !== $c['slug']) echo '<li>' . cml_sensor_link($slug, $label) . (in_array($c['type'], ['hook', 'gas', 'wireless_master', 'wireless_system', 'power'], true) ? ' — confirm its role and compatibility in the complete configuration.</li>' : ' — compare documentation; not a confirmed equivalent.</li>'); ?></ul>
       <p>Review the <?php echo '<a href="' . esc_url(home_url('/product-category/mud-logging-sensors/')) . '">mud logging sensor catalogue</a>'; ?>, <?php echo '<a href="' . esc_url(home_url('/product-category/mud-logging-units/')) . '">complete logging unit and upgrade scope</a>'; ?> or <?php echo '<a href="' . esc_url(cml_page_url('products', 'en')) . '">equipment procurement guide</a>'; ?> to check the wider system boundary.</p>
     </section>
     <?php return (string)ob_get_clean();
