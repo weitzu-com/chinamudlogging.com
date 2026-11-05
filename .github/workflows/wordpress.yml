@@ -26,8 +26,7 @@ jobs:
       - name: PHP and JavaScript syntax
         run: |
           find wordpress -name '*.php' -print0 | xargs -0 -n1 php -l
-          node --check wordpress/plugin/cml-core/inquiry.js
-          node --check wordpress/plugin/cml-core/editor.js
+          find wordpress/plugin -name '*.js' -print0 | xargs -0 -n1 node --check
       - name: Validate content and draft translation integrity
         run: |
           python3 wordpress/scripts/prepare.py

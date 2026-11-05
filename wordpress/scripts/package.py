@@ -3,7 +3,8 @@ import hashlib,json,zipfile
 from pathlib import Path
 root=Path(__file__).resolve().parents[2]
 cache=Path.home()/'.cache/chinamudlogging-wordpress';out=cache/'release';out.mkdir(exist_ok=True)
-for name,source in [('cml',root/'wordpress/theme/cml'),('cml-core',root/'wordpress/plugin/cml-core')]:
+components=[('cml',root/'wordpress/theme/cml')]+[(p.name,p) for p in sorted((root/'wordpress/plugin').iterdir()) if p.is_dir()]
+for name,source in components:
     with zipfile.ZipFile(out/(name+'.zip'),'w',zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(source.rglob('*')):
             if path.is_file():archive.write(path,Path(name)/path.relative_to(source))
