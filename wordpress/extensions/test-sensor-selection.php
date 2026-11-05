@@ -18,12 +18,18 @@ foreach (cml_sensor_records() as $slug => $record) {
     $assert(substr_count($hero, '<h1>') === 1 && str_contains($hero, 'cml-sensor-heading'), 'Preserve one product H1 ' . $slug);
     $html = apply_filters('render_block_core/post-content', '<p>SOURCE-SENTINEL-UNCHANGED</p>');
     $assert(str_contains($html, '<p>SOURCE-SENTINEL-UNCHANGED</p>'), 'Source preserved ' . $slug);
-    $assert(str_contains($html, 'cml-sensor-documents') && str_contains($html, 'not a set of available downloads'), 'Document status is explicit ' . $slug);
-    $assert(!preg_match('/href="[^"]*\.pdf(?:\?|"|$)/i', $html), 'No invented PDF ' . $slug);
+    $official = $slug === 'sitrans-probe-lu240-ultrasonic-pit-level-transmitter';
+    $assert(str_contains($html, 'cml-sensor-documents') && str_contains($html, $official ? 'data-cml-doc-status="official-family"' : 'not a set of available downloads'), 'Document status is explicit ' . $slug);
+    $pdfs = []; preg_match_all('/href="([^"]*\.pdf)"/i', $html, $pdfs);
+    $assert($official ? $pdfs[1] === ['https://cache.industry.siemens.com/dl/files/517/109973517/att_1294115/v45/A5E42673511en_LU240_HA_mA_OI_en-US.pdf'] : count($pdfs[1]) === 0, 'Exact official PDF whitelist ' . $slug);
     $assert(!str_contains($html, '<form') && !str_contains($html, '<script'), 'No extra sending or analytics ' . $slug);
     $assert(!str_contains($html, '5~30VDC') && !str_contains($html, '24VDC'), 'No source parameter transplant ' . $slug);
     $assert(str_contains($html, 'product=' . rawurlencode($record[2])), 'Correct RFQ context ' . $slug);
     if ($record[0] === 'flow') $assert(str_contains($html, 'absolute') && str_contains($html, 'mud flow meter'), 'Flow query intent and measurement boundary');
+    if ($record[0] === 'density') $assert(str_contains($html, 'shale sample density'), 'Density measurand boundary');
+    if ($record[0] === 'conductivity') $assert(str_contains($html, 'compensation') && str_contains($html, 'resistivity'), 'Conductivity configuration boundary');
+    if (str_starts_with($record[0], 'level_')) $assert(str_contains($html, 'tank geometry') && str_contains($html, 'order code'), 'Level and volume boundary');
+    if (str_starts_with($slug, 'wireless-')) $assert(str_contains($html, 'Wireless system boundary'), 'Wireless receiver boundary');
 }
 foreach (['unrelated-sensor', 'mud-temperature-sensor-ar'] as $slug) {
     $id = wp_insert_post(['post_type' => 'cml_product', 'post_status' => 'publish', 'post_title' => 'Unrelated', 'post_name' => $slug]);
@@ -31,6 +37,6 @@ foreach (['unrelated-sensor', 'mud-temperature-sensor-ar'] as $slug) {
     $assert(cml_sensor_context() === [], 'Unrelated/localized record unchanged');
     $assert(apply_filters('render_block_core/post-content', 'untouched') === 'untouched', 'Non-target body unchanged');
 }
-$report = ['isolatedWordPress' => true, 'assertions' => $passed, 'products' => 6, 'passed' => true];
+$report = ['isolatedWordPress' => true, 'assertions' => $passed, 'products' => count(cml_sensor_records()), 'passed' => true];
 file_put_contents('/cml-test-results/sensor-integration.json', wp_json_encode($report, JSON_PRETTY_PRINT));
 echo wp_json_encode($report);
