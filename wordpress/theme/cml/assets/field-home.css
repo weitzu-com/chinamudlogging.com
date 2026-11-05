@@ -1,0 +1,63 @@
+/* A / Field Industrial. Scoped to pages containing the Core homepage block. */
+body.cml-field-home{--field-bg:#0b0405;--field-panel:#150e0f;--field-line:#382e30;--field-muted:#c4bfc0;--field-action:#e32735;background:var(--field-bg);color:#fff}
+.cml-field-home .wp-site-blocks{padding:0;background:var(--field-bg)}
+.cml-field-home a{color:inherit}
+.cml-field-home a:hover{color:#fff;text-decoration:underline}
+.cml-field-home .wp-site-blocks>header{background:var(--field-bg);border-color:var(--field-line);color:#fff}
+.cml-field-home .cml-header{max-width:1440px;padding:1.35rem 3rem;gap:1.5rem}
+.cml-field-home .cml-brand{font-size:1.18rem;letter-spacing:-.035em;color:#fff}
+.cml-field-home .cml-brand span{color:inherit}
+.cml-field-home .cml-brand small{color:var(--field-muted);font-size:.6rem;letter-spacing:.04em}
+.cml-field-home .cml-nav{gap:1.25rem;font-weight:500}
+.cml-field-home .cml-nav-cta{background:var(--field-action);border-radius:4px;padding:.7rem 1.15rem;color:#fff}
+.cml-field-home .cml-nav-cta:hover{background:#c41b28}
+.cml-field-home .cml-languages{max-width:1440px;padding:0 3rem .25rem;gap:1.25rem;font-size:.75rem;color:var(--field-muted)}
+.cml-field-home .cml-languages [aria-current=true]{color:#fff;text-decoration:underline;text-underline-offset:.45em}
+.cml-field-home .wp-block-group#main{padding:0;min-height:0;margin:0}
+.cml-field-home .wp-block-post-content{padding:0;margin:0;max-width:none}
+.field-landing{margin:0!important;max-width:none!important}
+.field-wrap{width:min(100% - 6rem,1344px);margin-inline:auto}
+.field-hero{position:relative;isolation:isolate;min-height:660px;display:flex;align-items:center;overflow:hidden}
+.field-hero-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 56%}
+.field-hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,4,5,.79),rgba(11,4,5,.45) 48%,rgba(11,4,5,.03) 85%),linear-gradient(0deg,#0b0405,transparent 30%)}
+.field-hero-content{padding-block:4.25rem 5.75rem}
+.field-kicker{font-size:.7rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--field-muted);margin:0 0 1.4rem}
+.field-hero h1{font-size:clamp(3.15rem,5.6vw,5.3rem);line-height:1.025;letter-spacing:-.045em;font-weight:750;max-width:13ch;margin:0 0 1.6rem;text-wrap:balance;color:#fff}
+.field-intro{font-size:clamp(1rem,1.4vw,1.15rem);line-height:1.65;max-width:49ch;color:#e4e0e1;margin:0}
+.cml-field-home .cml-button{display:inline-flex;align-items:center;justify-content:center;gap:1.5rem;border:1px solid var(--field-action);background:var(--field-action);border-radius:4px;padding:.85rem 1.4rem;min-height:48px;font-weight:600;color:#fff;line-height:1.5}
+.cml-field-home .cml-button:hover{background:#c41b28;text-decoration:none}
+.cml-field-home .cml-button.secondary{background:rgba(11,4,5,.28);border-color:#8c8385;color:#fff}
+.cml-field-home .cml-button.secondary:hover{background:#382e30}
+.field-section-label{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.5rem;font-size:.8rem;color:var(--field-muted)}
+.field-section-label h2{font-size:.75rem;line-height:1.5;font-weight:500;text-transform:uppercase;letter-spacing:.1em;margin:0;color:#fff}
+.field-section-label a{min-height:44px;display:inline-flex;align-items:center;gap:1rem;text-decoration:none}
+.field-family-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.field-family{position:relative;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--field-line);padding:1.1rem;min-width:0;background:var(--field-panel)}
+.field-family:hover{background:#21181a;border-color:#76696c;text-decoration:none!important}
+.field-index{font-size:.65rem;font-family:monospace;color:var(--field-muted)}
+.field-family img{width:100%;aspect-ratio:4/3;object-fit:contain;margin-block:.65rem 1.2rem;background:#f7f7f7}
+.field-family h3{font-size:1.08rem;letter-spacing:-.025em;line-height:1.25;margin:0 1rem 0 0;max-width:17ch;min-height:2.5em;color:#fff}
+.field-arrow{position:absolute;inset-inline-end:1rem;bottom:1rem;font-size:1.4rem;color:#fff}
+.field-equipment{padding-block:2.25rem 3.5rem}
+.field-equipment .cml-grid{gap:0;border-block:1px solid var(--field-line)}
+.field-equipment .cml-card{display:flex;flex-direction:column;background:transparent;border:0;border-inline-end:1px solid var(--field-line);padding:1.7rem 2rem 1.9rem;color:#fff}
+.field-equipment .cml-card:first-child{padding-inline-start:2rem}
+.field-equipment .cml-card:last-child{border-inline-end:0;padding-inline-end:2rem}
+.field-equipment .cml-card img{aspect-ratio:4/3;object-fit:contain;background:#f7f7f7;padding:1rem}
+.field-equipment .cml-card h3{font-size:1.35rem;line-height:1.25;margin:1.3rem 0 .7rem}
+.field-equipment .cml-card p{font-size:.85rem;color:var(--field-muted);line-height:1.7;margin:0 0 1.25rem}
+.field-equipment .cml-card>a:last-child{margin-top:auto;display:inline-flex;align-items:center;min-height:44px;font-size:.8rem;color:#fff;text-decoration:underline}
+.field-rfq{display:flex;align-items:center;justify-content:space-between;gap:3rem;border-top:1px solid var(--field-line);padding-block:3rem 4rem}
+.field-rfq .field-kicker{margin-bottom:1rem}
+.field-rfq h2{font-size:clamp(2rem,3.6vw,3.5rem);line-height:1.1;max-width:23ch;letter-spacing:-.04em;margin:0 0 1rem;color:#fff}
+.field-rfq p:not(.field-kicker){color:var(--field-muted);max-width:65ch;font-size:.9rem;margin:0}
+.field-rfq>.cml-button{flex-shrink:0}
+.cml-field-home .cml-footer{background:var(--field-bg);border-color:var(--field-line);color:var(--field-muted);padding-block:2rem;font-size:.8rem}
+.cml-field-home .cml-footer strong{color:#fff;font-size:1.05rem}
+.cml-field-home .skip-link{color:#0b0405}
+.cml-field-home a:focus-visible,.cml-field-home summary:focus-visible{outline:3px solid #fff;outline-offset:5px}
+.cml-field-home[dir=rtl] .field-hero-shade{background:linear-gradient(270deg,rgba(11,4,5,.85),rgba(11,4,5,.55) 60%,rgba(11,4,5,.15)),linear-gradient(0deg,#0b0405,transparent 35%)}
+.cml-field-home[dir=rtl] .field-hero h1{letter-spacing:0;max-width:16ch;line-height:1.3}
+@media(min-width:1600px){.field-hero{min-height:740px}}
+@media(max-width:1100px){.cml-field-home .cml-mobile .cml-nav{background:var(--field-bg);border-color:var(--field-line);max-width:calc(100vw - 2rem)}.field-hero{min-height:620px}.field-hero h1{font-size:clamp(3.5rem,6.6vw,4.6rem)}.field-family-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.field-family h3{font-size:1.05rem}.field-rfq{gap:2rem}}
+@media(max-width:700px){.field-wrap{width:calc(100% - 2rem)}.cml-field-home .cml-header{padding:1rem;gap:1rem}.cml-field-home .cml-brand{font-size:1.02rem}.cml-field-home .cml-languages{padding:0 1rem .35rem;gap:.9rem;justify-content:flex-start}.field-hero{min-height:650px}.field-hero-image{object-position:85% center}.field-hero-shade{background:linear-gradient(90deg,rgba(11,4,5,.8),rgba(11,4,5,.42)),linear-gradient(0deg,#0b0405,transparent 50%)}.field-hero-content{padding-block:3rem 4.5rem}.field-hero h1{font-size:clamp(2.75rem,11.5vw,4rem);max-width:13ch}.field-intro{font-size:1rem;max-width:34ch}.cml-field-home .cml-actions{gap:.75rem}.cml-field-home .cml-button{font-size:.85rem;padding:.8rem 1.1rem;gap:.75rem}.field-section-label{padding-block:1rem;align-items:flex-start;gap:1rem}.field-section-label>span{max-width:18ch;text-align:end;font-size:.7rem}.field-family-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.field-family{padding:.9rem}.field-family h3{font-size:1rem}.field-family:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-items:center;column-gap:1rem}.field-family:last-child:nth-child(odd) .field-index{grid-column:1/-1}.field-family:last-child:nth-child(odd) img{margin:.65rem 0 0}.field-family:last-child:nth-child(odd) h3{min-height:0}.field-equipment{padding-block:1.5rem 2rem}.field-equipment .cml-grid{grid-template-columns:1fr}.field-equipment .cml-card,.field-equipment .cml-card:first-child,.field-equipment .cml-card:last-child{padding:1.5rem 0;border-inline-end:0;border-bottom:1px solid var(--field-line)}.field-equipment .cml-card:last-child{border-bottom:0}.field-equipment .cml-card img{max-height:290px}.field-rfq{align-items:flex-start;flex-direction:column;gap:1.5rem;padding-block:2.5rem 3rem}.cml-field-home .cml-footer{padding-inline:1rem}.cml-field-home .cml-mobile summary{font-size:.85rem}}
