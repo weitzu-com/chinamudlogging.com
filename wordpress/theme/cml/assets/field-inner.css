@@ -1,0 +1,97 @@
+/* A / Field Industrial — catalogue, product and inquiry presentation only. */
+body.cml-field-inner{--field-bg:#0b0405;--field-panel:#150e0f;--field-line:#382e30;--field-muted:#c4bfc0;--field-action:#e32735;--navy:#fff;--ink:#e9e5e6;--muted:var(--field-muted);--orange:var(--field-action);--line:var(--field-line);--paper:var(--field-panel);background:var(--field-bg);color:#fff;color-scheme:dark}
+.cml-field-inner .wp-site-blocks{background:var(--field-bg);padding:0}
+.cml-field-inner a{color:inherit}
+.cml-field-inner a:hover{color:#fff}
+.cml-field-inner :is(h1,h2,h3,h4,strong,dt,th){color:#fff}
+.cml-field-inner :is(h1,h2,h3){overflow-wrap:anywhere}
+.cml-field-inner :is(p,li,dd){color:var(--field-muted)}
+.cml-field-inner .wp-site-blocks>header{background:var(--field-bg);border-color:var(--field-line);color:#fff}
+.cml-field-inner .cml-header{max-width:1440px;padding:1.35rem 3rem;gap:1.5rem}
+.cml-field-inner .cml-brand{font-size:1.18rem;letter-spacing:-.035em;color:#fff}
+.cml-field-inner .cml-brand span{color:inherit}
+.cml-field-inner .cml-brand small{color:var(--field-muted);font-size:.6rem;letter-spacing:.04em}
+.cml-field-inner .cml-nav{gap:1.25rem;font-weight:500}
+.cml-field-inner .cml-nav-cta{background:var(--field-action);border-radius:4px;padding:.7rem 1.15rem;color:#fff}
+.cml-field-inner .cml-nav-cta:hover{background:#c41b28}
+.cml-field-inner .cml-languages{max-width:1440px;padding:0 3rem .25rem;gap:1.25rem;font-size:.75rem;color:var(--field-muted)}
+.cml-field-inner .cml-languages [aria-current=true]{color:#fff;text-decoration:underline;text-underline-offset:.45em}
+.cml-field-inner .wp-block-group#main{width:min(100% - 6rem,1344px);max-width:none;margin:0 auto;padding:3.25rem 0 5rem}
+.cml-field-inner #main>:is(.wp-block-post-content,.wp-block-post-title,.wp-block-query-title,.cml-filter,.cml-grid,.cml-pagination){width:100%;max-width:none;margin-inline:0}
+.cml-field-inner #main>:is(.wp-block-post-title,.wp-block-query-title){padding:0;margin-inline:0!important;margin-block:0 2.5rem;font-size:clamp(2.25rem,4.2vw,4rem);letter-spacing:-.04em;max-width:28ch}
+.cml-field-inner .eyebrow{color:var(--field-muted);font-weight:500;font-size:.7rem;letter-spacing:.12em}
+.cml-field-inner .cml-button{display:inline-flex;align-items:center;justify-content:center;gap:1rem;min-height:48px;padding:.85rem 1.4rem;border:1px solid var(--field-action);border-radius:4px;background:var(--field-action);color:#fff;line-height:1.5;font-weight:600;text-align:center}
+.cml-field-inner .cml-button:hover{background:#c41b28;color:#fff;text-decoration:none}
+.cml-field-inner .cml-button.secondary{background:transparent;border-color:#8c8385;color:#fff}
+.cml-field-inner .cml-button.secondary:hover{background:var(--field-line)}
+.cml-field-inner :is(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:3px solid #fff;outline-offset:4px}
+.cml-field-inner :is(input:not([type=checkbox]):not([type=hidden]),select,textarea){background:#1d1517;color:#fff;border:1px solid #76696c;border-radius:4px;min-height:48px;box-shadow:none}
+.cml-field-inner input::placeholder,.cml-field-inner textarea::placeholder{color:#bcb3b6;opacity:1}
+.cml-field-inner select option{background:#1d1517;color:#fff}
+.cml-field-inner input[type=checkbox]{accent-color:#fff;min-height:20px;min-width:20px}
+.cml-field-inner .cml-filter{gap:1.25rem;margin-block:2rem;padding:1.5rem;border:1px solid var(--field-line);background:var(--field-panel)}
+.cml-field-inner .cml-filter label{font-size:.8rem;line-height:1.5;color:var(--field-muted)}
+.cml-field-inner .cml-filter label:first-child{flex:1.4}
+.cml-field-inner .cml-filter :is(input,select){margin-top:.65rem;font-size:1rem}
+.cml-field-inner .cml-filter .cml-button{flex-shrink:0}
+.cml-field-catalogue .wp-block-post-content>:is(.cml-grid,.cml-filter,.cml-buyer,.cml-pagination,#cml-equipment-list){max-width:none}
+.cml-field-inner .cml-grid{gap:1.25rem}
+.cml-field-inner .cml-card{display:flex;flex-direction:column;padding:1.4rem;border:1px solid var(--field-line);border-radius:0;background:var(--field-panel);box-shadow:none}
+.cml-field-inner .cml-card:hover{border-color:#76696c}
+.cml-field-inner .cml-card img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#f7f7f7;padding:1rem}
+.cml-field-inner .cml-card h3{font-size:1.25rem;line-height:1.3;margin:1.25rem 0 .65rem}
+.cml-field-inner .cml-card p{font-size:.87rem;line-height:1.7;margin:0 0 1rem}
+.cml-field-inner .cml-card>a:last-child{margin-top:auto;display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;font-size:.8rem}
+.cml-field-inner .cml-pagination{flex-wrap:wrap;padding:2.5rem 0;gap:.5rem}
+.cml-field-inner .cml-pagination :is(a,span){display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border-color:var(--field-line);background:var(--field-panel);padding:.4rem .8rem}
+.cml-field-inner .cml-pagination [aria-current=page]{background:#fff;color:var(--field-bg);border-color:#fff}
+.cml-field-inner .cml-product-top{max-width:none!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:4rem;margin-block:0 3rem}
+.cml-field-inner .cml-product-top>div{min-width:0}
+.cml-field-inner .cml-product-top h1{font-size:clamp(2.1rem,3.5vw,3.4rem);line-height:1.12;letter-spacing:-.04em;margin-block:.6rem 1.25rem}
+.cml-field-inner .cml-product-image{aspect-ratio:1;max-height:520px;background:#f7f7f7;object-fit:contain;padding:2rem}
+.cml-field-inner .cml-specs{border-top:1px solid var(--field-line);margin-block:1.7rem}
+.cml-field-inner .cml-specs>div{padding:.85rem 0;gap:1.5rem;font-size:.9rem;align-items:start}
+.cml-field-inner .cml-specs :is(dt,dd){overflow-wrap:anywhere;min-width:0}
+.cml-field-inner .cml-note{color:var(--field-muted);font-size:.8rem;line-height:1.7}
+.cml-field-inner .cml-product-top .cml-note{margin-top:1rem}
+.cml-field-product #main>.wp-block-post-content{max-width:1040px;margin-inline:auto;padding-top:1rem;border-top:1px solid var(--field-line)}
+.cml-field-inner :is(.cml-buyer,.cml-priority-guide){background:var(--field-panel);border:1px solid var(--field-line);border-radius:0;box-shadow:none;padding:clamp(1.25rem,3vw,2rem)}
+.cml-field-inner :is(.cml-buyer,.cml-priority-guide) :is(h2,h3){letter-spacing:-.025em}
+.cml-field-inner :is(.cml-buyer,.cml-priority-guide) a:not(.cml-button){text-decoration:underline}
+.cml-field-inner :is(.cml-buyer,.cml-priority-guide) p{max-width:80ch}
+.cml-field-inner :is(.cml-priority-source,.cml-buyer details){padding-block:.5rem;border-top:1px solid var(--field-line)}
+.cml-field-inner :is(.cml-priority-source,.cml-buyer details) summary{min-height:48px;padding-block:.8rem;cursor:pointer;color:#fff}
+.cml-field-inner :is(.wp-block-table,.cml-buyer-scroll){border:1px solid var(--field-line);max-width:100%;overflow-x:auto}
+.cml-field-inner :is(.wp-block-table,.cml-buyer) table{background:transparent;color:#fff}
+.cml-field-inner :is(.wp-block-table,.cml-buyer) :is(th,td){border-color:var(--field-line);padding:.9rem;line-height:1.6}
+.cml-field-inner :is(.wp-block-table,.cml-buyer) th{background:#21181a;color:#fff}
+.cml-field-inner :is(.wp-block-table,.cml-buyer) td{background:var(--field-panel);color:var(--field-muted)}
+.cml-field-inner caption{padding:.8rem;text-align:start;color:var(--field-muted);font-size:.8rem}
+.cml-field-inquiry .cml-inquiry-layout{max-width:none;width:100%;margin-inline:0!important;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:4rem;align-items:start}
+.cml-field-inquiry .cml-inquiry-layout>aside{border-top:1px solid var(--field-line);padding-top:1.5rem}
+.cml-field-inquiry .cml-inquiry-layout>aside h2{font-size:clamp(1.8rem,3vw,2.75rem);margin-block:.75rem 1.25rem}
+.cml-field-inquiry .cml-inquiry-layout>aside p{max-width:36ch}
+.cml-field-inquiry .cml-inquiry-layout>aside>a{display:inline-block;min-height:44px;overflow-wrap:anywhere}
+.cml-field-inner .cml-hubspot{background:var(--field-panel);border:1px solid var(--field-line);border-radius:0;padding:clamp(1.25rem,3vw,2rem)}
+.cml-field-inner .cml-hubspot h2{font-size:1.5rem;line-height:1.25}
+.cml-field-inner .cml-hubspot p{font-size:.9rem;line-height:1.75}
+.cml-field-inner .cml-hubspot a{min-height:44px;display:inline-flex;align-items:center}
+.cml-field-inner .cml-hubspot .cml-button[hidden]{display:none}
+.cml-field-inner .cml-hubspot iframe{background:#fff;color-scheme:light}
+.cml-field-inner .cml-local-inquiry{margin-top:1.5rem;border:1px solid var(--field-line);padding:0 1.5rem;background:var(--field-panel)}
+.cml-field-inner .cml-local-inquiry summary{color:#fff;min-height:48px;padding-block:1.1rem;line-height:1.5}
+.cml-field-inner .cml-local-inquiry[open]{padding-bottom:1.5rem}
+.cml-field-inner .cml-inquiry-layout form{gap:1.15rem}
+.cml-field-inner .cml-inquiry-layout form label{color:#fff;font-size:.87rem;line-height:1.7}
+.cml-field-inner .cml-inquiry-layout label :is(input:not([type=checkbox]),textarea){margin-top:.4rem}
+.cml-field-inner .cml-inquiry-layout [role=status]{color:#e9e5e6;line-height:1.7}
+.cml-field-inner .cml-inquiry-layout form>.cml-button{justify-self:start;min-width:160px}
+.cml-field-inner .cml-consent{flex-wrap:wrap;align-items:center;line-height:1.7}
+.cml-field-inner .cml-consent a{min-height:44px;display:inline-flex;align-items:center}
+.cml-field-inner .cml-footer{background:var(--field-bg);border-color:var(--field-line);color:var(--field-muted);padding-block:2rem;font-size:.8rem}
+.cml-field-inner .cml-footer strong{color:#fff;font-size:1.05rem}
+.cml-field-inner .skip-link{background:#fff;color:var(--field-bg)}
+.cml-field-inner[dir=rtl] :is(h1,h2,h3){letter-spacing:0;line-height:1.4}
+.cml-field-inner[dir=rtl] :is(.cml-buyer th,.cml-buyer td){text-align:start}
+@media(max-width:1100px){.cml-field-inner .cml-mobile .cml-nav{background:var(--field-bg);border-color:var(--field-line);max-width:calc(100vw - 2rem)}.cml-field-inner .cml-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cml-field-inner .cml-product-top,.cml-field-inquiry .cml-inquiry-layout{gap:2rem}.cml-field-inner .cml-filter{gap:1rem}}
+@media(max-width:700px){.cml-field-inner .cml-header{padding:1rem;gap:1rem}.cml-field-inner .cml-brand{font-size:1.02rem}.cml-field-inner .cml-languages{padding:0 1rem .35rem;gap:.9rem;justify-content:flex-start}.cml-field-inner .wp-block-group#main{width:calc(100% - 2rem);padding:2rem 0 3rem}.cml-field-inner #main>:is(.wp-block-post-title,.wp-block-query-title){font-size:2.1rem;margin-bottom:1.75rem}.cml-field-inner .wp-block-post-content{padding-inline:0}.cml-field-inner .cml-filter{padding:1rem;gap:1rem}.cml-field-inner .cml-filter .cml-button{width:100%}.cml-field-inner .cml-grid{grid-template-columns:1fr;gap:1rem}.cml-field-inner .cml-card{padding:1rem}.cml-field-inner .cml-card img{max-height:290px}.cml-field-inner .cml-product-top{grid-template-columns:1fr;gap:1.5rem;padding-inline:0}.cml-field-inner .cml-product-image{max-height:330px;padding:1.25rem}.cml-field-inner .cml-product-top h1{font-size:2.1rem}.cml-field-inner .cml-specs>div{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:1rem}.cml-field-inquiry .cml-inquiry-layout{max-width:none;width:100%;margin-inline:0!important;grid-template-columns:1fr;gap:1.5rem}.cml-field-inner .cml-local-inquiry{padding-inline:1rem}.cml-field-inner .cml-inquiry-layout form>.cml-button{width:100%}.cml-field-inner .cml-footer{padding-inline:1rem}.cml-field-inner .cml-mobile summary{font-size:.85rem}}
