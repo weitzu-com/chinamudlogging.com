@@ -39,9 +39,22 @@ add_filter('post_thumbnail_html',function (string $html,int $post_id,int $thumbn
     $hero=is_singular('cml_product') && get_queried_object_id()===$post_id;
     $alt=$attr['alt']??get_post_meta($thumbnail,'_wp_attachment_image_alt',true);
     if (!$alt) $alt=wp_specialchars_decode(get_the_title($post_id),ENT_QUOTES);
+    $illustrative=!empty($asset['ai_concept']);
+    $notes=[
+        'en'=>'AI-generated illustration. Model and supplied appearance to be confirmed.',
+        'zh'=>'AI 生成示意图，具体型号及供货外观待确认。',
+        'es'=>'Ilustración generada por IA. Modelo y aspecto del equipo por confirmar.',
+        'ru'=>'Иллюстрация создана ИИ. Модель и внешний вид поставляемого оборудования требуют подтверждения.',
+        'ar'=>'رسم توضيحي مولّد بالذكاء الاصطناعي. يجب تأكيد الطراز ومظهر المعدات المورّدة.',
+        'fr'=>'Illustration générée par IA. Modèle et aspect du matériel fourni à confirmer.',
+        'de'=>'KI-generierte Illustration. Modell und Aussehen der gelieferten Ausrüstung sind zu bestätigen.',
+    ];
+    $note=$notes[function_exists('cml_language')?cml_language():'en']??$notes['en'];
+    if ($illustrative) $alt=wp_specialchars_decode(get_the_title($post_id),ENT_QUOTES).' — '.$note;
     $class=trim(($attr['class']??'wp-post-image').' cml-branded-image');
     $sizes=$hero?'(max-width: 700px) calc(100vw - 2rem), 50vw':'(max-width: 700px) calc(100vw - 4rem), (max-width: 1100px) 45vw, 30vw';
-    return '<img src="'.esc_url($large?$full:$small).'" srcset="'.esc_url($small).' 800w, '.esc_url($full).' 1200w" sizes="'.esc_attr($sizes).'" width="1200" height="900" class="'.esc_attr($class).'" alt="'.esc_attr($alt).'" loading="'.($hero?'eager':'lazy').'" decoding="async"'.($hero?' fetchpriority="high"':'').'>';
+    $image='<img src="'.esc_url($large?$full:$small).'" srcset="'.esc_url($small).' 800w, '.esc_url($full).' 1200w" sizes="'.esc_attr($sizes).'" width="1200" height="900" class="'.esc_attr($class).'" alt="'.esc_attr($alt).'" loading="'.($hero?'eager':'lazy').'" decoding="async"'.($hero?' fetchpriority="high"':'').'>';
+    return $illustrative ? '<figure class="cml-media-illustration">'.$image.'<figcaption>'.esc_html($note).'</figcaption></figure>' : $image;
 },30,5);
 add_filter('post_thumbnail_url',function ($url,$post,$size) {
     $post=get_post($post);

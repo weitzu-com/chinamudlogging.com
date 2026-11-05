@@ -4,7 +4,8 @@ import hashlib,json
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]/'theme/cml/assets/catalogue'
 data=json.loads((root/'manifest.json').read_text())
-assert data['canvas']==[1200,900] and len(data['images'])==166
+assert data['canvas']==[1200,900] and len(data['images'])==167
+assert sum(bool(row.get('ai_concept')) for row in data['images'])==1
 assert sum(row['placeholder'] for row in data['images'])==1
 assert sum(row['corner_mark_removed'] for row in data['images'])==32
 seen=set()
@@ -16,4 +17,4 @@ for row in data['images']:
         path=root/row[filename]
         assert path.name==row[filename] and path.suffix=='.webp'
         assert hashlib.sha256(path.read_bytes()).hexdigest()==row[key],path.name
-print('166 branded image pairs verified; 32 reviewed corner marks; one honestly labelled missing photograph; source preservation checks passed.')
+print('167 branded image pairs verified; 32 reviewed corner marks; one explicitly disclosed AI concept; historical placeholder retained; hashes passed.')

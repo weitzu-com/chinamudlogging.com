@@ -5311,6 +5311,38 @@
       "outside_mark_pixel_changes": 0,
       "bytes": 49036,
       "small_bytes": 22174
+    },
+    {
+      "index": 166,
+      "attachment": 0,
+      "source_sha256": "0b995cd6a94352e12b095d8c9fd413235abc4faa66a1f2e2c4d7d7dfa4138517",
+      "file": "0b995cd6a94352e12b095d8c.webp",
+      "small": "0b995cd6a94352e12b095d8c-800.webp",
+      "sha256": "b1905f79caa26658f0b15ff22e52b5ef6916c738032005da641c5d1a6d8bef1e",
+      "small_sha256": "6d7cee03551f47bf77bbbbd9c5f32e2b4c3718c65ec1bc6e41dafe42723348ef",
+      "corner_mark_removed": false,
+      "placeholder": false,
+      "ai_concept": true,
+      "mask_box": null,
+      "trim_box": [
+        325,
+        0,
+        1133,
+        1086
+      ],
+      "placement": [
+        339,
+        100,
+        521,
+        700
+      ],
+      "source_dimensions": [
+        1448,
+        1086
+      ],
+      "outside_mark_pixel_changes": 0,
+      "bytes": 37272,
+      "small_bytes": 18614
     }
   ]
 }
