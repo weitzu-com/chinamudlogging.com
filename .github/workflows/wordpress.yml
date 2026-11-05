@@ -39,6 +39,8 @@ jobs:
           python3 wordpress/extensions/test-sensor-selection.py
       - name: Multilingual inquiry boundary regression
         run: python3 wordpress/tests/run-ego-qa.py
+      - name: Postlaunch deadline and evidence guards
+        run: python3 wordpress/tests/test-postlaunch-review.py
       - name: Package candidate
         run: python3 wordpress/scripts/package.py
       - uses: actions/upload-artifact@v4

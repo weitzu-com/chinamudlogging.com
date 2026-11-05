@@ -3,6 +3,7 @@ import products from '../../src/data/products.json' with { type: 'json' };
 import categories from '../../src/data/categories.json' with { type: 'json' };
 import articles from '../../src/data/articles.json' with { type: 'json' };
 import localizations from '../../wordpress/migration/priority-localizations.json' with { type: 'json' };
+import published from './published-paths.json' with { type: 'json' };
 import {syncZoho,syncStatus,evidenceFor} from './zoho-sync.mjs';
 const paths = new Set(['/', '/about-us/', '/services/', '/product/', '/blog/', '/contact-us/', '/privacy/', ...products.map(p=>`/product/${p.slug}/`), ...categories.map(p=>`/product-category/${p.slug}/`), ...articles.map(p=>`/${p.slug}/`)]);
 paths.add('/applications/');
@@ -13,6 +14,8 @@ for(const lang of ['zh','es','ru','ar','fr','de']) {
  for(const product of products.filter(p=>Object.hasOwn(localizations.products,String(p.id))))paths.add(`/${lang}/product/${product.slug}-${lang}/`);
 }
 const origins = new Set(['https://www.chinamudlogging.com', 'https://chinamudlogging.com']);
+// Exact public sitemap paths only: keep drafts, queries and personal data outside measurement.
+for (const path of published.paths) paths.add(path);
 const uuid = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/;
 const hex = /^[a-f0-9]{64}$/;
 const enc = new TextEncoder();
