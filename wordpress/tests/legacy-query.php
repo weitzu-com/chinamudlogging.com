@@ -13,6 +13,12 @@ $count = 0;
 foreach (['q=ALS+2.2&utm_source=cml-72h', 'product=0.25%E2%80%9310+m%3E70+%C2%B0C', 'q=one&q=two&ref=a%2Fb%26c%3Dd', 'q=%D8%B7%D9%8A%D9%86&family=mud-logging-sensors'] as $query) {
     foreach ($map as $source => $target) {
         $_SERVER['REQUEST_URI'] = $source . '?' . $query;
+        if ($target === '/') {
+            cml_redirect_legacy_query();
+            $assert(cml_legacy_query_target($map, $source, $query) === null, 'Native front-page canonical handler retains its own query normalization');
+            $count++;
+            continue;
+        }
         try { cml_redirect_legacy_query(); throw new RuntimeException('Expected redirect'); }
         catch (CML_Redirect_Proof $proof) {
             $assert($proof->status === 301 && $proof->location === home_url($target) . '?' . $query, 'Exact path/query preservation, encoding and one permanent redirect');

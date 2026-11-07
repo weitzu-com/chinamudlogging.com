@@ -2,13 +2,15 @@
 /**
  * Plugin Name: ChinaMudLogging Legacy Query Redirects
  * Description: Preserve search, product and campaign context on existing legacy page redirects.
- * Version: 1.0.0
+ * Version: 1.0.1
  */
 defined('ABSPATH') || exit;
 
 function cml_legacy_query_target(array $map, string $path, string $query): ?string {
     $destination = $map[$path] ?? null;
-    if ($query === '' || !is_string($destination) || $destination === $path) return null;
+    if ($query === '' || !is_string($destination) || $destination === $path || $destination === '/') return null;
+    // WordPress already preserves and canonicalizes queries on front-page aliases.
+    // Intercepting those first would add a second redirect for space normalization.
     // Only existing, same-site plain paths are eligible. Media, sitemap and future
     // mappings that already contain query/fragment semantics keep their own handlers.
     if (!preg_match('~^/(?!/)[^?#\r\n]*$~D', $destination) || preg_match('/[\r\n]/', $query)) return null;
