@@ -51,6 +51,8 @@ jobs:
           git diff --exit-code -- wordpress/corrections/source-content-20261105/reviewed-manifest.json
           python3 wordpress/corrections/source-content-20261105/check-review.py
           python3 wordpress/tests/run-source-content-review.py
+      - name: Legacy redirect query and origin regression
+        run: python3 wordpress/tests/run-legacy-query.py
       - name: Package candidate
         run: python3 wordpress/scripts/package.py
       - uses: actions/upload-artifact@v4
