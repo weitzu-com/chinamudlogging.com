@@ -22,6 +22,16 @@ function cml_detail_record(int $id): ?array {
     $lang=function_exists('pll_get_post_language') ? pll_get_post_language($id) : 'en';
     return $lang===$r['language'] ? $r : null;
 }
+function cml_detail_citations(array $ids,string $language): string {
+    $labels=['en'=>'Source','zh'=>'来源','es'=>'Fuente','ru'=>'Источник','ar'=>'المصدر','fr'=>'Source','de'=>'Quelle'];
+    $links=[];$sources=cml_detail_data()['sources']??[];
+    foreach(array_unique($ids) as $id){
+        if(!isset($sources[$id]))continue;
+        $s=$sources[$id];
+        $links[]='<a href="'.esc_url($s['url']).'">'.esc_html($s['title'].($s['locator']?' · '.$s['locator']:'')).'</a>';
+    }
+    return $links ? '<small class="cml-detail-citations">'.esc_html($labels[$language]??$labels['en']).': '.implode(' · ',$links).'</small>' : '';
+}
 add_action('wp_enqueue_scripts',function () {
     if (is_singular('cml_product')) wp_enqueue_style('cml-product-details',get_theme_file_uri('assets/product-details.css'),['cml-site'],filemtime(get_theme_file_path('assets/product-details.css')));
 },70);
@@ -39,6 +49,8 @@ add_filter('render_block_core/post-content',function (string $html): string {
             $out.='<span class="cml-detail-pending">'.esc_html($c['pending']).'</span>';
             if ($row['status']!=='pending') $out.='<small>'.esc_html($c[$row['status']]).'</small>';
         } else $out.='<bdi dir="ltr">'.esc_html($row['value']).'</bdi>';
+        if(!empty($row['note']))$out.='<small>'.esc_html($row['note']).'</small>';
+        $out.=cml_detail_citations($row['citations']??[],$r['language']);
         $out.='</td></tr>';
     }
     $out.='</tbody></table><h3>'.esc_html($c['selection']).'</h3><ul>';
@@ -56,6 +68,6 @@ add_filter('render_block',function (string $html,array $block): string {
     if (is_admin() || !is_singular('cml_product') || strpos($html,'class="cml-product-top"')===false) return $html;
     $r=cml_detail_record(get_queried_object_id()); if (!$r) return $html;
     $c=cml_detail_data()['copy'][$r['language']];
-    $summary='<dl class="cml-specs"><div><dt>'.esc_html($r['designation']?$c['designation']:$c['status']).'</dt><dd>'.($r['designation']?'<bdi dir="ltr">'.esc_html($r['designation']).'</bdi>':esc_html($c['confirm'])).'</dd></div></dl>';
+    $summary='<dl class="cml-specs"><div><dt>'.esc_html($r['designation']?$c['designation']:$c['status']).'</dt><dd>'.($r['designation']?'<bdi dir="ltr">'.esc_html($r['designation']).'</bdi>':esc_html($c['confirm'])).cml_detail_citations($r['designation_citations']??[],$r['language']).'</dd></div></dl>';
     return preg_replace('/<dl class="cml-specs">.*?<\/dl>/s',$summary,$html,1);
 },1000,2);

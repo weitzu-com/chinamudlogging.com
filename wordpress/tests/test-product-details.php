@@ -22,6 +22,9 @@ foreach ($data['products'] as $id=>$r) {
     foreach ($r['rows'] as $row) {
         $key=$row['label'].':'.$row['value'];
         $check(!isset($seen[$key]),'Deduplicated table '.$id);$seen[$key]=true;
+        foreach($row['citations']??[] as $source){
+            $check(strpos($html,esc_url($data['sources'][$source]['url']))!==false,'Visible source link '.$id);
+        }
     }
     $before=get_post_meta($id,'_cml_sku',true);
     update_post_meta($id,'_cml_sku','changed source');
