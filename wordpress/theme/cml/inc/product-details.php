@@ -40,9 +40,9 @@ add_filter('render_block_core/post-content',function (string $html): string {
     $id=get_queried_object_id(); $r=cml_detail_record($id);
     if (!$r) return $html;
     $c=cml_detail_data()['copy'][$r['language']];
-    $out='<section class="cml-reviewed-details" data-product-detail-review="20261105"><h2>'.esc_html($c['heading']).'</h2>';
+    $out='<section id="cml-sensor-source" class="cml-reviewed-details" data-product-detail-review="20261105"><h2>'.esc_html($c['heading']).'</h2>';
     if ($r['intro']) $out.='<p>'.esc_html($r['intro']).'</p>';
-    $out.='<h3>'.esc_html($c['parameters']).'</h3><p class="cml-detail-note">'.esc_html($c['note']).'</p><table><thead><tr><th scope="col">'.esc_html($c['field']).'</th><th scope="col">'.esc_html($c['value']).'</th></tr></thead><tbody>';
+    $out.='<h3 id="cml-sensor-documents">'.esc_html($c['parameters']).'</h3><p class="cml-detail-note">'.esc_html($c['note']).'</p><table><thead><tr><th scope="col">'.esc_html($c['field']).'</th><th scope="col">'.esc_html($c['value']).'</th></tr></thead><tbody>';
     foreach ($r['rows'] as $row) {
         $out.='<tr><th scope="row">'.esc_html($row['label']).'</th><td>';
         if ($row['status']) {
@@ -53,7 +53,7 @@ add_filter('render_block_core/post-content',function (string $html): string {
         $out.=cml_detail_citations($row['citations']??[],$r['language']);
         $out.='</td></tr>';
     }
-    $out.='</tbody></table><h3>'.esc_html($c['selection']).'</h3><ul>';
+    $out.='</tbody></table><h3 id="cml-sensor-compatibility">'.esc_html($c['selection']).'</h3><ul>';
     foreach ($r['checks'] as $check) $out.='<li>'.esc_html($check).'</li>';
     $out.='</ul>';
     if ($r['links']) {
