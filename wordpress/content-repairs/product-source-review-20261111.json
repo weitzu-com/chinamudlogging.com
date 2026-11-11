@@ -1,0 +1,604 @@
+{
+  "revision": "2026-11-11",
+  "basis": "Documented catalogue/manual values for the identified version; not proof of the supplied configuration, calibration or certification. Source conflicts retained.",
+  "sources": {
+    "8d08": {
+      "url": "https://www.cnps.com/product/cnps-8d08-mud-conductivity-sensor/",
+      "title": "CNPS · 8D08",
+      "locator": "Technical parameters / fault guidance",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "mlb11": {
+      "url": "https://www.cnps.com/product/cnps-ml-b11-mud-density-sensor/",
+      "title": "CNPS · ML-B11",
+      "locator": "§2 / §3.1",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "cldt": {
+      "url": "https://www.cnps.com/product/mud-logging-ex-proof-degasser/",
+      "title": "CNPS · CL-DT",
+      "locator": "Product specification / description",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "dwa11": {
+      "url": "https://www.cnps.com/product/cnps-dw-a11-depth-encoder/",
+      "title": "CNPS · DW-A11",
+      "locator": "Technical indicators",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "mhp": {
+      "url": "https://www.cnps.com/product/cnps-mhp-pressure-sensor-15000psi/",
+      "title": "CNPS · MHP",
+      "locator": "Technical indicators",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "transmission": {
+      "url": "https://www.cnps.com/product/the-wireless-transmission-box-for-mud-logging-unit/",
+      "title": "CNPS · Wireless transmission box",
+      "locator": "Product introduction",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "h2s": {
+      "url": "https://www.cnps.com/product/wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit/",
+      "title": "CNPS · Wireless H2S",
+      "locator": "Product specification",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "hook": {
+      "url": "https://www.cnps.com/product/wireless-hook-load-sensor-for-mud-logging-unit/",
+      "title": "CNPS · Wireless hookload",
+      "locator": "Product specification",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "temperature": {
+      "url": "https://www.cnps.com/product/wireless-temperature-sensor-for-mud-logging-unit/",
+      "title": "CNPS · Wireless temperature",
+      "locator": "Product specification",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "lu240": {
+      "url": "https://cache.industry.siemens.com/dl/files/189/109826189/att_1161153/v1/A5E42673511en_LU240_HA_mA_OI_en-US.pdf#page=180",
+      "title": "Siemens · SITRANS Probe LU240",
+      "locator": "A5E42673511-AG, 11/2023, §13.2, p.180",
+      "kind": "manufacturer-manual",
+      "checked_at": "2026-11-11",
+      "sha256": "b3933a411b613f3ffc820b4690af2f77795fd445650bd311aa202b6bf44397a6"
+    },
+    "iml": {
+      "url": "https://imudlogging.com/product/iml-p10k-casing-pressure-sensorpressure-sensor",
+      "title": "IML · IML-P10K",
+      "locator": "Technical specifications",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "sha256": "88ad8edbaac4c339eeec941fef941020110984984331eccfed749b1dd07db797"
+    },
+    "company-reference-1670": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/radar-level-transmitter-manual-cnps.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "2a77977832a209c04f46dd2388cde191365fbaaad501488901d5b3b0908828da",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1671": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/sk-2n01g-shale-density-meter-manual-zh.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "d1a07667d4a6ee227ef19d5666f490fa49a55dc7e4c5668b61c06ef94cd0df7d",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1673": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/h2s-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "83296685c076f6055ab569fbea6a23f6554649a844cf1ac42d92b48eecab0c06",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1674": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/drawworks-winch-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "15739f4545bef7946b6962165ef871f8a433f92e3e32a776fe45cc7e10c15877",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1675": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/standpipe-pressure-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "c3b3bb756107996d58ec07f8b96924f0acd0ca5cf61c87b80f7dc21120103c90",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1677": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/pump-stroke-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "0af43500ff6dc7696b7c1a013df653dc6a524bb9e1f2fdd6b822650b85082214",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1678": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/electric-torque-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "fe55ce8b91cb202092a137da5c843b662bbbf72c53785146a4191f4c77634e43",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    }
+  },
+  "rules": {
+    "8d08-details": {
+      "products": {
+        "91": "6a72abfdf249b13a9b7c9436d2cc21ee5b236732d77fcd263e8e048ea843eba9",
+        "92": "4626c9665ae162497a480f51b997e1c1310fc6018e99c638202d4a467adede12",
+        "93": "0fb05fe817be73852474015c42e8ab309f5074d9937f5814abcb97ad127cb05e",
+        "94": "4baffefc05156993b4a5de63d55b83738cb5e02c5cd8ed8da37e30e0009d0946",
+        "95": "e56da18b7f6300cc9c3622cac5af9392e75803c03bdd5204750723df1b43e276",
+        "96": "b5daa2e307c60fea6c60fdb949a10d119ea7c1952843f8ad5762d609107e6d67",
+        "97": "a58d75550b5f70da805333a53d0dd06ded45d63c3b56fd973a6d496920cb504d"
+      },
+      "sources": [
+        "8d08"
+      ],
+      "cite_existing": true,
+      "facts": [
+        {
+          "labels": {
+            "en": "Measurement accuracy",
+            "zh": "测量精度",
+            "es": "Precisión de medida",
+            "ru": "Погрешность измерения",
+            "ar": "دقة القياس",
+            "fr": "Précision de mesure",
+            "de": "Messgenauigkeit"
+          },
+          "value": "±1% FS",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Measured-medium temperature",
+            "zh": "被测介质温度",
+            "es": "Temperatura del medio",
+            "ru": "Температура измеряемой среды",
+            "ar": "درجة حرارة الوسط المقاس",
+            "fr": "Température du fluide mesuré",
+            "de": "Temperatur des Messmediums"
+          },
+          "value": "",
+          "status": "conflict",
+          "source": "Technical parameters: 0–80 °C; fault guidance: 10–80 degrees"
+        }
+      ]
+    },
+    "mlb11-installation-variants": {
+      "products": {
+        "103": "f1a44cb38c7d50710161b3f816d7f464b4bbf349e28d7629f6e10ac82137b9df",
+        "104": "8395a9090e6c8ca57b8515fe1873f16d60daf0bc59ba1b3003ce59f1b77a51e8",
+        "105": "66c94b2627f32b0282ac0ca69ae1942cf42eedaaeb8d0bc318d05a603a8b1ded",
+        "106": "dbdf8ebe96536c0880d5cc5119e7ccf179d9eb4eeaef69f90c291b1cfbb58bcc",
+        "107": "5a925f66529fe102c6f3c52c6da575f62e6d485dab04de297b77ad33466a6410",
+        "108": "bdf2b9b49bcf9380747008ae56d20f007cb3182421d64b6a21dec06c974409a1",
+        "109": "e8c8ad3cbac4f0af471a1f7aafebd0ebf1326882e4be6bf8982b0cce12a8c4ea"
+      },
+      "sources": [
+        "mlb11"
+      ],
+      "cite_existing": true,
+      "facts": [
+        {
+          "labels": {
+            "en": "Diaphragm spacing — outlet version",
+            "zh": "膜片间距（出口版本）",
+            "es": "Separación de membranas — salida",
+            "ru": "Расстояние между мембранами — выход",
+            "ar": "تباعد الأغشية — نسخة المخرج",
+            "fr": "Écartement des membranes — sortie",
+            "de": "Membranabstand — Auslaufversion"
+          },
+          "value": "45 cm",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Diaphragm spacing — inlet version",
+            "zh": "膜片间距（入口版本）",
+            "es": "Separación de membranas — entrada",
+            "ru": "Расстояние между мембранами — вход",
+            "ar": "تباعد الأغشية — نسخة المدخل",
+            "fr": "Écartement des membranes — entrée",
+            "de": "Membranabstand — Einlaufversion"
+          },
+          "value": "60 cm",
+          "status": ""
+        }
+      ]
+    },
+    "cldt-motor-variants": {
+      "products": {
+        "128": "d569786e5240c34d9ce86deb79c7d165fd759d25f44875775a34eb5b039202c0",
+        "129": "fd3e6c4d0790f7c030a06a37cd86991b2cf776fd725f22d9b62ff26aaedf7362",
+        "130": "7e51dafe02a88a3fda6a2453b1d0d4360c9ec1d9809cfe3dd21d6a098aa0e003",
+        "131": "fec479f04a5cc6b896c8d2b8cba9eb60cc8fb9a88df71977f38c1d1ac33166b8",
+        "132": "7fa3643d7d1d81fb7e53e6b1f457256470e34dbf9783404f88c0e3fa6fdd231a",
+        "133": "b1f8deb85af4740ab53cecbfdba173d93dc81811ed76ca4cbfd1cd85fc38fb71",
+        "134": "71e95a17cdda485545a12fe0ae8dd6554aebd940106e7dc0f2178f9a5459d54c"
+      },
+      "sources": [
+        "cldt"
+      ],
+      "cite_existing": true,
+      "designation": "CL-DT11 / CL-DT12",
+      "remove": {
+        "en": [
+          "Supply notation in source"
+        ],
+        "zh": [
+          "源资料供电写法"
+        ],
+        "es": [
+          "Alimentación según la fuente"
+        ],
+        "ru": [
+          "Питание по исходной записи"
+        ],
+        "ar": [
+          "التغذية كما وردت في المصدر"
+        ],
+        "fr": [
+          "Alimentation selon la source"
+        ],
+        "de": [
+          "Versorgungsangabe der Quelle"
+        ]
+      },
+      "facts": [
+        {
+          "labels": {
+            "en": "Motor voltage — CL-DT11",
+            "zh": "电机电压（CL-DT11）",
+            "es": "Tensión del motor — CL-DT11",
+            "ru": "Напряжение двигателя — CL-DT11",
+            "ar": "جهد المحرك — CL-DT11",
+            "fr": "Tension du moteur — CL-DT11",
+            "de": "Motorspannung — CL-DT11"
+          },
+          "value": "220 V",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Motor voltage — CL-DT12",
+            "zh": "电机电压（CL-DT12）",
+            "es": "Tensión del motor — CL-DT12",
+            "ru": "Напряжение двигателя — CL-DT12",
+            "ar": "جهد المحرك — CL-DT12",
+            "fr": "Tension du moteur — CL-DT12",
+            "de": "Motorspannung — CL-DT12"
+          },
+          "value": "380 V",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Supplied motor version",
+            "zh": "具体供货电机版本",
+            "es": "Versión del motor suministrado",
+            "ru": "Исполнение поставляемого двигателя",
+            "ar": "نسخة المحرك المورّدة",
+            "fr": "Version du moteur fourni",
+            "de": "Gelieferte Motorausführung"
+          },
+          "value": "",
+          "status": "pending"
+        }
+      ]
+    },
+    "dwa11-model-output": {
+      "products": {
+        "100": "50de5a74737184a531a5e008f82a738b750ca2edd242506971e9fb687293483d"
+      },
+      "sources": [
+        "dwa11"
+      ],
+      "cite_existing": true,
+      "designation": "CNPS-DW-A11",
+      "remove": {
+        "en": [
+          "Output level"
+        ]
+      },
+      "facts": [
+        {
+          "labels": {
+            "en": "Output high level"
+          },
+          "value": "5 V",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Output low level"
+          },
+          "value": "0 V",
+          "status": ""
+        }
+      ]
+    },
+    "mhp-rated-temperature": {
+      "products": {
+        "102": "3d8610e819849ea3cb5c4a7550eb572523f392e75c2583cd8b70addc735c7066"
+      },
+      "sources": [
+        "mhp"
+      ],
+      "cite_existing": true,
+      "designation": "CNPS-MHP",
+      "remove": {
+        "en": [
+          "Operating temperature range"
+        ]
+      },
+      "facts": [
+        {
+          "labels": {
+            "en": "Operating temperature — technical-data rating"
+          },
+          "value": "-40~+85℃",
+          "status": ""
+        }
+      ],
+      "notes": [
+        {
+          "en": "The pressure range remains unconfirmed: the supplier title says 15,000 psi while its technical data says 0–2.5 bar. The ceramic-material temperature discussion does not establish a different sensor operating rating."
+        }
+      ]
+    },
+    "lu240-version-accuracy": {
+      "products": {
+        "209": "e1f6d609e2b43c7793a4263de8563d81b3651e998dc59cb0f0e2be21f5454c50"
+      },
+      "sources": [
+        "lu240"
+      ],
+      "cite_existing": true,
+      "designation": "SITRANS Probe LU240",
+      "remove": {
+        "en": [
+          "Accuracy, 3 m version"
+        ]
+      },
+      "facts": [
+        {
+          "labels": {
+            "en": "Accuracy — 3 m version"
+          },
+          "value": "±10 mm",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Accuracy — 6 m and 12 m versions"
+          },
+          "value": "± the greater of 0.15% of range or 6 mm; valid from 0.25 m",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Accuracy — ranges of 4 m or less (6 m / 12 m versions)"
+          },
+          "value": "±2 mm",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Accuracy reference conditions"
+          },
+          "value": "+15 to +25 °C; 45–75% RH; 860–1060 mbar",
+          "status": ""
+        },
+        {
+          "labels": {
+            "en": "Supplied range version"
+          },
+          "value": "",
+          "status": "pending"
+        }
+      ]
+    },
+    "imlp10k-linearity": {
+      "products": {
+        "1676": "8576e2551fabaab8aea3284784e8316d834fef15a7ed2392955d22ff0abf0a5a"
+      },
+      "sources": [
+        "iml"
+      ],
+      "cite_existing": true,
+      "designation": "IML-P10K",
+      "remove": {
+        "en": [
+          "Linearity & hysteresis"
+        ]
+      },
+      "facts": [
+        {
+          "labels": {
+            "en": "Linearity and hysteresis at 25 °C"
+          },
+          "value": "≤0.3% FS",
+          "status": ""
+        }
+      ]
+    },
+    "transmission-input": {
+      "products": {
+        "179": "10c8cdd7694b1a41397b07b80844553818b3a58cf0a1288d69bd29c7a4fbbda4"
+      },
+      "sources": [
+        "transmission"
+      ],
+      "cite_existing": true,
+      "remove": {
+        "en": [
+          "Measurement range"
+        ]
+      },
+      "facts": [
+        {
+          "labels": {
+            "en": "Current signal input"
+          },
+          "value": "4-20mA",
+          "status": ""
+        }
+      ],
+      "notes": [
+        {
+          "en": "The connected 4–20 mA sensor requires its own power supply; this transmission box does not supply sensor power."
+        }
+      ]
+    },
+    "h2s-ambiguous-range": {
+      "products": {
+        "186": "931bdbd2de4b6a79f8877ab9fc642c8f9937bb9e6c5e677ecdba7d666c27a1b4"
+      },
+      "sources": [
+        "h2s"
+      ],
+      "cite_existing": true,
+      "remove": {
+        "en": [
+          "Detection range"
+        ]
+      },
+      "facts": [
+        {
+          "labels": {
+            "en": "Detection range"
+          },
+          "value": "",
+          "status": "unclear",
+          "source": "0-100ppm T90"
+        }
+      ]
+    },
+    "hook-retained-ambiguities": {
+      "products": {
+        "185": "a1630f316a95ead07da4a127332b6447485262605a6d0b6455a76c7ec69e3bb7"
+      },
+      "sources": [
+        "hook"
+      ],
+      "cite_existing": true
+    },
+    "temperature-retained-ambiguities": {
+      "products": {
+        "205": "1121381bb39292b2b7177cc8f86d42abb785876cb0b5fb90fb77da570204164a"
+      },
+      "sources": [
+        "temperature"
+      ],
+      "cite_existing": true
+    },
+    "company-reference-1670": {
+      "products": {
+        "1670": "31e906b5fdd3f4f7782bc41117df48576800795d8cbdd731c1e20b278246c6fc"
+      },
+      "sources": [
+        "company-reference-1670"
+      ],
+      "cite_existing": true
+    },
+    "company-reference-1671": {
+      "products": {
+        "1671": "500a8f72b3464ebe1f66b28e9389439272151416c086969dc525b6885b0d3416"
+      },
+      "sources": [
+        "company-reference-1671"
+      ],
+      "cite_existing": true
+    },
+    "company-reference-1673": {
+      "products": {
+        "1673": "f3e979d7c430888642e0c632e9f5a6dea456e11640a8c8595aee343259b92e9d"
+      },
+      "sources": [
+        "company-reference-1673"
+      ],
+      "cite_existing": true
+    },
+    "company-reference-1674": {
+      "products": {
+        "1674": "0a4ec2c7344de8d2d6a328a4a8744b48b46cbb229f6889167fde646c17c6d149"
+      },
+      "sources": [
+        "company-reference-1674"
+      ],
+      "cite_existing": true
+    },
+    "company-reference-1675": {
+      "products": {
+        "1675": "50f5c87fab023ca8b6c1b098ecb67195250d1339981ab796120b061f3a87acc9"
+      },
+      "sources": [
+        "company-reference-1675"
+      ],
+      "cite_existing": true
+    },
+    "company-reference-1677": {
+      "products": {
+        "1677": "1800f34f101b5e437ac26be0bb61678a3e49049075e06cce2b92f6de077f8219"
+      },
+      "sources": [
+        "company-reference-1677"
+      ],
+      "cite_existing": true
+    },
+    "company-reference-1678": {
+      "products": {
+        "1678": "3d651c1a63344c397e21e1b9976c8a1839beacb8004a2943aa0dfa94ff9c97e4"
+      },
+      "sources": [
+        "company-reference-1678"
+      ],
+      "cite_existing": true
+    }
+  }
+}

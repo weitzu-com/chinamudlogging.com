@@ -323,25 +323,57 @@
           "label": "Supply notation in source",
           "value": "15 ~ 28VDC",
           "status": "",
-          "source": "15 ~ 28VDC"
+          "source": "15 ~ 28VDC",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Output signal",
           "value": "4 ~ 20mA",
           "status": "",
-          "source": "4 ~ 20mA"
+          "source": "4 ~ 20mA",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-30～+70℃",
           "status": "",
-          "source": "-30～+70℃"
+          "source": "-30～+70℃",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Source conductivity ceiling; unit case to confirm",
           "value": "",
           "status": "unclear",
-          "source": "300ms/cm"
+          "source": "300ms/cm",
+          "citations": [
+            "8d08"
+          ]
+        },
+        {
+          "label": "Measurement accuracy",
+          "value": "±1% FS",
+          "status": "",
+          "source": "±1% FS",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:0"
+        },
+        {
+          "label": "Measured-medium temperature",
+          "value": "",
+          "status": "conflict",
+          "source": "Technical parameters: 0–80 °C; fault guidance: 10–80 degrees",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:1"
         }
       ],
       "checks": [
@@ -362,25 +394,57 @@
           "label": "源资料供电写法",
           "value": "15 ~ 28VDC",
           "status": "",
-          "source": "15 ~ 28VDC"
+          "source": "15 ~ 28VDC",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "输出信号",
           "value": "4 ~ 20mA",
           "status": "",
-          "source": "4 ~ 20mA"
+          "source": "4 ~ 20mA",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "工作温度",
           "value": "-30～+70℃",
           "status": "",
-          "source": "-30～+70℃"
+          "source": "-30～+70℃",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "源资料电导率上限；单位大小写需确认",
           "value": "",
           "status": "unclear",
-          "source": "300ms/cm"
+          "source": "300ms/cm",
+          "citations": [
+            "8d08"
+          ]
+        },
+        {
+          "label": "测量精度",
+          "value": "±1% FS",
+          "status": "",
+          "source": "±1% FS",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:0"
+        },
+        {
+          "label": "被测介质温度",
+          "value": "",
+          "status": "conflict",
+          "source": "Technical parameters: 0–80 °C; fault guidance: 10–80 degrees",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:1"
         }
       ],
       "checks": [
@@ -401,25 +465,57 @@
           "label": "Alimentación según la fuente",
           "value": "15 ~ 28VDC",
           "status": "",
-          "source": "15 ~ 28VDC"
+          "source": "15 ~ 28VDC",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Señal de salida",
           "value": "4 ~ 20mA",
           "status": "",
-          "source": "4 ~ 20mA"
+          "source": "4 ~ 20mA",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Temperatura de operación",
           "value": "-30～+70℃",
           "status": "",
-          "source": "-30～+70℃"
+          "source": "-30～+70℃",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Límite de conductividad de la fuente; confirmar escritura de unidad",
           "value": "",
           "status": "unclear",
-          "source": "300ms/cm"
+          "source": "300ms/cm",
+          "citations": [
+            "8d08"
+          ]
+        },
+        {
+          "label": "Precisión de medida",
+          "value": "±1% FS",
+          "status": "",
+          "source": "±1% FS",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:0"
+        },
+        {
+          "label": "Temperatura del medio",
+          "value": "",
+          "status": "conflict",
+          "source": "Technical parameters: 0–80 °C; fault guidance: 10–80 degrees",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:1"
         }
       ],
       "checks": [
@@ -440,25 +536,57 @@
           "label": "Питание по исходной записи",
           "value": "15 ~ 28VDC",
           "status": "",
-          "source": "15 ~ 28VDC"
+          "source": "15 ~ 28VDC",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Выходной сигнал",
           "value": "4 ~ 20mA",
           "status": "",
-          "source": "4 ~ 20mA"
+          "source": "4 ~ 20mA",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Рабочая температура",
           "value": "-30～+70℃",
           "status": "",
-          "source": "-30～+70℃"
+          "source": "-30～+70℃",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Предел электропроводности по источнику; написание единицы уточнить",
           "value": "",
           "status": "unclear",
-          "source": "300ms/cm"
+          "source": "300ms/cm",
+          "citations": [
+            "8d08"
+          ]
+        },
+        {
+          "label": "Погрешность измерения",
+          "value": "±1% FS",
+          "status": "",
+          "source": "±1% FS",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:0"
+        },
+        {
+          "label": "Температура измеряемой среды",
+          "value": "",
+          "status": "conflict",
+          "source": "Technical parameters: 0–80 °C; fault guidance: 10–80 degrees",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:1"
         }
       ],
       "checks": [
@@ -479,25 +607,57 @@
           "label": "التغذية كما وردت في المصدر",
           "value": "15 ~ 28VDC",
           "status": "",
-          "source": "15 ~ 28VDC"
+          "source": "15 ~ 28VDC",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "إشارة الخرج",
           "value": "4 ~ 20mA",
           "status": "",
-          "source": "4 ~ 20mA"
+          "source": "4 ~ 20mA",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "درجة حرارة التشغيل",
           "value": "-30～+70℃",
           "status": "",
-          "source": "-30～+70℃"
+          "source": "-30～+70℃",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "حد التوصيلية في المصدر؛ يلزم تأكيد صيغة الوحدة",
           "value": "",
           "status": "unclear",
-          "source": "300ms/cm"
+          "source": "300ms/cm",
+          "citations": [
+            "8d08"
+          ]
+        },
+        {
+          "label": "دقة القياس",
+          "value": "±1% FS",
+          "status": "",
+          "source": "±1% FS",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:0"
+        },
+        {
+          "label": "درجة حرارة الوسط المقاس",
+          "value": "",
+          "status": "conflict",
+          "source": "Technical parameters: 0–80 °C; fault guidance: 10–80 degrees",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:1"
         }
       ],
       "checks": [
@@ -518,25 +678,57 @@
           "label": "Alimentation selon la source",
           "value": "15 ~ 28VDC",
           "status": "",
-          "source": "15 ~ 28VDC"
+          "source": "15 ~ 28VDC",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Signal de sortie",
           "value": "4 ~ 20mA",
           "status": "",
-          "source": "4 ~ 20mA"
+          "source": "4 ~ 20mA",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Température de fonctionnement",
           "value": "-30～+70℃",
           "status": "",
-          "source": "-30～+70℃"
+          "source": "-30～+70℃",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Limite de conductivité de la source ; notation de l’unité à confirmer",
           "value": "",
           "status": "unclear",
-          "source": "300ms/cm"
+          "source": "300ms/cm",
+          "citations": [
+            "8d08"
+          ]
+        },
+        {
+          "label": "Précision de mesure",
+          "value": "±1% FS",
+          "status": "",
+          "source": "±1% FS",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:0"
+        },
+        {
+          "label": "Température du fluide mesuré",
+          "value": "",
+          "status": "conflict",
+          "source": "Technical parameters: 0–80 °C; fault guidance: 10–80 degrees",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:1"
         }
       ],
       "checks": [
@@ -557,25 +749,57 @@
           "label": "Versorgungsangabe der Quelle",
           "value": "15 ~ 28VDC",
           "status": "",
-          "source": "15 ~ 28VDC"
+          "source": "15 ~ 28VDC",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Ausgangssignal",
           "value": "4 ~ 20mA",
           "status": "",
-          "source": "4 ~ 20mA"
+          "source": "4 ~ 20mA",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Betriebstemperatur",
           "value": "-30～+70℃",
           "status": "",
-          "source": "-30～+70℃"
+          "source": "-30～+70℃",
+          "citations": [
+            "8d08"
+          ]
         },
         {
           "label": "Leitfähigkeitsgrenze der Quelle; Einheitenschreibweise bestätigen",
           "value": "",
           "status": "unclear",
-          "source": "300ms/cm"
+          "source": "300ms/cm",
+          "citations": [
+            "8d08"
+          ]
+        },
+        {
+          "label": "Messgenauigkeit",
+          "value": "±1% FS",
+          "status": "",
+          "source": "±1% FS",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:0"
+        },
+        {
+          "label": "Temperatur des Messmediums",
+          "value": "",
+          "status": "conflict",
+          "source": "Technical parameters: 0–80 °C; fault guidance: 10–80 degrees",
+          "citations": [
+            "8d08"
+          ],
+          "verification_id": "8d08-details:1"
         }
       ],
       "checks": [
@@ -662,31 +886,57 @@
           "label": "Supply voltage",
           "value": "5V DC",
           "status": "",
-          "source": "5V DC"
-        },
-        {
-          "label": "Output level",
-          "value": "high level 5V",
-          "status": "",
-          "source": "high level 5V"
+          "source": "5V DC",
+          "citations": [
+            "dwa11"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "– 40 C ~ 80 C",
           "status": "",
-          "source": "– 40 C ~ 80 C"
+          "source": "– 40 C ~ 80 C",
+          "citations": [
+            "dwa11"
+          ]
         },
         {
           "label": "Power consumption",
           "value": "",
           "status": "unclear",
-          "source": "250MW"
+          "source": "250MW",
+          "citations": [
+            "dwa11"
+          ]
         },
         {
           "label": "Response time",
           "value": "",
           "status": "unclear",
-          "source": "150 S 3"
+          "source": "150 S 3",
+          "citations": [
+            "dwa11"
+          ]
+        },
+        {
+          "label": "Output high level",
+          "value": "5 V",
+          "status": "",
+          "source": "5 V",
+          "citations": [
+            "dwa11"
+          ],
+          "verification_id": "dwa11-model-output:0"
+        },
+        {
+          "label": "Output low level",
+          "value": "0 V",
+          "status": "",
+          "source": "0 V",
+          "citations": [
+            "dwa11"
+          ],
+          "verification_id": "dwa11-model-output:1"
         }
       ],
       "checks": [
@@ -695,7 +945,10 @@
         "State quantity, destination and required documentation in the enquiry."
       ],
       "links": [],
-      "designation": ""
+      "designation": "CNPS-DW-A11",
+      "designation_citations": [
+        "dwa11"
+      ]
     },
     "101": {
       "slug": "cnps-flm-flow-out-sensorpaddle-type",
@@ -740,40 +993,60 @@
           "label": "Supply voltage",
           "value": "15~36VDC",
           "status": "",
-          "source": "15~36VDC"
+          "source": "15~36VDC",
+          "citations": [
+            "mhp"
+          ]
         },
         {
           "label": "Measurement range",
           "value": "",
           "status": "conflict",
-          "source": "0-2.5bar"
+          "source": "0-2.5bar",
+          "citations": [
+            "mhp"
+          ]
         },
         {
           "label": "Stability",
           "value": "±0.5% FSO/year",
           "status": "",
-          "source": "±0.5% FSO/year"
-        },
-        {
-          "label": "Operating temperature range",
-          "value": "",
-          "status": "conflict",
-          "source": "-40~+85℃"
+          "source": "±0.5% FSO/year",
+          "citations": [
+            "mhp"
+          ]
         },
         {
           "label": "Temperature effect",
           "value": "≤±0.015%FS/℃",
           "status": "",
-          "source": "≤±0.015%FS/℃"
+          "source": "≤±0.015%FS/℃",
+          "citations": [
+            "mhp"
+          ]
+        },
+        {
+          "label": "Operating temperature — technical-data rating",
+          "value": "-40~+85℃",
+          "status": "",
+          "source": "-40~+85℃",
+          "citations": [
+            "mhp"
+          ],
+          "verification_id": "mhp-rated-temperature:0"
         }
       ],
       "checks": [
         "Match the exact model or component designation to the supplied drawings and documents.",
         "Confirm installation, connections and compatibility with the receiving equipment.",
-        "State quantity, destination and required documentation in the enquiry."
+        "State quantity, destination and required documentation in the enquiry.",
+        "The pressure range remains unconfirmed: the supplier title says 15,000 psi while its technical data says 0–2.5 bar. The ceramic-material temperature discussion does not establish a different sensor operating rating."
       ],
       "links": [],
-      "designation": ""
+      "designation": "CNPS-MHP",
+      "designation_citations": [
+        "mhp"
+      ]
     },
     "103": {
       "slug": "cnps-ml-b11-mud-density-sensor",
@@ -785,31 +1058,66 @@
           "label": "Supply notation in source",
           "value": "+17V ～ 42V DC",
           "status": "",
-          "source": "+17V ～ 42V DC"
+          "source": "+17V ～ 42V DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Measurement range",
           "value": "0.96 ～ 2.76g/cm3",
           "status": "",
-          "source": "0.96 ～ 2.76g/cm3"
+          "source": "0.96 ～ 2.76g/cm3",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Output signal",
           "value": "4～20mA DC",
           "status": "",
-          "source": "4～20mA DC"
+          "source": "4～20mA DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Source accuracy",
           "value": "±0.5％FS",
           "status": "",
-          "source": "±0.5％FS"
+          "source": "±0.5％FS",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-40℃ ～ +85℃",
           "status": "",
-          "source": "-40℃ ～ +85℃"
+          "source": "-40℃ ～ +85℃",
+          "citations": [
+            "mlb11"
+          ]
+        },
+        {
+          "label": "Diaphragm spacing — outlet version",
+          "value": "45 cm",
+          "status": "",
+          "source": "45 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:0"
+        },
+        {
+          "label": "Diaphragm spacing — inlet version",
+          "value": "60 cm",
+          "status": "",
+          "source": "60 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:1"
         }
       ],
       "checks": [
@@ -830,31 +1138,66 @@
           "label": "源资料供电写法",
           "value": "+17V ～ 42V DC",
           "status": "",
-          "source": "+17V ～ 42V DC"
+          "source": "+17V ～ 42V DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "测量范围",
           "value": "0.96 ～ 2.76g/cm3",
           "status": "",
-          "source": "0.96 ～ 2.76g/cm3"
+          "source": "0.96 ～ 2.76g/cm3",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "输出信号",
           "value": "4～20mA DC",
           "status": "",
-          "source": "4～20mA DC"
+          "source": "4～20mA DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "源资料精度",
           "value": "±0.5％FS",
           "status": "",
-          "source": "±0.5％FS"
+          "source": "±0.5％FS",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "工作温度",
           "value": "-40℃ ～ +85℃",
           "status": "",
-          "source": "-40℃ ～ +85℃"
+          "source": "-40℃ ～ +85℃",
+          "citations": [
+            "mlb11"
+          ]
+        },
+        {
+          "label": "膜片间距（出口版本）",
+          "value": "45 cm",
+          "status": "",
+          "source": "45 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:0"
+        },
+        {
+          "label": "膜片间距（入口版本）",
+          "value": "60 cm",
+          "status": "",
+          "source": "60 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:1"
         }
       ],
       "checks": [
@@ -875,31 +1218,66 @@
           "label": "Alimentación según la fuente",
           "value": "+17V ～ 42V DC",
           "status": "",
-          "source": "+17V ～ 42V DC"
+          "source": "+17V ～ 42V DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Rango de medición",
           "value": "0.96 ～ 2.76g/cm3",
           "status": "",
-          "source": "0.96 ～ 2.76g/cm3"
+          "source": "0.96 ～ 2.76g/cm3",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Señal de salida",
           "value": "4～20mA DC",
           "status": "",
-          "source": "4～20mA DC"
+          "source": "4～20mA DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Exactitud indicada en la fuente",
           "value": "±0.5％FS",
           "status": "",
-          "source": "±0.5％FS"
+          "source": "±0.5％FS",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Temperatura de operación",
           "value": "-40℃ ～ +85℃",
           "status": "",
-          "source": "-40℃ ～ +85℃"
+          "source": "-40℃ ～ +85℃",
+          "citations": [
+            "mlb11"
+          ]
+        },
+        {
+          "label": "Separación de membranas — salida",
+          "value": "45 cm",
+          "status": "",
+          "source": "45 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:0"
+        },
+        {
+          "label": "Separación de membranas — entrada",
+          "value": "60 cm",
+          "status": "",
+          "source": "60 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:1"
         }
       ],
       "checks": [
@@ -920,31 +1298,66 @@
           "label": "Питание по исходной записи",
           "value": "+17V ～ 42V DC",
           "status": "",
-          "source": "+17V ～ 42V DC"
+          "source": "+17V ～ 42V DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Диапазон измерения",
           "value": "0.96 ～ 2.76g/cm3",
           "status": "",
-          "source": "0.96 ～ 2.76g/cm3"
+          "source": "0.96 ～ 2.76g/cm3",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Выходной сигнал",
           "value": "4～20mA DC",
           "status": "",
-          "source": "4～20mA DC"
+          "source": "4～20mA DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Точность по источнику",
           "value": "±0.5％FS",
           "status": "",
-          "source": "±0.5％FS"
+          "source": "±0.5％FS",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Рабочая температура",
           "value": "-40℃ ～ +85℃",
           "status": "",
-          "source": "-40℃ ～ +85℃"
+          "source": "-40℃ ～ +85℃",
+          "citations": [
+            "mlb11"
+          ]
+        },
+        {
+          "label": "Расстояние между мембранами — выход",
+          "value": "45 cm",
+          "status": "",
+          "source": "45 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:0"
+        },
+        {
+          "label": "Расстояние между мембранами — вход",
+          "value": "60 cm",
+          "status": "",
+          "source": "60 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:1"
         }
       ],
       "checks": [
@@ -965,31 +1378,66 @@
           "label": "التغذية كما وردت في المصدر",
           "value": "+17V ～ 42V DC",
           "status": "",
-          "source": "+17V ～ 42V DC"
+          "source": "+17V ～ 42V DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "نطاق القياس",
           "value": "0.96 ～ 2.76g/cm3",
           "status": "",
-          "source": "0.96 ～ 2.76g/cm3"
+          "source": "0.96 ～ 2.76g/cm3",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "إشارة الخرج",
           "value": "4～20mA DC",
           "status": "",
-          "source": "4～20mA DC"
+          "source": "4～20mA DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "الدقة المذكورة في المصدر",
           "value": "±0.5％FS",
           "status": "",
-          "source": "±0.5％FS"
+          "source": "±0.5％FS",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "درجة حرارة التشغيل",
           "value": "-40℃ ～ +85℃",
           "status": "",
-          "source": "-40℃ ～ +85℃"
+          "source": "-40℃ ～ +85℃",
+          "citations": [
+            "mlb11"
+          ]
+        },
+        {
+          "label": "تباعد الأغشية — نسخة المخرج",
+          "value": "45 cm",
+          "status": "",
+          "source": "45 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:0"
+        },
+        {
+          "label": "تباعد الأغشية — نسخة المدخل",
+          "value": "60 cm",
+          "status": "",
+          "source": "60 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:1"
         }
       ],
       "checks": [
@@ -1010,31 +1458,66 @@
           "label": "Alimentation selon la source",
           "value": "+17V ～ 42V DC",
           "status": "",
-          "source": "+17V ～ 42V DC"
+          "source": "+17V ～ 42V DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Plage de mesure",
           "value": "0.96 ～ 2.76g/cm3",
           "status": "",
-          "source": "0.96 ～ 2.76g/cm3"
+          "source": "0.96 ～ 2.76g/cm3",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Signal de sortie",
           "value": "4～20mA DC",
           "status": "",
-          "source": "4～20mA DC"
+          "source": "4～20mA DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Précision indiquée par la source",
           "value": "±0.5％FS",
           "status": "",
-          "source": "±0.5％FS"
+          "source": "±0.5％FS",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Température de fonctionnement",
           "value": "-40℃ ～ +85℃",
           "status": "",
-          "source": "-40℃ ～ +85℃"
+          "source": "-40℃ ～ +85℃",
+          "citations": [
+            "mlb11"
+          ]
+        },
+        {
+          "label": "Écartement des membranes — sortie",
+          "value": "45 cm",
+          "status": "",
+          "source": "45 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:0"
+        },
+        {
+          "label": "Écartement des membranes — entrée",
+          "value": "60 cm",
+          "status": "",
+          "source": "60 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:1"
         }
       ],
       "checks": [
@@ -1055,31 +1538,66 @@
           "label": "Versorgungsangabe der Quelle",
           "value": "+17V ～ 42V DC",
           "status": "",
-          "source": "+17V ～ 42V DC"
+          "source": "+17V ～ 42V DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Messbereich",
           "value": "0.96 ～ 2.76g/cm3",
           "status": "",
-          "source": "0.96 ～ 2.76g/cm3"
+          "source": "0.96 ～ 2.76g/cm3",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Ausgangssignal",
           "value": "4～20mA DC",
           "status": "",
-          "source": "4～20mA DC"
+          "source": "4～20mA DC",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Genauigkeit laut Quelle",
           "value": "±0.5％FS",
           "status": "",
-          "source": "±0.5％FS"
+          "source": "±0.5％FS",
+          "citations": [
+            "mlb11"
+          ]
         },
         {
           "label": "Betriebstemperatur",
           "value": "-40℃ ～ +85℃",
           "status": "",
-          "source": "-40℃ ～ +85℃"
+          "source": "-40℃ ～ +85℃",
+          "citations": [
+            "mlb11"
+          ]
+        },
+        {
+          "label": "Membranabstand — Auslaufversion",
+          "value": "45 cm",
+          "status": "",
+          "source": "45 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:0"
+        },
+        {
+          "label": "Membranabstand — Einlaufversion",
+          "value": "60 cm",
+          "status": "",
+          "source": "60 cm",
+          "citations": [
+            "mlb11"
+          ],
+          "verification_id": "mlb11-installation-variants:1"
         }
       ],
       "checks": [
@@ -1834,25 +2352,58 @@
           "label": "Power",
           "value": "370W",
           "status": "",
-          "source": "370W"
+          "source": "370W",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Rotational speed",
           "value": "1390r / min",
           "status": "",
-          "source": "1390r / min"
-        },
-        {
-          "label": "Supply notation in source",
-          "value": "",
-          "status": "conflict",
-          "source": "380V"
+          "source": "1390r / min",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Frequency",
           "value": "50 Hz",
           "status": "",
-          "source": "50 Hz"
+          "source": "50 Hz",
+          "citations": [
+            "cldt"
+          ]
+        },
+        {
+          "label": "Motor voltage — CL-DT11",
+          "value": "220 V",
+          "status": "",
+          "source": "220 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:0"
+        },
+        {
+          "label": "Motor voltage — CL-DT12",
+          "value": "380 V",
+          "status": "",
+          "source": "380 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:1"
+        },
+        {
+          "label": "Supplied motor version",
+          "value": "",
+          "status": "pending",
+          "source": "",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:2"
         }
       ],
       "checks": [
@@ -1861,7 +2412,10 @@
         "State quantity, destination and required documentation in the enquiry."
       ],
       "links": [],
-      "designation": "CL-DT11"
+      "designation": "CL-DT11 / CL-DT12",
+      "designation_citations": [
+        "cldt"
+      ]
     },
     "129": {
       "slug": "mud-logging-ex-proof-degasser-zh",
@@ -1873,25 +2427,58 @@
           "label": "功率",
           "value": "370W",
           "status": "",
-          "source": "370W"
+          "source": "370W",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "转速",
           "value": "1390r / min",
           "status": "",
-          "source": "1390r / min"
-        },
-        {
-          "label": "源资料供电写法",
-          "value": "",
-          "status": "conflict",
-          "source": "380V"
+          "source": "1390r / min",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "频率",
           "value": "50 Hz",
           "status": "",
-          "source": "50 Hz"
+          "source": "50 Hz",
+          "citations": [
+            "cldt"
+          ]
+        },
+        {
+          "label": "电机电压（CL-DT11）",
+          "value": "220 V",
+          "status": "",
+          "source": "220 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:0"
+        },
+        {
+          "label": "电机电压（CL-DT12）",
+          "value": "380 V",
+          "status": "",
+          "source": "380 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:1"
+        },
+        {
+          "label": "具体供货电机版本",
+          "value": "",
+          "status": "pending",
+          "source": "",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:2"
         }
       ],
       "checks": [
@@ -1900,7 +2487,10 @@
         "询价时说明数量、目的地和所需文件。"
       ],
       "links": [],
-      "designation": "CL-DT11"
+      "designation": "CL-DT11 / CL-DT12",
+      "designation_citations": [
+        "cldt"
+      ]
     },
     "130": {
       "slug": "mud-logging-ex-proof-degasser-es",
@@ -1912,25 +2502,58 @@
           "label": "Potencia",
           "value": "370W",
           "status": "",
-          "source": "370W"
+          "source": "370W",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Velocidad de rotación",
           "value": "1390r / min",
           "status": "",
-          "source": "1390r / min"
-        },
-        {
-          "label": "Alimentación según la fuente",
-          "value": "",
-          "status": "conflict",
-          "source": "380V"
+          "source": "1390r / min",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Frecuencia",
           "value": "50 Hz",
           "status": "",
-          "source": "50 Hz"
+          "source": "50 Hz",
+          "citations": [
+            "cldt"
+          ]
+        },
+        {
+          "label": "Tensión del motor — CL-DT11",
+          "value": "220 V",
+          "status": "",
+          "source": "220 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:0"
+        },
+        {
+          "label": "Tensión del motor — CL-DT12",
+          "value": "380 V",
+          "status": "",
+          "source": "380 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:1"
+        },
+        {
+          "label": "Versión del motor suministrado",
+          "value": "",
+          "status": "pending",
+          "source": "",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:2"
         }
       ],
       "checks": [
@@ -1939,7 +2562,10 @@
         "Indique cantidad, destino y documentación requerida en la consulta."
       ],
       "links": [],
-      "designation": "CL-DT11"
+      "designation": "CL-DT11 / CL-DT12",
+      "designation_citations": [
+        "cldt"
+      ]
     },
     "131": {
       "slug": "mud-logging-ex-proof-degasser-ru",
@@ -1951,25 +2577,58 @@
           "label": "Мощность",
           "value": "370W",
           "status": "",
-          "source": "370W"
+          "source": "370W",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Частота вращения",
           "value": "1390r / min",
           "status": "",
-          "source": "1390r / min"
-        },
-        {
-          "label": "Питание по исходной записи",
-          "value": "",
-          "status": "conflict",
-          "source": "380V"
+          "source": "1390r / min",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Частота",
           "value": "50 Hz",
           "status": "",
-          "source": "50 Hz"
+          "source": "50 Hz",
+          "citations": [
+            "cldt"
+          ]
+        },
+        {
+          "label": "Напряжение двигателя — CL-DT11",
+          "value": "220 V",
+          "status": "",
+          "source": "220 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:0"
+        },
+        {
+          "label": "Напряжение двигателя — CL-DT12",
+          "value": "380 V",
+          "status": "",
+          "source": "380 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:1"
+        },
+        {
+          "label": "Исполнение поставляемого двигателя",
+          "value": "",
+          "status": "pending",
+          "source": "",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:2"
         }
       ],
       "checks": [
@@ -1978,7 +2637,10 @@
         "Укажите количество, место назначения и необходимые документы в запросе."
       ],
       "links": [],
-      "designation": "CL-DT11"
+      "designation": "CL-DT11 / CL-DT12",
+      "designation_citations": [
+        "cldt"
+      ]
     },
     "132": {
       "slug": "mud-logging-ex-proof-degasser-ar",
@@ -1990,25 +2652,58 @@
           "label": "القدرة",
           "value": "370W",
           "status": "",
-          "source": "370W"
+          "source": "370W",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "سرعة الدوران",
           "value": "1390r / min",
           "status": "",
-          "source": "1390r / min"
-        },
-        {
-          "label": "التغذية كما وردت في المصدر",
-          "value": "",
-          "status": "conflict",
-          "source": "380V"
+          "source": "1390r / min",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "التردد",
           "value": "50 Hz",
           "status": "",
-          "source": "50 Hz"
+          "source": "50 Hz",
+          "citations": [
+            "cldt"
+          ]
+        },
+        {
+          "label": "جهد المحرك — CL-DT11",
+          "value": "220 V",
+          "status": "",
+          "source": "220 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:0"
+        },
+        {
+          "label": "جهد المحرك — CL-DT12",
+          "value": "380 V",
+          "status": "",
+          "source": "380 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:1"
+        },
+        {
+          "label": "نسخة المحرك المورّدة",
+          "value": "",
+          "status": "pending",
+          "source": "",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:2"
         }
       ],
       "checks": [
@@ -2017,7 +2712,10 @@
         "اذكر الكمية والوجهة والوثائق المطلوبة في الاستفسار."
       ],
       "links": [],
-      "designation": "CL-DT11"
+      "designation": "CL-DT11 / CL-DT12",
+      "designation_citations": [
+        "cldt"
+      ]
     },
     "133": {
       "slug": "mud-logging-ex-proof-degasser-fr",
@@ -2029,25 +2727,58 @@
           "label": "Puissance",
           "value": "370W",
           "status": "",
-          "source": "370W"
+          "source": "370W",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Vitesse de rotation",
           "value": "1390r / min",
           "status": "",
-          "source": "1390r / min"
-        },
-        {
-          "label": "Alimentation selon la source",
-          "value": "",
-          "status": "conflict",
-          "source": "380V"
+          "source": "1390r / min",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Fréquence",
           "value": "50 Hz",
           "status": "",
-          "source": "50 Hz"
+          "source": "50 Hz",
+          "citations": [
+            "cldt"
+          ]
+        },
+        {
+          "label": "Tension du moteur — CL-DT11",
+          "value": "220 V",
+          "status": "",
+          "source": "220 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:0"
+        },
+        {
+          "label": "Tension du moteur — CL-DT12",
+          "value": "380 V",
+          "status": "",
+          "source": "380 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:1"
+        },
+        {
+          "label": "Version du moteur fourni",
+          "value": "",
+          "status": "pending",
+          "source": "",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:2"
         }
       ],
       "checks": [
@@ -2056,7 +2787,10 @@
         "Précisez la quantité, la destination et les documents requis dans la demande."
       ],
       "links": [],
-      "designation": "CL-DT11"
+      "designation": "CL-DT11 / CL-DT12",
+      "designation_citations": [
+        "cldt"
+      ]
     },
     "134": {
       "slug": "mud-logging-ex-proof-degasser-de",
@@ -2068,25 +2802,58 @@
           "label": "Leistung",
           "value": "370W",
           "status": "",
-          "source": "370W"
+          "source": "370W",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Drehzahl",
           "value": "1390r / min",
           "status": "",
-          "source": "1390r / min"
-        },
-        {
-          "label": "Versorgungsangabe der Quelle",
-          "value": "",
-          "status": "conflict",
-          "source": "380V"
+          "source": "1390r / min",
+          "citations": [
+            "cldt"
+          ]
         },
         {
           "label": "Frequenz",
           "value": "50 Hz",
           "status": "",
-          "source": "50 Hz"
+          "source": "50 Hz",
+          "citations": [
+            "cldt"
+          ]
+        },
+        {
+          "label": "Motorspannung — CL-DT11",
+          "value": "220 V",
+          "status": "",
+          "source": "220 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:0"
+        },
+        {
+          "label": "Motorspannung — CL-DT12",
+          "value": "380 V",
+          "status": "",
+          "source": "380 V",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:1"
+        },
+        {
+          "label": "Gelieferte Motorausführung",
+          "value": "",
+          "status": "pending",
+          "source": "",
+          "citations": [
+            "cldt"
+          ],
+          "verification_id": "cldt-motor-variants:2"
         }
       ],
       "checks": [
@@ -2095,7 +2862,10 @@
         "Geben Sie Menge, Zielort und benötigte Unterlagen in der Anfrage an."
       ],
       "links": [],
-      "designation": "CL-DT11"
+      "designation": "CL-DT11 / CL-DT12",
+      "designation_citations": [
+        "cldt"
+      ]
     },
     "135": {
       "slug": "mud-logging-explosion-proof-monitor",
@@ -3778,43 +4548,63 @@
           "label": "Supply voltage",
           "value": "3.3VDC",
           "status": "",
-          "source": "3.3VDC"
+          "source": "3.3VDC",
+          "citations": [
+            "transmission"
+          ]
         },
         {
           "label": "Output",
           "value": "0.5~2.5vdc voltage signal",
           "status": "",
-          "source": "0.5~2.5vdc voltage signal"
-        },
-        {
-          "label": "Measurement range",
-          "value": "4-20mA",
-          "status": "",
-          "source": "4-20mA"
+          "source": "0.5~2.5vdc voltage signal",
+          "citations": [
+            "transmission"
+          ]
         },
         {
           "label": "Accuracy",
           "value": "≤1%F.S",
           "status": "",
-          "source": "≤1%F.S"
+          "source": "≤1%F.S",
+          "citations": [
+            "transmission"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-40~70°C",
           "status": "",
-          "source": "-40~70°C"
+          "source": "-40~70°C",
+          "citations": [
+            "transmission"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "IP67"
+          "source": "IP67",
+          "citations": [
+            "transmission"
+          ]
+        },
+        {
+          "label": "Current signal input",
+          "value": "4-20mA",
+          "status": "",
+          "source": "4-20mA",
+          "citations": [
+            "transmission"
+          ],
+          "verification_id": "transmission-input:0"
         }
       ],
       "checks": [
         "Match the exact model or component designation to the supplied drawings and documents.",
         "Confirm installation, connections and compatibility with the receiving equipment.",
-        "State quantity, destination and required documentation in the enquiry."
+        "State quantity, destination and required documentation in the enquiry.",
+        "The connected 4–20 mA sensor requires its own power supply; this transmission box does not supply sensor power."
       ],
       "links": [],
       "designation": ""
@@ -4102,31 +4892,46 @@
           "label": "Supply voltage",
           "value": "3.3VDC",
           "status": "",
-          "source": "3.3VDC"
+          "source": "3.3VDC",
+          "citations": [
+            "hook"
+          ]
         },
         {
           "label": "Output",
           "value": "0.5~2.5VDC voltage signal",
           "status": "",
-          "source": "0.5~2.5VDC voltage signal"
+          "source": "0.5~2.5VDC voltage signal",
+          "citations": [
+            "hook"
+          ]
         },
         {
           "label": "Measurement range",
           "value": "0-5MPa",
           "status": "",
-          "source": "0-5MPa"
+          "source": "0-5MPa",
+          "citations": [
+            "hook"
+          ]
         },
         {
           "label": "Accuracy",
           "value": "",
           "status": "unclear",
-          "source": "≤1 F·S"
+          "source": "≤1 F·S",
+          "citations": [
+            "hook"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "",
           "status": "unclear",
-          "source": "-40~"
+          "source": "-40~",
+          "citations": [
+            "hook"
+          ]
         }
       ],
       "checks": [
@@ -4147,31 +4952,47 @@
           "label": "Supply voltage",
           "value": "3.5-5VDC",
           "status": "",
-          "source": "3.5-5VDC"
+          "source": "3.5-5VDC",
+          "citations": [
+            "h2s"
+          ]
         },
         {
           "label": "Zero offset (-40°C - +50°C)",
           "value": "< ±0.4 ppm",
           "status": "",
-          "source": "< ±0.4 ppm"
+          "source": "< ±0.4 ppm",
+          "citations": [
+            "h2s"
+          ]
         },
         {
           "label": "Temperature range",
           "value": "-20°c -- +40°c",
           "status": "",
-          "source": "-20°c -- +40°c"
-        },
-        {
-          "label": "Detection range",
-          "value": "0-100ppm T90",
-          "status": "",
-          "source": "0-100ppm T90"
+          "source": "-20°c -- +40°c",
+          "citations": [
+            "h2s"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "IP67"
+          "source": "IP67",
+          "citations": [
+            "h2s"
+          ]
+        },
+        {
+          "label": "Detection range",
+          "value": "",
+          "status": "unclear",
+          "source": "0-100ppm T90",
+          "citations": [
+            "h2s"
+          ],
+          "verification_id": "h2s-ambiguous-range:0"
         }
       ],
       "checks": [
@@ -4966,37 +5787,55 @@
           "label": "Temperature range",
           "value": "",
           "status": "unclear",
-          "source": "0-100, 120 ° C"
+          "source": "0-100, 120 ° C",
+          "citations": [
+            "temperature"
+          ]
         },
         {
           "label": "Resolution",
           "value": "0.1 ° C",
           "status": "",
-          "source": "0.1 ° C"
+          "source": "0.1 ° C",
+          "citations": [
+            "temperature"
+          ]
         },
         {
           "label": "Measurement accuracy",
           "value": "±1%",
           "status": "",
-          "source": "±1%"
+          "source": "±1%",
+          "citations": [
+            "temperature"
+          ]
         },
         {
           "label": "Output",
           "value": "0.5~2.5VDC voltage",
           "status": "",
-          "source": "0.5~2.5VDC voltage"
+          "source": "0.5~2.5VDC voltage",
+          "citations": [
+            "temperature"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-20~70°C",
           "status": "",
-          "source": "-20~70°C"
+          "source": "-20~70°C",
+          "citations": [
+            "temperature"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "IP67"
+          "source": "IP67",
+          "citations": [
+            "temperature"
+          ]
         }
       ],
       "checks": [
@@ -5164,55 +6003,123 @@
           "label": "Measurement principle",
           "value": "non-contact ultrasonic.",
           "status": "",
-          "source": "non-contact ultrasonic."
+          "source": "non-contact ultrasonic.",
+          "citations": [
+            "lu240"
+          ]
         },
         {
           "label": "Ranges",
           "value": "0.2-3 m, 0.2-6 m or 0.2-12 m, depending on the selected version.",
           "status": "",
-          "source": "0.2-3 m, 0.2-6 m or 0.2-12 m, depending on the selected version."
+          "source": "0.2-3 m, 0.2-6 m or 0.2-12 m, depending on the selected version.",
+          "citations": [
+            "lu240"
+          ]
         },
         {
           "label": "Operating frequency",
           "value": "54 kHz.",
           "status": "",
-          "source": "54 kHz."
+          "source": "54 kHz.",
+          "citations": [
+            "lu240"
+          ]
         },
         {
           "label": "Output",
           "value": "4-20 mA; HART 7 is available on supported configurations.",
           "status": "",
-          "source": "4-20 mA; HART 7 is available on supported configurations."
+          "source": "4-20 mA; HART 7 is available on supported configurations.",
+          "citations": [
+            "lu240"
+          ]
         },
         {
           "label": "Resolution",
           "value": "≤3 mm. Non-repeatability: ≤3 mm.",
           "status": "",
-          "source": "≤3 mm. Non-repeatability: ≤3 mm."
-        },
-        {
-          "label": "Accuracy, 3 m version",
-          "value": "",
-          "status": "unclear",
-          "source": "10 mm. Accuracy, 6 m and 12 m versions: ±0.15% of range or 6 mm, whichever is greater; ±2 mm at distances of 4 m or less under the stated product conditions."
+          "source": "≤3 mm. Non-repeatability: ≤3 mm.",
+          "citations": [
+            "lu240"
+          ]
         },
         {
           "label": "Blanking distance",
           "value": "0.2 m. Update time: ≤4 seconds. Beam angle: 10°.",
           "status": "",
-          "source": "0.2 m. Update time: ≤4 seconds. Beam angle: 10°."
+          "source": "0.2 m. Update time: ≤4 seconds. Beam angle: 10°.",
+          "citations": [
+            "lu240"
+          ]
         },
         {
           "label": "Power supply",
           "value": "10.5-30 V DC for the 4-20 mA/HART configuration.",
           "status": "",
-          "source": "10.5-30 V DC for the 4-20 mA/HART configuration."
+          "source": "10.5-30 V DC for the 4-20 mA/HART configuration.",
+          "citations": [
+            "lu240"
+          ]
         },
         {
           "label": "Ambient operating temperature",
           "value": "-40 to 80 °C. Process connection temperature: -40 to 85 °C.",
           "status": "",
-          "source": "-40 to 80 °C. Process connection temperature: -40 to 85 °C."
+          "source": "-40 to 80 °C. Process connection temperature: -40 to 85 °C.",
+          "citations": [
+            "lu240"
+          ]
+        },
+        {
+          "label": "Accuracy — 3 m version",
+          "value": "±10 mm",
+          "status": "",
+          "source": "±10 mm",
+          "citations": [
+            "lu240"
+          ],
+          "verification_id": "lu240-version-accuracy:0"
+        },
+        {
+          "label": "Accuracy — 6 m and 12 m versions",
+          "value": "± the greater of 0.15% of range or 6 mm; valid from 0.25 m",
+          "status": "",
+          "source": "± the greater of 0.15% of range or 6 mm; valid from 0.25 m",
+          "citations": [
+            "lu240"
+          ],
+          "verification_id": "lu240-version-accuracy:1"
+        },
+        {
+          "label": "Accuracy — ranges of 4 m or less (6 m / 12 m versions)",
+          "value": "±2 mm",
+          "status": "",
+          "source": "±2 mm",
+          "citations": [
+            "lu240"
+          ],
+          "verification_id": "lu240-version-accuracy:2"
+        },
+        {
+          "label": "Accuracy reference conditions",
+          "value": "+15 to +25 °C; 45–75% RH; 860–1060 mbar",
+          "status": "",
+          "source": "+15 to +25 °C; 45–75% RH; 860–1060 mbar",
+          "citations": [
+            "lu240"
+          ],
+          "verification_id": "lu240-version-accuracy:3"
+        },
+        {
+          "label": "Supplied range version",
+          "value": "",
+          "status": "pending",
+          "source": "",
+          "citations": [
+            "lu240"
+          ],
+          "verification_id": "lu240-version-accuracy:4"
         }
       ],
       "checks": [
@@ -5221,7 +6128,10 @@
         "State quantity, destination and required documentation in the enquiry."
       ],
       "links": [],
-      "designation": ""
+      "designation": "SITRANS Probe LU240",
+      "designation_citations": [
+        "lu240"
+      ]
     },
     "210": {
       "slug": "cl-ll11-paddle-flow-out-sensor",
@@ -13375,79 +14285,118 @@
           "label": "Radar frequency",
           "value": "80 GHz.",
           "status": "",
-          "source": "80 GHz."
+          "source": "80 GHz.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Measurement range",
           "value": "60 m.",
           "status": "",
-          "source": "60 m."
+          "source": "60 m.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Measurement accuracy",
           "value": "±1 mm.",
           "status": "",
-          "source": "±1 mm."
+          "source": "±1 mm.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Beam angle",
           "value": "≥3°.",
           "status": "",
-          "source": "≥3°."
+          "source": "≥3°.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Process temperature",
           "value": "-40～150 ℃ (manual also lists -40～220 ℃ option).",
           "status": "",
-          "source": "-40～150 ℃ (manual also lists -40～220 ℃ option)."
+          "source": "-40～150 ℃ (manual also lists -40～220 ℃ option).",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Process pressure",
           "value": "–0.1 – 3.0 MPa.",
           "status": "",
-          "source": "–0.1 – 3.0 MPa."
+          "source": "–0.1 – 3.0 MPa.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Process connection",
           "value": "G 1 1/2'' A thread (manual also lists flange/bracket options).",
           "status": "",
-          "source": "G 1 1/2'' A thread (manual also lists flange/bracket options)."
+          "source": "G 1 1/2'' A thread (manual also lists flange/bracket options).",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Output (configured)",
           "value": "two-wire 4—20mA+Hart.",
           "status": "",
-          "source": "two-wire 4—20mA+Hart."
+          "source": "two-wire 4—20mA+Hart.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Power (two-wire)",
           "value": "12~30V DC.",
           "status": "",
-          "source": "12~30V DC."
+          "source": "12~30V DC.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "Aluminum alloy / IP66/68 (0.2 bar)."
+          "source": "Aluminum alloy / IP66/68 (0.2 bar).",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Cable entry",
           "value": "M20×1.5.",
           "status": "",
-          "source": "M20×1.5."
+          "source": "M20×1.5.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Lens size",
           "value": "38 mm.",
           "status": "",
-          "source": "38 mm."
+          "source": "38 mm.",
+          "citations": [
+            "company-reference-1670"
+          ]
         },
         {
           "label": "Bluetooth",
           "value": "Bluetooth® v5.4 supported (manual).",
           "status": "",
-          "source": "Bluetooth® v5.4 supported (manual)."
+          "source": "Bluetooth® v5.4 supported (manual).",
+          "citations": [
+            "company-reference-1670"
+          ]
         }
       ],
       "checks": [
@@ -13470,43 +14419,64 @@
           "label": "Measurement range",
           "value": "1.00～3.00 g/cm³.",
           "status": "",
-          "source": "1.00～3.00 g/cm³."
+          "source": "1.00～3.00 g/cm³.",
+          "citations": [
+            "company-reference-1671"
+          ]
         },
         {
           "label": "Minimum sample mass",
           "value": "0.05 g.",
           "status": "",
-          "source": "0.05 g."
+          "source": "0.05 g.",
+          "citations": [
+            "company-reference-1671"
+          ]
         },
         {
           "label": "Resolution / sensitivity",
           "value": "0.03 g/cm³.",
           "status": "",
-          "source": "0.03 g/cm³."
+          "source": "0.03 g/cm³.",
+          "citations": [
+            "company-reference-1671"
+          ]
         },
         {
           "label": "Overall dimensions",
           "value": "Approx. Ø130 × 380 mm (confirm against supplied unit).",
           "status": "",
-          "source": "Approx. Ø130 × 380 mm (confirm against supplied unit)."
+          "source": "Approx. Ø130 × 380 mm (confirm against supplied unit).",
+          "citations": [
+            "company-reference-1671"
+          ]
         },
         {
           "label": "Measurement method",
           "value": "Two-reading hydrostatic weighing in clean fresh water.",
           "status": "",
-          "source": "Two-reading hydrostatic weighing in clean fresh water."
+          "source": "Two-reading hydrostatic weighing in clean fresh water.",
+          "citations": [
+            "company-reference-1671"
+          ]
         },
         {
           "label": "Power requirement",
           "value": "None; manual instrument.",
           "status": "",
-          "source": "None; manual instrument."
+          "source": "None; manual instrument.",
+          "citations": [
+            "company-reference-1671"
+          ]
         },
         {
           "label": "Primary application",
           "value": "Wellsite shale/mudstone cuttings density trending.",
           "status": "",
-          "source": "Wellsite shale/mudstone cuttings density trending."
+          "source": "Wellsite shale/mudstone cuttings density trending.",
+          "citations": [
+            "company-reference-1671"
+          ]
         }
       ],
       "checks": [
@@ -13587,43 +14557,64 @@
           "label": "Detection range",
           "value": "0～100 ppm.",
           "status": "",
-          "source": "0～100 ppm."
+          "source": "0～100 ppm.",
+          "citations": [
+            "company-reference-1673"
+          ]
         },
         {
           "label": "Supply voltage",
           "value": "3.5～5 VDC.",
           "status": "",
-          "source": "3.5～5 VDC."
+          "source": "3.5～5 VDC.",
+          "citations": [
+            "company-reference-1673"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-20～+40 ℃.",
           "status": "",
-          "source": "-20～+40 ℃."
+          "source": "-20～+40 ℃.",
+          "citations": [
+            "company-reference-1673"
+          ]
         },
         {
           "label": "Zero drift",
           "value": "＜±0.4 ppm（-40～+50 ℃）.",
           "status": "",
-          "source": "＜±0.4 ppm（-40～+50 ℃）."
+          "source": "＜±0.4 ppm（-40～+50 ℃）.",
+          "citations": [
+            "company-reference-1673"
+          ]
         },
         {
           "label": "Repeatability / linearity",
           "value": "＜±5%.",
           "status": "",
-          "source": "＜±5%."
+          "source": "＜±5%.",
+          "citations": [
+            "company-reference-1673"
+          ]
         },
         {
           "label": "Response time",
           "value": "T90 20 s（20 ℃）.",
           "status": "",
-          "source": "T90 20 s（20 ℃）."
+          "source": "T90 20 s（20 ℃）.",
+          "citations": [
+            "company-reference-1673"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "IP67."
+          "source": "IP67.",
+          "citations": [
+            "company-reference-1673"
+          ]
         }
       ],
       "checks": [
@@ -13646,49 +14637,73 @@
           "label": "Supply voltage",
           "value": "3.5～5 VDC.",
           "status": "",
-          "source": "3.5～5 VDC."
+          "source": "3.5～5 VDC.",
+          "citations": [
+            "company-reference-1674"
+          ]
         },
         {
           "label": "Output signal",
           "value": "Dual A/B pulses with phase difference.",
           "status": "",
-          "source": "Dual A/B pulses with phase difference."
+          "source": "Dual A/B pulses with phase difference.",
+          "citations": [
+            "company-reference-1674"
+          ]
         },
         {
           "label": "Encoder teeth",
           "value": "48 teeth/rev.",
           "status": "",
-          "source": "48 teeth/rev."
+          "source": "48 teeth/rev.",
+          "citations": [
+            "company-reference-1674"
+          ]
         },
         {
           "label": "Max speed",
           "value": "≤3000 r/min.",
           "status": "",
-          "source": "≤3000 r/min."
+          "source": "≤3000 r/min.",
+          "citations": [
+            "company-reference-1674"
+          ]
         },
         {
           "label": "Accuracy",
           "value": "±1 pulse.",
           "status": "",
-          "source": "±1 pulse."
+          "source": "±1 pulse.",
+          "citations": [
+            "company-reference-1674"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-40～70 ℃.",
           "status": "",
-          "source": "-40～70 ℃."
+          "source": "-40～70 ℃.",
+          "citations": [
+            "company-reference-1674"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "IP67."
+          "source": "IP67.",
+          "citations": [
+            "company-reference-1674"
+          ]
         },
         {
           "label": "Mounting",
           "value": "G3/4-inch thread into drum shaft.",
           "status": "",
-          "source": "G3/4-inch thread into drum shaft."
+          "source": "G3/4-inch thread into drum shaft.",
+          "citations": [
+            "company-reference-1674"
+          ]
         }
       ],
       "checks": [
@@ -13711,43 +14726,64 @@
           "label": "Principle",
           "value": "Piezoresistive.",
           "status": "",
-          "source": "Piezoresistive."
+          "source": "Piezoresistive.",
+          "citations": [
+            "company-reference-1675"
+          ]
         },
         {
           "label": "Range",
           "value": "0～40 MPa.",
           "status": "",
-          "source": "0～40 MPa."
+          "source": "0～40 MPa.",
+          "citations": [
+            "company-reference-1675"
+          ]
         },
         {
           "label": "Output",
           "value": "0.5～2.5 VDC.",
           "status": "",
-          "source": "0.5～2.5 VDC."
+          "source": "0.5～2.5 VDC.",
+          "citations": [
+            "company-reference-1675"
+          ]
         },
         {
           "label": "Power supply",
           "value": "3.5～5 VDC.",
           "status": "",
-          "source": "3.5～5 VDC."
+          "source": "3.5～5 VDC.",
+          "citations": [
+            "company-reference-1675"
+          ]
         },
         {
           "label": "Accuracy",
           "value": "",
           "status": "unclear",
-          "source": "≤1% F·S."
+          "source": "≤1% F·S.",
+          "citations": [
+            "company-reference-1675"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-20～70 ℃.",
           "status": "",
-          "source": "-20～70 ℃."
+          "source": "-20～70 ℃.",
+          "citations": [
+            "company-reference-1675"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "IP67."
+          "source": "IP67.",
+          "citations": [
+            "company-reference-1675"
+          ]
         }
       ],
       "checks": [
@@ -13770,49 +14806,74 @@
           "label": "Measurand",
           "value": "Casing pressure.",
           "status": "",
-          "source": "Casing pressure."
+          "source": "Casing pressure.",
+          "citations": [
+            "iml"
+          ]
         },
         {
           "label": "Range",
           "value": "0～105 MPa.",
           "status": "",
-          "source": "0～105 MPa."
+          "source": "0～105 MPa.",
+          "citations": [
+            "iml"
+          ]
         },
         {
           "label": "Output",
           "value": "4～20 mA (two-wire).",
           "status": "",
-          "source": "4～20 mA (two-wire)."
+          "source": "4～20 mA (two-wire).",
+          "citations": [
+            "iml"
+          ]
         },
         {
           "label": "Power supply",
           "value": "15～36 VDC.",
           "status": "",
-          "source": "15～36 VDC."
-        },
-        {
-          "label": "Linearity & hysteresis",
-          "value": "",
-          "status": "unclear",
-          "source": "≤0.3% F·S（25 ℃）."
+          "source": "15～36 VDC.",
+          "citations": [
+            "iml"
+          ]
         },
         {
           "label": "Yearly stability",
           "value": "±0.5% FSO/year.",
           "status": "",
-          "source": "±0.5% FSO/year."
+          "source": "±0.5% FSO/year.",
+          "citations": [
+            "iml"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-40～85 ℃.",
           "status": "",
-          "source": "-40～85 ℃."
+          "source": "-40～85 ℃.",
+          "citations": [
+            "iml"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "Ex ia IIC T5 / IP65."
+          "source": "Ex ia IIC T5 / IP65.",
+          "citations": [
+            "iml"
+          ]
+        },
+        {
+          "label": "Linearity and hysteresis at 25 °C",
+          "value": "≤0.3% FS",
+          "status": "",
+          "source": "≤0.3% FS",
+          "citations": [
+            "iml"
+          ],
+          "verification_id": "imlp10k-linearity:0"
         }
       ],
       "checks": [
@@ -13823,7 +14884,10 @@
       "links": [
         "https://www.chinamudlogging.com/wp-content/uploads/2026/11/casing-pressure-sensor-manual.pdf"
       ],
-      "designation": "IML-P10K."
+      "designation": "IML-P10K",
+      "designation_citations": [
+        "iml"
+      ]
     },
     "1677": {
       "slug": "pump-stroke-sensor-manual",
@@ -13835,49 +14899,73 @@
           "label": "Measurand",
           "value": "Mud-pump strokes per minute.",
           "status": "",
-          "source": "Mud-pump strokes per minute."
+          "source": "Mud-pump strokes per minute.",
+          "citations": [
+            "company-reference-1677"
+          ]
         },
         {
           "label": "Principle",
           "value": "Hall effect / proximity.",
           "status": "",
-          "source": "Hall effect / proximity."
+          "source": "Hall effect / proximity.",
+          "citations": [
+            "company-reference-1677"
+          ]
         },
         {
           "label": "Power supply",
           "value": "3.5～5 VDC.",
           "status": "",
-          "source": "3.5～5 VDC."
+          "source": "3.5～5 VDC.",
+          "citations": [
+            "company-reference-1677"
+          ]
         },
         {
           "label": "Accuracy",
           "value": "",
           "status": "unclear",
-          "source": "±1."
+          "source": "±1.",
+          "citations": [
+            "company-reference-1677"
+          ]
         },
         {
           "label": "Min actuation distance",
           "value": ">8 mm (install gap ~10 mm recommended).",
           "status": "",
-          "source": ">8 mm (install gap ~10 mm recommended)."
+          "source": ">8 mm (install gap ~10 mm recommended).",
+          "citations": [
+            "company-reference-1677"
+          ]
         },
         {
           "label": "Max frequency",
           "value": "100 Hz.",
           "status": "",
-          "source": "100 Hz."
+          "source": "100 Hz.",
+          "citations": [
+            "company-reference-1677"
+          ]
         },
         {
           "label": "Operating temperature",
           "value": "-40～70 ℃.",
           "status": "",
-          "source": "-40～70 ℃."
+          "source": "-40～70 ℃.",
+          "citations": [
+            "company-reference-1677"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "IP67."
+          "source": "IP67.",
+          "citations": [
+            "company-reference-1677"
+          ]
         }
       ],
       "checks": [
@@ -13900,55 +14988,82 @@
           "label": "Range",
           "value": "0～1000 A.",
           "status": "",
-          "source": "0～1000 A."
+          "source": "0～1000 A.",
+          "citations": [
+            "company-reference-1678"
+          ]
         },
         {
           "label": "Output",
           "value": "0.5～2.5 VDC.",
           "status": "",
-          "source": "0.5～2.5 VDC."
+          "source": "0.5～2.5 VDC.",
+          "citations": [
+            "company-reference-1678"
+          ]
         },
         {
           "label": "Power supply",
           "value": "3.5～5 VDC.",
           "status": "",
-          "source": "3.5～5 VDC."
+          "source": "3.5～5 VDC.",
+          "citations": [
+            "company-reference-1678"
+          ]
         },
         {
           "label": "Frequency response",
           "value": "0～50 kHz.",
           "status": "",
-          "source": "0～50 kHz."
+          "source": "0～50 kHz.",
+          "citations": [
+            "company-reference-1678"
+          ]
         },
         {
           "label": "Accuracy",
           "value": "",
           "status": "unclear",
-          "source": "≤1% F·S."
+          "source": "≤1% F·S.",
+          "citations": [
+            "company-reference-1678"
+          ]
         },
         {
           "label": "Aperture",
           "value": "φ50 mm.",
           "status": "",
-          "source": "φ50 mm."
+          "source": "φ50 mm.",
+          "citations": [
+            "company-reference-1678"
+          ]
         },
         {
           "label": "Probe operating temperature",
           "value": "-40～70 ℃.",
           "status": "",
-          "source": "-40～70 ℃."
+          "source": "-40～70 ℃.",
+          "citations": [
+            "company-reference-1678"
+          ]
         },
         {
           "label": "Node operating temperature",
           "value": "-20～60 ℃.",
           "status": "",
-          "source": "-20～60 ℃."
+          "source": "-20～60 ℃.",
+          "citations": [
+            "company-reference-1678"
+          ]
         },
         {
           "label": "Configuration approval and protection",
           "value": "",
           "status": "marking",
-          "source": "IP67."
+          "source": "IP67.",
+          "citations": [
+            "company-reference-1678"
+          ]
         }
       ],
       "checks": [
@@ -13961,5 +15076,168 @@
       ],
       "designation": "Bee TRQ."
     }
-  }
+  },
+  "sources": {
+    "8d08": {
+      "url": "https://www.cnps.com/product/cnps-8d08-mud-conductivity-sensor/",
+      "title": "CNPS · 8D08",
+      "locator": "Technical parameters / fault guidance",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "mlb11": {
+      "url": "https://www.cnps.com/product/cnps-ml-b11-mud-density-sensor/",
+      "title": "CNPS · ML-B11",
+      "locator": "§2 / §3.1",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "cldt": {
+      "url": "https://www.cnps.com/product/mud-logging-ex-proof-degasser/",
+      "title": "CNPS · CL-DT",
+      "locator": "Product specification / description",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "dwa11": {
+      "url": "https://www.cnps.com/product/cnps-dw-a11-depth-encoder/",
+      "title": "CNPS · DW-A11",
+      "locator": "Technical indicators",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "mhp": {
+      "url": "https://www.cnps.com/product/cnps-mhp-pressure-sensor-15000psi/",
+      "title": "CNPS · MHP",
+      "locator": "Technical indicators",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "transmission": {
+      "url": "https://www.cnps.com/product/the-wireless-transmission-box-for-mud-logging-unit/",
+      "title": "CNPS · Wireless transmission box",
+      "locator": "Product introduction",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "h2s": {
+      "url": "https://www.cnps.com/product/wireless-hydrogen-sulfide-h2s-sensor-for-mud-logging-unit/",
+      "title": "CNPS · Wireless H2S",
+      "locator": "Product specification",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "hook": {
+      "url": "https://www.cnps.com/product/wireless-hook-load-sensor-for-mud-logging-unit/",
+      "title": "CNPS · Wireless hookload",
+      "locator": "Product specification",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "temperature": {
+      "url": "https://www.cnps.com/product/wireless-temperature-sensor-for-mud-logging-unit/",
+      "title": "CNPS · Wireless temperature",
+      "locator": "Product specification",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "capture": "cnps-web-reader.json",
+      "capture_sha256": "c8dce82f283d771ebff5cedfe1ada58dd1d3e2edb2aa2897e2d26246009d635a"
+    },
+    "lu240": {
+      "url": "https://cache.industry.siemens.com/dl/files/189/109826189/att_1161153/v1/A5E42673511en_LU240_HA_mA_OI_en-US.pdf#page=180",
+      "title": "Siemens · SITRANS Probe LU240",
+      "locator": "A5E42673511-AG, 11/2023, §13.2, p.180",
+      "kind": "manufacturer-manual",
+      "checked_at": "2026-11-11",
+      "sha256": "b3933a411b613f3ffc820b4690af2f77795fd445650bd311aa202b6bf44397a6"
+    },
+    "iml": {
+      "url": "https://imudlogging.com/product/iml-p10k-casing-pressure-sensorpressure-sensor",
+      "title": "IML · IML-P10K",
+      "locator": "Technical specifications",
+      "kind": "supplier-catalogue",
+      "checked_at": "2026-11-11",
+      "sha256": "88ad8edbaac4c339eeec941fef941020110984984331eccfed749b1dd07db797"
+    },
+    "company-reference-1670": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/radar-level-transmitter-manual-cnps.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "2a77977832a209c04f46dd2388cde191365fbaaad501488901d5b3b0908828da",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1671": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/sk-2n01g-shale-density-meter-manual-zh.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "d1a07667d4a6ee227ef19d5666f490fa49a55dc7e4c5668b61c06ef94cd0df7d",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1673": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/h2s-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "83296685c076f6055ab569fbea6a23f6554649a844cf1ac42d92b48eecab0c06",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1674": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/drawworks-winch-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "15739f4545bef7946b6962165ef871f8a433f92e3e32a776fe45cc7e10c15877",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1675": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/standpipe-pressure-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "c3b3bb756107996d58ec07f8b96924f0acd0ca5cf61c87b80f7dc21120103c90",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1677": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/pump-stroke-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "0af43500ff6dc7696b7c1a013df653dc6a524bb9e1f2fdd6b822650b85082214",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    },
+    "company-reference-1678": {
+      "url": "https://www.chinamudlogging.com/wp-content/uploads/2026/11/electric-torque-sensor-manual.pdf",
+      "title": "CNPS · Company reference",
+      "locator": "pp.2–3",
+      "kind": "company-reference",
+      "checked_at": "2026-11-11",
+      "sha256": "fe55ce8b91cb202092a137da5c843b662bbbf72c53785146a4191f4c77634e43",
+      "limitation": "Company-supplied reference compilation; not independent manufacturer or certification evidence. No transfer to a different model."
+    }
+  },
+  "source_review": "2026-11-11"
 }
