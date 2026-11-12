@@ -1,0 +1,28 @@
+name: Product 600 evidence
+on:
+  pull_request:
+    branches: [codex/wordpress-migration]
+    paths:
+      - 'wordpress/corrections/product-600/**'
+      - '.github/workflows/product-600-evidence.yml'
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify hashes, product scope and deterministic rebuild
+        env:
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: python3 wordpress/corrections/product-600/check-evidence.py --base "$PR_BASE" --head "$PR_HEAD"
+      - name: Verify checks reject altered evidence and unrelated changes
+        run: python3 wordpress/corrections/product-600/test-evidence.py

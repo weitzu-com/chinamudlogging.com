@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "target": 600,
+  "changedPaths": [
+    "content.raw",
+    "meta._cml_specifications"
+  ],
+  "beforeSHA256": "44a43bf44f75c369e95e88ea801dbe6a47f1d77520508ba3c586d0ab98b33761",
+  "originalContentSHA256": "2ace8c141e8bfe9eeca75b52e492f0b227679ef36f1eb95b0426407d7b203316",
+  "proposedContentSHA256": "373e97173d78a63417f74ba03eb9a0347a2fb4d010840dcac93b9b44d04138e9",
+  "checks": [
+    "identity",
+    "unique exact HTML row",
+    "unique exact meta row including punctuation",
+    "only two allowed paths changed",
+    "HTML round-trip restoration",
+    "unrelated meta and excerpt unchanged",
+    "immutable baseline",
+    "HTML parsed: exactly two replacement rows, other rows identical"
+  ],
+  "productionContentOrSpecificationWrites": 0,
+  "phpSourceSHA256": "e8863c8f4678029ca54256ada85332e437c85c942c4fd35a33a99fe610284226"
+}

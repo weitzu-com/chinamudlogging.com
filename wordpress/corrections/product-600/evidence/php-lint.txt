@@ -1,0 +1,1 @@
+PASS export-readonly.php PHP 8.2.35 TOKEN_PARSE (syntax only; exporter not executed)

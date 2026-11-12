@@ -1,0 +1,60 @@
+{
+  "status": "exact offline proposal generated and validated; not applied",
+  "productId": 600,
+  "language": "en",
+  "slug": "ultrasonic-sensor-bracket-mud-logging",
+  "pr": "https://github.com/weitzu-com/chinamudlogging.com/pull/8",
+  "prHead": "67053764c498b76e6974cc5c6d6d828c2b0b7fd9",
+  "epec": "https://emall.epec.com/productd/141652/15487160",
+  "evidenceLevel": "Direct read-only EPEC rendered product introduction verified on 2026-11-05; matches frozen PR8 audit; exact existing correction unchanged",
+  "sourceFields": {
+    "名称": "超声波传感器支架",
+    "规格型号": "超声波体积",
+    "说明": "传感器配件"
+  },
+  "originalReported": {
+    "Category note": "超声波体积 传感器配件",
+    "Model / SKU": "_cml_sku confirmed empty in authenticated editor preload and backend field"
+  },
+  "proposedRows": [
+    {
+      "label": "Source specification label",
+      "raw": "超声波体积",
+      "value": "",
+      "unit": ""
+    },
+    {
+      "label": "Category note",
+      "raw": "传感器配件",
+      "value": "",
+      "unit": ""
+    }
+  ],
+  "allowedTargets": [
+    "post_content: exact erroneous specification table row only",
+    "_cml_specifications: matching erroneous row only"
+  ],
+  "preserve": [
+    "post_excerpt",
+    "Overview",
+    "Applications",
+    "certification wording",
+    "_cml_sku",
+    "cml_family taxonomy",
+    "title",
+    "slug",
+    "status",
+    "language",
+    "source URL",
+    "all other products and translations"
+  ],
+  "note": "Category note is a specification-table label, not proof that the WordPress taxonomy is wrong. Do not treat 超声波体积 as an engineering model or SKU. No numeric value or unit is inferred.",
+  "liveBaseline": {
+    "modified_gmt": "2026-11-04T08:29:40",
+    "metaCategoryNote": "超声波体积 传感器配件.",
+    "bodyCategoryNote": " 超声波体积 传感器配件",
+    "taxonomy": "cml_family=69; preserved",
+    "excerpt": "preserved verbatim, including the combined source-note string"
+  },
+  "sourceVerification": "evidence/epec-15487160-verification-20261105.json"
+}
