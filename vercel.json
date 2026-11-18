@@ -1,4 +1,5 @@
 {
+  "installCommand": "npm ci --include=dev",
   "rewrites": [
     { "source": "/api/funnel/:path*", "destination": "https://chinamudlogging-funnel.kenny-bd6.workers.dev/:path*" }
   ],

@@ -13,11 +13,9 @@
     "content:generate": "node scripts/generate-content.mjs",
     "test:funnel": "node --test tests/*.test.mjs"
   },
-  "dependencies": {
-    "astro": "7.3.8"
-  },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
+    "astro": "7.3.8",
     "typescript": "5.9.3"
   },
   "engines": {
