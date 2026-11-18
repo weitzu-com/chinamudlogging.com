@@ -139,17 +139,37 @@ jobs:
           # Record the new state first, so a re-run cannot report the same
           # change twice.
           gh issue edit "$ISSUE" --body "$(printf '%s\n\n<!-- audit-state: %s -->\n' "$BODY" "$NEW_B64")"
-          gh issue comment "$ISSUE" --body-file comment.md
 
           # Everything cleared: close it, and do not fail -- there is nothing
-          # left to act on.
+          # left to act on. The closing comment has to say what happened and
+          # who did it, otherwise a later incident cannot be tied back to the
+          # moment this site was clean.
           if [ "$COUNT" = "0" ] && [ "$AUDIT_OK" = "true" ]; then
-            gh issue close "$ISSUE" --comment "The weekly audit no longer reports high-severity advisories; closing."
-            echo "All findings cleared."
+            {
+              echo "**The advisory set is now empty.** Every high-severity finding"
+              echo "this issue tracked has cleared."
+              echo
+              echo "This issue was closed automatically by the weekly dependency"
+              echo "audit workflow (\`.github/workflows/dependency-audit.yml\`) on"
+              echo "$(date -u +%Y-%m-%d), not by a person. It is kept as the record"
+              echo "of what was outstanding until that date. If the advisory set"
+              echo "changes again the workflow opens a new issue; it does not"
+              echo "reopen this one, so this thread stays a closed chapter."
+              echo
+              echo "Last state before closing:"
+              echo
+              echo '```'
+              cat audit-report.txt
+              echo '```'
+            } > closing.md
+            gh issue comment "$ISSUE" --body-file closing.md
+            gh issue close "$ISSUE"
+            echo "All findings cleared; issue closed with a dated record."
             mark_changed false
             exit 0
           fi
 
+          gh issue comment "$ISSUE" --body-file comment.md
           echo "Advisory set changed; alarm raised."
           mark_changed true
 
