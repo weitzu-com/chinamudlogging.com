@@ -5,13 +5,19 @@ name: Dependency audit (weekly)
 # `npm audit` results drift with the advisory database, not with the change
 # under review: the same commit can pass on Monday and fail the next week
 # because an advisory was published in between. As a merge gate that lets the
-# calendar veto code. Here it reports, raises an issue and fails its own run so
-# a human sees it; a human decides what to upgrade.
+# calendar veto code.
+#
+# It also must not cry wolf on a schedule. The advisory set is normalised into
+# a stable fingerprint (see scripts/dependency-audit.mjs) and recorded in the
+# open issue. A run that finds the same set as last time stays quiet and
+# green. Only a *change* -- a new advisory, or one that disappeared -- opens a
+# comment and fails the run. A run that is red therefore always means "we have
+# news", never "it is Monday again".
 #
 # Current state (2026-11-18): picomatch 4.0.7 is the latest release and its
-# advisory range is "*", so no patched version exists. Until upstream ships
-# one this job is expected to report and stay red. That is the signal, not a
-# defect in this workflow. See GHSA-fc5q-39xc-vjpf.
+# advisory range is "*", so no patched version exists. Until upstream ships one
+# the baseline is stable and these weekly runs are expected to stay quiet.
+# See GHSA-fc5q-39xc-vjpf.
 
 on:
   schedule:
@@ -42,49 +48,113 @@ jobs:
       - name: Install (including devDependencies)
         run: npm ci --include=dev
 
-      - name: Audit runtime and dev dependencies
-        id: audit
-        run: |
-          set +e
-          npm audit --audit-level=high > audit-report.txt 2>&1
-          status=$?
-          set -e
-          echo "status=$status" >> "$GITHUB_OUTPUT"
-          {
-            echo "Weekly dependency audit (runtime + dev)."
-            echo
-            echo "- commit: \`$GITHUB_SHA\`"
-            echo "- workflow run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-            echo "- audit exit code: \`$status\`"
-            echo
-            echo "This does **not** block merges. It exists so advisory drift is"
-            echo "noticed and someone decides whether to upgrade."
-            echo
-            echo '```'
-            cat audit-report.txt
-            echo '```'
-          } > audit-issue-body.md
-          cat audit-report.txt
+      - name: Compute the advisory state
+        run: node scripts/dependency-audit.mjs > audit-state.json
 
-      - name: Open or update the advisory issue
-        if: steps.audit.outputs.status != '0'
+      - name: Compare with the last recorded state
+        id: decide
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          EXISTING=$(gh issue list --state open --limit 100 --json number,title \
+          set -euo pipefail
+
+          COUNT=$(jq -r '.count' audit-state.json)
+          AUDIT_OK=$(jq -r '.auditAvailable' audit-state.json)
+          NEW_KEYS=$(jq -r '.keys | join("\n")' audit-state.json)
+          [ -z "$NEW_KEYS" ] && NEW_KEYS="__none__"
+          NEW_B64=$(printf '%s' "$NEW_KEYS" | base64 | tr -d '\n')
+
+          ISSUE=$(gh issue list --state open --limit 100 --json number,title \
             --jq '[.[] | select(.title | startswith("Dependency audit"))][0].number // empty')
-          if [ -n "$EXISTING" ]; then
-            echo "Commenting on existing issue #$EXISTING"
-            gh issue comment "$EXISTING" --body-file audit-issue-body.md
-          else
-            echo "Opening a new issue"
+
+          mark_changed() { echo "changed=$1" >> "$GITHUB_OUTPUT"; }
+
+          # No open issue yet: this run establishes the baseline. Recording a
+          # baseline is not news, so stay quiet and green.
+          if [ -z "$ISSUE" ]; then
+            if [ "$COUNT" = "0" ] && [ "$AUDIT_OK" = "true" ]; then
+              echo "No findings and no open issue -- nothing to record."
+              mark_changed false
+              exit 0
+            fi
+            {
+              echo "Baseline recorded by the weekly dependency audit."
+              echo
+              echo "The advisory set is tracked in the hidden marker below. This"
+              echo "job comments and fails only when that set changes."
+              echo
+              printf '%s\n' "<!-- audit-state: ${NEW_B64} -->"
+              echo
+              echo '```'
+              cat audit-report.txt
+              echo '```'
+            } > issue-body.md
             gh issue create \
               --title "Dependency audit: high-severity advisories need a decision" \
-              --body-file audit-issue-body.md
+              --body-file issue-body.md
+            echo "Baseline established ($COUNT findings); no alarm raised."
+            mark_changed false
+            exit 0
           fi
 
-      - name: Fail the run so the result is visible
-        if: steps.audit.outputs.status != '0'
+          BODY=$(gh issue view "$ISSUE" --json body -q .body)
+          OLD_B64=$(printf '%s' "$BODY" | sed -n 's/.*audit-state: \([A-Za-z0-9+/=]*\).*/\1/p' | head -1)
+
+          if [ -z "$OLD_B64" ]; then
+            echo "Existing issue #$ISSUE has no marker; treating this run as the baseline."
+            gh issue comment "$ISSUE" --body "Baseline marker added by the weekly audit. Future runs compare against this."
+            gh issue edit "$ISSUE" --body "$(printf '%s\n\n<!-- audit-state: %s -->\n' "$BODY" "$NEW_B64")"
+            mark_changed false
+            exit 0
+          fi
+
+          OLD_KEYS=$(printf '%s' "$OLD_B64" | base64 -d || true)
+          ADDED=$(comm -13 <(printf '%s\n' "$OLD_KEYS" | sort) <(printf '%s\n' "$NEW_KEYS" | sort) | sed '/^$/d')
+          REMOVED=$(comm -23 <(printf '%s\n' "$OLD_KEYS" | sort) <(printf '%s\n' "$NEW_KEYS" | sort) | sed '/^$/d')
+
+          if [ -z "$ADDED" ] && [ -z "$REMOVED" ]; then
+            echo "Advisory set unchanged ($COUNT findings). Staying quiet."
+            mark_changed false
+            exit 0
+          fi
+
+          {
+            echo "The advisory set changed since the last run."
+            echo
+            if [ -n "$ADDED" ]; then
+              echo "**New:**"
+              printf '%s\n' "$ADDED" | sed 's/^/- /'
+              echo
+            fi
+            if [ -n "$REMOVED" ]; then
+              echo "**Gone:**"
+              printf '%s\n' "$REMOVED" | sed 's/^/- /'
+              echo
+            fi
+            echo '```'
+            cat audit-report.txt
+            echo '```'
+          } > comment.md
+
+          # Record the new state first, so a re-run cannot report the same
+          # change twice.
+          gh issue edit "$ISSUE" --body "$(printf '%s\n\n<!-- audit-state: %s -->\n' "$BODY" "$NEW_B64")"
+          gh issue comment "$ISSUE" --body-file comment.md
+
+          # Everything cleared: close it, and do not fail -- there is nothing
+          # left to act on.
+          if [ "$COUNT" = "0" ] && [ "$AUDIT_OK" = "true" ]; then
+            gh issue close "$ISSUE" --comment "The weekly audit no longer reports high-severity advisories; closing."
+            echo "All findings cleared."
+            mark_changed false
+            exit 0
+          fi
+
+          echo "Advisory set changed; alarm raised."
+          mark_changed true
+
+      - name: Fail the run when the set changed
+        if: steps.decide.outputs.changed == 'true'
         run: |
-          echo "::error::npm audit reported high-severity advisories; see the issue opened by this run."
+          echo "::error::The advisory set changed. See the issue opened by this run."
           exit 1
