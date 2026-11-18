@@ -1,0 +1,90 @@
+name: Dependency audit (weekly)
+
+# Deliberately NOT a required check and NOT part of `verify`.
+#
+# `npm audit` results drift with the advisory database, not with the change
+# under review: the same commit can pass on Monday and fail the next week
+# because an advisory was published in between. As a merge gate that lets the
+# calendar veto code. Here it reports, raises an issue and fails its own run so
+# a human sees it; a human decides what to upgrade.
+#
+# Current state (2026-11-18): picomatch 4.0.7 is the latest release and its
+# advisory range is "*", so no patched version exists. Until upstream ships
+# one this job is expected to report and stay red. That is the signal, not a
+# defect in this workflow. See GHSA-fc5q-39xc-vjpf.
+
+on:
+  schedule:
+    # Mondays 03:17 UTC
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: dependency-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install (including devDependencies)
+        run: npm ci --include=dev
+
+      - name: Audit runtime and dev dependencies
+        id: audit
+        run: |
+          set +e
+          npm audit --audit-level=high > audit-report.txt 2>&1
+          status=$?
+          set -e
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          {
+            echo "Weekly dependency audit (runtime + dev)."
+            echo
+            echo "- commit: \`$GITHUB_SHA\`"
+            echo "- workflow run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            echo "- audit exit code: \`$status\`"
+            echo
+            echo "This does **not** block merges. It exists so advisory drift is"
+            echo "noticed and someone decides whether to upgrade."
+            echo
+            echo '```'
+            cat audit-report.txt
+            echo '```'
+          } > audit-issue-body.md
+          cat audit-report.txt
+
+      - name: Open or update the advisory issue
+        if: steps.audit.outputs.status != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          EXISTING=$(gh issue list --state open --limit 100 --json number,title \
+            --jq '[.[] | select(.title | startswith("Dependency audit"))][0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            echo "Commenting on existing issue #$EXISTING"
+            gh issue comment "$EXISTING" --body-file audit-issue-body.md
+          else
+            echo "Opening a new issue"
+            gh issue create \
+              --title "Dependency audit: high-severity advisories need a decision" \
+              --body-file audit-issue-body.md
+          fi
+
+      - name: Fail the run so the result is visible
+        if: steps.audit.outputs.status != '0'
+        run: |
+          echo "::error::npm audit reported high-severity advisories; see the issue opened by this run."
+          exit 1
