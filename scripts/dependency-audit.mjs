@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// @ts-nocheck
+// CI helper: this repo does not ship @types/node, and `astro check` type-checks
+// .mjs files here, so the node: imports would otherwise fail the build gate.
 /**
  * Normalise `npm audit` output into a stable fingerprint.
  *
