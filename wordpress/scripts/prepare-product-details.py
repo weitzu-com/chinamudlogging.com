@@ -2,6 +2,7 @@
 """Compile public presentation from source records, without changing those records."""
 import argparse, hashlib, html, json, re
 from pathlib import Path
+from product_source_review import apply_review
 
 ROOT = Path(__file__).resolve().parents[2]
 def load(path): return json.loads(path.read_text())
@@ -112,6 +113,8 @@ def main():
         products[str(p['id'])]={'slug':p['slug'],'language':lang,'fingerprint':fingerprint(p),'intro':intro,'rows':rows,'checks':list(dict.fromkeys(checks)),'links':list(dict.fromkeys(links)),'designation':designation}
         audit.append({'id':p['id'],'slug':p['slug'],'language':lang,'role':role,'decisions':decisions,'display_rows':rows})
     out={'revision':'2026-11-05','copy':locales,'products':products}
+    review_path=ROOT/'wordpress/content-repairs/product-source-review-20261111.json'
+    if review_path.is_file(): out=apply_review(out,load(review_path))
     (ROOT/'wordpress/theme/cml/assets/product-details.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
     args.audit.write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
     print(f'Compiled {len(products)} guarded product presentations; {sum(len(p["rows"]) for p in products.values())} rows')
