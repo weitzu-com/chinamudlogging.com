@@ -1,0 +1,74 @@
+{
+  "changes": [
+    {
+      "id": 622,
+      "url": "https://www.chinamudlogging.com/product/wireless-torque-sensor-3-3v-0-1000a/",
+      "before": {
+        "title": "Wireless Torque Sensor 3.3V 0-1000A for Mud Logging",
+        "excerpt": "Wireless torque sensing component for a mud logging channel. Confirm the sensing arrangement, node and receiver configuration for the intended system.",
+        "seo_description": "Wireless torque sensing component for a mud logging channel. Confirm the sensing arrangement, node and receiver configuration for the intended system.",
+        "seo_title": ""
+      },
+      "after": {
+        "title": "Wireless Torque Sensor for Mud Logging",
+        "excerpt": "Wireless torque sensing component for a mud logging channel. Confirm the sensing arrangement, node and receiver configuration for the intended system.",
+        "seo_description": "Wireless torque sensing component for a mud logging channel. Confirm the sensing arrangement, node and receiver configuration for the intended system.",
+        "seo_title": ""
+      },
+      "protected": {
+        "status": "publish",
+        "slug": "wireless-torque-sensor-3-3v-0-1000a",
+        "content_sha256": "28526e1d238ede46298fbe040bb740c1d35d927a7e59bbce46ac47757f337bfd",
+        "language": "en",
+        "translations": {
+          "en": 622
+        },
+        "families": [
+          "wireless-sensors"
+        ],
+        "thumbnail": 621,
+        "sku": "3.3V 0-1000A",
+        "specifications": [
+          {
+            "label": "Name",
+            "raw": "无线扭矩传感器 / Wireless Torque Sensor.",
+            "value": "",
+            "unit": ""
+          },
+          {
+            "label": "Model / SKU",
+            "raw": "3.3V 0-1000A.",
+            "value": "",
+            "unit": ""
+          },
+          {
+            "label": "Category note",
+            "raw": "无线传感器配件.",
+            "value": "",
+            "unit": ""
+          },
+          {
+            "label": "Source URL",
+            "raw": "https://emall.epec.com/productd/141652/15487643.",
+            "value": "",
+            "unit": ""
+          }
+        ],
+        "source_id": "",
+        "source_url": "",
+        "description_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "reason": "Keep unverified electrical-looking tokens in the labelled catalogue designation only, outside the title and the title-derived inquiry prefill and SEO description.",
+      "evidence": {
+        "source_url": "https://emall.epec.com/productd/141652/15487643",
+        "retained_fields": {
+          "Name": "无线扭矩传感器 / Wireless Torque Sensor.",
+          "Model / SKU": "3.3V 0-1000A.",
+          "Category note": "无线传感器配件.",
+          "Source URL": "https://emall.epec.com/productd/141652/15487643."
+        },
+        "basis": "Source item name establishes component role only. Catalogue designation/values remain unchanged; no performance or compatibility is inferred."
+      }
+    }
+  ]
+}
